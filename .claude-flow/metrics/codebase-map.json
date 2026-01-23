@@ -1,0 +1,11 @@
+{
+  "timestamp": "2026-01-23T06:37:39.704Z",
+  "projectRoot": "/home/claude/work/repo",
+  "structure": {
+    "hasPackageJson": false,
+    "hasTsConfig": false,
+    "hasClaudeConfig": true,
+    "hasClaudeFlow": true
+  },
+  "scannedAt": 1769150259704
+}

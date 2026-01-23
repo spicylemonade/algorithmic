@@ -1,0 +1,17 @@
+{
+  "initialized": true,
+  "topology": "mesh",
+  "workers": [],
+  "consensus": {
+    "pending": [],
+    "history": []
+  },
+  "sharedMemory": {},
+  "createdAt": "2026-01-23T06:37:23.271Z",
+  "updatedAt": "2026-01-23T06:37:23.271Z",
+  "queen": {
+    "agentId": "queen-1769150243271",
+    "electedAt": "2026-01-23T06:37:23.271Z",
+    "term": 1
+  }
+}
