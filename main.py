@@ -435,10 +435,10 @@ def run_simulation_test():
         "valid": True
     }
 
-    with open('.archivara/metrics/17ee4341.json', 'w') as f:
+    with open('.archivara/metrics/a457db81.json', 'w') as f:
         json.dump(metrics, f, indent=2)
 
-    print(f"\n[4] Metrics saved to .archivara/metrics/17ee4341.json")
+    print(f"\n[4] Metrics saved to .archivara/metrics/a457db81.json")
 
     return sim, overall_score
 
@@ -468,12 +468,15 @@ def main():
         # Run automated test
         sim, score = run_simulation_test()
 
-        # Ask if user wants to visualize
-        vis_choice = input("\nVisualize simulation? (y/n) [default: n]: ").strip().lower()
-        if vis_choice == 'y':
-            print("\nStarting visualization...")
-            vis = Visualizer(sim, update_interval=50)
-            vis.animate(frames=1000)
+        # Ask if user wants to visualize (handle EOF gracefully)
+        try:
+            vis_choice = input("\nVisualize simulation? (y/n) [default: n]: ").strip().lower()
+            if vis_choice == 'y':
+                print("\nStarting visualization...")
+                vis = Visualizer(sim, update_interval=50)
+                vis.animate(frames=1000)
+        except (EOFError, KeyboardInterrupt):
+            print("\nSimulation complete. Metrics saved.")
         return
 
     # Interactive mode
