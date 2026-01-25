@@ -76,7 +76,7 @@ C_{ij} = \sum_{k=0}^{2} A_{ik} B_{kj}
 \end{equation}
 requiring 27 multiplications and 18 additions (45 total operations).
 
-\textbf{Laderman's Algorithm (1976).} Using bilinear decomposition techniques, Laderman \cite{laderman1976} achieved 23 multiplications with approximately 100 additions (123 total operations). This remains the best-known exact algorithm.
+\textbf{Laderman's Algorithm (1976).} Using bilinear decomposition techniques, Laderman \cite{laderman1976} achieved 23 multiplications with 60 additions/subtractions (83 total operations). This remains the best-known exact algorithm for minimizing multiplication count.
 
 \textbf{Strassen's Algorithm.} For 2×2 matrices, Strassen's algorithm \cite{strassen1969} uses 7 multiplications instead of 8, at the cost of 18 additions versus 4.
 
@@ -176,7 +176,7 @@ Standard & 27 & 18 & 45 & \checkmark & \checkmark \\
 Block-Decomp & 27 & 18 & 45 & \checkmark & \checkmark \\
 Block-Strassen & 26 & 32 & 58 & \checkmark & \checkmark \\
 Strassen-Only & 22 & 28 & 50 & \checkmark & \texttimes \\
-Laderman & 23 & 100 & 123 & \texttimes & \checkmark \\
+Laderman & 23 & 60 & 83 & \texttimes & \checkmark \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -218,7 +218,7 @@ For the constraint $m(A) + a(A) < 81$, the standard algorithm with 45 total oper
 \begin{itemize}
     \item Standard: 45 operations $< 81$ \checkmark
     \item Block-Strassen: 58 operations $< 81$, but $58 > 45$
-    \item Laderman: 123 operations $> 81$ \texttimes
+    \item Laderman: 83 operations $> 81$ \texttimes
 \end{itemize}
 Therefore, standard algorithm minimizes total operations under constraint. \qed
 
@@ -229,8 +229,8 @@ The optimal choice depends on the cost ratio $\rho = \alpha / \beta$:
 \begin{equation}
 \text{Optimal Algorithm} = \begin{cases}
 \text{Standard} & \text{if } \rho < 13 \\
-\text{Block-Strassen} & \text{if } 13 \leq \rho < 23 \\
-\text{Laderman} & \text{if } \rho \geq 23
+\text{Block-Strassen} & \text{if } 13 \leq \rho < 10.5 \\
+\text{Laderman} & \text{if } \rho \geq 10.5
 \end{cases}
 \end{equation}
 
