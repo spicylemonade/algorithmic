@@ -597,10 +597,10 @@ def run_ablation_study():
         "valid": True
     }
 
-    with open('.archivara/metrics/adcb10e6.json', 'w') as f:
+    with open('.archivara/metrics/8b83c8bb.json', 'w') as f:
         json.dump(metrics, f, indent=2)
 
-    print(f"\nMetrics saved to .archivara/metrics/adcb10e6.json")
+    print(f"\nMetrics saved to .archivara/metrics/8b83c8bb.json")
 
     # Save detailed results
     with open('.archivara/ablation_results.json', 'w') as f:
