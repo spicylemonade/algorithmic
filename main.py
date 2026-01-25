@@ -435,10 +435,10 @@ def run_simulation_test():
         "valid": True
     }
 
-    with open('.archivara/metrics/a457db81.json', 'w') as f:
+    with open('.archivara/metrics/3fb5b026.json', 'w') as f:
         json.dump(metrics, f, indent=2)
 
-    print(f"\n[4] Metrics saved to .archivara/metrics/a457db81.json")
+    print(f"\n[4] Metrics saved to .archivara/metrics/3fb5b026.json")
 
     return sim, overall_score
 
