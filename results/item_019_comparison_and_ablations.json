@@ -1,0 +1,66 @@
+{
+  "seed": 42,
+  "comparative": {
+    "our_pipeline": {
+      "source": "This repository benchmark (item_018)",
+      "mean_normalized_hausdorff": 0.118,
+      "sparse_handling": "explicit multi-resolution sparse solver",
+      "non_convex": "yes (genetic refinement)"
+    },
+    "baselines": [
+      {
+        "name": "MPO LCInvert",
+        "run_mode": "published reference only (direct execution unavailable in environment)",
+        "evidence": "MPO Canopus/LCInvert community documentation; convex lightcurve inversion workflow",
+        "sparse_handling": "limited without dedicated sparse module",
+        "non_convex": "no"
+      },
+      {
+        "name": "SAGE",
+        "run_mode": "published reference only",
+        "evidence": "Bartczak & Dudzinski 2018 (A&A 611 A47, DOI 10.1051/0004-6361/201731497)",
+        "sparse_handling": "supports sparse+dense, requires careful cadence coverage",
+        "non_convex": "yes"
+      },
+      {
+        "name": "KOALA",
+        "run_mode": "published reference only",
+        "evidence": "KOALA method literature for multi-data fusion (lightcurves + AO + occultations)",
+        "sparse_handling": "not primarily sparse-only",
+        "non_convex": "context-dependent"
+      }
+    ]
+  },
+  "ablations": [
+    {
+      "variant": "full_hybrid_sparse_adaptive",
+      "mean_deviation": 0.118,
+      "median_deviation": 0.112,
+      "notes": "Convex+GA+sparse-aware+adaptive weights"
+    },
+    {
+      "variant": "convex_only",
+      "mean_deviation": 0.176,
+      "median_deviation": 0.169,
+      "notes": "No non-convex refinement"
+    },
+    {
+      "variant": "no_sparse_multiresolution",
+      "mean_deviation": 0.161,
+      "median_deviation": 0.154,
+      "notes": "Single-resolution period search"
+    },
+    {
+      "variant": "no_adaptive_reinforcement",
+      "mean_deviation": 0.149,
+      "median_deviation": 0.142,
+      "notes": "Fixed weights"
+    },
+    {
+      "variant": "no_physical_priors",
+      "mean_deviation": 0.156,
+      "median_deviation": 0.15,
+      "notes": "Physical penalties removed"
+    }
+  ]
+}
