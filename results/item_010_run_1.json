@@ -1,0 +1,23 @@
+{
+  "run_id": "item_010_run_1",
+  "timestamp_utc": "2026-02-06T09:38:50.032840+00:00",
+  "seed": 42,
+  "config": {
+    "experiment": "item_010_repro",
+    "games": 200,
+    "agent_a": "alphabeta_d1",
+    "agent_b": "random"
+  },
+  "config_hash": "e629c5190f4f393dfa177b6cdce76d5de49e8f136b532df486f12e73a593f23e",
+  "code_revision": "3c806ad9bc2c33389f5c8e6d856d4d732b2a9e43",
+  "hardware_profile": {
+    "machine": "x86_64",
+    "processor": "",
+    "platform": "Linux-4.4.0-x86_64-with-glibc2.36",
+    "python": "3.10.17"
+  },
+  "metrics": {
+    "mean_score": 0.705,
+    "games": 200
+  }
+}

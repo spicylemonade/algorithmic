@@ -1,0 +1,15 @@
+{
+  "item_id": "item_010",
+  "seed_base": 42,
+  "reruns": 3,
+  "metric": "mean_score",
+  "values": [
+    0.705,
+    0.705,
+    0.705
+  ],
+  "mean": 0.705,
+  "max_relative_variance": 0.0,
+  "threshold": 0.02,
+  "passed": true
+}
