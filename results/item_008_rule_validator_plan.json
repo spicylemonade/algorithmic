@@ -1,0 +1,24 @@
+{
+  "seed": 42,
+  "baseline_components": [
+    "bounds_validator",
+    "turn_ownership_validator",
+    "piece_kinematics_validator",
+    "collision_capture_validator",
+    "self_check_validator_planned",
+    "temporal_permission_validator_planned",
+    "branch_creation_validator_planned",
+    "terminal_condition_validator"
+  ],
+  "rule_classes_total": 20,
+  "rule_classes_covered": 19,
+  "coverage_percent": 95.0,
+  "deterministic_ordering": true,
+  "uncovered": [
+    "cross_timeline_discovered_check_resolution"
+  ],
+  "determinism_check": {
+    "initial_state_move_count": 8,
+    "stable_ordering": true
+  }
+}
