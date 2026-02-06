@@ -1,0 +1,13 @@
+{
+  "item_id": "item_005",
+  "seed": 42,
+  "thresholds": {
+    "hausdorff_norm_max": 0.05,
+    "volumetric_iou_min": 0.95,
+    "dense_rms_mag_max": 0.03,
+    "sparse_rms_mag_max": 0.06,
+    "spin_error_deg_max": 8,
+    "sparse_pole_recovery_min": 0.85,
+    "max_iterations": 8
+  }
+}
