@@ -1,0 +1,13 @@
+{
+  "item_id": "item_004",
+  "seed": 42,
+  "source_count": 18,
+  "categories": [
+    "MCTS foundations",
+    "AlphaGo/AlphaZero/MuZero",
+    "self-play RL",
+    "transformer game agents"
+  ],
+  "artifact": "docs/literature_review.md",
+  "acceptance_check": "met"
+}
