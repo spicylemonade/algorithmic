@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "created_at": "2026-02-06T23:08:35Z",
-  "updated_at": "2026-02-06T23:21:02.952625+00:00",
+  "updated_at": "2026-02-06T23:23:15.659177+00:00",
   "current_agent": "researcher",
   "agent_status": {
     "orchestrator": {
@@ -174,9 +174,9 @@
           "id": "item_016",
           "description": "Assemble ground-truth validation set from DAMIT and JPL radar",
           "acceptance_criteria": "Curate >= 10 asteroids (including 433 Eros, 25143 Itokawa, 216 Kleopatra where available) with paired shape models and raw photometry provenance records",
-          "status": "pending",
-          "notes": null,
-          "error": null
+          "status": "completed",
+          "notes": "Curated 11 validation targets with DAMIT/JPL provenance, downloaded available DAMIT OBJ meshes locally, and recorded ALCDEF/PDS photometry provenance entries.",
+          "error": ""
         },
         {
           "id": "item_017",
@@ -262,9 +262,9 @@
   ],
   "summary": {
     "total_items": 25,
-    "completed": 15,
+    "completed": 16,
     "in_progress": 0,
     "failed": 0,
-    "pending": 10
+    "pending": 9
   }
 }

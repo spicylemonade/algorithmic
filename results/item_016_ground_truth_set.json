@@ -1,0 +1,249 @@
+{
+  "seed": 42,
+  "count": 11,
+  "targets": [
+    {
+      "number": 1,
+      "name": "Ceres",
+      "damit_asteroid_id": "3414",
+      "damit_model_id": "5915",
+      "shape_obj_url": "https://damit.cuni.cz/projects/damit/generated_files/open/AsteroidModel/5915/shape.obj",
+      "spin_url": "https://damit.cuni.cz/projects/damit/generated_files/open/AsteroidModel/5915/spin.txt",
+      "local_shape_obj": "models/ground_truth/1_Ceres.obj",
+      "period_h": 9.074173,
+      "pole_lambda_deg": 350.0,
+      "pole_beta_deg": 81.0,
+      "photometry_provenance": [
+        {
+          "source": "ALCDEF",
+          "url": "https://alcdef.org/"
+        },
+        {
+          "source": "PDS_SBN",
+          "url": "https://sbnarchive.psi.edu/pds4/non_mission/ast.lightcurve/"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "name": "Vesta",
+      "damit_asteroid_id": "3415",
+      "damit_model_id": "5920",
+      "shape_obj_url": "https://damit.cuni.cz/projects/damit/generated_files/open/AsteroidModel/5920/shape.obj",
+      "spin_url": "https://damit.cuni.cz/projects/damit/generated_files/open/AsteroidModel/5920/spin.txt",
+      "local_shape_obj": "models/ground_truth/4_Vesta.obj",
+      "period_h": 5.342124,
+      "pole_lambda_deg": 337.0,
+      "pole_beta_deg": 56.0,
+      "photometry_provenance": [
+        {
+          "source": "ALCDEF",
+          "url": "https://alcdef.org/"
+        },
+        {
+          "source": "PDS_SBN",
+          "url": "https://sbnarchive.psi.edu/pds4/non_mission/ast.lightcurve/"
+        }
+      ]
+    },
+    {
+      "number": 16,
+      "name": "Psyche",
+      "damit_asteroid_id": "109",
+      "damit_model_id": "113",
+      "shape_obj_url": "https://damit.cuni.cz/projects/damit/generated_files/open/AsteroidModel/113/shape.obj",
+      "spin_url": "https://damit.cuni.cz/projects/damit/generated_files/open/AsteroidModel/113/spin.txt",
+      "local_shape_obj": "models/ground_truth/16_Psyche.obj",
+      "period_h": 4.195948,
+      "pole_lambda_deg": 32.0,
+      "pole_beta_deg": -7.0,
+      "photometry_provenance": [
+        {
+          "source": "ALCDEF",
+          "url": "https://alcdef.org/"
+        },
+        {
+          "source": "PDS_SBN",
+          "url": "https://sbnarchive.psi.edu/pds4/non_mission/ast.lightcurve/"
+        }
+      ]
+    },
+    {
+      "number": 21,
+      "name": "Lutetia",
+      "damit_asteroid_id": "113",
+      "damit_model_id": "120",
+      "shape_obj_url": "https://damit.cuni.cz/projects/damit/generated_files/open/AsteroidModel/120/shape.obj",
+      "spin_url": "https://damit.cuni.cz/projects/damit/generated_files/open/AsteroidModel/120/spin.txt",
+      "local_shape_obj": "models/ground_truth/21_Lutetia.obj",
+      "period_h": 8.168269,
+      "pole_lambda_deg": 54.0,
+      "pole_beta_deg": -7.0,
+      "photometry_provenance": [
+        {
+          "source": "ALCDEF",
+          "url": "https://alcdef.org/"
+        },
+        {
+          "source": "PDS_SBN",
+          "url": "https://sbnarchive.psi.edu/pds4/non_mission/ast.lightcurve/"
+        }
+      ]
+    },
+    {
+      "number": 22,
+      "name": "Kalliope",
+      "damit_asteroid_id": "114",
+      "damit_model_id": "121",
+      "shape_obj_url": "https://damit.cuni.cz/projects/damit/generated_files/open/AsteroidModel/121/shape.obj",
+      "spin_url": "https://damit.cuni.cz/projects/damit/generated_files/open/AsteroidModel/121/spin.txt",
+      "local_shape_obj": "models/ground_truth/22_Kalliope.obj",
+      "period_h": 4.1482,
+      "pole_lambda_deg": 196.0,
+      "pole_beta_deg": 3.0,
+      "photometry_provenance": [
+        {
+          "source": "ALCDEF",
+          "url": "https://alcdef.org/"
+        },
+        {
+          "source": "PDS_SBN",
+          "url": "https://sbnarchive.psi.edu/pds4/non_mission/ast.lightcurve/"
+        }
+      ]
+    },
+    {
+      "number": 45,
+      "name": "Eugenia",
+      "damit_asteroid_id": "124",
+      "damit_model_id": "134",
+      "shape_obj_url": "https://damit.cuni.cz/projects/damit/generated_files/open/AsteroidModel/134/shape.obj",
+      "spin_url": "https://damit.cuni.cz/projects/damit/generated_files/open/AsteroidModel/134/spin.txt",
+      "local_shape_obj": "models/ground_truth/45_Eugenia.obj",
+      "period_h": 5.699152,
+      "pole_lambda_deg": 124.0,
+      "pole_beta_deg": -33.0,
+      "photometry_provenance": [
+        {
+          "source": "ALCDEF",
+          "url": "https://alcdef.org/"
+        },
+        {
+          "source": "PDS_SBN",
+          "url": "https://sbnarchive.psi.edu/pds4/non_mission/ast.lightcurve/"
+        }
+      ]
+    },
+    {
+      "number": 87,
+      "name": "Sylvia",
+      "damit_asteroid_id": "132",
+      "damit_model_id": "148",
+      "shape_obj_url": "https://damit.cuni.cz/projects/damit/generated_files/open/AsteroidModel/148/shape.obj",
+      "spin_url": "https://damit.cuni.cz/projects/damit/generated_files/open/AsteroidModel/148/spin.txt",
+      "local_shape_obj": "models/ground_truth/87_Sylvia.obj",
+      "period_h": 5.18364,
+      "pole_lambda_deg": 71.0,
+      "pole_beta_deg": 66.0,
+      "photometry_provenance": [
+        {
+          "source": "ALCDEF",
+          "url": "https://alcdef.org/"
+        },
+        {
+          "source": "PDS_SBN",
+          "url": "https://sbnarchive.psi.edu/pds4/non_mission/ast.lightcurve/"
+        }
+      ]
+    },
+    {
+      "number": 216,
+      "name": "Kleopatra",
+      "damit_asteroid_id": "1044",
+      "damit_model_id": "1826",
+      "shape_obj_url": "https://damit.cuni.cz/projects/damit/generated_files/open/AsteroidModel/1826/shape.obj",
+      "spin_url": "https://damit.cuni.cz/projects/damit/generated_files/open/AsteroidModel/1826/spin.txt",
+      "local_shape_obj": "models/ground_truth/216_Kleopatra.obj",
+      "period_h": 5.385282,
+      "pole_lambda_deg": 74.0,
+      "pole_beta_deg": 20.0,
+      "photometry_provenance": [
+        {
+          "source": "ALCDEF",
+          "url": "https://alcdef.org/"
+        },
+        {
+          "source": "PDS_SBN",
+          "url": "https://sbnarchive.psi.edu/pds4/non_mission/ast.lightcurve/"
+        }
+      ]
+    },
+    {
+      "number": 433,
+      "name": "Eros",
+      "damit_asteroid_id": "1714",
+      "damit_model_id": "3083",
+      "shape_obj_url": "https://damit.cuni.cz/projects/damit/generated_files/open/AsteroidModel/3083/shape.obj",
+      "spin_url": "https://damit.cuni.cz/projects/damit/generated_files/open/AsteroidModel/3083/spin.txt",
+      "local_shape_obj": "models/ground_truth/433_Eros.obj",
+      "period_h": 5.27025528,
+      "pole_lambda_deg": 17.0,
+      "pole_beta_deg": 11.0,
+      "photometry_provenance": [
+        {
+          "source": "ALCDEF",
+          "url": "https://alcdef.org/"
+        },
+        {
+          "source": "PDS_SBN",
+          "url": "https://sbnarchive.psi.edu/pds4/non_mission/ast.lightcurve/"
+        }
+      ]
+    },
+    {
+      "number": 25143,
+      "name": "Itokawa",
+      "damit_asteroid_id": null,
+      "damit_model_id": null,
+      "shape_obj_url": "https://echo.jpl.nasa.gov/asteroids/alldetections.html",
+      "spin_url": null,
+      "local_shape_obj": null,
+      "period_h": 12.132,
+      "pole_lambda_deg": null,
+      "pole_beta_deg": null,
+      "photometry_provenance": [
+        {
+          "source": "ALCDEF",
+          "url": "https://alcdef.org/"
+        },
+        {
+          "source": "PDS_SBN",
+          "url": "https://sbnarchive.psi.edu/pds4/non_mission/ast.lightcurve/"
+        }
+      ],
+      "note": "Included as required target; DAMIT model not directly available in export snapshot, linked to JPL radar detections page for provenance context."
+    },
+    {
+      "number": 97,
+      "name": "Klotho",
+      "damit_asteroid_id": "237",
+      "damit_model_id": "321",
+      "shape_obj_url": "https://damit.cuni.cz/projects/damit/generated_files/open/AsteroidModel/321/shape.obj",
+      "spin_url": "https://damit.cuni.cz/projects/damit/generated_files/open/AsteroidModel/321/spin.txt",
+      "local_shape_obj": "models/ground_truth/97_Klotho.obj",
+      "period_h": 35.251,
+      "pole_lambda_deg": 359.0,
+      "pole_beta_deg": 30.0,
+      "photometry_provenance": [
+        {
+          "source": "ALCDEF",
+          "url": "https://alcdef.org/"
+        },
+        {
+          "source": "PDS_SBN",
+          "url": "https://sbnarchive.psi.edu/pds4/non_mission/ast.lightcurve/"
+        }
+      ]
+    }
+  ]
+}
