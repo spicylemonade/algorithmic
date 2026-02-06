@@ -1,0 +1,13 @@
+{
+  "item": "item_015",
+  "seed": 42,
+  "suite_size": 300,
+  "baseline_correct": 12,
+  "novelty_correct": 191,
+  "baseline_accuracy": 0.04,
+  "novelty_accuracy": 0.6366666666666667,
+  "disagreements": 189,
+  "novelty_wins_on_disagreement": 184,
+  "p_value": 2.4953247413051695e-48,
+  "acceptance_met": true
+}
