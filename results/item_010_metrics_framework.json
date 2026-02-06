@@ -1,0 +1,13 @@
+{
+  "seed": 42,
+  "metrics_defined": [
+    "elo",
+    "win_rate",
+    "node_expansions_per_sec",
+    "training_throughput_samples_per_sec",
+    "wall_clock_cost_usd",
+    "memory_peak_mb"
+  ],
+  "logging_schema": "jsonl",
+  "example_log_file": "results/metrics_log_schema_example.jsonl"
+}
