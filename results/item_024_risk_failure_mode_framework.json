@@ -1,0 +1,61 @@
+{
+  "item_id": "item_024",
+  "seed": 42,
+  "generated_at": "2026-02-06T22:23:03.956536+00:00",
+  "failure_modes": [
+    {
+      "mode": "Period aliasing",
+      "detection": "Multiple near-equal minima at P, P/2, 2P",
+      "mitigation": "Multi-apparition bootstrap + harmonic penalization"
+    },
+    {
+      "mode": "Pole ambiguity",
+      "detection": "Mirror-pole solutions with similar residuals",
+      "mitigation": "Use sparse geometry diversity and radar constraints"
+    },
+    {
+      "mode": "Sparse-coverage bias",
+      "detection": "Phase-angle span <25 deg",
+      "mitigation": "Require minimum geometry thresholds before acceptance"
+    },
+    {
+      "mode": "Non-uniqueness",
+      "detection": "Divergent shapes with similar RMS",
+      "mitigation": "Ensemble posterior and confidence penalties"
+    },
+    {
+      "mode": "Photometric zero-point drift",
+      "detection": "Per-source residual offsets",
+      "mitigation": "Source-wise normalization and cross-calibration"
+    },
+    {
+      "mode": "Outlier contamination",
+      "detection": "Heavy-tailed residual distribution",
+      "mitigation": "Robust clipping / Huber weighting"
+    },
+    {
+      "mode": "Over-smoothing concavities",
+      "detection": "Curvature suppression in high-SNR regions",
+      "mitigation": "Concavity-preserving smoothness gate"
+    },
+    {
+      "mode": "Overfitting noise",
+      "detection": "Train residual improves but bootstrap stability drops",
+      "mitigation": "Early stopping + regularization ramp"
+    },
+    {
+      "mode": "Incorrect geometry ephemerides",
+      "detection": "Systematic phase-dependent residual pattern",
+      "mitigation": "MPC orbit re-ingest and geometry recompute"
+    }
+  ],
+  "acceptance_check": {
+    "mode_count": 9,
+    "at_least_8": true,
+    "includes_period_aliasing": true,
+    "includes_pole_ambiguity": true,
+    "includes_sparse_coverage_bias": true,
+    "includes_non_uniqueness": true,
+    "criteria_met": true
+  }
+}
