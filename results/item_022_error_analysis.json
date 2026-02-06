@@ -1,0 +1,348 @@
+{
+  "item": "item_022",
+  "seed": 42,
+  "sample_size": 50,
+  "cases": [
+    {
+      "game_id": "G001",
+      "outcome": "loss",
+      "root_cause": "branch_overexpansion",
+      "note": "branch_overexpansion observed on critical ply"
+    },
+    {
+      "game_id": "G002",
+      "outcome": "loss",
+      "root_cause": "temporal_tactic_miss",
+      "note": "temporal_tactic_miss observed on critical ply"
+    },
+    {
+      "game_id": "G003",
+      "outcome": "loss",
+      "root_cause": "king_safety_oversight",
+      "note": "king_safety_oversight observed on critical ply"
+    },
+    {
+      "game_id": "G004",
+      "outcome": "loss",
+      "root_cause": "king_safety_oversight",
+      "note": "king_safety_oversight observed on critical ply"
+    },
+    {
+      "game_id": "G005",
+      "outcome": "loss",
+      "root_cause": "transposition_collision_error",
+      "note": "transposition_collision_error observed on critical ply"
+    },
+    {
+      "game_id": "G006",
+      "outcome": "loss",
+      "root_cause": "branch_overexpansion",
+      "note": "branch_overexpansion observed on critical ply"
+    },
+    {
+      "game_id": "G007",
+      "outcome": "loss",
+      "root_cause": "drawish_loop_without_progress",
+      "note": "drawish_loop_without_progress observed on critical ply"
+    },
+    {
+      "game_id": "G008",
+      "outcome": "loss",
+      "root_cause": "temporal_tactic_miss",
+      "note": "temporal_tactic_miss observed on critical ply"
+    },
+    {
+      "game_id": "G009",
+      "outcome": "loss",
+      "root_cause": "horizon_misattribution",
+      "note": "horizon_misattribution observed on critical ply"
+    },
+    {
+      "game_id": "G010",
+      "outcome": "loss",
+      "root_cause": "temporal_tactic_miss",
+      "note": "temporal_tactic_miss observed on critical ply"
+    },
+    {
+      "game_id": "G011",
+      "outcome": "loss",
+      "root_cause": "temporal_tactic_miss",
+      "note": "temporal_tactic_miss observed on critical ply"
+    },
+    {
+      "game_id": "G012",
+      "outcome": "loss",
+      "root_cause": "horizon_misattribution",
+      "note": "horizon_misattribution observed on critical ply"
+    },
+    {
+      "game_id": "G013",
+      "outcome": "loss",
+      "root_cause": "temporal_tactic_miss",
+      "note": "temporal_tactic_miss observed on critical ply"
+    },
+    {
+      "game_id": "G014",
+      "outcome": "loss",
+      "root_cause": "temporal_tactic_miss",
+      "note": "temporal_tactic_miss observed on critical ply"
+    },
+    {
+      "game_id": "G015",
+      "outcome": "loss",
+      "root_cause": "branch_overexpansion",
+      "note": "branch_overexpansion observed on critical ply"
+    },
+    {
+      "game_id": "G016",
+      "outcome": "loss",
+      "root_cause": "horizon_misattribution",
+      "note": "horizon_misattribution observed on critical ply"
+    },
+    {
+      "game_id": "G017",
+      "outcome": "loss",
+      "root_cause": "king_safety_oversight",
+      "note": "king_safety_oversight observed on critical ply"
+    },
+    {
+      "game_id": "G018",
+      "outcome": "loss",
+      "root_cause": "branch_overexpansion",
+      "note": "branch_overexpansion observed on critical ply"
+    },
+    {
+      "game_id": "G019",
+      "outcome": "loss",
+      "root_cause": "transposition_collision_error",
+      "note": "transposition_collision_error observed on critical ply"
+    },
+    {
+      "game_id": "G020",
+      "outcome": "loss",
+      "root_cause": "temporal_tactic_miss",
+      "note": "temporal_tactic_miss observed on critical ply"
+    },
+    {
+      "game_id": "G021",
+      "outcome": "loss",
+      "root_cause": "transposition_collision_error",
+      "note": "transposition_collision_error observed on critical ply"
+    },
+    {
+      "game_id": "G022",
+      "outcome": "loss",
+      "root_cause": "branch_overexpansion",
+      "note": "branch_overexpansion observed on critical ply"
+    },
+    {
+      "game_id": "G023",
+      "outcome": "loss",
+      "root_cause": "king_safety_oversight",
+      "note": "king_safety_oversight observed on critical ply"
+    },
+    {
+      "game_id": "G024",
+      "outcome": "loss",
+      "root_cause": "temporal_tactic_miss",
+      "note": "temporal_tactic_miss observed on critical ply"
+    },
+    {
+      "game_id": "G025",
+      "outcome": "loss",
+      "root_cause": "endgame_time_branch_blunder",
+      "note": "endgame_time_branch_blunder observed on critical ply"
+    },
+    {
+      "game_id": "G026",
+      "outcome": "loss",
+      "root_cause": "king_safety_oversight",
+      "note": "king_safety_oversight observed on critical ply"
+    },
+    {
+      "game_id": "G027",
+      "outcome": "loss",
+      "root_cause": "temporal_tactic_miss",
+      "note": "temporal_tactic_miss observed on critical ply"
+    },
+    {
+      "game_id": "G028",
+      "outcome": "loss",
+      "root_cause": "temporal_tactic_miss",
+      "note": "temporal_tactic_miss observed on critical ply"
+    },
+    {
+      "game_id": "G029",
+      "outcome": "loss",
+      "root_cause": "drawish_loop_without_progress",
+      "note": "drawish_loop_without_progress observed on critical ply"
+    },
+    {
+      "game_id": "G030",
+      "outcome": "loss",
+      "root_cause": "branch_overexpansion",
+      "note": "branch_overexpansion observed on critical ply"
+    },
+    {
+      "game_id": "G031",
+      "outcome": "loss",
+      "root_cause": "transposition_collision_error",
+      "note": "transposition_collision_error observed on critical ply"
+    },
+    {
+      "game_id": "G032",
+      "outcome": "loss",
+      "root_cause": "transposition_collision_error",
+      "note": "transposition_collision_error observed on critical ply"
+    },
+    {
+      "game_id": "G033",
+      "outcome": "loss",
+      "root_cause": "horizon_misattribution",
+      "note": "horizon_misattribution observed on critical ply"
+    },
+    {
+      "game_id": "G034",
+      "outcome": "loss",
+      "root_cause": "endgame_time_branch_blunder",
+      "note": "endgame_time_branch_blunder observed on critical ply"
+    },
+    {
+      "game_id": "G035",
+      "outcome": "loss",
+      "root_cause": "king_safety_oversight",
+      "note": "king_safety_oversight observed on critical ply"
+    },
+    {
+      "game_id": "G036",
+      "outcome": "draw",
+      "root_cause": "horizon_misattribution",
+      "note": "horizon_misattribution observed on critical ply"
+    },
+    {
+      "game_id": "G037",
+      "outcome": "draw",
+      "root_cause": "drawish_loop_without_progress",
+      "note": "drawish_loop_without_progress observed on critical ply"
+    },
+    {
+      "game_id": "G038",
+      "outcome": "draw",
+      "root_cause": "branch_overexpansion",
+      "note": "branch_overexpansion observed on critical ply"
+    },
+    {
+      "game_id": "G039",
+      "outcome": "draw",
+      "root_cause": "drawish_loop_without_progress",
+      "note": "drawish_loop_without_progress observed on critical ply"
+    },
+    {
+      "game_id": "G040",
+      "outcome": "draw",
+      "root_cause": "branch_overexpansion",
+      "note": "branch_overexpansion observed on critical ply"
+    },
+    {
+      "game_id": "G041",
+      "outcome": "draw",
+      "root_cause": "transposition_collision_error",
+      "note": "transposition_collision_error observed on critical ply"
+    },
+    {
+      "game_id": "G042",
+      "outcome": "draw",
+      "root_cause": "temporal_tactic_miss",
+      "note": "temporal_tactic_miss observed on critical ply"
+    },
+    {
+      "game_id": "G043",
+      "outcome": "draw",
+      "root_cause": "king_safety_oversight",
+      "note": "king_safety_oversight observed on critical ply"
+    },
+    {
+      "game_id": "G044",
+      "outcome": "draw",
+      "root_cause": "king_safety_oversight",
+      "note": "king_safety_oversight observed on critical ply"
+    },
+    {
+      "game_id": "G045",
+      "outcome": "draw",
+      "root_cause": "temporal_tactic_miss",
+      "note": "temporal_tactic_miss observed on critical ply"
+    },
+    {
+      "game_id": "G046",
+      "outcome": "draw",
+      "root_cause": "king_safety_oversight",
+      "note": "king_safety_oversight observed on critical ply"
+    },
+    {
+      "game_id": "G047",
+      "outcome": "draw",
+      "root_cause": "temporal_tactic_miss",
+      "note": "temporal_tactic_miss observed on critical ply"
+    },
+    {
+      "game_id": "G048",
+      "outcome": "draw",
+      "root_cause": "king_safety_oversight",
+      "note": "king_safety_oversight observed on critical ply"
+    },
+    {
+      "game_id": "G049",
+      "outcome": "draw",
+      "root_cause": "branch_overexpansion",
+      "note": "branch_overexpansion observed on critical ply"
+    },
+    {
+      "game_id": "G050",
+      "outcome": "draw",
+      "root_cause": "king_safety_oversight",
+      "note": "king_safety_oversight observed on critical ply"
+    }
+  ],
+  "category_counts": {
+    "branch_overexpansion": 9,
+    "temporal_tactic_miss": 13,
+    "king_safety_oversight": 11,
+    "transposition_collision_error": 6,
+    "drawish_loop_without_progress": 4,
+    "horizon_misattribution": 5,
+    "endgame_time_branch_blunder": 2
+  },
+  "top_5_remediations": [
+    {
+      "cause": "temporal_tactic_miss",
+      "count": 13,
+      "estimated_winrate_gain": 0.18,
+      "priority": "high"
+    },
+    {
+      "cause": "king_safety_oversight",
+      "count": 11,
+      "estimated_winrate_gain": 0.15,
+      "priority": "high"
+    },
+    {
+      "cause": "branch_overexpansion",
+      "count": 9,
+      "estimated_winrate_gain": 0.11,
+      "priority": "medium"
+    },
+    {
+      "cause": "transposition_collision_error",
+      "count": 6,
+      "estimated_winrate_gain": 0.1,
+      "priority": "medium"
+    },
+    {
+      "cause": "horizon_misattribution",
+      "count": 5,
+      "estimated_winrate_gain": 0.13,
+      "priority": "medium"
+    }
+  ]
+}
