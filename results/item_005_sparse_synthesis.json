@@ -1,0 +1,28 @@
+{
+  "item_id": "item_005",
+  "seed": 42,
+  "generated_at": "2026-02-06T22:13:14.154107+00:00",
+  "method": "Durech-style sparse inversion constraints synthesis",
+  "pole_solution_search": {
+    "coarse_grid": "lambda in [0,360) step 10 deg; beta in [-90,90] step 10 deg",
+    "refinement": "top 5 minima refined to 2 deg local grids with LM optimization",
+    "ambiguity_tracking": "retain mirror pole candidates and compare posterior evidence"
+  },
+  "period_ambiguity_handling": {
+    "initial_scan": "0.5 to 100 h with frequency step 1/(4*Tspan)",
+    "alias_rejection": "penalize sidereal periods not stable across apparition-wise bootstrap",
+    "harmonic_check": "test P, P/2, 2P for lightcurve symmetry degeneracy"
+  },
+  "minimum_geometry_requirements": {
+    "sparse_points_min": 100,
+    "apparitions_min": 3,
+    "phase_angle_span_min_deg": 25,
+    "aspect_diversity_min": "at least 2 ecliptic latitude bins populated"
+  },
+  "acceptance_check": {
+    "pole_search_defined": true,
+    "period_ambiguity_defined": true,
+    "geometry_requirements_defined": true,
+    "criteria_met": true
+  }
+}
