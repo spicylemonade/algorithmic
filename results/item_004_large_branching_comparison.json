@@ -1,0 +1,19 @@
+{
+  "seed": 42,
+  "columns": [
+    "method",
+    "branching_factor_strategy",
+    "sample_efficiency",
+    "compute_cost",
+    "known_limitations"
+  ],
+  "methods": [
+    {"method": "AlphaZero PUCT", "branching_factor_strategy": "prior-guided expansion", "sample_efficiency": "medium", "compute_cost": "high", "known_limitations": "poor scaling to very sparse huge action indices"},
+    {"method": "Progressive Widening MCTS", "branching_factor_strategy": "visit-dependent action unlock", "sample_efficiency": "medium-high", "compute_cost": "medium-high", "known_limitations": "schedule sensitivity"},
+    {"method": "Gumbel MuZero", "branching_factor_strategy": "sampled candidate reduction", "sample_efficiency": "high", "compute_cost": "high", "known_limitations": "model error amplification"},
+    {"method": "Policy Gradient + Beam", "branching_factor_strategy": "beam pruning", "sample_efficiency": "medium", "compute_cost": "medium", "known_limitations": "beam misses tactical lines"},
+    {"method": "Implicit Minimax MCTS", "branching_factor_strategy": "backup-driven pruning", "sample_efficiency": "medium", "compute_cost": "medium-high", "known_limitations": "tuning brittleness"},
+    {"method": "Factorized Policy + MCTS", "branching_factor_strategy": "factor-wise masking", "sample_efficiency": "high", "compute_cost": "medium", "known_limitations": "factor error cascades"},
+    {"method": "Hierarchical Candidate Generation", "branching_factor_strategy": "two-stage candidate filtering", "sample_efficiency": "high", "compute_cost": "low-medium", "known_limitations": "candidate bias"}
+  ]
+}
