@@ -1,0 +1,16 @@
+{
+  "seed": 42,
+  "hypotheses": [
+    {"id": "H1", "metric": "elo_gain_vs_shallow", "target": ">=180", "falsifiable": true},
+    {"id": "H2", "metric": "win_rate_vs_heuristic", "target": ">=0.62", "falsifiable": true},
+    {"id": "H3", "metric": "gpu_hours_per_10_elo", "target": "<=0.75", "falsifiable": true},
+    {"id": "H4", "metric": "median_latency_ms_at_800_sims", "target": "<=180", "falsifiable": true},
+    {"id": "H5", "metric": "elo_drop_unseen_openings", "target": "<=70", "falsifiable": true}
+  ],
+  "success_targets": {
+    "elo_gain": 180,
+    "win_rate": 0.62,
+    "training_cost_gpu_hours_per_10_elo": 0.75,
+    "inference_latency_ms": 180
+  }
+}
