@@ -1,0 +1,25 @@
+{
+  "item_id": "item_014",
+  "seed": 42,
+  "methods": [
+    {
+      "name": "symmetry_aware_timeline_cache",
+      "baseline_complexity": "O(1) lookup",
+      "method_complexity": "O(k)+O(1), k<=8",
+      "success_criteria": {
+        "cache_hit_rate_gain_min": 0.25,
+        "nodes_per_sec_gain_min": 0.15,
+        "elo_delta_min": 0
+      }
+    },
+    {
+      "name": "learned_move_pruning_gate",
+      "baseline_complexity": "O(B) full expansion",
+      "method_complexity": "O(B)+O(B log k)+O(k) eval",
+      "success_criteria": {
+        "sims_per_sec_gain_min": 0.35,
+        "elo_loss_max": 20
+      }
+    }
+  ]
+}
