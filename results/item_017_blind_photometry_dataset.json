@@ -1,0 +1,58 @@
+{
+  "item_id": "item_017",
+  "seed": 42,
+  "generated_at": "2026-02-06T22:20:18.467647+00:00",
+  "attempts": [
+    {
+      "asteroid": "433 Eros",
+      "pds_query_numFound": 402
+    },
+    {
+      "asteroid": "25143 Itokawa",
+      "pds_query_numFound": 318
+    },
+    {
+      "asteroid": "216 Kleopatra",
+      "pds_query_numFound": 322
+    },
+    {
+      "asteroid": "4 Vesta",
+      "pds_query_numFound": 5475
+    },
+    {
+      "asteroid": "15 Eunomia",
+      "pds_query_numFound": 3524
+    },
+    {
+      "asteroid": "87 Sylvia",
+      "pds_query_numFound": 349
+    },
+    {
+      "asteroid": "243 Ida",
+      "pds_query_numFound": 1238
+    },
+    {
+      "asteroid": "4179 Toutatis",
+      "pds_query_numFound": 283
+    },
+    {
+      "asteroid": "4769 Castalia",
+      "pds_query_numFound": 274
+    },
+    {
+      "asteroid": "1620 Geographos",
+      "pds_query_numFound": 283
+    }
+  ],
+  "alcdef_home_bytes": 0,
+  "blocking_issue": "Programmatic extraction of per-asteroid raw photometry tables with full observing-geometry metadata from ALCDEF/PDS was not completed in this run; PDS search returned catalog metadata but not a robust direct-file mapping for all 10 objects.",
+  "partial_artifacts": [
+    "PDS search API query traces saved in this JSON",
+    "No complete per-object raw table set assembled yet"
+  ],
+  "acceptance_check": {
+    "complete_per_object_raw_dataset": false,
+    "metadata_sufficient_for_geometry": false,
+    "criteria_met": false
+  }
+}
