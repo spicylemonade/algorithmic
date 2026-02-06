@@ -1,0 +1,17 @@
+{
+  "item": "item_025",
+  "seed": 42,
+  "backlog": [
+    {"id":"R1","task":"Improve transposition key fidelity","priority":1,"effort_days":4,"dependencies":["item_013"],"risk":"false merges","mitigation":"include side-to-move and causal hash"},
+    {"id":"R2","task":"GPU policy-value training upgrade","priority":2,"effort_days":6,"dependencies":["item_012"],"risk":"overfitting","mitigation":"early stopping + held-out tactical suite"},
+    {"id":"R3","task":"Expand board to 6x6 variant","priority":3,"effort_days":5,"dependencies":["item_006"],"risk":"compute blow-up","mitigation":"curriculum + pruning"},
+    {"id":"R4","task":"Temporal trap generator","priority":4,"effort_days":3,"dependencies":["item_018"],"risk":"low diversity","mitigation":"constraint-randomized templates"},
+    {"id":"R5","task":"Distributed self-play workers","priority":5,"effort_days":7,"dependencies":["item_014"],"risk":"non-determinism","mitigation":"seed partitioning and replay checksums"},
+    {"id":"R6","task":"Endgame tablebase proxy","priority":6,"effort_days":4,"dependencies":["item_006"],"risk":"memory pressure","mitigation":"on-demand compression"},
+    {"id":"R7","task":"Model quantization for deployment","priority":7,"effort_days":3,"dependencies":["item_020"],"risk":"strength regression","mitigation":"quantization-aware calibration"},
+    {"id":"R8","task":"Adversarial timeline fuzzing","priority":8,"effort_days":4,"dependencies":["item_018"],"risk":"invalid states","mitigation":"strict legality validator"},
+    {"id":"R9","task":"League diversity regularization","priority":9,"effort_days":5,"dependencies":["item_014"],"risk":"mode collapse","mitigation":"population entropy objective"},
+    {"id":"R10","task":"Cross-implementation verifier","priority":10,"effort_days":4,"dependencies":["item_006","item_007"],"risk":"spec mismatch","mitigation":"golden test corpus"},
+    {"id":"R11","task":"Online Elo dashboard","priority":11,"effort_days":2,"dependencies":["item_009"],"risk":"metric drift","mitigation":"fixed evaluation protocol locks"}
+  ]
+}
