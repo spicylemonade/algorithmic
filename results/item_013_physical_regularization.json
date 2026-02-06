@@ -1,0 +1,22 @@
+{
+  "item_id": "item_013",
+  "seed": 42,
+  "generated_at": "2026-02-06T22:16:54.702902+00:00",
+  "regularizers": {
+    "inertia_alignment": "1-(s\u00b7p)^2",
+    "spin_consistency": "((P-Pprior)/sigmaP)^2",
+    "mesh_smoothness": "||Lap||^2",
+    "concavity_gate": "smoothness scaled by 0.2 when curvature>0.25"
+  },
+  "examples": {
+    "nominal": 0.039000000000000125,
+    "concavity_preserved": 0.017400000000000127
+  },
+  "acceptance_check": {
+    "inertia_alignment_enforced": true,
+    "rotation_state_consistency_enforced": true,
+    "smoothness_enforced": true,
+    "major_concavity_preserved": true,
+    "criteria_met": true
+  }
+}
