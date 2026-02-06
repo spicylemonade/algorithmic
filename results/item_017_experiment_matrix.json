@@ -1,0 +1,91 @@
+{
+  "seed": 42,
+  "run_count": 12,
+  "runs": [
+    {
+      "run_id": "RUN-20260206-001",
+      "architecture": "TR-CNN-S",
+      "search": "puct",
+      "curriculum": "stageB",
+      "seed": 42
+    },
+    {
+      "run_id": "RUN-20260206-002",
+      "architecture": "TR-CNN-S",
+      "search": "puct",
+      "curriculum": "stageC",
+      "seed": 42
+    },
+    {
+      "run_id": "RUN-20260206-003",
+      "architecture": "TR-CNN-S",
+      "search": "puct_pw",
+      "curriculum": "stageB",
+      "seed": 42
+    },
+    {
+      "run_id": "RUN-20260206-004",
+      "architecture": "TR-CNN-S",
+      "search": "puct_pw",
+      "curriculum": "stageC",
+      "seed": 42
+    },
+    {
+      "run_id": "RUN-20260206-005",
+      "architecture": "HCT-M",
+      "search": "puct",
+      "curriculum": "stageB",
+      "seed": 42
+    },
+    {
+      "run_id": "RUN-20260206-006",
+      "architecture": "HCT-M",
+      "search": "puct",
+      "curriculum": "stageC",
+      "seed": 42
+    },
+    {
+      "run_id": "RUN-20260206-007",
+      "architecture": "HCT-M",
+      "search": "puct_pw",
+      "curriculum": "stageB",
+      "seed": 42
+    },
+    {
+      "run_id": "RUN-20260206-008",
+      "architecture": "HCT-M",
+      "search": "puct_pw",
+      "curriculum": "stageC",
+      "seed": 42
+    },
+    {
+      "run_id": "RUN-20260206-009",
+      "architecture": "FDH-L",
+      "search": "puct",
+      "curriculum": "stageB",
+      "seed": 42
+    },
+    {
+      "run_id": "RUN-20260206-010",
+      "architecture": "FDH-L",
+      "search": "puct",
+      "curriculum": "stageC",
+      "seed": 42
+    },
+    {
+      "run_id": "RUN-20260206-011",
+      "architecture": "FDH-L",
+      "search": "puct_pw",
+      "curriculum": "stageB",
+      "seed": 42
+    },
+    {
+      "run_id": "RUN-20260206-012",
+      "architecture": "FDH-L",
+      "search": "puct_pw",
+      "curriculum": "stageC",
+      "seed": 42
+    }
+  ],
+  "immutable_id_format": "RUN-YYYYMMDD-NNN"
+}
