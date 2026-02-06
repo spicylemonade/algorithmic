@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "timestamp_utc": "2026-02-06T23:30:17.139148+00:00",
+    "seed": 42,
+    "python_version": "3.10.17",
+    "platform": "Linux-4.4.0-x86_64-with-glibc2.36",
+    "package_version": "0.1.0",
+    "dataset_hashes": {
+      "pilot_dataset": "38523350579737b945637fd2b79ae5cc8749c83ae46c11add093f49ba33a3bfb"
+    },
+    "software": {
+      "core_modules": [
+        "src/lci/geometry.py",
+        "src/lci/convex_solver.py",
+        "src/lci/evolutionary_solver.py",
+        "src/lci/sparse_solver.py",
+        "src/lci/metrics.py",
+        "src/lci/pipeline.py"
+      ]
+    }
+  },
+  "pilot": {
+    "seed": 42,
+    "period_true": 5.3,
+    "period_convex": 3.972630200615295,
+    "period_evo": 3.9441828515099995,
+    "loss_convex": 0.03332076385541959,
+    "loss_evo": 0.01764529505754734
+  }
+}

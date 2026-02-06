@@ -1,0 +1,24 @@
+{
+  "seed": 42,
+  "run_1": {
+    "seed": 42,
+    "period_true": 5.3,
+    "period_convex": 3.972630200615295,
+    "period_evo": 3.9441828515099995,
+    "loss_convex": 0.03332076385541959,
+    "loss_evo": 0.01764529505754734
+  },
+  "run_2": {
+    "seed": 42,
+    "period_true": 5.3,
+    "period_convex": 3.972630200615295,
+    "period_evo": 3.9441828515099995,
+    "loss_convex": 0.03332076385541959,
+    "loss_evo": 0.01764529505754734
+  },
+  "relative_variance": {
+    "period_evo": 0.0,
+    "loss_evo": 0.0
+  },
+  "within_tolerance": true
+}
