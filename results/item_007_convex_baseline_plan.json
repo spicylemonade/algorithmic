@@ -1,0 +1,36 @@
+{
+  "item_id": "item_007",
+  "seed": 42,
+  "generated_at": "2026-02-06T22:14:16.481077+00:00",
+  "baseline_convex_plan": {
+    "initialization": "Start from triaxial-ellipsoid-equivalent convex state with pole/period priors",
+    "solver_loop": "gradient descent + Armijo backtracking",
+    "line_search": {
+      "c1": 0.0001,
+      "tau": 0.5,
+      "alpha0": 1.0
+    },
+    "convergence_diagnostics": {
+      "grad_tol": 1e-05,
+      "relative_objective_tol": 1e-06,
+      "max_iters": 400
+    }
+  },
+  "smoke_test_output": {
+    "state": {
+      "flux_model": 0.99993896484375,
+      "smooth_penalty": 0.0
+    },
+    "rms": 0.28284273223095346,
+    "iterations": 13,
+    "converged": true,
+    "reason": "rel_obj_tol"
+  },
+  "acceptance_check": {
+    "loop_defined": true,
+    "init_defined": true,
+    "line_search_defined": true,
+    "diagnostics_defined": true,
+    "criteria_met": true
+  }
+}
