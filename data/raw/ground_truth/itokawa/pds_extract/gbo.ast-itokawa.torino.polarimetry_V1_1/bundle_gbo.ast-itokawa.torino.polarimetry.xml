@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1A00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Bundle xmlns="http://pds.nasa.gov/pds4/pds/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1A00.xsd">
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:gbo.ast-itokawa.torino.polarimetry</logical_identifier>
+    <version_id>1.1</version_id>
+    <title>POLARIMETRY OF ASTEROID ITOKAWA</title>
+    <information_model_version>1.10.0.0</information_model_version>
+    <product_class>Product_Bundle</product_class>
+    <Citation_Information>
+      <author_list>Cellino, A.;Yoshida, F.;Anderlucci, E.;Bendjoya, P.;DiMartino, M.;Ishiguro,
+M.;Nakamura, A.M.;Saito, J.</author_list>
+      <publication_year>2007</publication_year>
+      <description>This data set contains the polarimetry  
+        of asteroid 25143 Itokawa published in Cellino et al. (2005).  The    
+        observations were made from June 26 through July 3, 2004 with the     
+        Torino photopolarimeter at the 2.15 m telescope of the El Leoncito    
+        Observatory in Argentina.  The degree of linear polarization was      
+        measured in five filters (Johnson-Cousins UBVRI).</description>
+    </Citation_Information>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2020-02-28</modification_date>
+        <version_id>1.0</version_id>
+        <description>Migrated from EAR-A-I0066-3-ITOKAWAPOL-V1.0</description>
+      </Modification_Detail>
+      <Modification_Detail>
+          <modification_date>2021-05-21</modification_date>
+          <version_id>1.1</version_id>
+          <description>Added target LIDs</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+  <Context_Area>
+    <Time_Coordinates>
+      <start_date_time>2004-06-28T09:32:24Z</start_date_time>
+      <stop_date_time>2004-07-04T08:02:24Z</stop_date_time>
+    </Time_Coordinates>
+    <Primary_Result_Summary>
+      <purpose>Science</purpose>
+      <processing_level>Calibrated</processing_level>
+      <Science_Facets>
+        <wavelength_range>Visible</wavelength_range>
+        <discipline_name>Flux Measurements</discipline_name>
+        <facet1>Polarimetry</facet1>
+      </Science_Facets>
+    </Primary_Result_Summary>
+    <Investigation_Area>
+      <name>None</name>
+      <type>Individual Investigation</type>
+      <Internal_Reference>
+        <lid_reference>urn:nasa:pds:context:investigation:individual.none</lid_reference>
+        <reference_type>bundle_to_investigation</reference_type>
+      </Internal_Reference>
+    </Investigation_Area>
+    <Observing_System>
+      <Observing_System_Component>
+        <name>Torino Photopolarimeter</name>
+        <type>Instrument</type>
+        <description>The description for Torino Photopolarimeter can be found in the document collection
+for this bundle.</description>
+        <Internal_Reference>
+          <lid_reference>urn:nasa:pds:context:instrument:el_leoncito.js2m15.torino_phot</lid_reference>
+          <reference_type>is_instrument</reference_type>
+        </Internal_Reference>
+      </Observing_System_Component>
+      <Observing_System_Component>
+        <name>El Leoncito Astronomical Complex</name>
+        <type>Observatory</type>
+        <description>The description for El Leoncito Astronomical Complex can be found in the document
+collection for this bundle.</description>
+        <Internal_Reference>
+          <lid_reference>urn:nasa:pds:context:facility:observatory.el_leoncito</lid_reference>
+          <reference_type>is_facility</reference_type>
+        </Internal_Reference>
+      </Observing_System_Component>
+      <Observing_System_Component>
+        <name>2.15-m Boller &amp; Chivens reflector at El Leoncito Astronomical Complex</name>
+        <type>Telescope</type>
+        <description>The description for 2.15-m Boller &amp; Chivens reflector at El Leoncito Astronomical
+Complex can be found in the document collection for this bundle.</description>
+        <Internal_Reference>
+          <lid_reference>urn:nasa:pds:context:telescope:el_leoncito.js2m15</lid_reference>
+          <reference_type>is_telescope</reference_type>
+        </Internal_Reference>
+      </Observing_System_Component>
+    </Observing_System>
+    <Target_Identification>
+      <name>(25143) Itokawa</name>
+      <type>Asteroid</type>
+      <Internal_Reference>
+        <lid_reference>urn:nasa:pds:context:target:asteroid.25143_itokawa</lid_reference>
+        <reference_type>bundle_to_target</reference_type>
+      </Internal_Reference>
+    </Target_Identification>
+  </Context_Area>
+  <Bundle>
+    <bundle_type>Archive</bundle_type>
+  </Bundle>
+  <File_Area_Text>
+    <File>
+      <file_name>readme.txt</file_name>
+      <file_size unit="byte">4828</file_size>
+    </File>
+    <Stream_Text>
+      <offset unit="byte">0</offset>
+      <parsing_standard_id>7-Bit ASCII Text</parsing_standard_id>
+      <record_delimiter>Carriage-Return Line-Feed</record_delimiter>
+    </Stream_Text>
+  </File_Area_Text>
+  <Bundle_Member_Entry>
+    <lidvid_reference>urn:nasa:pds:gbo.ast-itokawa.torino.polarimetry:data::2.0</lidvid_reference>
+    <member_status>Primary</member_status>
+    <reference_type>bundle_has_data_collection</reference_type>
+  </Bundle_Member_Entry>
+  <Bundle_Member_Entry>
+    <lidvid_reference>urn:nasa:pds:gbo.ast-itokawa.torino.polarimetry:document::1.1</lidvid_reference>
+    <member_status>Primary</member_status>
+    <reference_type>bundle_has_document_collection</reference_type>
+  </Bundle_Member_Entry>
+</Product_Bundle>
+

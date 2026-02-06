@@ -1,0 +1,34 @@
+{
+  "item_id": "item_016",
+  "seed": 42,
+  "anchors": [
+    {
+      "target": "433 Eros",
+      "photometry": "data/raw/ground_truth/eros/lc.json",
+      "mesh": "data/raw/ground_truth/eros/shape_damit.obj",
+      "source": {
+        "photometry": "DAMIT light_curves/exportAllForAsteroid/1714/json",
+        "mesh": "DAMIT AsteroidModel/3083/shape.obj"
+      }
+    },
+    {
+      "target": "216 Kleopatra",
+      "photometry": "data/raw/ground_truth/kleopatra/lc.json",
+      "mesh": "data/raw/ground_truth/kleopatra/shape_jpl.obj",
+      "mesh_alt": "data/raw/ground_truth/kleopatra/shape_damit.obj",
+      "source": {
+        "photometry": "DAMIT light_curves/exportAllForAsteroid/1044/json",
+        "mesh": "JPL shapes/kleo.obj"
+      }
+    },
+    {
+      "target": "25143 Itokawa",
+      "photometry": "data/raw/ground_truth/itokawa/pds_extract",
+      "mesh": "data/raw/ground_truth/itokawa/shape_jpl.mod",
+      "source": {
+        "photometry": "PDS gbo.ast-itokawa.torino.polarimetry_V1_1.zip",
+        "mesh": "JPL shapes/sf36.v.mod.wf"
+      }
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+Reference List for the POLARIMETRY OF ASTEROID ITOKAWA bundle
+=============================================================
+
+Cellino, A., F. Yoshido, E. Anderlucci, 
+        P. Bendjoya, M. DiMartino, and three others, A polarimetric study of  
+        asteroid 25143 Itokawa, Icarus 179, 297-303, 2005.
+
+Scaltriti, F., V. Piirola, A. Cellino,  
+        E. Anderlucci, L. Corcione, G. Massone, F. Racioppi, and F. Porcu, The
+        UBVRI photopolarimeter of the Torino Astronomical Observatory, Mem.   
+        Soc. Astron. It. 60, 243-246, 1989.
+

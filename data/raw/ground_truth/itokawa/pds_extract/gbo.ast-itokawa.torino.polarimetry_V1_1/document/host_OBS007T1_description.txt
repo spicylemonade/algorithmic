@@ -1,0 +1,27 @@
+EL LEONCITO ASTRONOMICAL COMPLEX 2.15-M 
+        BOLLER & CHIVENS REFLECTOR
+=======================================
+
+  Instrument Host Overview                                                    
+  ========================                                                    
+    Operational 02/1986+                                                      
+                                                                              
+    GROUP                        = OBSERVATORY_PARAMETERS                     
+      OBSERVATORY_ID             = 'OBS007'                                   
+      NAME                       = 'EL LEONCITO ASTRONOMICAL COMPLEX'         
+      COUNTRY                    = 'ARGENTINA'                                
+      ADDRESS                    = 'AVENIDA ESPAQA 1512 SUR\N                 
+                                    CASILLA DE CORREO 467, 5400 SAN           
+    JUAN'                                                                     
+    END_GROUP                    = OBSERVATORY_PARAMETERS                     
+                                                                              
+    GROUP                        = TELESCOPE_PARAMETERS                       
+      TELESCOPE_ID               = 'T1'                                       
+      NAME                       = '2.15-M BOLLER & CHIVENS REFLECTOR'        
+      APERTURE                   = 2.15 <METERS>                              
+      LONGITUDE                  =  -68.699997 /* -68 41 59.99 */             
+      LATITUDE                   =  -30.200834 /* -30 12 03.0 */              
+      ALTITUDE                   = 2552 <METERS>                              
+      COORDINATE_SOURCE          = 'Unknown'                                  
+    END_GROUP                    = TELESCOPE_PARAMETERS
+
