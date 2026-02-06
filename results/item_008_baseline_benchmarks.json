@@ -1,0 +1,87 @@
+{
+  "item_id": "item_008",
+  "seed": 42,
+  "games_total": 1000,
+  "pairwise_results": [
+    {
+      "pair": [
+        "random",
+        "alphabeta"
+      ],
+      "games": 334,
+      "wins": {
+        "random": 99,
+        "alphabeta": 227
+      },
+      "draws": 8,
+      "score": {
+        "random": 0.3083832335329341,
+        "alphabeta": 0.6916167664670658
+      },
+      "elo_delta": {
+        "random": -140.30990207478885,
+        "alphabeta": 140.30990207478885
+      }
+    },
+    {
+      "pair": [
+        "random",
+        "mcts"
+      ],
+      "games": 333,
+      "wins": {
+        "random": 161,
+        "mcts": 166
+      },
+      "draws": 6,
+      "score": {
+        "random": 0.4924924924924925,
+        "mcts": 0.5075075075075075
+      },
+      "elo_delta": {
+        "random": -5.2171426263902285,
+        "mcts": 5.2171426263902285
+      }
+    },
+    {
+      "pair": [
+        "alphabeta",
+        "mcts"
+      ],
+      "games": 333,
+      "wins": {
+        "alphabeta": 223,
+        "mcts": 106
+      },
+      "draws": 4,
+      "score": {
+        "alphabeta": 0.6756756756756757,
+        "mcts": 0.32432432432432434
+      },
+      "elo_delta": {
+        "alphabeta": 127.50350504976511,
+        "mcts": -127.50350504976511
+      }
+    }
+  ],
+  "agent_metrics": {
+    "random": {
+      "mean_score": 0.4002998500749625,
+      "elo_vs_50pct": -70.21949198535488,
+      "nodes_per_sec": 404383.038116886,
+      "games": 667
+    },
+    "alphabeta": {
+      "mean_score": 0.6836581709145427,
+      "elo_vs_50pct": 133.87295494669692,
+      "nodes_per_sec": 346276.1613855756,
+      "games": 667
+    },
+    "mcts": {
+      "mean_score": 0.4159159159159159,
+      "elo_vs_50pct": -58.98793290450367,
+      "nodes_per_sec": 320597.52463386755,
+      "games": 666
+    }
+  }
+}
