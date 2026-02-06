@@ -1,0 +1,24 @@
+{
+  "item_id": "item_023",
+  "snapshots": [
+    {
+      "name": "baseline_benchmark",
+      "script": "scripts/run_item_008_benchmarks.py",
+      "config": {
+        "games_total": 1000,
+        "agents": ["random", "alphabeta_d1", "mcts_s6"],
+        "max_plies": 10,
+        "seed": 42
+      }
+    },
+    {
+      "name": "rated_benchmark",
+      "script": "scripts/run_item_017_benchmark.py",
+      "config": {
+        "games_total": 5000,
+        "time_controls": ["fast", "medium"],
+        "seed": 42
+      }
+    }
+  ]
+}

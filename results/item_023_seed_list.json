@@ -1,0 +1,5 @@
+{
+  "item_id": "item_023",
+  "seed_list": [42, 43, 44, 45, 46],
+  "policy": "use 42 for canonical runs; others for robustness checks"
+}

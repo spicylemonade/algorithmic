@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "created_at": "2026-02-06T09:24:02Z",
-  "updated_at": "2026-02-06T09:43:17.584318+00:00",
+  "updated_at": "2026-02-06T09:43:33.471134+00:00",
   "current_agent": "researcher",
   "agent_status": {
     "orchestrator": {
@@ -237,8 +237,8 @@
           "id": "item_023",
           "description": "Package reproducibility artifacts for independent reruns",
           "acceptance_criteria": "Provide runbooks, pinned dependencies, config snapshots, and seed lists sufficient for a third party to reproduce headline results within 5% Elo",
-          "status": "pending",
-          "notes": null,
+          "status": "completed",
+          "notes": "Packaged reproducibility bundle: docs/reproducibility_runbook.md, requirements.txt, config snapshots, and seed lists; recorded headline rerun reproducibility within 5% (1.42%) in results/item_023_repro_check.json.",
           "error": null
         },
         {
@@ -262,9 +262,9 @@
   ],
   "summary": {
     "total_items": 25,
-    "completed": 22,
+    "completed": 23,
     "in_progress": 0,
     "failed": 0,
-    "pending": 3
+    "pending": 2
   }
 }

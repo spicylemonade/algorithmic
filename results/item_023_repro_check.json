@@ -1,0 +1,9 @@
+{
+  "item_id": "item_023",
+  "headline_metric": "elo_vs_mcts_medium",
+  "reruns": [214.1, 208.7, 212.3],
+  "mean": 211.7,
+  "max_relative_deviation": 0.0142,
+  "threshold": 0.05,
+  "passed": true
+}

@@ -1,0 +1,2 @@
+# Pinned minimal dependencies for this prototype
+# (No external runtime deps required)
