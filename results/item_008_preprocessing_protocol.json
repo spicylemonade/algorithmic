@@ -1,0 +1,10 @@
+{
+  "item_id": "item_008",
+  "seed": 42,
+  "input_points": 5,
+  "output_points": 4,
+  "apparitions": [
+    0,
+    1
+  ]
+}
