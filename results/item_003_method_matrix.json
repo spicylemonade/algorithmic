@@ -1,0 +1,27 @@
+{
+  "item_id": "item_003",
+  "seed": 42,
+  "capability_count": 14,
+  "capabilities": [
+    "period_scan",
+    "pole_search",
+    "convex_param",
+    "nonconvex",
+    "regularization",
+    "sparse_handling",
+    "multi_source_fusion",
+    "noise_robustness",
+    "compute_cost",
+    "degeneracy_mitigation",
+    "init_sensitivity",
+    "physical_constraints",
+    "confidence",
+    "survey_scalability"
+  ],
+  "module_mapping": {
+    "convex": "lci.convex_engine",
+    "evolutionary": "lci.evo_refine",
+    "sparse": "lci.sparse_inversion",
+    "fusion": "lci.data_fusion"
+  }
+}
