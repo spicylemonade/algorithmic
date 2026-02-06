@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "created_at": "2026-02-06T09:24:02Z",
-  "updated_at": "2026-02-06T09:41:39.527700+00:00",
+  "updated_at": "2026-02-06T09:41:57.941481+00:00",
   "current_agent": "researcher",
   "agent_status": {
     "orchestrator": {
@@ -190,8 +190,8 @@
           "id": "item_018",
           "description": "Evaluate sample efficiency and compute efficiency tradeoffs",
           "acceptance_criteria": "Produce curves for Elo vs self-play games and Elo vs GPU-hours; identify Pareto frontier and select best operating point under predefined budget",
-          "status": "pending",
-          "notes": null,
+          "status": "completed",
+          "notes": "Produced Elo-vs-selfplay/Elo-vs-GPU-hours tradeoff dataset in results/item_018_efficiency_tradeoffs.json; extracted Pareto frontier and selected best operating point under 70 GPU-hour budget, with visualization in figures/item_018_efficiency_frontier.png.",
           "error": null
         },
         {
@@ -262,9 +262,9 @@
   ],
   "summary": {
     "total_items": 25,
-    "completed": 17,
+    "completed": 18,
     "in_progress": 0,
     "failed": 0,
-    "pending": 8
+    "pending": 7
   }
 }

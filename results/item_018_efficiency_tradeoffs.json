@@ -1,0 +1,165 @@
+{
+  "item_id": "item_018",
+  "seed": 42,
+  "points": [
+    {
+      "checkpoint": 1,
+      "selfplay_games": 100000,
+      "gpu_hours": 8.558,
+      "elo": 1208.5
+    },
+    {
+      "checkpoint": 2,
+      "selfplay_games": 200000,
+      "gpu_hours": 15.1,
+      "elo": 1227.764
+    },
+    {
+      "checkpoint": 3,
+      "selfplay_games": 300000,
+      "gpu_hours": 24.946,
+      "elo": 1249.839
+    },
+    {
+      "checkpoint": 4,
+      "selfplay_games": 400000,
+      "gpu_hours": 33.569,
+      "elo": 1249.098
+    },
+    {
+      "checkpoint": 5,
+      "selfplay_games": 500000,
+      "gpu_hours": 39.688,
+      "elo": 1257.351
+    },
+    {
+      "checkpoint": 6,
+      "selfplay_games": 600000,
+      "gpu_hours": 46.875,
+      "elo": 1274.849
+    },
+    {
+      "checkpoint": 7,
+      "selfplay_games": 700000,
+      "gpu_hours": 54.106,
+      "elo": 1275.508
+    },
+    {
+      "checkpoint": 8,
+      "selfplay_games": 800000,
+      "gpu_hours": 64.6,
+      "elo": 1288.2
+    },
+    {
+      "checkpoint": 9,
+      "selfplay_games": 900000,
+      "gpu_hours": 70.882,
+      "elo": 1293.991
+    },
+    {
+      "checkpoint": 10,
+      "selfplay_games": 1000000,
+      "gpu_hours": 81.238,
+      "elo": 1286.505
+    },
+    {
+      "checkpoint": 11,
+      "selfplay_games": 1100000,
+      "gpu_hours": 89.223,
+      "elo": 1303.882
+    },
+    {
+      "checkpoint": 12,
+      "selfplay_games": 1200000,
+      "gpu_hours": 95.361,
+      "elo": 1296.041
+    },
+    {
+      "checkpoint": 13,
+      "selfplay_games": 1300000,
+      "gpu_hours": 105.829,
+      "elo": 1302.223
+    },
+    {
+      "checkpoint": 14,
+      "selfplay_games": 1400000,
+      "gpu_hours": 110.371,
+      "elo": 1299.602
+    },
+    {
+      "checkpoint": 15,
+      "selfplay_games": 1500000,
+      "gpu_hours": 121.39,
+      "elo": 1311.592
+    }
+  ],
+  "pareto_frontier": [
+    {
+      "checkpoint": 1,
+      "selfplay_games": 100000,
+      "gpu_hours": 8.558,
+      "elo": 1208.5
+    },
+    {
+      "checkpoint": 2,
+      "selfplay_games": 200000,
+      "gpu_hours": 15.1,
+      "elo": 1227.764
+    },
+    {
+      "checkpoint": 3,
+      "selfplay_games": 300000,
+      "gpu_hours": 24.946,
+      "elo": 1249.839
+    },
+    {
+      "checkpoint": 5,
+      "selfplay_games": 500000,
+      "gpu_hours": 39.688,
+      "elo": 1257.351
+    },
+    {
+      "checkpoint": 6,
+      "selfplay_games": 600000,
+      "gpu_hours": 46.875,
+      "elo": 1274.849
+    },
+    {
+      "checkpoint": 7,
+      "selfplay_games": 700000,
+      "gpu_hours": 54.106,
+      "elo": 1275.508
+    },
+    {
+      "checkpoint": 8,
+      "selfplay_games": 800000,
+      "gpu_hours": 64.6,
+      "elo": 1288.2
+    },
+    {
+      "checkpoint": 9,
+      "selfplay_games": 900000,
+      "gpu_hours": 70.882,
+      "elo": 1293.991
+    },
+    {
+      "checkpoint": 11,
+      "selfplay_games": 1100000,
+      "gpu_hours": 89.223,
+      "elo": 1303.882
+    },
+    {
+      "checkpoint": 15,
+      "selfplay_games": 1500000,
+      "gpu_hours": 121.39,
+      "elo": 1311.592
+    }
+  ],
+  "budget_gpu_hours": 70.0,
+  "selected_operating_point": {
+    "checkpoint": 8,
+    "selfplay_games": 800000,
+    "gpu_hours": 64.6,
+    "elo": 1288.2
+  }
+}
