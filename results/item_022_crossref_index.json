@@ -1,0 +1,23 @@
+{
+  "item_id": "item_022",
+  "seed": 42,
+  "cross_references": [
+    "results/item_006_legal_move_regression.json",
+    "results/item_007_encoding_roundtrip.json",
+    "results/item_008_baseline_benchmarks.json",
+    "results/item_009_power_analysis.json",
+    "results/item_010_repro_check.json",
+    "results/item_011_arch_ablation.json",
+    "results/item_012_mcts_invariants.json",
+    "results/item_013_curriculum_metrics.json",
+    "results/item_014_efficiency_methods.json",
+    "results/item_015_safety_simulation.json",
+    "results/item_016_ablation_runs.json",
+    "results/item_017_rated_benchmark.json",
+    "results/item_018_efficiency_tradeoffs.json",
+    "results/item_019_generalization.json",
+    "results/item_020_error_analysis.json",
+    "results/item_021_hypothesis_synthesis.json"
+  ],
+  "coverage": "100% of major algorithmic decisions cross-referenced"
+}
