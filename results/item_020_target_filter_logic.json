@@ -1,0 +1,19 @@
+{
+  "item_id": "item_020",
+  "seed": 42,
+  "generated_at": "2026-02-06T22:21:36.119366+00:00",
+  "boolean_logic": "(is_neo OR diameter_km>100) AND (lcdb_u>=2) AND (NOT in_damit) AND (dense_lightcurves>20 OR (sparse_points>100 AND apparitions>3))",
+  "sample_input_count": 4,
+  "sample_selected": [
+    "A",
+    "B"
+  ],
+  "acceptance_check": {
+    "formal_boolean_filter_implemented": true,
+    "priority_1": true,
+    "priority_2": true,
+    "priority_3": true,
+    "priority_4": true,
+    "criteria_met": true
+  }
+}
