@@ -1,0 +1,18 @@
+{
+  "item_id": "item_006",
+  "seed": 42,
+  "interfaces": [
+    "ForwardModel.predict_magnitude(obs, params) -> float",
+    "GradientEvaluator.finite_difference(observations, params) -> list[float]",
+    "ConvexOptimizer.run(observations, init_params) -> ConvexParams",
+    "ConvexOptimizer.to_mesh(params, n_lon, n_lat) -> Mesh"
+  ],
+  "data_flow": [
+    "observations",
+    "forward_model",
+    "residuals",
+    "gradient",
+    "optimizer",
+    "mesh"
+  ]
+}
