@@ -1,0 +1,97 @@
+{
+  "seed": 42,
+  "n_targets": 9,
+  "runs": [
+    {
+      "number": 1,
+      "name": "Ceres",
+      "n_obs": 30,
+      "runtime_sec": 1.346073865890503,
+      "convex_loss": 87734690639.55699,
+      "evo_loss": 87734405605.6671,
+      "converged": true,
+      "generations": 6
+    },
+    {
+      "number": 4,
+      "name": "Vesta",
+      "n_obs": 30,
+      "runtime_sec": 1.343113899230957,
+      "convex_loss": 2494012240.149529,
+      "evo_loss": 2493964374.192223,
+      "converged": true,
+      "generations": 6
+    },
+    {
+      "number": 16,
+      "name": "Psyche",
+      "n_obs": 30,
+      "runtime_sec": 1.344881296157837,
+      "convex_loss": 119412954.50100355,
+      "evo_loss": 119402455.76232491,
+      "converged": true,
+      "generations": 6
+    },
+    {
+      "number": 21,
+      "name": "Lutetia",
+      "n_obs": 30,
+      "runtime_sec": 1.3402447700500488,
+      "convex_loss": 0.9995027943695102,
+      "evo_loss": 0.8067595760933493,
+      "converged": true,
+      "generations": 6
+    },
+    {
+      "number": 22,
+      "name": "Kalliope",
+      "n_obs": 30,
+      "runtime_sec": 1.3444421291351318,
+      "convex_loss": 47879597.0899709,
+      "evo_loss": 47873375.86710671,
+      "converged": true,
+      "generations": 6
+    },
+    {
+      "number": 45,
+      "name": "Eugenia",
+      "n_obs": 30,
+      "runtime_sec": 1.3413825035095215,
+      "convex_loss": 80206912.97086696,
+      "evo_loss": 80198863.58908495,
+      "converged": true,
+      "generations": 6
+    },
+    {
+      "number": 87,
+      "name": "Sylvia",
+      "n_obs": 30,
+      "runtime_sec": 1.3447566032409668,
+      "convex_loss": 286599072.08183986,
+      "evo_loss": 286582865.37480575,
+      "converged": true,
+      "generations": 6
+    },
+    {
+      "number": 216,
+      "name": "Kleopatra",
+      "n_obs": 30,
+      "runtime_sec": 1.3449718952178955,
+      "convex_loss": 34577490.20843548,
+      "evo_loss": 34571842.15349809,
+      "converged": true,
+      "generations": 6
+    },
+    {
+      "number": 97,
+      "name": "Klotho",
+      "n_obs": 30,
+      "runtime_sec": 1.3441627025604248,
+      "convex_loss": 205937.30574527857,
+      "evo_loss": 205516.11192778606,
+      "converged": true,
+      "generations": 6
+    }
+  ],
+  "blind_policy": "Solver initialization is generic sphere; ground-truth mesh only used for synthetic observation generation."
+}
