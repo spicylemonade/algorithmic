@@ -1,0 +1,26 @@
+{
+  "item": "item_002",
+  "seed": 42,
+  "definitions": {
+    "state": "(U_t, p_t, h_t) multiverse timeline set, side-to-move, and history",
+    "action": "(src timeline/time/square -> dst timeline/time/square, promotion)",
+    "transition": "legal move application with branch generation and frontier update",
+    "termination": "checkmate/stalemate/repetition/extended 50-move conditions",
+    "scoring": "win=1, draw=0, loss=-1"
+  },
+  "complexity_drivers": [
+    "spacetime action-space explosion",
+    "dynamic timeline creation",
+    "asynchronous branch depth",
+    "causal consistency constraints",
+    "multi-present-board evaluation",
+    "cross-history transpositions",
+    "long-horizon temporal credit assignment",
+    "cross-board king-safety legality",
+    "sparse high-dimensional state encoding",
+    "weakened symmetry exploitation",
+    "timeline-level compute allocation",
+    "composite terminal detection"
+  ],
+  "driver_count": 12
+}
