@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "created_at": "2026-02-06T23:48:57Z",
-  "updated_at": "2026-02-06T23:50:14.646335+00:00",
+  "updated_at": "2026-02-06T23:50:40.173520+00:00",
   "current_agent": "researcher",
   "agent_status": {
     "orchestrator": {
@@ -41,8 +41,8 @@
           "id": "item_002",
           "description": "Formalize the inverse problem and observability limits",
           "acceptance_criteria": "Write equations and assumptions for spin state, period, scattering, and shape recovery; include at least 6 explicit identifiability risks for sparse photometry",
-          "status": "pending",
-          "notes": null,
+          "status": "completed",
+          "notes": "Documented inverse problem equations/assumptions in docs/inverse_problem.md and recorded structured model in results/item_002_inverse_problem.json including 10 explicit sparse-photometry identifiability risks.",
           "error": null
         },
         {
@@ -262,9 +262,9 @@
   ],
   "summary": {
     "total_items": 25,
-    "completed": 1,
+    "completed": 2,
     "in_progress": 0,
     "failed": 0,
-    "pending": 24
+    "pending": 23
   }
 }

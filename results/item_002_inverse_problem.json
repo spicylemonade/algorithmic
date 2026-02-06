@@ -1,0 +1,29 @@
+{
+  "item_id": "item_002",
+  "seed": 42,
+  "equations": {
+    "parameters": [
+      "P",
+      "lambda",
+      "beta",
+      "phi0",
+      "shape_coeffs",
+      "scattering",
+      "regularization"
+    ],
+    "forward_model": "mhat = m0 - 2.5*log10(L+eps)",
+    "loss": "weighted_huber + smoothness + concavity + physical"
+  },
+  "identifiability_risks": [
+    "period_aliasing",
+    "mirror_pole_degeneracy",
+    "shape_spin_coupling",
+    "phase_angle_compression",
+    "apparition_imbalance",
+    "cross_survey_calibration_shift",
+    "albedo_shape_confounding",
+    "time_system_mismatch",
+    "concavity_underconstraint",
+    "photometric_outliers"
+  ]
+}
