@@ -1,0 +1,29 @@
+{
+  "item_id": "item_002",
+  "seed": 42,
+  "generated_at": "2026-02-06T22:11:59.958119+00:00",
+  "quantitative_goals": {
+    "sparse_inversion_accuracy_target": {
+      "combined_deviation_max_percent": 5.0,
+      "components": [
+        "normalized Hausdorff",
+        "1-Volumetric IoU"
+      ]
+    },
+    "runtime_budget": {
+      "per_target_cpu_hours_max": 6.0,
+      "full_top50_gpu_hours_max": 240
+    },
+    "confidence_threshold": {
+      "min_model_confidence": 0.85,
+      "min_bootstrap_pole_agreement_deg": 15,
+      "min_iou": 0.8
+    }
+  },
+  "acceptance_check": {
+    "has_accuracy_target": true,
+    "has_runtime_budget": true,
+    "has_confidence_threshold": true,
+    "criteria_met": true
+  }
+}
