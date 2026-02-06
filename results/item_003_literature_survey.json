@@ -1,0 +1,24 @@
+{
+  "seed": 42,
+  "reference_count": 12,
+  "references": [
+    {"id": 1, "title": "Mastering the game of Go with deep neural networks and tree search", "year": 2016},
+    {"id": 2, "title": "Mastering the game of Go without human knowledge", "year": 2017},
+    {"id": 3, "title": "A general reinforcement learning algorithm that masters chess, shogi, and Go", "year": 2018},
+    {"id": 4, "title": "Mastering Atari, Go, chess and shogi by planning with a learned model", "year": 2020},
+    {"id": 5, "title": "ELF OpenGo", "year": 2019},
+    {"id": 6, "title": "Thinking Fast and Slow with Deep Learning and Tree Search", "year": 2017},
+    {"id": 7, "title": "Learning and Planning in Complex Action Spaces", "year": 2021},
+    {"id": 8, "title": "Monte-Carlo Tree Search as Regularized Policy Optimization", "year": 2020},
+    {"id": 9, "title": "Monte Carlo Search for Very Large Action Spaces", "year": 2022},
+    {"id": 10, "title": "Mastering Chinese Chess and Beyond from Self-Play", "year": 2021},
+    {"id": 11, "title": "EfficientZero", "year": 2021},
+    {"id": 12, "title": "Online and Offline Reinforcement Learning by Planning with a Learned Model", "year": 2021}
+  ],
+  "design_choices": {
+    "policy_targets": "MCTS visit counts with legality masking",
+    "value_targets": "terminal z with optional bootstrap blend",
+    "mcts_variants": ["PUCT", "progressive widening", "Gumbel-style selection"],
+    "self_play_regimes": ["asynchronous distributed workers", "arena-gated promotion", "freshness-constrained replay"]
+  }
+}

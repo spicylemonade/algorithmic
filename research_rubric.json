@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "created_at": "2026-02-06T08:07:25Z",
-  "updated_at": "2026-02-06T08:09:42.004641+00:00",
+  "updated_at": "2026-02-06T08:10:12.259795+00:00",
   "current_agent": "researcher",
   "agent_status": {
     "orchestrator": {
@@ -49,8 +49,8 @@
           "id": "item_003",
           "description": "Survey AlphaGo/AlphaZero-style search-learning paradigms",
           "acceptance_criteria": "Summarize at least 10 primary references and extract design choices for policy/value targets, MCTS variants, and self-play regimes",
-          "status": "pending",
-          "notes": null,
+          "status": "completed",
+          "notes": "Surveyed 12 primary AlphaGo/AlphaZero/MuZero-family references and extracted design choices for policy/value targets, MCTS variants, and self-play regimes in docs/literature_alphago_az_survey.md and results/item_003_literature_survey.json.",
           "error": null
         },
         {
@@ -262,9 +262,9 @@
   ],
   "summary": {
     "total_items": 25,
-    "completed": 2,
+    "completed": 3,
     "in_progress": 0,
     "failed": 0,
-    "pending": 23
+    "pending": 22
   }
 }
