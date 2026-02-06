@@ -1,0 +1,66 @@
+[
+  {
+    "function": "<built-in method math.cos>@~:0",
+    "cumtime": 0.001227512
+  },
+  {
+    "function": "<built-in method math.log10>@~:0",
+    "cumtime": 0.001169383
+  },
+  {
+    "function": "<method 'disable' of '_lsprof.Profiler' objects>@~:0",
+    "cumtime": 3.89e-07
+  },
+  {
+    "function": "<built-in method builtins.abs>@~:0",
+    "cumtime": 0.002285615
+  },
+  {
+    "function": "<built-in method builtins.len>@~:0",
+    "cumtime": 4.8200000000000004e-06
+  },
+  {
+    "function": "<built-in method builtins.max>@~:0",
+    "cumtime": 0.0018546460000000002
+  },
+  {
+    "function": "<built-in method builtins.sum>@~:0",
+    "cumtime": 0.015032906
+  },
+  {
+    "function": "<method 'append' of 'list' objects>@~:0",
+    "cumtime": 2.426e-05
+  },
+  {
+    "function": "synthetic_observations@/home/codex/work/repo/./scripts/profile_plan.py:11",
+    "cumtime": 0.0005809130000000001
+  },
+  {
+    "function": "run_once@/home/codex/work/repo/./scripts/profile_plan.py:26",
+    "cumtime": 0.036419014
+  },
+  {
+    "function": "<genexpr>@/home/codex/work/repo/src/lci/convex_engine.py:14",
+    "cumtime": 0.009082340000000001
+  },
+  {
+    "function": "finite_difference@/home/codex/work/repo/src/lci/convex_engine.py:24",
+    "cumtime": 0.033832774
+  },
+  {
+    "function": "predict_magnitude@/home/codex/work/repo/src/lci/convex_engine.py:12",
+    "cumtime": 0.032134826000000005
+  },
+  {
+    "function": "__init__@<string>:2",
+    "cumtime": 7.7e-07
+  },
+  {
+    "function": "_loss@/home/codex/work/repo/src/lci/convex_engine.py:41",
+    "cumtime": 0.035725013
+  },
+  {
+    "function": "run@/home/codex/work/repo/src/lci/convex_engine.py:56",
+    "cumtime": 0.035826906000000006
+  }
+]
