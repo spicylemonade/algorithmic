@@ -1,0 +1,257 @@
+{
+  "item_id": "item_022",
+  "seed": 42,
+  "count": 50,
+  "entries": [
+    {
+      "rank": 1,
+      "object_id": "50124",
+      "dir": "results/candidate_models/rank_01_50124"
+    },
+    {
+      "rank": 2,
+      "object_id": "50230",
+      "dir": "results/candidate_models/rank_02_50230"
+    },
+    {
+      "rank": 3,
+      "object_id": "50253",
+      "dir": "results/candidate_models/rank_03_50253"
+    },
+    {
+      "rank": 4,
+      "object_id": "50020",
+      "dir": "results/candidate_models/rank_04_50020"
+    },
+    {
+      "rank": 5,
+      "object_id": "50077",
+      "dir": "results/candidate_models/rank_05_50077"
+    },
+    {
+      "rank": 6,
+      "object_id": "50263",
+      "dir": "results/candidate_models/rank_06_50263"
+    },
+    {
+      "rank": 7,
+      "object_id": "50070",
+      "dir": "results/candidate_models/rank_07_50070"
+    },
+    {
+      "rank": 8,
+      "object_id": "50130",
+      "dir": "results/candidate_models/rank_08_50130"
+    },
+    {
+      "rank": 9,
+      "object_id": "50291",
+      "dir": "results/candidate_models/rank_09_50291"
+    },
+    {
+      "rank": 10,
+      "object_id": "50131",
+      "dir": "results/candidate_models/rank_10_50131"
+    },
+    {
+      "rank": 11,
+      "object_id": "50282",
+      "dir": "results/candidate_models/rank_11_50282"
+    },
+    {
+      "rank": 12,
+      "object_id": "50157",
+      "dir": "results/candidate_models/rank_12_50157"
+    },
+    {
+      "rank": 13,
+      "object_id": "50183",
+      "dir": "results/candidate_models/rank_13_50183"
+    },
+    {
+      "rank": 14,
+      "object_id": "50022",
+      "dir": "results/candidate_models/rank_14_50022"
+    },
+    {
+      "rank": 15,
+      "object_id": "50319",
+      "dir": "results/candidate_models/rank_15_50319"
+    },
+    {
+      "rank": 16,
+      "object_id": "50313",
+      "dir": "results/candidate_models/rank_16_50313"
+    },
+    {
+      "rank": 17,
+      "object_id": "50201",
+      "dir": "results/candidate_models/rank_17_50201"
+    },
+    {
+      "rank": 18,
+      "object_id": "50023",
+      "dir": "results/candidate_models/rank_18_50023"
+    },
+    {
+      "rank": 19,
+      "object_id": "50051",
+      "dir": "results/candidate_models/rank_19_50051"
+    },
+    {
+      "rank": 20,
+      "object_id": "50073",
+      "dir": "results/candidate_models/rank_20_50073"
+    },
+    {
+      "rank": 21,
+      "object_id": "50310",
+      "dir": "results/candidate_models/rank_21_50310"
+    },
+    {
+      "rank": 22,
+      "object_id": "50255",
+      "dir": "results/candidate_models/rank_22_50255"
+    },
+    {
+      "rank": 23,
+      "object_id": "50175",
+      "dir": "results/candidate_models/rank_23_50175"
+    },
+    {
+      "rank": 24,
+      "object_id": "50015",
+      "dir": "results/candidate_models/rank_24_50015"
+    },
+    {
+      "rank": 25,
+      "object_id": "50220",
+      "dir": "results/candidate_models/rank_25_50220"
+    },
+    {
+      "rank": 26,
+      "object_id": "50071",
+      "dir": "results/candidate_models/rank_26_50071"
+    },
+    {
+      "rank": 27,
+      "object_id": "50236",
+      "dir": "results/candidate_models/rank_27_50236"
+    },
+    {
+      "rank": 28,
+      "object_id": "50279",
+      "dir": "results/candidate_models/rank_28_50279"
+    },
+    {
+      "rank": 29,
+      "object_id": "50135",
+      "dir": "results/candidate_models/rank_29_50135"
+    },
+    {
+      "rank": 30,
+      "object_id": "50061",
+      "dir": "results/candidate_models/rank_30_50061"
+    },
+    {
+      "rank": 31,
+      "object_id": "50260",
+      "dir": "results/candidate_models/rank_31_50260"
+    },
+    {
+      "rank": 32,
+      "object_id": "50290",
+      "dir": "results/candidate_models/rank_32_50290"
+    },
+    {
+      "rank": 33,
+      "object_id": "50174",
+      "dir": "results/candidate_models/rank_33_50174"
+    },
+    {
+      "rank": 34,
+      "object_id": "50099",
+      "dir": "results/candidate_models/rank_34_50099"
+    },
+    {
+      "rank": 35,
+      "object_id": "50123",
+      "dir": "results/candidate_models/rank_35_50123"
+    },
+    {
+      "rank": 36,
+      "object_id": "50102",
+      "dir": "results/candidate_models/rank_36_50102"
+    },
+    {
+      "rank": 37,
+      "object_id": "50088",
+      "dir": "results/candidate_models/rank_37_50088"
+    },
+    {
+      "rank": 38,
+      "object_id": "50079",
+      "dir": "results/candidate_models/rank_38_50079"
+    },
+    {
+      "rank": 39,
+      "object_id": "50118",
+      "dir": "results/candidate_models/rank_39_50118"
+    },
+    {
+      "rank": 40,
+      "object_id": "50267",
+      "dir": "results/candidate_models/rank_40_50267"
+    },
+    {
+      "rank": 41,
+      "object_id": "50222",
+      "dir": "results/candidate_models/rank_41_50222"
+    },
+    {
+      "rank": 42,
+      "object_id": "50196",
+      "dir": "results/candidate_models/rank_42_50196"
+    },
+    {
+      "rank": 43,
+      "object_id": "50138",
+      "dir": "results/candidate_models/rank_43_50138"
+    },
+    {
+      "rank": 44,
+      "object_id": "50093",
+      "dir": "results/candidate_models/rank_44_50093"
+    },
+    {
+      "rank": 45,
+      "object_id": "50039",
+      "dir": "results/candidate_models/rank_45_50039"
+    },
+    {
+      "rank": 46,
+      "object_id": "50072",
+      "dir": "results/candidate_models/rank_46_50072"
+    },
+    {
+      "rank": 47,
+      "object_id": "50180",
+      "dir": "results/candidate_models/rank_47_50180"
+    },
+    {
+      "rank": 48,
+      "object_id": "50006",
+      "dir": "results/candidate_models/rank_48_50006"
+    },
+    {
+      "rank": 49,
+      "object_id": "50247",
+      "dir": "results/candidate_models/rank_49_50247"
+    },
+    {
+      "rank": 50,
+      "object_id": "50170",
+      "dir": "results/candidate_models/rank_50_50170"
+    }
+  ]
+}
