@@ -1,0 +1,17 @@
+{
+  "seed": 42,
+  "objective": "Build a custom light-curve inversion pipeline optimized for sparse photometry and non-convex asteroid morphology.",
+  "targets": {
+    "shape_deviation_max": 0.05,
+    "sparse_pole_recovery_min": 0.8,
+    "ranking_precision_at_50_min": 0.7,
+    "rerun_variance_max": 0.01
+  },
+  "metrics": [
+    "normalized_hausdorff",
+    "volumetric_iou",
+    "lightcurve_rmse",
+    "pole_angle_error_deg",
+    "confidence_score"
+  ]
+}
