@@ -1,0 +1,14 @@
+{
+  "seed": 42,
+  "equations": {
+    "selection": "Q + c_puct * P * sqrt(N_parent)/(1+N_child)",
+    "progressive_widening": "expanded_actions <= k * N^alpha",
+    "backprop": "running_mean_update_with_perspective_flip"
+  },
+  "enhancements": [
+    {"name": "progressive_widening", "expected_impact": "35-50% fewer low-value expansions"},
+    {"name": "virtual_loss", "expected_impact": "1.4-1.8x parallel scaling efficiency"},
+    {"name": "legality_pruning", "expected_impact": "20-30% budget reallocation to legal actions"},
+    {"name": "timeline_transposition_table", "expected_impact": "10-25% effective depth gain"}
+  ]
+}
