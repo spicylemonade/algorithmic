@@ -1,0 +1,50 @@
+{
+  "item_id": "item_001",
+  "generated_at": "2026-02-06T22:11:43.047931+00:00",
+  "seed": 42,
+  "artifacts": [
+    {
+      "path": "main.py",
+      "purpose": "Primary executable entry point for orchestrating pipeline phases.",
+      "dependency_assumptions": [
+        "Will import pipeline package modules once implemented",
+        "CLI/runtime parameters will be forwarded to experiment runner"
+      ]
+    },
+    {
+      "path": "TASK_orchestrator.md",
+      "purpose": "Expected orchestration handoff/task definition artifact (referenced in rubric acceptance criteria).",
+      "dependency_assumptions": [
+        "Currently missing in repository",
+        "Research workflow assumes orchestrator status is represented in research_rubric.json as fallback"
+      ]
+    },
+    {
+      "path": "figures/",
+      "purpose": "Store reproducible PNG figures for diagnostics, benchmarks, and ranking plots.",
+      "dependency_assumptions": [
+        "PNG format required by task",
+        "Files should be derivable from JSON results using fixed seed=42"
+      ]
+    },
+    {
+      "path": "results/",
+      "purpose": "Store structured experiment outputs, metrics, and synthesis notes as JSON.",
+      "dependency_assumptions": [
+        "Each rubric item should emit at least one JSON artifact",
+        "Schema must include item_id, acceptance checks, and provenance"
+      ]
+    }
+  ],
+  "workflow_entry_points": [
+    "main.py",
+    "research_rubric.json state machine"
+  ],
+  "acceptance_check": {
+    "covers_main_py": true,
+    "covers_task_orchestrator_md": true,
+    "covers_figures_dir": true,
+    "covers_results_dir": true,
+    "criteria_met": true
+  }
+}
