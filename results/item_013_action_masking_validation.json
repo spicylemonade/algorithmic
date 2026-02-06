@@ -1,0 +1,19 @@
+{
+  "seed": 42,
+  "factorized_dims": {
+    "src_timeline": 2,
+    "src_time": 3,
+    "src_square": 64,
+    "dst_timeline": 2,
+    "dst_time": 3,
+    "dst_square": 64,
+    "promotion": 5
+  },
+  "validation": {
+    "action_dim": 128,
+    "illegal_action_count": 19,
+    "illegal_probability_mass": 0.0,
+    "legal_probability_mass": 1.0000000000000004,
+    "passes_zero_illegal_mass": true
+  }
+}
