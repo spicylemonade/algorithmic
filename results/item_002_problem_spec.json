@@ -1,0 +1,16 @@
+{
+  "item_id": "item_002",
+  "seed": 42,
+  "artifact": "docs/5d_problem_spec.md",
+  "worked_examples": 3,
+  "sections": [
+    "objective",
+    "state",
+    "action_space",
+    "transition_function",
+    "reward_function",
+    "terminal_conditions",
+    "tie_breaking"
+  ],
+  "acceptance_check": "met"
+}
