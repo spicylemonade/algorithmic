@@ -1,0 +1,55 @@
+{
+  "item_id": "item_004",
+  "seed": 42,
+  "canonical_fields": 18,
+  "source_contracts": {
+    "alcdef": [
+      "object_id",
+      "utc_jd",
+      "mag",
+      "mag_sigma",
+      "filter_band",
+      "observer_code"
+    ],
+    "pds": [
+      "utc_jd",
+      "mag|flux",
+      "mag_sigma",
+      "phase_angle_deg"
+    ],
+    "gaia_dr3": [
+      "source_id",
+      "epoch",
+      "phot_g_mean_flux",
+      "phot_g_mean_flux_error"
+    ],
+    "ztf": [
+      "mjd",
+      "mag",
+      "magerr",
+      "filter_band"
+    ],
+    "panstarrs": [
+      "epoch",
+      "mag",
+      "mag_sigma",
+      "filter_band"
+    ],
+    "mpc": [
+      "object_id",
+      "orbit_elements",
+      "epoch"
+    ],
+    "damit": [
+      "vertices",
+      "faces",
+      "pole",
+      "period"
+    ],
+    "jpl_radar": [
+      "vertices",
+      "faces",
+      "spin_meta"
+    ]
+  }
+}
