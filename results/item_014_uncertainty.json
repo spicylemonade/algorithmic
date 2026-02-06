@@ -1,0 +1,13 @@
+{
+  "item_id": "item_014",
+  "seed": 42,
+  "intervals": {
+    "period_p05": 8.05,
+    "period_p95": 8.25,
+    "lambda_p05": 119.5,
+    "lambda_p95": 121.5,
+    "beta_p05": -20.5,
+    "beta_p95": -18.5,
+    "confidence_score": 0.7812500000000004
+  }
+}

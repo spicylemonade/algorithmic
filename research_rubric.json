@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "created_at": "2026-02-06T23:48:57Z",
-  "updated_at": "2026-02-06T23:54:10.862107+00:00",
+  "updated_at": "2026-02-06T23:54:26.304229+00:00",
   "current_agent": "researcher",
   "agent_status": {
     "orchestrator": {
@@ -151,8 +151,8 @@
           "id": "item_014",
           "description": "Define uncertainty quantification and confidence scoring",
           "acceptance_criteria": "Specify bootstrap or posterior sampling plan producing confidence intervals for period, pole, and mesh metrics; require calibrated confidence score in [0,1]",
-          "status": "pending",
-          "notes": null,
+          "status": "completed",
+          "notes": "Implemented bootstrap uncertainty estimation in src/lci/uncertainty.py with p05/p95 intervals for period/pole and calibrated confidence score in [0,1]; documented protocol in docs/uncertainty_confidence.md; stored example output in results/item_014_uncertainty.json.",
           "error": null
         },
         {
@@ -262,9 +262,9 @@
   ],
   "summary": {
     "total_items": 25,
-    "completed": 13,
+    "completed": 14,
     "in_progress": 0,
     "failed": 0,
-    "pending": 12
+    "pending": 11
   }
 }
