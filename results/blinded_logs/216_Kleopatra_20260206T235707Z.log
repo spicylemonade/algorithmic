@@ -1,0 +1,9 @@
+timestamp_utc=2026-02-06T23:57:07.491082+00:00
+target=216_Kleopatra
+seed=42
+blinded=true
+photometry_path=data/raw/ground_truth/kleopatra/lc.json
+reference_mesh_accessed=false
+n_obs=55
+rms=0.082006
+output_mesh=data/processed/blinded_runs/216_Kleopatra_predicted.obj

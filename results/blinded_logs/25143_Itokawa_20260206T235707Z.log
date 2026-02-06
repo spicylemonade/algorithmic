@@ -1,0 +1,9 @@
+timestamp_utc=2026-02-06T23:57:07.495579+00:00
+target=25143_Itokawa
+seed=42
+blinded=true
+photometry_path=data/raw/ground_truth/itokawa/pds_extract/gbo.ast-itokawa.torino.polarimetry_V1_1/data/itokawapolar.tab
+reference_mesh_accessed=false
+n_obs=89
+rms=0.385731
+output_mesh=data/processed/blinded_runs/25143_Itokawa_predicted.obj

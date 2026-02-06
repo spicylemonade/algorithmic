@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "created_at": "2026-02-06T23:48:57Z",
-  "updated_at": "2026-02-06T23:56:46.510574+00:00",
+  "updated_at": "2026-02-06T23:57:13.934671+00:00",
   "current_agent": "researcher",
   "agent_status": {
     "orchestrator": {
@@ -182,8 +182,8 @@
           "id": "item_017",
           "description": "Execute blinded reconstruction protocol",
           "acceptance_criteria": "Define run procedure ensuring reference meshes remain inaccessible during inversion and produce timestamped blinded logs for each target",
-          "status": "pending",
-          "notes": null,
+          "status": "completed",
+          "notes": "Implemented and executed blinded reconstruction workflow in scripts/run_blinded_validation.py; ensured no reference-mesh access during inversion; generated timestamped logs for Eros/Kleopatra/Itokawa in results/blinded_logs and summary in results/item_017_blinded_protocol.json.",
           "error": null
         },
         {
@@ -262,9 +262,9 @@
   ],
   "summary": {
     "total_items": 25,
-    "completed": 16,
+    "completed": 17,
     "in_progress": 0,
     "failed": 0,
-    "pending": 9
+    "pending": 8
   }
 }

@@ -1,0 +1,31 @@
+{
+  "timestamp": "2026-02-06T23:57:07.476496+00:00",
+  "seed": 42,
+  "blinded": true,
+  "runs": [
+    {
+      "target": "433_Eros",
+      "n_obs": 118,
+      "rms": 0.07983462554460545,
+      "output_mesh": "data/processed/blinded_runs/433_Eros_predicted.obj",
+      "blinded_log": "results/blinded_logs/433_Eros_20260206T235707Z.log",
+      "reference_mesh": "data/raw/ground_truth/eros/shape_damit.obj"
+    },
+    {
+      "target": "216_Kleopatra",
+      "n_obs": 55,
+      "rms": 0.08200577637801941,
+      "output_mesh": "data/processed/blinded_runs/216_Kleopatra_predicted.obj",
+      "blinded_log": "results/blinded_logs/216_Kleopatra_20260206T235707Z.log",
+      "reference_mesh": "data/raw/ground_truth/kleopatra/shape_jpl.obj"
+    },
+    {
+      "target": "25143_Itokawa",
+      "n_obs": 89,
+      "rms": 0.3857309385306033,
+      "output_mesh": "data/processed/blinded_runs/25143_Itokawa_predicted.obj",
+      "blinded_log": "results/blinded_logs/25143_Itokawa_20260206T235707Z.log",
+      "reference_mesh": "data/raw/ground_truth/itokawa/shape_jpl.mod"
+    }
+  ]
+}

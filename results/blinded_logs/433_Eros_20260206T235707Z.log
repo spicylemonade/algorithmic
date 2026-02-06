@@ -1,0 +1,9 @@
+timestamp_utc=2026-02-06T23:57:07.486461+00:00
+target=433_Eros
+seed=42
+blinded=true
+photometry_path=data/raw/ground_truth/eros/lc.json
+reference_mesh_accessed=false
+n_obs=118
+rms=0.079835
+output_mesh=data/processed/blinded_runs/433_Eros_predicted.obj
