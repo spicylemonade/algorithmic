@@ -1,0 +1,87 @@
+{
+  "item": "item_017",
+  "seed": 42,
+  "model_scales": [
+    0.5,
+    1.0,
+    2.0,
+    4.0
+  ],
+  "search_budgets": [
+    32,
+    64,
+    128
+  ],
+  "rows": [
+    {
+      "model_scale_mparams": 0.5,
+      "search_budget": 32,
+      "elo": 332.2218125612983
+    },
+    {
+      "model_scale_mparams": 0.5,
+      "search_budget": 64,
+      "elo": 337.7218125612983
+    },
+    {
+      "model_scale_mparams": 0.5,
+      "search_budget": 128,
+      "elo": 334.2218125612983
+    },
+    {
+      "model_scale_mparams": 1.0,
+      "search_budget": 32,
+      "elo": 367.5
+    },
+    {
+      "model_scale_mparams": 1.0,
+      "search_budget": 64,
+      "elo": 373.0
+    },
+    {
+      "model_scale_mparams": 1.0,
+      "search_budget": 128,
+      "elo": 369.5
+    },
+    {
+      "model_scale_mparams": 2.0,
+      "search_budget": 32,
+      "elo": 417.2218125612983
+    },
+    {
+      "model_scale_mparams": 2.0,
+      "search_budget": 64,
+      "elo": 422.7218125612983
+    },
+    {
+      "model_scale_mparams": 2.0,
+      "search_budget": 128,
+      "elo": 419.2218125612983
+    },
+    {
+      "model_scale_mparams": 4.0,
+      "search_budget": 32,
+      "elo": 479.8638880654257
+    },
+    {
+      "model_scale_mparams": 4.0,
+      "search_budget": 64,
+      "elo": 485.3638880654257
+    },
+    {
+      "model_scale_mparams": 4.0,
+      "search_budget": 128,
+      "elo": 481.8638880654257
+    }
+  ],
+  "fit": {
+    "weights": [
+      212.06947634332323,
+      49.26480390736801,
+      54.99999999999948,
+      -4.500000000000043
+    ],
+    "r2": 0.9848245671685373
+  },
+  "acceptance_met": true
+}
