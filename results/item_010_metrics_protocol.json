@@ -1,0 +1,24 @@
+{
+  "item_id": "item_010",
+  "seed": 42,
+  "generated_at": "2026-02-06T22:15:39.983862+00:00",
+  "metric_definitions": {
+    "normalized_hausdorff": "H_n = H(A,B) / D_ref [unitless, D_ref in km]",
+    "volumetric_iou": "IoU = |V_A \u2229 V_B| / |V_A \u222a V_B| [0..1]",
+    "photometric_rms": "RMS = sqrt(sum((Fobs-Fmod)^2)/N) [flux units]",
+    "pole_direction_error_deg": "Delta_pole = arccos(u1.u2) [deg]"
+  },
+  "smoke_metrics": {
+    "normalized_hausdorff": 0.10000000000000009,
+    "volumetric_iou": 0.3333333333333333,
+    "photometric_rms": 0.04242640687119289,
+    "pole_direction_error_deg": 10.97480106443069
+  },
+  "acceptance_check": {
+    "has_hausdorff": true,
+    "has_iou": true,
+    "has_photometric_rms": true,
+    "has_pole_error": true,
+    "criteria_met": true
+  }
+}
