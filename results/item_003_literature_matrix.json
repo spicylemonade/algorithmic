@@ -1,0 +1,27 @@
+{
+  "item": "item_003",
+  "seed": 42,
+  "entries": [
+    {"title":"AlphaGo","year":2016,"type":"paper","search_strategy":"MCTS+policy/value nets","representation":"planes","training_regime":"SL+RL+self-play","strength_metric":"99.8% vs European champion"},
+    {"title":"AlphaGo Zero","year":2017,"type":"paper","search_strategy":"PUCT MCTS","representation":"raw board planes","training_regime":"pure self-play","strength_metric":"100-0 vs AlphaGo Lee"},
+    {"title":"AlphaZero","year":2018,"type":"paper","search_strategy":"PUCT MCTS","representation":"board tensor","training_regime":"self-play across chess/shogi/go","strength_metric":"superhuman match results"},
+    {"title":"MuZero","year":2020,"type":"paper","search_strategy":"latent MCTS","representation":"learned dynamics latent state","training_regime":"self-play with model learning","strength_metric":"SOTA Atari/board benchmarks"},
+    {"title":"EfficientZero","year":2021,"type":"paper","search_strategy":"sample-efficient MCTS","representation":"latent state","training_regime":"model-based RL","strength_metric":"Atari data-efficiency gains"},
+    {"title":"Gumbel MuZero","year":2021,"type":"paper","search_strategy":"gumbelized policy improvement","representation":"latent model","training_regime":"self-play/value reanalysis","strength_metric":"improved planning quality"},
+    {"title":"Leela Chess Zero","year":2018,"type":"repo","search_strategy":"PUCT MCTS","representation":"112-plane chess tensor","training_regime":"distributed self-play","strength_metric":"Elo on CCRL/TCEC"},
+    {"title":"KataGo","year":2019,"type":"repo","search_strategy":"MCTS with score utility","representation":"Go board features","training_regime":"self-play+ownership targets","strength_metric":"top Go engine Elo"},
+    {"title":"ELF OpenGo","year":2019,"type":"paper/repo","search_strategy":"MCTS","representation":"Go tensor","training_regime":"reproducible self-play","strength_metric":"professional-level Go"},
+    {"title":"Polygames","year":2019,"type":"repo","search_strategy":"AlphaZero-style MCTS","representation":"game-dependent tensor","training_regime":"self-play multi-game","strength_metric":"internal Elo"},
+    {"title":"Sampled MuZero","year":2021,"type":"paper","search_strategy":"sampled action planning","representation":"latent","training_regime":"large-action RL","strength_metric":"improved large-action domains"},
+    {"title":"Stochastic MuZero","year":2021,"type":"paper","search_strategy":"stochastic latent tree search","representation":"latent chance nodes","training_regime":"model-based RL","strength_metric":"better stochastic control"},
+    {"title":"DreamerV3","year":2023,"type":"paper","search_strategy":"no explicit tree; imagined rollouts","representation":"RSSM latent","training_regime":"world-model RL","strength_metric":"broad benchmark performance"},
+    {"title":"Mastering Atari with Muesli","year":2021,"type":"paper","search_strategy":"policy/value regularized planning","representation":"deep conv features","training_regime":"off-policy RL","strength_metric":"human-normalized scores"},
+    {"title":"OpenSpiel AlphaZero","year":2019,"type":"repo","search_strategy":"MCTS","representation":"game tensors","training_regime":"self-play","strength_metric":"benchmark game win rates"},
+    {"title":"MiniZero","year":2022,"type":"repo","search_strategy":"AlphaZero/MuZero options","representation":"board/latent","training_regime":"self-play","strength_metric":"engine Elo curves"},
+    {"title":"DeepNash","year":2022,"type":"paper","search_strategy":"game-theoretic planning","representation":"transformer-like state features","training_regime":"population RL","strength_metric":"Diplomacy benchmark rank"},
+    {"title":"Stockfish NNUE","year":2020,"type":"repo","search_strategy":"alpha-beta + NN eval","representation":"NNUE sparse features","training_regime":"supervised eval tuning","strength_metric":"top chess Elo"},
+    {"title":"LCZero T60/T80 policy work","year":2023,"type":"repo","search_strategy":"PUCT","representation":"transformer chess tensors","training_regime":"self-play","strength_metric":"TCEC/CCRL progress"},
+    {"title":"MuZero Unplugged","year":2021,"type":"paper","search_strategy":"offline latent planning","representation":"latent","training_regime":"offline RL datasets","strength_metric":"offline control benchmarks"}
+  ],
+  "count": 20
+}
