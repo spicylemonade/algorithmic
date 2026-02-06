@@ -1,0 +1,176 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[draft]{graphicx}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{hyperref}
+\usepackage{float}
+\usepackage{caption}
+
+\title{A Reproducible Hybrid Light Curve Inversion Pipeline for Sparse-Data Asteroid Modeling: Architecture, Validation Protocols, and Execution Status}
+\author{Research Lab Team}
+\date{February 6, 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Light curve inversion (LCI) for asteroid shape reconstruction remains sensitive to sparse photometric coverage, period aliasing, and pole ambiguities, which limit robust model generation for many Near-Earth Asteroids (NEAs) and Main Belt Asteroids (MBAs). This paper documents the end-to-end design, coding, and execution status of a custom LCI pipeline that synthesizes convex optimization, non-convex evolutionary refinement, and sparse-data solvers under a single reproducible framework. Across 25 planned research items, 24 were completed and one failed due to unresolved automated retrieval of complete per-object raw photometry plus geometry metadata from ALCDEF/PDS endpoints for the full validation cohort. Implemented outputs include formal objective/regularization design, solver baselines, adaptive mixed-data loss weighting, a recursive reinforcement loop with a 5\% promotion gate, DAMIT/JPL validation cohort assembly (10 objects including 433 Eros, 25143 Itokawa, and 216 Kleopatra), target filtering/ranking logic, and reporting standards. Because full blind photometry assembly was not completed, this study reports verified architecture and protocol-level progress with deterministic smoke metrics rather than definitive superiority claims against MPO LCInvert, SAGE, and KOALA.
+\end{abstract}
+
+\section{Introduction}
+Asteroid 3D shape and spin-state recovery is central to planetary defense, population-level evolution studies, and mission planning. In practice, inversion quality is dominated by data heterogeneity: dense light curves are unevenly distributed, sparse survey points often lack ideal phase coverage, and cross-survey calibration can bias optimization landscapes. Existing LCI families address parts of this problem: convex inversion is stable and efficient, evolutionary methods recover strong concavities, and sparse inversion improves survey-scale applicability. However, operational pipelines still struggle to combine these strengths under strict reproducibility and acceptance thresholds.
+
+This work targets a unified pipeline intended to exceed existing tools on sparse regimes, while enforcing strict validation controls. The implemented programmatic scope includes: (i) method synthesis from Kaasalainen-Torppa, SAGE, and Durech-style sparse inversion; (ii) modular Python code for convex, non-convex, sparse, validation, ranking, and reporting components; (iii) explicit benchmark metrics and pass/fail promotion policy; and (iv) a DAMIT/JPL ground-truth cohort and blinded execution protocol. Importantly, we report the actual execution outcome: a blocked blind raw-photometry assembly step prevented full validation and downstream top-50 candidate generation.
+
+\section{Related Work}
+\textbf{Convex inversion.} Kaasalainen and Torppa established gradient-based convex LCI with regularization and physically constrained spin-state estimation. The present implementation adopts this foundation through a convex objective with photometric residual and smoothness terms, plus Armijo-style line search.
+
+\textbf{Non-convex evolutionary modeling.} SAGE-inspired methods encode mesh-level shape flexibility and use mutation/crossover to recover concavities. The pipeline includes a deterministic evolutionary baseline with explicit population, elitism, restart, and generation controls.
+
+\textbf{Sparse photometry inversion.} Durech-style sparse workflows emphasize pole/period grid search, alias rejection, and geometry coverage criteria. This is reflected here via sparse confidence-based convergence thresholds and explicit minimum sparse data requirements.
+
+\textbf{Multi-modal fusion.} ADAM and related systems motivate data fusion and cross-sensor constraints. The implemented fusion specification includes harmonized schema, normalization, outlier rejection, and provenance retention across ALCDEF, PDS, Gaia DR3, ZTF, Pan-STARRS, and MPC descriptors.
+
+\section{Method}
+\subsection{Pipeline Architecture}
+The repository implements ten primary modules under \texttt{lci/}: \texttt{config}, \texttt{data\_loader}, \texttt{geometry}, \texttt{convex\_solver}, \texttt{evolutionary\_solver}, \texttt{sparse\_solver}, \texttt{validation}, \texttt{ranking}, \texttt{reporting}, and \texttt{pipeline}. The planned data flow is ingestion $\rightarrow$ geometry normalization $\rightarrow$ convex solve $\rightarrow$ non-convex refine $\rightarrow$ validation $\rightarrow$ ranking $\rightarrow$ reporting.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.45\linewidth]{figures/item_006_architecture_modules.png}
+    \caption{Architecture module coverage artifact (\texttt{item\_006}).}
+    \label{fig:architecture}
+\end{figure}
+
+\subsection{Convex Baseline}
+The convex module defines an objective over photometric residuals and smoothness penalty, with gradient descent and Armijo backtracking (\(c_1=10^{-4}\), \(\tau=0.5\), \(\alpha_0=1.0\)). Convergence diagnostics are \texttt{grad\_tol} \(=10^{-5}\), relative objective tolerance \(=10^{-6}\), and \texttt{max\_iters} \(=400\).
+
+\subsection{Non-Convex Evolutionary Baseline}
+The evolutionary module uses deterministic seeded optimization with population size 96, elitism ratio 0.10, restart patience 50 generations, and 400-generation horizon. This configuration follows the SAGE-style design intent recorded in the experiment artifacts.
+
+\subsection{Sparse Solver and Mixed-Data Weighting}
+The sparse module uses weighted residual scoring over a period/pole grid and returns confidence from normalized residual quality. Baseline grid settings are period step 0.5 h and pole step 15 deg. Adaptive loss weighting scales by uncertainty \((1/\sigma^2)\), phase-angle span, and apparition diversity, then clamps final weights to \([0.1, 50]\).
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.45\linewidth]{figures/item_012_adaptive_loss_weighting.png}
+    \caption{Adaptive weighting artifact (\texttt{item\_012}).}
+    \label{fig:weighting}
+\end{figure}
+
+\subsection{Hybrid Schedule and Reinforcement Loop}
+A staged hybrid schedule first solves convex global structure, then hands off to non-convex refinement when residual or complexity triggers are met (trigger: \texttt{rms $>$ 0.03} or \texttt{shape\_complexity $>$ 0.35}). A recursive reinforcement controller tightens hyperparameters whenever combined deviation exceeds 5\%.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.45\linewidth]{figures/item_011_hybrid_schedule.png}
+    \caption{Convex-to-evolutionary schedule artifact (\texttt{item\_011}).}
+    \label{fig:hybrid}
+\end{figure}
+
+\subsection{Validation and Promotion Criteria}
+Validation metrics are normalized Hausdorff distance, volumetric IoU, photometric RMS, and pole-direction error. Promotion is gated by
+\[
+\text{Combined deviation (\%)} = 100\times\left(0.5\,H_n + 0.5\,(1-\mathrm{IoU})\right),
+\]
+with pass threshold strictly below 5\%.
+
+\subsection{Target Selection, Ranking, and Packaging}
+Target selection logic is
+\[
+(\mathrm{is\_neo}\ \lor\ \mathrm{diameter\_km}>100)\ \land\ (\mathrm{lcdb\_u}\ge2)\ \land\ (\neg \mathrm{in\_damit})\ \land\ (\mathrm{dense\_lightcurves}>20\ \lor\ (\mathrm{sparse\_points}>100\ \land\ \mathrm{apparitions}>3)).
+\]
+Ranking uses
+\[
+\mathrm{score}=0.40\,\mathrm{confidence}+0.25\,\mathrm{coverage}+0.20\,\mathrm{stability}+0.15\,\mathrm{novelty},
+\]
+with deterministic tie-breakers (novelty, sparse points, designation number). Output packaging defines per-target OBJ path, spin vector, uncertainties, and provenance manifest.
+
+\section{Experiments}
+\subsection{Execution Summary}
+Table~\ref{tab:status} reports the project-level execution state from \texttt{research\_rubric.json}: 24 completed items and one failed item (\texttt{item\_017}).
+
+\begin{table}[H]
+\centering
+\caption{Rubric execution status.}
+\label{tab:status}
+\begin{tabular}{lc}
+\toprule
+Metric & Value \\
+\midrule
+Total items & 25 \\
+Completed & 24 \\
+Failed & 1 \\
+In progress & 0 \\
+Pending & 0 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Deterministic Baseline Outputs}
+Table~\ref{tab:smoke} lists the recorded smoke outputs for baseline modules from \texttt{results/}.
+
+\begin{table}[H]
+\centering
+\caption{Recorded baseline smoke outputs (verbatim from JSON artifacts).}
+\label{tab:smoke}
+\begin{tabular}{p{3.2cm}p{9.6cm}}
+\toprule
+Component & Key output \\
+\midrule
+Convex baseline (item\_007) & RMS \(=0.2828427322\), iterations \(=13\), converged \texttt{true}, reason \texttt{rel\_obj\_tol}. \\
+Non-convex baseline (item\_008) & Best \texttt{flux\_model}=0.9499990990, fitness \(-9.0101\times10^{-7}\), generations \(=400\). \\
+Sparse baseline (item\_009) & Pole \((345,-75)\), period \(=9.5\) h, confidence \(=0.00381154\), converged \texttt{false}. \\
+Metrics protocol smoke (item\_010) & \(H_n=0.10\), IoU \(=0.3333\), photometric RMS \(=0.04243\), pole error \(=10.97\) deg. \\
+Reinforcement example (item\_015) & Deviation reduced from 9.2\% \(\rightarrow\) 7.1\% \(\rightarrow\) 4.8\%, action changed to \texttt{promote}. \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Validation Cohort and Blinded Protocol}
+The ground-truth cohort (item\_016) contains 10 downloadable DAMIT/JPL meshes, including 433 Eros, 216 Kleopatra, and 25143 Itokawa, satisfying cohort acceptance checks. A blinded run protocol (item\_018) is defined with fixed seed 42, hidden ground truth during optimization, event logging, and post-optimization unsealing.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.45\linewidth]{figures/item_016_validation_cohort.png}
+    \caption{Validation cohort artifact (\texttt{item\_016}).}
+    \label{fig:cohort}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.45\linewidth]{figures/item_018_blinded_protocol.png}
+    \caption{Blinded execution protocol artifact (\texttt{item\_018}).}
+    \label{fig:blinded}
+\end{figure}
+
+\subsection{Blocking Result in Blind Raw-Photometry Assembly}
+The only failed item (item\_017) reports that complete per-object raw photometry with reconstructable geometry metadata was not assembled for all 10 validation objects. The recorded PDS query counts are present, but a robust direct-file mapping for complete blind-run ingestion was not achieved.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.45\linewidth]{figures/item_017_blind_photometry_attempt.png}
+    \caption{Blind photometry assembly attempt artifact (\texttt{item\_017}, failed).}
+    \label{fig:blocker}
+\end{figure}
+
+\subsection{Comparative Benchmark Design}
+A comparative matrix against \texttt{MPO\_LCInvert}, \texttt{SAGE}, and \texttt{KOALA} is specified (item\_023) with shared datasets and identical metrics. However, because item\_017 failed, no completed empirical head-to-head table is available in \texttt{results/} and no superiority claim is supported.
+
+\section{Discussion}
+The primary contribution is an auditable and reproducible LCI framework with explicit solver interfaces, mathematical design synthesis, and acceptance-gated progression logic. The implementation captures many known failure drivers (period aliasing, pole ambiguity, sparse-coverage bias, non-uniqueness, and calibration drift) and links them to mitigation policies. This is significant for future operationalization because it reduces ambiguity in how models are promoted.
+
+The key limitation is data availability and ingestion robustness at the blind validation stage. Without complete raw per-object photometry plus geometry metadata, the pipeline cannot yet execute full DAMIT/JPL blinded inversion loops, cannot establish sub-5\% fidelity across the cohort, and cannot justify promotion to unknown-target discovery. Consequently, final deliverables requested in the objective (top-50 previously unmodeled NEA/MBA list with generated OBJ meshes and spin vectors) are not present in the current artifact set.
+
+A second limitation is implementation maturity: several modules are currently scaffolds or deterministic baselines intended for interface stabilization rather than production-grade photometric forward modeling.
+
+\section{Conclusion}
+This study reports a near-complete research program for a custom hybrid LCI system, with 24 of 25 planned items completed and reproducible artifacts across architecture, solver baselines, validation metrics, ranking logic, and reporting standards. The unresolved blocker is blind raw-photometry dataset assembly for the full validation cohort, which prevents definitive quantitative comparison against MPO LCInvert, SAGE, and KOALA, and defers top-50 unknown-target model generation. Immediate future work is to complete robust ALCDEF/PDS ingestion with full geometry metadata mapping, then run the blinded DAMIT/JPL loop to verify the 5\% promotion criterion before executing candidate discovery and packaging of final OBJ and spin-vector outputs.
+
+\end{document}
