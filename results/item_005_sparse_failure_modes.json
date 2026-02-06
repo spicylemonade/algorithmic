@@ -1,0 +1,19 @@
+{
+  "item": "item_005",
+  "seed": 42,
+  "sources": [
+    "https://doi.org/10.1051/0004-6361/200912693",
+    "https://doi.org/10.1051/0004-6361:200810393",
+    "https://doi.org/10.1051/0004-6361/200912134",
+    "https://www.cosmos.esa.int/web/gaia/dr3",
+    "https://www.aanda.org/articles/aa/full_html/2016/03/aa27573-15/aa27573-15.html",
+    "https://arxiv.org/abs/2111.12596"
+  ],
+  "failure_modes": [
+    "temporal_aliasing",
+    "pole_mirror_ambiguity",
+    "phase_angle_undercoverage",
+    "cross_survey_zero_point_offsets",
+    "outlier_contamination"
+  ]
+}

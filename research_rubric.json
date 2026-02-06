@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "created_at": "2026-02-06T23:08:35Z",
-  "updated_at": "2026-02-06T23:12:21.134770+00:00",
+  "updated_at": "2026-02-06T23:12:54.032774+00:00",
   "current_agent": "researcher",
   "agent_status": {
     "orchestrator": {
@@ -65,9 +65,9 @@
           "id": "item_005",
           "description": "Review sparse-photometry inversion literature and survey constraints",
           "acceptance_criteria": "Summarize at least 4 sources (including Durech 2010 and Gaia/ZTF context) and list 5 sparse-data failure modes with mitigation hypotheses",
-          "status": "pending",
-          "notes": null,
-          "error": null
+          "status": "completed",
+          "notes": "Summarized sparse inversion literature (>=4 sources including Durech 2010 and Gaia/ZTF context) and documented 5 failure modes with mitigation hypotheses.",
+          "error": ""
         }
       ]
     },
@@ -262,9 +262,9 @@
   ],
   "summary": {
     "total_items": 25,
-    "completed": 4,
+    "completed": 5,
     "in_progress": 0,
     "failed": 0,
-    "pending": 21
+    "pending": 20
   }
 }
