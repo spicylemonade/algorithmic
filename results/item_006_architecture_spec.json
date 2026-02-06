@@ -1,0 +1,61 @@
+{
+  "item_id": "item_006",
+  "seed": 42,
+  "generated_at": "2026-02-06T22:13:46.359347+00:00",
+  "architecture_modules": [
+    {
+      "name": "config",
+      "interface": "lci.config"
+    },
+    {
+      "name": "data_loader",
+      "interface": "lci.data_loader"
+    },
+    {
+      "name": "geometry",
+      "interface": "lci.geometry"
+    },
+    {
+      "name": "convex_solver",
+      "interface": "lci.convex_solver"
+    },
+    {
+      "name": "evolutionary_solver",
+      "interface": "lci.evolutionary_solver"
+    },
+    {
+      "name": "sparse_solver",
+      "interface": "lci.sparse_solver"
+    },
+    {
+      "name": "validation",
+      "interface": "lci.validation"
+    },
+    {
+      "name": "ranking",
+      "interface": "lci.ranking"
+    },
+    {
+      "name": "reporting",
+      "interface": "lci.reporting"
+    },
+    {
+      "name": "pipeline",
+      "interface": "lci.pipeline"
+    }
+  ],
+  "data_flow": [
+    "ingestion",
+    "geometry normalization",
+    "convex solve",
+    "non-convex refine",
+    "validation",
+    "ranking",
+    "reporting"
+  ],
+  "acceptance_check": {
+    "module_count": 10,
+    "requires_at_least_8": true,
+    "criteria_met": true
+  }
+}
