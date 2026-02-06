@@ -1,0 +1,18 @@
+{
+  "seed": 42,
+  "manifest": {
+    "configs": [
+      "results/item_017_experiment_matrix.json",
+      "docs/training_curriculum_stabilization.md"
+    ],
+    "seeds": [42, 142, 242, 342],
+    "datasets": ["self_play_proxy_generated"],
+    "checkpoints": ["results/checkpoints/checkpoint_manifest.json"],
+    "recipes": [
+      "benchmark_protocol",
+      "self_play_throughput",
+      "scaling_artifact_rebuild"
+    ]
+  },
+  "recreates_headline_results": true
+}
