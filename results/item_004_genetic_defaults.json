@@ -1,0 +1,21 @@
+{
+  "seed": 42,
+  "population_size": 120,
+  "elite_fraction": 0.08,
+  "tournament_k": 4,
+  "crossover": {
+    "type": "sbx",
+    "probability": 0.85,
+    "eta": 12
+  },
+  "mutation": {
+    "shape_gene_probability": 0.08,
+    "shape_sigma": 0.04,
+    "spin_jump_probability": 0.03
+  },
+  "max_generations": 350,
+  "plateau_threshold": 0.0001,
+  "plateau_window": 25,
+  "early_stop_degrade_fraction": 0.03,
+  "early_stop_window": 12
+}
