@@ -1,0 +1,53 @@
+{
+  "item": "item_014",
+  "seed": 42,
+  "curriculum_stages": [
+    {
+      "stage": "stage_1_easy",
+      "max_moves": 8,
+      "fresh_positions": 10000,
+      "games": 1250
+    },
+    {
+      "stage": "stage_2_mid",
+      "max_moves": 10,
+      "fresh_positions": 10000,
+      "games": 1000
+    },
+    {
+      "stage": "stage_3_hard",
+      "max_moves": 12,
+      "fresh_positions": 10000,
+      "games": 834
+    },
+    {
+      "stage": "stage_4_mixed",
+      "max_moves": 14,
+      "fresh_positions": 10000,
+      "games": 715
+    }
+  ],
+  "fresh_positions": 40000,
+  "reanalysis_factor": 25,
+  "reanalyzed_positions": 1000000,
+  "total_training_positions": 1040000,
+  "league_windows": [
+    {
+      "window": 1,
+      "score_vs_baseline": 0.97,
+      "elo": 603.8601918186329
+    },
+    {
+      "window": 2,
+      "score_vs_baseline": 0.87,
+      "elo": 330.2303601247127
+    },
+    {
+      "window": 3,
+      "score_vs_baseline": 0.97,
+      "elo": 603.8601918186329
+    }
+  ],
+  "catastrophic_collapse_detected": false,
+  "acceptance_met": true
+}
