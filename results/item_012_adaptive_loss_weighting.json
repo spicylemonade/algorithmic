@@ -1,0 +1,26 @@
+{
+  "item_id": "item_012",
+  "seed": 42,
+  "generated_at": "2026-02-06T22:16:32.279221+00:00",
+  "equations": {
+    "base": "1/sigma^2",
+    "phase_factor": "clamp(phase_span/40,0.25,1.5)",
+    "apparition_factor": "clamp(N_app/4,0.3,1.4)",
+    "bounds": "w in [0.1,50]"
+  },
+  "examples": {
+    "low_uncertainty_good_coverage": 50.0,
+    "high_uncertainty_sparse_coverage": 6.666666666666666,
+    "split_example": {
+      "w_dense": 0.5,
+      "w_sparse": 0.5
+    }
+  },
+  "acceptance_check": {
+    "uncertainty_term": true,
+    "phase_coverage_term": true,
+    "apparition_diversity_term": true,
+    "boundary_conditions": true,
+    "criteria_met": true
+  }
+}
