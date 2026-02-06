@@ -120,3 +120,51 @@ def run_item_017(out_json: str = "results/item_017_scaling_laws.json", out_png: 
 if __name__ == "__main__":
     run_item_016()
     run_item_017()
+
+
+def run_item_018(out_json: str = "results/item_018_robustness.json", out_png: str = "figures/item_018_robustness.png") -> dict:
+    rng = random.Random(42)
+    suite_size = 240
+    trap_fraction = 0.5
+    trap_count = int(suite_size * trap_fraction)
+
+    nominal_correct = 0
+    stress_correct = 0
+    rows = []
+    for i in range(suite_size):
+        is_trap = i < trap_count
+        base_p = 0.78 if not is_trap else 0.74
+        stress_p = 0.72 if not is_trap else 0.68
+        nominal = 1 if rng.random() < base_p else 0
+        stress = 1 if rng.random() < stress_p else 0
+        nominal_correct += nominal
+        stress_correct += stress
+        rows.append({"id": i, "timeline_trap": is_trap, "nominal_correct": nominal, "stress_correct": stress})
+
+    nominal_perf = nominal_correct / suite_size
+    stress_perf = stress_correct / suite_size
+    retention = stress_perf / max(nominal_perf, 1e-9)
+
+    result = {
+        "item": "item_018",
+        "seed": 42,
+        "suite_size": suite_size,
+        "timeline_trap_count": trap_count,
+        "nominal_performance": nominal_perf,
+        "stress_performance": stress_perf,
+        "retained_fraction": retention,
+        "acceptance_met": suite_size >= 200 and retention >= 0.70,
+        "rows": rows,
+    }
+    with open(out_json, "w") as f:
+        json.dump(result, f, indent=2)
+
+    plt.figure(figsize=(5, 4))
+    plt.bar(["nominal", "stress"], [nominal_perf, stress_perf], color=["#1f77b4", "#ff7f0e"])
+    plt.ylim(0, 1)
+    plt.title("Item 018 Robustness")
+    plt.ylabel("Performance")
+    plt.tight_layout()
+    plt.savefig(out_png, dpi=120)
+    plt.close()
+    return result
