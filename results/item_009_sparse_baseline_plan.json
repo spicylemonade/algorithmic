@@ -1,0 +1,39 @@
+{
+  "item_id": "item_009",
+  "seed": 42,
+  "generated_at": "2026-02-06T22:15:10.974594+00:00",
+  "baseline_sparse_plan": {
+    "sampling_model": "heteroscedastic weighted chi2 on sparse fluxes",
+    "uncertainty_weighting": "w_i = 1/sigma_i^2",
+    "grid_resolution": {
+      "period_step_h": 0.5,
+      "pole_step_deg": 15
+    },
+    "pass_fail_criteria": {
+      "min_points": 100,
+      "min_confidence": 0.8,
+      "converged_if": "confidence>=0.80"
+    }
+  },
+  "smoke_test_output": {
+    "pole": [
+      345,
+      -75
+    ],
+    "period_h": 9.5,
+    "confidence": 0.0038115404976177968,
+    "converged": false,
+    "reason": "low_confidence",
+    "grid": {
+      "period_step_h": 0.5,
+      "pole_step_deg": 15
+    }
+  },
+  "acceptance_check": {
+    "sampling_defined": true,
+    "weighting_defined": true,
+    "grid_defined": true,
+    "pass_fail_defined": true,
+    "criteria_met": true
+  }
+}
