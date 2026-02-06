@@ -1,0 +1,13 @@
+{
+  "seed": 42,
+  "hotspots": [
+    "facet_brightness_accumulation",
+    "sparse_period_pole_grid_search",
+    "hybrid_iteration_loop"
+  ],
+  "optimization_paths": [
+    {"path": "vectorization", "speedup_target": "3x-6x"},
+    {"path": "cpp_extensions", "speedup_target": "8x-20x"},
+    {"path": "parallel_batch_eval", "speedup_target": "4x-12x"}
+  ]
+}

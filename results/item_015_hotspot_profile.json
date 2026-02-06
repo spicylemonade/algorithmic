@@ -1,0 +1,17 @@
+{
+  "seed": 42,
+  "hotspots": [
+    {
+      "name": "facet_brightness_accumulation",
+      "seconds": 0.2096245288848877
+    },
+    {
+      "name": "sparse_period_pole_grid_search",
+      "seconds": 0.08916187286376953
+    },
+    {
+      "name": "hybrid_iteration_loop",
+      "seconds": 20.1710045337677
+    }
+  ]
+}
