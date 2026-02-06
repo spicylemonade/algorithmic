@@ -1,0 +1,17 @@
+{
+  "item": "item_003",
+  "model": "convex_inversion_kaasalainen_torppa_style",
+  "parameter_blocks": ["shape_support_coefficients", "spin_state", "scattering_parameters"],
+  "objective_terms": ["lightcurve_misfit", "shape_regularization", "spin_regularization", "scattering_prior"],
+  "update_rule": "quasi_newton_with_line_search",
+  "constraints": [
+    "ill_conditioned_normals_need_damping",
+    "photometric_mirror_pole_ambiguity"
+  ],
+  "seed": 42,
+  "references": [
+    "https://doi.org/10.1006/icar.2001.6673",
+    "https://damit.cuni.cz/projects/damit/references/view/101",
+    "https://doi.org/10.1051/0004-6361/200912693"
+  ]
+}
