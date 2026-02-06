@@ -1,0 +1,177 @@
+{
+  "item_id": "item_017",
+  "seed": 42,
+  "total_games": 5000,
+  "records": [
+    {
+      "opponent": "random",
+      "time_control": "fast",
+      "games": 625,
+      "wins": 511,
+      "draws": 34,
+      "losses": 80,
+      "score": 0.8448,
+      "elo": 294.3448753070268,
+      "score_ci95": [
+        0.8164117334904436,
+        0.8731882665095564
+      ],
+      "elo_ci95": [
+        259.2257266601504,
+        335.17938077070835
+      ],
+      "z_vs_50": 17.24,
+      "p_value_vs_50": 0.0,
+      "significant": true
+    },
+    {
+      "opponent": "random",
+      "time_control": "medium",
+      "games": 625,
+      "wins": 511,
+      "draws": 43,
+      "losses": 71,
+      "score": 0.852,
+      "elo": 304.071151748697,
+      "score_ci95": [
+        0.8241601611039144,
+        0.8798398388960855
+      ],
+      "elo_ci95": [
+        268.3577361002081,
+        345.8572483512256
+      ],
+      "z_vs_50": 17.599999999999998,
+      "p_value_vs_50": 0.0,
+      "significant": true
+    },
+    {
+      "opponent": "alphabeta",
+      "time_control": "fast",
+      "games": 625,
+      "wins": 409,
+      "draws": 63,
+      "losses": 153,
+      "score": 0.7048,
+      "elo": 151.179816901195,
+      "score_ci95": [
+        0.6690392031959913,
+        0.7405607968040087
+      ],
+      "elo_ci95": [
+        122.27000522914282,
+        182.21004646458542
+      ],
+      "z_vs_50": 10.239999999999998,
+      "p_value_vs_50": 0.0,
+      "significant": true
+    },
+    {
+      "opponent": "alphabeta",
+      "time_control": "medium",
+      "games": 625,
+      "wins": 424,
+      "draws": 67,
+      "losses": 134,
+      "score": 0.732,
+      "elo": 174.55051481184123,
+      "score_ci95": [
+        0.6972752601944954,
+        0.7667247398055046
+      ],
+      "elo_ci95": [
+        144.94253672976842,
+        206.70831771745935
+      ],
+      "z_vs_50": 11.6,
+      "p_value_vs_50": 0.0,
+      "significant": true
+    },
+    {
+      "opponent": "mcts",
+      "time_control": "fast",
+      "games": 625,
+      "wins": 365,
+      "draws": 65,
+      "losses": 195,
+      "score": 0.636,
+      "elo": 96.94229279974319,
+      "score_ci95": [
+        0.598277947746179,
+        0.673722052253821
+      ],
+      "elo_ci95": [
+        69.19092902343625,
+        125.95721636977541
+      ],
+      "z_vs_50": 6.800000000000001,
+      "p_value_vs_50": 1.0461853605647775e-11,
+      "significant": true
+    },
+    {
+      "opponent": "mcts",
+      "time_control": "medium",
+      "games": 625,
+      "wins": 341,
+      "draws": 91,
+      "losses": 193,
+      "score": 0.6184,
+      "elo": 83.86444595128432,
+      "score_ci95": [
+        0.5803149100060614,
+        0.6564850899939385
+      ],
+      "elo_ci95": [
+        56.29607542425491,
+        112.5117099466533
+      ],
+      "z_vs_50": 5.919999999999997,
+      "p_value_vs_50": 3.2194162891130418e-09,
+      "significant": true
+    },
+    {
+      "opponent": "checkpoint_prev",
+      "time_control": "fast",
+      "games": 625,
+      "wins": 402,
+      "draws": 70,
+      "losses": 153,
+      "score": 0.6992,
+      "elo": 146.52943508269684,
+      "score_ci95": [
+        0.6632452984242451,
+        0.735154701575755
+      ],
+      "elo_ci95": [
+        117.74420490224684,
+        177.35458854773808
+      ],
+      "z_vs_50": 9.960000000000003,
+      "p_value_vs_50": 0.0,
+      "significant": true
+    },
+    {
+      "opponent": "checkpoint_prev",
+      "time_control": "medium",
+      "games": 625,
+      "wins": 387,
+      "draws": 66,
+      "losses": 172,
+      "score": 0.672,
+      "elo": 124.59817173685852,
+      "score_ci95": [
+        0.6351923897955871,
+        0.708807610204413
+      ],
+      "elo_ci95": [
+        96.33655867217114,
+        154.53934043906375
+      ],
+      "z_vs_50": 8.600000000000001,
+      "p_value_vs_50": 0.0,
+      "significant": true
+    }
+  ],
+  "strongest_baseline": "mcts",
+  "significant_gain_over_strongest_baseline": true
+}
