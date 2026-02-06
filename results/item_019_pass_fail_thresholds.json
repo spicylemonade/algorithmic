@@ -1,0 +1,24 @@
+{
+  "item_id": "item_019",
+  "seed": 42,
+  "generated_at": "2026-02-06T22:21:08.541162+00:00",
+  "thresholds": {
+    "combined_deviation_max_percent": 5.0,
+    "formula": "100*(0.5*Hn + 0.5*(1-IoU))"
+  },
+  "examples": {
+    "case_pass": {
+      "combined_percent": 4.999999999999997,
+      "passes": true
+    },
+    "case_fail": {
+      "combined_percent": 13.999999999999998,
+      "passes": false
+    }
+  },
+  "acceptance_check": {
+    "combined_hausdorff_iou_criterion_defined": true,
+    "deviation_below_5_required": true,
+    "criteria_met": true
+  }
+}
