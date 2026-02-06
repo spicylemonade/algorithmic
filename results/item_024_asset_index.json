@@ -1,0 +1,20 @@
+{
+  "item_id": "item_024",
+  "seed": 42,
+  "assets": [
+    "figures/item_016_ablation_elo.png",
+    "figures/item_017_elo_vs_opponents.png",
+    "figures/item_018_efficiency_frontier.png",
+    "figures/item_019_generalization.png",
+    "figures/item_020_error_taxonomy.png",
+    "figures/item_024_learning_curve_proxy.png",
+    "figures/item_024_ablation_costs.png",
+    "figures/item_024_generalization_drop.png",
+    "figures/item_024_error_category_share.png",
+    "figures/item_024_repro_variance.png"
+  ],
+  "tables": [
+    "results/item_016_ablation_runs.json",
+    "results/item_017_rated_benchmark.json"
+  ]
+}
