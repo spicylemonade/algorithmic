@@ -1,0 +1,50 @@
+{
+  "seed": 42,
+  "method": "binomial_normal_ci_then_elo_transform",
+  "ablations": [
+    {
+      "ablation": "remove_progressive_widening",
+      "games": 2000,
+      "wins_ablated": 810,
+      "win_rate_ablated": 0.405,
+      "elo_delta_vs_full": -66.82477700555239,
+      "elo_delta_95ci": [
+        -82.47758666805593,
+        -51.43560397166138
+      ]
+    },
+    {
+      "ablation": "remove_legality_masking",
+      "games": 2000,
+      "wins_ablated": 759,
+      "win_rate_ablated": 0.3795,
+      "elo_delta_vs_full": -85.41200224129979,
+      "elo_delta_95ci": [
+        -101.28514682268337,
+        -69.88109559633861
+      ]
+    },
+    {
+      "ablation": "remove_transposition_cache",
+      "games": 2000,
+      "wins_ablated": 894,
+      "win_rate_ablated": 0.447,
+      "elo_delta_vs_full": -36.9670432691047,
+      "elo_delta_95ci": [
+        -52.36229976127912,
+        -21.71515525535809
+      ]
+    },
+    {
+      "ablation": "remove_curriculum_schedule",
+      "games": 2000,
+      "wins_ablated": 895,
+      "win_rate_ablated": 0.4475,
+      "elo_delta_vs_full": -36.61569708208701,
+      "elo_delta_95ci": [
+        -52.00861886118374,
+        -21.36476083110497
+      ]
+    }
+  ]
+}

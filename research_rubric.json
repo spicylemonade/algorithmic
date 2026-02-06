@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "created_at": "2026-02-06T08:07:25Z",
-  "updated_at": "2026-02-06T08:17:02.097741+00:00",
+  "updated_at": "2026-02-06T08:17:23.658941+00:00",
   "current_agent": "researcher",
   "agent_status": {
     "orchestrator": {
@@ -190,8 +190,8 @@
           "id": "item_018",
           "description": "Run controlled ablations for major components",
           "acceptance_criteria": "Execute ablations removing each major component independently and report Elo delta with 95% confidence intervals",
-          "status": "pending",
-          "notes": null,
+          "status": "completed",
+          "notes": "Executed controlled ablations removing major components independently (progressive widening, legality masking, transposition cache, curriculum) and reported Elo deltas with 95% confidence intervals in docs/ablation_results.md and results/item_018_ablations.json.",
           "error": null
         },
         {
@@ -262,9 +262,9 @@
   ],
   "summary": {
     "total_items": 25,
-    "completed": 17,
+    "completed": 18,
     "in_progress": 0,
     "failed": 0,
-    "pending": 8
+    "pending": 7
   }
 }
