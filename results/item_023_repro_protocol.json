@@ -1,0 +1,15 @@
+{
+  "item": "item_023",
+  "seed": 42,
+  "entrypoints": [
+    "src/fived/env.py",
+    "src/fived/schema.py",
+    "src/fived/learning.py",
+    "src/fived/policy_value.py",
+    "src/fived/mcts.py",
+    "src/fived/self_play.py",
+    "src/fived/eval.py",
+    "src/fived/experiments.py"
+  ],
+  "repro_commands_documented": true
+}
