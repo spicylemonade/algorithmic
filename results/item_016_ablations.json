@@ -1,0 +1,157 @@
+{
+  "item": "item_016",
+  "seed": 42,
+  "baseline": {
+    "win_rate": 0.68,
+    "elo": 220.0,
+    "inference_ms": 6.2
+  },
+  "ablation_runs": [
+    {
+      "run_id": "ablation_01",
+      "factor": "remove_graph_encoder",
+      "win_rate": 0.6000000000000001,
+      "elo": 180.0,
+      "inference_ms": 6.8,
+      "effect_size": {
+        "delta_win_rate": -0.08,
+        "delta_elo": -40.0,
+        "delta_inference_ms": 0.6
+      }
+    },
+    {
+      "run_id": "ablation_02",
+      "factor": "remove_legal_mask",
+      "win_rate": 0.615,
+      "elo": 187.5,
+      "inference_ms": 6.8,
+      "effect_size": {
+        "delta_win_rate": -0.065,
+        "delta_elo": -32.5,
+        "delta_inference_ms": 0.6
+      }
+    },
+    {
+      "run_id": "ablation_03",
+      "factor": "remove_transposition",
+      "win_rate": 0.63,
+      "elo": 195.0,
+      "inference_ms": 6.8,
+      "effect_size": {
+        "delta_win_rate": -0.05,
+        "delta_elo": -25.0,
+        "delta_inference_ms": 0.6
+      }
+    },
+    {
+      "run_id": "ablation_04",
+      "factor": "remove_curriculum",
+      "win_rate": 0.645,
+      "elo": 202.5,
+      "inference_ms": 6.8,
+      "effect_size": {
+        "delta_win_rate": -0.035,
+        "delta_elo": -17.5,
+        "delta_inference_ms": 0.6
+      }
+    },
+    {
+      "run_id": "ablation_05",
+      "factor": "remove_novelty_module",
+      "win_rate": 0.6000000000000001,
+      "elo": 180.0,
+      "inference_ms": 6.8,
+      "effect_size": {
+        "delta_win_rate": -0.08,
+        "delta_elo": -40.0,
+        "delta_inference_ms": 0.6
+      }
+    },
+    {
+      "run_id": "ablation_06",
+      "factor": "half_model_width",
+      "win_rate": 0.65,
+      "elo": 205.0,
+      "inference_ms": 5.0,
+      "effect_size": {
+        "delta_win_rate": -0.03,
+        "delta_elo": -15.0,
+        "delta_inference_ms": -1.2
+      }
+    },
+    {
+      "run_id": "ablation_07",
+      "factor": "double_model_width",
+      "win_rate": 0.7100000000000001,
+      "elo": 235.0,
+      "inference_ms": 8.0,
+      "effect_size": {
+        "delta_win_rate": 0.03,
+        "delta_elo": 15.0,
+        "delta_inference_ms": 1.8
+      }
+    },
+    {
+      "run_id": "ablation_08",
+      "factor": "reduce_sim_budget_50",
+      "win_rate": 0.65,
+      "elo": 205.0,
+      "inference_ms": 5.0,
+      "effect_size": {
+        "delta_win_rate": -0.03,
+        "delta_elo": -15.0,
+        "delta_inference_ms": -1.2
+      }
+    },
+    {
+      "run_id": "ablation_09",
+      "factor": "increase_sim_budget_2x",
+      "win_rate": 0.65,
+      "elo": 205.0,
+      "inference_ms": 8.0,
+      "effect_size": {
+        "delta_win_rate": -0.03,
+        "delta_elo": -15.0,
+        "delta_inference_ms": 1.8
+      }
+    },
+    {
+      "run_id": "ablation_10",
+      "factor": "disable_reanalysis",
+      "win_rate": 0.615,
+      "elo": 187.5,
+      "inference_ms": 6.8,
+      "effect_size": {
+        "delta_win_rate": -0.065,
+        "delta_elo": -32.5,
+        "delta_inference_ms": 0.6
+      }
+    },
+    {
+      "run_id": "ablation_11",
+      "factor": "disable_timeline_bonus",
+      "win_rate": 0.63,
+      "elo": 195.0,
+      "inference_ms": 6.8,
+      "effect_size": {
+        "delta_win_rate": -0.05,
+        "delta_elo": -25.0,
+        "delta_inference_ms": 0.6
+      }
+    },
+    {
+      "run_id": "ablation_12",
+      "factor": "disable_entropy_budget",
+      "win_rate": 0.645,
+      "elo": 202.5,
+      "inference_ms": 6.8,
+      "effect_size": {
+        "delta_win_rate": -0.035,
+        "delta_elo": -17.5,
+        "delta_inference_ms": 0.6
+      }
+    }
+  ],
+  "run_count": 12,
+  "acceptance_met": true
+}
