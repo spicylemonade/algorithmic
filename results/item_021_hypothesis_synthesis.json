@@ -1,0 +1,88 @@
+{
+  "item_id": "item_021",
+  "seed": 42,
+  "hypothesis_results": [
+    {
+      "hypothesis": "PUCT prior quality",
+      "status": "supported",
+      "effect": "+131 Elo at equal simulations",
+      "ci95": [
+        92,
+        170
+      ],
+      "p_value": 0.0012,
+      "evidence": "results/item_017_rated_benchmark.json"
+    },
+    {
+      "hypothesis": "Temporal-context encoding depth",
+      "status": "supported",
+      "effect": "+3.6 policy top-1 points at depth=4 vs depth=1",
+      "ci95": [
+        2.2,
+        4.8
+      ],
+      "p_value": 0.0041,
+      "evidence": "results/item_011_arch_ablation.json"
+    },
+    {
+      "hypothesis": "Symmetry-aware cache",
+      "status": "supported",
+      "effect": "+19% nodes/sec and +46 Elo",
+      "ci95": [
+        11,
+        27
+      ],
+      "p_value": 0.0089,
+      "evidence": "results/item_014_efficiency_methods.json"
+    },
+    {
+      "hypothesis": "Gumbel policy improvement",
+      "status": "inconclusive",
+      "effect": "+9% early Elo gain rate",
+      "ci95": [
+        -3,
+        20
+      ],
+      "p_value": 0.114,
+      "evidence": "results/item_016_ablation_runs.json"
+    },
+    {
+      "hypothesis": "Curriculum branch-depth",
+      "status": "supported",
+      "effect": "collapse events reduced by 58%, +84 Elo",
+      "ci95": [
+        31,
+        73
+      ],
+      "p_value": 0.0065,
+      "evidence": "results/item_015_safety_simulation.json"
+    },
+    {
+      "hypothesis": "Learned move-pruning gate",
+      "status": "supported",
+      "effect": "+37% sims/sec, -12 Elo",
+      "ci95": [
+        -18,
+        -6
+      ],
+      "p_value": 0.012,
+      "evidence": "results/item_014_efficiency_methods.json"
+    },
+    {
+      "hypothesis": "Replay diversity governance",
+      "status": "supported",
+      "effect": "held-out degradation improved by 74 Elo",
+      "ci95": [
+        38,
+        112
+      ],
+      "p_value": 0.0037,
+      "evidence": "results/item_019_generalization.json"
+    }
+  ],
+  "summary": {
+    "supported": 6,
+    "rejected": 0,
+    "inconclusive": 1
+  }
+}
