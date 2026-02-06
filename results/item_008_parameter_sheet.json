@@ -1,0 +1,11 @@
+{
+  "seed": 42,
+  "parameter_count": 21,
+  "groups": {
+    "convex": ["convex_lr", "convex_iters", "convex_fd_eps", "convex_w_misfit", "convex_w_smooth", "convex_w_convexity"],
+    "sparse": ["period_init_h", "period_grid_coarse_h", "period_grid_fine_h", "pole_samples"],
+    "evolutionary": ["ga_population", "ga_elite_fraction", "ga_crossover_prob", "ga_mutation_prob", "ga_mut_sigma", "ga_generations", "ga_plateau_window"],
+    "fused_loss": ["w_sparse", "w_phys"],
+    "reinforcement": ["adaptive_retry_max", "acceptance_deviation"]
+  }
+}
