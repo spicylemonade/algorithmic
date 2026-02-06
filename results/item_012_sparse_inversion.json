@@ -1,0 +1,14 @@
+{
+  "item_id": "item_012",
+  "seed": 42,
+  "operating_envelope": {
+    "min_points": 100,
+    "min_apparitions": 3
+  },
+  "result": {
+    "objective": 0.2324109243622979,
+    "period_hr": 8.0,
+    "pole_lambda_deg": 0.0,
+    "pole_beta_deg": 10.0
+  }
+}

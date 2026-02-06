@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "created_at": "2026-02-06T23:48:57Z",
-  "updated_at": "2026-02-06T23:53:38.042915+00:00",
+  "updated_at": "2026-02-06T23:53:57.028390+00:00",
   "current_agent": "researcher",
   "agent_status": {
     "orchestrator": {
@@ -135,8 +135,8 @@
           "id": "item_012",
           "description": "Design sparse inversion module for low-density survey data",
           "acceptance_criteria": "Specify algorithm for pole and period inference from sparse points with priors, regularization, and minimum-data operating envelope",
-          "status": "pending",
-          "notes": null,
+          "status": "completed",
+          "notes": "Implemented sparse inversion module in src/lci/sparse_inversion.py with priors/regularization and minimum-data envelope checks; documented algorithm in docs/sparse_inversion_design.md; saved reproducible run output in results/item_012_sparse_inversion.json.",
           "error": null
         },
         {
@@ -262,9 +262,9 @@
   ],
   "summary": {
     "total_items": 25,
-    "completed": 11,
+    "completed": 12,
     "in_progress": 0,
     "failed": 0,
-    "pending": 14
+    "pending": 13
   }
 }
