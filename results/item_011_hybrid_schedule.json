@@ -1,0 +1,31 @@
+{
+  "schedule": {
+    "stage_1": {
+      "name": "convex_initialization",
+      "max_iters": 150,
+      "stop_on_plateau_eps": 0.0001,
+      "plateau_window": 12
+    },
+    "handoff": {
+      "requires_plateau": true,
+      "residual_autocorr_threshold": 0.25,
+      "minimum_signal_to_noise": 3.0
+    },
+    "stage_2": {
+      "name": "evolutionary_refinement",
+      "generations": 350,
+      "population": 120,
+      "convexity_penalty_anneal": [
+        1.0,
+        0.1
+      ]
+    }
+  },
+  "sample_decision": {
+    "switch_to_evolutionary": false,
+    "reason": "continue_convex",
+    "plateau_window": 12,
+    "residual_autocorr": 0.31
+  },
+  "seed": 42
+}
