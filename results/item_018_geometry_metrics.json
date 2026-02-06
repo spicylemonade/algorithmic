@@ -1,0 +1,87 @@
+{
+  "seed": 42,
+  "per_target": [
+    {
+      "number": 1,
+      "name": "Ceres",
+      "normalized_hausdorff": 0.9960771059163922,
+      "volumetric_iou": 0.0,
+      "deviation": 1.0,
+      "pass_5pct": false
+    },
+    {
+      "number": 4,
+      "name": "Vesta",
+      "normalized_hausdorff": 0.993007358599829,
+      "volumetric_iou": 0.0,
+      "deviation": 1.0,
+      "pass_5pct": false
+    },
+    {
+      "number": 16,
+      "name": "Psyche",
+      "normalized_hausdorff": 0.9862372851844892,
+      "volumetric_iou": 0.0,
+      "deviation": 1.0,
+      "pass_5pct": false
+    },
+    {
+      "number": 21,
+      "name": "Lutetia",
+      "normalized_hausdorff": 2.3920318143393953,
+      "volumetric_iou": 0.06428309691405608,
+      "deviation": 2.3920318143393953,
+      "pass_5pct": false
+    },
+    {
+      "number": 22,
+      "name": "Kalliope",
+      "normalized_hausdorff": 0.9801942933316792,
+      "volumetric_iou": 0.0,
+      "deviation": 1.0,
+      "pass_5pct": false
+    },
+    {
+      "number": 45,
+      "name": "Eugenia",
+      "normalized_hausdorff": 0.9815624000765206,
+      "volumetric_iou": 0.0,
+      "deviation": 1.0,
+      "pass_5pct": false
+    },
+    {
+      "number": 87,
+      "name": "Sylvia",
+      "normalized_hausdorff": 0.9877819125916959,
+      "volumetric_iou": 0.0,
+      "deviation": 1.0,
+      "pass_5pct": false
+    },
+    {
+      "number": 216,
+      "name": "Kleopatra",
+      "normalized_hausdorff": 0.9840172160563456,
+      "volumetric_iou": 0.0,
+      "deviation": 1.0,
+      "pass_5pct": false
+    },
+    {
+      "number": 97,
+      "name": "Klotho",
+      "normalized_hausdorff": 0.9638762329488675,
+      "volumetric_iou": 0.0,
+      "deviation": 1.0,
+      "pass_5pct": false
+    }
+  ],
+  "summary": {
+    "count": 9,
+    "mean_normalized_hausdorff": 1.1405317354494682,
+    "median_normalized_hausdorff": 0.9862372851844892,
+    "worst_normalized_hausdorff": 2.3920318143393953,
+    "mean_iou": 0.007142566323784009,
+    "median_iou": 0.0,
+    "worst_iou": 0.0,
+    "pass_rate_5pct": 0.0
+  }
+}

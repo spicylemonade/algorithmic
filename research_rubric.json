@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "created_at": "2026-02-06T23:08:35Z",
-  "updated_at": "2026-02-06T23:26:11.718174+00:00",
+  "updated_at": "2026-02-06T23:26:57.784160+00:00",
   "current_agent": "researcher",
   "agent_status": {
     "orchestrator": {
@@ -190,9 +190,9 @@
           "id": "item_018",
           "description": "Quantify geometric reconstruction accuracy against ground truth",
           "acceptance_criteria": "Compute normalized Hausdorff and volumetric IoU for every validation target; report mean, median, and worst-case with pass/fail vs 5% deviation threshold",
-          "status": "pending",
-          "notes": null,
-          "error": null
+          "status": "completed",
+          "notes": "Computed per-target normalized Hausdorff and volumetric IoU with mean/median/worst summaries and 5% threshold pass/fail flags.",
+          "error": ""
         },
         {
           "id": "item_019",
@@ -262,9 +262,9 @@
   ],
   "summary": {
     "total_items": 25,
-    "completed": 17,
+    "completed": 18,
     "in_progress": 0,
     "failed": 0,
-    "pending": 8
+    "pending": 7
   }
 }
