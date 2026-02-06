@@ -1,97 +1,106 @@
 {
   "seed": 42,
-  "n_targets": 9,
+  "n_targets": 10,
   "runs": [
     {
       "number": 1,
       "name": "Ceres",
-      "n_obs": 30,
-      "runtime_sec": 1.346073865890503,
-      "convex_loss": 87734690639.55699,
-      "evo_loss": 87734405605.6671,
+      "n_obs": 60,
+      "runtime_sec": 18.16642665863037,
+      "convex_loss": 201074336349.6329,
+      "evo_loss": 201073544843.15808,
       "converged": true,
-      "generations": 6
+      "generations": 12
     },
     {
       "number": 4,
       "name": "Vesta",
-      "n_obs": 30,
-      "runtime_sec": 1.343113899230957,
-      "convex_loss": 2494012240.149529,
-      "evo_loss": 2493964374.192223,
+      "n_obs": 60,
+      "runtime_sec": 18.130631923675537,
+      "convex_loss": 8439477657.302166,
+      "evo_loss": 8439347244.817918,
       "converged": true,
-      "generations": 6
+      "generations": 10
     },
     {
       "number": 16,
       "name": "Psyche",
-      "n_obs": 30,
-      "runtime_sec": 1.344881296157837,
-      "convex_loss": 119412954.50100355,
-      "evo_loss": 119402455.76232491,
+      "n_obs": 60,
+      "runtime_sec": 18.137559175491333,
+      "convex_loss": 299031861.19335127,
+      "evo_loss": 299008480.0135025,
       "converged": true,
       "generations": 6
     },
     {
       "number": 21,
       "name": "Lutetia",
-      "n_obs": 30,
-      "runtime_sec": 1.3402447700500488,
-      "convex_loss": 0.9995027943695102,
-      "evo_loss": 0.8067595760933493,
+      "n_obs": 60,
+      "runtime_sec": 18.14837384223938,
+      "convex_loss": 0.5281310100985165,
+      "evo_loss": 0.30221486407919346,
       "converged": true,
-      "generations": 6
+      "generations": 12
     },
     {
       "number": 22,
       "name": "Kalliope",
-      "n_obs": 30,
-      "runtime_sec": 1.3444421291351318,
-      "convex_loss": 47879597.0899709,
-      "evo_loss": 47873375.86710671,
+      "n_obs": 60,
+      "runtime_sec": 18.136671781539917,
+      "convex_loss": 92475446.71085578,
+      "evo_loss": 92458167.0732875,
       "converged": true,
-      "generations": 6
+      "generations": 12
     },
     {
       "number": 45,
       "name": "Eugenia",
-      "n_obs": 30,
-      "runtime_sec": 1.3413825035095215,
-      "convex_loss": 80206912.97086696,
-      "evo_loss": 80198863.58908495,
+      "n_obs": 60,
+      "runtime_sec": 18.18737816810608,
+      "convex_loss": 223917509.47144693,
+      "evo_loss": 223891445.9786958,
       "converged": true,
-      "generations": 6
+      "generations": 12
     },
     {
       "number": 87,
       "name": "Sylvia",
-      "n_obs": 30,
-      "runtime_sec": 1.3447566032409668,
-      "convex_loss": 286599072.08183986,
-      "evo_loss": 286582865.37480575,
+      "n_obs": 60,
+      "runtime_sec": 18.15140676498413,
+      "convex_loss": 666684279.1807691,
+      "evo_loss": 666637813.4319184,
       "converged": true,
-      "generations": 6
+      "generations": 12
     },
     {
       "number": 216,
       "name": "Kleopatra",
-      "n_obs": 30,
-      "runtime_sec": 1.3449718952178955,
-      "convex_loss": 34577490.20843548,
-      "evo_loss": 34571842.15349809,
+      "n_obs": 60,
+      "runtime_sec": 18.180647134780884,
+      "convex_loss": 105963215.99646217,
+      "evo_loss": 105944799.14258766,
       "converged": true,
-      "generations": 6
+      "generations": 12
+    },
+    {
+      "number": 433,
+      "name": "Eros",
+      "n_obs": 60,
+      "runtime_sec": 18.22872257232666,
+      "convex_loss": 5.541829685747763,
+      "evo_loss": 4.867998847646046,
+      "converged": true,
+      "generations": 11
     },
     {
       "number": 97,
       "name": "Klotho",
-      "n_obs": 30,
-      "runtime_sec": 1.3441627025604248,
-      "convex_loss": 205937.30574527857,
-      "evo_loss": 205516.11192778606,
+      "n_obs": 60,
+      "runtime_sec": 18.20664620399475,
+      "convex_loss": 6444423.692261713,
+      "evo_loss": 6440146.851657009,
       "converged": true,
-      "generations": 6
+      "generations": 12
     }
-  ],
-  "blind_policy": "Solver initialization is generic sphere; ground-truth mesh only used for synthetic observation generation."
+  ]
 }
