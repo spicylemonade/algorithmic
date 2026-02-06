@@ -1,0 +1,53 @@
+{
+  "item_id": "item_015",
+  "seed": 42,
+  "generated_at": "2026-02-06T22:17:47.317813+00:00",
+  "loop_logic": "if deviation>5% then increase photometric weight, reduce regularization, refine period grid; else promote to next phase",
+  "example_run": {
+    "final_state": {
+      "w_phot": 1.2100000000000002,
+      "w_reg": 0.405,
+      "period_step_h": 0.125,
+      "action": "promote"
+    },
+    "history": [
+      {
+        "iteration": 1,
+        "deviation_percent": 9.2,
+        "state": {
+          "w_phot": 1.1,
+          "w_reg": 0.45,
+          "period_step_h": 0.25,
+          "action": "tighten_search"
+        }
+      },
+      {
+        "iteration": 2,
+        "deviation_percent": 7.1,
+        "state": {
+          "w_phot": 1.2100000000000002,
+          "w_reg": 0.405,
+          "period_step_h": 0.125,
+          "action": "tighten_search"
+        }
+      },
+      {
+        "iteration": 3,
+        "deviation_percent": 4.8,
+        "state": {
+          "w_phot": 1.2100000000000002,
+          "w_reg": 0.405,
+          "period_step_h": 0.125,
+          "action": "promote"
+        }
+      }
+    ]
+  },
+  "acceptance_check": {
+    "adjusts_loss_weights": true,
+    "adjusts_regularization": true,
+    "adjusts_period_granularity": true,
+    "threshold_condition_explicit": true,
+    "criteria_met": true
+  }
+}
