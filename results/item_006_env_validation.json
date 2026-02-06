@@ -1,0 +1,14 @@
+{
+  "item": "item_006",
+  "seed": 42,
+  "interfaces": [
+    "reset",
+    "step",
+    "legal_actions",
+    "is_terminal"
+  ],
+  "reproducibility_trials": 50,
+  "reproducibility_passes": 50,
+  "coverage_percent": 94,
+  "acceptance_met": true
+}
