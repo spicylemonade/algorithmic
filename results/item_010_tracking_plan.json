@@ -1,0 +1,14 @@
+{
+  "item_id": "item_010",
+  "seed": 42,
+  "required_fields": [
+    "run_id",
+    "timestamp_utc",
+    "seed",
+    "git_commit",
+    "config_hash",
+    "data_snapshot_hash",
+    "command"
+  ],
+  "reconstructability_target": 1.0
+}
