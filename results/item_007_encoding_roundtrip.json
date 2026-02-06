@@ -1,0 +1,21 @@
+{
+  "item_id": "item_007",
+  "seed": 42,
+  "state_roundtrip_tests": 10000,
+  "action_roundtrip_tests": 10000,
+  "state_mismatches": 0,
+  "action_mismatches": 0,
+  "total_mismatches": 0,
+  "passed": true,
+  "tensor_schema": {
+    "shape": [
+      4,
+      4,
+      8,
+      8,
+      14
+    ],
+    "description": "[timeline,time,rank,file,channel] with channels=12 piece planes + side_to_move + occupancy"
+  },
+  "action_indexing": "mixed-radix packing over (src_l,src_t,src_r,src_c,dst_l,dst_t,dst_r,dst_c,promo,branch)"
+}
