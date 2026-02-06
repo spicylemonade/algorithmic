@@ -1,0 +1,11 @@
+{
+  "item_id": "item_012",
+  "seed": 42,
+  "trees_tested": 100,
+  "passed": true,
+  "summary": {
+    "prior_norm_pass": 100,
+    "visit_monotonic_pass": 100,
+    "backup_pass": 100
+  }
+}

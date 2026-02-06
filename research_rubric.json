@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "created_at": "2026-02-06T09:24:02Z",
-  "updated_at": "2026-02-06T09:39:13.636883+00:00",
+  "updated_at": "2026-02-06T09:39:40.795215+00:00",
   "current_agent": "researcher",
   "agent_status": {
     "orchestrator": {
@@ -135,8 +135,8 @@
           "id": "item_012",
           "description": "Develop PUCT-based MCTS adapted for trans-dimensional move priors and virtual loss parallelism",
           "acceptance_criteria": "Document equations and implementation plan, then validate search invariants (visit monotonicity, prior normalization, backup correctness) on 100 synthetic trees",
-          "status": "pending",
-          "notes": null,
+          "status": "completed",
+          "notes": "Implemented PUCT core in src/alphago5d/mcts.py and documented equations in docs/puct_equations.md; validated invariants on 100 synthetic trees (prior normalization, visit monotonicity, backup correctness) with full pass in results/item_012_mcts_invariants.json.",
           "error": null
         },
         {
@@ -262,9 +262,9 @@
   ],
   "summary": {
     "total_items": 25,
-    "completed": 11,
+    "completed": 12,
     "in_progress": 0,
     "failed": 0,
-    "pending": 14
+    "pending": 13
   }
 }
