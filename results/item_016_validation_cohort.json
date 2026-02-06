@@ -1,0 +1,92 @@
+{
+  "item_id": "item_016",
+  "seed": 42,
+  "generated_at": "2026-02-06T22:19:26.090338+00:00",
+  "validation_cohort": [
+    {
+      "asteroid": "433 Eros",
+      "source": "DAMIT",
+      "mesh_url": "https://damit.cuni.cz/projects/damit/stored_files/open/9772/shape.txt",
+      "http_status": "200",
+      "downloadable": true
+    },
+    {
+      "asteroid": "216 Kleopatra",
+      "source": "DAMIT",
+      "mesh_url": "https://damit.cuni.cz/projects/damit/stored_files/open/6120/shape.txt",
+      "http_status": "200",
+      "downloadable": true
+    },
+    {
+      "asteroid": "4 Vesta",
+      "source": "DAMIT",
+      "mesh_url": "https://damit.cuni.cz/projects/damit/stored_files/open/64139/shape.txt",
+      "http_status": "200",
+      "downloadable": true
+    },
+    {
+      "asteroid": "15 Eunomia",
+      "source": "DAMIT",
+      "mesh_url": "https://damit.cuni.cz/projects/damit/stored_files/open/92/shape.txt",
+      "http_status": "200",
+      "downloadable": true
+    },
+    {
+      "asteroid": "87 Sylvia",
+      "source": "DAMIT",
+      "mesh_url": "https://damit.cuni.cz/projects/damit/stored_files/open/328/shape.txt",
+      "http_status": "200",
+      "downloadable": true
+    },
+    {
+      "asteroid": "243 Ida",
+      "source": "DAMIT",
+      "mesh_url": "https://damit.cuni.cz/projects/damit/stored_files/open/3035/shape.txt",
+      "http_status": "200",
+      "downloadable": true
+    },
+    {
+      "asteroid": "25143 Itokawa",
+      "source": "JPL Radar",
+      "mesh_url": "https://echo.jpl.nasa.gov/asteroids/shapes/sf36.v.mod.wf",
+      "http_status": "200",
+      "downloadable": true
+    },
+    {
+      "asteroid": "4179 Toutatis",
+      "source": "JPL Radar",
+      "mesh_url": "https://echo.jpl.nasa.gov/asteroids/shapes/toutatis.obj",
+      "http_status": "200",
+      "downloadable": true
+    },
+    {
+      "asteroid": "4769 Castalia",
+      "source": "JPL Radar",
+      "mesh_url": "https://echo.jpl.nasa.gov/asteroids/shapes/castalia.obj",
+      "http_status": "200",
+      "downloadable": true
+    },
+    {
+      "asteroid": "1620 Geographos",
+      "source": "JPL Radar",
+      "mesh_url": "https://echo.jpl.nasa.gov/asteroids/shapes/geographos.obj",
+      "http_status": "200",
+      "downloadable": true
+    }
+  ],
+  "requirements_check": {
+    "count_at_least_10": true,
+    "contains_433_eros": true,
+    "contains_25143_itokawa": true,
+    "contains_216_kleopatra": true,
+    "all_links_downloadable": true
+  },
+  "acceptance_check": {
+    "count_at_least_10": true,
+    "contains_433_eros": true,
+    "contains_25143_itokawa": true,
+    "contains_216_kleopatra": true,
+    "all_links_downloadable": true,
+    "criteria_met": true
+  }
+}

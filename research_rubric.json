@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "created_at": "2026-02-06T22:10:06Z",
-  "updated_at": "2026-02-06T22:17:51.782572+00:00",
+  "updated_at": "2026-02-06T22:19:30.520614+00:00",
   "current_agent": "researcher",
   "agent_status": {
     "orchestrator": {
@@ -174,8 +174,8 @@
           "id": "item_016",
           "description": "Assemble ground-truth validation cohort from DAMIT and JPL radar models",
           "acceptance_criteria": "Create a validation set with at least 10 asteroids including 433 Eros, 25143 Itokawa, and 216 Kleopatra, each linked to downloadable reference meshes",
-          "status": "pending",
-          "notes": null,
+          "status": "completed",
+          "notes": "Assembled 10-object DAMIT/JPL cohort including Eros, Itokawa, Kleopatra with validated downloadable mesh links.",
           "error": null
         },
         {
@@ -262,9 +262,9 @@
   ],
   "summary": {
     "total_items": 25,
-    "completed": 15,
+    "completed": 16,
     "in_progress": 0,
     "failed": 0,
-    "pending": 10
+    "pending": 9
   }
 }
