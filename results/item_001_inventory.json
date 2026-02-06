@@ -1,0 +1,79 @@
+{
+  "top_level_inventory": [
+    {
+      "path": ".archivara",
+      "type": "directory",
+      "purpose": "Agent execution logs and orchestration metadata",
+      "dependency_notes": "Read-only for diagnostics; no runtime dependency"
+    },
+    {
+      "path": ".git",
+      "type": "directory",
+      "purpose": "Git repository metadata",
+      "dependency_notes": "Required for commit/version tracking only"
+    },
+    {
+      "path": "TASK_researcher.md",
+      "type": "file",
+      "purpose": "Research task instructions for this agent",
+      "dependency_notes": "Guides execution order and deliverables"
+    },
+    {
+      "path": "data",
+      "type": "directory",
+      "purpose": "Downloaded and intermediate datasets",
+      "dependency_notes": "Feeds inversion and validation pipeline"
+    },
+    {
+      "path": "docs",
+      "type": "directory",
+      "purpose": "Design and analysis documentation",
+      "dependency_notes": "Generated from analysis scripts/results artifacts"
+    },
+    {
+      "path": "figures",
+      "type": "directory",
+      "purpose": "Output PNG visualizations for experiments",
+      "dependency_notes": "Populated by plotting scripts from results/*"
+    },
+    {
+      "path": "main.py",
+      "type": "file",
+      "purpose": "Project entrypoint placeholder",
+      "dependency_notes": "Will call src/lci pipeline modules"
+    },
+    {
+      "path": "models",
+      "type": "directory",
+      "purpose": "Ground truth and generated 3D meshes",
+      "dependency_notes": "Feeds mesh comparison metrics (Hausdorff/IoU)"
+    },
+    {
+      "path": "research_rubric.json",
+      "type": "file",
+      "purpose": "Execution rubric and progress tracker",
+      "dependency_notes": "Updated by tools/update_rubric.py before/after each item"
+    },
+    {
+      "path": "results",
+      "type": "directory",
+      "purpose": "Structured experiment outputs in JSON",
+      "dependency_notes": "Consumed by reports and ranking outputs"
+    },
+    {
+      "path": "src",
+      "type": "directory",
+      "purpose": "LCI package source code",
+      "dependency_notes": "Depends on standard Python runtime + optional C++ acceleration"
+    },
+    {
+      "path": "tools",
+      "type": "directory",
+      "purpose": "Research utility scripts (rubric updates, data tooling)",
+      "dependency_notes": "Depends on Python stdlib and occasional third-party libs"
+    }
+  ],
+  "missing_expected": [
+    "TASK_orchestrator.md"
+  ]
+}
