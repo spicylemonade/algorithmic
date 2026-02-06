@@ -1,8 +1,8 @@
 {
   "version": "1.0",
   "created_at": "2026-02-06T09:24:02Z",
-  "updated_at": "2026-02-06T09:44:51.614328+00:00",
-  "current_agent": "writer",
+  "updated_at": "2026-02-06T09:45:02.758918+00:00",
+  "current_agent": "researcher",
   "agent_status": {
     "orchestrator": {
       "status": "completed",
@@ -13,7 +13,7 @@
     "researcher": {
       "status": "completed",
       "started_at": "2026-02-06T09:24:12.747262+00:00",
-      "completed_at": "2026-02-06T09:44:51.614301+00:00",
+      "completed_at": "2026-02-06T09:45:02.758891+00:00",
       "error": null
     },
     "writer": {
