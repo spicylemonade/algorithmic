@@ -1,0 +1,45 @@
+{
+  "seed": 42,
+  "state_definition": {
+    "timelines": "Ordered map of timeline_id -> sequence of boards by time index",
+    "turn_state": [
+      "side_to_move",
+      "castling_rights",
+      "en_passant",
+      "halfmove_clock",
+      "fullmove_number"
+    ]
+  },
+  "action_fields": [
+    "source_timeline",
+    "source_time",
+    "source_square",
+    "target_timeline",
+    "target_time",
+    "target_square",
+    "promotion_piece",
+    "special_flag"
+  ],
+  "transition_notes": "Temporal moves may create new timelines; legality enforces no self-check across active presents.",
+  "reward": {
+    "win": 1,
+    "loss": -1,
+    "draw": 0
+  },
+  "terminal_conditions": [
+    "checkmate",
+    "stalemate",
+    "threefold_repetition",
+    "fifty_move_rule",
+    "insufficient_material",
+    "timeout_adjudication"
+  ],
+  "worked_examples": [
+    {"id": "ex1", "type": "legal", "move": "(L0,T4,g1)->(L0,T4,f3)", "reason": "Knight L-move to empty square"},
+    {"id": "ex2", "type": "illegal", "move": "(L0,T4,c1)->(L0,T4,c3)", "reason": "Bishop non-diagonal move"},
+    {"id": "ex3", "type": "legal", "move": "(L0,T6,a1)->(L1,T5,a1)", "reason": "Allowed rook temporal branch"},
+    {"id": "ex4", "type": "illegal", "move": "(L0,T6,e5)->(L0,T5,e5)", "reason": "Pawn backward temporal move forbidden"},
+    {"id": "ex5", "type": "legal", "move": "(L0,T9,h4)->(L0,T9,e1)", "reason": "Checkmating capture"},
+    {"id": "ex6", "type": "illegal", "move": "(L0,T10,e1)->(L0,T10,e2)", "reason": "Leaves king in check"}
+  ]
+}
