@@ -1,0 +1,20 @@
+{
+  "item": "item_024",
+  "artifact_version": "v1.0",
+  "figures": [
+    "figures/item_016_ablations.png",
+    "figures/item_017_scaling.png",
+    "figures/item_018_robustness.png",
+    "figures/item_019_elo_progression.png",
+    "figures/item_020_efficiency.png",
+    "figures/item_024_learning_curve.png",
+    "figures/item_024_elo_progression.png",
+    "figures/item_024_latency_tradeoff.png"
+  ],
+  "tables": [
+    "results/item_024_table_1.csv",
+    "results/item_024_table_2.csv",
+    "results/item_024_table_3.csv",
+    "results/item_024_table_4.csv"
+  ]
+}

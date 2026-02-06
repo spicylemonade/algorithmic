@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "created_at": "2026-02-06T06:35:59Z",
-  "updated_at": "2026-02-06T07:12:07.555316+00:00",
+  "updated_at": "2026-02-06T07:12:37.965328+00:00",
   "current_agent": "researcher",
   "agent_status": {
     "orchestrator": {
@@ -245,8 +245,8 @@
           "id": "item_024",
           "description": "Prepare publication-quality artifacts",
           "acceptance_criteria": "Generate at least 8 figures and 4 tables (learning curves, Elo progression, ablations, efficiency) with source scripts and versioned outputs",
-          "status": "pending",
-          "notes": null,
+          "status": "completed",
+          "notes": "Generated 8 figures and 4 tables with scripted source generation and versioned artifact manifest.",
           "error": null
         },
         {
@@ -262,9 +262,9 @@
   ],
   "summary": {
     "total_items": 25,
-    "completed": 22,
+    "completed": 23,
     "in_progress": 0,
     "failed": 1,
-    "pending": 2
+    "pending": 1
   }
 }

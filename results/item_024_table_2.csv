@@ -1,0 +1,4 @@
+ablation,delta_elo,delta_cost_ms
+remove_transposition,-30,0.6
+remove_legal_mask,-40,0.6
+double_model_width,15,1.8

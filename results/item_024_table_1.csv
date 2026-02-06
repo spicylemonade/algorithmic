@@ -1,0 +1,4 @@
+model,elo,win_rate
+baseline_random,-300,0.1
+baseline_heuristic,0,0.5
+candidate,269,0.82
