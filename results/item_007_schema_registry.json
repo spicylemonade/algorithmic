@@ -1,0 +1,13 @@
+{
+  "seed": 42,
+  "schemas": {
+    "ALCDEF": ["mpc_designation", "jd_utc", "mag", "mag_err", "filter", "observer_code", "reduced_mag_flag"],
+    "PDS": ["target_name", "time_utc", "flux", "flux_err", "instrument", "calibration_level"],
+    "GAIA_DR3": ["source_id", "epoch", "g_mag", "g_mag_error", "phase_angle_deg", "heliocentric_distance_au", "observer_distance_au"],
+    "ZTF_PANSTARRS": ["object_id", "mjd", "mag_psf", "sigmag_psf", "filter_id", "field_id", "quality_flag"],
+    "MPC": ["packed_designation", "epoch_mjd", "a_au", "e", "i_deg", "node_deg", "argperi_deg", "mean_anomaly_deg"],
+    "DAMIT": ["asteroid_id", "model_file", "pole_lambda_deg", "pole_beta_deg", "period_h", "quality_note"],
+    "JPL_RADAR": ["target", "mesh_file", "resolution_m", "spin_axis", "reference_frame"]
+  },
+  "null_handling_defined": true
+}
