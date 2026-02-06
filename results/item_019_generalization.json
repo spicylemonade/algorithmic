@@ -1,0 +1,28 @@
+{
+  "item_id": "item_019",
+  "seed": 42,
+  "in_distribution_elo": 1710.0,
+  "suites": [
+    {
+      "name": "unseen_openings",
+      "elo": 1602.0,
+      "degradation_pct": 6.315789473684211,
+      "pass_under_10pct": true
+    },
+    {
+      "name": "novel_timeline_structures",
+      "elo": 1568.0,
+      "degradation_pct": 8.304093567251462,
+      "pass_under_10pct": true
+    },
+    {
+      "name": "adversarial_style_agents",
+      "elo": 1494.0,
+      "degradation_pct": 12.631578947368421,
+      "pass_under_10pct": false
+    }
+  ],
+  "passes_under_10pct": 2,
+  "requirement": "at least 2 suites under 10% degradation",
+  "passed": true
+}

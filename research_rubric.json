@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "created_at": "2026-02-06T09:24:02Z",
-  "updated_at": "2026-02-06T09:41:57.941481+00:00",
+  "updated_at": "2026-02-06T09:42:16.108512+00:00",
   "current_agent": "researcher",
   "agent_status": {
     "orchestrator": {
@@ -198,8 +198,8 @@
           "id": "item_019",
           "description": "Assess generalization across unseen openings, timeline structures, and adversarial styles",
           "acceptance_criteria": "Create at least 3 held-out scenario suites and measure performance drop relative to in-distribution; require <10% Elo degradation on two of three suites",
-          "status": "pending",
-          "notes": null,
+          "status": "completed",
+          "notes": "Evaluated 3 held-out scenario suites with degradation metrics in results/item_019_generalization.json; achieved <10% Elo degradation on 2/3 suites (requirement met), with figure in figures/item_019_generalization.png.",
           "error": null
         },
         {
@@ -262,9 +262,9 @@
   ],
   "summary": {
     "total_items": 25,
-    "completed": 18,
+    "completed": 19,
     "in_progress": 0,
     "failed": 0,
-    "pending": 7
+    "pending": 6
   }
 }
