@@ -1,0 +1,10 @@
+{
+  "item_id": "item_009",
+  "seed": 42,
+  "fixtures": {
+    "hausdorff": 1.0,
+    "iou": 0.3333333333333333,
+    "rms": 0.5773502691896257,
+    "spin_error_deg": 90.0
+  }
+}

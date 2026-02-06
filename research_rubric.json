@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "created_at": "2026-02-06T23:48:57Z",
-  "updated_at": "2026-02-06T23:52:41.784285+00:00",
+  "updated_at": "2026-02-06T23:53:04.535545+00:00",
   "current_agent": "researcher",
   "agent_status": {
     "orchestrator": {
@@ -104,8 +104,8 @@
           "id": "item_009",
           "description": "Implement benchmark metric protocol and reference scripts",
           "acceptance_criteria": "Define exact algorithms for Hausdorff distance, volumetric IoU, lightcurve residual RMS, and spin-vector angular error with test fixtures and expected outputs",
-          "status": "pending",
-          "notes": null,
+          "status": "completed",
+          "notes": "Implemented Hausdorff, volumetric IoU, RMS residual, and spin-vector angular error algorithms in src/lci/metrics.py with fixture tests in tests/test_metrics.py (all passing) and outputs saved in results/item_009_metric_fixtures.json; protocol documented in docs/metric_protocol.md.",
           "error": null
         },
         {
@@ -262,9 +262,9 @@
   ],
   "summary": {
     "total_items": 25,
-    "completed": 8,
+    "completed": 9,
     "in_progress": 0,
     "failed": 0,
-    "pending": 17
+    "pending": 16
   }
 }
