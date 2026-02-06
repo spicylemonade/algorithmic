@@ -1,0 +1,49 @@
+{
+  "item": "item_004",
+  "seed": 42,
+  "hypotheses": [
+    {
+      "id": "H1",
+      "statement": "Timeline-graph encoders reduce value loss versus flat stacked tensors.",
+      "metric": "validation value MSE",
+      "test": "paired training runs with fixed compute",
+      "success_condition": "graph encoder MSE <= 0.95 * tensor encoder MSE"
+    },
+    {
+      "id": "H2",
+      "statement": "Legal-action masking improves sample efficiency in large 5D action spaces.",
+      "metric": "self-play Elo vs training steps",
+      "test": "masked vs unmasked policy head",
+      "success_condition": "masked model reaches target Elo in <= 80% steps"
+    },
+    {
+      "id": "H3",
+      "statement": "Transposition-aware MCTS improves node efficiency for equal win rate.",
+      "metric": "nodes expanded per decisive win",
+      "test": "PUCT with vs without transposition table",
+      "success_condition": ">=20% fewer nodes at matched win rate"
+    },
+    {
+      "id": "H4",
+      "statement": "Curriculum over timeline depth stabilizes training.",
+      "metric": "rolling policy loss variance",
+      "test": "curriculum vs no curriculum",
+      "success_condition": "variance reduced by >=25% over three windows"
+    },
+    {
+      "id": "H5",
+      "statement": "Causal-consistency regularization reduces tactical blunders in timeline traps.",
+      "metric": "trap-suite solve rate",
+      "test": "regularized vs baseline model",
+      "success_condition": ">=10 percentage-point improvement"
+    },
+    {
+      "id": "H6",
+      "statement": "Adaptive simulation budgeting by timeline entropy outperforms fixed-budget search.",
+      "metric": "win rate at fixed wall-clock",
+      "test": "adaptive vs fixed simulation allocation",
+      "success_condition": ">=5 percentage-point win-rate gain"
+    }
+  ],
+  "count": 6
+}
