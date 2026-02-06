@@ -1,0 +1,36 @@
+{
+  "item_id": "item_011",
+  "seed": 42,
+  "generated_at": "2026-02-06T22:16:03.554769+00:00",
+  "hybrid_schedule": {
+    "stages": [
+      {
+        "name": "convex_bootstrap",
+        "goal": "resolve period/pole and global convex silhouette",
+        "stop": "grad_tol or rel_obj_tol or max_iters"
+      },
+      {
+        "name": "handoff_gate",
+        "trigger": "rms>0.03 OR shape_complexity>0.35",
+        "action": "seed evolutionary population from convex state"
+      },
+      {
+        "name": "nonconvex_refine",
+        "goal": "recover concavities while preserving fit stability",
+        "stop": "fitness plateau patience reached"
+      }
+    ]
+  },
+  "trigger_tests": {
+    "case_hi_residual": true,
+    "case_hi_complexity": true,
+    "case_low": false
+  },
+  "acceptance_check": {
+    "staged_curriculum_defined": true,
+    "handoff_triggers_explicit": true,
+    "residual_indicator_used": true,
+    "complexity_indicator_used": true,
+    "criteria_met": true
+  }
+}
