@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "created_at": "2026-02-06T08:07:25Z",
-  "updated_at": "2026-02-06T08:12:54.390687+00:00",
+  "updated_at": "2026-02-06T08:14:07.389217+00:00",
   "current_agent": "researcher",
   "agent_status": {
     "orchestrator": {
@@ -104,8 +104,8 @@
           "id": "item_009",
           "description": "Define baseline agents for benchmarking",
           "acceptance_criteria": "Specify at least three baselines (random, heuristic, shallow search) and evaluation protocol over 500 games per matchup",
-          "status": "pending",
-          "notes": null,
+          "status": "completed",
+          "notes": "Defined three baselines (random, heuristic, shallow search) and executed 500-game evaluation per matchup (3 matchups total) with fixed seed 42; protocol and results documented in docs/baseline_agents_protocol.md and results/item_009_baseline_agents_benchmark.json.",
           "error": null
         },
         {
@@ -262,9 +262,9 @@
   ],
   "summary": {
     "total_items": 25,
-    "completed": 8,
+    "completed": 9,
     "in_progress": 0,
     "failed": 0,
-    "pending": 17
+    "pending": 16
   }
 }

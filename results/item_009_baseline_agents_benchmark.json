@@ -1,0 +1,33 @@
+{
+  "seed": 42,
+  "protocol_games_per_matchup": 500,
+  "matchups": [
+    {
+      "agent_a": "random",
+      "agent_b": "heuristic",
+      "games": 500,
+      "wins_a": 32,
+      "wins_b": 346,
+      "draws": 122,
+      "win_rate_a": 0.064
+    },
+    {
+      "agent_a": "random",
+      "agent_b": "shallow_search",
+      "games": 500,
+      "wins_a": 0,
+      "wins_b": 378,
+      "draws": 122,
+      "win_rate_a": 0.0
+    },
+    {
+      "agent_a": "heuristic",
+      "agent_b": "shallow_search",
+      "games": 500,
+      "wins_a": 0,
+      "wins_b": 500,
+      "draws": 0,
+      "win_rate_a": 0.0
+    }
+  ]
+}
