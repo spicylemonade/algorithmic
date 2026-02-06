@@ -1,0 +1,54 @@
+{
+  "item": "item_021",
+  "seed": 42,
+  "hypotheses": [
+    {
+      "id": "H1",
+      "metric": "validation value MSE",
+      "evidence": "item_011 encoder comparison",
+      "estimate": -0.905,
+      "uncertainty": "+/- 0.03 MSE (bootstrap)",
+      "verdict": "supported"
+    },
+    {
+      "id": "H2",
+      "metric": "mask violation rate",
+      "evidence": "item_012 held-out validation",
+      "estimate": 0.0,
+      "uncertainty": "upper 95% bound <0.002",
+      "verdict": "supported"
+    },
+    {
+      "id": "H3",
+      "metric": "node efficiency gain",
+      "evidence": "item_013 temporal MCTS benchmark",
+      "estimate": 0.119,
+      "uncertainty": "+/-0.02",
+      "verdict": "unsupported"
+    },
+    {
+      "id": "H4",
+      "metric": "training collapse over windows",
+      "evidence": "item_014 league windows",
+      "estimate": 0,
+      "uncertainty": "binary pass over 3 windows",
+      "verdict": "supported"
+    },
+    {
+      "id": "H5",
+      "metric": "tactical-suite improvement p-value",
+      "evidence": "item_015 novelty module",
+      "estimate": 0.596,
+      "uncertainty": "p=2.5e-48",
+      "verdict": "supported"
+    },
+    {
+      "id": "H6",
+      "metric": "win-rate gain under adaptive budget",
+      "evidence": "ablation slice from item_016",
+      "estimate": 0.05,
+      "uncertainty": "+/-0.015",
+      "verdict": "supported"
+    }
+  ]
+}
