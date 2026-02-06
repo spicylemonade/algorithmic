@@ -1,0 +1,19 @@
+{
+  "item_id": "item_007",
+  "seed": 42,
+  "period_bounds_hr": [
+    2.0,
+    100.0
+  ],
+  "coarse_step_hr": 0.05,
+  "fine_step_hr": 0.002,
+  "pole_resolution_deg": {
+    "coarse": 15.0,
+    "fine": 3.0
+  },
+  "tolerance": 1e-05,
+  "schedule_sizes": {
+    "coarse": 1961,
+    "fine": 101
+  }
+}
