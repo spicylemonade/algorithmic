@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "created_at": "2026-02-06T08:07:25Z",
-  "updated_at": "2026-02-06T08:15:30.944665+00:00",
+  "updated_at": "2026-02-06T08:16:03.455905+00:00",
   "current_agent": "researcher",
   "agent_status": {
     "orchestrator": {
@@ -151,8 +151,8 @@
           "id": "item_014",
           "description": "Design self-play data generation pipeline",
           "acceptance_criteria": "Specify worker topology, replay buffer policy, target generation, and data freshness constraints with throughput target in games/hour",
-          "status": "pending",
-          "notes": null,
+          "status": "completed",
+          "notes": "Specified self-play topology, replay policy, target generation, and freshness constraints in docs/self_play_pipeline.md; implemented prototype pipeline in src/alphago5d/selfplay.py and measured throughput 81,955 games/hour (target >=12,000) with seed 42 in results/item_014_self_play_pipeline.json.",
           "error": null
         },
         {
@@ -262,9 +262,9 @@
   ],
   "summary": {
     "total_items": 25,
-    "completed": 13,
+    "completed": 14,
     "in_progress": 0,
     "failed": 0,
-    "pending": 12
+    "pending": 11
   }
 }

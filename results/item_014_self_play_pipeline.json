@@ -1,0 +1,13 @@
+{
+  "seed": 42,
+  "workers": 4,
+  "throughput_target_games_per_hour": 12000,
+  "measured": {
+    "games": 200,
+    "elapsed_sec": 8.785283327102661,
+    "games_per_hour": 81955.23959697406,
+    "replay_size": 8000.0,
+    "fresh_window_size": 2000.0
+  },
+  "meets_target": true
+}
