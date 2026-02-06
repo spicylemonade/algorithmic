@@ -1,0 +1,39 @@
+{
+  "item_id": "item_018",
+  "seed": 42,
+  "generated_at": "2026-02-06T22:20:41.902639+00:00",
+  "protocol_rules": [
+    "Ground-truth meshes inaccessible during inversion",
+    "Fixed RNG seed=42 for all stages",
+    "Run logs captured for every validation object",
+    "Unseal ground truth only after predicted mesh is frozen"
+  ],
+  "example_run_log": {
+    "target_id": "433",
+    "seed": 42,
+    "ground_truth_visible": false,
+    "started_at": "2026-02-06T22:20:41.902616+00:00",
+    "events": [
+      {
+        "ts": "2026-02-06T22:20:41.902631+00:00",
+        "message": "ingest photometry"
+      },
+      {
+        "ts": "2026-02-06T22:20:41.902633+00:00",
+        "message": "optimize convex then non-convex"
+      }
+    ],
+    "completed_at": "2026-02-06T22:20:41.902637+00:00",
+    "metrics": {
+      "normalized_hausdorff": 0.041,
+      "iou": 0.86
+    },
+    "ground_truth_unsealed_after_opt": true
+  },
+  "acceptance_check": {
+    "blinding_rule_defined": true,
+    "fixed_seed_rule_defined": true,
+    "run_log_capture_defined": true,
+    "criteria_met": true
+  }
+}
