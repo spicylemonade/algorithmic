@@ -1,0 +1,11 @@
+{
+  "item": "item_013",
+  "seed": 42,
+  "positions_evaluated": 20,
+  "repeats_per_position": 3,
+  "simulations_per_position": 48,
+  "baseline_expanded_nodes": 95196,
+  "transposition_expanded_nodes": 83828,
+  "node_efficiency_gain": 0.11941678221774024,
+  "acceptance_met": false
+}
