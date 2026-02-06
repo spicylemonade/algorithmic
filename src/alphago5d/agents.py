@@ -53,3 +53,13 @@ class ShallowSearchAgent:
                 best_move = move
         assert best_move is not None
         return best_move
+
+
+class AlphaGoStyleAgent:
+    """Baseline AlphaGo-style proxy: deeper search than prior-best baseline."""
+
+    def __init__(self):
+        self.search = ShallowSearchAgent(depth=3)
+
+    def select_move(self, engine: BaselineRuleEngine, state: BaselineState) -> Move:
+        return self.search.select_move(engine, state)

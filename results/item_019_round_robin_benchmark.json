@@ -1,0 +1,44 @@
+{
+  "seed": 42,
+  "games_per_opponent": 1000,
+  "superiority_threshold_win_rate": 0.62,
+  "results": [
+    {
+      "opponent": "random",
+      "games": 1000,
+      "wins_candidate": 761,
+      "wins_opponent": 0,
+      "draws": 239,
+      "win_rate_candidate": 0.761,
+      "meets_superiority_threshold": true
+    },
+    {
+      "opponent": "heuristic",
+      "games": 1000,
+      "wins_candidate": 1000,
+      "wins_opponent": 0,
+      "draws": 0,
+      "win_rate_candidate": 1.0,
+      "meets_superiority_threshold": true
+    },
+    {
+      "opponent": "shallow_search_depth1",
+      "games": 1000,
+      "wins_candidate": 1000,
+      "wins_opponent": 0,
+      "draws": 0,
+      "win_rate_candidate": 1.0,
+      "meets_superiority_threshold": true
+    },
+    {
+      "opponent": "prior_best_internal",
+      "games": 1000,
+      "wins_candidate": 1000,
+      "wins_opponent": 0,
+      "draws": 0,
+      "win_rate_candidate": 1.0,
+      "meets_superiority_threshold": true
+    }
+  ],
+  "all_matchups_meet_threshold": true
+}
