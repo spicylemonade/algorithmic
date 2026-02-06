@@ -1,0 +1,37 @@
+{
+  "item": "item_008",
+  "seed": 42,
+  "games_per_baseline": 1000,
+  "results": [
+    {
+      "games": 1000,
+      "white_win_rate": 0.0,
+      "black_win_rate": 0.0,
+      "draw_rate": 1.0,
+      "avg_branching_factor": 64.36583333333333,
+      "avg_move_latency_ms": 0.00159875149997409,
+      "baseline": "random",
+      "seed": 42
+    },
+    {
+      "games": 1000,
+      "white_win_rate": 0.0,
+      "black_win_rate": 0.0,
+      "draw_rate": 1.0,
+      "avg_branching_factor": 58.540166666666664,
+      "avg_move_latency_ms": 0.0219290698332865,
+      "baseline": "heuristic",
+      "seed": 42
+    },
+    {
+      "games": 1000,
+      "white_win_rate": 0.0,
+      "black_win_rate": 0.0,
+      "draw_rate": 1.0,
+      "avg_branching_factor": 55.5035,
+      "avg_move_latency_ms": 5.490861484499901,
+      "baseline": "shallow_search",
+      "seed": 42
+    }
+  ]
+}
