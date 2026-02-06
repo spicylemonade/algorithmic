@@ -1,0 +1,64 @@
+{
+  "seed": 42,
+  "rerun_seeds": [
+    142,
+    242,
+    342
+  ],
+  "tolerance": {
+    "elo": 30,
+    "win_rate": 0.03,
+    "latency_ms": 20
+  },
+  "checks": [
+    {
+      "baseline": {
+        "run_id": "RUN-20260206-010",
+        "elo": 1420,
+        "win_rate": 0.69,
+        "latency_ms": 154
+      },
+      "rerun": {
+        "run_id": "RUN-20260206-010",
+        "seed": 142,
+        "elo": 1426,
+        "win_rate": 0.6760079184539645,
+        "latency_ms": 154
+      },
+      "within_tolerance": true
+    },
+    {
+      "baseline": {
+        "run_id": "RUN-20260206-011",
+        "elo": 1408,
+        "win_rate": 0.67,
+        "latency_ms": 149
+      },
+      "rerun": {
+        "run_id": "RUN-20260206-011",
+        "seed": 242,
+        "elo": 1401,
+        "win_rate": 0.6600355865733577,
+        "latency_ms": 144
+      },
+      "within_tolerance": true
+    },
+    {
+      "baseline": {
+        "run_id": "RUN-20260206-012",
+        "elo": 1415,
+        "win_rate": 0.68,
+        "latency_ms": 158
+      },
+      "rerun": {
+        "run_id": "RUN-20260206-012",
+        "seed": 342,
+        "elo": 1422,
+        "win_rate": 0.6886640388080364,
+        "latency_ms": 152
+      },
+      "within_tolerance": true
+    }
+  ],
+  "all_within_tolerance": true
+}
