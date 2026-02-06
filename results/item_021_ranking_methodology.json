@@ -1,0 +1,25 @@
+{
+  "item_id": "item_021",
+  "seed": 42,
+  "generated_at": "2026-02-06T22:22:01.195161+00:00",
+  "ranking_formula": "score=0.40*confidence+0.25*coverage+0.20*stability+0.15*novelty",
+  "tie_breakers": [
+    "higher scientific_novelty",
+    "higher sparse_points",
+    "smaller designation_number"
+  ],
+  "ranked_order": [
+    "C",
+    "A",
+    "B"
+  ],
+  "acceptance_check": {
+    "weighted_formula_defined": true,
+    "includes_confidence": true,
+    "includes_data_coverage": true,
+    "includes_stability": true,
+    "includes_novelty": true,
+    "tie_break_rules_defined": true,
+    "criteria_met": true
+  }
+}
