@@ -1,0 +1,35 @@
+{
+  "item_id": "item_015",
+  "seed": 42,
+  "thresholds": {
+    "policy_entropy_min": 0.4,
+    "resign_rate_max": 0.75,
+    "value_std_min": 0.05,
+    "replay_uniqueness_min": 0.6
+  },
+  "failure_modes": [
+    {
+      "name": "policy_collapse",
+      "detector_trigger_step": 35
+    },
+    {
+      "name": "resign_exploit_loop",
+      "detector_trigger_step": 42
+    },
+    {
+      "name": "value_head_saturation",
+      "detector_trigger_step": 43
+    },
+    {
+      "name": "replay_mode_collapse",
+      "detector_trigger_step": 40
+    }
+  ],
+  "trigger_requirement_max_step": 50,
+  "passed": true,
+  "rollback_strategy": {
+    "checkpoint_rewind_steps": 2000,
+    "optimizer_lr_backoff": 0.5,
+    "replay_reset_fraction": 0.3
+  }
+}
