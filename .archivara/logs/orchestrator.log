@@ -1,0 +1,492 @@
+Reading prompt from stdin...
+OpenAI Codex v0.98.0 (research preview)
+--------
+workdir: /home/codex/work/repo
+model: gpt-5.3-codex
+provider: openai
+approval: never
+sandbox: danger-full-access
+reasoning effort: none
+reasoning summaries: auto
+session id: 019c3536-a09b-7b70-a6c7-a775b39e7205
+--------
+user
+You are a world-class principal investigator designing a research plan.
+
+TASK: OBJECTIVE:Design, code, and execute a custom Light Curve Inversion (LCI) software pipeline from scratch. The software must surpass existing state-of-the-art tools (MPO LCInvert, SAGE, KOALA) in accuracy, particularly regarding sparse photometric data. The final output must be a prioritized list of previously un-modeled Near-Earth Asteroids (NEAs) and large Main Belt Asteroids (MBAs) with newly generated, high-confidence 3D shape models.PHASE 1: ARCHITECTURE & SYNTHESISConstruct a solver engine using Python (C++ integration allowed for computationally intensive matrix operations). The engine must not rely on existing libraries for the core inversion logic but must synthesize the mathematical principles of the following established methods:Convex Inversion (Kaasalainen-Torppa): Implement gradient-based minimization to solve for convex hulls.Genetic/Evolutionary Algorithms (SAGE approach): Implement non-convex shape rendering to account for large concavities (craters/bifurcations) often missed by standard inversion.Sparse Data Handling (Gaia/ZTF methodology): Develop a specific module for "sparse inversion" capable of converging on a pole solution using limited, non-dense data points typical of large surveys (Gaia DR3, LSST, Pan-STARRS).PHASE 2: SELF-REINFORCEMENT & VALIDATION LOOPBefore modeling unknown targets, the agent must validate the codebase against "Ground Truth" data.Ingest Ground Truth: Retrieve existing 3D shape files (.obj / .mod) from the DAMIT database and Radar Shape Models (JPL) for asteroids with high-confidence models (e.g., 433 Eros, 25143 Itokawa, 216 Kleopatra).Ingest Raw Data: Retrieve the raw photometric data for these specific asteroids from ALCDEF and PDS.Blind Test: Run the custom inversion software on the raw data without access to the known shape.Error Calculation: Compare the generated output mesh against the Ground Truth mesh. Calculate deviations using Hausdorff distance and Volumetric Intersection over Union (IoU).Recursive Optimization:IF deviation > 5%: Rewrite the optimization function (loss function weights, regularization parameters, period search granularity) and repeat Blind Test.IF deviation < 5%: Proceed to Phase 3.PHASE 3: TARGET SELECTION & EXECUTIONOnce the code is validated, query databases to generate a target list based on the following boolean logic:Priority 1: Object is flagged as Near-Earth Object (NEO) OR Diameter > 100km.Priority 2: Object exists in LCDB with Quality Code $U \ge 2$ (Period relatively certain).Priority 3: Object does NOT exist in DAMIT (Shape is unknown).Priority 4: Sufficient photometric data exists ( > 20 individual light curves OR > 100 sparse data points covering > 3 apparitions).PHASE 4: RESOURCE INTEGRATIONThe agent must scrape, parse, and integrate data and methodology from the following specific sources.A. Data Repositories (Input)ALCDEF (Asteroid Lightcurve Data Exchange Format): Primary source for dense time-series photometry.NASA PDS (Planetary Data System) - Small Bodies Node: Source for calibrated sparse data from major surveys.Gaia DR3 (Data Release 3): Source for high-precision sparse photometry.ZTF (Zwicky Transient Facility) & Pan-STARRS: Transient survey archives for filling gaps in phase angles.MPC (Minor Planet Center): For precise orbital elements to calculate viewing geometry (Phase/Aspect/Solar Elongation).B. Validation Repositories (Ground Truth)DAMIT (Database of Asteroid Models from Inversion Techniques): Source for "Answer Key" shape models.JPL Asteroid Radar Research: Source for high-fidelity radar-derived shapes (gold standard for validation).C. Methodological References (For Code Synthesis)Kaasalainen et al. (2001): "Optimization methods for asteroid lightcurve inversion" (Foundation for Convex Inversion).Bartczak & Dudzinski (2018): "SAGE – Shaping Asteroids with Genetic Evolution" (Foundation for Non-Convex/Genetic algorithms).Durech et al. (2010): "Asteroid models from sparse photometry" (Foundation for handling sparse survey data).Viikinkoski et al. (2015): "ADAM: All-Data Asteroid Modeling" (Reference for multi-modal data fusion).OUTPUT DELIVERABLES:Full source code for the custom inversion engine.Validation report showing convergence metrics against DAMIT/Radar baselines.List of top 50 candidates (NEAs/Large MBAs) that fit the criteria.Generated 3D shape files (.obj) and spin vectors for the top candidates
+REQUIREMENTS: 
+
+Your job:
+1. Deeply analyze the repository codebase - understand every module, its purpose, and how they connect
+2. Identify the core research problem and consider state-of-the-art approaches
+3. Write `research_rubric.json` in the REPO ROOT with 15-30 items across exactly 5 phases:
+   - Phase 1: Problem Analysis & Literature Review
+   - Phase 2: Baseline Implementation & Metrics
+   - Phase 3: Core Research & Novel Approaches
+   - Phase 4: Experiments & Evaluation
+   - Phase 5: Analysis & Documentation
+
+Each item MUST have:
+- Unique id (e.g. "item_001")
+- Descriptive title in "description"
+- Specific, measurable "acceptance_criteria"
+- "status": "pending"
+
+The rubric JSON MUST follow this exact schema:
+```json
+{
+  "version": "1.0",
+  "created_at": "<ISO timestamp>",
+  "updated_at": "<ISO timestamp>",
+  "current_agent": "orchestrator",
+  "agent_status": {
+    "orchestrator": { "status": "in_progress", "started_at": "<ISO>", "completed_at": null, "error": null },
+    "researcher": { "status": "pending", "started_at": null, "completed_at": null, "error": null },
+    "writer": { "status": "pending", "started_at": null, "completed_at": null, "error": null }
+  },
+  "phases": [
+    {
+      "id": "phase_1",
+      "name": "Problem Analysis & Literature Review",
+      "order": 1,
+      "items": [
+        {
+          "id": "item_001",
+          "description": "Analyze repository structure",
+          "acceptance_criteria": "Document listing all major modules and their purposes",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        }
+      ]
+    }
+  ],
+  "summary": { "total_items": 25, "completed": 0, "in_progress": 0, "failed": 0, "pending": 25 }
+}
+```
+
+CRITICAL RULES:
+- Do NOT implement anything. Only plan and write the rubric.
+- Be specific and actionable in acceptance criteria.
+- Ensure items build on each other logically.
+- Write the rubric to the REPO ROOT as `research_rubric.json`.
+- After writing, verify the JSON is valid by reading it back.
+
+mcp startup: no servers
+
+thinking
+**Preparing for deep repo analysis**
+codex
+I’ll inspect the repository structure and key modules first, then create a phase-structured `research_rubric.json` in the repo root with measurable acceptance criteria only (no implementation). After writing it, I’ll read it back and validate the JSON format.
+exec
+/bin/bash -lc 'find . -maxdepth 3 -type d | sort' in /home/codex/work/repoexec
+/bin/bash -lc 'pwd && rg --files' in /home/codex/work/repo succeeded in 51ms:
+.
+./.archivara
+./.archivara/logs
+./.git
+./.git/branches
+./.git/hooks
+./.git/info
+./.git/logs
+./.git/logs/refs
+./.git/objects
+./.git/objects/info
+./.git/objects/pack
+./.git/refs
+./.git/refs/heads
+./.git/refs/remotes
+./.git/refs/tags
+./figures
+./results
+ succeeded in 52ms:
+/home/codex/work/repo
+TASK_orchestrator.md
+main.py
+codex
+The repo is minimal (`main.py` plus task docs/directories). I’m now reading `main.py` and task metadata to map existing modules and connections before drafting the rubric items.
+exec
+/bin/bash -lc "sed -n '1,240p' main.py" in /home/codex/work/repoexec
+/bin/bash -lc "sed -n '1,240p' TASK_orchestrator.md" in /home/codex/work/repo succeeded in 50ms:
+#begin here
+ succeeded in 52ms:
+You are a world-class principal investigator designing a research plan.
+
+TASK: OBJECTIVE:Design, code, and execute a custom Light Curve Inversion (LCI) software pipeline from scratch. The software must surpass existing state-of-the-art tools (MPO LCInvert, SAGE, KOALA) in accuracy, particularly regarding sparse photometric data. The final output must be a prioritized list of previously un-modeled Near-Earth Asteroids (NEAs) and large Main Belt Asteroids (MBAs) with newly generated, high-confidence 3D shape models.PHASE 1: ARCHITECTURE & SYNTHESISConstruct a solver engine using Python (C++ integration allowed for computationally intensive matrix operations). The engine must not rely on existing libraries for the core inversion logic but must synthesize the mathematical principles of the following established methods:Convex Inversion (Kaasalainen-Torppa): Implement gradient-based minimization to solve for convex hulls.Genetic/Evolutionary Algorithms (SAGE approach): Implement non-convex shape rendering to account for large concavities (craters/bifurcations) often missed by standard inversion.Sparse Data Handling (Gaia/ZTF methodology): Develop a specific module for "sparse inversion" capable of converging on a pole solution using limited, non-dense data points typical of large surveys (Gaia DR3, LSST, Pan-STARRS).PHASE 2: SELF-REINFORCEMENT & VALIDATION LOOPBefore modeling unknown targets, the agent must validate the codebase against "Ground Truth" data.Ingest Ground Truth: Retrieve existing 3D shape files (.obj / .mod) from the DAMIT database and Radar Shape Models (JPL) for asteroids with high-confidence models (e.g., 433 Eros, 25143 Itokawa, 216 Kleopatra).Ingest Raw Data: Retrieve the raw photometric data for these specific asteroids from ALCDEF and PDS.Blind Test: Run the custom inversion software on the raw data without access to the known shape.Error Calculation: Compare the generated output mesh against the Ground Truth mesh. Calculate deviations using Hausdorff distance and Volumetric Intersection over Union (IoU).Recursive Optimization:IF deviation > 5%: Rewrite the optimization function (loss function weights, regularization parameters, period search granularity) and repeat Blind Test.IF deviation < 5%: Proceed to Phase 3.PHASE 3: TARGET SELECTION & EXECUTIONOnce the code is validated, query databases to generate a target list based on the following boolean logic:Priority 1: Object is flagged as Near-Earth Object (NEO) OR Diameter > 100km.Priority 2: Object exists in LCDB with Quality Code $U \ge 2$ (Period relatively certain).Priority 3: Object does NOT exist in DAMIT (Shape is unknown).Priority 4: Sufficient photometric data exists ( > 20 individual light curves OR > 100 sparse data points covering > 3 apparitions).PHASE 4: RESOURCE INTEGRATIONThe agent must scrape, parse, and integrate data and methodology from the following specific sources.A. Data Repositories (Input)ALCDEF (Asteroid Lightcurve Data Exchange Format): Primary source for dense time-series photometry.NASA PDS (Planetary Data System) - Small Bodies Node: Source for calibrated sparse data from major surveys.Gaia DR3 (Data Release 3): Source for high-precision sparse photometry.ZTF (Zwicky Transient Facility) & Pan-STARRS: Transient survey archives for filling gaps in phase angles.MPC (Minor Planet Center): For precise orbital elements to calculate viewing geometry (Phase/Aspect/Solar Elongation).B. Validation Repositories (Ground Truth)DAMIT (Database of Asteroid Models from Inversion Techniques): Source for "Answer Key" shape models.JPL Asteroid Radar Research: Source for high-fidelity radar-derived shapes (gold standard for validation).C. Methodological References (For Code Synthesis)Kaasalainen et al. (2001): "Optimization methods for asteroid lightcurve inversion" (Foundation for Convex Inversion).Bartczak & Dudzinski (2018): "SAGE – Shaping Asteroids with Genetic Evolution" (Foundation for Non-Convex/Genetic algorithms).Durech et al. (2010): "Asteroid models from sparse photometry" (Foundation for handling sparse survey data).Viikinkoski et al. (2015): "ADAM: All-Data Asteroid Modeling" (Reference for multi-modal data fusion).OUTPUT DELIVERABLES:Full source code for the custom inversion engine.Validation report showing convergence metrics against DAMIT/Radar baselines.List of top 50 candidates (NEAs/Large MBAs) that fit the criteria.Generated 3D shape files (.obj) and spin vectors for the top candidates
+REQUIREMENTS: 
+
+Your job:
+1. Deeply analyze the repository codebase - understand every module, its purpose, and how they connect
+2. Identify the core research problem and consider state-of-the-art approaches
+3. Write `research_rubric.json` in the REPO ROOT with 15-30 items across exactly 5 phases:
+   - Phase 1: Problem Analysis & Literature Review
+   - Phase 2: Baseline Implementation & Metrics
+   - Phase 3: Core Research & Novel Approaches
+   - Phase 4: Experiments & Evaluation
+   - Phase 5: Analysis & Documentation
+
+Each item MUST have:
+- Unique id (e.g. "item_001")
+- Descriptive title in "description"
+- Specific, measurable "acceptance_criteria"
+- "status": "pending"
+
+thinking
+**Creating detailed rubric schema**
+codex
+I’ve gathered the repository context (currently only `main.py`, task spec, and output folders), so I’m drafting a 5-phase, 25-item rubric that explicitly includes codebase analysis, SOTA synthesis, baseline metrics, novel methods, and evaluation/reporting gates. Next I’ll write it to `research_rubric.json` and run JSON validation.
+exec
+/bin/bash -lc 'date -u +"%Y-%m-%dT%H:%M:%SZ"' in /home/codex/work/repo succeeded in 51ms:
+2026-02-06T23:08:35Z
+
+thinking
+**Preparing JSON creation**
+exec
+/bin/bash -lc "cat > research_rubric.json <<'EOF'
+{
+  \"version\": \"1.0\",
+  \"created_at\": \"2026-02-06T23:08:35Z\",
+  \"updated_at\": \"2026-02-06T23:08:35Z\",
+  \"current_agent\": \"orchestrator\",
+  \"agent_status\": {
+    \"orchestrator\": {
+      \"status\": \"in_progress\",
+      \"started_at\": \"2026-02-06T23:08:35Z\",
+      \"completed_at\": null,
+      \"error\": null
+    },
+    \"researcher\": {
+      \"status\": \"pending\",
+      \"started_at\": null,
+      \"completed_at\": null,
+      \"error\": null
+    },
+    \"writer\": {
+      \"status\": \"pending\",
+      \"started_at\": null,
+      \"completed_at\": null,
+      \"error\": null
+    }
+  },
+  \"phases\": [
+    {
+      \"id\": \"phase_1\",
+      \"name\": \"Problem Analysis & Literature Review\",
+      \"order\": 1,
+      \"items\": [
+        {
+          \"id\": \"item_001\",
+          \"description\": \"Map repository modules, scripts, and data directories\",
+          \"acceptance_criteria\": \"Create an inventory table covering 100% of top-level files/directories (including main.py, TASK_orchestrator.md, figures/, results/) with purpose and dependency notes\",
+          \"status\": \"pending\",
+          \"notes\": null,
+          \"error\": null
+        },
+        {
+          \"id\": \"item_002\",
+          \"description\": \"Define the primary research objective and measurable success targets\",
+          \"acceptance_criteria\": \"Produce a one-page problem statement with at least 3 quantitative targets: shape reconstruction error < 5%, sparse-data pole recovery rate >= 80%, and candidate ranking precision@50 threshold\",
+          \"status\": \"pending\",
+          \"notes\": null,
+          \"error\": null
+        },
+        {
+          \"id\": \"item_003\",
+          \"description\": \"Synthesize mathematical assumptions from Kaasalainen-Torppa convex inversion\",
+          \"acceptance_criteria\": \"Document objective function terms, parameterization, and gradient update equations with explicit notation and 2 cited implementation constraints\",
+          \"status\": \"pending\",
+          \"notes\": null,
+          \"error\": null
+        },
+        {
+          \"id\": \"item_004\",
+          \"description\": \"Synthesize non-convex modeling principles from SAGE-style genetic evolution\",
+          \"acceptance_criteria\": \"Specify chromosome encoding, mutation/crossover operators, selection rule, and stopping criteria, each with numeric default hyperparameters\",
+          \"status\": \"pending\",
+          \"notes\": null,
+          \"error\": null
+        },
+        {
+          \"id\": \"item_005\",
+          \"description\": \"Review sparse-photometry inversion literature and survey constraints\",
+          \"acceptance_criteria\": \"Summarize at least 4 sources (including Durech 2010 and Gaia/ZTF context) and list 5 sparse-data failure modes with mitigation hypotheses\",
+          \"status\": \"pending\",
+          \"notes\": null,
+          \"error\": null
+        }
+      ]
+    },
+    {
+      \"id\": \"phase_2\",
+      \"name\": \"Baseline Implementation & Metrics\",
+      \"order\": 2,
+      \"items\": [
+        {
+          \"id\": \"item_006\",
+          \"description\": \"Specify end-to-end baseline pipeline architecture\",
+          \"acceptance_criteria\": \"Deliver a stage diagram with at least 8 modules (ingestion, preprocessing, geometry, convex solver, non-convex solver, sparse solver, validation, ranking) and I/O contracts for each\",
+          \"status\": \"pending\",
+          \"notes\": null,
+          \"error\": null
+        },
+        {
+          \"id\": \"item_007\",
+          \"description\": \"Define standardized data schemas for all external repositories\",
+          \"acceptance_criteria\": \"Create schema docs for ALCDEF, PDS, Gaia DR3, ZTF/Pan-STARRS, MPC, DAMIT, and JPL radar with required fields, units, and null-handling rules\",
+          \"status\": \"pending\",
+          \"notes\": null,
+          \"error\": null
+        },
+        {
+          \"id\": \"item_008\",
+          \"description\": \"Design baseline optimization and regularization configuration\",
+          \"acceptance_criteria\": \"Publish a parameter sheet with >= 15 tunable parameters (weights, priors, step sizes, period grid settings) and default ranges justified by literature\",
+          \"status\": \"pending\",
+          \"notes\": null,
+          \"error\": null
+        },
+        {
+          \"id\": \"item_009\",
+          \"description\": \"Define evaluation metrics and confidence scoring framework\",
+          \"acceptance_criteria\": \"Implement metric definitions for Hausdorff distance, volumetric IoU, lightcurve RMSE, pole-angle error, and a calibrated 0-1 confidence score with threshold rules\",
+          \"status\": \"pending\",
+          \"notes\": null,
+          \"error\": null
+        },
+        {
+          \"id\": \"item_010\",
+          \"description\": \"Create reproducibility protocol for baseline runs\",
+          \"acceptance_criteria\": \"Produce a run manifest template capturing dataset hashes, random seeds, software versions, and runtime environment; verify deterministic rerun variance <= 1% on a pilot case\",
+          \"status\": \"pending\",
+          \"notes\": null,
+          \"error\": null
+        }
+      ]
+    },
+    {
+      \"id\": \"phase_3\",
+      \"name\": \"Core Research & Novel Approaches\",
+      \"order\": 3,
+      \"items\": [
+        {
+          \"id\": \"item_011\",
+          \"description\": \"Develop hybrid convex + evolutionary inversion strategy\",
+          \"acceptance_criteria\": \"Define a two-stage optimization schedule where convex initialization feeds genetic refinement; include handoff conditions based on objective plateau and residual structure\",
+          \"status\": \"pending\",
+          \"notes\": null,
+          \"error\": null
+        },
+        {
+          \"id\": \"item_012\",
+          \"description\": \"Design sparse-aware pole and period search module\",
+          \"acceptance_criteria\": \"Specify multi-resolution period grid, pole sampling strategy, and ambiguity resolution logic that supports datasets with <= 100 sparse points\",
+          \"status\": \"pending\",
+          \"notes\": null,
+          \"error\": null
+        },
+        {
+          \"id\": \"item_013\",
+          \"description\": \"Introduce physically informed priors and constraints\",
+          \"acceptance_criteria\": \"Document at least 6 constraints/priors (spin-state consistency, inertia plausibility, convexity relaxation bounds, albedo/phase behavior) with mathematical penalties\",
+          \"status\": \"pending\",
+          \"notes\": null,
+          \"error\": null
+        },
+        {
+          \"id\": \"item_014\",
+          \"description\": \"Implement adaptive loss weighting and self-reinforcement loop\",
+          \"acceptance_criteria\": \"Define a rule-based or Bayesian scheme that updates loss weights and regularization when validation deviation > 5%, with maximum retries and rollback logic\",
+          \"status\": \"pending\",
+          \"notes\": null,
+          \"error\": null
+        },
+        {
+          \"id\": \"item_015\",
+          \"description\": \"Plan performance acceleration for heavy linear algebra\",
+          \"acceptance_criteria\": \"Provide a compute plan identifying at least 3 hotspots and corresponding optimization paths (vectorization, C++ extensions, parallel batch evaluation) with expected speedup targets\",
+          \"status\": \"pending\",
+          \"notes\": null,
+          \"error\": null
+        }
+      ]
+    },
+    {
+      \"id\": \"phase_4\",
+      \"name\": \"Experiments & Evaluation\",
+      \"order\": 4,
+      \"items\": [
+        {
+          \"id\": \"item_016\",
+          \"description\": \"Assemble ground-truth validation set from DAMIT and JPL radar\",
+          \"acceptance_criteria\": \"Curate >= 10 asteroids (including 433 Eros, 25143 Itokawa, 216 Kleopatra where available) with paired shape models and raw photometry provenance records\",
+          \"status\": \"pending\",
+          \"notes\": null,
+          \"error\": null
+        },
+        {
+          \"id\": \"item_017\",
+          \"description\": \"Run blind inversion benchmark on curated validation targets\",
+          \"acceptance_criteria\": \"Execute blind runs for 100% of validation objects without ground-truth leakage and log per-target fit metrics, runtime, and convergence diagnostics\",
+          \"status\": \"pending\",
+          \"notes\": null,
+          \"error\": null
+        },
+        {
+          \"id\": \"item_018\",
+          \"description\": \"Quantify geometric reconstruction accuracy against ground truth\",
+          \"acceptance_criteria\": \"Compute normalized Hausdorff and volumetric IoU for every validation target; report mean, median, and worst-case with pass/fail vs 5% deviation threshold\",
+          \"status\": \"pending\",
+          \"notes\": null,
+          \"error\": null
+        },
+        {
+          \"id\": \"item_019\",
+          \"description\": \"Compare against external baselines and ablations\",
+          \"acceptance_criteria\": \"Produce comparative table versus MPO LCInvert, SAGE, and KOALA (or published benchmarks when direct runs unavailable) plus >= 4 ablation experiments isolating novel components\",
+          \"status\": \"pending\",
+          \"notes\": null,
+          \"error\": null
+        },
+        {
+          \"id\": \"item_020\",
+          \"description\": \"Generate ranked target list using boolean selection logic\",
+          \"acceptance_criteria\": \"Query candidate pool and produce top-50 list satisfying all filters: NEO or D>100 km, LCDB U>=2, not in DAMIT, and photometry sufficiency criteria; include evidence fields per target\",
+          \"status\": \"pending\",
+          \"notes\": null,
+          \"error\": null
+        }
+      ]
+    },
+    {
+      \"id\": \"phase_5\",
+      \"name\": \"Analysis & Documentation\",
+      \"order\": 5,
+      \"items\": [
+        {
+          \"id\": \"item_021\",
+          \"description\": \"Produce high-confidence shape outputs for prioritized candidates\",
+          \"acceptance_criteria\": \"Export .obj meshes and spin vectors for each top-ranked candidate with confidence >= predefined threshold and accompanying metadata manifest\",
+          \"status\": \"pending\",
+          \"notes\": null,
+          \"error\": null
+        },
+        {
+          \"id\": \"item_022\",
+          \"description\": \"Compile validation and convergence report\",
+          \"acceptance_criteria\": \"Deliver a report with metric distributions, convergence traces, failure analyses, and explicit statement of whether deviation target (<5%) is achieved\",
+          \"status\": \"pending\",
+          \"notes\": null,
+          \"error\": null
+        },
+        {
+          \"id\": \"item_023\",
+          \"description\": \"Document error taxonomy and remediation playbook\",
+          \"acceptance_criteria\": \"List at least 10 recurring failure classes (data, geometry, optimization, ambiguity) with diagnostic signals and corrective actions\",
+          \"status\": \"pending\",
+          \"notes\": null,
+          \"error\": null
+        },
+        {
+          \"id\": \"item_024\",
+          \"description\": \"Prepare reproducible release package and runbook\",
+          \"acceptance_criteria\": \"Create structured documentation for setup, data acquisition, execution, and result regeneration; independent rerun must reproduce key metrics within tolerance\",
+          \"status\": \"pending\",
+          \"notes\": null,
+          \"error\": null
+        },
+        {
+          \"id\": \"item_025\",
+          \"description\": \"Define forward research roadmap beyond initial deliverables\",
+          \"acceptance_criteria\": \"Publish a prioritized backlog of >= 8 next-step research tasks with impact, effort estimates, and dependency mapping\",
+          \"status\": \"pending\",
+          \"notes\": null,
+          \"error\": null
+        }
+      ]
+    }
+  ],
+  \"summary\": {
+    \"total_items\": 25,
+    \"completed\": 0,
+    \"in_progress\": 0,
+    \"failed\": 0,
+    \"pending\": 25
+  }
+}
+EOF" in /home/codex/work/repo succeeded in 51ms:
+
+codex
+I’ve written `research_rubric.json` with exactly 5 phases and 25 pending items. I’ll now validate JSON syntax and read it back to confirm the final structure persisted correctly.
+exec
+/bin/bash -lc "sed -n '1,260p' research_rubric.json" in /home/codex/work/repoexec
+/bin/bash -lc 'jq . research_rubric.json >/tmp/research_rubric.valid && echo "JSON_VALID"' in /home/codex/work/repo succeeded in 52ms:
+{
+  "version": "1.0",
+  "created_at": "2026-02-06T23:08:35Z",
+  "updated_at": "2026-02-06T23:08:35Z",
+  "current_agent": "orchestrator",
+  "agent_status": {
+    "orchestrator": {
+      "status": "in_progress",
+      "started_at": "2026-02-06T23:08:35Z",
+      "completed_at": null,
+      "error": null
+    },
+    "researcher": {
+      "status": "pending",
+      "started_at": null,
+      "completed_at": null,
+      "error": null
+    },
+    "writer": {
+      "status": "pending",
+ succeeded in 51ms:
+JSON_VALID
+
+thinking
+**Checking file tail completeness**
+exec
+/bin/bash -lc 'tail -n 40 research_rubric.json' in /home/codex/work/repo succeeded in 50ms:
+          "acceptance_criteria": "Deliver a report with metric distributions, convergence traces, failure analyses, and explicit statement of whether deviation target (<5%) is achieved",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_023",
+          "description": "Document error taxonomy and remediation playbook",
+          "acceptance_criteria": "List at least 10 recurring failure classes (data, geometry, optimization, ambiguity) with diagnostic signals and corrective actions",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_024",
+          "description": "Prepare reproducible release package and runbook",
+          "acceptance_criteria": "Create structured documentation for setup, data acquisition, execution, and result regeneration; independent rerun must reproduce key metrics within tolerance",
+          "status": "pending",
+          "notes": null,
+          "error": null
+codex
+Created `research_rubric.json` at repo root with the requested structure and constraints:
+
+- Exactly 5 phases with required names/order
+- 25 total items (`item_001` to `item_025`)
+- Every item includes `id`, `description`, `acceptance_criteria`, `status: "pending"`, `notes: null`, `error: null`
+- Agent/status block and summary fields match the required schema
+- Timestamps set in ISO UTC format
+
+Validation completed by reading back and parsing with `jq`:
+- `research_rubric.json` is valid JSON (`JSON_VALID`)
+tokens used
+23,423
+Created `research_rubric.json` at repo root with the requested structure and constraints:
+
+- Exactly 5 phases with required names/order
+- 25 total items (`item_001` to `item_025`)
+- Every item includes `id`, `description`, `acceptance_criteria`, `status: "pending"`, `notes: null`, `error: null`
+- Agent/status block and summary fields match the required schema
+- Timestamps set in ISO UTC format
+
+Validation completed by reading back and parsing with `jq`:
+- `research_rubric.json` is valid JSON (`JSON_VALID`)
