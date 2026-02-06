@@ -1,0 +1,19 @@
+{
+  "item_id": "item_025",
+  "seed": 42,
+  "backlog": [
+    {"rank": 1, "task": "Integrate real 5D rule-complete legality engine", "impact": 10, "effort": 8, "risk": 6, "quarter": "Q1"},
+    {"rank": 2, "task": "Deploy distributed self-play workers", "impact": 9, "effort": 7, "risk": 5, "quarter": "Q1"},
+    {"rank": 3, "task": "Implement symmetry-aware canonical transposition table", "impact": 9, "effort": 6, "risk": 4, "quarter": "Q1"},
+    {"rank": 4, "task": "Train policy-value model on >50M self-play positions", "impact": 10, "effort": 9, "risk": 7, "quarter": "Q2"},
+    {"rank": 5, "task": "Add learned move-pruning gate in search", "impact": 8, "effort": 6, "risk": 5, "quarter": "Q2"},
+    {"rank": 6, "task": "Gumbel policy improvement integration", "impact": 7, "effort": 5, "risk": 6, "quarter": "Q2"},
+    {"rank": 7, "task": "Expand held-out scenario suites for robustness", "impact": 7, "effort": 4, "risk": 3, "quarter": "Q2"},
+    {"rank": 8, "task": "Add adversarial opponent population training", "impact": 8, "effort": 7, "risk": 6, "quarter": "Q3"},
+    {"rank": 9, "task": "Implement latent-dynamics planning variant", "impact": 8, "effort": 8, "risk": 7, "quarter": "Q3"},
+    {"rank": 10, "task": "Hardware-aware mixed precision inference kernels", "impact": 7, "effort": 5, "risk": 4, "quarter": "Q3"},
+    {"rank": 11, "task": "Automated tactical puzzle generator for curriculum", "impact": 6, "effort": 4, "risk": 3, "quarter": "Q4"},
+    {"rank": 12, "task": "Human-in-the-loop analysis dashboard", "impact": 6, "effort": 5, "risk": 4, "quarter": "Q4"},
+    {"rank": 13, "task": "Open benchmark release and reproducibility challenge", "impact": 7, "effort": 6, "risk": 5, "quarter": "Q4"}
+  ]
+}
