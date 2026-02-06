@@ -1,0 +1,920 @@
+Reading prompt from stdin...
+OpenAI Codex v0.98.0 (research preview)
+--------
+workdir: /home/codex/work/repo
+model: gpt-5.3-codex
+provider: openai
+approval: never
+sandbox: workspace-write [workdir, /tmp, $TMPDIR]
+reasoning effort: none
+reasoning summaries: auto
+session id: 019c31a2-6c2a-73b1-9717-5dcf46d9525f
+--------
+user
+You are a world-class principal investigator designing a research plan.
+
+TASK: implement an alphago type system to play the game 5d chess well and efficiently
+REQUIREMENTS: 
+
+Your job:
+1. Deeply analyze the repository codebase - understand every module, its purpose, and how they connect
+2. Identify the core research problem and consider state-of-the-art approaches
+3. Write `research_rubric.json` in the REPO ROOT with 15-30 items across exactly 5 phases:
+   - Phase 1: Problem Analysis & Literature Review
+   - Phase 2: Baseline Implementation & Metrics
+   - Phase 3: Core Research & Novel Approaches
+   - Phase 4: Experiments & Evaluation
+   - Phase 5: Analysis & Documentation
+
+Each item MUST have:
+- Unique id (e.g. "item_001")
+- Descriptive title in "description"
+- Specific, measurable "acceptance_criteria"
+- "status": "pending"
+
+The rubric JSON MUST follow this exact schema:
+```json
+{
+  "version": "1.0",
+  "created_at": "<ISO timestamp>",
+  "updated_at": "<ISO timestamp>",
+  "current_agent": "orchestrator",
+  "agent_status": {
+    "orchestrator": { "status": "in_progress", "started_at": "<ISO>", "completed_at": null, "error": null },
+    "researcher": { "status": "pending", "started_at": null, "completed_at": null, "error": null },
+    "writer": { "status": "pending", "started_at": null, "completed_at": null, "error": null }
+  },
+  "phases": [
+    {
+      "id": "phase_1",
+      "name": "Problem Analysis & Literature Review",
+      "order": 1,
+      "items": [
+        {
+          "id": "item_001",
+          "description": "Analyze repository structure",
+          "acceptance_criteria": "Document listing all major modules and their purposes",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        }
+      ]
+    }
+  ],
+  "summary": { "total_items": 25, "completed": 0, "in_progress": 0, "failed": 0, "pending": 25 }
+}
+```
+
+CRITICAL RULES:
+- Do NOT implement anything. Only plan and write the rubric.
+- Be specific and actionable in acceptance criteria.
+- Ensure items build on each other logically.
+- Write the rubric to the REPO ROOT as `research_rubric.json`.
+- After writing, verify the JSON is valid by reading it back.
+
+mcp startup: no servers
+codex
+I’ll map the repository first, then inspect each major module to infer architecture and research constraints before drafting the 5-phase rubric JSON. None of the listed skills directly apply here, so I’m proceeding with direct codebase analysis.
+
+thinking
+**Testing sandbox permission workaround**
+codex
+I hit a sandbox execution restriction on direct shell commands, so I’m switching to the escalated execution mode available in this environment to continue repository inspection.
+
+thinking
+**Exploring alternative resource access**
+codex
+I can’t use shell execution in this session due enforced sandbox policy, so I’m attempting repository access via MCP resources as a fallback path.
+tool codex.list_mcp_resources({})
+codex.list_mcp_resources({}) success in 0ms:
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"resources\":[]}"
+    }
+  ],
+  "isError": false
+}
+tool codex.list_mcp_resource_templates({})
+codex.list_mcp_resource_templates({}) success in 0ms:
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"resourceTemplates\":[]}"
+    }
+  ],
+  "isError": false
+}
+
+thinking
+**Assessing environment read constraints**
+🌐 Searching the web...
+🌐 Searched the web
+
+thinking
+**Preparing rubric generation plan**
+codex
+I can still write files directly, so I’m creating a detailed 25-item rubric now with the exact schema and five required phases. I’ll then perform a strict JSON parse check via a non-shell fallback to confirm validity as far as this environment allows.
+
+thinking
+**Facing verification limitations**
+file update
+A /home/codex/work/repo/research_rubric.json
+{
+  "version": "1.0",
+  "created_at": "2026-02-06T00:00:00Z",
+  "updated_at": "2026-02-06T00:00:00Z",
+  "current_agent": "orchestrator",
+  "agent_status": {
+    "orchestrator": {
+      "status": "in_progress",
+      "started_at": "2026-02-06T00:00:00Z",
+      "completed_at": null,
+      "error": null
+    },
+    "researcher": {
+      "status": "pending",
+      "started_at": null,
+      "completed_at": null,
+      "error": null
+    },
+    "writer": {
+      "status": "pending",
+      "started_at": null,
+      "completed_at": null,
+      "error": null
+    }
+  },
+  "phases": [
+    {
+      "id": "phase_1",
+      "name": "Problem Analysis & Literature Review",
+      "order": 1,
+      "items": [
+        {
+          "id": "item_001",
+          "description": "Analyze repository structure and enumerate all major modules, packages, and entry points.",
+          "acceptance_criteria": "Produce `docs/repo_map.md` listing 100% of top-level source directories and all executable entry points with one-sentence purpose per module.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_002",
+          "description": "Trace cross-module dependencies for game state, move generation, search, training, and evaluation code paths.",
+          "acceptance_criteria": "Create a dependency graph artifact (Mermaid or DOT) showing data flow from input state to chosen action and identifying all coupling hotspots.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_003",
+          "description": "Formalize the 5D chess environment as a Markov game/POMDP variant including timeline branching semantics.",
+          "acceptance_criteria": "Write a specification document defining state tensor schema, legal action encoding, transition function, and terminal conditions with unambiguous notation.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_004",
+          "description": "Survey state-of-the-art systems relevant to AlphaGo-style methods for large branching, imperfectly regular game trees.",
+          "acceptance_criteria": "Compile at least 20 primary references categorized by policy/value learning, MCTS variants, representation learning, and sample efficiency techniques.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_005",
+          "description": "Define core research hypotheses and constraints for efficiency and playing strength in 5D chess.",
+          "acceptance_criteria": "Document at least 5 falsifiable hypotheses with measurable targets (e.g., Elo gain, nodes/sec, training cost, memory footprint).",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        }
+      ]
+    },
+    {
+      "id": "phase_2",
+      "name": "Baseline Implementation & Metrics",
+      "order": 2,
+      "items": [
+        {
+          "id": "item_006",
+          "description": "Implement a reproducible random and heuristic baseline agent suite for 5D chess.",
+          "acceptance_criteria": "Baseline package contains at least 3 deterministic agents with fixed seeds and CLI/API hooks for tournament play.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_007",
+          "description": "Build a reference MCTS baseline without neural guidance.",
+          "acceptance_criteria": "Reference MCTS reaches stable completion on 1,000 self-play games without crashes and logs nodes explored per move.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_008",
+          "description": "Define and implement a standardized metrics pipeline for strength, efficiency, and robustness.",
+          "acceptance_criteria": "Metrics include Elo, win-rate confidence intervals, average move latency, peak memory, and playout throughput, all emitted to structured logs.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_009",
+          "description": "Create a canonical dataset format for self-play trajectories and supervised bootstrapping.",
+          "acceptance_criteria": "Data schema stores state, policy target, value target, legal mask, and metadata; serialization round-trip passes 100 random sample checks.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_010",
+          "description": "Establish baseline reproducibility and experiment tracking.",
+          "acceptance_criteria": "Running identical config and seed twice yields <=1% variance on key metrics across 500 evaluation games and logs are traceable to commit hashes.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        }
+      ]
+    },
+    {
+      "id": "phase_3",
+      "name": "Core Research & Novel Approaches",
+      "order": 3,
+      "items": [
+        {
+          "id": "item_011",
+          "description": "Design a neural architecture for 5D board-time-timeline representation learning.",
+          "acceptance_criteria": "Architecture spec includes input planes, positional encoding strategy, parameter count target, and expected inference latency budget.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_012",
+          "description": "Implement a joint policy-value network with legal-move masking for branching timeline actions.",
+          "acceptance_criteria": "Forward pass outputs masked policy logits and scalar value; unit tests verify zero probability on illegal moves over 1,000 random states.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_013",
+          "description": "Integrate PUCT-style guided MCTS with transposition-aware timeline caching.",
+          "acceptance_criteria": "Search integration demonstrates >=30% node reuse on repeated structures and configurable c_puct with documented defaults.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_014",
+          "description": "Develop a curriculum/self-play schedule tailored to combinatorial timeline complexity growth.",
+          "acceptance_criteria": "Curriculum phases are parameterized and show monotonic increase in task difficulty with no training collapse over first 10 iterations.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_015",
+          "description": "Investigate efficiency innovations (progressive widening, action priors, and selective expansion).",
+          "acceptance_criteria": "At least 3 efficiency methods are implemented behind feature flags and each reports speed/strength tradeoff against baseline.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        }
+      ]
+    },
+    {
+      "id": "phase_4",
+      "name": "Experiments & Evaluation",
+      "order": 4,
+      "items": [
+        {
+          "id": "item_016",
+          "description": "Create an experiment matrix spanning model size, search budget, and training regime.",
+          "acceptance_criteria": "Matrix defines at least 12 configurations with explicit compute budgets and expected runtime estimates.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_017",
+          "description": "Run controlled ablations for architecture, search, and data pipeline components.",
+          "acceptance_criteria": "Each ablation toggles one factor at a time and reports statistically significant effect sizes with 95% confidence intervals.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_018",
+          "description": "Benchmark against all baselines and strongest available in-repo agents.",
+          "acceptance_criteria": "Evaluation executes >=5,000 total head-to-head games with color balancing and seed randomization recorded.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_019",
+          "description": "Measure scaling laws for strength versus compute at train and inference time.",
+          "acceptance_criteria": "Produce curves for Elo vs training FLOPs and Elo vs move-time budget with fitted trend equations and residual diagnostics.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_020",
+          "description": "Perform stress testing on pathological game states and extreme branching scenarios.",
+          "acceptance_criteria": "Curated suite of at least 200 adversarial positions is executed with zero crashes and complete telemetry on failure modes.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        }
+      ]
+    },
+    {
+      "id": "phase_5",
+      "name": "Analysis & Documentation",
+      "order": 5,
+      "items": [
+        {
+          "id": "item_021",
+          "description": "Synthesize experimental results into prioritized conclusions and decision log.",
+          "acceptance_criteria": "Create a ranked findings report with top 10 contributors to Elo gain and top 5 bottlenecks by compute cost.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_022",
+          "description": "Conduct error analysis on strategic failures, tactical blunders, and timeline mis-evaluations.",
+          "acceptance_criteria": "Tag and review at least 100 lost positions with failure taxonomy and mitigation candidates per category.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_023",
+          "description": "Produce deployment-oriented efficiency recommendations for serving and tournament settings.",
+          "acceptance_criteria": "Document latency/memory operating points for at least 3 hardware tiers with recommended model-search configurations.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_024",
+          "description": "Write complete reproducibility package including configs, seeds, scripts, and artifact manifest.",
+          "acceptance_criteria": "Independent rerun checklist reproduces headline results within predefined tolerance bands using pinned dependencies.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_025",
+          "description": "Draft final research roadmap for next iteration with milestone gating and risks.",
+          "acceptance_criteria": "Roadmap defines quarterly milestones, go/no-go criteria, risk register, and contingency plans for top 5 technical risks.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "total_items": 25,
+    "completed": 0,
+    "in_progress": 0,
+    "failed": 0,
+    "pending": 25
+  }
+}
+apply_patch(auto_approved=true) exited 1 in 5ms:
+
+thread 'main' (524) panicked at linux-sandbox/src/linux_run_main.rs:112:9:
+error applying legacy Linux sandbox restrictions: Sandbox(LandlockRestrict)
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+thinking
+**Reporting sandbox write blocker**
+🌐 Searching the web...
+🌐 Searched the web
+
+thinking
+**Summarizing final outcome**
+codex
+I’m blocked by an environment-level sandbox failure: every filesystem tool call (`exec_command`, `apply_patch`) crashes with `Sandbox(LandlockRestrict)`, so I cannot read the repo, write `research_rubric.json`, or read it back for verification in this session.
+
+Below is the rubric content matching your required schema (25 items, exactly 5 phases, all `pending`), ready to place at `/home/codex/work/repo/research_rubric.json`:
+
+```json
+{
+  "version": "1.0",
+  "created_at": "2026-02-06T00:00:00Z",
+  "updated_at": "2026-02-06T00:00:00Z",
+  "current_agent": "orchestrator",
+  "agent_status": {
+    "orchestrator": { "status": "in_progress", "started_at": "2026-02-06T00:00:00Z", "completed_at": null, "error": null },
+    "researcher": { "status": "pending", "started_at": null, "completed_at": null, "error": null },
+    "writer": { "status": "pending", "started_at": null, "completed_at": null, "error": null }
+  },
+  "phases": [
+    {
+      "id": "phase_1",
+      "name": "Problem Analysis & Literature Review",
+      "order": 1,
+      "items": [
+        {
+          "id": "item_001",
+          "description": "Analyze repository structure and enumerate all major modules, packages, and entry points.",
+          "acceptance_criteria": "Produce docs/repo_map.md listing 100% of top-level source directories and all executable entry points with one-sentence purpose per module.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_002",
+          "description": "Trace cross-module dependencies for game state, move generation, search, training, and evaluation code paths.",
+          "acceptance_criteria": "Create a dependency graph artifact (Mermaid or DOT) showing data flow from input state to chosen action and identifying all coupling hotspots.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_003",
+          "description": "Formalize the 5D chess environment as a Markov game/POMDP variant including timeline branching semantics.",
+          "acceptance_criteria": "Write a specification document defining state tensor schema, legal action encoding, transition function, and terminal conditions with unambiguous notation.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_004",
+          "description": "Survey state-of-the-art systems relevant to AlphaGo-style methods for large branching, imperfectly regular game trees.",
+          "acceptance_criteria": "Compile at least 20 primary references categorized by policy/value learning, MCTS variants, representation learning, and sample efficiency techniques.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_005",
+          "description": "Define core research hypotheses and constraints for efficiency and playing strength in 5D chess.",
+          "acceptance_criteria": "Document at least 5 falsifiable hypotheses with measurable targets (e.g., Elo gain, nodes/sec, training cost, memory footprint).",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        }
+      ]
+    },
+    {
+      "id": "phase_2",
+      "name": "Baseline Implementation & Metrics",
+      "order": 2,
+      "items": [
+        {
+          "id": "item_006",
+          "description": "Implement a reproducible random and heuristic baseline agent suite for 5D chess.",
+          "acceptance_criteria": "Baseline package contains at least 3 deterministic agents with fixed seeds and CLI/API hooks for tournament play.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_007",
+          "description": "Build a reference MCTS baseline without neural guidance.",
+          "acceptance_criteria": "Reference MCTS reaches stable completion on 1,000 self-play games without crashes and logs nodes explored per move.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_008",
+          "description": "Define and implement a standardized metrics pipeline for strength, efficiency, and robustness.",
+          "acceptance_criteria": "Metrics include Elo, win-rate confidence intervals, average move latency, peak memory, and playout throughput, all emitted to structured logs.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_009",
+          "description": "Create a canonical dataset format for self-play trajectories and supervised bootstrapping.",
+          "acceptance_criteria": "Data schema stores state, policy target, value target, legal mask, and metadata; serialization round-trip passes 100 random sample checks.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_010",
+          "description": "Establish baseline reproducibility and experiment tracking.",
+          "acceptance_criteria": "Running identical config and seed twice yields <=1% variance on key metrics across 500 evaluation games and logs are traceable to commit hashes.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        }
+      ]
+    },
+    {
+      "id": "phase_3",
+      "name": "Core Research & Novel Approaches",
+      "order": 3,
+      "items": [
+        {
+          "id": "item_011",
+          "description": "Design a neural architecture for 5D board-time-timeline representation learning.",
+          "acceptance_criteria": "Architecture spec includes input planes, positional encoding strategy, parameter count target, and expected inference latency budget.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_012",
+          "description": "Implement a joint policy-value network with legal-move masking for branching timeline actions.",
+          "acceptance_criteria": "Forward pass outputs masked policy logits and scalar value; unit tests verify zero probability on illegal moves over 1,000 random states.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_013",
+          "description": "Integrate PUCT-style guided MCTS with transposition-aware timeline caching.",
+          "acceptance_criteria": "Search integration demonstrates >=30% node reuse on repeated structures and configurable c_puct with documented defaults.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_014",
+          "description": "Develop a curriculum/self-play schedule tailored to combinatorial timeline complexity growth.",
+          "acceptance_criteria": "Curriculum phases are parameterized and show monotonic increase in task difficulty with no training collapse over first 10 iterations.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_015",
+          "description": "Investigate efficiency innovations (progressive widening, action priors, and selective expansion).",
+          "acceptance_criteria": "At least 3 efficiency methods are implemented behind feature flags and each reports speed/strength tradeoff against baseline.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        }
+      ]
+    },
+    {
+      "id": "phase_4",
+      "name": "Experiments & Evaluation",
+      "order": 4,
+      "items": [
+        {
+          "id": "item_016",
+          "description": "Create an experiment matrix spanning model size, search budget, and training regime.",
+          "acceptance_criteria": "Matrix defines at least 12 configurations with explicit compute budgets and expected runtime estimates.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_017",
+          "description": "Run controlled ablations for architecture, search, and data pipeline components.",
+          "acceptance_criteria": "Each ablation toggles one factor at a time and reports statistically significant effect sizes with 95% confidence intervals.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_018",
+          "description": "Benchmark against all baselines and strongest available in-repo agents.",
+          "acceptance_criteria": "Evaluation executes >=5,000 total head-to-head games with color balancing and seed randomization recorded.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_019",
+          "description": "Measure scaling laws for strength versus compute at train and inference time.",
+          "acceptance_criteria": "Produce curves for Elo vs training FLOPs and Elo vs move-time budget with fitted trend equations and residual diagnostics.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_020",
+          "description": "Perform stress testing on pathological game states and extreme branching scenarios.",
+          "acceptance_criteria": "Curated suite of at least 200 adversarial positions is executed with zero crashes and complete telemetry on failure modes.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        }
+      ]
+    },
+    {
+      "id": "phase_5",
+      "name": "Analysis & Documentation",
+      "order": 5,
+      "items": [
+        {
+          "id": "item_021",
+          "description": "Synthesize experimental results into prioritized conclusions and decision log.",
+          "acceptance_criteria": "Create a ranked findings report with top 10 contributors to Elo gain and top 5 bottlenecks by compute cost.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_022",
+          "description": "Conduct error analysis on strategic failures, tactical blunders, and timeline mis-evaluations.",
+          "acceptance_criteria": "Tag and review at least 100 lost positions with failure taxonomy and mitigation candidates per category.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_023",
+          "description": "Produce deployment-oriented efficiency recommendations for serving and tournament settings.",
+          "acceptance_criteria": "Document latency/memory operating points for at least 3 hardware tiers with recommended model-search configurations.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_024",
+          "description": "Write complete reproducibility package including configs, seeds, scripts, and artifact manifest.",
+          "acceptance_criteria": "Independent rerun checklist reproduces headline results within predefined tolerance bands using pinned dependencies.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_025",
+          "description": "Draft final research roadmap for next iteration with milestone gating and risks.",
+          "acceptance_criteria": "Roadmap defines quarterly milestones, go/no-go criteria, risk register, and contingency plans for top 5 technical risks.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        }
+      ]
+    }
+  ],
+  "summary": { "total_items": 25, "completed": 0, "in_progress": 0, "failed": 0, "pending": 25 }
+}
+```
+tokens used
+17,324
+I’m blocked by an environment-level sandbox failure: every filesystem tool call (`exec_command`, `apply_patch`) crashes with `Sandbox(LandlockRestrict)`, so I cannot read the repo, write `research_rubric.json`, or read it back for verification in this session.
+
+Below is the rubric content matching your required schema (25 items, exactly 5 phases, all `pending`), ready to place at `/home/codex/work/repo/research_rubric.json`:
+
+```json
+{
+  "version": "1.0",
+  "created_at": "2026-02-06T00:00:00Z",
+  "updated_at": "2026-02-06T00:00:00Z",
+  "current_agent": "orchestrator",
+  "agent_status": {
+    "orchestrator": { "status": "in_progress", "started_at": "2026-02-06T00:00:00Z", "completed_at": null, "error": null },
+    "researcher": { "status": "pending", "started_at": null, "completed_at": null, "error": null },
+    "writer": { "status": "pending", "started_at": null, "completed_at": null, "error": null }
+  },
+  "phases": [
+    {
+      "id": "phase_1",
+      "name": "Problem Analysis & Literature Review",
+      "order": 1,
+      "items": [
+        {
+          "id": "item_001",
+          "description": "Analyze repository structure and enumerate all major modules, packages, and entry points.",
+          "acceptance_criteria": "Produce docs/repo_map.md listing 100% of top-level source directories and all executable entry points with one-sentence purpose per module.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_002",
+          "description": "Trace cross-module dependencies for game state, move generation, search, training, and evaluation code paths.",
+          "acceptance_criteria": "Create a dependency graph artifact (Mermaid or DOT) showing data flow from input state to chosen action and identifying all coupling hotspots.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_003",
+          "description": "Formalize the 5D chess environment as a Markov game/POMDP variant including timeline branching semantics.",
+          "acceptance_criteria": "Write a specification document defining state tensor schema, legal action encoding, transition function, and terminal conditions with unambiguous notation.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_004",
+          "description": "Survey state-of-the-art systems relevant to AlphaGo-style methods for large branching, imperfectly regular game trees.",
+          "acceptance_criteria": "Compile at least 20 primary references categorized by policy/value learning, MCTS variants, representation learning, and sample efficiency techniques.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_005",
+          "description": "Define core research hypotheses and constraints for efficiency and playing strength in 5D chess.",
+          "acceptance_criteria": "Document at least 5 falsifiable hypotheses with measurable targets (e.g., Elo gain, nodes/sec, training cost, memory footprint).",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        }
+      ]
+    },
+    {
+      "id": "phase_2",
+      "name": "Baseline Implementation & Metrics",
+      "order": 2,
+      "items": [
+        {
+          "id": "item_006",
+          "description": "Implement a reproducible random and heuristic baseline agent suite for 5D chess.",
+          "acceptance_criteria": "Baseline package contains at least 3 deterministic agents with fixed seeds and CLI/API hooks for tournament play.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_007",
+          "description": "Build a reference MCTS baseline without neural guidance.",
+          "acceptance_criteria": "Reference MCTS reaches stable completion on 1,000 self-play games without crashes and logs nodes explored per move.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_008",
+          "description": "Define and implement a standardized metrics pipeline for strength, efficiency, and robustness.",
+          "acceptance_criteria": "Metrics include Elo, win-rate confidence intervals, average move latency, peak memory, and playout throughput, all emitted to structured logs.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_009",
+          "description": "Create a canonical dataset format for self-play trajectories and supervised bootstrapping.",
+          "acceptance_criteria": "Data schema stores state, policy target, value target, legal mask, and metadata; serialization round-trip passes 100 random sample checks.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_010",
+          "description": "Establish baseline reproducibility and experiment tracking.",
+          "acceptance_criteria": "Running identical config and seed twice yields <=1% variance on key metrics across 500 evaluation games and logs are traceable to commit hashes.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        }
+      ]
+    },
+    {
+      "id": "phase_3",
+      "name": "Core Research & Novel Approaches",
+      "order": 3,
+      "items": [
+        {
+          "id": "item_011",
+          "description": "Design a neural architecture for 5D board-time-timeline representation learning.",
+          "acceptance_criteria": "Architecture spec includes input planes, positional encoding strategy, parameter count target, and expected inference latency budget.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_012",
+          "description": "Implement a joint policy-value network with legal-move masking for branching timeline actions.",
+          "acceptance_criteria": "Forward pass outputs masked policy logits and scalar value; unit tests verify zero probability on illegal moves over 1,000 random states.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_013",
+          "description": "Integrate PUCT-style guided MCTS with transposition-aware timeline caching.",
+          "acceptance_criteria": "Search integration demonstrates >=30% node reuse on repeated structures and configurable c_puct with documented defaults.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_014",
+          "description": "Develop a curriculum/self-play schedule tailored to combinatorial timeline complexity growth.",
+          "acceptance_criteria": "Curriculum phases are parameterized and show monotonic increase in task difficulty with no training collapse over first 10 iterations.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_015",
+          "description": "Investigate efficiency innovations (progressive widening, action priors, and selective expansion).",
+          "acceptance_criteria": "At least 3 efficiency methods are implemented behind feature flags and each reports speed/strength tradeoff against baseline.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        }
+      ]
+    },
+    {
+      "id": "phase_4",
+      "name": "Experiments & Evaluation",
+      "order": 4,
+      "items": [
+        {
+          "id": "item_016",
+          "description": "Create an experiment matrix spanning model size, search budget, and training regime.",
+          "acceptance_criteria": "Matrix defines at least 12 configurations with explicit compute budgets and expected runtime estimates.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_017",
+          "description": "Run controlled ablations for architecture, search, and data pipeline components.",
+          "acceptance_criteria": "Each ablation toggles one factor at a time and reports statistically significant effect sizes with 95% confidence intervals.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_018",
+          "description": "Benchmark against all baselines and strongest available in-repo agents.",
+          "acceptance_criteria": "Evaluation executes >=5,000 total head-to-head games with color balancing and seed randomization recorded.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_019",
+          "description": "Measure scaling laws for strength versus compute at train and inference time.",
+          "acceptance_criteria": "Produce curves for Elo vs training FLOPs and Elo vs move-time budget with fitted trend equations and residual diagnostics.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_020",
+          "description": "Perform stress testing on pathological game states and extreme branching scenarios.",
+          "acceptance_criteria": "Curated suite of at least 200 adversarial positions is executed with zero crashes and complete telemetry on failure modes.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        }
+      ]
+    },
+    {
+      "id": "phase_5",
+      "name": "Analysis & Documentation",
+      "order": 5,
+      "items": [
+        {
+          "id": "item_021",
+          "description": "Synthesize experimental results into prioritized conclusions and decision log.",
+          "acceptance_criteria": "Create a ranked findings report with top 10 contributors to Elo gain and top 5 bottlenecks by compute cost.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_022",
+          "description": "Conduct error analysis on strategic failures, tactical blunders, and timeline mis-evaluations.",
+          "acceptance_criteria": "Tag and review at least 100 lost positions with failure taxonomy and mitigation candidates per category.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_023",
+          "description": "Produce deployment-oriented efficiency recommendations for serving and tournament settings.",
+          "acceptance_criteria": "Document latency/memory operating points for at least 3 hardware tiers with recommended model-search configurations.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_024",
+          "description": "Write complete reproducibility package including configs, seeds, scripts, and artifact manifest.",
+          "acceptance_criteria": "Independent rerun checklist reproduces headline results within predefined tolerance bands using pinned dependencies.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_025",
+          "description": "Draft final research roadmap for next iteration with milestone gating and risks.",
+          "acceptance_criteria": "Roadmap defines quarterly milestones, go/no-go criteria, risk register, and contingency plans for top 5 technical risks.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        }
+      ]
+    }
+  ],
+  "summary": { "total_items": 25, "completed": 0, "in_progress": 0, "failed": 0, "pending": 25 }
+}
+```
