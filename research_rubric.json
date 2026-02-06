@@ -1,0 +1,270 @@
+{
+  "version": "1.0",
+  "created_at": "2026-02-06T23:48:57Z",
+  "updated_at": "2026-02-06T23:49:05.501391+00:00",
+  "current_agent": "orchestrator",
+  "agent_status": {
+    "orchestrator": {
+      "status": "completed",
+      "started_at": "2026-02-06T23:48:57Z",
+      "completed_at": "2026-02-06T23:49:05.501365+00:00",
+      "error": null
+    },
+    "researcher": {
+      "status": "pending",
+      "started_at": null,
+      "completed_at": null,
+      "error": null
+    },
+    "writer": {
+      "status": "pending",
+      "started_at": null,
+      "completed_at": null,
+      "error": null
+    }
+  },
+  "phases": [
+    {
+      "id": "phase_1",
+      "name": "Problem Analysis & Literature Review",
+      "order": 1,
+      "items": [
+        {
+          "id": "item_001",
+          "description": "Audit repository modules and execution flow",
+          "acceptance_criteria": "Produce a module map covering TASK_orchestrator.md, main.py, figures/, results/, and .archivara/logs with explicit upstream/downstream dependencies",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_002",
+          "description": "Formalize the inverse problem and observability limits",
+          "acceptance_criteria": "Write equations and assumptions for spin state, period, scattering, and shape recovery; include at least 6 explicit identifiability risks for sparse photometry",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_003",
+          "description": "Synthesize state-of-the-art methods into a requirement matrix",
+          "acceptance_criteria": "Create a table comparing Kaasalainen-Torppa, SAGE, Durech sparse inversion, and ADAM with >=12 capabilities/limitations mapped to planned modules",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_004",
+          "description": "Define data source contracts and schema harmonization",
+          "acceptance_criteria": "Specify parsers and canonical schema for ALCDEF, PDS, Gaia DR3, ZTF, Pan-STARRS, MPC, DAMIT, and JPL radar with required fields and units for each source",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_005",
+          "description": "Set quantitative success criteria and stop/go thresholds",
+          "acceptance_criteria": "Document target metrics including Hausdorff and volumetric IoU thresholds, sparse-data pole recovery accuracy, runtime limits, and pass/fail gates for phase transitions",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        }
+      ]
+    },
+    {
+      "id": "phase_2",
+      "name": "Baseline Implementation & Metrics",
+      "order": 2,
+      "items": [
+        {
+          "id": "item_006",
+          "description": "Design baseline convex inversion engine architecture",
+          "acceptance_criteria": "Publish interface spec for forward model, gradient evaluator, optimizer, and mesh parameterization with function signatures and data flow diagram",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_007",
+          "description": "Define baseline period and pole search protocol",
+          "acceptance_criteria": "Specify a reproducible grid/coarse-to-fine search plan including period range bounds, angular resolution, and convergence tolerance values",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_008",
+          "description": "Establish baseline photometry preprocessing pipeline",
+          "acceptance_criteria": "Document deterministic steps for calibration normalization, outlier rejection, apparition segmentation, and geometry computation with numerical thresholds",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_009",
+          "description": "Implement benchmark metric protocol and reference scripts",
+          "acceptance_criteria": "Define exact algorithms for Hausdorff distance, volumetric IoU, lightcurve residual RMS, and spin-vector angular error with test fixtures and expected outputs",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_010",
+          "description": "Create baseline reproducibility and experiment tracking plan",
+          "acceptance_criteria": "Specify run metadata schema (seed, commit hash, config hash, data snapshot) and require 100% experiment records to be reconstructable from stored artifacts",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        }
+      ]
+    },
+    {
+      "id": "phase_3",
+      "name": "Core Research & Novel Approaches",
+      "order": 3,
+      "items": [
+        {
+          "id": "item_011",
+          "description": "Develop hybrid convex plus evolutionary non-convex solver strategy",
+          "acceptance_criteria": "Define staged optimization where convex output seeds GA non-convex refinement; include mutation/crossover operators and termination criteria",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_012",
+          "description": "Design sparse inversion module for low-density survey data",
+          "acceptance_criteria": "Specify algorithm for pole and period inference from sparse points with priors, regularization, and minimum-data operating envelope",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_013",
+          "description": "Formulate adaptive multi-objective loss and regularization",
+          "acceptance_criteria": "Provide weighted loss components (photometric fit, smoothness, physical plausibility, concavity penalty) and an update rule that changes weights based on validation error bands",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_014",
+          "description": "Define uncertainty quantification and confidence scoring",
+          "acceptance_criteria": "Specify bootstrap or posterior sampling plan producing confidence intervals for period, pole, and mesh metrics; require calibrated confidence score in [0,1]",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_015",
+          "description": "Plan performance engineering for heavy linear algebra",
+          "acceptance_criteria": "Identify top 3 bottlenecks via profiling plan and define Python/C++ boundary, target speedups, and numerical consistency checks against pure Python outputs",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        }
+      ]
+    },
+    {
+      "id": "phase_4",
+      "name": "Experiments & Evaluation",
+      "order": 4,
+      "items": [
+        {
+          "id": "item_016",
+          "description": "Assemble ground-truth validation set",
+          "acceptance_criteria": "Curate at least 3 anchor asteroids (including 433 Eros, 25143 Itokawa, 216 Kleopatra) with paired raw photometry and DAMIT/JPL reference meshes",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_017",
+          "description": "Execute blinded reconstruction protocol",
+          "acceptance_criteria": "Define run procedure ensuring reference meshes remain inaccessible during inversion and produce timestamped blinded logs for each target",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_018",
+          "description": "Run recursive optimization loop with hard thresholds",
+          "acceptance_criteria": "Codify iteration rule: if deviation > 5% adjust loss/regularization/search granularity and rerun; continue until all validation targets meet <=5% deviation or max iteration cap is reached",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_019",
+          "description": "Perform ablation and stress-test campaigns",
+          "acceptance_criteria": "Plan at least 8 ablations spanning sparse density, phase-angle coverage, noise, and algorithm components; report metric deltas for each ablation",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_020",
+          "description": "Define candidate selection experiment for unknown targets",
+          "acceptance_criteria": "Implement boolean filter logic (NEO OR diameter>100km) AND (LCDB U>=2) AND (not in DAMIT) AND (>=20 dense curves OR >=100 sparse points across >3 apparitions) and verify with audit table",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        }
+      ]
+    },
+    {
+      "id": "phase_5",
+      "name": "Analysis & Documentation",
+      "order": 5,
+      "items": [
+        {
+          "id": "item_021",
+          "description": "Generate ranked top-50 target list with confidence scores",
+          "acceptance_criteria": "Produce a table of 50 previously un-modeled NEA/large MBA candidates including confidence, data coverage stats, and rationale for ranking order",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_022",
+          "description": "Specify output package for 3D models and spin vectors",
+          "acceptance_criteria": "Define required artifact set per target (.obj mesh, spin vector, period, fit residuals, provenance metadata) and directory conventions under results/",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_023",
+          "description": "Prepare validation report template against DAMIT and radar baselines",
+          "acceptance_criteria": "Create report structure with per-target metrics, aggregate statistics, failure analyses, and explicit comparison versus baseline tools (LCInvert, SAGE, KOALA)",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_024",
+          "description": "Define reproducibility and release checklist",
+          "acceptance_criteria": "Checklist must include environment lockfile, deterministic seeds, data licensing notes, source citation list, and one-command rerun instructions",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_025",
+          "description": "Document risk register and next-iteration roadmap",
+          "acceptance_criteria": "List at least 10 technical/scientific risks with mitigation owners and map each unresolved risk to a concrete follow-up experiment",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "total_items": 25,
+    "completed": 0,
+    "in_progress": 0,
+    "failed": 0,
+    "pending": 25
+  }
+}
