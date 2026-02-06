@@ -1,0 +1,15 @@
+{
+  "modules": [
+    "ingestion",
+    "preprocessing",
+    "geometry",
+    "convex_solver",
+    "non_convex_solver",
+    "sparse_solver",
+    "validation",
+    "ranking",
+    "export"
+  ],
+  "io_contracts_defined": true,
+  "seed": 42
+}
