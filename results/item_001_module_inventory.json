@@ -1,0 +1,22 @@
+{
+  "item": "item_001",
+  "seed": 42,
+  "source_file_count": 2,
+  "files": [
+    {
+      "path": "main.py",
+      "purpose": "Top-level entry point placeholder for experiment orchestration.",
+      "dependencies": []
+    },
+    {
+      "path": "scripts/rubric_manager.py",
+      "purpose": "Utility to safely update rubric item statuses and summary counters.",
+      "dependencies": [
+        "argparse",
+        "datetime",
+        "json",
+        "pathlib"
+      ]
+    }
+  ]
+}
