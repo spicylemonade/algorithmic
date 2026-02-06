@@ -1,0 +1,36 @@
+{
+  "item_id": "item_003",
+  "seed": 42,
+  "generated_at": "2026-02-06T22:12:31.315878+00:00",
+  "method": "Kaasalainen-Torppa style convex inversion synthesis",
+  "parameterization": {
+    "shape": "Spherical-harmonic/log-radius coefficients a_lm truncated at l<=8",
+    "spin": "(lambda,beta,P,phi0)",
+    "scattering": "Lommel-Seeliger + Lambert mixture parameter c"
+  },
+  "objective_function": {
+    "total": "L = w_phot * sum_i ((Fobs_i - Fmod_i(theta))/sigma_i)^2 + w_smooth*||Laplacian(r)||_2^2 + w_conv*sum_j max(0,-kappa_j)^2 + w_spin*R_spin",
+    "photometric_term": "chi2 on magnitude/flux residuals with heteroscedastic noise",
+    "regularization": "surface smoothness and convexity penalties"
+  },
+  "gradients": {
+    "generic": "dL/dtheta = -2*w_phot*J^T W (Fobs - Fmod) + dR/dtheta",
+    "jacobian_strategy": "analytic partials for spin-state; finite-difference fallback for high-order shape coefficients",
+    "line_search": "Armijo backtracking with c1=1e-4, tau=0.5"
+  },
+  "constraints": [
+    "Positive radial function via exponential map r = exp(u)",
+    "Rotation period bounded to physically plausible prior window",
+    "Pole unit norm and mirror-pole ambiguity tracked"
+  ],
+  "acceptance_check": {
+    "objective_terms_documented": true,
+    "gradient_expressions_documented": true,
+    "regularization_documented": true,
+    "parameter_constraints_documented": true,
+    "criteria_met": true
+  },
+  "references": [
+    "Kaasalainen, M., Torppa, J. 2001, Icarus 153, 24-36"
+  ]
+}
