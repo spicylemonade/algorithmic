@@ -1,0 +1,15 @@
+{
+  "seed": 42,
+  "tasks": [
+    {"id": 1, "task": "LCDB ingestion", "impact": "high", "effort": "medium", "depends_on": "LCDB endpoint"},
+    {"id": 2, "task": "Voxel IoU metric", "impact": "high", "effort": "medium", "depends_on": "mesh voxelizer"},
+    {"id": 3, "task": "C++ kernels", "impact": "high", "effort": "high", "depends_on": "pybind11 build"},
+    {"id": 4, "task": "Adaptive-loop integration", "impact": "high", "effort": "medium", "depends_on": "benchmark wiring"},
+    {"id": 5, "task": "Bayesian sparse posterior", "impact": "medium", "effort": "medium", "depends_on": "sparse solver refactor"},
+    {"id": 6, "task": "Survey calibration solver", "impact": "high", "effort": "high", "depends_on": "metadata quality"},
+    {"id": 7, "task": "Occultation/AO fusion", "impact": "medium", "effort": "high", "depends_on": "new data connectors"},
+    {"id": 8, "task": "Distributed GA", "impact": "medium", "effort": "medium", "depends_on": "parallel runtime"},
+    {"id": 9, "task": "Validation expansion", "impact": "high", "effort": "medium", "depends_on": "curated meshes"},
+    {"id": 10, "task": "Confidence calibration", "impact": "high", "effort": "medium", "depends_on": "held-out labels"}
+  ]
+}
