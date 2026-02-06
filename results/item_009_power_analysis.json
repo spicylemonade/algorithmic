@@ -1,0 +1,10 @@
+{
+  "item_id": "item_009",
+  "seed": 42,
+  "alpha": 0.05,
+  "confidence": 0.95,
+  "power": 0.8,
+  "detectable_winrate_delta": 0.050000000000000044,
+  "required_games_per_group": 1563,
+  "required_total_games_head_to_head": 3126
+}

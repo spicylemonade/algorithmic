@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "created_at": "2026-02-06T09:24:02Z",
-  "updated_at": "2026-02-06T09:38:05.377446+00:00",
+  "updated_at": "2026-02-06T09:38:23.643451+00:00",
   "current_agent": "researcher",
   "agent_status": {
     "orchestrator": {
@@ -104,8 +104,8 @@
           "id": "item_009",
           "description": "Define evaluation protocol, data splits, and statistical significance standards",
           "acceptance_criteria": "Publish a locked protocol specifying seeds, match formats, confidence intervals, and minimum sample sizes; include power analysis targeting 95% confidence and 80% power",
-          "status": "pending",
-          "notes": null,
+          "status": "completed",
+          "notes": "Locked evaluation protocol in docs/evaluation_protocol.md with fixed seeds, match formats, CI/significance rules, and minimum sample policy; completed 95% confidence / 80% power analysis in results/item_009_power_analysis.json.",
           "error": null
         },
         {
@@ -262,9 +262,9 @@
   ],
   "summary": {
     "total_items": 25,
-    "completed": 8,
+    "completed": 9,
     "in_progress": 0,
     "failed": 0,
-    "pending": 17
+    "pending": 16
   }
 }
