@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "created_at": "2026-02-06T08:07:25Z",
-  "updated_at": "2026-02-06T08:22:48.359121+00:00",
+  "updated_at": "2026-02-06T08:23:10.216919+00:00",
   "current_agent": "researcher",
   "agent_status": {
     "orchestrator": {
@@ -245,8 +245,8 @@
           "id": "item_024",
           "description": "Synthesize results into decision-ready research report",
           "acceptance_criteria": "Deliver report with methods, metrics, ablations, limitations, and go/no-go recommendation supported by quantitative evidence",
-          "status": "pending",
-          "notes": null,
+          "status": "completed",
+          "notes": "Delivered decision-ready quantitative research report with methods, metrics, ablations, limitations, and go/no-go recommendation in docs/research_report.md; summary evidence in results/item_024_report_summary.json.",
           "error": null
         },
         {
@@ -262,9 +262,9 @@
   ],
   "summary": {
     "total_items": 25,
-    "completed": 23,
+    "completed": 24,
     "in_progress": 0,
     "failed": 0,
-    "pending": 2
+    "pending": 1
   }
 }
