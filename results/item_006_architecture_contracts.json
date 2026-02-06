@@ -1,0 +1,25 @@
+{
+  "seed": 42,
+  "modules": [
+    "game_engine",
+    "state_encoder",
+    "policy_value_model",
+    "mcts_planner",
+    "self_play_worker",
+    "evaluator"
+  ],
+  "io_schemas": {
+    "move": ["src_timeline", "src_time", "src_square", "dst_timeline", "dst_time", "dst_square", "promotion", "flags"],
+    "encoded_state": ["tensor", "legal_mask"],
+    "model_output": ["policy_logits", "value"],
+    "mcts_output": ["root_policy", "root_value"]
+  },
+  "failure_modes": [
+    "invalid_state",
+    "illegal_transition",
+    "tensor_mismatch",
+    "search_timeout",
+    "self_play_deadlock",
+    "evaluator_schema_mismatch"
+  ]
+}
