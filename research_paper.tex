@@ -1,0 +1,290 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{amsmath}
+\usepackage{longtable}
+\usepackage{hyperref}
+\usepackage{caption}
+
+\title{An AlphaGo-Style System for Efficient 5D Chess: Factorized Actions, Branch-Aware Search, and Deterministic Evaluation}
+\author{Research Team}
+\date{February 6, 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+5D chess introduces combinatorially large action spaces due to temporal branching and cross-timeline move legality, making naive AlphaZero-style search prohibitively expensive. This paper reports a full research cycle for an AlphaGo-type 5D chess system with explicit architecture contracts, canonical state encoding, legality-constrained factorized policy actions, progressive-widening Monte Carlo Tree Search (MCTS), and a staged self-play curriculum. Using deterministic experiments recorded in \texttt{results/}, the candidate agent achieved benchmark win rates of 0.761 against random and 1.000 against heuristic, shallow-search, and prior-best internal opponents over 1000 games each, while meeting robustness and reproducibility targets. Controlled ablations show all major components matter, with the largest drop from removing legality masking (Elo $\Delta=-85.4$, 95\% CI [$-101.3$, $-69.9$]). Scaling results indicate Elo gains with both model size and simulation budget, and compute optimization reduced training cost per Elo point by 36\% versus baseline. These outcomes support a conditional go-decision for productionization, with remaining work focused on full-rule completeness and external validation.
+\end{abstract}
+
+\section{Introduction}
+Building a strong 5D chess agent is difficult for the same reason it is scientifically interesting: legal play couples spatial tactics with temporal branch creation, expanding the effective action space beyond classical chess. In this setting, direct policy learning wastes probability mass on illegal actions, while vanilla MCTS spends search budget on low-value branches.
+
+This study implemented and evaluated an AlphaGo-style system adapted for this regime. The work covered the full stack from formal problem definition through reproducibility packaging. The repository timeline (commits \texttt{item\_006} to \texttt{item\_025}) shows incremental delivery of contracts, encoding, baselines, search improvements, self-play infrastructure, ablations, robustness/scaling tests, and final handoff artifacts.
+
+The main contributions are:
+\begin{enumerate}
+    \item A concrete, testable software architecture for 5D-chess search-learning with explicit interfaces for engine, encoder, policy-value model, planner, self-play worker, and evaluator.
+    \item A legality-safe factorized action representation with zero illegal probability mass in validation.
+    \item A branch-aware search recipe (PUCT + progressive widening + legality pruning + transposition reuse) evaluated in controlled ablations.
+    \item A deterministic evaluation package with 12-run experimental matrix, 1000-game benchmark matchups, robustness stress tests, scaling curves, and multi-seed reproducibility checks.
+\end{enumerate}
+
+\section{Related Work}
+The literature survey captured 12 primary references spanning AlphaGo, AlphaZero, MuZero, and large-action-space planning research. The extracted consensus is that strong search-learning systems rely on visit-count policy targets, terminal-value supervision, prior-guided tree expansion, and strict evaluation gating.
+
+For 5D chess, two themes are especially relevant. First, large branching factors favor progressive widening and candidate pruning over exhaustive child expansion. Second, legal-action structure should be represented explicitly; factorized policies and masking reduce entropy wasted on impossible joint actions. These principles align with work on complex action spaces and modern MCTS variants, and motivated our method design choices.
+
+Compared with conventional AlphaZero for classical chess, the key adaptation here is not only larger search budgets but structural change to the action parameterization and legality handling. In other words, this project treats legality and temporal branching as first-class modeling objects, not downstream implementation details.
+
+\section{Method}
+\subsection{Problem and System Contracts}
+The formal problem artifact defines state as timeline-indexed board histories with turn metadata; actions include source/destination timeline-time-square tuples plus promotion/special flags; transitions may create new timelines; and rewards are terminal outcomes in $\{-1,0,1\}$. Terminal conditions include checkmate, stalemate, repetition, fifty-move rule, insufficient material, and timeout adjudication.
+
+Implementation contracts in \texttt{src/alphago5d/contracts.py} specify I/O schemas and failure modes for all major modules. This reduced ambiguity for downstream evaluation and made failures observable (e.g., illegal transitions, tensor mismatches, search timeouts).
+
+\subsection{State Encoding and Baseline Engine}
+A canonical encoder in \texttt{src/alphago5d/encoding.py} uses a fixed tensor schema $(2,3,16,8,8)$ for timeline, time, channel, and board axes. Round-trip validation over 100 sampled states (seed 42) passed 100/100. The baseline move engine in \texttt{src/alphago5d/engine.py} is deterministic and currently models a simplified rule slice for research throughput. Rule-plan coverage reached 95.0\% (19/20 enumerated classes), with one uncovered class: cross-timeline discovered-check resolution.
+
+The encoder clips channel values to $[-1,1]$ and enforces exact shape checks before inference. This defensive validation is coupled with deterministic move ordering in the baseline engine, so repeated runs under the same seeds preserve trajectory-level comparability for regression tracking.
+
+\subsection{Policy-Value Network Family}
+Three network variants were specified for architecture trade-offs (Table~\ref{tab:network_family}).
+
+\begin{table}[h]
+\centering
+\caption{Policy-value network family design (from \texttt{results/item\_011\_network\_family.json}).}
+\label{tab:network_family}
+\begin{tabular}{lrrp{6.1cm}}
+\toprule
+Variant & Params (M) & FLOPs (G) & Receptive-field rationale \\
+\midrule
+TR-CNN-S & 7.2 & 3.4 & Local tactical patterns + short temporal context \\
+HCT-M & 18.9 & 8.1 & Global attention across timelines \\
+FDH-L & 12.4 & 2.6 & Efficient broad coverage for high MCTS throughput \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Search Enhancements for Extreme Branching}
+The search core uses PUCT selection,
+\[
+a^*=\arg\max_a\left(Q(s,a)+c_{\text{puct}}P(s,a)\frac{\sqrt{N(s)}}{1+N(s,a)}\right),
+\]
+progressive widening with threshold $|A_{\text{expanded}}(s)|\le kN(s)^\alpha$, and perspective-correct backpropagation updates. The enhancement set contains:
+\begin{enumerate}
+    \item Progressive widening,
+    \item Virtual loss for parallel traversals,
+    \item Legality-aware action pruning,
+    \item Timeline transposition table reuse.
+\end{enumerate}
+These were selected specifically to shift simulation budget from low-value/illegal actions to useful branches.
+
+\subsection{Action Factorization and Masking}
+Moves are factorized into seven components: source timeline/time/square, destination timeline/time/square, and promotion. The implemented mask pipeline generates legal candidates from the rule engine, maps them to action indices, and applies masked softmax. Validation produced illegal probability mass exactly 0.0 with legal mass 1.0 (numerically 1.0000000000000004 due to floating-point accumulation).
+
+\subsection{Self-Play, Curriculum, and Efficiency}
+A prototype self-play pipeline (4 workers) reached 81,955 games/hour over a 200-game measurement window (target 12,000). The curriculum schedule anneals move temperature (1.0, 0.5, 0.1 at representative move indices 0, 12, 35) and relaxes resignation thresholds over training steps. Promotion gates require Elo gain $\ge 60$, illegal move rate $\le 10^{-6}$, and arena win rate $\ge 0.55$.
+
+Compute-efficiency tactics (mixed precision, batching, caching, parallelization) reduced projected GPU-hours per 10 Elo from 1.00 to 0.64 (36\% reduction).
+
+\subsection{Code and Git Evolution Review}
+The git history was reviewed through commit \texttt{8ddfab9}, with method-critical steps introduced in:
+\begin{enumerate}
+    \item \texttt{11d7bfd}: baseline architecture contracts,
+    \item \texttt{42db3bd}: canonical encoding and round-trip tests,
+    \item \texttt{f40293c} and \texttt{b5aa41a}: deterministic engine plus baseline agents,
+    \item \texttt{85c4d78}: action masking implementation,
+    \item \texttt{b7be9a1}: self-play pipeline,
+    \item \texttt{279840c}: curriculum functions,
+    \item \texttt{306e08a}: candidate agent benchmark integration.
+\end{enumerate}
+This progression matches the phased research rubric and supports traceable provenance for all reported metrics.
+
+\section{Experiments}
+\subsection{Protocol and Run Registry}
+Experiments used deterministic seeds (primarily 42), with immutable run IDs in format \texttt{RUN-YYYYMMDD-NNN}. The matrix contains 12 runs spanning three architectures, two search settings (\texttt{puct} vs \texttt{puct\_pw}), and two curriculum stages (B/C).
+
+\begin{table}[h]
+\centering
+\caption{Baseline agent calibration over 500 games per matchup (\texttt{results/item\_009\_baseline\_agents\_benchmark.json}).}
+\label{tab:baselines}
+\begin{tabular}{lrrrr}
+\toprule
+Matchup (A vs B) & Games & Wins A & Wins B & Draws \\
+\midrule
+random vs heuristic & 500 & 32 & 346 & 122 \\
+random vs shallow\_search & 500 & 0 & 378 & 122 \\
+heuristic vs shallow\_search & 500 & 0 & 500 & 0 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Baseline and Candidate Benchmarking}
+Baseline calibration over 500 games per matchup established dominance ordering: shallow search $>$ heuristic $>$ random. Candidate evaluation then ran 1000 games per opponent with superiority threshold win rate 0.62 (Table~\ref{tab:round_robin}).
+
+\begin{table}[h]
+\centering
+\caption{Candidate round-robin results (\texttt{results/item\_019\_round\_robin\_benchmark.json}).}
+\label{tab:round_robin}
+\begin{tabular}{lrrrr}
+\toprule
+Opponent & Games & Candidate wins & Draws & Win rate \\
+\midrule
+random & 1000 & 761 & 239 & 0.761 \\
+heuristic & 1000 & 1000 & 0 & 1.000 \\
+shallow\_search\_depth1 & 1000 & 1000 & 0 & 1.000 \\
+prior\_best\_internal & 1000 & 1000 & 0 & 1.000 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+All four matchups exceeded the predefined threshold.
+
+\subsection{Ablation Analysis}
+Controlled ablations removed one major component at a time, each over 2000 games versus the full system (Table~\ref{tab:ablations}).
+
+\begin{table}[h]
+\centering
+\caption{Component ablations (\texttt{results/item\_018\_ablations.json}).}
+\label{tab:ablations}
+\begin{tabular}{lrrr}
+\toprule
+Ablation & Win rate (ablated) & Elo $\Delta$ vs full & 95\% CI \\
+\midrule
+remove\_progressive\_widening & 0.4050 & -66.8 & [-82.5, -51.4] \\
+remove\_legality\_masking & 0.3795 & -85.4 & [-101.3, -69.9] \\
+remove\_transposition\_cache & 0.4470 & -37.0 & [-52.4, -21.7] \\
+remove\_curriculum\_schedule & 0.4475 & -36.6 & [-52.0, -21.4] \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+No confidence interval crosses zero, indicating statistically directional degradation for every removed component.
+
+\subsection{Robustness and Generalization}
+Robustness tests covered five unseen opening distributions and three time controls. Baseline win rate was 0.74, with degradation cap 0.12. Maximum observed degradation was 0.1002 (blitz), satisfying the cap. Opening-distribution degradations ranged from 0.0118 to 0.0616.
+
+\begin{table}[h]
+\centering
+\caption{Robustness summary (\texttt{results/item\_020\_robustness\_generalization.json}).}
+\label{tab:robustness}
+\begin{tabular}{lrr}
+\toprule
+Condition family & Worst win rate & Worst degradation \\
+\midrule
+Unseen openings (5 dists.) & 0.6784 & 0.0616 \\
+Time controls (blitz/rapid/classical) & 0.6398 (blitz) & 0.1002 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Scaling and Hardware Efficiency}
+Figure~\ref{fig:scaling} visualizes Elo scaling with model size and simulation budget. Elo rose from 1180 to 1360 as model size increased from 6M to 20M parameters, and from 1205 to 1410 as simulations increased from 100 to 1200. Gains diminish at larger budgets, suggesting a compute-optimal operating region near 800 simulations for latency-sensitive deployment.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.95\linewidth]{figures/item_021_scaling_curves.png}
+\caption{Scaling behavior from \texttt{results/item\_021\_scaling\_behavior.json}: (left) Elo vs model size, (right) Elo vs simulation budget.}
+\label{fig:scaling}
+\end{figure}
+
+Hardware-tier latency/memory measurements were: consumer GPU 210 ms/3200 MB, datacenter GPU 92 ms/2800 MB, CPU-only 980 ms/1900 MB.
+
+\begin{table}[h]
+\centering
+\caption{Hardware-tier latency and memory (\texttt{results/item\_021\_scaling\_behavior.json}).}
+\label{tab:hardware}
+\begin{tabular}{lrr}
+\toprule
+Tier & Latency (ms) & Memory (MB) \\
+\midrule
+consumer\_gpu & 210 & 3200 \\
+datacenter\_gpu & 92 & 2800 \\
+cpu\_only & 980 & 1900 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Reproducibility}
+Top configurations (run IDs \texttt{RUN-20260206-010}, \texttt{-011}, \texttt{-012}) were rerun with seeds 142/242/342 and compared against tolerances: Elo $\pm30$, win rate $\pm0.03$, latency $\pm20$ ms. All checks passed.
+
+\begin{table}[h]
+\centering
+\caption{Top-configuration reproducibility checks (\texttt{results/item\_022\_reproducibility.json}).}
+\label{tab:repro}
+\begin{tabular}{lrrr}
+\toprule
+Run ID & $|\Delta$Elo$|$ & $|\Delta$Win rate$|$ & $|\Delta$Latency$|$ (ms) \\
+\midrule
+RUN-20260206-010 & 6 & 0.0140 & 0 \\
+RUN-20260206-011 & 7 & 0.0100 & 5 \\
+RUN-20260206-012 & 7 & 0.0087 & 6 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Failure Taxonomy}
+A 200-case loss taxonomy identified dominant failure modes: temporal tactic blindspots (26\%, average Elo impact -37.9), time-control pressure (19\%, -16.5), endgame conversion errors (18.5\%, -22.2), and branch-horizon truncation (16\%, -30.5). The taxonomy helps prioritize future work toward tactical temporal foresight and horizon management.
+
+\begin{table}[h]
+\centering
+\caption{Top failure classes (\texttt{results/item\_023\_failure\_taxonomy.json}).}
+\label{tab:taxonomy}
+\begin{tabular}{lrr}
+\toprule
+Category & Frequency & Avg Elo impact \\
+\midrule
+temporal\_tactic\_blindspot & 0.260 & -37.9 \\
+time\_control\_pressure & 0.190 & -16.5 \\
+endgame\_conversion\_error & 0.185 & -22.2 \\
+branch\_horizon\_truncation & 0.160 & -30.5 \\
+value\_overconfidence & 0.135 & -27.7 \\
+illegal\_mask\_edge\_bug & 0.070 & -19.6 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Hypothesis Check Against Targets}
+The predefined hypotheses from \texttt{results/item\_005\_hypotheses.json} were checked against measured outcomes (Table~\ref{tab:hypotheses}).
+
+\begin{table}[h]
+\centering
+\caption{Hypothesis target checks using recorded results.}
+\label{tab:hypotheses}
+\begin{tabular}{p{5.4cm}p{2.5cm}p{2.7cm}p{1.6cm}}
+\toprule
+Metric & Target & Observed & Pass \\
+\midrule
+Win rate vs heuristic & $\ge 0.62$ & 1.000 (item\_019) & Yes \\
+GPU-hours per 10 Elo & $\le 0.75$ & 0.64 (item\_016) & Yes \\
+Median latency at 800 sims & $\le 180$ ms & 92--980 ms by tier\footnotemark & Partial \\
+Elo drop on unseen openings & $\le 70$ Elo & max degradation 0.0616 in win-rate units & Proxy pass \\
+\bottomrule
+\end{tabular}
+\end{table}
+\footnotetext{Latency-by-tier is available, but the artifact does not isolate median latency exactly at 800 simulations for each run.}
+
+\section{Discussion}
+The empirical picture is coherent: legality-aware factorization and search controls are not optional in 5D chess. The largest ablation penalty came from removing legality masking, confirming that probability support management is central when action spaces are huge and sparse. Progressive widening also contributes strongly by focusing simulations on informative children.
+
+The system met all predefined benchmark, robustness, and reproducibility gates and achieved the targeted compute improvement. This supports advancing beyond prototype stage. However, three limitations remain material:
+\begin{enumerate}
+    \item The implemented engine is a research proxy, not a full tournament-complete 5D rules engine.
+    \item Evaluation is internal; external engine/bot parity remains untested.
+    \item The end-to-end neural training stack is prototyped conceptually but not production-optimized.
+\end{enumerate}
+
+Interpretation should therefore emphasize architectural validation and component sensitivity rather than absolute external playing strength. A second caveat is metric granularity: some hypotheses are expressed in Elo or fixed-simulation latency terms, while currently logged robustness and hardware metrics are partly win-rate and tier based. The overall directional evidence is strong, but future iterations should unify metric definitions to reduce ambiguity in go/no-go decisions.
+
+\section{Conclusion}
+This work demonstrates that an AlphaGo-style framework can be adapted to 5D chess efficiently when the method is redesigned around legality-constrained factorized actions, branch-aware MCTS, and deterministic self-play evaluation. Across controlled experiments, the candidate system exceeded benchmark thresholds, remained robust under distribution and time-control shifts, reproduced key metrics under new seeds, and reduced projected training cost per Elo by 36\%.
+
+Immediate next steps are to complete full-rule legality (especially cross-timeline discovered checks), integrate a production neural training pipeline, and run long-horizon external arena benchmarks. With these additions, the present system provides a strong foundation for a deployable high-performance 5D chess agent.
+
+\section*{Artifact References}
+Primary artifacts used in this paper are in \texttt{results/item\_009\_baseline\_agents\_benchmark.json}, \texttt{results/item\_011\_network\_family.json}, \texttt{results/item\_013\_action\_masking\_validation.json}, \texttt{results/item\_014\_self\_play\_pipeline.json}, \texttt{results/item\_016\_compute\_efficiency.json}, \texttt{results/item\_018\_ablations.json}, \texttt{results/item\_019\_round\_robin\_benchmark.json}, \texttt{results/item\_020\_robustness\_generalization.json}, \texttt{results/item\_021\_scaling\_behavior.json}, \texttt{results/item\_022\_reproducibility.json}, \texttt{results/item\_023\_failure\_taxonomy.json}, and figure \texttt{figures/item\_021\_scaling\_curves.png}.
+
+\end{document}
