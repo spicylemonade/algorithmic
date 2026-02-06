@@ -1,0 +1,223 @@
+{
+  "item_id": "item_018",
+  "seed": 42,
+  "max_iter": 8,
+  "targets": [
+    {
+      "target": "433_Eros",
+      "success": false,
+      "iterations": 8,
+      "history": [
+        {
+          "iteration": 1,
+          "lr": 0.01,
+          "period_step": 0.05,
+          "hausdorff": 0.7285865750724237,
+          "iou": 0.0,
+          "deviation": 1.0
+        },
+        {
+          "iteration": 2,
+          "lr": 0.008,
+          "period_step": 0.025,
+          "hausdorff": 0.7285865750724237,
+          "iou": 0.0,
+          "deviation": 1.0
+        },
+        {
+          "iteration": 3,
+          "lr": 0.0064,
+          "period_step": 0.0125,
+          "hausdorff": 0.7285865750724237,
+          "iou": 0.0,
+          "deviation": 1.0
+        },
+        {
+          "iteration": 4,
+          "lr": 0.00512,
+          "period_step": 0.00625,
+          "hausdorff": 0.7285865750724237,
+          "iou": 0.0,
+          "deviation": 1.0
+        },
+        {
+          "iteration": 5,
+          "lr": 0.004096000000000001,
+          "period_step": 0.003125,
+          "hausdorff": 0.7285865750724237,
+          "iou": 0.0,
+          "deviation": 1.0
+        },
+        {
+          "iteration": 6,
+          "lr": 0.0032768000000000007,
+          "period_step": 0.002,
+          "hausdorff": 0.7285865750724237,
+          "iou": 0.0,
+          "deviation": 1.0
+        },
+        {
+          "iteration": 7,
+          "lr": 0.002621440000000001,
+          "period_step": 0.002,
+          "hausdorff": 0.7285865750724237,
+          "iou": 0.0,
+          "deviation": 1.0
+        },
+        {
+          "iteration": 8,
+          "lr": 0.002097152000000001,
+          "period_step": 0.002,
+          "hausdorff": 0.7285865750724237,
+          "iou": 0.0,
+          "deviation": 1.0
+        }
+      ],
+      "output_mesh": "data/processed/blinded_runs/433_Eros_recursive.obj"
+    },
+    {
+      "target": "216_Kleopatra",
+      "success": false,
+      "iterations": 8,
+      "history": [
+        {
+          "iteration": 1,
+          "lr": 0.01,
+          "period_step": 0.05,
+          "hausdorff": 0.7565321947923932,
+          "iou": 0.0,
+          "deviation": 1.0
+        },
+        {
+          "iteration": 2,
+          "lr": 0.008,
+          "period_step": 0.025,
+          "hausdorff": 0.7565321947923932,
+          "iou": 0.0,
+          "deviation": 1.0
+        },
+        {
+          "iteration": 3,
+          "lr": 0.0064,
+          "period_step": 0.0125,
+          "hausdorff": 0.7565321947923932,
+          "iou": 0.0,
+          "deviation": 1.0
+        },
+        {
+          "iteration": 4,
+          "lr": 0.00512,
+          "period_step": 0.00625,
+          "hausdorff": 0.7565321947923932,
+          "iou": 0.0,
+          "deviation": 1.0
+        },
+        {
+          "iteration": 5,
+          "lr": 0.004096000000000001,
+          "period_step": 0.003125,
+          "hausdorff": 0.7565321947923932,
+          "iou": 0.0,
+          "deviation": 1.0
+        },
+        {
+          "iteration": 6,
+          "lr": 0.0032768000000000007,
+          "period_step": 0.002,
+          "hausdorff": 0.7565321947923932,
+          "iou": 0.0,
+          "deviation": 1.0
+        },
+        {
+          "iteration": 7,
+          "lr": 0.002621440000000001,
+          "period_step": 0.002,
+          "hausdorff": 0.7565321947923932,
+          "iou": 0.0,
+          "deviation": 1.0
+        },
+        {
+          "iteration": 8,
+          "lr": 0.002097152000000001,
+          "period_step": 0.002,
+          "hausdorff": 0.7565321947923932,
+          "iou": 0.0,
+          "deviation": 1.0
+        }
+      ],
+      "output_mesh": "data/processed/blinded_runs/216_Kleopatra_recursive.obj"
+    },
+    {
+      "target": "25143_Itokawa",
+      "success": false,
+      "iterations": 8,
+      "history": [
+        {
+          "iteration": 1,
+          "lr": 0.01,
+          "period_step": 0.05,
+          "hausdorff": 0.6036190147520308,
+          "iou": 0.0,
+          "deviation": 1.0
+        },
+        {
+          "iteration": 2,
+          "lr": 0.008,
+          "period_step": 0.025,
+          "hausdorff": 0.6036190147520308,
+          "iou": 0.0,
+          "deviation": 1.0
+        },
+        {
+          "iteration": 3,
+          "lr": 0.0064,
+          "period_step": 0.0125,
+          "hausdorff": 0.6036190147520308,
+          "iou": 0.0,
+          "deviation": 1.0
+        },
+        {
+          "iteration": 4,
+          "lr": 0.00512,
+          "period_step": 0.00625,
+          "hausdorff": 0.6036190147520308,
+          "iou": 0.0,
+          "deviation": 1.0
+        },
+        {
+          "iteration": 5,
+          "lr": 0.004096000000000001,
+          "period_step": 0.003125,
+          "hausdorff": 0.6036190147520308,
+          "iou": 0.0,
+          "deviation": 1.0
+        },
+        {
+          "iteration": 6,
+          "lr": 0.0032768000000000007,
+          "period_step": 0.002,
+          "hausdorff": 0.6036190147520308,
+          "iou": 0.0,
+          "deviation": 1.0
+        },
+        {
+          "iteration": 7,
+          "lr": 0.002621440000000001,
+          "period_step": 0.002,
+          "hausdorff": 0.6036190147520308,
+          "iou": 0.0,
+          "deviation": 1.0
+        },
+        {
+          "iteration": 8,
+          "lr": 0.002097152000000001,
+          "period_step": 0.002,
+          "hausdorff": 0.6036190147520308,
+          "iou": 0.0,
+          "deviation": 1.0
+        }
+      ],
+      "output_mesh": "data/processed/blinded_runs/25143_Itokawa_recursive.obj"
+    }
+  ]
+}
