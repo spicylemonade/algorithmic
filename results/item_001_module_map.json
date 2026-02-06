@@ -1,0 +1,46 @@
+{
+  "item_id": "item_001",
+  "missing_files": [
+    "TASK_orchestrator.md"
+  ],
+  "nodes": [
+    "TASK_orchestrator.md",
+    "TASK_researcher.md",
+    "research_rubric.json",
+    "main.py",
+    "results/",
+    "figures/",
+    ".archivara/logs/"
+  ],
+  "edges": [
+    {
+      "from": "TASK_orchestrator.md",
+      "to": "research_rubric.json"
+    },
+    {
+      "from": "TASK_researcher.md",
+      "to": "research_rubric.json"
+    },
+    {
+      "from": "research_rubric.json",
+      "to": "main.py"
+    },
+    {
+      "from": "main.py",
+      "to": "results/"
+    },
+    {
+      "from": "main.py",
+      "to": "figures/"
+    },
+    {
+      "from": "main.py",
+      "to": ".archivara/logs/"
+    },
+    {
+      "from": ".archivara/logs/",
+      "to": "research_rubric.json"
+    }
+  ],
+  "seed": 42
+}
