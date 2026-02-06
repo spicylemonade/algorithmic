@@ -1,0 +1,14 @@
+{
+  "seed": 42,
+  "inputs": {
+    "period_h": 3.2,
+    "axis_a": 1.6,
+    "axis_b": 1.0,
+    "axis_c": 0.7,
+    "concavity_fraction": 0.28,
+    "g_slope": 0.23,
+    "spin_axis_delta_deg": 18.0,
+    "volume": 4.2
+  },
+  "aggregate_penalty": 0.0
+}
