@@ -1,0 +1,32 @@
+{
+  "item_id": "item_004",
+  "seed": 42,
+  "generated_at": "2026-02-06T22:12:52.939380+00:00",
+  "method": "SAGE-inspired non-convex evolutionary synthesis",
+  "genome_encoding": {
+    "shape": "Subdivision-control mesh vertex displacement vector v[3N] with scale-normalization gene s",
+    "spin": "(lambda,beta,P,phi0)",
+    "photometric": "phase-function coefficients (G1,G2 or HG12 surrogate)"
+  },
+  "operators": {
+    "mutation": [
+      "Gaussian perturbation sigma=0.03*local_edge_length",
+      "Concavity-aware mutation adds negative radial dents with probability 0.08"
+    ],
+    "crossover": "two-parent simulated binary crossover on aligned vertex index sets",
+    "repair": "Laplacian smoothing pass preserving top 5% curvature extrema"
+  },
+  "fitness": "f = -[w_rms*RMSphot + w_reg*R_smooth + w_phys*R_spin + w_self*silhouette_self_intersection_penalty]",
+  "stopping_criteria": {
+    "max_generations": 400,
+    "patience_generations": 60,
+    "early_stop_condition": "median fitness improvement < 1e-4 over patience window"
+  },
+  "acceptance_check": {
+    "genome_defined": true,
+    "operators_defined": true,
+    "fitness_defined": true,
+    "stopping_defined": true,
+    "criteria_met": true
+  }
+}
