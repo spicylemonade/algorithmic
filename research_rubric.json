@@ -1,0 +1,270 @@
+{
+  "version": "1.0",
+  "created_at": "2026-02-06T22:10:06Z",
+  "updated_at": "2026-02-06T22:10:50.619093+00:00",
+  "current_agent": "orchestrator",
+  "agent_status": {
+    "orchestrator": {
+      "status": "completed",
+      "started_at": "2026-02-06T22:10:06Z",
+      "completed_at": "2026-02-06T22:10:50.619063+00:00",
+      "error": null
+    },
+    "researcher": {
+      "status": "pending",
+      "started_at": null,
+      "completed_at": null,
+      "error": null
+    },
+    "writer": {
+      "status": "pending",
+      "started_at": null,
+      "completed_at": null,
+      "error": null
+    }
+  },
+  "phases": [
+    {
+      "id": "phase_1",
+      "name": "Problem Analysis & Literature Review",
+      "order": 1,
+      "items": [
+        {
+          "id": "item_001",
+          "description": "Map repository modules and workflow entry points",
+          "acceptance_criteria": "Produce a module map covering main.py, TASK_orchestrator.md, figures/, and results/, including purpose and dependency assumptions for each artifact",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_002",
+          "description": "Formalize the core research objective and success metrics",
+          "acceptance_criteria": "Define quantitative project goals including sparse-data inversion accuracy target, runtime budget, and minimum confidence threshold for candidate shape models",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_003",
+          "description": "Synthesize convex inversion theory from Kaasalainen-Torppa framework",
+          "acceptance_criteria": "Document objective function terms, gradient expressions, regularization strategy, and parameterization constraints required for a custom convex solver",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_004",
+          "description": "Synthesize non-convex evolutionary strategy from SAGE methodology",
+          "acceptance_criteria": "Specify genome encoding, mutation and crossover operators, fitness definition, and stopping criteria suitable for non-convex asteroid shape recovery",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_005",
+          "description": "Synthesize sparse-photometry inversion constraints from Durech-style workflows",
+          "acceptance_criteria": "Define pole-solution search strategy, period ambiguity handling, and minimum sparse-observation geometry requirements for convergence",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        }
+      ]
+    },
+    {
+      "id": "phase_2",
+      "name": "Baseline Implementation & Metrics",
+      "order": 2,
+      "items": [
+        {
+          "id": "item_006",
+          "description": "Design end-to-end pipeline architecture for ingestion, inversion, and reporting",
+          "acceptance_criteria": "Create an architecture specification with at least 8 modules/interfaces spanning data loaders, geometry engine, optimizer core, validation, and ranking outputs",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_007",
+          "description": "Define baseline convex inversion implementation plan",
+          "acceptance_criteria": "Specify baseline solver loop, initialization procedure, line-search policy, and convergence diagnostics with measurable thresholds",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_008",
+          "description": "Define baseline non-convex evolutionary implementation plan",
+          "acceptance_criteria": "Specify baseline population size, generation count, elitism ratio, and restart policy, each with explicit default numeric values",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_009",
+          "description": "Define baseline sparse-inversion implementation plan",
+          "acceptance_criteria": "Specify sparse sampling model, uncertainty weighting, and pole/period grid resolution, including explicit pass-fail convergence criteria",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_010",
+          "description": "Specify quantitative baseline metrics and evaluation protocol",
+          "acceptance_criteria": "Establish required metrics including Hausdorff distance, volumetric IoU, photometric RMS residual, and pole-direction error with formula definitions and units",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        }
+      ]
+    },
+    {
+      "id": "phase_3",
+      "name": "Core Research & Novel Approaches",
+      "order": 3,
+      "items": [
+        {
+          "id": "item_011",
+          "description": "Design hybrid convex-plus-evolutionary optimization schedule",
+          "acceptance_criteria": "Define a staged optimization curriculum that transitions from convex to non-convex search with explicit handoff triggers based on residual and shape-complexity indicators",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_012",
+          "description": "Design adaptive loss weighting for mixed dense and sparse photometry",
+          "acceptance_criteria": "Provide a weighting policy that updates by observation uncertainty, phase-angle coverage, and apparition diversity, with equations and boundary conditions",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_013",
+          "description": "Design physically informed regularization and spin-state constraints",
+          "acceptance_criteria": "Specify regularizers enforcing plausible inertia alignment, rotation-state consistency, and mesh smoothness without suppressing major concavities",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_014",
+          "description": "Design multi-source data fusion strategy across ALCDEF, PDS, Gaia, ZTF, and Pan-STARRS",
+          "acceptance_criteria": "Define schema harmonization, photometric calibration normalization, outlier rejection, and provenance tracking across all required repositories",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_015",
+          "description": "Design recursive self-reinforcement loop for optimization refinement",
+          "acceptance_criteria": "Define automated loop logic that adjusts loss weights, regularization strength, and period-grid granularity when deviation exceeds 5 percent",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        }
+      ]
+    },
+    {
+      "id": "phase_4",
+      "name": "Experiments & Evaluation",
+      "order": 4,
+      "items": [
+        {
+          "id": "item_016",
+          "description": "Assemble ground-truth validation cohort from DAMIT and JPL radar models",
+          "acceptance_criteria": "Create a validation set with at least 10 asteroids including 433 Eros, 25143 Itokawa, and 216 Kleopatra, each linked to downloadable reference meshes",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_017",
+          "description": "Assemble blind raw-photometry benchmark dataset",
+          "acceptance_criteria": "For each validation asteroid, gather raw lightcurve/sparse observations from ALCDEF and/or PDS with metadata sufficient to reconstruct observing geometry",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_018",
+          "description": "Define blinded evaluation execution protocol",
+          "acceptance_criteria": "Specify rules that hide ground-truth meshes during inversion, enforce fixed seeds for reproducibility, and capture run logs for every benchmark object",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_019",
+          "description": "Define pass-fail thresholds for model fidelity",
+          "acceptance_criteria": "Set benchmark acceptance thresholds requiring deviation below 5 percent by combined Hausdorff and volumetric IoU criteria before promotion to target discovery",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_020",
+          "description": "Define target-selection query logic for unknown NEA and large MBA candidates",
+          "acceptance_criteria": "Implement formal boolean filter specification: NEO OR diameter > 100 km, LCDB U >= 2, absent from DAMIT, and sufficient dense or sparse observation counts",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        }
+      ]
+    },
+    {
+      "id": "phase_5",
+      "name": "Analysis & Documentation",
+      "order": 5,
+      "items": [
+        {
+          "id": "item_021",
+          "description": "Define ranking methodology for top 50 candidate asteroids",
+          "acceptance_criteria": "Specify weighted ranking formula combining model confidence, data coverage, inversion stability, and scientific novelty with clear tie-break rules",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_022",
+          "description": "Define output packaging standard for meshes and spin vectors",
+          "acceptance_criteria": "Specify required deliverables per target: OBJ mesh, spin-axis parameters, period estimate, uncertainty intervals, and provenance manifest",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_023",
+          "description": "Define comparative benchmark against existing tools",
+          "acceptance_criteria": "Specify experiment matrix comparing custom pipeline with MPO LCInvert, SAGE, and KOALA on shared datasets using identical metric definitions",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_024",
+          "description": "Define uncertainty, risk, and failure-mode analysis framework",
+          "acceptance_criteria": "Document at least 8 failure modes including period aliasing, pole ambiguity, sparse-coverage bias, and non-uniqueness, each with detection and mitigation criteria",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_025",
+          "description": "Define final reporting structure and reproducibility checklist",
+          "acceptance_criteria": "Provide a report template containing methods, validation metrics, candidate list, artifact links, and exact rerun instructions with fixed config hashes",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "total_items": 25,
+    "completed": 0,
+    "in_progress": 0,
+    "failed": 0,
+    "pending": 25
+  }
+}
