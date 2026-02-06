@@ -1,0 +1,44 @@
+{
+  "item_id": "item_003",
+  "seed": 42,
+  "samples": 2000,
+  "branching_factor": {
+    "mean": 60.726,
+    "p10": 28,
+    "p50": 49,
+    "p90": 103,
+    "confidence_pm_percent": 20
+  },
+  "game_length_plies": {
+    "mean": 258.992,
+    "p10": 170,
+    "p50": 260,
+    "p90": 349,
+    "confidence_pm_percent": 20
+  },
+  "state_encoding": {
+    "shape": {
+      "timelines": 9,
+      "times": 12,
+      "board": [
+        8,
+        8
+      ],
+      "channels": 40,
+      "history": 4
+    },
+    "num_elements": 1105920,
+    "bytes_per_state_fp16": 2211840,
+    "mb_per_state_fp16": 2.109375,
+    "bytes_per_state_int8": 1105920,
+    "mb_per_state_int8": 1.0546875
+  },
+  "pilot_training_projection": {
+    "target_games": 1200000,
+    "estimated_positions": 310790400,
+    "positions_per_sec_per_gpu": 3200,
+    "gpu_hours_estimate": 26.97833333333333,
+    "gpu_hours_low": 21.582666666666668,
+    "gpu_hours_high": 32.373999999999995
+  }
+}
