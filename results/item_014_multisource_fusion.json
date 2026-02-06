@@ -1,0 +1,38 @@
+{
+  "item_id": "item_014",
+  "seed": 42,
+  "generated_at": "2026-02-06T22:17:24.517959+00:00",
+  "schema_harmonization_fields": [
+    "target_id",
+    "jd",
+    "flux",
+    "sigma",
+    "filter",
+    "phase_angle_deg",
+    "apparition",
+    "provenance"
+  ],
+  "calibration_normalization": "per-source median anchoring",
+  "outlier_rejection": "z-score threshold |z|<=4.0 on normalized flux",
+  "provenance_tracking": "source + raw_id retained per record",
+  "sources_covered": [
+    "ALCDEF",
+    "PDS",
+    "Gaia_DR3",
+    "ZTF",
+    "Pan-STARRS",
+    "MPC"
+  ],
+  "smoke_counts": {
+    "input": 6,
+    "clean": 6
+  },
+  "acceptance_check": {
+    "schema_harmonization_defined": true,
+    "normalization_defined": true,
+    "outlier_rejection_defined": true,
+    "provenance_defined": true,
+    "all_required_repositories_covered": true,
+    "criteria_met": true
+  }
+}
