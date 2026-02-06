@@ -1,0 +1,31 @@
+{
+  "item_id": "item_008",
+  "seed": 42,
+  "generated_at": "2026-02-06T22:14:43.538916+00:00",
+  "baseline_nonconvex_plan": {
+    "population_size": 96,
+    "generation_count": 400,
+    "elitism_ratio": 0.1,
+    "restart_policy": {
+      "patience_generations": 50,
+      "strategy": "retain elites and randomize remainder"
+    }
+  },
+  "smoke_test_output": {
+    "best": {
+      "flux_model": 0.9499990989880707
+    },
+    "fitness": -9.010119292884866e-07,
+    "generations": 400,
+    "population_size": 96,
+    "elitism_ratio": 0.1,
+    "restart_patience": 50
+  },
+  "acceptance_check": {
+    "population_size_explicit": true,
+    "generation_count_explicit": true,
+    "elitism_explicit": true,
+    "restart_policy_explicit": true,
+    "criteria_met": true
+  }
+}
