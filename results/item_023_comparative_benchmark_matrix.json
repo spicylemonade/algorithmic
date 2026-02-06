@@ -1,0 +1,44 @@
+{
+  "item_id": "item_023",
+  "seed": 42,
+  "generated_at": "2026-02-06T22:22:42.992659+00:00",
+  "benchmark_matrix": {
+    "tools": [
+      "custom_lci",
+      "MPO_LCInvert",
+      "SAGE",
+      "KOALA"
+    ],
+    "datasets": [
+      "validation_cohort_v1",
+      "sparse_only_subset",
+      "mixed_dense_sparse_subset"
+    ],
+    "metrics_shared": [
+      "normalized_hausdorff",
+      "volumetric_iou",
+      "photometric_rms",
+      "pole_direction_error_deg"
+    ],
+    "controls": {
+      "same_input_photometry": true,
+      "same_geometry_ephemerides": true,
+      "same_random_seed_when_supported": 42,
+      "same_metric_implementations": true
+    },
+    "outputs": [
+      "per-target metric table",
+      "aggregate mean/median",
+      "win-loss-count per metric"
+    ]
+  },
+  "acceptance_check": {
+    "includes_custom_tool": true,
+    "includes_mpo_lcinvert": true,
+    "includes_sage": true,
+    "includes_koala": true,
+    "shared_dataset_defined": true,
+    "identical_metrics_defined": true,
+    "criteria_met": true
+  }
+}
