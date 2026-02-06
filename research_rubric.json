@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "created_at": "2026-02-06T23:48:57Z",
-  "updated_at": "2026-02-06T23:58:13.851605+00:00",
+  "updated_at": "2026-02-06T23:58:42.903971+00:00",
   "current_agent": "researcher",
   "agent_status": {
     "orchestrator": {
@@ -206,8 +206,8 @@
           "id": "item_020",
           "description": "Define candidate selection experiment for unknown targets",
           "acceptance_criteria": "Implement boolean filter logic (NEO OR diameter>100km) AND (LCDB U>=2) AND (not in DAMIT) AND (>=20 dense curves OR >=100 sparse points across >3 apparitions) and verify with audit table",
-          "status": "pending",
-          "notes": null,
+          "status": "completed",
+          "notes": "Implemented executable boolean candidate filter in scripts/filter_candidates.py using exact logic and deterministic seed 42; generated auditable universe and per-object pass/fail table in results/item_020_filter_audit_table.json with summary counts in results/item_020_filter_summary.json and selected output in results/item_020_selected_candidates.json.",
           "error": null
         }
       ]
@@ -262,9 +262,9 @@
   ],
   "summary": {
     "total_items": 25,
-    "completed": 19,
+    "completed": 20,
     "in_progress": 0,
     "failed": 0,
-    "pending": 6
+    "pending": 5
   }
 }

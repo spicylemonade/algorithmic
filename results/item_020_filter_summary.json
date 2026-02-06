@@ -1,0 +1,13 @@
+{
+  "item_id": "item_020",
+  "seed": 42,
+  "logic": "(is_neo OR diameter_km>100) AND (lcdb_u>=2) AND (not in_damit) AND (dense_curves>=20 OR (sparse_points>=100 AND apparitions>3))",
+  "universe": 320,
+  "selected": 68,
+  "criterion_pass_counts": {
+    "p1": 203,
+    "p2": 206,
+    "p3": 236,
+    "p4": 223
+  }
+}
