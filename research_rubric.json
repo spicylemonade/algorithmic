@@ -1,8 +1,8 @@
 {
   "version": "1.0",
   "created_at": "2026-02-06T06:08:35.700721+00:00",
-  "updated_at": "2026-02-06T06:08:37.064562+00:00",
-  "current_agent": "researcher",
+  "updated_at": "2026-02-06T06:08:38.392162+00:00",
+  "current_agent": "writer",
   "agent_status": {
     "orchestrator": {
       "status": "completed",
@@ -17,10 +17,10 @@
       "error": "Exit code 2"
     },
     "writer": {
-      "status": "pending",
-      "started_at": null,
-      "completed_at": null,
-      "error": null
+      "status": "failed",
+      "started_at": "2026-02-06T06:08:37.888647+00:00",
+      "completed_at": "2026-02-06T06:08:38.392141+00:00",
+      "error": "Exit code 2"
     }
   },
   "phases": [
