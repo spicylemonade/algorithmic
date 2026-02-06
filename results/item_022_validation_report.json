@@ -1,0 +1,26 @@
+{
+  "seed": 42,
+  "n_validation_targets": 10,
+  "convergence": {
+    "mean_convex_loss": 21090833074.92502,
+    "mean_evo_loss": 21090727294.563786,
+    "converged_fraction": 1.0
+  },
+  "geometry_summary": {
+    "count": 9,
+    "mean_normalized_hausdorff": 1.1405317354494682,
+    "median_normalized_hausdorff": 0.9862372851844892,
+    "worst_normalized_hausdorff": 2.3920318143393953,
+    "mean_iou": 0.007142566323784009,
+    "median_iou": 0.0,
+    "worst_iou": 0.0,
+    "pass_rate_5pct": 0.0
+  },
+  "deviation_target_lt_5pct_achieved": false,
+  "failure_analysis": [
+    "Sparse cadence limits uniqueness and inflates mirror ambiguities.",
+    "Low-resolution template mesh underfits high-concavity geometry.",
+    "Current bbox-IoU proxy is coarse and penalizes scale mismatch strongly.",
+    "Adaptive loop not yet integrated into full validation benchmark execution."
+  ]
+}
