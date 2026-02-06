@@ -1,0 +1,36 @@
+{
+  "item": "item_005",
+  "seed": 42,
+  "hardware_budget": {
+    "train": "1x RTX 4090 (24GB) for <= 120 GPU-hours",
+    "eval": "16 CPU cores + optional single GPU",
+    "ram_limit_gb": 64
+  },
+  "targets": [
+    {
+      "metric": "head_to_head_win_rate_vs_strongest_baseline",
+      "baseline": "heuristic+shallow MCTS baseline",
+      "target": ">=0.65 over >=2000 games"
+    },
+    {
+      "metric": "elo_gain_vs_strongest_baseline",
+      "baseline": "best non-learning baseline",
+      "target": ">=+150 Elo with 95% CI excluding 0"
+    },
+    {
+      "metric": "search_throughput_nodes_per_sec",
+      "baseline": "unoptimized reference MCTS",
+      "target": ">=2.0x baseline nodes/sec"
+    },
+    {
+      "metric": "training_cost_gpu_hours",
+      "baseline": "full-scale unconstrained run",
+      "target": "<=120 GPU-hours to reach target Elo"
+    },
+    {
+      "metric": "peak_inference_memory",
+      "baseline": "unoptimized full-precision model",
+      "target": "<=12 GB at tournament settings"
+    }
+  ]
+}
