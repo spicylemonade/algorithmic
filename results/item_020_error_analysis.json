@@ -1,0 +1,22 @@
+{
+  "item_id": "item_020",
+  "seed": 42,
+  "annotated_positions": 200,
+  "category_counts": {
+    "king_safety_miscalibration": 39,
+    "timeline_tactical_blunder": 68,
+    "branch_overexpansion": 33,
+    "draw_conversion_failure": 21,
+    "horizon_truncation": 39
+  },
+  "top_3_categories": [
+    "timeline_tactical_blunder",
+    "king_safety_miscalibration",
+    "horizon_truncation"
+  ],
+  "remediation_experiments": {
+    "timeline_tactical_blunder": "Increase tactical verification playout depth for cross-timeline forcing lines.",
+    "king_safety_miscalibration": "Use adaptive search extension near volatile value gradients.",
+    "horizon_truncation": "Add king-safety auxiliary target with timeline-aware threat maps."
+  }
+}

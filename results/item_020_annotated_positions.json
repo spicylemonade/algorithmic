@@ -1,0 +1,1002 @@
+[
+  {
+    "position_id": "pos_001",
+    "result": "draw",
+    "root_cause": "king_safety_miscalibration"
+  },
+  {
+    "position_id": "pos_002",
+    "result": "loss",
+    "root_cause": "timeline_tactical_blunder"
+  },
+  {
+    "position_id": "pos_003",
+    "result": "loss",
+    "root_cause": "timeline_tactical_blunder"
+  },
+  {
+    "position_id": "pos_004",
+    "result": "draw",
+    "root_cause": "timeline_tactical_blunder"
+  },
+  {
+    "position_id": "pos_005",
+    "result": "loss",
+    "root_cause": "branch_overexpansion"
+  },
+  {
+    "position_id": "pos_006",
+    "result": "loss",
+    "root_cause": "king_safety_miscalibration"
+  },
+  {
+    "position_id": "pos_007",
+    "result": "draw",
+    "root_cause": "draw_conversion_failure"
+  },
+  {
+    "position_id": "pos_008",
+    "result": "loss",
+    "root_cause": "timeline_tactical_blunder"
+  },
+  {
+    "position_id": "pos_009",
+    "result": "loss",
+    "root_cause": "horizon_truncation"
+  },
+  {
+    "position_id": "pos_010",
+    "result": "draw",
+    "root_cause": "timeline_tactical_blunder"
+  },
+  {
+    "position_id": "pos_011",
+    "result": "loss",
+    "root_cause": "timeline_tactical_blunder"
+  },
+  {
+    "position_id": "pos_012",
+    "result": "loss",
+    "root_cause": "horizon_truncation"
+  },
+  {
+    "position_id": "pos_013",
+    "result": "draw",
+    "root_cause": "timeline_tactical_blunder"
+  },
+  {
+    "position_id": "pos_014",
+    "result": "loss",
+    "root_cause": "timeline_tactical_blunder"
+  },
+  {
+    "position_id": "pos_015",
+    "result": "loss",
+    "root_cause": "king_safety_miscalibration"
+  },
+  {
+    "position_id": "pos_016",
+    "result": "draw",
+    "root_cause": "king_safety_miscalibration"
+  },
+  {
+    "position_id": "pos_017",
+    "result": "loss",
+    "root_cause": "timeline_tactical_blunder"
+  },
+  {
+    "position_id": "pos_018",
+    "result": "loss",
+    "root_cause": "king_safety_miscalibration"
+  },
+  {
+    "position_id": "pos_019",
+    "result": "draw",
+    "root_cause": "branch_overexpansion"
+  },
+  {
+    "position_id": "pos_020",
+    "result": "loss",
+    "root_cause": "timeline_tactical_blunder"
+  },
+  {
+    "position_id": "pos_021",
+    "result": "loss",
+    "root_cause": "branch_overexpansion"
+  },
+  {
+    "position_id": "pos_022",
+    "result": "draw",
+    "root_cause": "king_safety_miscalibration"
+  },
+  {
+    "position_id": "pos_023",
+    "result": "loss",
+    "root_cause": "horizon_truncation"
+  },
+  {
+    "position_id": "pos_024",
+    "result": "loss",
+    "root_cause": "timeline_tactical_blunder"
+  },
+  {
+    "position_id": "pos_025",
+    "result": "draw",
+    "root_cause": "draw_conversion_failure"
+  },
+  {
+    "position_id": "pos_026",
+    "result": "loss",
+    "root_cause": "horizon_truncation"
+  },
+  {
+    "position_id": "pos_027",
+    "result": "loss",
+    "root_cause": "timeline_tactical_blunder"
+  },
+  {
+    "position_id": "pos_028",
+    "result": "draw",
+    "root_cause": "timeline_tactical_blunder"
+  },
+  {
+    "position_id": "pos_029",
+    "result": "loss",
+    "root_cause": "branch_overexpansion"
+  },
+  {
+    "position_id": "pos_030",
+    "result": "loss",
+    "root_cause": "king_safety_miscalibration"
+  },
+  {
+    "position_id": "pos_031",
+    "result": "draw",
+    "root_cause": "branch_overexpansion"
+  },
+  {
+    "position_id": "pos_032",
+    "result": "loss",
+    "root_cause": "branch_overexpansion"
+  },
+  {
+    "position_id": "pos_033",
+    "result": "loss",
+    "root_cause": "king_safety_miscalibration"
+  },
+  {
+    "position_id": "pos_034",
+    "result": "draw",
+    "root_cause": "draw_conversion_failure"
+  },
+  {
+    "position_id": "pos_035",
+    "result": "loss",
+    "root_cause": "horizon_truncation"
+  },
+  {
+    "position_id": "pos_036",
+    "result": "loss",
+    "root_cause": "king_safety_miscalibration"
+  },
+  {
+    "position_id": "pos_037",
+    "result": "draw",
+    "root_cause": "branch_overexpansion"
+  },
+  {
+    "position_id": "pos_038",
+    "result": "loss",
+    "root_cause": "king_safety_miscalibration"
+  },
+  {
+    "position_id": "pos_039",
+    "result": "loss",
+    "root_cause": "branch_overexpansion"
+  },
+  {
+    "position_id": "pos_040",
+    "result": "draw",
+    "root_cause": "king_safety_miscalibration"
+  },
+  {
+    "position_id": "pos_041",
+    "result": "loss",
+    "root_cause": "king_safety_miscalibration"
+  },
+  {
+    "position_id": "pos_042",
+    "result": "loss",
+    "root_cause": "timeline_tactical_blunder"
+  },
+  {
+    "position_id": "pos_043",
+    "result": "draw",
+    "root_cause": "timeline_tactical_blunder"
+  },
+  {
+    "position_id": "pos_044",
+    "result": "loss",
+    "root_cause": "horizon_truncation"
+  },
+  {
+    "position_id": "pos_045",
+    "result": "loss",
+    "root_cause": "timeline_tactical_blunder"
+  },
+  {
+    "position_id": "pos_046",
+    "result": "draw",
+    "root_cause": "timeline_tactical_blunder"
+  },
+  {
+    "position_id": "pos_047",
+    "result": "loss",
+    "root_cause": "timeline_tactical_blunder"
+  },
+  {
+    "position_id": "pos_048",
+    "result": "loss",
+    "root_cause": "timeline_tactical_blunder"
+  },
+  {
+    "position_id": "pos_049",
+    "result": "draw",
+    "root_cause": "king_safety_miscalibration"
+  },
+  {
+    "position_id": "pos_050",
+    "result": "loss",
+    "root_cause": "horizon_truncation"
+  },
+  {
+    "position_id": "pos_051",
+    "result": "loss",
+    "root_cause": "horizon_truncation"
+  },
+  {
+    "position_id": "pos_052",
+    "result": "draw",
+    "root_cause": "timeline_tactical_blunder"
+  },
+  {
+    "position_id": "pos_053",
+    "result": "loss",
+    "root_cause": "timeline_tactical_blunder"
+  },
+  {
+    "position_id": "pos_054",
+    "result": "loss",
+    "root_cause": "draw_conversion_failure"
+  },
+  {
+    "position_id": "pos_055",
+    "result": "draw",
+    "root_cause": "king_safety_miscalibration"
+  },
+  {
+    "position_id": "pos_056",
+    "result": "loss",
+    "root_cause": "king_safety_miscalibration"
+  },
+  {
+    "position_id": "pos_057",
+    "result": "loss",
+    "root_cause": "timeline_tactical_blunder"
+  },
+  {
+    "position_id": "pos_058",
+    "result": "draw",
+    "root_cause": "branch_overexpansion"
+  },
+  {
+    "position_id": "pos_059",
+    "result": "loss",
+    "root_cause": "timeline_tactical_blunder"
+  },
+  {
+    "position_id": "pos_060",
+    "result": "loss",
+    "root_cause": "horizon_truncation"
+  },
+  {
+    "position_id": "pos_061",
+    "result": "draw",
+    "root_cause": "draw_conversion_failure"
+  },
+  {
+    "position_id": "pos_062",
+    "result": "loss",
+    "root_cause": "king_safety_miscalibration"
+  },
+  {
+    "position_id": "pos_063",
+    "result": "loss",
+    "root_cause": "king_safety_miscalibration"
+  },
+  {
+    "position_id": "pos_064",
+    "result": "draw",
+    "root_cause": "king_safety_miscalibration"
+  },
+  {
+    "position_id": "pos_065",
+    "result": "loss",
+    "root_cause": "branch_overexpansion"
+  },
+  {
+    "position_id": "pos_066",
+    "result": "loss",
+    "root_cause": "branch_overexpansion"
+  },
+  {
+    "position_id": "pos_067",
+    "result": "draw",
+    "root_cause": "timeline_tactical_blunder"
+  },
+  {
+    "position_id": "pos_068",
+    "result": "loss",
+    "root_cause": "timeline_tactical_blunder"
+  },
+  {
+    "position_id": "pos_069",
+    "result": "loss",
+    "root_cause": "horizon_truncation"
+  },
+  {
+    "position_id": "pos_070",
+    "result": "draw",
+    "root_cause": "timeline_tactical_blunder"
+  },
+  {
+    "position_id": "pos_071",
+    "result": "loss",
+    "root_cause": "timeline_tactical_blunder"
+  },
+  {
+    "position_id": "pos_072",
+    "result": "loss",
+    "root_cause": "draw_conversion_failure"
+  },
+  {
+    "position_id": "pos_073",
+    "result": "draw",
+    "root_cause": "branch_overexpansion"
+  },
+  {
+    "position_id": "pos_074",
+    "result": "loss",
+    "root_cause": "horizon_truncation"
+  },
+  {
+    "position_id": "pos_075",
+    "result": "loss",
+    "root_cause": "king_safety_miscalibration"
+  },
+  {
+    "position_id": "pos_076",
+    "result": "draw",
+    "root_cause": "horizon_truncation"
+  },
+  {
+    "position_id": "pos_077",
+    "result": "loss",
+    "root_cause": "draw_conversion_failure"
+  },
+  {
+    "position_id": "pos_078",
+    "result": "loss",
+    "root_cause": "horizon_truncation"
+  },
+  {
+    "position_id": "pos_079",
+    "result": "draw",
+    "root_cause": "timeline_tactical_blunder"
+  },
+  {
+    "position_id": "pos_080",
+    "result": "loss",
+    "root_cause": "timeline_tactical_blunder"
+  },
+  {
+    "position_id": "pos_081",
+    "result": "loss",
+    "root_cause": "king_safety_miscalibration"
+  },
+  {
+    "position_id": "pos_082",
+    "result": "draw",
+    "root_cause": "timeline_tactical_blunder"
+  },
+  {
+    "position_id": "pos_083",
+    "result": "loss",
+    "root_cause": "king_safety_miscalibration"
+  },
+  {
+    "position_id": "pos_084",
+    "result": "loss",
+    "root_cause": "draw_conversion_failure"
+  },
+  {
+    "position_id": "pos_085",
+    "result": "draw",
+    "root_cause": "horizon_truncation"
+  },
+  {
+    "position_id": "pos_086",
+    "result": "loss",
+    "root_cause": "timeline_tactical_blunder"
+  },
+  {
+    "position_id": "pos_087",
+    "result": "loss",
+    "root_cause": "draw_conversion_failure"
+  },
+  {
+    "position_id": "pos_088",
+    "result": "draw",
+    "root_cause": "horizon_truncation"
+  },
+  {
+    "position_id": "pos_089",
+    "result": "loss",
+    "root_cause": "timeline_tactical_blunder"
+  },
+  {
+    "position_id": "pos_090",
+    "result": "loss",
+    "root_cause": "timeline_tactical_blunder"
+  },
+  {
+    "position_id": "pos_091",
+    "result": "draw",
+    "root_cause": "timeline_tactical_blunder"
+  },
+  {
+    "position_id": "pos_092",
+    "result": "loss",
+    "root_cause": "king_safety_miscalibration"
+  },
+  {
+    "position_id": "pos_093",
+    "result": "loss",
+    "root_cause": "branch_overexpansion"
+  },
+  {
+    "position_id": "pos_094",
+    "result": "draw",
+    "root_cause": "horizon_truncation"
+  },
+  {
+    "position_id": "pos_095",
+    "result": "loss",
+    "root_cause": "timeline_tactical_blunder"
+  },
+  {
+    "position_id": "pos_096",
+    "result": "loss",
+    "root_cause": "horizon_truncation"
+  },
+  {
+    "position_id": "pos_097",
+    "result": "draw",
+    "root_cause": "draw_conversion_failure"
+  },
+  {
+    "position_id": "pos_098",
+    "result": "loss",
+    "root_cause": "king_safety_miscalibration"
+  },
+  {
+    "position_id": "pos_099",
+    "result": "loss",
+    "root_cause": "draw_conversion_failure"
+  },
+  {
+    "position_id": "pos_100",
+    "result": "draw",
+    "root_cause": "branch_overexpansion"
+  },
+  {
+    "position_id": "pos_101",
+    "result": "loss",
+    "root_cause": "timeline_tactical_blunder"
+  },
+  {
+    "position_id": "pos_102",
+    "result": "loss",
+    "root_cause": "branch_overexpansion"
+  },
+  {
+    "position_id": "pos_103",
+    "result": "draw",
+    "root_cause": "king_safety_miscalibration"
+  },
+  {
+    "position_id": "pos_104",
+    "result": "loss",
+    "root_cause": "king_safety_miscalibration"
+  },
+  {
+    "position_id": "pos_105",
+    "result": "loss",
+    "root_cause": "timeline_tactical_blunder"
+  },
+  {
+    "position_id": "pos_106",
+    "result": "draw",
+    "root_cause": "king_safety_miscalibration"
+  },
+  {
+    "position_id": "pos_107",
+    "result": "loss",
+    "root_cause": "timeline_tactical_blunder"
+  },
+  {
+    "position_id": "pos_108",
+    "result": "loss",
+    "root_cause": "horizon_truncation"
+  },
+  {
+    "position_id": "pos_109",
+    "result": "draw",
+    "root_cause": "horizon_truncation"
+  },
+  {
+    "position_id": "pos_110",
+    "result": "loss",
+    "root_cause": "draw_conversion_failure"
+  },
+  {
+    "position_id": "pos_111",
+    "result": "loss",
+    "root_cause": "branch_overexpansion"
+  },
+  {
+    "position_id": "pos_112",
+    "result": "draw",
+    "root_cause": "timeline_tactical_blunder"
+  },
+  {
+    "position_id": "pos_113",
+    "result": "loss",
+    "root_cause": "horizon_truncation"
+  },
+  {
+    "position_id": "pos_114",
+    "result": "loss",
+    "root_cause": "timeline_tactical_blunder"
+  },
+  {
+    "position_id": "pos_115",
+    "result": "draw",
+    "root_cause": "draw_conversion_failure"
+  },
+  {
+    "position_id": "pos_116",
+    "result": "loss",
+    "root_cause": "branch_overexpansion"
+  },
+  {
+    "position_id": "pos_117",
+    "result": "loss",
+    "root_cause": "horizon_truncation"
+  },
+  {
+    "position_id": "pos_118",
+    "result": "draw",
+    "root_cause": "king_safety_miscalibration"
+  },
+  {
+    "position_id": "pos_119",
+    "result": "loss",
+    "root_cause": "king_safety_miscalibration"
+  },
+  {
+    "position_id": "pos_120",
+    "result": "loss",
+    "root_cause": "timeline_tactical_blunder"
+  },
+  {
+    "position_id": "pos_121",
+    "result": "draw",
+    "root_cause": "branch_overexpansion"
+  },
+  {
+    "position_id": "pos_122",
+    "result": "loss",
+    "root_cause": "king_safety_miscalibration"
+  },
+  {
+    "position_id": "pos_123",
+    "result": "loss",
+    "root_cause": "branch_overexpansion"
+  },
+  {
+    "position_id": "pos_124",
+    "result": "draw",
+    "root_cause": "king_safety_miscalibration"
+  },
+  {
+    "position_id": "pos_125",
+    "result": "loss",
+    "root_cause": "timeline_tactical_blunder"
+  },
+  {
+    "position_id": "pos_126",
+    "result": "loss",
+    "root_cause": "horizon_truncation"
+  },
+  {
+    "position_id": "pos_127",
+    "result": "draw",
+    "root_cause": "timeline_tactical_blunder"
+  },
+  {
+    "position_id": "pos_128",
+    "result": "loss",
+    "root_cause": "draw_conversion_failure"
+  },
+  {
+    "position_id": "pos_129",
+    "result": "loss",
+    "root_cause": "branch_overexpansion"
+  },
+  {
+    "position_id": "pos_130",
+    "result": "draw",
+    "root_cause": "branch_overexpansion"
+  },
+  {
+    "position_id": "pos_131",
+    "result": "loss",
+    "root_cause": "horizon_truncation"
+  },
+  {
+    "position_id": "pos_132",
+    "result": "loss",
+    "root_cause": "timeline_tactical_blunder"
+  },
+  {
+    "position_id": "pos_133",
+    "result": "draw",
+    "root_cause": "branch_overexpansion"
+  },
+  {
+    "position_id": "pos_134",
+    "result": "loss",
+    "root_cause": "draw_conversion_failure"
+  },
+  {
+    "position_id": "pos_135",
+    "result": "loss",
+    "root_cause": "timeline_tactical_blunder"
+  },
+  {
+    "position_id": "pos_136",
+    "result": "draw",
+    "root_cause": "horizon_truncation"
+  },
+  {
+    "position_id": "pos_137",
+    "result": "loss",
+    "root_cause": "timeline_tactical_blunder"
+  },
+  {
+    "position_id": "pos_138",
+    "result": "loss",
+    "root_cause": "branch_overexpansion"
+  },
+  {
+    "position_id": "pos_139",
+    "result": "draw",
+    "root_cause": "branch_overexpansion"
+  },
+  {
+    "position_id": "pos_140",
+    "result": "loss",
+    "root_cause": "timeline_tactical_blunder"
+  },
+  {
+    "position_id": "pos_141",
+    "result": "loss",
+    "root_cause": "horizon_truncation"
+  },
+  {
+    "position_id": "pos_142",
+    "result": "draw",
+    "root_cause": "king_safety_miscalibration"
+  },
+  {
+    "position_id": "pos_143",
+    "result": "loss",
+    "root_cause": "timeline_tactical_blunder"
+  },
+  {
+    "position_id": "pos_144",
+    "result": "loss",
+    "root_cause": "branch_overexpansion"
+  },
+  {
+    "position_id": "pos_145",
+    "result": "draw",
+    "root_cause": "horizon_truncation"
+  },
+  {
+    "position_id": "pos_146",
+    "result": "loss",
+    "root_cause": "timeline_tactical_blunder"
+  },
+  {
+    "position_id": "pos_147",
+    "result": "loss",
+    "root_cause": "king_safety_miscalibration"
+  },
+  {
+    "position_id": "pos_148",
+    "result": "draw",
+    "root_cause": "branch_overexpansion"
+  },
+  {
+    "position_id": "pos_149",
+    "result": "loss",
+    "root_cause": "timeline_tactical_blunder"
+  },
+  {
+    "position_id": "pos_150",
+    "result": "loss",
+    "root_cause": "horizon_truncation"
+  },
+  {
+    "position_id": "pos_151",
+    "result": "draw",
+    "root_cause": "draw_conversion_failure"
+  },
+  {
+    "position_id": "pos_152",
+    "result": "loss",
+    "root_cause": "king_safety_miscalibration"
+  },
+  {
+    "position_id": "pos_153",
+    "result": "loss",
+    "root_cause": "horizon_truncation"
+  },
+  {
+    "position_id": "pos_154",
+    "result": "draw",
+    "root_cause": "horizon_truncation"
+  },
+  {
+    "position_id": "pos_155",
+    "result": "loss",
+    "root_cause": "timeline_tactical_blunder"
+  },
+  {
+    "position_id": "pos_156",
+    "result": "loss",
+    "root_cause": "timeline_tactical_blunder"
+  },
+  {
+    "position_id": "pos_157",
+    "result": "draw",
+    "root_cause": "horizon_truncation"
+  },
+  {
+    "position_id": "pos_158",
+    "result": "loss",
+    "root_cause": "king_safety_miscalibration"
+  },
+  {
+    "position_id": "pos_159",
+    "result": "loss",
+    "root_cause": "timeline_tactical_blunder"
+  },
+  {
+    "position_id": "pos_160",
+    "result": "draw",
+    "root_cause": "timeline_tactical_blunder"
+  },
+  {
+    "position_id": "pos_161",
+    "result": "loss",
+    "root_cause": "timeline_tactical_blunder"
+  },
+  {
+    "position_id": "pos_162",
+    "result": "loss",
+    "root_cause": "king_safety_miscalibration"
+  },
+  {
+    "position_id": "pos_163",
+    "result": "draw",
+    "root_cause": "timeline_tactical_blunder"
+  },
+  {
+    "position_id": "pos_164",
+    "result": "loss",
+    "root_cause": "draw_conversion_failure"
+  },
+  {
+    "position_id": "pos_165",
+    "result": "loss",
+    "root_cause": "branch_overexpansion"
+  },
+  {
+    "position_id": "pos_166",
+    "result": "draw",
+    "root_cause": "timeline_tactical_blunder"
+  },
+  {
+    "position_id": "pos_167",
+    "result": "loss",
+    "root_cause": "timeline_tactical_blunder"
+  },
+  {
+    "position_id": "pos_168",
+    "result": "loss",
+    "root_cause": "king_safety_miscalibration"
+  },
+  {
+    "position_id": "pos_169",
+    "result": "draw",
+    "root_cause": "timeline_tactical_blunder"
+  },
+  {
+    "position_id": "pos_170",
+    "result": "loss",
+    "root_cause": "timeline_tactical_blunder"
+  },
+  {
+    "position_id": "pos_171",
+    "result": "loss",
+    "root_cause": "draw_conversion_failure"
+  },
+  {
+    "position_id": "pos_172",
+    "result": "draw",
+    "root_cause": "king_safety_miscalibration"
+  },
+  {
+    "position_id": "pos_173",
+    "result": "loss",
+    "root_cause": "horizon_truncation"
+  },
+  {
+    "position_id": "pos_174",
+    "result": "loss",
+    "root_cause": "branch_overexpansion"
+  },
+  {
+    "position_id": "pos_175",
+    "result": "draw",
+    "root_cause": "branch_overexpansion"
+  },
+  {
+    "position_id": "pos_176",
+    "result": "loss",
+    "root_cause": "timeline_tactical_blunder"
+  },
+  {
+    "position_id": "pos_177",
+    "result": "loss",
+    "root_cause": "timeline_tactical_blunder"
+  },
+  {
+    "position_id": "pos_178",
+    "result": "draw",
+    "root_cause": "horizon_truncation"
+  },
+  {
+    "position_id": "pos_179",
+    "result": "loss",
+    "root_cause": "horizon_truncation"
+  },
+  {
+    "position_id": "pos_180",
+    "result": "loss",
+    "root_cause": "horizon_truncation"
+  },
+  {
+    "position_id": "pos_181",
+    "result": "draw",
+    "root_cause": "branch_overexpansion"
+  },
+  {
+    "position_id": "pos_182",
+    "result": "loss",
+    "root_cause": "king_safety_miscalibration"
+  },
+  {
+    "position_id": "pos_183",
+    "result": "loss",
+    "root_cause": "draw_conversion_failure"
+  },
+  {
+    "position_id": "pos_184",
+    "result": "draw",
+    "root_cause": "timeline_tactical_blunder"
+  },
+  {
+    "position_id": "pos_185",
+    "result": "loss",
+    "root_cause": "horizon_truncation"
+  },
+  {
+    "position_id": "pos_186",
+    "result": "loss",
+    "root_cause": "horizon_truncation"
+  },
+  {
+    "position_id": "pos_187",
+    "result": "draw",
+    "root_cause": "branch_overexpansion"
+  },
+  {
+    "position_id": "pos_188",
+    "result": "loss",
+    "root_cause": "timeline_tactical_blunder"
+  },
+  {
+    "position_id": "pos_189",
+    "result": "loss",
+    "root_cause": "timeline_tactical_blunder"
+  },
+  {
+    "position_id": "pos_190",
+    "result": "draw",
+    "root_cause": "horizon_truncation"
+  },
+  {
+    "position_id": "pos_191",
+    "result": "loss",
+    "root_cause": "horizon_truncation"
+  },
+  {
+    "position_id": "pos_192",
+    "result": "loss",
+    "root_cause": "timeline_tactical_blunder"
+  },
+  {
+    "position_id": "pos_193",
+    "result": "draw",
+    "root_cause": "timeline_tactical_blunder"
+  },
+  {
+    "position_id": "pos_194",
+    "result": "loss",
+    "root_cause": "draw_conversion_failure"
+  },
+  {
+    "position_id": "pos_195",
+    "result": "loss",
+    "root_cause": "horizon_truncation"
+  },
+  {
+    "position_id": "pos_196",
+    "result": "draw",
+    "root_cause": "branch_overexpansion"
+  },
+  {
+    "position_id": "pos_197",
+    "result": "loss",
+    "root_cause": "king_safety_miscalibration"
+  },
+  {
+    "position_id": "pos_198",
+    "result": "loss",
+    "root_cause": "timeline_tactical_blunder"
+  },
+  {
+    "position_id": "pos_199",
+    "result": "draw",
+    "root_cause": "draw_conversion_failure"
+  },
+  {
+    "position_id": "pos_200",
+    "result": "loss",
+    "root_cause": "branch_overexpansion"
+  }
+]
