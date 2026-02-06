@@ -1,0 +1,24 @@
+{
+  "item_id": "item_025",
+  "seed": 42,
+  "generated_at": "2026-02-06T22:23:28.180810+00:00",
+  "report_template_path": "results/final_report_template.md",
+  "reproducibility_checklist": [
+    "fixed_seed_42",
+    "dataset_manifest_hash",
+    "config_hash",
+    "code_commit_hash",
+    "rerun_commands"
+  ],
+  "config_hash_sha256": "3a5664833059e8e899e201f2a26009e0f213d7dca94c87b36ffc56ba727baf62",
+  "rerun_example": "python main.py --seed 42 --config configs/default.json --targets results/top50_candidates.json",
+  "acceptance_check": {
+    "methods_section_present": true,
+    "validation_metrics_section_present": true,
+    "candidate_list_section_present": true,
+    "artifact_links_section_present": true,
+    "rerun_instructions_present": true,
+    "fixed_config_hash_present": true,
+    "criteria_met": true
+  }
+}
