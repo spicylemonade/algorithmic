@@ -1,0 +1,9 @@
+{
+  "item": "item_012",
+  "seed": 42,
+  "heldout_positions": 1200,
+  "mask_violations": 0,
+  "mask_violation_rate": 0.0,
+  "bounded_value_violations": 0,
+  "acceptance_met": true
+}
