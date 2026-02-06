@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "created_at": "2026-02-06T09:24:02Z",
-  "updated_at": "2026-02-06T09:40:33.177461+00:00",
+  "updated_at": "2026-02-06T09:41:15.367501+00:00",
   "current_agent": "researcher",
   "agent_status": {
     "orchestrator": {
@@ -174,8 +174,8 @@
           "id": "item_016",
           "description": "Run controlled ablations for architecture, search depth, and training schedule",
           "acceptance_criteria": "Execute at least 12 ablation runs under fixed compute budget and report Elo delta, inference cost, and wall-clock efficiency per run",
-          "status": "pending",
-          "notes": null,
+          "status": "completed",
+          "notes": "Executed 12-run controlled ablation matrix (3 architectures x 2 search depths x 2 schedules) under fixed compute budget; reported Elo delta, inference cost, and wall-clock per run in results/item_016_ablation_runs.json and figure in figures/item_016_ablation_elo.png.",
           "error": null
         },
         {
@@ -262,9 +262,9 @@
   ],
   "summary": {
     "total_items": 25,
-    "completed": 15,
+    "completed": 16,
     "in_progress": 0,
     "failed": 0,
-    "pending": 10
+    "pending": 9
   }
 }

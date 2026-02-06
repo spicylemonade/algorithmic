@@ -1,0 +1,115 @@
+{
+  "item_id": "item_016",
+  "seed": 42,
+  "runs": [
+    {
+      "run_id": "ablation_01",
+      "architecture": "resnet",
+      "search_depth": 64,
+      "schedule": "flat_lr",
+      "elo_delta": 20,
+      "inference_cost_ms": 7.667,
+      "wall_clock_hours": 4.297
+    },
+    {
+      "run_id": "ablation_02",
+      "architecture": "resnet",
+      "search_depth": 64,
+      "schedule": "cosine_lr",
+      "elo_delta": 10,
+      "inference_cost_ms": 7.734,
+      "wall_clock_hours": 4.595
+    },
+    {
+      "run_id": "ablation_03",
+      "architecture": "resnet",
+      "search_depth": 128,
+      "schedule": "flat_lr",
+      "elo_delta": 34,
+      "inference_cost_ms": 8.552,
+      "wall_clock_hours": 4.869
+    },
+    {
+      "run_id": "ablation_04",
+      "architecture": "resnet",
+      "search_depth": 128,
+      "schedule": "cosine_lr",
+      "elo_delta": 16,
+      "inference_cost_ms": 8.556,
+      "wall_clock_hours": 5.093
+    },
+    {
+      "run_id": "ablation_05",
+      "architecture": "axial",
+      "search_depth": 64,
+      "schedule": "flat_lr",
+      "elo_delta": 48,
+      "inference_cost_ms": 9.616,
+      "wall_clock_hours": 4.78
+    },
+    {
+      "run_id": "ablation_06",
+      "architecture": "axial",
+      "search_depth": 64,
+      "schedule": "cosine_lr",
+      "elo_delta": 59,
+      "inference_cost_ms": 9.852,
+      "wall_clock_hours": 5.18
+    },
+    {
+      "run_id": "ablation_07",
+      "architecture": "axial",
+      "search_depth": 128,
+      "schedule": "flat_lr",
+      "elo_delta": 47,
+      "inference_cost_ms": 10.986,
+      "wall_clock_hours": 5.403
+    },
+    {
+      "run_id": "ablation_08",
+      "architecture": "axial",
+      "search_depth": 128,
+      "schedule": "cosine_lr",
+      "elo_delta": 55,
+      "inference_cost_ms": 10.919,
+      "wall_clock_hours": 5.836
+    },
+    {
+      "run_id": "ablation_09",
+      "architecture": "transformer",
+      "search_depth": 64,
+      "schedule": "flat_lr",
+      "elo_delta": -11,
+      "inference_cost_ms": 12.729,
+      "wall_clock_hours": 5.905
+    },
+    {
+      "run_id": "ablation_10",
+      "architecture": "transformer",
+      "search_depth": 64,
+      "schedule": "cosine_lr",
+      "elo_delta": 1,
+      "inference_cost_ms": 12.656,
+      "wall_clock_hours": 5.939
+    },
+    {
+      "run_id": "ablation_11",
+      "architecture": "transformer",
+      "search_depth": 128,
+      "schedule": "flat_lr",
+      "elo_delta": 22,
+      "inference_cost_ms": 13.862,
+      "wall_clock_hours": 6.623
+    },
+    {
+      "run_id": "ablation_12",
+      "architecture": "transformer",
+      "search_depth": 128,
+      "schedule": "cosine_lr",
+      "elo_delta": 44,
+      "inference_cost_ms": 13.822,
+      "wall_clock_hours": 6.989
+    }
+  ],
+  "compute_budget_note": "fixed 1 GPU-equivalent per run"
+}
