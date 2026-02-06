@@ -1,0 +1,1044 @@
+{
+  "seed": 42,
+  "total_loss_cases": 200,
+  "taxonomy": [
+    {
+      "category": "temporal_tactic_blindspot",
+      "count": 52,
+      "frequency": 0.26,
+      "avg_elo_impact": -37.86538461538461
+    },
+    {
+      "category": "time_control_pressure",
+      "count": 38,
+      "frequency": 0.19,
+      "avg_elo_impact": -16.526315789473685
+    },
+    {
+      "category": "endgame_conversion_error",
+      "count": 37,
+      "frequency": 0.185,
+      "avg_elo_impact": -22.16216216216216
+    },
+    {
+      "category": "branch_horizon_truncation",
+      "count": 32,
+      "frequency": 0.16,
+      "avg_elo_impact": -30.46875
+    },
+    {
+      "category": "value_overconfidence",
+      "count": 27,
+      "frequency": 0.135,
+      "avg_elo_impact": -27.666666666666668
+    },
+    {
+      "category": "illegal_mask_edge_bug",
+      "count": 14,
+      "frequency": 0.07,
+      "avg_elo_impact": -19.571428571428573
+    }
+  ],
+  "cases": [
+    {
+      "case_id": "loss_001",
+      "category": "illegal_mask_edge_bug",
+      "elo_impact_estimate": -24
+    },
+    {
+      "case_id": "loss_002",
+      "category": "endgame_conversion_error",
+      "elo_impact_estimate": -25
+    },
+    {
+      "case_id": "loss_003",
+      "category": "branch_horizon_truncation",
+      "elo_impact_estimate": -26
+    },
+    {
+      "case_id": "loss_004",
+      "category": "temporal_tactic_blindspot",
+      "elo_impact_estimate": -33
+    },
+    {
+      "case_id": "loss_005",
+      "category": "time_control_pressure",
+      "elo_impact_estimate": -21
+    },
+    {
+      "case_id": "loss_006",
+      "category": "illegal_mask_edge_bug",
+      "elo_impact_estimate": -24
+    },
+    {
+      "case_id": "loss_007",
+      "category": "temporal_tactic_blindspot",
+      "elo_impact_estimate": -41
+    },
+    {
+      "case_id": "loss_008",
+      "category": "branch_horizon_truncation",
+      "elo_impact_estimate": -28
+    },
+    {
+      "case_id": "loss_009",
+      "category": "temporal_tactic_blindspot",
+      "elo_impact_estimate": -41
+    },
+    {
+      "case_id": "loss_010",
+      "category": "endgame_conversion_error",
+      "elo_impact_estimate": -17
+    },
+    {
+      "case_id": "loss_011",
+      "category": "value_overconfidence",
+      "elo_impact_estimate": -30
+    },
+    {
+      "case_id": "loss_012",
+      "category": "value_overconfidence",
+      "elo_impact_estimate": -29
+    },
+    {
+      "case_id": "loss_013",
+      "category": "endgame_conversion_error",
+      "elo_impact_estimate": -28
+    },
+    {
+      "case_id": "loss_014",
+      "category": "endgame_conversion_error",
+      "elo_impact_estimate": -26
+    },
+    {
+      "case_id": "loss_015",
+      "category": "endgame_conversion_error",
+      "elo_impact_estimate": -23
+    },
+    {
+      "case_id": "loss_016",
+      "category": "branch_horizon_truncation",
+      "elo_impact_estimate": -34
+    },
+    {
+      "case_id": "loss_017",
+      "category": "time_control_pressure",
+      "elo_impact_estimate": -17
+    },
+    {
+      "case_id": "loss_018",
+      "category": "temporal_tactic_blindspot",
+      "elo_impact_estimate": -38
+    },
+    {
+      "case_id": "loss_019",
+      "category": "temporal_tactic_blindspot",
+      "elo_impact_estimate": -39
+    },
+    {
+      "case_id": "loss_020",
+      "category": "illegal_mask_edge_bug",
+      "elo_impact_estimate": -12
+    },
+    {
+      "case_id": "loss_021",
+      "category": "temporal_tactic_blindspot",
+      "elo_impact_estimate": -37
+    },
+    {
+      "case_id": "loss_022",
+      "category": "value_overconfidence",
+      "elo_impact_estimate": -27
+    },
+    {
+      "case_id": "loss_023",
+      "category": "temporal_tactic_blindspot",
+      "elo_impact_estimate": -40
+    },
+    {
+      "case_id": "loss_024",
+      "category": "endgame_conversion_error",
+      "elo_impact_estimate": -19
+    },
+    {
+      "case_id": "loss_025",
+      "category": "time_control_pressure",
+      "elo_impact_estimate": -17
+    },
+    {
+      "case_id": "loss_026",
+      "category": "illegal_mask_edge_bug",
+      "elo_impact_estimate": -13
+    },
+    {
+      "case_id": "loss_027",
+      "category": "temporal_tactic_blindspot",
+      "elo_impact_estimate": -34
+    },
+    {
+      "case_id": "loss_028",
+      "category": "branch_horizon_truncation",
+      "elo_impact_estimate": -33
+    },
+    {
+      "case_id": "loss_029",
+      "category": "time_control_pressure",
+      "elo_impact_estimate": -19
+    },
+    {
+      "case_id": "loss_030",
+      "category": "time_control_pressure",
+      "elo_impact_estimate": -16
+    },
+    {
+      "case_id": "loss_031",
+      "category": "branch_horizon_truncation",
+      "elo_impact_estimate": -27
+    },
+    {
+      "case_id": "loss_032",
+      "category": "endgame_conversion_error",
+      "elo_impact_estimate": -26
+    },
+    {
+      "case_id": "loss_033",
+      "category": "branch_horizon_truncation",
+      "elo_impact_estimate": -34
+    },
+    {
+      "case_id": "loss_034",
+      "category": "endgame_conversion_error",
+      "elo_impact_estimate": -17
+    },
+    {
+      "case_id": "loss_035",
+      "category": "time_control_pressure",
+      "elo_impact_estimate": -12
+    },
+    {
+      "case_id": "loss_036",
+      "category": "temporal_tactic_blindspot",
+      "elo_impact_estimate": -34
+    },
+    {
+      "case_id": "loss_037",
+      "category": "temporal_tactic_blindspot",
+      "elo_impact_estimate": -33
+    },
+    {
+      "case_id": "loss_038",
+      "category": "branch_horizon_truncation",
+      "elo_impact_estimate": -30
+    },
+    {
+      "case_id": "loss_039",
+      "category": "branch_horizon_truncation",
+      "elo_impact_estimate": -27
+    },
+    {
+      "case_id": "loss_040",
+      "category": "endgame_conversion_error",
+      "elo_impact_estimate": -25
+    },
+    {
+      "case_id": "loss_041",
+      "category": "endgame_conversion_error",
+      "elo_impact_estimate": -16
+    },
+    {
+      "case_id": "loss_042",
+      "category": "endgame_conversion_error",
+      "elo_impact_estimate": -25
+    },
+    {
+      "case_id": "loss_043",
+      "category": "endgame_conversion_error",
+      "elo_impact_estimate": -16
+    },
+    {
+      "case_id": "loss_044",
+      "category": "branch_horizon_truncation",
+      "elo_impact_estimate": -33
+    },
+    {
+      "case_id": "loss_045",
+      "category": "temporal_tactic_blindspot",
+      "elo_impact_estimate": -35
+    },
+    {
+      "case_id": "loss_046",
+      "category": "time_control_pressure",
+      "elo_impact_estimate": -17
+    },
+    {
+      "case_id": "loss_047",
+      "category": "temporal_tactic_blindspot",
+      "elo_impact_estimate": -37
+    },
+    {
+      "case_id": "loss_048",
+      "category": "branch_horizon_truncation",
+      "elo_impact_estimate": -27
+    },
+    {
+      "case_id": "loss_049",
+      "category": "value_overconfidence",
+      "elo_impact_estimate": -29
+    },
+    {
+      "case_id": "loss_050",
+      "category": "temporal_tactic_blindspot",
+      "elo_impact_estimate": -33
+    },
+    {
+      "case_id": "loss_051",
+      "category": "value_overconfidence",
+      "elo_impact_estimate": -29
+    },
+    {
+      "case_id": "loss_052",
+      "category": "endgame_conversion_error",
+      "elo_impact_estimate": -22
+    },
+    {
+      "case_id": "loss_053",
+      "category": "time_control_pressure",
+      "elo_impact_estimate": -16
+    },
+    {
+      "case_id": "loss_054",
+      "category": "branch_horizon_truncation",
+      "elo_impact_estimate": -35
+    },
+    {
+      "case_id": "loss_055",
+      "category": "value_overconfidence",
+      "elo_impact_estimate": -32
+    },
+    {
+      "case_id": "loss_056",
+      "category": "endgame_conversion_error",
+      "elo_impact_estimate": -27
+    },
+    {
+      "case_id": "loss_057",
+      "category": "temporal_tactic_blindspot",
+      "elo_impact_estimate": -42
+    },
+    {
+      "case_id": "loss_058",
+      "category": "endgame_conversion_error",
+      "elo_impact_estimate": -22
+    },
+    {
+      "case_id": "loss_059",
+      "category": "illegal_mask_edge_bug",
+      "elo_impact_estimate": -18
+    },
+    {
+      "case_id": "loss_060",
+      "category": "branch_horizon_truncation",
+      "elo_impact_estimate": -30
+    },
+    {
+      "case_id": "loss_061",
+      "category": "value_overconfidence",
+      "elo_impact_estimate": -25
+    },
+    {
+      "case_id": "loss_062",
+      "category": "time_control_pressure",
+      "elo_impact_estimate": -22
+    },
+    {
+      "case_id": "loss_063",
+      "category": "endgame_conversion_error",
+      "elo_impact_estimate": -27
+    },
+    {
+      "case_id": "loss_064",
+      "category": "endgame_conversion_error",
+      "elo_impact_estimate": -20
+    },
+    {
+      "case_id": "loss_065",
+      "category": "endgame_conversion_error",
+      "elo_impact_estimate": -16
+    },
+    {
+      "case_id": "loss_066",
+      "category": "illegal_mask_edge_bug",
+      "elo_impact_estimate": -23
+    },
+    {
+      "case_id": "loss_067",
+      "category": "branch_horizon_truncation",
+      "elo_impact_estimate": -35
+    },
+    {
+      "case_id": "loss_068",
+      "category": "value_overconfidence",
+      "elo_impact_estimate": -22
+    },
+    {
+      "case_id": "loss_069",
+      "category": "time_control_pressure",
+      "elo_impact_estimate": -18
+    },
+    {
+      "case_id": "loss_070",
+      "category": "time_control_pressure",
+      "elo_impact_estimate": -10
+    },
+    {
+      "case_id": "loss_071",
+      "category": "temporal_tactic_blindspot",
+      "elo_impact_estimate": -43
+    },
+    {
+      "case_id": "loss_072",
+      "category": "time_control_pressure",
+      "elo_impact_estimate": -18
+    },
+    {
+      "case_id": "loss_073",
+      "category": "endgame_conversion_error",
+      "elo_impact_estimate": -20
+    },
+    {
+      "case_id": "loss_074",
+      "category": "illegal_mask_edge_bug",
+      "elo_impact_estimate": -22
+    },
+    {
+      "case_id": "loss_075",
+      "category": "branch_horizon_truncation",
+      "elo_impact_estimate": -35
+    },
+    {
+      "case_id": "loss_076",
+      "category": "value_overconfidence",
+      "elo_impact_estimate": -21
+    },
+    {
+      "case_id": "loss_077",
+      "category": "time_control_pressure",
+      "elo_impact_estimate": -22
+    },
+    {
+      "case_id": "loss_078",
+      "category": "illegal_mask_edge_bug",
+      "elo_impact_estimate": -17
+    },
+    {
+      "case_id": "loss_079",
+      "category": "temporal_tactic_blindspot",
+      "elo_impact_estimate": -39
+    },
+    {
+      "case_id": "loss_080",
+      "category": "time_control_pressure",
+      "elo_impact_estimate": -10
+    },
+    {
+      "case_id": "loss_081",
+      "category": "branch_horizon_truncation",
+      "elo_impact_estimate": -37
+    },
+    {
+      "case_id": "loss_082",
+      "category": "branch_horizon_truncation",
+      "elo_impact_estimate": -28
+    },
+    {
+      "case_id": "loss_083",
+      "category": "time_control_pressure",
+      "elo_impact_estimate": -21
+    },
+    {
+      "case_id": "loss_084",
+      "category": "endgame_conversion_error",
+      "elo_impact_estimate": -27
+    },
+    {
+      "case_id": "loss_085",
+      "category": "time_control_pressure",
+      "elo_impact_estimate": -14
+    },
+    {
+      "case_id": "loss_086",
+      "category": "endgame_conversion_error",
+      "elo_impact_estimate": -26
+    },
+    {
+      "case_id": "loss_087",
+      "category": "endgame_conversion_error",
+      "elo_impact_estimate": -20
+    },
+    {
+      "case_id": "loss_088",
+      "category": "temporal_tactic_blindspot",
+      "elo_impact_estimate": -36
+    },
+    {
+      "case_id": "loss_089",
+      "category": "time_control_pressure",
+      "elo_impact_estimate": -16
+    },
+    {
+      "case_id": "loss_090",
+      "category": "time_control_pressure",
+      "elo_impact_estimate": -14
+    },
+    {
+      "case_id": "loss_091",
+      "category": "endgame_conversion_error",
+      "elo_impact_estimate": -17
+    },
+    {
+      "case_id": "loss_092",
+      "category": "temporal_tactic_blindspot",
+      "elo_impact_estimate": -40
+    },
+    {
+      "case_id": "loss_093",
+      "category": "branch_horizon_truncation",
+      "elo_impact_estimate": -27
+    },
+    {
+      "case_id": "loss_094",
+      "category": "illegal_mask_edge_bug",
+      "elo_impact_estimate": -17
+    },
+    {
+      "case_id": "loss_095",
+      "category": "time_control_pressure",
+      "elo_impact_estimate": -15
+    },
+    {
+      "case_id": "loss_096",
+      "category": "temporal_tactic_blindspot",
+      "elo_impact_estimate": -41
+    },
+    {
+      "case_id": "loss_097",
+      "category": "temporal_tactic_blindspot",
+      "elo_impact_estimate": -44
+    },
+    {
+      "case_id": "loss_098",
+      "category": "illegal_mask_edge_bug",
+      "elo_impact_estimate": -21
+    },
+    {
+      "case_id": "loss_099",
+      "category": "illegal_mask_edge_bug",
+      "elo_impact_estimate": -24
+    },
+    {
+      "case_id": "loss_100",
+      "category": "temporal_tactic_blindspot",
+      "elo_impact_estimate": -34
+    },
+    {
+      "case_id": "loss_101",
+      "category": "temporal_tactic_blindspot",
+      "elo_impact_estimate": -43
+    },
+    {
+      "case_id": "loss_102",
+      "category": "time_control_pressure",
+      "elo_impact_estimate": -17
+    },
+    {
+      "case_id": "loss_103",
+      "category": "temporal_tactic_blindspot",
+      "elo_impact_estimate": -41
+    },
+    {
+      "case_id": "loss_104",
+      "category": "branch_horizon_truncation",
+      "elo_impact_estimate": -30
+    },
+    {
+      "case_id": "loss_105",
+      "category": "temporal_tactic_blindspot",
+      "elo_impact_estimate": -42
+    },
+    {
+      "case_id": "loss_106",
+      "category": "endgame_conversion_error",
+      "elo_impact_estimate": -19
+    },
+    {
+      "case_id": "loss_107",
+      "category": "illegal_mask_edge_bug",
+      "elo_impact_estimate": -21
+    },
+    {
+      "case_id": "loss_108",
+      "category": "endgame_conversion_error",
+      "elo_impact_estimate": -16
+    },
+    {
+      "case_id": "loss_109",
+      "category": "value_overconfidence",
+      "elo_impact_estimate": -32
+    },
+    {
+      "case_id": "loss_110",
+      "category": "temporal_tactic_blindspot",
+      "elo_impact_estimate": -38
+    },
+    {
+      "case_id": "loss_111",
+      "category": "branch_horizon_truncation",
+      "elo_impact_estimate": -31
+    },
+    {
+      "case_id": "loss_112",
+      "category": "value_overconfidence",
+      "elo_impact_estimate": -22
+    },
+    {
+      "case_id": "loss_113",
+      "category": "temporal_tactic_blindspot",
+      "elo_impact_estimate": -34
+    },
+    {
+      "case_id": "loss_114",
+      "category": "time_control_pressure",
+      "elo_impact_estimate": -21
+    },
+    {
+      "case_id": "loss_115",
+      "category": "temporal_tactic_blindspot",
+      "elo_impact_estimate": -33
+    },
+    {
+      "case_id": "loss_116",
+      "category": "branch_horizon_truncation",
+      "elo_impact_estimate": -36
+    },
+    {
+      "case_id": "loss_117",
+      "category": "branch_horizon_truncation",
+      "elo_impact_estimate": -34
+    },
+    {
+      "case_id": "loss_118",
+      "category": "value_overconfidence",
+      "elo_impact_estimate": -31
+    },
+    {
+      "case_id": "loss_119",
+      "category": "value_overconfidence",
+      "elo_impact_estimate": -29
+    },
+    {
+      "case_id": "loss_120",
+      "category": "value_overconfidence",
+      "elo_impact_estimate": -32
+    },
+    {
+      "case_id": "loss_121",
+      "category": "value_overconfidence",
+      "elo_impact_estimate": -25
+    },
+    {
+      "case_id": "loss_122",
+      "category": "temporal_tactic_blindspot",
+      "elo_impact_estimate": -34
+    },
+    {
+      "case_id": "loss_123",
+      "category": "time_control_pressure",
+      "elo_impact_estimate": -22
+    },
+    {
+      "case_id": "loss_124",
+      "category": "time_control_pressure",
+      "elo_impact_estimate": -10
+    },
+    {
+      "case_id": "loss_125",
+      "category": "endgame_conversion_error",
+      "elo_impact_estimate": -26
+    },
+    {
+      "case_id": "loss_126",
+      "category": "value_overconfidence",
+      "elo_impact_estimate": -26
+    },
+    {
+      "case_id": "loss_127",
+      "category": "temporal_tactic_blindspot",
+      "elo_impact_estimate": -38
+    },
+    {
+      "case_id": "loss_128",
+      "category": "time_control_pressure",
+      "elo_impact_estimate": -20
+    },
+    {
+      "case_id": "loss_129",
+      "category": "branch_horizon_truncation",
+      "elo_impact_estimate": -31
+    },
+    {
+      "case_id": "loss_130",
+      "category": "branch_horizon_truncation",
+      "elo_impact_estimate": -25
+    },
+    {
+      "case_id": "loss_131",
+      "category": "endgame_conversion_error",
+      "elo_impact_estimate": -24
+    },
+    {
+      "case_id": "loss_132",
+      "category": "value_overconfidence",
+      "elo_impact_estimate": -22
+    },
+    {
+      "case_id": "loss_133",
+      "category": "time_control_pressure",
+      "elo_impact_estimate": -14
+    },
+    {
+      "case_id": "loss_134",
+      "category": "endgame_conversion_error",
+      "elo_impact_estimate": -21
+    },
+    {
+      "case_id": "loss_135",
+      "category": "temporal_tactic_blindspot",
+      "elo_impact_estimate": -40
+    },
+    {
+      "case_id": "loss_136",
+      "category": "temporal_tactic_blindspot",
+      "elo_impact_estimate": -44
+    },
+    {
+      "case_id": "loss_137",
+      "category": "illegal_mask_edge_bug",
+      "elo_impact_estimate": -16
+    },
+    {
+      "case_id": "loss_138",
+      "category": "temporal_tactic_blindspot",
+      "elo_impact_estimate": -39
+    },
+    {
+      "case_id": "loss_139",
+      "category": "temporal_tactic_blindspot",
+      "elo_impact_estimate": -35
+    },
+    {
+      "case_id": "loss_140",
+      "category": "value_overconfidence",
+      "elo_impact_estimate": -25
+    },
+    {
+      "case_id": "loss_141",
+      "category": "temporal_tactic_blindspot",
+      "elo_impact_estimate": -36
+    },
+    {
+      "case_id": "loss_142",
+      "category": "temporal_tactic_blindspot",
+      "elo_impact_estimate": -42
+    },
+    {
+      "case_id": "loss_143",
+      "category": "temporal_tactic_blindspot",
+      "elo_impact_estimate": -43
+    },
+    {
+      "case_id": "loss_144",
+      "category": "endgame_conversion_error",
+      "elo_impact_estimate": -25
+    },
+    {
+      "case_id": "loss_145",
+      "category": "value_overconfidence",
+      "elo_impact_estimate": -24
+    },
+    {
+      "case_id": "loss_146",
+      "category": "branch_horizon_truncation",
+      "elo_impact_estimate": -28
+    },
+    {
+      "case_id": "loss_147",
+      "category": "temporal_tactic_blindspot",
+      "elo_impact_estimate": -43
+    },
+    {
+      "case_id": "loss_148",
+      "category": "value_overconfidence",
+      "elo_impact_estimate": -24
+    },
+    {
+      "case_id": "loss_149",
+      "category": "value_overconfidence",
+      "elo_impact_estimate": -28
+    },
+    {
+      "case_id": "loss_150",
+      "category": "time_control_pressure",
+      "elo_impact_estimate": -19
+    },
+    {
+      "case_id": "loss_151",
+      "category": "endgame_conversion_error",
+      "elo_impact_estimate": -23
+    },
+    {
+      "case_id": "loss_152",
+      "category": "branch_horizon_truncation",
+      "elo_impact_estimate": -31
+    },
+    {
+      "case_id": "loss_153",
+      "category": "temporal_tactic_blindspot",
+      "elo_impact_estimate": -34
+    },
+    {
+      "case_id": "loss_154",
+      "category": "branch_horizon_truncation",
+      "elo_impact_estimate": -32
+    },
+    {
+      "case_id": "loss_155",
+      "category": "time_control_pressure",
+      "elo_impact_estimate": -21
+    },
+    {
+      "case_id": "loss_156",
+      "category": "temporal_tactic_blindspot",
+      "elo_impact_estimate": -35
+    },
+    {
+      "case_id": "loss_157",
+      "category": "time_control_pressure",
+      "elo_impact_estimate": -21
+    },
+    {
+      "case_id": "loss_158",
+      "category": "temporal_tactic_blindspot",
+      "elo_impact_estimate": -41
+    },
+    {
+      "case_id": "loss_159",
+      "category": "value_overconfidence",
+      "elo_impact_estimate": -31
+    },
+    {
+      "case_id": "loss_160",
+      "category": "time_control_pressure",
+      "elo_impact_estimate": -21
+    },
+    {
+      "case_id": "loss_161",
+      "category": "time_control_pressure",
+      "elo_impact_estimate": -17
+    },
+    {
+      "case_id": "loss_162",
+      "category": "branch_horizon_truncation",
+      "elo_impact_estimate": -30
+    },
+    {
+      "case_id": "loss_163",
+      "category": "endgame_conversion_error",
+      "elo_impact_estimate": -17
+    },
+    {
+      "case_id": "loss_164",
+      "category": "branch_horizon_truncation",
+      "elo_impact_estimate": -25
+    },
+    {
+      "case_id": "loss_165",
+      "category": "endgame_conversion_error",
+      "elo_impact_estimate": -28
+    },
+    {
+      "case_id": "loss_166",
+      "category": "endgame_conversion_error",
+      "elo_impact_estimate": -20
+    },
+    {
+      "case_id": "loss_167",
+      "category": "branch_horizon_truncation",
+      "elo_impact_estimate": -27
+    },
+    {
+      "case_id": "loss_168",
+      "category": "temporal_tactic_blindspot",
+      "elo_impact_estimate": -42
+    },
+    {
+      "case_id": "loss_169",
+      "category": "branch_horizon_truncation",
+      "elo_impact_estimate": -36
+    },
+    {
+      "case_id": "loss_170",
+      "category": "endgame_conversion_error",
+      "elo_impact_estimate": -26
+    },
+    {
+      "case_id": "loss_171",
+      "category": "branch_horizon_truncation",
+      "elo_impact_estimate": -28
+    },
+    {
+      "case_id": "loss_172",
+      "category": "temporal_tactic_blindspot",
+      "elo_impact_estimate": -39
+    },
+    {
+      "case_id": "loss_173",
+      "category": "temporal_tactic_blindspot",
+      "elo_impact_estimate": -34
+    },
+    {
+      "case_id": "loss_174",
+      "category": "time_control_pressure",
+      "elo_impact_estimate": -14
+    },
+    {
+      "case_id": "loss_175",
+      "category": "value_overconfidence",
+      "elo_impact_estimate": -33
+    },
+    {
+      "case_id": "loss_176",
+      "category": "temporal_tactic_blindspot",
+      "elo_impact_estimate": -38
+    },
+    {
+      "case_id": "loss_177",
+      "category": "endgame_conversion_error",
+      "elo_impact_estimate": -28
+    },
+    {
+      "case_id": "loss_178",
+      "category": "temporal_tactic_blindspot",
+      "elo_impact_estimate": -32
+    },
+    {
+      "case_id": "loss_179",
+      "category": "temporal_tactic_blindspot",
+      "elo_impact_estimate": -40
+    },
+    {
+      "case_id": "loss_180",
+      "category": "temporal_tactic_blindspot",
+      "elo_impact_estimate": -37
+    },
+    {
+      "case_id": "loss_181",
+      "category": "value_overconfidence",
+      "elo_impact_estimate": -27
+    },
+    {
+      "case_id": "loss_182",
+      "category": "value_overconfidence",
+      "elo_impact_estimate": -32
+    },
+    {
+      "case_id": "loss_183",
+      "category": "temporal_tactic_blindspot",
+      "elo_impact_estimate": -33
+    },
+    {
+      "case_id": "loss_184",
+      "category": "time_control_pressure",
+      "elo_impact_estimate": -14
+    },
+    {
+      "case_id": "loss_185",
+      "category": "temporal_tactic_blindspot",
+      "elo_impact_estimate": -39
+    },
+    {
+      "case_id": "loss_186",
+      "category": "illegal_mask_edge_bug",
+      "elo_impact_estimate": -22
+    },
+    {
+      "case_id": "loss_187",
+      "category": "value_overconfidence",
+      "elo_impact_estimate": -33
+    },
+    {
+      "case_id": "loss_188",
+      "category": "branch_horizon_truncation",
+      "elo_impact_estimate": -25
+    },
+    {
+      "case_id": "loss_189",
+      "category": "time_control_pressure",
+      "elo_impact_estimate": -22
+    },
+    {
+      "case_id": "loss_190",
+      "category": "time_control_pressure",
+      "elo_impact_estimate": -19
+    },
+    {
+      "case_id": "loss_191",
+      "category": "endgame_conversion_error",
+      "elo_impact_estimate": -18
+    },
+    {
+      "case_id": "loss_192",
+      "category": "temporal_tactic_blindspot",
+      "elo_impact_estimate": -32
+    },
+    {
+      "case_id": "loss_193",
+      "category": "value_overconfidence",
+      "elo_impact_estimate": -27
+    },
+    {
+      "case_id": "loss_194",
+      "category": "time_control_pressure",
+      "elo_impact_estimate": -11
+    },
+    {
+      "case_id": "loss_195",
+      "category": "temporal_tactic_blindspot",
+      "elo_impact_estimate": -41
+    },
+    {
+      "case_id": "loss_196",
+      "category": "time_control_pressure",
+      "elo_impact_estimate": -10
+    },
+    {
+      "case_id": "loss_197",
+      "category": "endgame_conversion_error",
+      "elo_impact_estimate": -22
+    },
+    {
+      "case_id": "loss_198",
+      "category": "temporal_tactic_blindspot",
+      "elo_impact_estimate": -33
+    },
+    {
+      "case_id": "loss_199",
+      "category": "time_control_pressure",
+      "elo_impact_estimate": -10
+    },
+    {
+      "case_id": "loss_200",
+      "category": "time_control_pressure",
+      "elo_impact_estimate": -10
+    }
+  ]
+}
