@@ -1,0 +1,23 @@
+{
+  "seed": 42,
+  "variants": [
+    {
+      "name": "TR-CNN-S",
+      "params_millions": 7.2,
+      "flops_g": 3.4,
+      "receptive_field_rationale": "local tactical + short temporal context"
+    },
+    {
+      "name": "HCT-M",
+      "params_millions": 18.9,
+      "flops_g": 8.1,
+      "receptive_field_rationale": "global attention across timelines"
+    },
+    {
+      "name": "FDH-L",
+      "params_millions": 12.4,
+      "flops_g": 2.6,
+      "receptive_field_rationale": "efficient broad coverage for high MCTS throughput"
+    }
+  ]
+}
