@@ -1,0 +1,134 @@
+{
+  "seed": 42,
+  "generated_at": "2026-02-06T09:25:15.345987Z",
+  "total_entries": 17,
+  "entries": [
+    {
+      "path": ".archivara",
+      "type": "directory",
+      "purpose": "Directory container",
+      "owner_agent": "framework/runtime",
+      "dependencies": []
+    },
+    {
+      "path": ".archivara/logs",
+      "type": "directory",
+      "purpose": "Directory container",
+      "owner_agent": "framework/runtime",
+      "dependencies": []
+    },
+    {
+      "path": ".archivara/logs/orchestrator.log",
+      "type": "file",
+      "purpose": "Project artifact",
+      "owner_agent": "framework/runtime",
+      "dependencies": []
+    },
+    {
+      "path": ".archivara/logs/researcher.log",
+      "type": "file",
+      "purpose": "Project artifact",
+      "owner_agent": "framework/runtime",
+      "dependencies": []
+    },
+    {
+      "path": "TASK_researcher.md",
+      "type": "file",
+      "purpose": "Task or technical documentation",
+      "owner_agent": "researcher",
+      "dependencies": []
+    },
+    {
+      "path": "docs",
+      "type": "directory",
+      "purpose": "Directory container",
+      "owner_agent": "researcher",
+      "dependencies": []
+    },
+    {
+      "path": "figures",
+      "type": "directory",
+      "purpose": "Directory container",
+      "owner_agent": "researcher (experiments)",
+      "dependencies": []
+    },
+    {
+      "path": "main.py",
+      "type": "file",
+      "purpose": "Python source/script",
+      "owner_agent": "researcher",
+      "dependencies": [
+        "src/alphago5d/*"
+      ]
+    },
+    {
+      "path": "research_rubric.json",
+      "type": "file",
+      "purpose": "Structured data artifact",
+      "owner_agent": "orchestrator/researcher",
+      "dependencies": []
+    },
+    {
+      "path": "results",
+      "type": "directory",
+      "purpose": "Directory container",
+      "owner_agent": "researcher (experiments)",
+      "dependencies": []
+    },
+    {
+      "path": "results/item_001_module_map.json",
+      "type": "file",
+      "purpose": "Repository module map for rubric item_001",
+      "owner_agent": "researcher (experiments)",
+      "dependencies": [
+        "scripts/generate_module_map.py"
+      ]
+    },
+    {
+      "path": "scripts",
+      "type": "directory",
+      "purpose": "Directory container",
+      "owner_agent": "researcher (tooling)",
+      "dependencies": []
+    },
+    {
+      "path": "scripts/generate_module_map.py",
+      "type": "file",
+      "purpose": "Python source/script",
+      "owner_agent": "researcher (tooling)",
+      "dependencies": [
+        "research_rubric.json"
+      ]
+    },
+    {
+      "path": "scripts/update_rubric.py",
+      "type": "file",
+      "purpose": "Python source/script",
+      "owner_agent": "researcher (tooling)",
+      "dependencies": [
+        "research_rubric.json"
+      ]
+    },
+    {
+      "path": "src",
+      "type": "directory",
+      "purpose": "Directory container",
+      "owner_agent": "researcher",
+      "dependencies": []
+    },
+    {
+      "path": "src/alphago5d",
+      "type": "directory",
+      "purpose": "Directory container",
+      "owner_agent": "researcher",
+      "dependencies": []
+    },
+    {
+      "path": "tests",
+      "type": "directory",
+      "purpose": "Directory container",
+      "owner_agent": "researcher",
+      "dependencies": []
+    }
+  ]
+}
