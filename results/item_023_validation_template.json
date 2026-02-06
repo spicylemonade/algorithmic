@@ -1,0 +1,18 @@
+{
+  "item_id": "item_023",
+  "sections": [
+    "executive_summary",
+    "per_target_validation_table",
+    "aggregate_statistics",
+    "baseline_comparisons_lcinvert_sage_koala",
+    "failure_analysis",
+    "reproducibility_appendix"
+  ],
+  "required_metrics": [
+    "hausdorff_norm",
+    "volumetric_iou",
+    "lightcurve_rms",
+    "spin_error_deg",
+    "confidence"
+  ]
+}
