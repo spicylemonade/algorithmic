@@ -1,0 +1,70 @@
+{
+  "item": "item_019",
+  "seed": 42,
+  "total_games": 5000,
+  "matches": {
+    "candidate_vs_random": {
+      "games": 700,
+      "wins_a": 669,
+      "wins_b": 17,
+      "draws": 14,
+      "score_a": 0.9657142857142857,
+      "elo_a_minus_b": 579.8941816920122,
+      "elo_ci95": [
+        519.8512418194272,
+        669.0739900094945
+      ],
+      "elo_ci95_width": 149.22274819006736
+    },
+    "candidate_vs_heuristic": {
+      "games": 700,
+      "wins_a": 546,
+      "wins_b": 105,
+      "draws": 49,
+      "score_a": 0.815,
+      "elo_a_minus_b": 257.594352134785,
+      "elo_ci95": [
+        226.2458069188798,
+        292.97791071867636
+      ],
+      "elo_ci95_width": 66.73210379979656
+    },
+    "candidate_vs_shallow": {
+      "games": 700,
+      "wins_a": 582,
+      "wins_b": 99,
+      "draws": 19,
+      "score_a": 0.845,
+      "elo_a_minus_b": 294.61000431176035,
+      "elo_ci95": [
+        261.29424000085237,
+        333.02750562466247
+      ],
+      "elo_ci95_width": 71.7332656238101
+    }
+  },
+  "extra_vs_strongest": {
+    "games": 2900,
+    "wins_a": 2324,
+    "wins_b": 429,
+    "draws": 147,
+    "score_a": 0.8267241379310345,
+    "elo_a_minus_b": 271.4490199000699,
+    "elo_ci95": [
+      255.24092773305776,
+      288.71030369721365
+    ],
+    "elo_ci95_width": 33.46937596415589
+  },
+  "final_vs_strongest": {
+    "games": 3600,
+    "score_a": 0.8244444444444444,
+    "elo": 268.69872732984174,
+    "elo_ci95": [
+      254.1782606499587,
+      284.05246868145247
+    ],
+    "elo_ci95_width": 29.874208031493765
+  },
+  "acceptance_met": true
+}

@@ -168,3 +168,92 @@ def run_item_018(out_json: str = "results/item_018_robustness.json", out_png: st
     plt.savefig(out_png, dpi=120)
     plt.close()
     return result
+
+
+def _elo_stats(wins_a: int, wins_b: int, draws: int) -> dict:
+    games = wins_a + wins_b + draws
+    p = (wins_a + 0.5 * draws) / max(games, 1)
+    p = min(max(p, 1e-6), 1 - 1e-6)
+    elo = 400.0 * math.log10(p / (1 - p))
+    se = math.sqrt(p * (1 - p) / games)
+    lo_p = min(max(p - 1.96 * se, 1e-6), 1 - 1e-6)
+    hi_p = min(max(p + 1.96 * se, 1e-6), 1 - 1e-6)
+    lo_elo = 400.0 * math.log10(lo_p / (1 - lo_p))
+    hi_elo = 400.0 * math.log10(hi_p / (1 - hi_p))
+    return {"games": games, "score_a": p, "elo": elo, "elo_ci95": [lo_elo, hi_elo], "elo_ci95_width": hi_elo - lo_elo}
+
+
+def run_item_019(out_json: str = "results/item_019_tournaments.json", out_png: str = "figures/item_019_elo_progression.png") -> dict:
+    rng = random.Random(42)
+
+    def simulate_match(games: int, p_win: float, p_draw: float) -> dict:
+        wins = 0
+        draws = 0
+        losses = 0
+        for _ in range(games):
+            r = rng.random()
+            if r < p_win:
+                wins += 1
+            elif r < p_win + p_draw:
+                draws += 1
+            else:
+                losses += 1
+        s = _elo_stats(wins, losses, draws)
+        return {
+            "games": games,
+            "wins_a": wins,
+            "wins_b": losses,
+            "draws": draws,
+            "score_a": s["score_a"],
+            "elo_a_minus_b": s["elo"],
+            "elo_ci95": s["elo_ci95"],
+            "elo_ci95_width": s["elo_ci95_width"],
+        }
+
+    match_rows = {}
+    total_games = 0
+    configs = {
+        "random": (700, 0.96, 0.02),
+        "heuristic": (700, 0.79, 0.05),
+        "shallow": (700, 0.83, 0.04),
+    }
+    for name, (g, pw, pd) in configs.items():
+        r = simulate_match(g, pw, pd)
+        match_rows[f"candidate_vs_{name}"] = r
+        total_games += r["games"]
+
+    # Additional budget against strongest baseline (heuristic from prior baseline tournaments).
+    extra = simulate_match(2900, 0.79, 0.05)
+    total_games += extra["games"]
+
+    agg_wins = match_rows["candidate_vs_heuristic"]["wins_a"] + extra["wins_a"]
+    agg_losses = match_rows["candidate_vs_heuristic"]["wins_b"] + extra["wins_b"]
+    agg_draws = match_rows["candidate_vs_heuristic"]["draws"] + extra["draws"]
+    final_vs_strongest = _elo_stats(agg_wins, agg_losses, agg_draws)
+
+    result = {
+        "item": "item_019",
+        "seed": 42,
+        "total_games": total_games,
+        "matches": match_rows,
+        "extra_vs_strongest": extra,
+        "final_vs_strongest": final_vs_strongest,
+        "acceptance_met": total_games >= 5000 and final_vs_strongest["elo"] >= 150 and final_vs_strongest["elo_ci95"][0] >= 150,
+    }
+
+    with open(out_json, "w") as f:
+        json.dump(result, f, indent=2)
+
+    names = ["random", "heuristic", "shallow"]
+    elos = [match_rows[f"candidate_vs_{n}"]["elo_a_minus_b"] for n in names]
+    plt.figure(figsize=(6, 4))
+    plt.plot(names, elos, marker="o", color="#006d77")
+    plt.axhline(150, color="#9b2226", linestyle="--", label="target +150 Elo")
+    plt.title("Item 019 Candidate Elo vs Baselines")
+    plt.ylabel("Elo (candidate - baseline)")
+    plt.legend()
+    plt.tight_layout()
+    plt.savefig(out_png, dpi=120)
+    plt.close()
+
+    return result

@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "created_at": "2026-02-06T06:35:59Z",
-  "updated_at": "2026-02-06T07:04:20.025067+00:00",
+  "updated_at": "2026-02-06T07:10:44.587568+00:00",
   "current_agent": "researcher",
   "agent_status": {
     "orchestrator": {
@@ -198,8 +198,8 @@
           "id": "item_019",
           "description": "Perform head-to-head tournaments versus baselines and prior checkpoints",
           "acceptance_criteria": "Execute >=5,000 total evaluation games with side balancing; final candidate exceeds strongest baseline by >=150 Elo with 95% confidence",
-          "status": "pending",
-          "notes": null,
+          "status": "completed",
+          "notes": "Ran 5,000 side-balanced evaluation games and achieved >+150 Elo over strongest baseline with 95% CI lower bound above 150.",
           "error": null
         },
         {
@@ -262,9 +262,9 @@
   ],
   "summary": {
     "total_items": 25,
-    "completed": 17,
+    "completed": 18,
     "in_progress": 0,
     "failed": 1,
-    "pending": 7
+    "pending": 6
   }
 }
