@@ -1,0 +1,100 @@
+{
+  "item_id": "item_019",
+  "seed": 42,
+  "baseline": {
+    "hausdorff": 0.11,
+    "iou": 0.87,
+    "rms": 0.052,
+    "pole_err_deg": 12.5
+  },
+  "ablations": [
+    {
+      "name": "sparse_density_200",
+      "hausdorff": 0.095279,
+      "delta_hausdorff": -0.014721,
+      "iou": 0.88705,
+      "delta_iou": 0.01705,
+      "rms": 0.04755,
+      "delta_rms": -0.00445,
+      "pole_err_deg": 10.699446,
+      "delta_pole_err_deg": -1.800554
+    },
+    {
+      "name": "sparse_density_80",
+      "hausdorff": 0.140473,
+      "delta_hausdorff": 0.030473,
+      "iou": 0.830353,
+      "delta_iou": -0.039647,
+      "rms": 0.062784,
+      "delta_rms": 0.010784,
+      "pole_err_deg": 15.599174,
+      "delta_pole_err_deg": 3.099174
+    },
+    {
+      "name": "phase_coverage_wide",
+      "hausdorff": 0.097844,
+      "delta_hausdorff": -0.012156,
+      "iou": 0.88306,
+      "delta_iou": 0.01306,
+      "rms": 0.048437,
+      "delta_rms": -0.003563,
+      "pole_err_deg": 11.100011,
+      "delta_pole_err_deg": -1.399989
+    },
+    {
+      "name": "phase_coverage_narrow",
+      "hausdorff": 0.129053,
+      "delta_hausdorff": 0.019053,
+      "iou": 0.843398,
+      "delta_iou": -0.026602,
+      "rms": 0.0603,
+      "delta_rms": 0.0083,
+      "pole_err_deg": 15.10009,
+      "delta_pole_err_deg": 2.60009
+    },
+    {
+      "name": "noise_sigma_0p02",
+      "hausdorff": 0.103441,
+      "delta_hausdorff": -0.006559,
+      "iou": 0.877179,
+      "delta_iou": 0.007179,
+      "rms": 0.050619,
+      "delta_rms": -0.001381,
+      "pole_err_deg": 11.699013,
+      "delta_pole_err_deg": -0.800987
+    },
+    {
+      "name": "noise_sigma_0p08",
+      "hausdorff": 0.136612,
+      "delta_hausdorff": 0.026612,
+      "iou": 0.840396,
+      "delta_iou": -0.029604,
+      "rms": 0.062681,
+      "delta_rms": 0.010681,
+      "pole_err_deg": 15.399311,
+      "delta_pole_err_deg": 2.899311
+    },
+    {
+      "name": "disable_evo_module",
+      "hausdorff": 0.128914,
+      "delta_hausdorff": 0.018914,
+      "iou": 0.848673,
+      "delta_iou": -0.021327,
+      "rms": 0.055185,
+      "delta_rms": 0.003185,
+      "pole_err_deg": 14.199193,
+      "delta_pole_err_deg": 1.699193
+    },
+    {
+      "name": "disable_sparse_priors",
+      "hausdorff": 0.132695,
+      "delta_hausdorff": 0.022695,
+      "iou": 0.842207,
+      "delta_iou": -0.027793,
+      "rms": 0.059614,
+      "delta_rms": 0.007614,
+      "pole_err_deg": 14.600459,
+      "delta_pole_err_deg": 2.100459
+    }
+  ]
+}
