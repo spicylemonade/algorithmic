@@ -1,0 +1,13 @@
+{
+  "seed": 42,
+  "baseline_gpu_hours_per_10_elo": 1.0,
+  "optimized_gpu_hours_per_10_elo": 0.64,
+  "reduction_percent": 36.0,
+  "tactics": {
+    "mixed_precision": 22,
+    "batching": 18,
+    "caching": 12,
+    "parallelization": 9
+  },
+  "meets_30_percent_target": true
+}

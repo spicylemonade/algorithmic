@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "created_at": "2026-02-06T08:07:25Z",
-  "updated_at": "2026-02-06T08:16:25.922681+00:00",
+  "updated_at": "2026-02-06T08:16:42.546967+00:00",
   "current_agent": "researcher",
   "agent_status": {
     "orchestrator": {
@@ -167,8 +167,8 @@
           "id": "item_016",
           "description": "Design compute-efficiency strategy",
           "acceptance_criteria": "Plan mixed precision, batching, caching, and parallelization tactics with target reductions of at least 30% in training cost per Elo point",
-          "status": "pending",
-          "notes": null,
+          "status": "completed",
+          "notes": "Planned mixed precision, batching, caching, and parallelization compute-efficiency strategy in docs/compute_efficiency_strategy.md; quantified 36% projected reduction in training cost per Elo point (results/item_016_compute_efficiency.json), exceeding 30% target.",
           "error": null
         }
       ]
@@ -262,9 +262,9 @@
   ],
   "summary": {
     "total_items": 25,
-    "completed": 15,
+    "completed": 16,
     "in_progress": 0,
     "failed": 0,
-    "pending": 10
+    "pending": 9
   }
 }
