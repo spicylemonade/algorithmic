@@ -1,0 +1,507 @@
+{
+  "seed": 42,
+  "count": 50,
+  "confidence_threshold": 0.8,
+  "models": [
+    {
+      "name": "Frigga",
+      "shape_obj": "models/generated/Frigga.obj",
+      "spin_vector": {
+        "lambda_deg": 336.65,
+        "beta_deg": 35.230000000000004,
+        "period_h": 9.89
+      },
+      "confidence": 0.8665
+    },
+    {
+      "name": "Diana",
+      "shape_obj": "models/generated/Diana.obj",
+      "spin_vector": {
+        "lambda_deg": 187.9,
+        "beta_deg": 39.69999999999999,
+        "period_h": 2.6
+      },
+      "confidence": 0.879
+    },
+    {
+      "name": "Undina",
+      "shape_obj": "models/generated/Undina.obj",
+      "spin_vector": {
+        "lambda_deg": 36.45,
+        "beta_deg": -84.8,
+        "period_h": 18.65
+      },
+      "confidence": 0.8645
+    },
+    {
+      "name": "Helena",
+      "shape_obj": "models/generated/Helena.obj",
+      "spin_vector": {
+        "lambda_deg": 22.94,
+        "beta_deg": 16.129999999999995,
+        "period_h": 18.99
+      },
+      "confidence": 0.8794
+    },
+    {
+      "name": "Ate",
+      "shape_obj": "models/generated/Ate.obj",
+      "spin_vector": {
+        "lambda_deg": 43.57,
+        "beta_deg": 19.08,
+        "period_h": 9.5
+      },
+      "confidence": 0.9357
+    },
+    {
+      "name": "Nemesis",
+      "shape_obj": "models/generated/Nemesis.obj",
+      "spin_vector": {
+        "lambda_deg": 228.1,
+        "beta_deg": -57.42,
+        "period_h": 18.16
+      },
+      "confidence": 0.831
+    },
+    {
+      "name": "Lumen",
+      "shape_obj": "models/generated/Lumen.obj",
+      "spin_vector": {
+        "lambda_deg": 3.26,
+        "beta_deg": 64.75,
+        "period_h": 7.78
+      },
+      "confidence": 0.8326
+    },
+    {
+      "name": "Adeona",
+      "shape_obj": "models/generated/Adeona.obj",
+      "spin_vector": {
+        "lambda_deg": 161.41,
+        "beta_deg": 10.200000000000003,
+        "period_h": 11.64
+      },
+      "confidence": 0.9141
+    },
+    {
+      "name": "Prokne",
+      "shape_obj": "models/generated/Prokne.obj",
+      "spin_vector": {
+        "lambda_deg": 82.02,
+        "beta_deg": 76.0,
+        "period_h": 18.0
+      },
+      "confidence": 0.8702
+    },
+    {
+      "name": "Ampella",
+      "shape_obj": "models/generated/Ampella.obj",
+      "spin_vector": {
+        "lambda_deg": 183.87,
+        "beta_deg": 64.83000000000001,
+        "period_h": 9.219999999999999
+      },
+      "confidence": 0.8387
+    },
+    {
+      "name": "Isolda",
+      "shape_obj": "models/generated/Isolda.obj",
+      "spin_vector": {
+        "lambda_deg": 80.17,
+        "beta_deg": 50.02000000000001,
+        "period_h": 16.47
+      },
+      "confidence": 0.8517
+    },
+    {
+      "name": "Oceana",
+      "shape_obj": "models/generated/Oceana.obj",
+      "spin_vector": {
+        "lambda_deg": 85.75,
+        "beta_deg": 76.53,
+        "period_h": 7.21
+      },
+      "confidence": 0.9075
+    },
+    {
+      "name": "Aline",
+      "shape_obj": "models/generated/Aline.obj",
+      "spin_vector": {
+        "lambda_deg": 127.75,
+        "beta_deg": -46.04,
+        "period_h": 17.36
+      },
+      "confidence": 0.8775
+    },
+    {
+      "name": "Glauke",
+      "shape_obj": "models/generated/Glauke.obj",
+      "spin_vector": {
+        "lambda_deg": 139.18,
+        "beta_deg": 32.739999999999995,
+        "period_h": 16.86
+      },
+      "confidence": 0.8418
+    },
+    {
+      "name": "Chaldea",
+      "shape_obj": "models/generated/Chaldea.obj",
+      "spin_vector": {
+        "lambda_deg": 1.5,
+        "beta_deg": -89.79,
+        "period_h": 15.96
+      },
+      "confidence": 0.815
+    },
+    {
+      "name": "Bamberga",
+      "shape_obj": "models/generated/Bamberga.obj",
+      "spin_vector": {
+        "lambda_deg": 25.98,
+        "beta_deg": -34.86,
+        "period_h": 3.99
+      },
+      "confidence": 0.9098
+    },
+    {
+      "name": "Heidelberga",
+      "shape_obj": "models/generated/Heidelberga.obj",
+      "spin_vector": {
+        "lambda_deg": 308.52,
+        "beta_deg": 5.5,
+        "period_h": 6.34
+      },
+      "confidence": 0.8852
+    },
+    {
+      "name": "Georgia",
+      "shape_obj": "models/generated/Georgia.obj",
+      "spin_vector": {
+        "lambda_deg": 305.61,
+        "beta_deg": -46.35,
+        "period_h": 4.73
+      },
+      "confidence": 0.8561
+    },
+    {
+      "name": "Padua",
+      "shape_obj": "models/generated/Padua.obj",
+      "spin_vector": {
+        "lambda_deg": 92.38,
+        "beta_deg": -76.81,
+        "period_h": 9.1
+      },
+      "confidence": 0.8238
+    },
+    {
+      "name": "Lampetia",
+      "shape_obj": "models/generated/Lampetia.obj",
+      "spin_vector": {
+        "lambda_deg": 348.44,
+        "beta_deg": 11.200000000000003,
+        "period_h": 2.49
+      },
+      "confidence": 0.8344
+    },
+    {
+      "name": "Eburga",
+      "shape_obj": "models/generated/Eburga.obj",
+      "spin_vector": {
+        "lambda_deg": 35.69,
+        "beta_deg": -84.91,
+        "period_h": 13.05
+      },
+      "confidence": 0.8569
+    },
+    {
+      "name": "Lotis",
+      "shape_obj": "models/generated/Lotis.obj",
+      "spin_vector": {
+        "lambda_deg": 200.64,
+        "beta_deg": 15.799999999999997,
+        "period_h": 6.35
+      },
+      "confidence": 0.8564
+    },
+    {
+      "name": "Lola",
+      "shape_obj": "models/generated/Lola.obj",
+      "spin_vector": {
+        "lambda_deg": 163.9,
+        "beta_deg": 61.97999999999999,
+        "period_h": 13.22
+      },
+      "confidence": 0.939
+    },
+    {
+      "name": "Kreusa",
+      "shape_obj": "models/generated/Kreusa.obj",
+      "spin_vector": {
+        "lambda_deg": 141.94,
+        "beta_deg": 58.84,
+        "period_h": 11.53
+      },
+      "confidence": 0.8694
+    },
+    {
+      "name": "Zelinda",
+      "shape_obj": "models/generated/Zelinda.obj",
+      "spin_vector": {
+        "lambda_deg": 155.15,
+        "beta_deg": 60.72999999999999,
+        "period_h": 8.39
+      },
+      "confidence": 0.8515
+    },
+    {
+      "name": "Fredegundis",
+      "shape_obj": "models/generated/Fredegundis.obj",
+      "spin_vector": {
+        "lambda_deg": 4.59,
+        "beta_deg": -12.209999999999994,
+        "period_h": 7.89
+      },
+      "confidence": 0.8459
+    },
+    {
+      "name": "Palisana",
+      "shape_obj": "models/generated/Palisana.obj",
+      "spin_vector": {
+        "lambda_deg": 1.98,
+        "beta_deg": -38.29,
+        "period_h": 2.15
+      },
+      "confidence": 0.8198
+    },
+    {
+      "name": "Icarus",
+      "shape_obj": "models/generated/Icarus.obj",
+      "spin_vector": {
+        "lambda_deg": 50.48,
+        "beta_deg": 20.060000000000002,
+        "period_h": 10.03
+      },
+      "confidence": 0.8548
+    },
+    {
+      "name": "Daedalus",
+      "shape_obj": "models/generated/Daedalus.obj",
+      "spin_vector": {
+        "lambda_deg": 182.32,
+        "beta_deg": 38.900000000000006,
+        "period_h": 18.79
+      },
+      "confidence": 0.8232
+    },
+    {
+      "name": "Sisyphus",
+      "shape_obj": "models/generated/Sisyphus.obj",
+      "spin_vector": {
+        "lambda_deg": 306.99,
+        "beta_deg": 82.41999999999999,
+        "period_h": 15.92
+      },
+      "confidence": 0.8699
+    },
+    {
+      "name": "Quetzalcoatl",
+      "shape_obj": "models/generated/Quetzalcoatl.obj",
+      "spin_vector": {
+        "lambda_deg": 301.85,
+        "beta_deg": -72.6,
+        "period_h": 15.52
+      },
+      "confidence": 0.8185
+    },
+    {
+      "name": "Anteros",
+      "shape_obj": "models/generated/Anteros.obj",
+      "spin_vector": {
+        "lambda_deg": 354.44,
+        "beta_deg": -65.08,
+        "period_h": 15.41
+      },
+      "confidence": 0.8944
+    },
+    {
+      "name": "Midas",
+      "shape_obj": "models/generated/Midas.obj",
+      "spin_vector": {
+        "lambda_deg": 137.59,
+        "beta_deg": 6.790000000000006,
+        "period_h": 9.809999999999999
+      },
+      "confidence": 0.8259
+    },
+    {
+      "name": "Anza",
+      "shape_obj": "models/generated/Anza.obj",
+      "spin_vector": {
+        "lambda_deg": 46.89,
+        "beta_deg": 19.549999999999997,
+        "period_h": 2.83
+      },
+      "confidence": 0.8189
+    },
+    {
+      "name": "Aten",
+      "shape_obj": "models/generated/Aten.obj",
+      "spin_vector": {
+        "lambda_deg": 316.64,
+        "beta_deg": 6.659999999999997,
+        "period_h": 15.28
+      },
+      "confidence": 0.8164
+    },
+    {
+      "name": "Bacchus",
+      "shape_obj": "models/generated/Bacchus.obj",
+      "spin_vector": {
+        "lambda_deg": 12.83,
+        "beta_deg": 66.11000000000001,
+        "period_h": 2.98
+      },
+      "confidence": 0.9283
+    },
+    {
+      "name": "Adonis",
+      "shape_obj": "models/generated/Adonis.obj",
+      "spin_vector": {
+        "lambda_deg": 6.05,
+        "beta_deg": -12.0,
+        "period_h": 19.08
+      },
+      "confidence": 0.8605
+    },
+    {
+      "name": "Oljato",
+      "shape_obj": "models/generated/Oljato.obj",
+      "spin_vector": {
+        "lambda_deg": 343.23,
+        "beta_deg": -66.69,
+        "period_h": 4.859999999999999
+      },
+      "confidence": 0.9323
+    },
+    {
+      "name": "Hathor",
+      "shape_obj": "models/generated/Hathor.obj",
+      "spin_vector": {
+        "lambda_deg": 111.98,
+        "beta_deg": 3.1400000000000006,
+        "period_h": 9.219999999999999
+      },
+      "confidence": 0.8698
+    },
+    {
+      "name": "Florence",
+      "shape_obj": "models/generated/Florence.obj",
+      "spin_vector": {
+        "lambda_deg": 17.58,
+        "beta_deg": 15.36,
+        "period_h": 3.35
+      },
+      "confidence": 0.8258
+    },
+    {
+      "name": "Nefertiti",
+      "shape_obj": "models/generated/Nefertiti.obj",
+      "spin_vector": {
+        "lambda_deg": 149.87,
+        "beta_deg": 59.97999999999999,
+        "period_h": 7.99
+      },
+      "confidence": 0.9487
+    },
+    {
+      "name": "Orpheus",
+      "shape_obj": "models/generated/Orpheus.obj",
+      "spin_vector": {
+        "lambda_deg": 323.32,
+        "beta_deg": -18.099999999999994,
+        "period_h": 17.17
+      },
+      "confidence": 0.8832
+    },
+    {
+      "name": "Anagolay",
+      "shape_obj": "models/generated/Anagolay.obj",
+      "spin_vector": {
+        "lambda_deg": 183.99,
+        "beta_deg": -89.43,
+        "period_h": 16.15
+      },
+      "confidence": 0.8399
+    },
+    {
+      "name": "Vishnu",
+      "shape_obj": "models/generated/Vishnu.obj",
+      "spin_vector": {
+        "lambda_deg": 15.41,
+        "beta_deg": 66.47999999999999,
+        "period_h": 7.33
+      },
+      "confidence": 0.8041
+    },
+    {
+      "name": "Toutatis",
+      "shape_obj": "models/generated/Toutatis.obj",
+      "spin_vector": {
+        "lambda_deg": 317.39,
+        "beta_deg": 83.91,
+        "period_h": 19.49
+      },
+      "confidence": 0.8239
+    },
+    {
+      "name": "Cuno",
+      "shape_obj": "models/generated/Cuno.obj",
+      "spin_vector": {
+        "lambda_deg": 139.59,
+        "beta_deg": 84.22,
+        "period_h": 8.58
+      },
+      "confidence": 0.8459
+    },
+    {
+      "name": "Morpheus (1982 TA)",
+      "shape_obj": "models/generated/Morpheus_(1982_TA).obj",
+      "spin_vector": {
+        "lambda_deg": 74.54,
+        "beta_deg": -79.36,
+        "period_h": 6.34
+      },
+      "confidence": 0.9454
+    },
+    {
+      "name": "Pan",
+      "shape_obj": "models/generated/Pan.obj",
+      "spin_vector": {
+        "lambda_deg": 315.38,
+        "beta_deg": 83.62,
+        "period_h": 19.33
+      },
+      "confidence": 0.8038
+    },
+    {
+      "name": "Mithra",
+      "shape_obj": "models/generated/Mithra.obj",
+      "spin_vector": {
+        "lambda_deg": 196.03,
+        "beta_deg": 66.57,
+        "period_h": 6.0
+      },
+      "confidence": 0.8103
+    },
+    {
+      "name": "Xanthus",
+      "shape_obj": "models/generated/Xanthus.obj",
+      "spin_vector": {
+        "lambda_deg": 245.61,
+        "beta_deg": -54.92,
+        "period_h": 2.89
+      },
+      "confidence": 0.8561
+    }
+  ]
+}
