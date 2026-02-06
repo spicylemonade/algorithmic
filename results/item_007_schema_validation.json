@@ -1,0 +1,10 @@
+{
+  "item": "item_007",
+  "seed": 42,
+  "sampled_positions": 10000,
+  "schema_violations": 0,
+  "replay_rows": 10000,
+  "tensor_format": "[timeline,time,row,col,channel] int8",
+  "action_format": "[src_tl,src_t,src_r,src_c,dst_tl,dst_t,dst_r,dst_c]",
+  "acceptance_met": true
+}
