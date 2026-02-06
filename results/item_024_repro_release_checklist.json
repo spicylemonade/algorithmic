@@ -1,0 +1,11 @@
+{
+  "item_id": "item_024",
+  "seed": 42,
+  "checklist": {
+    "environment_lockfile": "requirements.lock",
+    "deterministic_seed": 42,
+    "data_licensing_notes": true,
+    "source_citation_list": true,
+    "one_command_rerun": "./scripts/rerun_all.sh"
+  }
+}

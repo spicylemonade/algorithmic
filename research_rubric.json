@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "created_at": "2026-02-06T23:48:57Z",
-  "updated_at": "2026-02-06T23:59:39.927792+00:00",
+  "updated_at": "2026-02-06T23:59:51.867519+00:00",
   "current_agent": "researcher",
   "agent_status": {
     "orchestrator": {
@@ -245,8 +245,8 @@
           "id": "item_024",
           "description": "Define reproducibility and release checklist",
           "acceptance_criteria": "Checklist must include environment lockfile, deterministic seeds, data licensing notes, source citation list, and one-command rerun instructions",
-          "status": "pending",
-          "notes": null,
+          "status": "completed",
+          "notes": "Defined reproducibility/release checklist in docs/repro_release_checklist.md including env lockfile, seed policy, licensing notes, citation requirement, and one-command rerun script scripts/rerun_all.sh; stored machine-readable checklist in results/item_024_repro_release_checklist.json.",
           "error": null
         },
         {
@@ -262,9 +262,9 @@
   ],
   "summary": {
     "total_items": 25,
-    "completed": 23,
+    "completed": 24,
     "in_progress": 0,
     "failed": 0,
-    "pending": 2
+    "pending": 1
   }
 }

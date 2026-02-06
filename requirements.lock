@@ -1,0 +1,3 @@
+# Minimal lock for this repository
+# Python stdlib only pipeline; no external packages required.
+python==3.10
