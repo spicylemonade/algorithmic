@@ -1,0 +1,58 @@
+{
+  "item": "item_010",
+  "seed": 42,
+  "run_1": {
+    "run_name": "heuristic_repro_check",
+    "git_commit": "3667b97a9449880553c9c325ab47fcfe702b03ac",
+    "config_hash": "89698ba0064f6c1d",
+    "seed": 42,
+    "hardware": {
+      "platform": "Linux-4.4.0-x86_64-with-glibc2.36",
+      "python": "3.10.17",
+      "cpu_count": 20,
+      "machine": "x86_64",
+      "processor": ""
+    },
+    "metrics": {
+      "games": 600,
+      "white_win_rate": 0.0,
+      "black_win_rate": 0.0,
+      "draw_rate": 1.0,
+      "avg_branching_factor": 58.47125,
+      "avg_move_latency_ms": 0.021677314582417593,
+      "baseline": "heuristic",
+      "seed": 42
+    }
+  },
+  "run_2": {
+    "run_name": "heuristic_repro_check",
+    "git_commit": "3667b97a9449880553c9c325ab47fcfe702b03ac",
+    "config_hash": "89698ba0064f6c1d",
+    "seed": 42,
+    "hardware": {
+      "platform": "Linux-4.4.0-x86_64-with-glibc2.36",
+      "python": "3.10.17",
+      "cpu_count": 20,
+      "machine": "x86_64",
+      "processor": ""
+    },
+    "metrics": {
+      "games": 600,
+      "white_win_rate": 0.0,
+      "black_win_rate": 0.0,
+      "draw_rate": 1.0,
+      "avg_branching_factor": 58.47125,
+      "avg_move_latency_ms": 0.021038095833508425,
+      "baseline": "heuristic",
+      "seed": 42
+    }
+  },
+  "relative_errors": {
+    "white_win_rate": 0.0,
+    "black_win_rate": 0.0,
+    "draw_rate": 0.0,
+    "avg_branching_factor": 0.0
+  },
+  "max_relative_error": 0.0,
+  "acceptance_met": true
+}

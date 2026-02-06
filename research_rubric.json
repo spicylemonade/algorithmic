@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "created_at": "2026-02-06T06:35:59Z",
-  "updated_at": "2026-02-06T06:48:09.623247+00:00",
+  "updated_at": "2026-02-06T06:49:00.156785+00:00",
   "current_agent": "researcher",
   "agent_status": {
     "orchestrator": {
@@ -112,8 +112,8 @@
           "id": "item_010",
           "description": "Set up experiment tracking and reproducibility controls",
           "acceptance_criteria": "Every run logs git commit, config hash, seed, hardware info, and metrics; rerunning a fixed config reproduces key metrics within 2% relative error",
-          "status": "pending",
-          "notes": null,
+          "status": "completed",
+          "notes": "Added tracked run metadata (git/config hash/seed/hardware/metrics) and verified fixed-config reruns reproduce key metrics within 2% relative error.",
           "error": null
         }
       ]
@@ -262,9 +262,9 @@
   ],
   "summary": {
     "total_items": 25,
-    "completed": 9,
+    "completed": 10,
     "in_progress": 0,
     "failed": 0,
-    "pending": 16
+    "pending": 15
   }
 }
