@@ -1,0 +1,52 @@
+{
+  "seed": 42,
+  "passed": true,
+  "best_deviation": 0.04387254901960784,
+  "best_weights": {
+    "w_sparse": 0.6375,
+    "w_phys": 0.17043750000000002,
+    "period_granularity": 0.002109375
+  },
+  "history": [
+    {
+      "attempt": 1,
+      "deviation": 0.15999999999999998,
+      "weights": {
+        "w_sparse": 0.25,
+        "w_phys": 0.1,
+        "period_granularity": 0.005
+      },
+      "accepted": false
+    },
+    {
+      "attempt": 2,
+      "deviation": 0.075,
+      "weights": {
+        "w_sparse": 0.5,
+        "w_phys": 0.15000000000000002,
+        "period_granularity": 0.00375
+      },
+      "accepted": false
+    },
+    {
+      "attempt": 3,
+      "deviation": 0.052,
+      "weights": {
+        "w_sparse": 0.625,
+        "w_phys": 0.16875,
+        "period_granularity": 0.0028125
+      },
+      "accepted": false
+    },
+    {
+      "attempt": 4,
+      "deviation": 0.04387254901960784,
+      "weights": {
+        "w_sparse": 0.6375,
+        "w_phys": 0.17043750000000002,
+        "period_granularity": 0.002109375
+      },
+      "accepted": true
+    }
+  ]
+}
