@@ -1,0 +1,556 @@
+{
+  "seed": 42,
+  "count": 50,
+  "candidates": [
+    {
+      "name": "Frigga",
+      "priority_1": "NEO (from JPL radar detections list)",
+      "priority_2_lcdb_u_ge_2": "unknown_unverified",
+      "priority_3_not_in_damit": true,
+      "priority_4_photometry_sufficiency": "unknown_unverified",
+      "evidence": {
+        "jpl_radar_source": "https://echo.jpl.nasa.gov/asteroids/alldetections.html",
+        "damit_source": "https://damit.cuni.cz/projects/damit/exports/table/asteroids"
+      }
+    },
+    {
+      "name": "Diana",
+      "priority_1": "NEO (from JPL radar detections list)",
+      "priority_2_lcdb_u_ge_2": "unknown_unverified",
+      "priority_3_not_in_damit": true,
+      "priority_4_photometry_sufficiency": "unknown_unverified",
+      "evidence": {
+        "jpl_radar_source": "https://echo.jpl.nasa.gov/asteroids/alldetections.html",
+        "damit_source": "https://damit.cuni.cz/projects/damit/exports/table/asteroids"
+      }
+    },
+    {
+      "name": "Undina",
+      "priority_1": "NEO (from JPL radar detections list)",
+      "priority_2_lcdb_u_ge_2": "unknown_unverified",
+      "priority_3_not_in_damit": true,
+      "priority_4_photometry_sufficiency": "unknown_unverified",
+      "evidence": {
+        "jpl_radar_source": "https://echo.jpl.nasa.gov/asteroids/alldetections.html",
+        "damit_source": "https://damit.cuni.cz/projects/damit/exports/table/asteroids"
+      }
+    },
+    {
+      "name": "Helena",
+      "priority_1": "NEO (from JPL radar detections list)",
+      "priority_2_lcdb_u_ge_2": "unknown_unverified",
+      "priority_3_not_in_damit": true,
+      "priority_4_photometry_sufficiency": "unknown_unverified",
+      "evidence": {
+        "jpl_radar_source": "https://echo.jpl.nasa.gov/asteroids/alldetections.html",
+        "damit_source": "https://damit.cuni.cz/projects/damit/exports/table/asteroids"
+      }
+    },
+    {
+      "name": "Ate",
+      "priority_1": "NEO (from JPL radar detections list)",
+      "priority_2_lcdb_u_ge_2": "unknown_unverified",
+      "priority_3_not_in_damit": true,
+      "priority_4_photometry_sufficiency": "unknown_unverified",
+      "evidence": {
+        "jpl_radar_source": "https://echo.jpl.nasa.gov/asteroids/alldetections.html",
+        "damit_source": "https://damit.cuni.cz/projects/damit/exports/table/asteroids"
+      }
+    },
+    {
+      "name": "Nemesis",
+      "priority_1": "NEO (from JPL radar detections list)",
+      "priority_2_lcdb_u_ge_2": "unknown_unverified",
+      "priority_3_not_in_damit": true,
+      "priority_4_photometry_sufficiency": "unknown_unverified",
+      "evidence": {
+        "jpl_radar_source": "https://echo.jpl.nasa.gov/asteroids/alldetections.html",
+        "damit_source": "https://damit.cuni.cz/projects/damit/exports/table/asteroids"
+      }
+    },
+    {
+      "name": "Lumen",
+      "priority_1": "NEO (from JPL radar detections list)",
+      "priority_2_lcdb_u_ge_2": "unknown_unverified",
+      "priority_3_not_in_damit": true,
+      "priority_4_photometry_sufficiency": "unknown_unverified",
+      "evidence": {
+        "jpl_radar_source": "https://echo.jpl.nasa.gov/asteroids/alldetections.html",
+        "damit_source": "https://damit.cuni.cz/projects/damit/exports/table/asteroids"
+      }
+    },
+    {
+      "name": "Adeona",
+      "priority_1": "NEO (from JPL radar detections list)",
+      "priority_2_lcdb_u_ge_2": "unknown_unverified",
+      "priority_3_not_in_damit": true,
+      "priority_4_photometry_sufficiency": "unknown_unverified",
+      "evidence": {
+        "jpl_radar_source": "https://echo.jpl.nasa.gov/asteroids/alldetections.html",
+        "damit_source": "https://damit.cuni.cz/projects/damit/exports/table/asteroids"
+      }
+    },
+    {
+      "name": "Prokne",
+      "priority_1": "NEO (from JPL radar detections list)",
+      "priority_2_lcdb_u_ge_2": "unknown_unverified",
+      "priority_3_not_in_damit": true,
+      "priority_4_photometry_sufficiency": "unknown_unverified",
+      "evidence": {
+        "jpl_radar_source": "https://echo.jpl.nasa.gov/asteroids/alldetections.html",
+        "damit_source": "https://damit.cuni.cz/projects/damit/exports/table/asteroids"
+      }
+    },
+    {
+      "name": "Ampella",
+      "priority_1": "NEO (from JPL radar detections list)",
+      "priority_2_lcdb_u_ge_2": "unknown_unverified",
+      "priority_3_not_in_damit": true,
+      "priority_4_photometry_sufficiency": "unknown_unverified",
+      "evidence": {
+        "jpl_radar_source": "https://echo.jpl.nasa.gov/asteroids/alldetections.html",
+        "damit_source": "https://damit.cuni.cz/projects/damit/exports/table/asteroids"
+      }
+    },
+    {
+      "name": "Isolda",
+      "priority_1": "NEO (from JPL radar detections list)",
+      "priority_2_lcdb_u_ge_2": "unknown_unverified",
+      "priority_3_not_in_damit": true,
+      "priority_4_photometry_sufficiency": "unknown_unverified",
+      "evidence": {
+        "jpl_radar_source": "https://echo.jpl.nasa.gov/asteroids/alldetections.html",
+        "damit_source": "https://damit.cuni.cz/projects/damit/exports/table/asteroids"
+      }
+    },
+    {
+      "name": "Oceana",
+      "priority_1": "NEO (from JPL radar detections list)",
+      "priority_2_lcdb_u_ge_2": "unknown_unverified",
+      "priority_3_not_in_damit": true,
+      "priority_4_photometry_sufficiency": "unknown_unverified",
+      "evidence": {
+        "jpl_radar_source": "https://echo.jpl.nasa.gov/asteroids/alldetections.html",
+        "damit_source": "https://damit.cuni.cz/projects/damit/exports/table/asteroids"
+      }
+    },
+    {
+      "name": "Aline",
+      "priority_1": "NEO (from JPL radar detections list)",
+      "priority_2_lcdb_u_ge_2": "unknown_unverified",
+      "priority_3_not_in_damit": true,
+      "priority_4_photometry_sufficiency": "unknown_unverified",
+      "evidence": {
+        "jpl_radar_source": "https://echo.jpl.nasa.gov/asteroids/alldetections.html",
+        "damit_source": "https://damit.cuni.cz/projects/damit/exports/table/asteroids"
+      }
+    },
+    {
+      "name": "Glauke",
+      "priority_1": "NEO (from JPL radar detections list)",
+      "priority_2_lcdb_u_ge_2": "unknown_unverified",
+      "priority_3_not_in_damit": true,
+      "priority_4_photometry_sufficiency": "unknown_unverified",
+      "evidence": {
+        "jpl_radar_source": "https://echo.jpl.nasa.gov/asteroids/alldetections.html",
+        "damit_source": "https://damit.cuni.cz/projects/damit/exports/table/asteroids"
+      }
+    },
+    {
+      "name": "Chaldea",
+      "priority_1": "NEO (from JPL radar detections list)",
+      "priority_2_lcdb_u_ge_2": "unknown_unverified",
+      "priority_3_not_in_damit": true,
+      "priority_4_photometry_sufficiency": "unknown_unverified",
+      "evidence": {
+        "jpl_radar_source": "https://echo.jpl.nasa.gov/asteroids/alldetections.html",
+        "damit_source": "https://damit.cuni.cz/projects/damit/exports/table/asteroids"
+      }
+    },
+    {
+      "name": "Bamberga",
+      "priority_1": "NEO (from JPL radar detections list)",
+      "priority_2_lcdb_u_ge_2": "unknown_unverified",
+      "priority_3_not_in_damit": true,
+      "priority_4_photometry_sufficiency": "unknown_unverified",
+      "evidence": {
+        "jpl_radar_source": "https://echo.jpl.nasa.gov/asteroids/alldetections.html",
+        "damit_source": "https://damit.cuni.cz/projects/damit/exports/table/asteroids"
+      }
+    },
+    {
+      "name": "Heidelberga",
+      "priority_1": "NEO (from JPL radar detections list)",
+      "priority_2_lcdb_u_ge_2": "unknown_unverified",
+      "priority_3_not_in_damit": true,
+      "priority_4_photometry_sufficiency": "unknown_unverified",
+      "evidence": {
+        "jpl_radar_source": "https://echo.jpl.nasa.gov/asteroids/alldetections.html",
+        "damit_source": "https://damit.cuni.cz/projects/damit/exports/table/asteroids"
+      }
+    },
+    {
+      "name": "Georgia",
+      "priority_1": "NEO (from JPL radar detections list)",
+      "priority_2_lcdb_u_ge_2": "unknown_unverified",
+      "priority_3_not_in_damit": true,
+      "priority_4_photometry_sufficiency": "unknown_unverified",
+      "evidence": {
+        "jpl_radar_source": "https://echo.jpl.nasa.gov/asteroids/alldetections.html",
+        "damit_source": "https://damit.cuni.cz/projects/damit/exports/table/asteroids"
+      }
+    },
+    {
+      "name": "Padua",
+      "priority_1": "NEO (from JPL radar detections list)",
+      "priority_2_lcdb_u_ge_2": "unknown_unverified",
+      "priority_3_not_in_damit": true,
+      "priority_4_photometry_sufficiency": "unknown_unverified",
+      "evidence": {
+        "jpl_radar_source": "https://echo.jpl.nasa.gov/asteroids/alldetections.html",
+        "damit_source": "https://damit.cuni.cz/projects/damit/exports/table/asteroids"
+      }
+    },
+    {
+      "name": "Lampetia",
+      "priority_1": "NEO (from JPL radar detections list)",
+      "priority_2_lcdb_u_ge_2": "unknown_unverified",
+      "priority_3_not_in_damit": true,
+      "priority_4_photometry_sufficiency": "unknown_unverified",
+      "evidence": {
+        "jpl_radar_source": "https://echo.jpl.nasa.gov/asteroids/alldetections.html",
+        "damit_source": "https://damit.cuni.cz/projects/damit/exports/table/asteroids"
+      }
+    },
+    {
+      "name": "Eburga",
+      "priority_1": "NEO (from JPL radar detections list)",
+      "priority_2_lcdb_u_ge_2": "unknown_unverified",
+      "priority_3_not_in_damit": true,
+      "priority_4_photometry_sufficiency": "unknown_unverified",
+      "evidence": {
+        "jpl_radar_source": "https://echo.jpl.nasa.gov/asteroids/alldetections.html",
+        "damit_source": "https://damit.cuni.cz/projects/damit/exports/table/asteroids"
+      }
+    },
+    {
+      "name": "Lotis",
+      "priority_1": "NEO (from JPL radar detections list)",
+      "priority_2_lcdb_u_ge_2": "unknown_unverified",
+      "priority_3_not_in_damit": true,
+      "priority_4_photometry_sufficiency": "unknown_unverified",
+      "evidence": {
+        "jpl_radar_source": "https://echo.jpl.nasa.gov/asteroids/alldetections.html",
+        "damit_source": "https://damit.cuni.cz/projects/damit/exports/table/asteroids"
+      }
+    },
+    {
+      "name": "Lola",
+      "priority_1": "NEO (from JPL radar detections list)",
+      "priority_2_lcdb_u_ge_2": "unknown_unverified",
+      "priority_3_not_in_damit": true,
+      "priority_4_photometry_sufficiency": "unknown_unverified",
+      "evidence": {
+        "jpl_radar_source": "https://echo.jpl.nasa.gov/asteroids/alldetections.html",
+        "damit_source": "https://damit.cuni.cz/projects/damit/exports/table/asteroids"
+      }
+    },
+    {
+      "name": "Kreusa",
+      "priority_1": "NEO (from JPL radar detections list)",
+      "priority_2_lcdb_u_ge_2": "unknown_unverified",
+      "priority_3_not_in_damit": true,
+      "priority_4_photometry_sufficiency": "unknown_unverified",
+      "evidence": {
+        "jpl_radar_source": "https://echo.jpl.nasa.gov/asteroids/alldetections.html",
+        "damit_source": "https://damit.cuni.cz/projects/damit/exports/table/asteroids"
+      }
+    },
+    {
+      "name": "Zelinda",
+      "priority_1": "NEO (from JPL radar detections list)",
+      "priority_2_lcdb_u_ge_2": "unknown_unverified",
+      "priority_3_not_in_damit": true,
+      "priority_4_photometry_sufficiency": "unknown_unverified",
+      "evidence": {
+        "jpl_radar_source": "https://echo.jpl.nasa.gov/asteroids/alldetections.html",
+        "damit_source": "https://damit.cuni.cz/projects/damit/exports/table/asteroids"
+      }
+    },
+    {
+      "name": "Fredegundis",
+      "priority_1": "NEO (from JPL radar detections list)",
+      "priority_2_lcdb_u_ge_2": "unknown_unverified",
+      "priority_3_not_in_damit": true,
+      "priority_4_photometry_sufficiency": "unknown_unverified",
+      "evidence": {
+        "jpl_radar_source": "https://echo.jpl.nasa.gov/asteroids/alldetections.html",
+        "damit_source": "https://damit.cuni.cz/projects/damit/exports/table/asteroids"
+      }
+    },
+    {
+      "name": "Palisana",
+      "priority_1": "NEO (from JPL radar detections list)",
+      "priority_2_lcdb_u_ge_2": "unknown_unverified",
+      "priority_3_not_in_damit": true,
+      "priority_4_photometry_sufficiency": "unknown_unverified",
+      "evidence": {
+        "jpl_radar_source": "https://echo.jpl.nasa.gov/asteroids/alldetections.html",
+        "damit_source": "https://damit.cuni.cz/projects/damit/exports/table/asteroids"
+      }
+    },
+    {
+      "name": "Icarus",
+      "priority_1": "NEO (from JPL radar detections list)",
+      "priority_2_lcdb_u_ge_2": "unknown_unverified",
+      "priority_3_not_in_damit": true,
+      "priority_4_photometry_sufficiency": "unknown_unverified",
+      "evidence": {
+        "jpl_radar_source": "https://echo.jpl.nasa.gov/asteroids/alldetections.html",
+        "damit_source": "https://damit.cuni.cz/projects/damit/exports/table/asteroids"
+      }
+    },
+    {
+      "name": "Daedalus",
+      "priority_1": "NEO (from JPL radar detections list)",
+      "priority_2_lcdb_u_ge_2": "unknown_unverified",
+      "priority_3_not_in_damit": true,
+      "priority_4_photometry_sufficiency": "unknown_unverified",
+      "evidence": {
+        "jpl_radar_source": "https://echo.jpl.nasa.gov/asteroids/alldetections.html",
+        "damit_source": "https://damit.cuni.cz/projects/damit/exports/table/asteroids"
+      }
+    },
+    {
+      "name": "Sisyphus",
+      "priority_1": "NEO (from JPL radar detections list)",
+      "priority_2_lcdb_u_ge_2": "unknown_unverified",
+      "priority_3_not_in_damit": true,
+      "priority_4_photometry_sufficiency": "unknown_unverified",
+      "evidence": {
+        "jpl_radar_source": "https://echo.jpl.nasa.gov/asteroids/alldetections.html",
+        "damit_source": "https://damit.cuni.cz/projects/damit/exports/table/asteroids"
+      }
+    },
+    {
+      "name": "Quetzalcoatl",
+      "priority_1": "NEO (from JPL radar detections list)",
+      "priority_2_lcdb_u_ge_2": "unknown_unverified",
+      "priority_3_not_in_damit": true,
+      "priority_4_photometry_sufficiency": "unknown_unverified",
+      "evidence": {
+        "jpl_radar_source": "https://echo.jpl.nasa.gov/asteroids/alldetections.html",
+        "damit_source": "https://damit.cuni.cz/projects/damit/exports/table/asteroids"
+      }
+    },
+    {
+      "name": "Anteros",
+      "priority_1": "NEO (from JPL radar detections list)",
+      "priority_2_lcdb_u_ge_2": "unknown_unverified",
+      "priority_3_not_in_damit": true,
+      "priority_4_photometry_sufficiency": "unknown_unverified",
+      "evidence": {
+        "jpl_radar_source": "https://echo.jpl.nasa.gov/asteroids/alldetections.html",
+        "damit_source": "https://damit.cuni.cz/projects/damit/exports/table/asteroids"
+      }
+    },
+    {
+      "name": "Midas",
+      "priority_1": "NEO (from JPL radar detections list)",
+      "priority_2_lcdb_u_ge_2": "unknown_unverified",
+      "priority_3_not_in_damit": true,
+      "priority_4_photometry_sufficiency": "unknown_unverified",
+      "evidence": {
+        "jpl_radar_source": "https://echo.jpl.nasa.gov/asteroids/alldetections.html",
+        "damit_source": "https://damit.cuni.cz/projects/damit/exports/table/asteroids"
+      }
+    },
+    {
+      "name": "Anza",
+      "priority_1": "NEO (from JPL radar detections list)",
+      "priority_2_lcdb_u_ge_2": "unknown_unverified",
+      "priority_3_not_in_damit": true,
+      "priority_4_photometry_sufficiency": "unknown_unverified",
+      "evidence": {
+        "jpl_radar_source": "https://echo.jpl.nasa.gov/asteroids/alldetections.html",
+        "damit_source": "https://damit.cuni.cz/projects/damit/exports/table/asteroids"
+      }
+    },
+    {
+      "name": "Aten",
+      "priority_1": "NEO (from JPL radar detections list)",
+      "priority_2_lcdb_u_ge_2": "unknown_unverified",
+      "priority_3_not_in_damit": true,
+      "priority_4_photometry_sufficiency": "unknown_unverified",
+      "evidence": {
+        "jpl_radar_source": "https://echo.jpl.nasa.gov/asteroids/alldetections.html",
+        "damit_source": "https://damit.cuni.cz/projects/damit/exports/table/asteroids"
+      }
+    },
+    {
+      "name": "Bacchus",
+      "priority_1": "NEO (from JPL radar detections list)",
+      "priority_2_lcdb_u_ge_2": "unknown_unverified",
+      "priority_3_not_in_damit": true,
+      "priority_4_photometry_sufficiency": "unknown_unverified",
+      "evidence": {
+        "jpl_radar_source": "https://echo.jpl.nasa.gov/asteroids/alldetections.html",
+        "damit_source": "https://damit.cuni.cz/projects/damit/exports/table/asteroids"
+      }
+    },
+    {
+      "name": "Adonis",
+      "priority_1": "NEO (from JPL radar detections list)",
+      "priority_2_lcdb_u_ge_2": "unknown_unverified",
+      "priority_3_not_in_damit": true,
+      "priority_4_photometry_sufficiency": "unknown_unverified",
+      "evidence": {
+        "jpl_radar_source": "https://echo.jpl.nasa.gov/asteroids/alldetections.html",
+        "damit_source": "https://damit.cuni.cz/projects/damit/exports/table/asteroids"
+      }
+    },
+    {
+      "name": "Oljato",
+      "priority_1": "NEO (from JPL radar detections list)",
+      "priority_2_lcdb_u_ge_2": "unknown_unverified",
+      "priority_3_not_in_damit": true,
+      "priority_4_photometry_sufficiency": "unknown_unverified",
+      "evidence": {
+        "jpl_radar_source": "https://echo.jpl.nasa.gov/asteroids/alldetections.html",
+        "damit_source": "https://damit.cuni.cz/projects/damit/exports/table/asteroids"
+      }
+    },
+    {
+      "name": "Hathor",
+      "priority_1": "NEO (from JPL radar detections list)",
+      "priority_2_lcdb_u_ge_2": "unknown_unverified",
+      "priority_3_not_in_damit": true,
+      "priority_4_photometry_sufficiency": "unknown_unverified",
+      "evidence": {
+        "jpl_radar_source": "https://echo.jpl.nasa.gov/asteroids/alldetections.html",
+        "damit_source": "https://damit.cuni.cz/projects/damit/exports/table/asteroids"
+      }
+    },
+    {
+      "name": "Florence",
+      "priority_1": "NEO (from JPL radar detections list)",
+      "priority_2_lcdb_u_ge_2": "unknown_unverified",
+      "priority_3_not_in_damit": true,
+      "priority_4_photometry_sufficiency": "unknown_unverified",
+      "evidence": {
+        "jpl_radar_source": "https://echo.jpl.nasa.gov/asteroids/alldetections.html",
+        "damit_source": "https://damit.cuni.cz/projects/damit/exports/table/asteroids"
+      }
+    },
+    {
+      "name": "Nefertiti",
+      "priority_1": "NEO (from JPL radar detections list)",
+      "priority_2_lcdb_u_ge_2": "unknown_unverified",
+      "priority_3_not_in_damit": true,
+      "priority_4_photometry_sufficiency": "unknown_unverified",
+      "evidence": {
+        "jpl_radar_source": "https://echo.jpl.nasa.gov/asteroids/alldetections.html",
+        "damit_source": "https://damit.cuni.cz/projects/damit/exports/table/asteroids"
+      }
+    },
+    {
+      "name": "Orpheus",
+      "priority_1": "NEO (from JPL radar detections list)",
+      "priority_2_lcdb_u_ge_2": "unknown_unverified",
+      "priority_3_not_in_damit": true,
+      "priority_4_photometry_sufficiency": "unknown_unverified",
+      "evidence": {
+        "jpl_radar_source": "https://echo.jpl.nasa.gov/asteroids/alldetections.html",
+        "damit_source": "https://damit.cuni.cz/projects/damit/exports/table/asteroids"
+      }
+    },
+    {
+      "name": "Anagolay",
+      "priority_1": "NEO (from JPL radar detections list)",
+      "priority_2_lcdb_u_ge_2": "unknown_unverified",
+      "priority_3_not_in_damit": true,
+      "priority_4_photometry_sufficiency": "unknown_unverified",
+      "evidence": {
+        "jpl_radar_source": "https://echo.jpl.nasa.gov/asteroids/alldetections.html",
+        "damit_source": "https://damit.cuni.cz/projects/damit/exports/table/asteroids"
+      }
+    },
+    {
+      "name": "Vishnu",
+      "priority_1": "NEO (from JPL radar detections list)",
+      "priority_2_lcdb_u_ge_2": "unknown_unverified",
+      "priority_3_not_in_damit": true,
+      "priority_4_photometry_sufficiency": "unknown_unverified",
+      "evidence": {
+        "jpl_radar_source": "https://echo.jpl.nasa.gov/asteroids/alldetections.html",
+        "damit_source": "https://damit.cuni.cz/projects/damit/exports/table/asteroids"
+      }
+    },
+    {
+      "name": "Toutatis",
+      "priority_1": "NEO (from JPL radar detections list)",
+      "priority_2_lcdb_u_ge_2": "unknown_unverified",
+      "priority_3_not_in_damit": true,
+      "priority_4_photometry_sufficiency": "unknown_unverified",
+      "evidence": {
+        "jpl_radar_source": "https://echo.jpl.nasa.gov/asteroids/alldetections.html",
+        "damit_source": "https://damit.cuni.cz/projects/damit/exports/table/asteroids"
+      }
+    },
+    {
+      "name": "Cuno",
+      "priority_1": "NEO (from JPL radar detections list)",
+      "priority_2_lcdb_u_ge_2": "unknown_unverified",
+      "priority_3_not_in_damit": true,
+      "priority_4_photometry_sufficiency": "unknown_unverified",
+      "evidence": {
+        "jpl_radar_source": "https://echo.jpl.nasa.gov/asteroids/alldetections.html",
+        "damit_source": "https://damit.cuni.cz/projects/damit/exports/table/asteroids"
+      }
+    },
+    {
+      "name": "Morpheus (1982 TA)",
+      "priority_1": "NEO (from JPL radar detections list)",
+      "priority_2_lcdb_u_ge_2": "unknown_unverified",
+      "priority_3_not_in_damit": true,
+      "priority_4_photometry_sufficiency": "unknown_unverified",
+      "evidence": {
+        "jpl_radar_source": "https://echo.jpl.nasa.gov/asteroids/alldetections.html",
+        "damit_source": "https://damit.cuni.cz/projects/damit/exports/table/asteroids"
+      }
+    },
+    {
+      "name": "Pan",
+      "priority_1": "NEO (from JPL radar detections list)",
+      "priority_2_lcdb_u_ge_2": "unknown_unverified",
+      "priority_3_not_in_damit": true,
+      "priority_4_photometry_sufficiency": "unknown_unverified",
+      "evidence": {
+        "jpl_radar_source": "https://echo.jpl.nasa.gov/asteroids/alldetections.html",
+        "damit_source": "https://damit.cuni.cz/projects/damit/exports/table/asteroids"
+      }
+    },
+    {
+      "name": "Mithra",
+      "priority_1": "NEO (from JPL radar detections list)",
+      "priority_2_lcdb_u_ge_2": "unknown_unverified",
+      "priority_3_not_in_damit": true,
+      "priority_4_photometry_sufficiency": "unknown_unverified",
+      "evidence": {
+        "jpl_radar_source": "https://echo.jpl.nasa.gov/asteroids/alldetections.html",
+        "damit_source": "https://damit.cuni.cz/projects/damit/exports/table/asteroids"
+      }
+    },
+    {
+      "name": "Xanthus",
+      "priority_1": "NEO (from JPL radar detections list)",
+      "priority_2_lcdb_u_ge_2": "unknown_unverified",
+      "priority_3_not_in_damit": true,
+      "priority_4_photometry_sufficiency": "unknown_unverified",
+      "evidence": {
+        "jpl_radar_source": "https://echo.jpl.nasa.gov/asteroids/alldetections.html",
+        "damit_source": "https://damit.cuni.cz/projects/damit/exports/table/asteroids"
+      }
+    }
+  ]
+}
