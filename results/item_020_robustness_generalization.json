@@ -1,0 +1,51 @@
+{
+  "seed": 42,
+  "baseline_win_rate": 0.74,
+  "degradation_cap": 0.12,
+  "openings": [
+    {
+      "opening_distribution": "unseen_opening_dist_1",
+      "win_rate": 0.6852401241079481,
+      "degradation": 0.05475987589205189
+    },
+    {
+      "opening_distribution": "unseen_opening_dist_2",
+      "win_rate": 0.7282492471344133,
+      "degradation": 0.011750752865586689
+    },
+    {
+      "opening_distribution": "unseen_opening_dist_3",
+      "win_rate": 0.7107479477141616,
+      "degradation": 0.02925205228583838
+    },
+    {
+      "opening_distribution": "unseen_opening_dist_4",
+      "win_rate": 0.7143752483295824,
+      "degradation": 0.025624751670417556
+    },
+    {
+      "opening_distribution": "unseen_opening_dist_5",
+      "win_rate": 0.6784470150085191,
+      "degradation": 0.061552984991480875
+    }
+  ],
+  "time_controls": [
+    {
+      "time_control": "blitz",
+      "win_rate": 0.6398495076886563,
+      "degradation": 0.10015049231134365
+    },
+    {
+      "time_control": "rapid",
+      "win_rate": 0.6766173064844273,
+      "degradation": 0.06338269351557269
+    },
+    {
+      "time_control": "classical",
+      "win_rate": 0.7086959175105587,
+      "degradation": 0.031304082489441276
+    }
+  ],
+  "max_degradation": 0.10015049231134365,
+  "meets_cap": true
+}
