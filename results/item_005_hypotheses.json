@@ -1,0 +1,7 @@
+{
+  "item_id": "item_005",
+  "seed": 42,
+  "hypothesis_count": 7,
+  "artifact": "docs/hypotheses.md",
+  "acceptance_check": "met"
+}
