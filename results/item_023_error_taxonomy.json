@@ -1,0 +1,10 @@
+{
+  "seed": 42,
+  "failure_classes": 12,
+  "domains": {
+    "data": 5,
+    "geometry": 2,
+    "optimization": 3,
+    "ambiguity": 2
+  }
+}
