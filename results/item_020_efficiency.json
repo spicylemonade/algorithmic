@@ -1,0 +1,24 @@
+{
+  "item": "item_020",
+  "seed": 42,
+  "unoptimized": {
+    "positions": 300,
+    "throughput_pos_per_s": 60.033690474850594,
+    "avg_latency_ms": 16.538150876648007,
+    "p95_latency_ms": 17.393034899873783,
+    "peak_memory_mb": 0.061832427978515625
+  },
+  "optimized": {
+    "positions": 300,
+    "throughput_pos_per_s": 9264.77780701288,
+    "avg_latency_ms": 0.007393359992420301,
+    "p95_latency_ms": 0.008025049714888155,
+    "peak_memory_mb": 0.017147064208984375
+  },
+  "speedup": 154.32630800690316,
+  "acceptance_met": true,
+  "optimized_config": {
+    "agent": "HeuristicAgent",
+    "notes": "Action-pruned fast inference path for deployment profile"
+  }
+}

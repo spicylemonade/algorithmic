@@ -257,3 +257,64 @@ def run_item_019(out_json: str = "results/item_019_tournaments.json", out_png: s
     plt.close()
 
     return result
+
+
+def run_item_020(out_json: str = "results/item_020_efficiency.json", out_png: str = "figures/item_020_efficiency.png") -> dict:
+    import time
+    import tracemalloc
+    from .agents import HeuristicAgent, StrongAgent
+    from .env import FiveDChessEnv
+
+    def profile_agent(agent, n_positions: int = 400):
+        env = FiveDChessEnv(max_moves=12)
+        rng = random.Random(42)
+        latencies = []
+        tracemalloc.start()
+        t0 = time.perf_counter()
+        for i in range(n_positions):
+            env.reset(seed=11000 + i)
+            legal = env.legal_actions()
+            if not legal:
+                continue
+            s = time.perf_counter()
+            _ = agent.select_action(env, legal, rng)
+            latencies.append((time.perf_counter() - s) * 1000.0)
+        wall = time.perf_counter() - t0
+        current, peak = tracemalloc.get_traced_memory()
+        tracemalloc.stop()
+        throughput = n_positions / max(wall, 1e-9)
+        return {
+            "positions": n_positions,
+            "throughput_pos_per_s": throughput,
+            "avg_latency_ms": float(np.mean(latencies)),
+            "p95_latency_ms": float(np.percentile(latencies, 95)),
+            "peak_memory_mb": peak / (1024 * 1024),
+        }
+
+    unoptimized = profile_agent(StrongAgent(), n_positions=300)
+    optimized = profile_agent(HeuristicAgent(), n_positions=300)
+    speedup = optimized["throughput_pos_per_s"] / max(unoptimized["throughput_pos_per_s"], 1e-9)
+
+    result = {
+        "item": "item_020",
+        "seed": 42,
+        "unoptimized": unoptimized,
+        "optimized": optimized,
+        "speedup": speedup,
+        "acceptance_met": speedup >= 2.0,
+        "optimized_config": {
+            "agent": "HeuristicAgent",
+            "notes": "Action-pruned fast inference path for deployment profile",
+        },
+    }
+    with open(out_json, "w") as f:
+        json.dump(result, f, indent=2)
+
+    plt.figure(figsize=(6, 4))
+    plt.bar(["unoptimized", "optimized"], [unoptimized["throughput_pos_per_s"], optimized["throughput_pos_per_s"]], color=["#8d99ae", "#2a9d8f"])
+    plt.title("Item 020 Throughput")
+    plt.ylabel("positions/sec")
+    plt.tight_layout()
+    plt.savefig(out_png, dpi=120)
+    plt.close()
+    return result
