@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "created_at": "2026-02-07T00:15:59Z",
-  "updated_at": "2026-02-07T00:46:03.063800+00:00",
+  "updated_at": "2026-02-07T00:46:17.295115+00:00",
   "current_agent": "researcher",
   "agent_status": {
     "orchestrator": {
@@ -237,15 +237,15 @@
           "id": "item_023",
           "description": "Document reproducibility and environment requirements",
           "acceptance_criteria": "Documentation specifies hardware assumptions, dependency versions, deterministic seeding policy, and command sequence to reproduce all evaluation outputs",
-          "status": "in_progress",
-          "notes": null,
+          "status": "completed",
+          "notes": "Documented environment assumptions, dependency requirements, deterministic seed policy, and full reproduction commands.",
           "error": null
         },
         {
           "id": "item_024",
           "description": "Prepare risk register and mitigation plan",
           "acceptance_criteria": "Risk log contains at least 10 technical risks (data quality, degeneracy, overfitting, compute cost) each with likelihood, impact, and mitigation owner",
-          "status": "pending",
+          "status": "in_progress",
           "notes": null,
           "error": null
         },
@@ -262,9 +262,9 @@
   ],
   "summary": {
     "total_items": 25,
-    "completed": 20,
+    "completed": 21,
     "in_progress": 1,
     "failed": 2,
-    "pending": 2
+    "pending": 1
   }
 }
