@@ -1,0 +1,26 @@
+{
+  "asteroid_id": "216",
+  "name": "Kleopatra",
+  "predicted_obj": "results/blind_validation/models/216_pred.obj",
+  "truth_obj": "results/blind_validation/models/216_truth.obj",
+  "metrics": {
+    "hausdorff_norm": 0.02880071836378042,
+    "volumetric_iou": 1.0,
+    "spin_axis_error_deg": 7.005506890066373,
+    "period_error_h": 0.43650216306931977,
+    "pass": 0.0
+  },
+  "predicted_spin": {
+    "lambda_deg": 134.89506848006732,
+    "beta_deg": 0.005506890066372616,
+    "period_hours": 5.97650216306932,
+    "phi0_deg": 91.37391605314932
+  },
+  "truth_spin": {
+    "lambda_deg": 124,
+    "beta_deg": -7,
+    "period_hours": 5.54,
+    "phi0_deg": 17.0
+  },
+  "n_observations": 220
+}

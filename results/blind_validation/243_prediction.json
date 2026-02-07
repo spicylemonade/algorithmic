@@ -1,0 +1,26 @@
+{
+  "asteroid_id": "243",
+  "name": "Ida",
+  "predicted_obj": "results/blind_validation/models/243_pred.obj",
+  "truth_obj": "results/blind_validation/models/243_truth.obj",
+  "metrics": {
+    "hausdorff_norm": 0.03843561866681899,
+    "volumetric_iou": 1.0,
+    "spin_axis_error_deg": 20.047080767169525,
+    "period_error_h": 0.6737126378959237,
+    "pass": 0.0
+  },
+  "predicted_spin": {
+    "lambda_deg": 104.03969717392278,
+    "beta_deg": -0.04708076716952503,
+    "period_hours": 5.976287362104077,
+    "phi0_deg": 313.60610136467557
+  },
+  "truth_spin": {
+    "lambda_deg": 175,
+    "beta_deg": 20,
+    "period_hours": 6.65,
+    "phi0_deg": 20.0
+  },
+  "n_observations": 220
+}

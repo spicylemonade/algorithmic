@@ -1,0 +1,26 @@
+{
+  "asteroid_id": "951",
+  "name": "Gaspra",
+  "predicted_obj": "results/blind_validation/models/951_pred.obj",
+  "truth_obj": "results/blind_validation/models/951_truth.obj",
+  "metrics": {
+    "hausdorff_norm": 0.03556076544782486,
+    "volumetric_iou": 1.0,
+    "spin_axis_error_deg": 29.036089103915582,
+    "period_error_h": 1.0239659235833436,
+    "pass": 0.0
+  },
+  "predicted_spin": {
+    "lambda_deg": 112.21794031066968,
+    "beta_deg": -0.03608910391558151,
+    "period_hours": 5.996034076416656,
+    "phi0_deg": 319.6029047947522
+  },
+  "truth_spin": {
+    "lambda_deg": 192,
+    "beta_deg": 29,
+    "period_hours": 7.02,
+    "phi0_deg": 21.0
+  },
+  "n_observations": 220
+}

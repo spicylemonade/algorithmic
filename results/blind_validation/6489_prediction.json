@@ -1,0 +1,26 @@
+{
+  "asteroid_id": "6489",
+  "name": "Golevka",
+  "predicted_obj": "results/blind_validation/models/6489_pred.obj",
+  "truth_obj": "results/blind_validation/models/6489_truth.obj",
+  "metrics": {
+    "hausdorff_norm": 0.02028910427045528,
+    "volumetric_iou": 1.0,
+    "spin_axis_error_deg": 56.017974175215834,
+    "period_error_h": 0.8799714503181439,
+    "pass": 0.0
+  },
+  "predicted_spin": {
+    "lambda_deg": 121.63663034329564,
+    "beta_deg": -0.01797417521583089,
+    "period_hours": 6.049971450318144,
+    "phi0_deg": 88.36135389248865
+  },
+  "truth_spin": {
+    "lambda_deg": 243,
+    "beta_deg": 56,
+    "period_hours": 5.17,
+    "phi0_deg": 24.0
+  },
+  "n_observations": 220
+}

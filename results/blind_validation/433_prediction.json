@@ -1,0 +1,26 @@
+{
+  "asteroid_id": "433",
+  "name": "Eros",
+  "predicted_obj": "results/blind_validation/models/433_pred.obj",
+  "truth_obj": "results/blind_validation/models/433_truth.obj",
+  "metrics": {
+    "hausdorff_norm": 0.04066126522707167,
+    "volumetric_iou": 1.0,
+    "spin_axis_error_deg": 25.000545376193838,
+    "period_error_h": 1.2404748413657938,
+    "pass": 0.0
+  },
+  "predicted_spin": {
+    "lambda_deg": 114.47784439653768,
+    "beta_deg": 0.0005453761938389867,
+    "period_hours": 6.040474841365794,
+    "phi0_deg": 40.35705602629833
+  },
+  "truth_spin": {
+    "lambda_deg": 90,
+    "beta_deg": -25,
+    "period_hours": 4.8,
+    "phi0_deg": 15.0
+  },
+  "n_observations": 220
+}

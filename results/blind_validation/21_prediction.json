@@ -1,0 +1,26 @@
+{
+  "asteroid_id": "21",
+  "name": "Lutetia",
+  "predicted_obj": "results/blind_validation/models/21_pred.obj",
+  "truth_obj": "results/blind_validation/models/21_truth.obj",
+  "metrics": {
+    "hausdorff_norm": 0.024650888327467504,
+    "volumetric_iou": 1.0,
+    "spin_axis_error_deg": 10.99696451565132,
+    "period_error_h": 0.3420475281182389,
+    "pass": 0.0
+  },
+  "predicted_spin": {
+    "lambda_deg": 103.84017862212666,
+    "beta_deg": 0.003035484348680839,
+    "period_hours": 5.9379524718817605,
+    "phi0_deg": 303.4282603831119
+  },
+  "truth_spin": {
+    "lambda_deg": 158,
+    "beta_deg": 11,
+    "period_hours": 6.279999999999999,
+    "phi0_deg": 19.0
+  },
+  "n_observations": 220
+}

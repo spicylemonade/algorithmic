@@ -1,0 +1,267 @@
+{
+  "item_id": "item_016",
+  "seed": 42,
+  "blind_protocol": "truth excluded from optimization; used only for post-fit metrics",
+  "targets": [
+    {
+      "asteroid_id": "433",
+      "name": "Eros",
+      "predicted_obj": "results/blind_validation/models/433_pred.obj",
+      "truth_obj": "results/blind_validation/models/433_truth.obj",
+      "metrics": {
+        "hausdorff_norm": 0.04066126522707167,
+        "volumetric_iou": 1.0,
+        "spin_axis_error_deg": 25.000545376193838,
+        "period_error_h": 1.2404748413657938,
+        "pass": 0.0
+      },
+      "predicted_spin": {
+        "lambda_deg": 114.47784439653768,
+        "beta_deg": 0.0005453761938389867,
+        "period_hours": 6.040474841365794,
+        "phi0_deg": 40.35705602629833
+      },
+      "truth_spin": {
+        "lambda_deg": 90,
+        "beta_deg": -25,
+        "period_hours": 4.8,
+        "phi0_deg": 15.0
+      },
+      "n_observations": 220
+    },
+    {
+      "asteroid_id": "25143",
+      "name": "Itokawa",
+      "predicted_obj": "results/blind_validation/models/25143_pred.obj",
+      "truth_obj": "results/blind_validation/models/25143_truth.obj",
+      "metrics": {
+        "hausdorff_norm": 0.03456158969242788,
+        "volumetric_iou": 1.0,
+        "spin_axis_error_deg": 16.004912908647608,
+        "period_error_h": 0.87868959233605,
+        "pass": 0.0
+      },
+      "predicted_spin": {
+        "lambda_deg": 111.3549480874464,
+        "beta_deg": 0.004912908647607406,
+        "period_hours": 6.04868959233605,
+        "phi0_deg": 67.89503493615996
+      },
+      "truth_spin": {
+        "lambda_deg": 107,
+        "beta_deg": -16,
+        "period_hours": 5.17,
+        "phi0_deg": 16.0
+      },
+      "n_observations": 220
+    },
+    {
+      "asteroid_id": "216",
+      "name": "Kleopatra",
+      "predicted_obj": "results/blind_validation/models/216_pred.obj",
+      "truth_obj": "results/blind_validation/models/216_truth.obj",
+      "metrics": {
+        "hausdorff_norm": 0.02880071836378042,
+        "volumetric_iou": 1.0,
+        "spin_axis_error_deg": 7.005506890066373,
+        "period_error_h": 0.43650216306931977,
+        "pass": 0.0
+      },
+      "predicted_spin": {
+        "lambda_deg": 134.89506848006732,
+        "beta_deg": 0.005506890066372616,
+        "period_hours": 5.97650216306932,
+        "phi0_deg": 91.37391605314932
+      },
+      "truth_spin": {
+        "lambda_deg": 124,
+        "beta_deg": -7,
+        "period_hours": 5.54,
+        "phi0_deg": 17.0
+      },
+      "n_observations": 220
+    },
+    {
+      "asteroid_id": "4",
+      "name": "Vesta",
+      "predicted_obj": "results/blind_validation/models/4_pred.obj",
+      "truth_obj": "results/blind_validation/models/4_truth.obj",
+      "metrics": {
+        "hausdorff_norm": 0.025374590778037703,
+        "volumetric_iou": 1.0,
+        "spin_axis_error_deg": 2.021671718130264,
+        "period_error_h": 0.00022563476991521725,
+        "pass": 1.0
+      },
+      "predicted_spin": {
+        "lambda_deg": 125.09412629228314,
+        "beta_deg": -0.02167171813026414,
+        "period_hours": 5.909774365230085,
+        "phi0_deg": 17.271786831260478
+      },
+      "truth_spin": {
+        "lambda_deg": 141,
+        "beta_deg": 2,
+        "period_hours": 5.91,
+        "phi0_deg": 18.0
+      },
+      "n_observations": 220
+    },
+    {
+      "asteroid_id": "21",
+      "name": "Lutetia",
+      "predicted_obj": "results/blind_validation/models/21_pred.obj",
+      "truth_obj": "results/blind_validation/models/21_truth.obj",
+      "metrics": {
+        "hausdorff_norm": 0.024650888327467504,
+        "volumetric_iou": 1.0,
+        "spin_axis_error_deg": 10.99696451565132,
+        "period_error_h": 0.3420475281182389,
+        "pass": 0.0
+      },
+      "predicted_spin": {
+        "lambda_deg": 103.84017862212666,
+        "beta_deg": 0.003035484348680839,
+        "period_hours": 5.9379524718817605,
+        "phi0_deg": 303.4282603831119
+      },
+      "truth_spin": {
+        "lambda_deg": 158,
+        "beta_deg": 11,
+        "period_hours": 6.279999999999999,
+        "phi0_deg": 19.0
+      },
+      "n_observations": 220
+    },
+    {
+      "asteroid_id": "243",
+      "name": "Ida",
+      "predicted_obj": "results/blind_validation/models/243_pred.obj",
+      "truth_obj": "results/blind_validation/models/243_truth.obj",
+      "metrics": {
+        "hausdorff_norm": 0.03843561866681899,
+        "volumetric_iou": 1.0,
+        "spin_axis_error_deg": 20.047080767169525,
+        "period_error_h": 0.6737126378959237,
+        "pass": 0.0
+      },
+      "predicted_spin": {
+        "lambda_deg": 104.03969717392278,
+        "beta_deg": -0.04708076716952503,
+        "period_hours": 5.976287362104077,
+        "phi0_deg": 313.60610136467557
+      },
+      "truth_spin": {
+        "lambda_deg": 175,
+        "beta_deg": 20,
+        "period_hours": 6.65,
+        "phi0_deg": 20.0
+      },
+      "n_observations": 220
+    },
+    {
+      "asteroid_id": "951",
+      "name": "Gaspra",
+      "predicted_obj": "results/blind_validation/models/951_pred.obj",
+      "truth_obj": "results/blind_validation/models/951_truth.obj",
+      "metrics": {
+        "hausdorff_norm": 0.03556076544782486,
+        "volumetric_iou": 1.0,
+        "spin_axis_error_deg": 29.036089103915582,
+        "period_error_h": 1.0239659235833436,
+        "pass": 0.0
+      },
+      "predicted_spin": {
+        "lambda_deg": 112.21794031066968,
+        "beta_deg": -0.03608910391558151,
+        "period_hours": 5.996034076416656,
+        "phi0_deg": 319.6029047947522
+      },
+      "truth_spin": {
+        "lambda_deg": 192,
+        "beta_deg": 29,
+        "period_hours": 7.02,
+        "phi0_deg": 21.0
+      },
+      "n_observations": 220
+    },
+    {
+      "asteroid_id": "2867",
+      "name": "Steins",
+      "predicted_obj": "results/blind_validation/models/2867_pred.obj",
+      "truth_obj": "results/blind_validation/models/2867_truth.obj",
+      "metrics": {
+        "hausdorff_norm": 0.02961000740146167,
+        "volumetric_iou": 1.0,
+        "spin_axis_error_deg": 38.04953432586566,
+        "period_error_h": 1.4127983835464741,
+        "pass": 0.0
+      },
+      "predicted_spin": {
+        "lambda_deg": 116.01640162250732,
+        "beta_deg": -0.04953432586565487,
+        "period_hours": 5.9772016164535255,
+        "phi0_deg": 326.5495354507441
+      },
+      "truth_spin": {
+        "lambda_deg": 209,
+        "beta_deg": 38,
+        "period_hours": 7.39,
+        "phi0_deg": 22.0
+      },
+      "n_observations": 220
+    },
+    {
+      "asteroid_id": "1620",
+      "name": "Geographos",
+      "predicted_obj": "results/blind_validation/models/1620_pred.obj",
+      "truth_obj": "results/blind_validation/models/1620_truth.obj",
+      "metrics": {
+        "hausdorff_norm": 0.02878748053744147,
+        "volumetric_iou": 1.0,
+        "spin_axis_error_deg": 47.01864390790192,
+        "period_error_h": 1.238505005585199,
+        "pass": 0.0
+      },
+      "predicted_spin": {
+        "lambda_deg": 115.92474486878598,
+        "beta_deg": -0.018643907901919388,
+        "period_hours": 6.038505005585199,
+        "phi0_deg": 43.57455226790839
+      },
+      "truth_spin": {
+        "lambda_deg": 226,
+        "beta_deg": 47,
+        "period_hours": 4.8,
+        "phi0_deg": 23.0
+      },
+      "n_observations": 220
+    },
+    {
+      "asteroid_id": "6489",
+      "name": "Golevka",
+      "predicted_obj": "results/blind_validation/models/6489_pred.obj",
+      "truth_obj": "results/blind_validation/models/6489_truth.obj",
+      "metrics": {
+        "hausdorff_norm": 0.02028910427045528,
+        "volumetric_iou": 1.0,
+        "spin_axis_error_deg": 56.017974175215834,
+        "period_error_h": 0.8799714503181439,
+        "pass": 0.0
+      },
+      "predicted_spin": {
+        "lambda_deg": 121.63663034329564,
+        "beta_deg": -0.01797417521583089,
+        "period_hours": 6.049971450318144,
+        "phi0_deg": 88.36135389248865
+      },
+      "truth_spin": {
+        "lambda_deg": 243,
+        "beta_deg": 56,
+        "period_hours": 5.17,
+        "phi0_deg": 24.0
+      },
+      "n_observations": 220
+    }
+  ]
+}

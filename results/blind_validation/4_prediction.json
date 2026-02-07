@@ -1,0 +1,26 @@
+{
+  "asteroid_id": "4",
+  "name": "Vesta",
+  "predicted_obj": "results/blind_validation/models/4_pred.obj",
+  "truth_obj": "results/blind_validation/models/4_truth.obj",
+  "metrics": {
+    "hausdorff_norm": 0.025374590778037703,
+    "volumetric_iou": 1.0,
+    "spin_axis_error_deg": 2.021671718130264,
+    "period_error_h": 0.00022563476991521725,
+    "pass": 1.0
+  },
+  "predicted_spin": {
+    "lambda_deg": 125.09412629228314,
+    "beta_deg": -0.02167171813026414,
+    "period_hours": 5.909774365230085,
+    "phi0_deg": 17.271786831260478
+  },
+  "truth_spin": {
+    "lambda_deg": 141,
+    "beta_deg": 2,
+    "period_hours": 5.91,
+    "phi0_deg": 18.0
+  },
+  "n_observations": 220
+}

@@ -1,0 +1,26 @@
+{
+  "asteroid_id": "25143",
+  "name": "Itokawa",
+  "predicted_obj": "results/blind_validation/models/25143_pred.obj",
+  "truth_obj": "results/blind_validation/models/25143_truth.obj",
+  "metrics": {
+    "hausdorff_norm": 0.03456158969242788,
+    "volumetric_iou": 1.0,
+    "spin_axis_error_deg": 16.004912908647608,
+    "period_error_h": 0.87868959233605,
+    "pass": 0.0
+  },
+  "predicted_spin": {
+    "lambda_deg": 111.3549480874464,
+    "beta_deg": 0.004912908647607406,
+    "period_hours": 6.04868959233605,
+    "phi0_deg": 67.89503493615996
+  },
+  "truth_spin": {
+    "lambda_deg": 107,
+    "beta_deg": -16,
+    "period_hours": 5.17,
+    "phi0_deg": 16.0
+  },
+  "n_observations": 220
+}

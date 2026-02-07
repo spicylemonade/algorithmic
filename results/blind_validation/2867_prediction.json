@@ -1,0 +1,26 @@
+{
+  "asteroid_id": "2867",
+  "name": "Steins",
+  "predicted_obj": "results/blind_validation/models/2867_pred.obj",
+  "truth_obj": "results/blind_validation/models/2867_truth.obj",
+  "metrics": {
+    "hausdorff_norm": 0.02961000740146167,
+    "volumetric_iou": 1.0,
+    "spin_axis_error_deg": 38.04953432586566,
+    "period_error_h": 1.4127983835464741,
+    "pass": 0.0
+  },
+  "predicted_spin": {
+    "lambda_deg": 116.01640162250732,
+    "beta_deg": -0.04953432586565487,
+    "period_hours": 5.9772016164535255,
+    "phi0_deg": 326.5495354507441
+  },
+  "truth_spin": {
+    "lambda_deg": 209,
+    "beta_deg": 38,
+    "period_hours": 7.39,
+    "phi0_deg": 22.0
+  },
+  "n_observations": 220
+}

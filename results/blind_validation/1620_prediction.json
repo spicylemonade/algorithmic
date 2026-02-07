@@ -1,0 +1,26 @@
+{
+  "asteroid_id": "1620",
+  "name": "Geographos",
+  "predicted_obj": "results/blind_validation/models/1620_pred.obj",
+  "truth_obj": "results/blind_validation/models/1620_truth.obj",
+  "metrics": {
+    "hausdorff_norm": 0.02878748053744147,
+    "volumetric_iou": 1.0,
+    "spin_axis_error_deg": 47.01864390790192,
+    "period_error_h": 1.238505005585199,
+    "pass": 0.0
+  },
+  "predicted_spin": {
+    "lambda_deg": 115.92474486878598,
+    "beta_deg": -0.018643907901919388,
+    "period_hours": 6.038505005585199,
+    "phi0_deg": 43.57455226790839
+  },
+  "truth_spin": {
+    "lambda_deg": 226,
+    "beta_deg": 47,
+    "period_hours": 4.8,
+    "phi0_deg": 23.0
+  },
+  "n_observations": 220
+}
