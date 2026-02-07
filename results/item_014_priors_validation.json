@@ -1,0 +1,9 @@
+{
+  "item_id": "item_014",
+  "seed": 42,
+  "injected_failure_cases": 100,
+  "control_cases": 100,
+  "reject_rate": 1.0,
+  "preserve_rate": 1.0,
+  "acceptance_pass": true
+}
