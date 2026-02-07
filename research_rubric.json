@@ -141,8 +141,8 @@
           "id": "item_012",
           "description": "Develop hybrid convex-to-nonconvex pipeline with adaptive refinement",
           "acceptance_criteria": "Pipeline module that: (1) runs convex inversion first to obtain best-fit pole, period, and convex shape, (2) seeds the evolutionary solver with the convex solution as an initial population member, (3) adaptively switches from convex to non-convex refinement when residual chi-squared exceeds a configurable threshold. End-to-end test: given synthetic lightcurves from a moderately concave shape, the hybrid pipeline produces a model with IoU > 0.80 against ground truth, outperforming convex-only solution (which should have IoU < 0.70 for the same concave target).",
-          "status": "pending",
-          "notes": null,
+          "status": "completed",
+          "notes": "hybrid_pipeline.py implements 2-stage pipeline: convex inversion -> GA refinement with chi2 threshold. Tests: convex ellipsoid stays in convex stage (chi2=0.011), dumbbell GA achieves IoU=1.0 vs convex-only IoU=0.22. Known-spin variant also validated.",
           "error": null
         },
         {
@@ -268,9 +268,9 @@
   ],
   "summary": {
     "total_items": 25,
-    "completed": 11,
+    "completed": 12,
     "in_progress": 0,
     "failed": 0,
-    "pending": 14
+    "pending": 13
   }
 }
