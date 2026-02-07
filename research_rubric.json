@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "created_at": "2026-02-07T00:15:59Z",
-  "updated_at": "2026-02-07T00:21:14.244634+00:00",
+  "updated_at": "2026-02-07T00:22:21.854804+00:00",
   "current_agent": "researcher",
   "agent_status": {
     "orchestrator": {
@@ -112,8 +112,8 @@
           "id": "item_010",
           "description": "Assemble ground-truth benchmark dataset",
           "acceptance_criteria": "Benchmark manifest contains at least 10 asteroids with DAMIT/JPL shape links and corresponding raw lightcurve sources, including Eros, Itokawa, and Kleopatra",
-          "status": "in_progress",
-          "notes": null,
+          "status": "completed",
+          "notes": "Assembled 10-target benchmark manifest with DAMIT and high-confidence shape links plus raw lightcurve source links; includes Eros, Itokawa, and Kleopatra.",
           "error": null
         }
       ]
@@ -127,8 +127,8 @@
           "id": "item_011",
           "description": "Design hybrid objective combining convex and non-convex priors",
           "acceptance_criteria": "Loss function spec includes weighted photometric residuals, smoothness penalty, concavity prior, and adaptive weighting schedule across optimization stages",
-          "status": "pending",
-          "notes": null,
+          "status": "completed",
+          "notes": "Designed hybrid objective with adaptive convex-to-nonconvex weighting schedule and implementation module.",
           "error": null
         },
         {
@@ -262,9 +262,9 @@
   ],
   "summary": {
     "total_items": 25,
-    "completed": 9,
-    "in_progress": 1,
+    "completed": 11,
+    "in_progress": 0,
     "failed": 0,
-    "pending": 15
+    "pending": 14
   }
 }

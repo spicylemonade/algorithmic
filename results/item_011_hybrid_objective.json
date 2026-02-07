@@ -1,0 +1,9 @@
+{
+  "item_id": "item_011",
+  "implementation": "src/lci/hybrid_objective.py",
+  "weights": {
+    "stage0": {"w_photo": 1.0, "w_smooth": 0.35, "w_concavity": 0.02},
+    "stage1": {"w_photo": 1.0, "w_smooth": 0.2, "w_concavity": 0.12},
+    "stage2": {"w_photo": 1.0, "w_smooth": 0.12, "w_concavity": 0.25}
+  }
+}
