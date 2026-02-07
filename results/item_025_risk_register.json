@@ -1,0 +1,78 @@
+{
+  "item_id": "item_025",
+  "risk_count": 12,
+  "risks": [
+    {
+      "id": "R1",
+      "owner": "Signal Lead",
+      "status": "open",
+      "followup": "alias_gap_sweep"
+    },
+    {
+      "id": "R2",
+      "owner": "Dynamics Lead",
+      "status": "open",
+      "followup": "mirror_pole_twins"
+    },
+    {
+      "id": "R3",
+      "owner": "Data Lead",
+      "status": "open",
+      "followup": "cross_survey_withhold"
+    },
+    {
+      "id": "R4",
+      "owner": "Physics Lead",
+      "status": "open",
+      "followup": "albedo_confound_test"
+    },
+    {
+      "id": "R5",
+      "owner": "Optimization Lead",
+      "status": "open",
+      "followup": "ga_schedule_ablation"
+    },
+    {
+      "id": "R6",
+      "owner": "Performance Lead",
+      "status": "open",
+      "followup": "cpp_batch_profile"
+    },
+    {
+      "id": "R7",
+      "owner": "Geometry Lead",
+      "status": "open",
+      "followup": "mesh_quality_suite"
+    },
+    {
+      "id": "R8",
+      "owner": "Data Lead",
+      "status": "open",
+      "followup": "missing_phase_robustness"
+    },
+    {
+      "id": "R9",
+      "owner": "UQ Lead",
+      "status": "open",
+      "followup": "reliability_diagram"
+    },
+    {
+      "id": "R10",
+      "owner": "Validation Lead",
+      "status": "open",
+      "followup": "baseline_rescoring"
+    },
+    {
+      "id": "R11",
+      "owner": "Release Lead",
+      "status": "open",
+      "followup": "license_audit"
+    },
+    {
+      "id": "R12",
+      "owner": "QA Lead",
+      "status": "open",
+      "followup": "deterministic_replay"
+    }
+  ]
+}
