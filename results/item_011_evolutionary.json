@@ -1,0 +1,26 @@
+{
+  "item_id": "item_011",
+  "seed": 42,
+  "tests": [
+    {
+      "test": 0,
+      "convex_objective": 0.0005993480094215912,
+      "evolutionary_objective": 3.697690706801225e-05,
+      "improvement_pct": 93.83047803834414
+    },
+    {
+      "test": 1,
+      "convex_objective": 0.00035724872545622467,
+      "evolutionary_objective": 3.0391104601183693e-05,
+      "improvement_pct": 91.49301244885542
+    },
+    {
+      "test": 2,
+      "convex_objective": 0.0007757568278531049,
+      "evolutionary_objective": 3.228086033363516e-05,
+      "improvement_pct": 95.83879133581435
+    }
+  ],
+  "mean_improvement_pct": 93.72076060767131,
+  "acceptance_pass": true
+}
