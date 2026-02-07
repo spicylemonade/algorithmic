@@ -1,0 +1,16 @@
+
+============================================================
+Blind inversion: Eros
+============================================================
+  Loaded 5 dense lightcurves
+  Spin from literature: (11.4, 17.2), P=5.2700 h
+  Elapsed time: 208.9 s
+  Recovered period: 5.270000 h
+  Recovered pole: (11.4, 17.2)
+  Convex chi2: 462986.271268
+  Final chi2: 462986.271268
+  Used GA: True
+  Final stage: convex
+  Saved mesh: results/blind_tests/eros/recovered.obj
+  Saved spin: results/blind_tests/eros/recovered_spin.json
+  Saved convergence: results/blind_tests/eros/convergence.json

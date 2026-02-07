@@ -1,0 +1,16 @@
+
+============================================================
+Blind inversion: Kleopatra
+============================================================
+  Loaded 5 dense lightcurves
+  Spin from literature: (73.0, 21.0), P=5.3850 h
+  Elapsed time: 206.7 s
+  Recovered period: 5.385000 h
+  Recovered pole: (73.0, 21.0)
+  Convex chi2: 877508418.671043
+  Final chi2: 877508418.671043
+  Used GA: True
+  Final stage: convex
+  Saved mesh: results/blind_tests/kleopatra/recovered.obj
+  Saved spin: results/blind_tests/kleopatra/recovered_spin.json
+  Saved convergence: results/blind_tests/kleopatra/convergence.json

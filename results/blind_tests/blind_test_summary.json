@@ -1,0 +1,67 @@
+{
+  "Eros": {
+    "name": "Eros",
+    "period_hours": 5.27,
+    "pole_lambda": 11.4,
+    "pole_beta": 17.2,
+    "chi_squared_convex": 462986.2712680159,
+    "chi_squared_final": 462986.2712680159,
+    "used_ga": true,
+    "stage": "convex",
+    "n_vertices": 162,
+    "n_faces": 320,
+    "elapsed_seconds": 208.87659907341003
+  },
+  "Itokawa": {
+    "name": "Itokawa",
+    "period_hours": 12.132,
+    "pole_lambda": 128.5,
+    "pole_beta": -89.66,
+    "chi_squared_convex": 0.2891601352480204,
+    "chi_squared_final": 0.2891601352480204,
+    "used_ga": true,
+    "stage": "convex",
+    "n_vertices": 162,
+    "n_faces": 320,
+    "elapsed_seconds": 204.05979943275452
+  },
+  "Kleopatra": {
+    "name": "Kleopatra",
+    "period_hours": 5.385,
+    "pole_lambda": 73.0,
+    "pole_beta": 21.0,
+    "chi_squared_convex": 877508418.671043,
+    "chi_squared_final": 877508418.671043,
+    "used_ga": true,
+    "stage": "convex",
+    "n_vertices": 162,
+    "n_faces": 320,
+    "elapsed_seconds": 206.70123481750488
+  },
+  "Gaspra": {
+    "name": "Gaspra",
+    "period_hours": 7.042,
+    "pole_lambda": 9.5,
+    "pole_beta": 26.7,
+    "chi_squared_convex": 21429.473321080994,
+    "chi_squared_final": 21429.473321080994,
+    "used_ga": true,
+    "stage": "convex",
+    "n_vertices": 162,
+    "n_faces": 320,
+    "elapsed_seconds": 199.90630221366882
+  },
+  "Betulia": {
+    "name": "Betulia",
+    "period_hours": 6.138,
+    "pole_lambda": 136.0,
+    "pole_beta": 22.0,
+    "chi_squared_convex": 1539.017408381205,
+    "chi_squared_final": 1539.017408381205,
+    "used_ga": true,
+    "stage": "convex",
+    "n_vertices": 162,
+    "n_faces": 320,
+    "elapsed_seconds": 191.92633533477783
+  }
+}

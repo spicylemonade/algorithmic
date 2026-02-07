@@ -1,0 +1,16 @@
+
+============================================================
+Blind inversion: Betulia
+============================================================
+  Loaded 5 dense lightcurves
+  Spin from literature: (136.0, 22.0), P=6.1380 h
+  Elapsed time: 191.9 s
+  Recovered period: 6.138000 h
+  Recovered pole: (136.0, 22.0)
+  Convex chi2: 1539.017408
+  Final chi2: 1539.017408
+  Used GA: True
+  Final stage: convex
+  Saved mesh: results/blind_tests/betulia/recovered.obj
+  Saved spin: results/blind_tests/betulia/recovered_spin.json
+  Saved convergence: results/blind_tests/betulia/convergence.json
