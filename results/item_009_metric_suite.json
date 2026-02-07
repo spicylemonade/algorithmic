@@ -1,0 +1,11 @@
+{
+  "item_id": "item_009",
+  "artifact": "docs/metric_suite.md",
+  "thresholds": {
+    "hausdorff_norm_max": 0.05,
+    "iou_complement_max": 0.05,
+    "spin_axis_error_deg_max": 10.0,
+    "period_error_h_max": 0.01
+  },
+  "implementation": "src/lci/validation.py"
+}
