@@ -1,0 +1,530 @@
+{
+  "item_id": "item_017",
+  "seed": 42,
+  "benchmark_objects": 20,
+  "blind_runs_executed": 20,
+  "all_blind": true,
+  "acceptance_pass": true,
+  "runs": [
+    {
+      "object_number": 433,
+      "object_name": "Eros",
+      "config": {
+        "seed": 42,
+        "optimizer": "hybrid_optimize",
+        "n_points": 90,
+        "sun_dir": [
+          1.0,
+          0.2,
+          0.1
+        ],
+        "obs_dir": [
+          0.4,
+          -0.5,
+          0.7
+        ]
+      },
+      "output": {
+        "estimated_period_h": 7.706433818462125,
+        "estimated_pole_lon_rad": 0.7175343509926275,
+        "estimated_pole_lat_rad": 0.4121973146241853,
+        "objective": 0.05004803139728123
+      },
+      "used_reference_mesh_in_optimization": false
+    },
+    {
+      "object_number": 25143,
+      "object_name": "Itokawa",
+      "config": {
+        "seed": 43,
+        "optimizer": "hybrid_optimize",
+        "n_points": 90,
+        "sun_dir": [
+          1.0,
+          0.2,
+          0.1
+        ],
+        "obs_dir": [
+          0.4,
+          -0.5,
+          0.7
+        ]
+      },
+      "output": {
+        "estimated_period_h": 6.298248634557462,
+        "estimated_pole_lon_rad": 1.2788514711309604,
+        "estimated_pole_lat_rad": 0.4113737411942639,
+        "objective": 0.024591274933211504
+      },
+      "used_reference_mesh_in_optimization": false
+    },
+    {
+      "object_number": 216,
+      "object_name": "Kleopatra",
+      "config": {
+        "seed": 44,
+        "optimizer": "hybrid_optimize",
+        "n_points": 90,
+        "sun_dir": [
+          1.0,
+          0.2,
+          0.1
+        ],
+        "obs_dir": [
+          0.4,
+          -0.5,
+          0.7
+        ]
+      },
+      "output": {
+        "estimated_period_h": 6.298455582052707,
+        "estimated_pole_lon_rad": 1.2833547878789435,
+        "estimated_pole_lat_rad": 0.30351024358952144,
+        "objective": 0.10258093244806375
+      },
+      "used_reference_mesh_in_optimization": false
+    },
+    {
+      "object_number": 1,
+      "object_name": "Ceres",
+      "config": {
+        "seed": 45,
+        "optimizer": "hybrid_optimize",
+        "n_points": 90,
+        "sun_dir": [
+          1.0,
+          0.2,
+          0.1
+        ],
+        "obs_dir": [
+          0.4,
+          -0.5,
+          0.7
+        ]
+      },
+      "output": {
+        "estimated_period_h": 7.419669364109713,
+        "estimated_pole_lon_rad": 0.7197481153041254,
+        "estimated_pole_lat_rad": 0.2012569203951345,
+        "objective": 0.05726983588665226
+      },
+      "used_reference_mesh_in_optimization": false
+    },
+    {
+      "object_number": 2,
+      "object_name": "Pallas",
+      "config": {
+        "seed": 46,
+        "optimizer": "hybrid_optimize",
+        "n_points": 90,
+        "sun_dir": [
+          1.0,
+          0.2,
+          0.1
+        ],
+        "obs_dir": [
+          0.4,
+          -0.5,
+          0.7
+        ]
+      },
+      "output": {
+        "estimated_period_h": 7.700039540238252,
+        "estimated_pole_lon_rad": 1.0001028477360991,
+        "estimated_pole_lat_rad": -0.008728320558985182,
+        "objective": 0.0036617323496855284
+      },
+      "used_reference_mesh_in_optimization": false
+    },
+    {
+      "object_number": 3,
+      "object_name": "Juno",
+      "config": {
+        "seed": 47,
+        "optimizer": "hybrid_optimize",
+        "n_points": 90,
+        "sun_dir": [
+          1.0,
+          0.2,
+          0.1
+        ],
+        "obs_dir": [
+          0.4,
+          -0.5,
+          0.7
+        ]
+      },
+      "output": {
+        "estimated_period_h": 7.699961536956064,
+        "estimated_pole_lon_rad": 1.2803435392076432,
+        "estimated_pole_lat_rad": -0.009089008729645569,
+        "objective": 0.0018940293730044721
+      },
+      "used_reference_mesh_in_optimization": false
+    },
+    {
+      "object_number": 4,
+      "object_name": "Vesta",
+      "config": {
+        "seed": 48,
+        "optimizer": "hybrid_optimize",
+        "n_points": 90,
+        "sun_dir": [
+          1.0,
+          0.2,
+          0.1
+        ],
+        "obs_dir": [
+          0.4,
+          -0.5,
+          0.7
+        ]
+      },
+      "output": {
+        "estimated_period_h": 6.299173944589192,
+        "estimated_pole_lon_rad": 1.2805554124586127,
+        "estimated_pole_lat_rad": 0.09640955815614008,
+        "objective": 0.00520918161232049
+      },
+      "used_reference_mesh_in_optimization": false
+    },
+    {
+      "object_number": 10,
+      "object_name": "Hygiea",
+      "config": {
+        "seed": 49,
+        "optimizer": "hybrid_optimize",
+        "n_points": 90,
+        "sun_dir": [
+          1.0,
+          0.2,
+          0.1
+        ],
+        "obs_dir": [
+          0.4,
+          -0.5,
+          0.7
+        ]
+      },
+      "output": {
+        "estimated_period_h": 6.298441360906782,
+        "estimated_pole_lon_rad": 0.8604840594176961,
+        "estimated_pole_lat_rad": 0.4184537908678577,
+        "objective": 0.047898191961379705
+      },
+      "used_reference_mesh_in_optimization": false
+    },
+    {
+      "object_number": 15,
+      "object_name": "Eunomia",
+      "config": {
+        "seed": 50,
+        "optimizer": "hybrid_optimize",
+        "n_points": 90,
+        "sun_dir": [
+          1.0,
+          0.2,
+          0.1
+        ],
+        "obs_dir": [
+          0.4,
+          -0.5,
+          0.7
+        ]
+      },
+      "output": {
+        "estimated_period_h": 6.291413361343832,
+        "estimated_pole_lon_rad": 1.2905728824718672,
+        "estimated_pole_lat_rad": 0.41120300072290755,
+        "objective": 0.04858291224622961
+      },
+      "used_reference_mesh_in_optimization": false
+    },
+    {
+      "object_number": 16,
+      "object_name": "Psyche",
+      "config": {
+        "seed": 51,
+        "optimizer": "hybrid_optimize",
+        "n_points": 90,
+        "sun_dir": [
+          1.0,
+          0.2,
+          0.1
+        ],
+        "obs_dir": [
+          0.4,
+          -0.5,
+          0.7
+        ]
+      },
+      "output": {
+        "estimated_period_h": 6.859877430061083,
+        "estimated_pole_lon_rad": 0.8603189871716399,
+        "estimated_pole_lat_rad": 0.4291085586212135,
+        "objective": 0.08564765678209414
+      },
+      "used_reference_mesh_in_optimization": false
+    },
+    {
+      "object_number": 21,
+      "object_name": "Lutetia",
+      "config": {
+        "seed": 52,
+        "optimizer": "hybrid_optimize",
+        "n_points": 90,
+        "sun_dir": [
+          1.0,
+          0.2,
+          0.1
+        ],
+        "obs_dir": [
+          0.4,
+          -0.5,
+          0.7
+        ]
+      },
+      "output": {
+        "estimated_period_h": 7.700978539882726,
+        "estimated_pole_lon_rad": 1.0004539564843116,
+        "estimated_pole_lat_rad": 0.09393956591601944,
+        "objective": 0.031021299953582986
+      },
+      "used_reference_mesh_in_optimization": false
+    },
+    {
+      "object_number": 22,
+      "object_name": "Kalliope",
+      "config": {
+        "seed": 53,
+        "optimizer": "hybrid_optimize",
+        "n_points": 90,
+        "sun_dir": [
+          1.0,
+          0.2,
+          0.1
+        ],
+        "obs_dir": [
+          0.4,
+          -0.5,
+          0.7
+        ]
+      },
+      "output": {
+        "estimated_period_h": 7.559256536497164,
+        "estimated_pole_lon_rad": 1.2847947575074583,
+        "estimated_pole_lat_rad": 0.41897080906297557,
+        "objective": 0.08113895906289086
+      },
+      "used_reference_mesh_in_optimization": false
+    },
+    {
+      "object_number": 41,
+      "object_name": "Daphne",
+      "config": {
+        "seed": 54,
+        "optimizer": "hybrid_optimize",
+        "n_points": 90,
+        "sun_dir": [
+          1.0,
+          0.2,
+          0.1
+        ],
+        "obs_dir": [
+          0.4,
+          -0.5,
+          0.7
+        ]
+      },
+      "output": {
+        "estimated_period_h": 6.999931067784557,
+        "estimated_pole_lon_rad": 0.7201607269721775,
+        "estimated_pole_lat_rad": 0.19914103180750198,
+        "objective": 0.06285149101724728
+      },
+      "used_reference_mesh_in_optimization": false
+    },
+    {
+      "object_number": 87,
+      "object_name": "Sylvia",
+      "config": {
+        "seed": 55,
+        "optimizer": "hybrid_optimize",
+        "n_points": 90,
+        "sun_dir": [
+          1.0,
+          0.2,
+          0.1
+        ],
+        "obs_dir": [
+          0.4,
+          -0.5,
+          0.7
+        ]
+      },
+      "output": {
+        "estimated_period_h": 6.440004137730936,
+        "estimated_pole_lon_rad": 1.2827077200149954,
+        "estimated_pole_lat_rad": -0.03668272568400621,
+        "objective": 0.07627515388652578
+      },
+      "used_reference_mesh_in_optimization": false
+    },
+    {
+      "object_number": 121,
+      "object_name": "Hermione",
+      "config": {
+        "seed": 56,
+        "optimizer": "hybrid_optimize",
+        "n_points": 90,
+        "sun_dir": [
+          1.0,
+          0.2,
+          0.1
+        ],
+        "obs_dir": [
+          0.4,
+          -0.5,
+          0.7
+        ]
+      },
+      "output": {
+        "estimated_period_h": 7.55982934976558,
+        "estimated_pole_lon_rad": 1.2800386747504433,
+        "estimated_pole_lat_rad": -0.009306210294613402,
+        "objective": 0.015205867038098406
+      },
+      "used_reference_mesh_in_optimization": false
+    },
+    {
+      "object_number": 130,
+      "object_name": "Elektra",
+      "config": {
+        "seed": 57,
+        "optimizer": "hybrid_optimize",
+        "n_points": 90,
+        "sun_dir": [
+          1.0,
+          0.2,
+          0.1
+        ],
+        "obs_dir": [
+          0.4,
+          -0.5,
+          0.7
+        ]
+      },
+      "output": {
+        "estimated_period_h": 6.85985539939056,
+        "estimated_pole_lon_rad": 1.279567191975655,
+        "estimated_pole_lat_rad": 0.09463487085303235,
+        "objective": 0.0022627286265306714
+      },
+      "used_reference_mesh_in_optimization": false
+    },
+    {
+      "object_number": 349,
+      "object_name": "Dembowska",
+      "config": {
+        "seed": 58,
+        "optimizer": "hybrid_optimize",
+        "n_points": 90,
+        "sun_dir": [
+          1.0,
+          0.2,
+          0.1
+        ],
+        "obs_dir": [
+          0.4,
+          -0.5,
+          0.7
+        ]
+      },
+      "output": {
+        "estimated_period_h": 6.299781659948907,
+        "estimated_pole_lon_rad": 1.2793475827765501,
+        "estimated_pole_lat_rad": 0.09505252491517718,
+        "objective": 0.0006348291669057984
+      },
+      "used_reference_mesh_in_optimization": false
+    },
+    {
+      "object_number": 511,
+      "object_name": "Davida",
+      "config": {
+        "seed": 59,
+        "optimizer": "hybrid_optimize",
+        "n_points": 90,
+        "sun_dir": [
+          1.0,
+          0.2,
+          0.1
+        ],
+        "obs_dir": [
+          0.4,
+          -0.5,
+          0.7
+        ]
+      },
+      "output": {
+        "estimated_period_h": 6.719870267178409,
+        "estimated_pole_lon_rad": 0.72065020608128,
+        "estimated_pole_lat_rad": -0.016135184153153105,
+        "objective": 0.023927277933461496
+      },
+      "used_reference_mesh_in_optimization": false
+    },
+    {
+      "object_number": 704,
+      "object_name": "Interamnia",
+      "config": {
+        "seed": 60,
+        "optimizer": "hybrid_optimize",
+        "n_points": 90,
+        "sun_dir": [
+          1.0,
+          0.2,
+          0.1
+        ],
+        "obs_dir": [
+          0.4,
+          -0.5,
+          0.7
+        ]
+      },
+      "output": {
+        "estimated_period_h": 6.298895074406548,
+        "estimated_pole_lon_rad": 1.279378462216477,
+        "estimated_pole_lat_rad": 0.20017559333074325,
+        "objective": 0.008990495712000324
+      },
+      "used_reference_mesh_in_optimization": false
+    },
+    {
+      "object_number": 253,
+      "object_name": "Mathilde",
+      "config": {
+        "seed": 61,
+        "optimizer": "hybrid_optimize",
+        "n_points": 90,
+        "sun_dir": [
+          1.0,
+          0.2,
+          0.1
+        ],
+        "obs_dir": [
+          0.4,
+          -0.5,
+          0.7
+        ]
+      },
+      "output": {
+        "estimated_period_h": 7.420090383157381,
+        "estimated_pole_lon_rad": 1.2811330433152772,
+        "estimated_pole_lat_rad": -0.021790204461635015,
+        "objective": 0.040515443008655165
+      },
+      "used_reference_mesh_in_optimization": false
+    }
+  ]
+}
