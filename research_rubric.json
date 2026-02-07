@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "created_at": "2026-02-07T00:15:59Z",
-  "updated_at": "2026-02-07T00:25:02.642320+00:00",
+  "updated_at": "2026-02-07T00:25:22.188459+00:00",
   "current_agent": "researcher",
   "agent_status": {
     "orchestrator": {
@@ -182,15 +182,15 @@
           "id": "item_017",
           "description": "Quantify benchmark performance against state-of-the-art references",
           "acceptance_criteria": "Comparison table reports metric deltas versus MPO LCInvert, SAGE, and KOALA on shared benchmark targets with identical data partitions",
-          "status": "in_progress",
-          "notes": null,
-          "error": null
+          "status": "failed",
+          "notes": "Generated our benchmark metrics and partial comparison artifact.",
+          "error": "Unable to execute MPO LCInvert/SAGE/KOALA on identical partitions in this environment; required reference binaries/harness unavailable."
         },
         {
           "id": "item_018",
           "description": "Evaluate sparse-data robustness under ablation",
           "acceptance_criteria": "Ablation study varies point count, apparition count, and phase-angle coverage; report shows failure boundary and accuracy trend curves",
-          "status": "pending",
+          "status": "in_progress",
           "notes": null,
           "error": null
         },
@@ -264,7 +264,7 @@
     "total_items": 25,
     "completed": 16,
     "in_progress": 1,
-    "failed": 0,
-    "pending": 8
+    "failed": 1,
+    "pending": 7
   }
 }

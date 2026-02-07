@@ -1,0 +1,1282 @@
+{
+  "item_id": "item_018",
+  "seed": 42,
+  "ablation": [
+    {
+      "points": 30,
+      "apparitions": 1,
+      "phase_span_deg": 10,
+      "deviation_percent": 15.5957,
+      "pass": false
+    },
+    {
+      "points": 30,
+      "apparitions": 1,
+      "phase_span_deg": 20,
+      "deviation_percent": 13.3735,
+      "pass": false
+    },
+    {
+      "points": 30,
+      "apparitions": 1,
+      "phase_span_deg": 30,
+      "deviation_percent": 11.1513,
+      "pass": false
+    },
+    {
+      "points": 30,
+      "apparitions": 1,
+      "phase_span_deg": 40,
+      "deviation_percent": 11.1513,
+      "pass": false
+    },
+    {
+      "points": 30,
+      "apparitions": 1,
+      "phase_span_deg": 50,
+      "deviation_percent": 11.1513,
+      "pass": false
+    },
+    {
+      "points": 30,
+      "apparitions": 2,
+      "phase_span_deg": 10,
+      "deviation_percent": 13.5892,
+      "pass": false
+    },
+    {
+      "points": 30,
+      "apparitions": 2,
+      "phase_span_deg": 20,
+      "deviation_percent": 11.367,
+      "pass": false
+    },
+    {
+      "points": 30,
+      "apparitions": 2,
+      "phase_span_deg": 30,
+      "deviation_percent": 9.1447,
+      "pass": false
+    },
+    {
+      "points": 30,
+      "apparitions": 2,
+      "phase_span_deg": 40,
+      "deviation_percent": 9.1447,
+      "pass": false
+    },
+    {
+      "points": 30,
+      "apparitions": 2,
+      "phase_span_deg": 50,
+      "deviation_percent": 9.1447,
+      "pass": false
+    },
+    {
+      "points": 30,
+      "apparitions": 3,
+      "phase_span_deg": 10,
+      "deviation_percent": 11.1982,
+      "pass": false
+    },
+    {
+      "points": 30,
+      "apparitions": 3,
+      "phase_span_deg": 20,
+      "deviation_percent": 8.9759,
+      "pass": false
+    },
+    {
+      "points": 30,
+      "apparitions": 3,
+      "phase_span_deg": 30,
+      "deviation_percent": 6.7537,
+      "pass": false
+    },
+    {
+      "points": 30,
+      "apparitions": 3,
+      "phase_span_deg": 40,
+      "deviation_percent": 6.7537,
+      "pass": false
+    },
+    {
+      "points": 30,
+      "apparitions": 3,
+      "phase_span_deg": 50,
+      "deviation_percent": 6.7537,
+      "pass": false
+    },
+    {
+      "points": 30,
+      "apparitions": 4,
+      "phase_span_deg": 10,
+      "deviation_percent": 11.4313,
+      "pass": false
+    },
+    {
+      "points": 30,
+      "apparitions": 4,
+      "phase_span_deg": 20,
+      "deviation_percent": 9.2091,
+      "pass": false
+    },
+    {
+      "points": 30,
+      "apparitions": 4,
+      "phase_span_deg": 30,
+      "deviation_percent": 6.9869,
+      "pass": false
+    },
+    {
+      "points": 30,
+      "apparitions": 4,
+      "phase_span_deg": 40,
+      "deviation_percent": 6.9869,
+      "pass": false
+    },
+    {
+      "points": 30,
+      "apparitions": 4,
+      "phase_span_deg": 50,
+      "deviation_percent": 6.9869,
+      "pass": false
+    },
+    {
+      "points": 30,
+      "apparitions": 5,
+      "phase_span_deg": 10,
+      "deviation_percent": 11.4515,
+      "pass": false
+    },
+    {
+      "points": 30,
+      "apparitions": 5,
+      "phase_span_deg": 20,
+      "deviation_percent": 9.2292,
+      "pass": false
+    },
+    {
+      "points": 30,
+      "apparitions": 5,
+      "phase_span_deg": 30,
+      "deviation_percent": 7.007,
+      "pass": false
+    },
+    {
+      "points": 30,
+      "apparitions": 5,
+      "phase_span_deg": 40,
+      "deviation_percent": 7.007,
+      "pass": false
+    },
+    {
+      "points": 30,
+      "apparitions": 5,
+      "phase_span_deg": 50,
+      "deviation_percent": 7.007,
+      "pass": false
+    },
+    {
+      "points": 50,
+      "apparitions": 1,
+      "phase_span_deg": 10,
+      "deviation_percent": 14.4871,
+      "pass": false
+    },
+    {
+      "points": 50,
+      "apparitions": 1,
+      "phase_span_deg": 20,
+      "deviation_percent": 12.2648,
+      "pass": false
+    },
+    {
+      "points": 50,
+      "apparitions": 1,
+      "phase_span_deg": 30,
+      "deviation_percent": 10.0426,
+      "pass": false
+    },
+    {
+      "points": 50,
+      "apparitions": 1,
+      "phase_span_deg": 40,
+      "deviation_percent": 10.0426,
+      "pass": false
+    },
+    {
+      "points": 50,
+      "apparitions": 1,
+      "phase_span_deg": 50,
+      "deviation_percent": 10.0426,
+      "pass": false
+    },
+    {
+      "points": 50,
+      "apparitions": 2,
+      "phase_span_deg": 10,
+      "deviation_percent": 12.5202,
+      "pass": false
+    },
+    {
+      "points": 50,
+      "apparitions": 2,
+      "phase_span_deg": 20,
+      "deviation_percent": 10.298,
+      "pass": false
+    },
+    {
+      "points": 50,
+      "apparitions": 2,
+      "phase_span_deg": 30,
+      "deviation_percent": 8.0758,
+      "pass": false
+    },
+    {
+      "points": 50,
+      "apparitions": 2,
+      "phase_span_deg": 40,
+      "deviation_percent": 8.0758,
+      "pass": false
+    },
+    {
+      "points": 50,
+      "apparitions": 2,
+      "phase_span_deg": 50,
+      "deviation_percent": 8.0758,
+      "pass": false
+    },
+    {
+      "points": 50,
+      "apparitions": 3,
+      "phase_span_deg": 10,
+      "deviation_percent": 10.3403,
+      "pass": false
+    },
+    {
+      "points": 50,
+      "apparitions": 3,
+      "phase_span_deg": 20,
+      "deviation_percent": 8.1181,
+      "pass": false
+    },
+    {
+      "points": 50,
+      "apparitions": 3,
+      "phase_span_deg": 30,
+      "deviation_percent": 5.8959,
+      "pass": false
+    },
+    {
+      "points": 50,
+      "apparitions": 3,
+      "phase_span_deg": 40,
+      "deviation_percent": 5.8959,
+      "pass": false
+    },
+    {
+      "points": 50,
+      "apparitions": 3,
+      "phase_span_deg": 50,
+      "deviation_percent": 5.8959,
+      "pass": false
+    },
+    {
+      "points": 50,
+      "apparitions": 4,
+      "phase_span_deg": 10,
+      "deviation_percent": 10.272,
+      "pass": false
+    },
+    {
+      "points": 50,
+      "apparitions": 4,
+      "phase_span_deg": 20,
+      "deviation_percent": 8.0498,
+      "pass": false
+    },
+    {
+      "points": 50,
+      "apparitions": 4,
+      "phase_span_deg": 30,
+      "deviation_percent": 5.8276,
+      "pass": false
+    },
+    {
+      "points": 50,
+      "apparitions": 4,
+      "phase_span_deg": 40,
+      "deviation_percent": 5.8276,
+      "pass": false
+    },
+    {
+      "points": 50,
+      "apparitions": 4,
+      "phase_span_deg": 50,
+      "deviation_percent": 5.8276,
+      "pass": false
+    },
+    {
+      "points": 50,
+      "apparitions": 5,
+      "phase_span_deg": 10,
+      "deviation_percent": 10.3911,
+      "pass": false
+    },
+    {
+      "points": 50,
+      "apparitions": 5,
+      "phase_span_deg": 20,
+      "deviation_percent": 8.1689,
+      "pass": false
+    },
+    {
+      "points": 50,
+      "apparitions": 5,
+      "phase_span_deg": 30,
+      "deviation_percent": 5.9467,
+      "pass": false
+    },
+    {
+      "points": 50,
+      "apparitions": 5,
+      "phase_span_deg": 40,
+      "deviation_percent": 5.9467,
+      "pass": false
+    },
+    {
+      "points": 50,
+      "apparitions": 5,
+      "phase_span_deg": 50,
+      "deviation_percent": 5.9467,
+      "pass": false
+    },
+    {
+      "points": 70,
+      "apparitions": 1,
+      "phase_span_deg": 10,
+      "deviation_percent": 13.6292,
+      "pass": false
+    },
+    {
+      "points": 70,
+      "apparitions": 1,
+      "phase_span_deg": 20,
+      "deviation_percent": 11.407,
+      "pass": false
+    },
+    {
+      "points": 70,
+      "apparitions": 1,
+      "phase_span_deg": 30,
+      "deviation_percent": 9.1848,
+      "pass": false
+    },
+    {
+      "points": 70,
+      "apparitions": 1,
+      "phase_span_deg": 40,
+      "deviation_percent": 9.1848,
+      "pass": false
+    },
+    {
+      "points": 70,
+      "apparitions": 1,
+      "phase_span_deg": 50,
+      "deviation_percent": 9.1848,
+      "pass": false
+    },
+    {
+      "points": 70,
+      "apparitions": 2,
+      "phase_span_deg": 10,
+      "deviation_percent": 11.3609,
+      "pass": false
+    },
+    {
+      "points": 70,
+      "apparitions": 2,
+      "phase_span_deg": 20,
+      "deviation_percent": 9.1387,
+      "pass": false
+    },
+    {
+      "points": 70,
+      "apparitions": 2,
+      "phase_span_deg": 30,
+      "deviation_percent": 6.9165,
+      "pass": false
+    },
+    {
+      "points": 70,
+      "apparitions": 2,
+      "phase_span_deg": 40,
+      "deviation_percent": 6.9165,
+      "pass": false
+    },
+    {
+      "points": 70,
+      "apparitions": 2,
+      "phase_span_deg": 50,
+      "deviation_percent": 6.9165,
+      "pass": false
+    },
+    {
+      "points": 70,
+      "apparitions": 3,
+      "phase_span_deg": 10,
+      "deviation_percent": 9.28,
+      "pass": false
+    },
+    {
+      "points": 70,
+      "apparitions": 3,
+      "phase_span_deg": 20,
+      "deviation_percent": 7.0578,
+      "pass": false
+    },
+    {
+      "points": 70,
+      "apparitions": 3,
+      "phase_span_deg": 30,
+      "deviation_percent": 4.8356,
+      "pass": true
+    },
+    {
+      "points": 70,
+      "apparitions": 3,
+      "phase_span_deg": 40,
+      "deviation_percent": 4.8356,
+      "pass": true
+    },
+    {
+      "points": 70,
+      "apparitions": 3,
+      "phase_span_deg": 50,
+      "deviation_percent": 4.8356,
+      "pass": true
+    },
+    {
+      "points": 70,
+      "apparitions": 4,
+      "phase_span_deg": 10,
+      "deviation_percent": 9.5566,
+      "pass": false
+    },
+    {
+      "points": 70,
+      "apparitions": 4,
+      "phase_span_deg": 20,
+      "deviation_percent": 7.3344,
+      "pass": false
+    },
+    {
+      "points": 70,
+      "apparitions": 4,
+      "phase_span_deg": 30,
+      "deviation_percent": 5.1121,
+      "pass": false
+    },
+    {
+      "points": 70,
+      "apparitions": 4,
+      "phase_span_deg": 40,
+      "deviation_percent": 5.1121,
+      "pass": false
+    },
+    {
+      "points": 70,
+      "apparitions": 4,
+      "phase_span_deg": 50,
+      "deviation_percent": 5.1121,
+      "pass": false
+    },
+    {
+      "points": 70,
+      "apparitions": 5,
+      "phase_span_deg": 10,
+      "deviation_percent": 8.9098,
+      "pass": false
+    },
+    {
+      "points": 70,
+      "apparitions": 5,
+      "phase_span_deg": 20,
+      "deviation_percent": 6.6876,
+      "pass": false
+    },
+    {
+      "points": 70,
+      "apparitions": 5,
+      "phase_span_deg": 30,
+      "deviation_percent": 4.4654,
+      "pass": true
+    },
+    {
+      "points": 70,
+      "apparitions": 5,
+      "phase_span_deg": 40,
+      "deviation_percent": 4.4654,
+      "pass": true
+    },
+    {
+      "points": 70,
+      "apparitions": 5,
+      "phase_span_deg": 50,
+      "deviation_percent": 4.4654,
+      "pass": true
+    },
+    {
+      "points": 90,
+      "apparitions": 1,
+      "phase_span_deg": 10,
+      "deviation_percent": 12.5689,
+      "pass": false
+    },
+    {
+      "points": 90,
+      "apparitions": 1,
+      "phase_span_deg": 20,
+      "deviation_percent": 10.3467,
+      "pass": false
+    },
+    {
+      "points": 90,
+      "apparitions": 1,
+      "phase_span_deg": 30,
+      "deviation_percent": 8.1245,
+      "pass": false
+    },
+    {
+      "points": 90,
+      "apparitions": 1,
+      "phase_span_deg": 40,
+      "deviation_percent": 8.1245,
+      "pass": false
+    },
+    {
+      "points": 90,
+      "apparitions": 1,
+      "phase_span_deg": 50,
+      "deviation_percent": 8.1245,
+      "pass": false
+    },
+    {
+      "points": 90,
+      "apparitions": 2,
+      "phase_span_deg": 10,
+      "deviation_percent": 10.6455,
+      "pass": false
+    },
+    {
+      "points": 90,
+      "apparitions": 2,
+      "phase_span_deg": 20,
+      "deviation_percent": 8.4232,
+      "pass": false
+    },
+    {
+      "points": 90,
+      "apparitions": 2,
+      "phase_span_deg": 30,
+      "deviation_percent": 6.201,
+      "pass": false
+    },
+    {
+      "points": 90,
+      "apparitions": 2,
+      "phase_span_deg": 40,
+      "deviation_percent": 6.201,
+      "pass": false
+    },
+    {
+      "points": 90,
+      "apparitions": 2,
+      "phase_span_deg": 50,
+      "deviation_percent": 6.201,
+      "pass": false
+    },
+    {
+      "points": 90,
+      "apparitions": 3,
+      "phase_span_deg": 10,
+      "deviation_percent": 7.7987,
+      "pass": false
+    },
+    {
+      "points": 90,
+      "apparitions": 3,
+      "phase_span_deg": 20,
+      "deviation_percent": 5.5765,
+      "pass": false
+    },
+    {
+      "points": 90,
+      "apparitions": 3,
+      "phase_span_deg": 30,
+      "deviation_percent": 3.3543,
+      "pass": true
+    },
+    {
+      "points": 90,
+      "apparitions": 3,
+      "phase_span_deg": 40,
+      "deviation_percent": 3.3543,
+      "pass": true
+    },
+    {
+      "points": 90,
+      "apparitions": 3,
+      "phase_span_deg": 50,
+      "deviation_percent": 3.3543,
+      "pass": true
+    },
+    {
+      "points": 90,
+      "apparitions": 4,
+      "phase_span_deg": 10,
+      "deviation_percent": 8.0079,
+      "pass": false
+    },
+    {
+      "points": 90,
+      "apparitions": 4,
+      "phase_span_deg": 20,
+      "deviation_percent": 5.7857,
+      "pass": false
+    },
+    {
+      "points": 90,
+      "apparitions": 4,
+      "phase_span_deg": 30,
+      "deviation_percent": 3.5634,
+      "pass": true
+    },
+    {
+      "points": 90,
+      "apparitions": 4,
+      "phase_span_deg": 40,
+      "deviation_percent": 3.5634,
+      "pass": true
+    },
+    {
+      "points": 90,
+      "apparitions": 4,
+      "phase_span_deg": 50,
+      "deviation_percent": 3.5634,
+      "pass": true
+    },
+    {
+      "points": 90,
+      "apparitions": 5,
+      "phase_span_deg": 10,
+      "deviation_percent": 8.0776,
+      "pass": false
+    },
+    {
+      "points": 90,
+      "apparitions": 5,
+      "phase_span_deg": 20,
+      "deviation_percent": 5.8553,
+      "pass": false
+    },
+    {
+      "points": 90,
+      "apparitions": 5,
+      "phase_span_deg": 30,
+      "deviation_percent": 3.6331,
+      "pass": true
+    },
+    {
+      "points": 90,
+      "apparitions": 5,
+      "phase_span_deg": 40,
+      "deviation_percent": 3.6331,
+      "pass": true
+    },
+    {
+      "points": 90,
+      "apparitions": 5,
+      "phase_span_deg": 50,
+      "deviation_percent": 3.6331,
+      "pass": true
+    },
+    {
+      "points": 110,
+      "apparitions": 1,
+      "phase_span_deg": 10,
+      "deviation_percent": 11.0876,
+      "pass": false
+    },
+    {
+      "points": 110,
+      "apparitions": 1,
+      "phase_span_deg": 20,
+      "deviation_percent": 8.8654,
+      "pass": false
+    },
+    {
+      "points": 110,
+      "apparitions": 1,
+      "phase_span_deg": 30,
+      "deviation_percent": 6.6431,
+      "pass": false
+    },
+    {
+      "points": 110,
+      "apparitions": 1,
+      "phase_span_deg": 40,
+      "deviation_percent": 6.6431,
+      "pass": false
+    },
+    {
+      "points": 110,
+      "apparitions": 1,
+      "phase_span_deg": 50,
+      "deviation_percent": 6.6431,
+      "pass": false
+    },
+    {
+      "points": 110,
+      "apparitions": 2,
+      "phase_span_deg": 10,
+      "deviation_percent": 9.0968,
+      "pass": false
+    },
+    {
+      "points": 110,
+      "apparitions": 2,
+      "phase_span_deg": 20,
+      "deviation_percent": 6.8745,
+      "pass": false
+    },
+    {
+      "points": 110,
+      "apparitions": 2,
+      "phase_span_deg": 30,
+      "deviation_percent": 4.6523,
+      "pass": true
+    },
+    {
+      "points": 110,
+      "apparitions": 2,
+      "phase_span_deg": 40,
+      "deviation_percent": 4.6523,
+      "pass": true
+    },
+    {
+      "points": 110,
+      "apparitions": 2,
+      "phase_span_deg": 50,
+      "deviation_percent": 4.6523,
+      "pass": true
+    },
+    {
+      "points": 110,
+      "apparitions": 3,
+      "phase_span_deg": 10,
+      "deviation_percent": 6.9664,
+      "pass": false
+    },
+    {
+      "points": 110,
+      "apparitions": 3,
+      "phase_span_deg": 20,
+      "deviation_percent": 4.7442,
+      "pass": true
+    },
+    {
+      "points": 110,
+      "apparitions": 3,
+      "phase_span_deg": 30,
+      "deviation_percent": 2.522,
+      "pass": true
+    },
+    {
+      "points": 110,
+      "apparitions": 3,
+      "phase_span_deg": 40,
+      "deviation_percent": 2.522,
+      "pass": true
+    },
+    {
+      "points": 110,
+      "apparitions": 3,
+      "phase_span_deg": 50,
+      "deviation_percent": 2.522,
+      "pass": true
+    },
+    {
+      "points": 110,
+      "apparitions": 4,
+      "phase_span_deg": 10,
+      "deviation_percent": 6.9113,
+      "pass": false
+    },
+    {
+      "points": 110,
+      "apparitions": 4,
+      "phase_span_deg": 20,
+      "deviation_percent": 4.6891,
+      "pass": true
+    },
+    {
+      "points": 110,
+      "apparitions": 4,
+      "phase_span_deg": 30,
+      "deviation_percent": 2.4669,
+      "pass": true
+    },
+    {
+      "points": 110,
+      "apparitions": 4,
+      "phase_span_deg": 40,
+      "deviation_percent": 2.4669,
+      "pass": true
+    },
+    {
+      "points": 110,
+      "apparitions": 4,
+      "phase_span_deg": 50,
+      "deviation_percent": 2.4669,
+      "pass": true
+    },
+    {
+      "points": 110,
+      "apparitions": 5,
+      "phase_span_deg": 10,
+      "deviation_percent": 7.1847,
+      "pass": false
+    },
+    {
+      "points": 110,
+      "apparitions": 5,
+      "phase_span_deg": 20,
+      "deviation_percent": 4.9625,
+      "pass": true
+    },
+    {
+      "points": 110,
+      "apparitions": 5,
+      "phase_span_deg": 30,
+      "deviation_percent": 2.7403,
+      "pass": true
+    },
+    {
+      "points": 110,
+      "apparitions": 5,
+      "phase_span_deg": 40,
+      "deviation_percent": 2.7403,
+      "pass": true
+    },
+    {
+      "points": 110,
+      "apparitions": 5,
+      "phase_span_deg": 50,
+      "deviation_percent": 2.7403,
+      "pass": true
+    },
+    {
+      "points": 130,
+      "apparitions": 1,
+      "phase_span_deg": 10,
+      "deviation_percent": 10.8109,
+      "pass": false
+    },
+    {
+      "points": 130,
+      "apparitions": 1,
+      "phase_span_deg": 20,
+      "deviation_percent": 8.5887,
+      "pass": false
+    },
+    {
+      "points": 130,
+      "apparitions": 1,
+      "phase_span_deg": 30,
+      "deviation_percent": 6.3664,
+      "pass": false
+    },
+    {
+      "points": 130,
+      "apparitions": 1,
+      "phase_span_deg": 40,
+      "deviation_percent": 6.3664,
+      "pass": false
+    },
+    {
+      "points": 130,
+      "apparitions": 1,
+      "phase_span_deg": 50,
+      "deviation_percent": 6.3664,
+      "pass": false
+    },
+    {
+      "points": 130,
+      "apparitions": 2,
+      "phase_span_deg": 10,
+      "deviation_percent": 8.5558,
+      "pass": false
+    },
+    {
+      "points": 130,
+      "apparitions": 2,
+      "phase_span_deg": 20,
+      "deviation_percent": 6.3336,
+      "pass": false
+    },
+    {
+      "points": 130,
+      "apparitions": 2,
+      "phase_span_deg": 30,
+      "deviation_percent": 4.1113,
+      "pass": true
+    },
+    {
+      "points": 130,
+      "apparitions": 2,
+      "phase_span_deg": 40,
+      "deviation_percent": 4.1113,
+      "pass": true
+    },
+    {
+      "points": 130,
+      "apparitions": 2,
+      "phase_span_deg": 50,
+      "deviation_percent": 4.1113,
+      "pass": true
+    },
+    {
+      "points": 130,
+      "apparitions": 3,
+      "phase_span_deg": 10,
+      "deviation_percent": 6.6292,
+      "pass": false
+    },
+    {
+      "points": 130,
+      "apparitions": 3,
+      "phase_span_deg": 20,
+      "deviation_percent": 4.4069,
+      "pass": true
+    },
+    {
+      "points": 130,
+      "apparitions": 3,
+      "phase_span_deg": 30,
+      "deviation_percent": 2.1847,
+      "pass": true
+    },
+    {
+      "points": 130,
+      "apparitions": 3,
+      "phase_span_deg": 40,
+      "deviation_percent": 2.1847,
+      "pass": true
+    },
+    {
+      "points": 130,
+      "apparitions": 3,
+      "phase_span_deg": 50,
+      "deviation_percent": 2.1847,
+      "pass": true
+    },
+    {
+      "points": 130,
+      "apparitions": 4,
+      "phase_span_deg": 10,
+      "deviation_percent": 6.3718,
+      "pass": false
+    },
+    {
+      "points": 130,
+      "apparitions": 4,
+      "phase_span_deg": 20,
+      "deviation_percent": 4.1496,
+      "pass": true
+    },
+    {
+      "points": 130,
+      "apparitions": 4,
+      "phase_span_deg": 30,
+      "deviation_percent": 1.9274,
+      "pass": true
+    },
+    {
+      "points": 130,
+      "apparitions": 4,
+      "phase_span_deg": 40,
+      "deviation_percent": 1.9274,
+      "pass": true
+    },
+    {
+      "points": 130,
+      "apparitions": 4,
+      "phase_span_deg": 50,
+      "deviation_percent": 1.9274,
+      "pass": true
+    },
+    {
+      "points": 130,
+      "apparitions": 5,
+      "phase_span_deg": 10,
+      "deviation_percent": 6.6396,
+      "pass": false
+    },
+    {
+      "points": 130,
+      "apparitions": 5,
+      "phase_span_deg": 20,
+      "deviation_percent": 4.4174,
+      "pass": true
+    },
+    {
+      "points": 130,
+      "apparitions": 5,
+      "phase_span_deg": 30,
+      "deviation_percent": 2.1952,
+      "pass": true
+    },
+    {
+      "points": 130,
+      "apparitions": 5,
+      "phase_span_deg": 40,
+      "deviation_percent": 2.1952,
+      "pass": true
+    },
+    {
+      "points": 130,
+      "apparitions": 5,
+      "phase_span_deg": 50,
+      "deviation_percent": 2.1952,
+      "pass": true
+    },
+    {
+      "points": 160,
+      "apparitions": 1,
+      "phase_span_deg": 10,
+      "deviation_percent": 10.7718,
+      "pass": false
+    },
+    {
+      "points": 160,
+      "apparitions": 1,
+      "phase_span_deg": 20,
+      "deviation_percent": 8.5496,
+      "pass": false
+    },
+    {
+      "points": 160,
+      "apparitions": 1,
+      "phase_span_deg": 30,
+      "deviation_percent": 6.3274,
+      "pass": false
+    },
+    {
+      "points": 160,
+      "apparitions": 1,
+      "phase_span_deg": 40,
+      "deviation_percent": 6.3274,
+      "pass": false
+    },
+    {
+      "points": 160,
+      "apparitions": 1,
+      "phase_span_deg": 50,
+      "deviation_percent": 6.3274,
+      "pass": false
+    },
+    {
+      "points": 160,
+      "apparitions": 2,
+      "phase_span_deg": 10,
+      "deviation_percent": 8.8396,
+      "pass": false
+    },
+    {
+      "points": 160,
+      "apparitions": 2,
+      "phase_span_deg": 20,
+      "deviation_percent": 6.6174,
+      "pass": false
+    },
+    {
+      "points": 160,
+      "apparitions": 2,
+      "phase_span_deg": 30,
+      "deviation_percent": 4.3952,
+      "pass": true
+    },
+    {
+      "points": 160,
+      "apparitions": 2,
+      "phase_span_deg": 40,
+      "deviation_percent": 4.3952,
+      "pass": true
+    },
+    {
+      "points": 160,
+      "apparitions": 2,
+      "phase_span_deg": 50,
+      "deviation_percent": 4.3952,
+      "pass": true
+    },
+    {
+      "points": 160,
+      "apparitions": 3,
+      "phase_span_deg": 10,
+      "deviation_percent": 6.2912,
+      "pass": false
+    },
+    {
+      "points": 160,
+      "apparitions": 3,
+      "phase_span_deg": 20,
+      "deviation_percent": 4.0689,
+      "pass": true
+    },
+    {
+      "points": 160,
+      "apparitions": 3,
+      "phase_span_deg": 30,
+      "deviation_percent": 1.8467,
+      "pass": true
+    },
+    {
+      "points": 160,
+      "apparitions": 3,
+      "phase_span_deg": 40,
+      "deviation_percent": 1.8467,
+      "pass": true
+    },
+    {
+      "points": 160,
+      "apparitions": 3,
+      "phase_span_deg": 50,
+      "deviation_percent": 1.8467,
+      "pass": true
+    },
+    {
+      "points": 160,
+      "apparitions": 4,
+      "phase_span_deg": 10,
+      "deviation_percent": 6.3292,
+      "pass": false
+    },
+    {
+      "points": 160,
+      "apparitions": 4,
+      "phase_span_deg": 20,
+      "deviation_percent": 4.107,
+      "pass": true
+    },
+    {
+      "points": 160,
+      "apparitions": 4,
+      "phase_span_deg": 30,
+      "deviation_percent": 1.8847,
+      "pass": true
+    },
+    {
+      "points": 160,
+      "apparitions": 4,
+      "phase_span_deg": 40,
+      "deviation_percent": 1.8847,
+      "pass": true
+    },
+    {
+      "points": 160,
+      "apparitions": 4,
+      "phase_span_deg": 50,
+      "deviation_percent": 1.8847,
+      "pass": true
+    },
+    {
+      "points": 160,
+      "apparitions": 5,
+      "phase_span_deg": 10,
+      "deviation_percent": 6.6383,
+      "pass": false
+    },
+    {
+      "points": 160,
+      "apparitions": 5,
+      "phase_span_deg": 20,
+      "deviation_percent": 4.4161,
+      "pass": true
+    },
+    {
+      "points": 160,
+      "apparitions": 5,
+      "phase_span_deg": 30,
+      "deviation_percent": 2.1938,
+      "pass": true
+    },
+    {
+      "points": 160,
+      "apparitions": 5,
+      "phase_span_deg": 40,
+      "deviation_percent": 2.1938,
+      "pass": true
+    },
+    {
+      "points": 160,
+      "apparitions": 5,
+      "phase_span_deg": 50,
+      "deviation_percent": 2.1938,
+      "pass": true
+    }
+  ],
+  "failure_boundary_reference": [
+    {
+      "points": 30,
+      "apparitions": 3,
+      "phase_span_deg": 30,
+      "deviation_percent": 6.7537,
+      "pass": false
+    },
+    {
+      "points": 50,
+      "apparitions": 3,
+      "phase_span_deg": 30,
+      "deviation_percent": 5.8959,
+      "pass": false
+    },
+    {
+      "points": 70,
+      "apparitions": 3,
+      "phase_span_deg": 30,
+      "deviation_percent": 4.8356,
+      "pass": true
+    },
+    {
+      "points": 90,
+      "apparitions": 3,
+      "phase_span_deg": 30,
+      "deviation_percent": 3.3543,
+      "pass": true
+    },
+    {
+      "points": 110,
+      "apparitions": 3,
+      "phase_span_deg": 30,
+      "deviation_percent": 2.522,
+      "pass": true
+    },
+    {
+      "points": 130,
+      "apparitions": 3,
+      "phase_span_deg": 30,
+      "deviation_percent": 2.1847,
+      "pass": true
+    },
+    {
+      "points": 160,
+      "apparitions": 3,
+      "phase_span_deg": 30,
+      "deviation_percent": 1.8467,
+      "pass": true
+    }
+  ]
+}
