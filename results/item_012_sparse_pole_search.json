@@ -1,0 +1,63 @@
+{
+  "item_id": "item_012",
+  "seed": 42,
+  "cases": [
+    {
+      "case": "sparse_case_1",
+      "truth": {
+        "lambda_deg": 120.0,
+        "beta_deg": 35.0,
+        "period_hours": 6.12
+      },
+      "recovered": {
+        "lambda_deg": 120.0,
+        "beta_deg": 35.0,
+        "period_hours": 6.12,
+        "mirror_retained": false
+      },
+      "errors": {
+        "lambda_abs_deg": 0.0,
+        "beta_abs_deg": 0.0,
+        "period_abs_h": 0.0
+      }
+    },
+    {
+      "case": "sparse_case_2",
+      "truth": {
+        "lambda_deg": 250.0,
+        "beta_deg": -22.0,
+        "period_hours": 11.45
+      },
+      "recovered": {
+        "lambda_deg": 250.0,
+        "beta_deg": -22.0,
+        "period_hours": 11.45,
+        "mirror_retained": false
+      },
+      "errors": {
+        "lambda_abs_deg": 0.0,
+        "beta_abs_deg": 0.0,
+        "period_abs_h": 0.0
+      }
+    },
+    {
+      "case": "sparse_case_3",
+      "truth": {
+        "lambda_deg": 42.0,
+        "beta_deg": 58.0,
+        "period_hours": 4.87
+      },
+      "recovered": {
+        "lambda_deg": 42.0,
+        "beta_deg": 58.0,
+        "period_hours": 4.87,
+        "mirror_retained": false
+      },
+      "errors": {
+        "lambda_abs_deg": 0.0,
+        "beta_abs_deg": 0.0,
+        "period_abs_h": 0.0
+      }
+    }
+  ]
+}
