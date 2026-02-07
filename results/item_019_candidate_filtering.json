@@ -1,10 +1,50 @@
 {
   "item_id": "item_019",
-  "generated_at": "2026-02-07T00:34:36.388965+00:00",
+  "generated_at": "2026-02-07T00:39:43.608283+00:00",
   "seed": 42,
-  "input_pool_size": 45,
-  "selected_count": 2,
+  "input_pool_size": 160,
+  "selected_count": 15,
   "selected": [
+    {
+      "number": 3122,
+      "name": "3122 Florence (1981 ET3)",
+      "neo": true,
+      "diameter_km": 4.9,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 2.3581,
+      "lightcurve_count": 35,
+      "sparse_points_est": 210,
+      "apparitions": 23,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": true
+      },
+      "score": 375
+    },
+    {
+      "number": 5143,
+      "name": "5143 Heracles (1991 VL)",
+      "neo": true,
+      "diameter_km": 4.843,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 2.7063,
+      "lightcurve_count": 33,
+      "sparse_points_est": 198,
+      "apparitions": 18,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": true
+      },
+      "score": 373
+    },
     {
       "number": 1866,
       "name": "1866 Sisyphus (1972 XA)",
@@ -44,6 +84,226 @@
         "p4": true
       },
       "score": 370
+    },
+    {
+      "number": 4055,
+      "name": "4055 Magellan (1985 DO2)",
+      "neo": true,
+      "diameter_km": 2.49,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 7.475,
+      "lightcurve_count": 30,
+      "sparse_points_est": 180,
+      "apparitions": 16,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": true
+      },
+      "score": 370
+    },
+    {
+      "number": 4183,
+      "name": "4183 Cuno (1959 LM)",
+      "neo": true,
+      "diameter_km": 3.651,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 3.5595,
+      "lightcurve_count": 30,
+      "sparse_points_est": 180,
+      "apparitions": 12,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": true
+      },
+      "score": 370
+    },
+    {
+      "number": 6455,
+      "name": "6455 (1992 HE)",
+      "neo": true,
+      "diameter_km": 4.626,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 2.7361,
+      "lightcurve_count": 25,
+      "sparse_points_est": 150,
+      "apparitions": 14,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": true
+      },
+      "score": 365
+    },
+    {
+      "number": 4179,
+      "name": "4179 Toutatis (1989 AC)",
+      "neo": true,
+      "diameter_km": 5.4,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 176.0,
+      "lightcurve_count": 24,
+      "sparse_points_est": 144,
+      "apparitions": 10,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": true
+      },
+      "score": 364
+    },
+    {
+      "number": 2212,
+      "name": "2212 Hephaistos (1978 SB)",
+      "neo": true,
+      "diameter_km": 5.7,
+      "lcdb_u": "2",
+      "lcdb_u_value": 2.0,
+      "period_hours": 48.0,
+      "lightcurve_count": 21,
+      "sparse_points_est": 126,
+      "apparitions": 7,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": true
+      },
+      "score": 361
+    },
+    {
+      "number": 7822,
+      "name": "7822 (1991 CS)",
+      "neo": true,
+      "diameter_km": 1.602,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 2.3896,
+      "lightcurve_count": 21,
+      "sparse_points_est": 126,
+      "apparitions": 11,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": true
+      },
+      "score": 361
+    },
+    {
+      "number": 3554,
+      "name": "3554 Amun (1986 EB)",
+      "neo": true,
+      "diameter_km": 3.341,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 2.53001,
+      "lightcurve_count": 20,
+      "sparse_points_est": 120,
+      "apparitions": 11,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": true
+      },
+      "score": 360
+    },
+    {
+      "number": 5653,
+      "name": "5653 Camarillo (1992 WD5)",
+      "neo": true,
+      "diameter_km": 1.537,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 4.834,
+      "lightcurve_count": 20,
+      "sparse_points_est": 120,
+      "apparitions": 10,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": true
+      },
+      "score": 360
+    },
+    {
+      "number": 3552,
+      "name": "3552 Don Quixote (1983 SA)",
+      "neo": true,
+      "diameter_km": 19.0,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 6.665,
+      "lightcurve_count": 19,
+      "sparse_points_est": 114,
+      "apparitions": 10,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": true
+      },
+      "score": 359
+    },
+    {
+      "number": 5626,
+      "name": "5626 Melissabrucker (1991 FE)",
+      "neo": true,
+      "diameter_km": null,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 2.48611,
+      "lightcurve_count": 19,
+      "sparse_points_est": 114,
+      "apparitions": 7,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": true
+      },
+      "score": 359
+    },
+    {
+      "number": 5604,
+      "name": "5604 (1992 FE)",
+      "neo": true,
+      "diameter_km": 0.55,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 5.3375,
+      "lightcurve_count": 17,
+      "sparse_points_est": 102,
+      "apparitions": 8,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": true
+      },
+      "score": 357
     }
   ],
   "audit": [
@@ -946,6 +1206,2306 @@
         "p4": false
       },
       "score": 279
+    },
+    {
+      "number": 2100,
+      "name": "2100 Ra-Shalom (1978 RA)",
+      "neo": true,
+      "diameter_km": 2.3,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 19.797,
+      "lightcurve_count": 34,
+      "sparse_points_est": 204,
+      "apparitions": 14,
+      "in_damit": true,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": false,
+        "p4": true
+      },
+      "score": 284
+    },
+    {
+      "number": 2101,
+      "name": "2101 Adonis (1936 CA)",
+      "neo": true,
+      "diameter_km": 0.6,
+      "lcdb_u": "",
+      "lcdb_u_value": null,
+      "period_hours": null,
+      "lightcurve_count": 0,
+      "sparse_points_est": 0,
+      "apparitions": 0,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": false,
+        "p3": true,
+        "p4": false
+      },
+      "score": 190
+    },
+    {
+      "number": 2102,
+      "name": "2102 Tantalus (1975 YA)",
+      "neo": true,
+      "diameter_km": 1.649,
+      "lcdb_u": "2+",
+      "lcdb_u_value": 2.0,
+      "period_hours": 2.384,
+      "lightcurve_count": 14,
+      "sparse_points_est": 84,
+      "apparitions": 5,
+      "in_damit": true,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": false,
+        "p4": false
+      },
+      "score": 194
+    },
+    {
+      "number": 2135,
+      "name": "2135 Aristaeus (1977 HA)",
+      "neo": true,
+      "diameter_km": null,
+      "lcdb_u": "",
+      "lcdb_u_value": null,
+      "period_hours": null,
+      "lightcurve_count": 0,
+      "sparse_points_est": 0,
+      "apparitions": 0,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": false,
+        "p3": true,
+        "p4": false
+      },
+      "score": 190
+    },
+    {
+      "number": 2201,
+      "name": "2201 Oljato (1947 XC)",
+      "neo": true,
+      "diameter_km": 1.8,
+      "lcdb_u": "2-",
+      "lcdb_u_value": 2.0,
+      "period_hours": 26.0,
+      "lightcurve_count": 10,
+      "sparse_points_est": 60,
+      "apparitions": 3,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": false
+      },
+      "score": 280
+    },
+    {
+      "number": 2202,
+      "name": "2202 Pele (1972 RA)",
+      "neo": true,
+      "diameter_km": null,
+      "lcdb_u": "",
+      "lcdb_u_value": null,
+      "period_hours": null,
+      "lightcurve_count": 0,
+      "sparse_points_est": 0,
+      "apparitions": 0,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": false,
+        "p3": true,
+        "p4": false
+      },
+      "score": 190
+    },
+    {
+      "number": 2212,
+      "name": "2212 Hephaistos (1978 SB)",
+      "neo": true,
+      "diameter_km": 5.7,
+      "lcdb_u": "2",
+      "lcdb_u_value": 2.0,
+      "period_hours": 48.0,
+      "lightcurve_count": 21,
+      "sparse_points_est": 126,
+      "apparitions": 7,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": true
+      },
+      "score": 361
+    },
+    {
+      "number": 2329,
+      "name": "2329 Orthos (1976 WA)",
+      "neo": true,
+      "diameter_km": null,
+      "lcdb_u": "3-",
+      "lcdb_u_value": 3.0,
+      "period_hours": 4.6473,
+      "lightcurve_count": 7,
+      "sparse_points_est": 42,
+      "apparitions": 3,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": false
+      },
+      "score": 277
+    },
+    {
+      "number": 2340,
+      "name": "2340 Hathor (1976 UA)",
+      "neo": true,
+      "diameter_km": 0.3,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 3.35,
+      "lightcurve_count": 6,
+      "sparse_points_est": 36,
+      "apparitions": 4,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": false
+      },
+      "score": 276
+    },
+    {
+      "number": 2368,
+      "name": "2368 Beltrovata (1977 RA)",
+      "neo": true,
+      "diameter_km": 2.3,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 5.786,
+      "lightcurve_count": 10,
+      "sparse_points_est": 60,
+      "apparitions": 3,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": false
+      },
+      "score": 280
+    },
+    {
+      "number": 2608,
+      "name": "2608 Seneca (1978 DA)",
+      "neo": true,
+      "diameter_km": 0.9,
+      "lcdb_u": "2",
+      "lcdb_u_value": 2.0,
+      "period_hours": 8.0,
+      "lightcurve_count": 4,
+      "sparse_points_est": 24,
+      "apparitions": 0,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": false
+      },
+      "score": 274
+    },
+    {
+      "number": 3102,
+      "name": "3102 Krok (1981 QA)",
+      "neo": true,
+      "diameter_km": 1.6,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 149.4,
+      "lightcurve_count": 10,
+      "sparse_points_est": 60,
+      "apparitions": 5,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": false
+      },
+      "score": 280
+    },
+    {
+      "number": 3103,
+      "name": "3103 Eger (1982 BB)",
+      "neo": true,
+      "diameter_km": 1.5,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 5.7103,
+      "lightcurve_count": 33,
+      "sparse_points_est": 198,
+      "apparitions": 16,
+      "in_damit": true,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": false,
+        "p4": true
+      },
+      "score": 283
+    },
+    {
+      "number": 3122,
+      "name": "3122 Florence (1981 ET3)",
+      "neo": true,
+      "diameter_km": 4.9,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 2.3581,
+      "lightcurve_count": 35,
+      "sparse_points_est": 210,
+      "apparitions": 23,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": true
+      },
+      "score": 375
+    },
+    {
+      "number": 3199,
+      "name": "3199 Nefertiti (1982 RA)",
+      "neo": true,
+      "diameter_km": 2.2,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 3.021,
+      "lightcurve_count": 15,
+      "sparse_points_est": 90,
+      "apparitions": 3,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": false
+      },
+      "score": 285
+    },
+    {
+      "number": 3200,
+      "name": "3200 Phaethon (1983 TB)",
+      "neo": true,
+      "diameter_km": 6.25,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 3.604,
+      "lightcurve_count": 42,
+      "sparse_points_est": 252,
+      "apparitions": 16,
+      "in_damit": true,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": false,
+        "p4": true
+      },
+      "score": 292
+    },
+    {
+      "number": 3271,
+      "name": "3271 Ul (1982 RB)",
+      "neo": true,
+      "diameter_km": null,
+      "lcdb_u": "",
+      "lcdb_u_value": null,
+      "period_hours": null,
+      "lightcurve_count": 1,
+      "sparse_points_est": 6,
+      "apparitions": 0,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": false,
+        "p3": true,
+        "p4": false
+      },
+      "score": 191
+    },
+    {
+      "number": 3288,
+      "name": "3288 Seleucus (1982 DV)",
+      "neo": true,
+      "diameter_km": 2.8,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 75.0,
+      "lightcurve_count": 9,
+      "sparse_points_est": 54,
+      "apparitions": 3,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": false
+      },
+      "score": 279
+    },
+    {
+      "number": 3352,
+      "name": "3352 McAuliffe (1981 CW)",
+      "neo": true,
+      "diameter_km": null,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 2.206,
+      "lightcurve_count": 13,
+      "sparse_points_est": 78,
+      "apparitions": 8,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": false
+      },
+      "score": 283
+    },
+    {
+      "number": 3360,
+      "name": "3360 Syrinx (1981 VA)",
+      "neo": true,
+      "diameter_km": 1.8,
+      "lcdb_u": "",
+      "lcdb_u_value": null,
+      "period_hours": null,
+      "lightcurve_count": 7,
+      "sparse_points_est": 42,
+      "apparitions": 2,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": false,
+        "p3": true,
+        "p4": false
+      },
+      "score": 197
+    },
+    {
+      "number": 3361,
+      "name": "3361 Orpheus (1982 HR)",
+      "neo": true,
+      "diameter_km": 0.3,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 3.5327,
+      "lightcurve_count": 13,
+      "sparse_points_est": 78,
+      "apparitions": 10,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": false
+      },
+      "score": 283
+    },
+    {
+      "number": 3362,
+      "name": "3362 Khufu (1984 QA)",
+      "neo": true,
+      "diameter_km": 0.7,
+      "lcdb_u": "",
+      "lcdb_u_value": null,
+      "period_hours": null,
+      "lightcurve_count": 3,
+      "sparse_points_est": 18,
+      "apparitions": 1,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": false,
+        "p3": true,
+        "p4": false
+      },
+      "score": 193
+    },
+    {
+      "number": 3551,
+      "name": "3551 Verenia (1983 RD)",
+      "neo": true,
+      "diameter_km": 0.9,
+      "lcdb_u": "2",
+      "lcdb_u_value": 2.0,
+      "period_hours": 4.93,
+      "lightcurve_count": 9,
+      "sparse_points_est": 54,
+      "apparitions": 2,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": false
+      },
+      "score": 279
+    },
+    {
+      "number": 3552,
+      "name": "3552 Don Quixote (1983 SA)",
+      "neo": true,
+      "diameter_km": 19.0,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 6.665,
+      "lightcurve_count": 19,
+      "sparse_points_est": 114,
+      "apparitions": 10,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": true
+      },
+      "score": 359
+    },
+    {
+      "number": 3553,
+      "name": "3553 Mera (1985 JA)",
+      "neo": true,
+      "diameter_km": null,
+      "lcdb_u": "2",
+      "lcdb_u_value": 2.0,
+      "period_hours": 3.1944,
+      "lightcurve_count": 5,
+      "sparse_points_est": 30,
+      "apparitions": 2,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": false
+      },
+      "score": 275
+    },
+    {
+      "number": 3554,
+      "name": "3554 Amun (1986 EB)",
+      "neo": true,
+      "diameter_km": 3.341,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 2.53001,
+      "lightcurve_count": 20,
+      "sparse_points_est": 120,
+      "apparitions": 11,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": true
+      },
+      "score": 360
+    },
+    {
+      "number": 3671,
+      "name": "3671 Dionysus (1984 KD)",
+      "neo": true,
+      "diameter_km": 1.5,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 2.7053,
+      "lightcurve_count": 14,
+      "sparse_points_est": 84,
+      "apparitions": 4,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": false
+      },
+      "score": 284
+    },
+    {
+      "number": 3691,
+      "name": "3691 Bede (1982 FT)",
+      "neo": true,
+      "diameter_km": 4.3,
+      "lcdb_u": "2",
+      "lcdb_u_value": 2.0,
+      "period_hours": 226.8,
+      "lightcurve_count": 11,
+      "sparse_points_est": 66,
+      "apparitions": 3,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": false
+      },
+      "score": 281
+    },
+    {
+      "number": 3752,
+      "name": "3752 Camillo (1985 PA)",
+      "neo": true,
+      "diameter_km": 2.306,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 37.846,
+      "lightcurve_count": 10,
+      "sparse_points_est": 60,
+      "apparitions": 2,
+      "in_damit": true,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": false,
+        "p4": false
+      },
+      "score": 190
+    },
+    {
+      "number": 3753,
+      "name": "3753 Cruithne (1986 TO)",
+      "neo": true,
+      "diameter_km": 2.071,
+      "lcdb_u": "3-",
+      "lcdb_u_value": 3.0,
+      "period_hours": 27.3099,
+      "lightcurve_count": 9,
+      "sparse_points_est": 54,
+      "apparitions": 3,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": false
+      },
+      "score": 279
+    },
+    {
+      "number": 3757,
+      "name": "3757 Anagolay (1982 XB)",
+      "neo": true,
+      "diameter_km": 0.5,
+      "lcdb_u": "2",
+      "lcdb_u_value": 2.0,
+      "period_hours": 9.012,
+      "lightcurve_count": 6,
+      "sparse_points_est": 36,
+      "apparitions": 2,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": false
+      },
+      "score": 276
+    },
+    {
+      "number": 3838,
+      "name": "3838 Epona (1986 WA)",
+      "neo": true,
+      "diameter_km": null,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 2.3812,
+      "lightcurve_count": 8,
+      "sparse_points_est": 48,
+      "apparitions": 5,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": false
+      },
+      "score": 278
+    },
+    {
+      "number": 3908,
+      "name": "3908 Nyx (1980 PA)",
+      "neo": true,
+      "diameter_km": 1.0,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 4.42601,
+      "lightcurve_count": 10,
+      "sparse_points_est": 60,
+      "apparitions": 3,
+      "in_damit": true,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": false,
+        "p4": false
+      },
+      "score": 190
+    },
+    {
+      "number": 3988,
+      "name": "3988 Huma (1986 LA)",
+      "neo": true,
+      "diameter_km": 0.7,
+      "lcdb_u": "3-",
+      "lcdb_u_value": 3.0,
+      "period_hours": 10.53,
+      "lightcurve_count": 6,
+      "sparse_points_est": 36,
+      "apparitions": 3,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": false
+      },
+      "score": 276
+    },
+    {
+      "number": 4015,
+      "name": "4015 Wilson-Harrington (1979 VA)",
+      "neo": true,
+      "diameter_km": 4.0,
+      "lcdb_u": "2",
+      "lcdb_u_value": 2.0,
+      "period_hours": 3.5736,
+      "lightcurve_count": 9,
+      "sparse_points_est": 54,
+      "apparitions": 5,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": false
+      },
+      "score": 279
+    },
+    {
+      "number": 4034,
+      "name": "4034 Vishnu (1986 PA)",
+      "neo": true,
+      "diameter_km": 0.42,
+      "lcdb_u": "3-",
+      "lcdb_u_value": 3.0,
+      "period_hours": 44.4,
+      "lightcurve_count": 4,
+      "sparse_points_est": 24,
+      "apparitions": 2,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": false
+      },
+      "score": 274
+    },
+    {
+      "number": 4055,
+      "name": "4055 Magellan (1985 DO2)",
+      "neo": true,
+      "diameter_km": 2.49,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 7.475,
+      "lightcurve_count": 30,
+      "sparse_points_est": 180,
+      "apparitions": 16,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": true
+      },
+      "score": 370
+    },
+    {
+      "number": 4179,
+      "name": "4179 Toutatis (1989 AC)",
+      "neo": true,
+      "diameter_km": 5.4,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 176.0,
+      "lightcurve_count": 24,
+      "sparse_points_est": 144,
+      "apparitions": 10,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": true
+      },
+      "score": 364
+    },
+    {
+      "number": 4183,
+      "name": "4183 Cuno (1959 LM)",
+      "neo": true,
+      "diameter_km": 3.651,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 3.5595,
+      "lightcurve_count": 30,
+      "sparse_points_est": 180,
+      "apparitions": 12,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": true
+      },
+      "score": 370
+    },
+    {
+      "number": 4197,
+      "name": "4197 Morpheus (1982 TA)",
+      "neo": true,
+      "diameter_km": 1.8,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 3.538,
+      "lightcurve_count": 13,
+      "sparse_points_est": 78,
+      "apparitions": 4,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": false
+      },
+      "score": 283
+    },
+    {
+      "number": 4257,
+      "name": "4257 Ubasti (1987 QA)",
+      "neo": true,
+      "diameter_km": null,
+      "lcdb_u": "1",
+      "lcdb_u_value": 1.0,
+      "period_hours": 4.4,
+      "lightcurve_count": 2,
+      "sparse_points_est": 12,
+      "apparitions": 1,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": false,
+        "p3": true,
+        "p4": false
+      },
+      "score": 192
+    },
+    {
+      "number": 4341,
+      "name": "4341 Poseidon (1987 KF)",
+      "neo": true,
+      "diameter_km": 3.177,
+      "lcdb_u": "2",
+      "lcdb_u_value": 2.0,
+      "period_hours": 6.262,
+      "lightcurve_count": 7,
+      "sparse_points_est": 42,
+      "apparitions": 1,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": false
+      },
+      "score": 277
+    },
+    {
+      "number": 4401,
+      "name": "4401 Aditi (1985 TB)",
+      "neo": true,
+      "diameter_km": 1.801,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 6.67,
+      "lightcurve_count": 9,
+      "sparse_points_est": 54,
+      "apparitions": 8,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": false
+      },
+      "score": 279
+    },
+    {
+      "number": 4450,
+      "name": "4450 Pan (1987 SY)",
+      "neo": true,
+      "diameter_km": null,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 56.48,
+      "lightcurve_count": 6,
+      "sparse_points_est": 36,
+      "apparitions": 6,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": false
+      },
+      "score": 276
+    },
+    {
+      "number": 4486,
+      "name": "4486 Mithra (1987 SB)",
+      "neo": true,
+      "diameter_km": 1.849,
+      "lcdb_u": "2",
+      "lcdb_u_value": 2.0,
+      "period_hours": 67.5,
+      "lightcurve_count": 10,
+      "sparse_points_est": 60,
+      "apparitions": 4,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": false
+      },
+      "score": 280
+    },
+    {
+      "number": 4487,
+      "name": "4487 Pocahontas (1987 UA)",
+      "neo": true,
+      "diameter_km": null,
+      "lcdb_u": "",
+      "lcdb_u_value": null,
+      "period_hours": null,
+      "lightcurve_count": 3,
+      "sparse_points_est": 18,
+      "apparitions": 1,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": false,
+        "p3": true,
+        "p4": false
+      },
+      "score": 193
+    },
+    {
+      "number": 4503,
+      "name": "4503 Cleobulus (1989 WM)",
+      "neo": true,
+      "diameter_km": null,
+      "lcdb_u": "3-",
+      "lcdb_u_value": 3.0,
+      "period_hours": 2.8164,
+      "lightcurve_count": 7,
+      "sparse_points_est": 42,
+      "apparitions": 2,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": false
+      },
+      "score": 277
+    },
+    {
+      "number": 4544,
+      "name": "4544 Xanthus (1989 FB)",
+      "neo": true,
+      "diameter_km": 1.3,
+      "lcdb_u": "2",
+      "lcdb_u_value": 2.0,
+      "period_hours": 37.65,
+      "lightcurve_count": 5,
+      "sparse_points_est": 30,
+      "apparitions": 2,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": false
+      },
+      "score": 275
+    },
+    {
+      "number": 4581,
+      "name": "4581 Asclepius (1989 FC)",
+      "neo": true,
+      "diameter_km": null,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 8.008,
+      "lightcurve_count": 3,
+      "sparse_points_est": 18,
+      "apparitions": 3,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": false
+      },
+      "score": 273
+    },
+    {
+      "number": 4596,
+      "name": "4596 (1981 QB)",
+      "neo": true,
+      "diameter_km": null,
+      "lcdb_u": "2",
+      "lcdb_u_value": 2.0,
+      "period_hours": 2.49101,
+      "lightcurve_count": 3,
+      "sparse_points_est": 18,
+      "apparitions": 2,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": false
+      },
+      "score": 273
+    },
+    {
+      "number": 4660,
+      "name": "4660 Nereus (1982 DB)",
+      "neo": true,
+      "diameter_km": 0.33,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 15.1749,
+      "lightcurve_count": 11,
+      "sparse_points_est": 66,
+      "apparitions": 5,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": false
+      },
+      "score": 281
+    },
+    {
+      "number": 4688,
+      "name": "4688 (1980 WF)",
+      "neo": true,
+      "diameter_km": 0.6,
+      "lcdb_u": "",
+      "lcdb_u_value": null,
+      "period_hours": null,
+      "lightcurve_count": 1,
+      "sparse_points_est": 6,
+      "apparitions": 1,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": false,
+        "p3": true,
+        "p4": false
+      },
+      "score": 191
+    },
+    {
+      "number": 4769,
+      "name": "4769 Castalia (1989 PB)",
+      "neo": true,
+      "diameter_km": 1.4,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 4.095,
+      "lightcurve_count": 10,
+      "sparse_points_est": 60,
+      "apparitions": 2,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": false
+      },
+      "score": 280
+    },
+    {
+      "number": 4947,
+      "name": "4947 Ninkasi (1988 TJ1)",
+      "neo": true,
+      "diameter_km": null,
+      "lcdb_u": "2",
+      "lcdb_u_value": 2.0,
+      "period_hours": 21.1,
+      "lightcurve_count": 4,
+      "sparse_points_est": 24,
+      "apparitions": 2,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": false
+      },
+      "score": 274
+    },
+    {
+      "number": 4953,
+      "name": "4953 (1990 MU)",
+      "neo": true,
+      "diameter_km": null,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 14.218,
+      "lightcurve_count": 6,
+      "sparse_points_est": 36,
+      "apparitions": 0,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": false
+      },
+      "score": 276
+    },
+    {
+      "number": 4954,
+      "name": "4954 Eric (1990 SQ)",
+      "neo": true,
+      "diameter_km": 10.8,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 12.056,
+      "lightcurve_count": 20,
+      "sparse_points_est": 120,
+      "apparitions": 8,
+      "in_damit": true,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": false,
+        "p4": true
+      },
+      "score": 270
+    },
+    {
+      "number": 4957,
+      "name": "4957 Brucemurray (1990 XJ)",
+      "neo": true,
+      "diameter_km": 3.499,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 2.892,
+      "lightcurve_count": 11,
+      "sparse_points_est": 66,
+      "apparitions": 1,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": false
+      },
+      "score": 281
+    },
+    {
+      "number": 5011,
+      "name": "5011 Ptah (6743 P-L)",
+      "neo": true,
+      "diameter_km": null,
+      "lcdb_u": "2",
+      "lcdb_u_value": 2.0,
+      "period_hours": 56.3,
+      "lightcurve_count": 4,
+      "sparse_points_est": 24,
+      "apparitions": 3,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": false
+      },
+      "score": 274
+    },
+    {
+      "number": 5131,
+      "name": "5131 (1990 BG)",
+      "neo": true,
+      "diameter_km": null,
+      "lcdb_u": "2-",
+      "lcdb_u_value": 2.0,
+      "period_hours": 37.2,
+      "lightcurve_count": 5,
+      "sparse_points_est": 30,
+      "apparitions": 3,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": false
+      },
+      "score": 275
+    },
+    {
+      "number": 5143,
+      "name": "5143 Heracles (1991 VL)",
+      "neo": true,
+      "diameter_km": 4.843,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 2.7063,
+      "lightcurve_count": 33,
+      "sparse_points_est": 198,
+      "apparitions": 18,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": true
+      },
+      "score": 373
+    },
+    {
+      "number": 5189,
+      "name": "5189 (1990 UQ)",
+      "neo": true,
+      "diameter_km": null,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 6.653,
+      "lightcurve_count": 14,
+      "sparse_points_est": 84,
+      "apparitions": 11,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": false
+      },
+      "score": 284
+    },
+    {
+      "number": 5324,
+      "name": "5324 Lyapunov (1987 SL)",
+      "neo": true,
+      "diameter_km": null,
+      "lcdb_u": "",
+      "lcdb_u_value": null,
+      "period_hours": null,
+      "lightcurve_count": 1,
+      "sparse_points_est": 6,
+      "apparitions": 0,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": false,
+        "p3": true,
+        "p4": false
+      },
+      "score": 191
+    },
+    {
+      "number": 5332,
+      "name": "5332 Davidaguilar (1990 DA)",
+      "neo": true,
+      "diameter_km": 3.6,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 5.803,
+      "lightcurve_count": 14,
+      "sparse_points_est": 84,
+      "apparitions": 9,
+      "in_damit": true,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": false,
+        "p4": false
+      },
+      "score": 194
+    },
+    {
+      "number": 5370,
+      "name": "5370 Taranis (1986 RA)",
+      "neo": true,
+      "diameter_km": 3.6,
+      "lcdb_u": "",
+      "lcdb_u_value": null,
+      "period_hours": null,
+      "lightcurve_count": 5,
+      "sparse_points_est": 30,
+      "apparitions": 3,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": false,
+        "p3": true,
+        "p4": false
+      },
+      "score": 195
+    },
+    {
+      "number": 5381,
+      "name": "5381 Sekhmet (1991 JY)",
+      "neo": true,
+      "diameter_km": 0.935,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 2.8233,
+      "lightcurve_count": 8,
+      "sparse_points_est": 48,
+      "apparitions": 3,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": false
+      },
+      "score": 278
+    },
+    {
+      "number": 5496,
+      "name": "5496 (1973 NA)",
+      "neo": true,
+      "diameter_km": null,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 2.855,
+      "lightcurve_count": 6,
+      "sparse_points_est": 36,
+      "apparitions": 4,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": false
+      },
+      "score": 276
+    },
+    {
+      "number": 5587,
+      "name": "5587 (1990 SB)",
+      "neo": true,
+      "diameter_km": 3.57,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 5.0522,
+      "lightcurve_count": 29,
+      "sparse_points_est": 174,
+      "apparitions": 16,
+      "in_damit": true,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": false,
+        "p4": true
+      },
+      "score": 279
+    },
+    {
+      "number": 5590,
+      "name": "5590 (1990 VA)",
+      "neo": true,
+      "diameter_km": null,
+      "lcdb_u": "",
+      "lcdb_u_value": null,
+      "period_hours": null,
+      "lightcurve_count": 0,
+      "sparse_points_est": 0,
+      "apparitions": 0,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": false,
+        "p3": true,
+        "p4": false
+      },
+      "score": 190
+    },
+    {
+      "number": 5604,
+      "name": "5604 (1992 FE)",
+      "neo": true,
+      "diameter_km": 0.55,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 5.3375,
+      "lightcurve_count": 17,
+      "sparse_points_est": 102,
+      "apparitions": 8,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": true
+      },
+      "score": 357
+    },
+    {
+      "number": 5620,
+      "name": "5620 Jasonwheeler (1990 OA)",
+      "neo": true,
+      "diameter_km": null,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 5.307,
+      "lightcurve_count": 10,
+      "sparse_points_est": 60,
+      "apparitions": 4,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": false
+      },
+      "score": 280
+    },
+    {
+      "number": 5626,
+      "name": "5626 Melissabrucker (1991 FE)",
+      "neo": true,
+      "diameter_km": null,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 2.48611,
+      "lightcurve_count": 19,
+      "sparse_points_est": 114,
+      "apparitions": 7,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": true
+      },
+      "score": 359
+    },
+    {
+      "number": 5645,
+      "name": "5645 (1990 SP)",
+      "neo": true,
+      "diameter_km": 1.668,
+      "lcdb_u": "2",
+      "lcdb_u_value": 2.0,
+      "period_hours": 30.39,
+      "lightcurve_count": 11,
+      "sparse_points_est": 66,
+      "apparitions": 3,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": false
+      },
+      "score": 281
+    },
+    {
+      "number": 5646,
+      "name": "5646 (1990 TR)",
+      "neo": true,
+      "diameter_km": 4.3,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 3.1999,
+      "lightcurve_count": 13,
+      "sparse_points_est": 78,
+      "apparitions": 4,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": false
+      },
+      "score": 283
+    },
+    {
+      "number": 5653,
+      "name": "5653 Camarillo (1992 WD5)",
+      "neo": true,
+      "diameter_km": 1.537,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 4.834,
+      "lightcurve_count": 20,
+      "sparse_points_est": 120,
+      "apparitions": 10,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": true
+      },
+      "score": 360
+    },
+    {
+      "number": 5660,
+      "name": "5660 (1974 MA)",
+      "neo": true,
+      "diameter_km": null,
+      "lcdb_u": "2",
+      "lcdb_u_value": 2.0,
+      "period_hours": 17.5,
+      "lightcurve_count": 3,
+      "sparse_points_est": 18,
+      "apparitions": 2,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": false
+      },
+      "score": 273
+    },
+    {
+      "number": 5693,
+      "name": "5693 (1993 EA)",
+      "neo": true,
+      "diameter_km": null,
+      "lcdb_u": "2",
+      "lcdb_u_value": 2.0,
+      "period_hours": 2.496,
+      "lightcurve_count": 14,
+      "sparse_points_est": 84,
+      "apparitions": 9,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": false
+      },
+      "score": 284
+    },
+    {
+      "number": 5731,
+      "name": "5731 Zeus (1988 VP4)",
+      "neo": true,
+      "diameter_km": 5.231,
+      "lcdb_u": "",
+      "lcdb_u_value": null,
+      "period_hours": null,
+      "lightcurve_count": 5,
+      "sparse_points_est": 30,
+      "apparitions": 2,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": false,
+        "p3": true,
+        "p4": false
+      },
+      "score": 195
+    },
+    {
+      "number": 5751,
+      "name": "5751 Zao (1992 AC)",
+      "neo": true,
+      "diameter_km": 2.3,
+      "lcdb_u": "2",
+      "lcdb_u_value": 2.0,
+      "period_hours": 76.0,
+      "lightcurve_count": 14,
+      "sparse_points_est": 84,
+      "apparitions": 4,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": false
+      },
+      "score": 284
+    },
+    {
+      "number": 5786,
+      "name": "5786 Talos (1991 RC)",
+      "neo": true,
+      "diameter_km": null,
+      "lcdb_u": "2",
+      "lcdb_u_value": 2.0,
+      "period_hours": 23.6,
+      "lightcurve_count": 9,
+      "sparse_points_est": 54,
+      "apparitions": 4,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": false
+      },
+      "score": 279
+    },
+    {
+      "number": 5797,
+      "name": "5797 Bivoj (1980 AA)",
+      "neo": true,
+      "diameter_km": 0.4,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 2.706,
+      "lightcurve_count": 6,
+      "sparse_points_est": 36,
+      "apparitions": 2,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": false
+      },
+      "score": 276
+    },
+    {
+      "number": 5828,
+      "name": "5828 (1991 AM)",
+      "neo": true,
+      "diameter_km": 1.457,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 2.6666,
+      "lightcurve_count": 4,
+      "sparse_points_est": 24,
+      "apparitions": 2,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": false
+      },
+      "score": 274
+    },
+    {
+      "number": 5836,
+      "name": "5836 (1993 MF)",
+      "neo": true,
+      "diameter_km": 2.754,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 4.9543,
+      "lightcurve_count": 15,
+      "sparse_points_est": 90,
+      "apparitions": 8,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": false
+      },
+      "score": 285
+    },
+    {
+      "number": 5863,
+      "name": "5863 Tara (1983 RB)",
+      "neo": true,
+      "diameter_km": 1.345,
+      "lcdb_u": "2+",
+      "lcdb_u_value": 2.0,
+      "period_hours": 5.867,
+      "lightcurve_count": 5,
+      "sparse_points_est": 30,
+      "apparitions": 3,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": false
+      },
+      "score": 275
+    },
+    {
+      "number": 5869,
+      "name": "5869 Tanith (1988 VN4)",
+      "neo": true,
+      "diameter_km": null,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 17.519,
+      "lightcurve_count": 2,
+      "sparse_points_est": 12,
+      "apparitions": 1,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": false
+      },
+      "score": 272
+    },
+    {
+      "number": 5879,
+      "name": "5879 Almeria (1992 CH1)",
+      "neo": true,
+      "diameter_km": null,
+      "lcdb_u": "2+",
+      "lcdb_u_value": 2.0,
+      "period_hours": 21.967,
+      "lightcurve_count": 3,
+      "sparse_points_est": 18,
+      "apparitions": 3,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": false
+      },
+      "score": 273
+    },
+    {
+      "number": 6037,
+      "name": "6037 (1988 EG)",
+      "neo": true,
+      "diameter_km": null,
+      "lcdb_u": "3-",
+      "lcdb_u_value": 3.0,
+      "period_hours": 2.7602,
+      "lightcurve_count": 6,
+      "sparse_points_est": 36,
+      "apparitions": 4,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": false
+      },
+      "score": 276
+    },
+    {
+      "number": 6047,
+      "name": "6047 (1991 TB1)",
+      "neo": true,
+      "diameter_km": null,
+      "lcdb_u": "",
+      "lcdb_u_value": null,
+      "period_hours": null,
+      "lightcurve_count": 4,
+      "sparse_points_est": 24,
+      "apparitions": 1,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": false,
+        "p3": true,
+        "p4": false
+      },
+      "score": 194
+    },
+    {
+      "number": 6050,
+      "name": "6050 Miwablock (1992 AE)",
+      "neo": true,
+      "diameter_km": 2.884,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 5.7566,
+      "lightcurve_count": 9,
+      "sparse_points_est": 54,
+      "apparitions": 5,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": false
+      },
+      "score": 279
+    },
+    {
+      "number": 6053,
+      "name": "6053 (1993 BW3)",
+      "neo": true,
+      "diameter_km": 3.72,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 2.573,
+      "lightcurve_count": 17,
+      "sparse_points_est": 102,
+      "apparitions": 8,
+      "in_damit": true,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": false,
+        "p4": true
+      },
+      "score": 267
+    },
+    {
+      "number": 6063,
+      "name": "6063 Jason (1984 KB)",
+      "neo": true,
+      "diameter_km": 1.4,
+      "lcdb_u": "2",
+      "lcdb_u_value": 2.0,
+      "period_hours": 48.6,
+      "lightcurve_count": 3,
+      "sparse_points_est": 18,
+      "apparitions": 3,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": false
+      },
+      "score": 273
+    },
+    {
+      "number": 6178,
+      "name": "6178 (1986 DA)",
+      "neo": true,
+      "diameter_km": 2.3,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 3.5002,
+      "lightcurve_count": 10,
+      "sparse_points_est": 60,
+      "apparitions": 5,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": false
+      },
+      "score": 280
+    },
+    {
+      "number": 6239,
+      "name": "6239 Minos (1989 QF)",
+      "neo": true,
+      "diameter_km": null,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 3.5558,
+      "lightcurve_count": 9,
+      "sparse_points_est": 54,
+      "apparitions": 5,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": false
+      },
+      "score": 279
+    },
+    {
+      "number": 6455,
+      "name": "6455 (1992 HE)",
+      "neo": true,
+      "diameter_km": 4.626,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 2.7361,
+      "lightcurve_count": 25,
+      "sparse_points_est": 150,
+      "apparitions": 14,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": true
+      },
+      "score": 365
+    },
+    {
+      "number": 6456,
+      "name": "6456 Golombek (1992 OM)",
+      "neo": true,
+      "diameter_km": null,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 2.50129,
+      "lightcurve_count": 7,
+      "sparse_points_est": 42,
+      "apparitions": 5,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": false
+      },
+      "score": 277
+    },
+    {
+      "number": 6489,
+      "name": "6489 Golevka (1991 JX)",
+      "neo": true,
+      "diameter_km": 0.53,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 6.026,
+      "lightcurve_count": 8,
+      "sparse_points_est": 48,
+      "apparitions": 1,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": false
+      },
+      "score": 278
+    },
+    {
+      "number": 6491,
+      "name": "6491 (1991 OA)",
+      "neo": true,
+      "diameter_km": null,
+      "lcdb_u": "2",
+      "lcdb_u_value": 2.0,
+      "period_hours": 2.69,
+      "lightcurve_count": 1,
+      "sparse_points_est": 6,
+      "apparitions": 0,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": false
+      },
+      "score": 271
+    },
+    {
+      "number": 6569,
+      "name": "6569 Ondaatje (1993 MO)",
+      "neo": true,
+      "diameter_km": null,
+      "lcdb_u": "3-",
+      "lcdb_u_value": 3.0,
+      "period_hours": 5.958,
+      "lightcurve_count": 11,
+      "sparse_points_est": 66,
+      "apparitions": 6,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": false
+      },
+      "score": 281
+    },
+    {
+      "number": 6611,
+      "name": "6611 (1993 VW)",
+      "neo": true,
+      "diameter_km": 1.408,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 2.5568,
+      "lightcurve_count": 11,
+      "sparse_points_est": 66,
+      "apparitions": 5,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": false
+      },
+      "score": 281
+    },
+    {
+      "number": 7025,
+      "name": "7025 (1993 QA)",
+      "neo": true,
+      "diameter_km": 0.498,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 2.5057,
+      "lightcurve_count": 10,
+      "sparse_points_est": 60,
+      "apparitions": 2,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": false
+      },
+      "score": 280
+    },
+    {
+      "number": 7088,
+      "name": "7088 Ishtar (1992 AA)",
+      "neo": true,
+      "diameter_km": 1.298,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 2.679,
+      "lightcurve_count": 11,
+      "sparse_points_est": 66,
+      "apparitions": 4,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": false
+      },
+      "score": 281
+    },
+    {
+      "number": 7092,
+      "name": "7092 Cadmus (1992 LC)",
+      "neo": true,
+      "diameter_km": 6.319,
+      "lcdb_u": "",
+      "lcdb_u_value": null,
+      "period_hours": null,
+      "lightcurve_count": 6,
+      "sparse_points_est": 36,
+      "apparitions": 2,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": false,
+        "p3": true,
+        "p4": false
+      },
+      "score": 196
+    },
+    {
+      "number": 7236,
+      "name": "7236 (1987 PA)",
+      "neo": true,
+      "diameter_km": null,
+      "lcdb_u": "",
+      "lcdb_u_value": null,
+      "period_hours": null,
+      "lightcurve_count": 0,
+      "sparse_points_est": 0,
+      "apparitions": 0,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": false,
+        "p3": true,
+        "p4": false
+      },
+      "score": 190
+    },
+    {
+      "number": 7335,
+      "name": "7335 (1989 JA)",
+      "neo": true,
+      "diameter_km": 1.8,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 2.58988,
+      "lightcurve_count": 14,
+      "sparse_points_est": 84,
+      "apparitions": 9,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": false
+      },
+      "score": 284
+    },
+    {
+      "number": 7336,
+      "name": "7336 Saunders (1989 RS1)",
+      "neo": true,
+      "diameter_km": null,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 4.307,
+      "lightcurve_count": 9,
+      "sparse_points_est": 54,
+      "apparitions": 5,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": false
+      },
+      "score": 279
+    },
+    {
+      "number": 7341,
+      "name": "7341 (1991 VK)",
+      "neo": true,
+      "diameter_km": 0.982,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 4.2096,
+      "lightcurve_count": 12,
+      "sparse_points_est": 72,
+      "apparitions": 6,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": false
+      },
+      "score": 282
+    },
+    {
+      "number": 7350,
+      "name": "7350 (1993 VA)",
+      "neo": true,
+      "diameter_km": 1.921,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 3.58264,
+      "lightcurve_count": 13,
+      "sparse_points_est": 78,
+      "apparitions": 8,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": false
+      },
+      "score": 283
+    },
+    {
+      "number": 7358,
+      "name": "7358 Oze (1995 YA3)",
+      "neo": true,
+      "diameter_km": null,
+      "lcdb_u": "2",
+      "lcdb_u_value": 2.0,
+      "period_hours": 125.8,
+      "lightcurve_count": 10,
+      "sparse_points_est": 60,
+      "apparitions": 4,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": false
+      },
+      "score": 280
+    },
+    {
+      "number": 7474,
+      "name": "7474 (1992 TC)",
+      "neo": true,
+      "diameter_km": null,
+      "lcdb_u": "2",
+      "lcdb_u_value": 2.0,
+      "period_hours": 5.54,
+      "lightcurve_count": 3,
+      "sparse_points_est": 18,
+      "apparitions": 0,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": false
+      },
+      "score": 273
+    },
+    {
+      "number": 7480,
+      "name": "7480 Norwan (1994 PC)",
+      "neo": true,
+      "diameter_km": null,
+      "lcdb_u": "2",
+      "lcdb_u_value": 2.0,
+      "period_hours": 35.9,
+      "lightcurve_count": 5,
+      "sparse_points_est": 30,
+      "apparitions": 0,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": false
+      },
+      "score": 275
+    },
+    {
+      "number": 7482,
+      "name": "7482 (1994 PC1)",
+      "neo": true,
+      "diameter_km": 1.052,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 2.5999,
+      "lightcurve_count": 8,
+      "sparse_points_est": 48,
+      "apparitions": 4,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": false
+      },
+      "score": 278
+    },
+    {
+      "number": 7753,
+      "name": "7753 (1988 XB)",
+      "neo": true,
+      "diameter_km": null,
+      "lcdb_u": "2+",
+      "lcdb_u_value": 2.0,
+      "period_hours": 42.2,
+      "lightcurve_count": 6,
+      "sparse_points_est": 36,
+      "apparitions": 4,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": false
+      },
+      "score": 276
+    },
+    {
+      "number": 7822,
+      "name": "7822 (1991 CS)",
+      "neo": true,
+      "diameter_km": 1.602,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 2.3896,
+      "lightcurve_count": 21,
+      "sparse_points_est": 126,
+      "apparitions": 11,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": true
+      },
+      "score": 361
+    },
+    {
+      "number": 7839,
+      "name": "7839 (1994 ND)",
+      "neo": true,
+      "diameter_km": 0.784,
+      "lcdb_u": "",
+      "lcdb_u_value": null,
+      "period_hours": null,
+      "lightcurve_count": 3,
+      "sparse_points_est": 18,
+      "apparitions": 1,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": false,
+        "p3": true,
+        "p4": false
+      },
+      "score": 193
+    },
+    {
+      "number": 7888,
+      "name": "7888 (1993 UC)",
+      "neo": true,
+      "diameter_km": 2.298,
+      "lcdb_u": "2+",
+      "lcdb_u_value": 2.0,
+      "period_hours": 2.337,
+      "lightcurve_count": 12,
+      "sparse_points_est": 72,
+      "apparitions": 5,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": false
+      },
+      "score": 282
+    },
+    {
+      "number": 7889,
+      "name": "7889 (1994 LX)",
+      "neo": true,
+      "diameter_km": 1.68,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 2.741,
+      "lightcurve_count": 13,
+      "sparse_points_est": 78,
+      "apparitions": 9,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": false
+      },
+      "score": 283
     }
   ]
 }
