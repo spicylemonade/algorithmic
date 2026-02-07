@@ -1,0 +1,12 @@
+{
+  "item_id": "item_022",
+  "template": "docs/validation_report_template.md",
+  "required_sections": [
+    "benchmark_setup",
+    "per_target_metrics",
+    "convergence_plots",
+    "error_analysis",
+    "pass_fail_gate"
+  ],
+  "pass_threshold_percent": 5.0
+}
