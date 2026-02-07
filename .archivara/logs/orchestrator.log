@@ -1,0 +1,7 @@
+error: unexpected argument '--search' found
+
+  tip: to pass '--search' as a value, use '-- --search'
+
+Usage: codex exec --model <MODEL> --dangerously-bypass-approvals-and-sandbox [PROMPT]
+
+For more information, try '--help'.
