@@ -47,16 +47,16 @@
           "id": "item_002",
           "description": "Conduct literature review on light curve inversion methods via web search",
           "acceptance_criteria": "Web search performed for at least the following topics: convex lightcurve inversion (Kaasalainen & Torppa 2001), SAGE genetic algorithm inversion (Bartczak & Dudzinski 2018), sparse photometric inversion (Durech et al. 2010), ADAM multi-data modeling (Viikinkoski et al. 2015), KOALA software, MPO LCInvert methodology. At least 15 relevant papers identified with full citation details. Results summarized in a literature_review.md file.",
-          "status": "pending",
-          "notes": null,
+          "status": "completed",
+          "notes": "literature_review.md created with 17 papers across 12 sections covering convex inversion, genetic/evolutionary methods, sparse data, multi-data fusion, databases/tools, scattering models, shape comparison metrics, and deep learning approaches. ~4800 words.",
           "error": null
         },
         {
           "id": "item_003",
           "description": "Create and populate sources.bib with BibTeX entries for all consulted sources",
           "acceptance_criteria": "sources.bib exists in repo root with valid BibTeX entries for at least 15 papers. Must include: Kaasalainen et al. (2001), Kaasalainen & Torppa (2001), Bartczak & Dudzinski (2018), Durech et al. (2010), Viikinkoski et al. (2015), Durech et al. (2016 - DAMIT), Cellino et al. (2009 - sparse Gaia), Hanus et al. (2011, 2013), and at least 6 additional papers on scattering laws (Lommel-Seeliger, Hapke), mesh comparison metrics (Hausdorff distance), or evolutionary optimization for shape modeling.",
-          "status": "pending",
-          "notes": null,
+          "status": "completed",
+          "notes": "sources.bib populated with 23 BibTeX entries (16 articles, 1 book, 1 inproceedings, 3 misc). All required papers included plus additional references on Levenberg-Marquardt, LCDB, H-G1-G2, and open-source code repositories.",
           "error": null
         },
         {
@@ -268,9 +268,9 @@
   ],
   "summary": {
     "total_items": 25,
-    "completed": 1,
+    "completed": 3,
     "in_progress": 0,
     "failed": 0,
-    "pending": 24
+    "pending": 22
   }
 }
