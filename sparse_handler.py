@@ -718,3 +718,274 @@ def optimize_combined(initial_mesh, spin, dense_lcs, sparse_lc,
               f"iterations={result.nit}, success={result.success}")
 
     return optimized_mesh, chi2_final, history
+
+
+# ---------------------------------------------------------------------------
+# Sparse-only inversion (Durech et al. 2009, Cellino et al. 2009)
+# ---------------------------------------------------------------------------
+
+def phase_dispersion_minimization(jd, mag, p_min, p_max, n_periods=500):
+    """Period search using Phase Dispersion Minimization (PDM).
+
+    Folds the sparse magnitudes at each trial period and measures the
+    dispersion within phase bins.  The period with minimum dispersion is
+    the best candidate.
+
+    Parameters
+    ----------
+    jd : np.ndarray
+        Julian Dates.
+    mag : np.ndarray
+        Observed magnitudes.
+    p_min, p_max : float
+        Period search range (hours).
+    n_periods : int
+        Number of trial periods.
+
+    Returns
+    -------
+    best_period : float
+        Best-fit period (hours).
+    periods : np.ndarray
+        Trial periods.
+    pdm_values : np.ndarray
+        PDM statistic at each trial period (lower is better).
+    """
+    periods_h = np.linspace(p_min, p_max, n_periods)
+    total_var = np.var(mag)
+    if total_var < 1e-30:
+        return (p_min + p_max) / 2, periods_h, np.ones(n_periods)
+
+    n_bins = 10
+    pdm_values = np.zeros(n_periods)
+
+    for idx, period_h in enumerate(periods_h):
+        period_days = period_h / 24.0
+        phases = ((jd - jd[0]) / period_days) % 1.0
+        bin_edges = np.linspace(0, 1, n_bins + 1)
+        bin_var_sum = 0.0
+        n_in_bins = 0
+        for b in range(n_bins):
+            mask = (phases >= bin_edges[b]) & (phases < bin_edges[b + 1])
+            if np.sum(mask) > 1:
+                bin_var_sum += np.var(mag[mask]) * np.sum(mask)
+                n_in_bins += np.sum(mask)
+        if n_in_bins > 0:
+            pdm_values[idx] = (bin_var_sum / n_in_bins) / total_var
+        else:
+            pdm_values[idx] = 1.0
+
+    best_idx = np.argmin(pdm_values)
+    return periods_h[best_idx], periods_h, pdm_values
+
+
+def sparse_pole_search(sparse_lc, orbital_elements, period_hours,
+                       n_lambda=12, n_beta=6, n_subdivisions=1,
+                       c_lambert=0.1, reg_weight=0.01, max_iter=100,
+                       verbose=False):
+    """Grid search for best pole direction using sparse data only.
+
+    For each trial (lambda, beta), creates a spin state at the given
+    period, optimizes facet areas against the sparse data, and records
+    chi-squared.
+
+    Parameters
+    ----------
+    sparse_lc : LightcurveData
+        Sparse observations (already converted to LightcurveData format).
+    orbital_elements : OrbitalElements
+        Asteroid orbital elements.
+    period_hours : float
+        Assumed sidereal rotation period.
+    n_lambda : int
+        Number of longitude steps.
+    n_beta : int
+        Number of latitude steps.
+    n_subdivisions : int
+        Icosphere subdivision level.
+    c_lambert : float
+    reg_weight : float
+    max_iter : int
+    verbose : bool
+
+    Returns
+    -------
+    best_lambda : float
+        Best-fit pole longitude (degrees).
+    best_beta : float
+        Best-fit pole latitude (degrees).
+    grid : np.ndarray, shape (N, 3)
+        All (lambda, beta, chi2) values tested.
+    """
+    sphere = create_sphere_mesh(n_subdivisions)
+    lambdas = np.linspace(0, 360, n_lambda, endpoint=False)
+    betas = np.linspace(-90, 90, 2 * n_beta + 1)[1::2]
+
+    results = []
+    best_chi2 = np.inf
+    best_lam, best_bet = 0.0, 0.0
+
+    for lam in lambdas:
+        for bet in betas:
+            spin_trial = SpinState(
+                lambda_deg=lam, beta_deg=bet,
+                period_hours=period_hours, jd0=sparse_lc.jd[0]
+            )
+            # Optimise shape (areas only) against sparse data
+            _, chi2, _ = optimize_shape(
+                sphere, spin_trial, [sparse_lc],
+                c_lambert=c_lambert, reg_weight=reg_weight,
+                max_iter=max_iter, verbose=False
+            )
+            results.append([lam, bet, chi2])
+            if chi2 < best_chi2:
+                best_chi2 = chi2
+                best_lam, best_bet = lam, bet
+            if verbose:
+                print(f"  Pole ({lam:.0f}, {bet:.0f}): chi2={chi2:.6f}")
+
+    grid = np.array(results)
+    return best_lam, best_bet, grid
+
+
+def sparse_shape_estimation(sparse_lc, spin, n_subdivisions=1,
+                            c_lambert=0.1, reg_weight=0.01, max_iter=200,
+                            verbose=False):
+    """Estimate crude shape from sparse data alone.
+
+    Optimises facet areas of an icosphere using L-BFGS-B with the sparse
+    lightcurve data treated as a single dense lightcurve.
+
+    Parameters
+    ----------
+    sparse_lc : LightcurveData
+        Sparse observations.
+    spin : SpinState
+        Best-fit spin state.
+    n_subdivisions : int
+    c_lambert : float
+    reg_weight : float
+    max_iter : int
+    verbose : bool
+
+    Returns
+    -------
+    mesh : TriMesh
+        Estimated convex shape.
+    chi2 : float
+        Final chi-squared.
+    """
+    sphere = create_sphere_mesh(n_subdivisions)
+    mesh, chi2, _ = optimize_shape(
+        sphere, spin, [sparse_lc],
+        c_lambert=c_lambert, reg_weight=reg_weight,
+        max_iter=max_iter, verbose=verbose
+    )
+    return mesh, chi2
+
+
+@dataclass
+class SparseInversionResult:
+    """Result of sparse-only inversion."""
+    mesh: TriMesh
+    spin: SpinState
+    period_hours: float
+    pole_lambda: float
+    pole_beta: float
+    chi_squared: float
+    pdm_landscape: Optional[np.ndarray] = None
+    pole_grid: Optional[np.ndarray] = None
+
+
+def run_sparse_only_inversion(sparse_lc, orbital_elements,
+                               p_min, p_max, n_periods=200,
+                               n_lambda=12, n_beta=6,
+                               n_subdivisions=1, c_lambert=0.1,
+                               reg_weight=0.01, max_iter=200,
+                               verbose=False):
+    """Full sparse-only inversion pipeline.
+
+    1. Period search via PDM on magnitudes.
+    2. Pole search at best period.
+    3. Shape estimation at best spin.
+
+    As described in Durech et al. (2009/2010) for sparse data and
+    Cellino et al. (2009) for Gaia-type photometric inversion.
+
+    Parameters
+    ----------
+    sparse_lc : LightcurveData
+        Sparse observations (pre-converted).
+    orbital_elements : OrbitalElements
+        Asteroid orbital elements.
+    p_min, p_max : float
+        Period search range (hours).
+    n_periods : int
+    n_lambda, n_beta : int
+    n_subdivisions : int
+    c_lambert : float
+    reg_weight : float
+    max_iter : int
+    verbose : bool
+
+    Returns
+    -------
+    SparseInversionResult
+    """
+    # Step 1: Period search via PDM on the sparse brightness
+    mags = -2.5 * np.log10(np.maximum(sparse_lc.brightness, 1e-30))
+    if verbose:
+        print("Step 1: Period search (PDM)...")
+    best_period, periods, pdm_vals = phase_dispersion_minimization(
+        sparse_lc.jd, mags, p_min, p_max, n_periods
+    )
+    if verbose:
+        print(f"  Best period: {best_period:.6f} h")
+
+    # Step 2: Pole search at best period
+    if verbose:
+        print("Step 2: Pole search...")
+    best_lam, best_bet, pole_grid = sparse_pole_search(
+        sparse_lc, orbital_elements, best_period,
+        n_lambda=n_lambda, n_beta=n_beta,
+        n_subdivisions=n_subdivisions, c_lambert=c_lambert,
+        reg_weight=reg_weight, max_iter=max_iter // 2,
+        verbose=verbose
+    )
+    if verbose:
+        print(f"  Best pole: ({best_lam:.1f}, {best_bet:.1f})")
+
+    # Step 3: Fine period refinement around best period
+    dp = (p_max - p_min) / n_periods * 2
+    fine_mags = mags
+    if verbose:
+        print("Step 3: Fine period refinement...")
+    best_period, _, _ = phase_dispersion_minimization(
+        sparse_lc.jd, fine_mags,
+        max(p_min, best_period - dp), min(p_max, best_period + dp),
+        n_periods=100
+    )
+    if verbose:
+        print(f"  Refined period: {best_period:.8f} h")
+
+    # Step 4: Shape estimation
+    best_spin = SpinState(
+        lambda_deg=best_lam, beta_deg=best_bet,
+        period_hours=best_period, jd0=sparse_lc.jd[0]
+    )
+    if verbose:
+        print("Step 4: Shape estimation...")
+    mesh, chi2 = sparse_shape_estimation(
+        sparse_lc, best_spin, n_subdivisions=n_subdivisions,
+        c_lambert=c_lambert, reg_weight=reg_weight,
+        max_iter=max_iter, verbose=verbose
+    )
+
+    return SparseInversionResult(
+        mesh=mesh, spin=best_spin,
+        period_hours=best_period,
+        pole_lambda=best_lam, pole_beta=best_bet,
+        chi_squared=chi2,
+        pdm_landscape=np.column_stack([periods, pdm_vals]),
+        pole_grid=pole_grid,
+    )
