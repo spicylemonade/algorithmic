@@ -1,0 +1,310 @@
+{
+  "item_id": "item_016",
+  "seed": 42,
+  "required_objects_present": true,
+  "total_curated": 20,
+  "paired_count": 20,
+  "acceptance_pass": true,
+  "records": [
+    {
+      "number": 433,
+      "name": "Eros",
+      "damit_exists": false,
+      "jpl_exists": true,
+      "alcdef_exists": false,
+      "pds_exists": true,
+      "links": {
+        "damit": "https://astro.troja.mff.cuni.cz/projects/damit/asteroid.php?id=433",
+        "jpl": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=433",
+        "alcdef": "https://alcdef.org/php/alcdef_GenerateALCDEFPage.php?AsteroidNumber=433",
+        "pds": "https://pds.nasa.gov/services/search/search?fq=identifier&wt=json&q=433"
+      },
+      "paired_available": true
+    },
+    {
+      "number": 25143,
+      "name": "Itokawa",
+      "damit_exists": false,
+      "jpl_exists": true,
+      "alcdef_exists": false,
+      "pds_exists": true,
+      "links": {
+        "damit": "https://astro.troja.mff.cuni.cz/projects/damit/asteroid.php?id=25143",
+        "jpl": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=25143",
+        "alcdef": "https://alcdef.org/php/alcdef_GenerateALCDEFPage.php?AsteroidNumber=25143",
+        "pds": "https://pds.nasa.gov/services/search/search?fq=identifier&wt=json&q=25143"
+      },
+      "paired_available": true
+    },
+    {
+      "number": 216,
+      "name": "Kleopatra",
+      "damit_exists": false,
+      "jpl_exists": true,
+      "alcdef_exists": false,
+      "pds_exists": true,
+      "links": {
+        "damit": "https://astro.troja.mff.cuni.cz/projects/damit/asteroid.php?id=216",
+        "jpl": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=216",
+        "alcdef": "https://alcdef.org/php/alcdef_GenerateALCDEFPage.php?AsteroidNumber=216",
+        "pds": "https://pds.nasa.gov/services/search/search?fq=identifier&wt=json&q=216"
+      },
+      "paired_available": true
+    },
+    {
+      "number": 1,
+      "name": "Ceres",
+      "damit_exists": false,
+      "jpl_exists": true,
+      "alcdef_exists": false,
+      "pds_exists": true,
+      "links": {
+        "damit": "https://astro.troja.mff.cuni.cz/projects/damit/asteroid.php?id=1",
+        "jpl": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=1",
+        "alcdef": "https://alcdef.org/php/alcdef_GenerateALCDEFPage.php?AsteroidNumber=1",
+        "pds": "https://pds.nasa.gov/services/search/search?fq=identifier&wt=json&q=1"
+      },
+      "paired_available": true
+    },
+    {
+      "number": 2,
+      "name": "Pallas",
+      "damit_exists": false,
+      "jpl_exists": true,
+      "alcdef_exists": false,
+      "pds_exists": true,
+      "links": {
+        "damit": "https://astro.troja.mff.cuni.cz/projects/damit/asteroid.php?id=2",
+        "jpl": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=2",
+        "alcdef": "https://alcdef.org/php/alcdef_GenerateALCDEFPage.php?AsteroidNumber=2",
+        "pds": "https://pds.nasa.gov/services/search/search?fq=identifier&wt=json&q=2"
+      },
+      "paired_available": true
+    },
+    {
+      "number": 3,
+      "name": "Juno",
+      "damit_exists": false,
+      "jpl_exists": true,
+      "alcdef_exists": false,
+      "pds_exists": true,
+      "links": {
+        "damit": "https://astro.troja.mff.cuni.cz/projects/damit/asteroid.php?id=3",
+        "jpl": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=3",
+        "alcdef": "https://alcdef.org/php/alcdef_GenerateALCDEFPage.php?AsteroidNumber=3",
+        "pds": "https://pds.nasa.gov/services/search/search?fq=identifier&wt=json&q=3"
+      },
+      "paired_available": true
+    },
+    {
+      "number": 4,
+      "name": "Vesta",
+      "damit_exists": false,
+      "jpl_exists": true,
+      "alcdef_exists": false,
+      "pds_exists": true,
+      "links": {
+        "damit": "https://astro.troja.mff.cuni.cz/projects/damit/asteroid.php?id=4",
+        "jpl": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=4",
+        "alcdef": "https://alcdef.org/php/alcdef_GenerateALCDEFPage.php?AsteroidNumber=4",
+        "pds": "https://pds.nasa.gov/services/search/search?fq=identifier&wt=json&q=4"
+      },
+      "paired_available": true
+    },
+    {
+      "number": 10,
+      "name": "Hygiea",
+      "damit_exists": false,
+      "jpl_exists": true,
+      "alcdef_exists": false,
+      "pds_exists": true,
+      "links": {
+        "damit": "https://astro.troja.mff.cuni.cz/projects/damit/asteroid.php?id=10",
+        "jpl": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=10",
+        "alcdef": "https://alcdef.org/php/alcdef_GenerateALCDEFPage.php?AsteroidNumber=10",
+        "pds": "https://pds.nasa.gov/services/search/search?fq=identifier&wt=json&q=10"
+      },
+      "paired_available": true
+    },
+    {
+      "number": 15,
+      "name": "Eunomia",
+      "damit_exists": false,
+      "jpl_exists": true,
+      "alcdef_exists": false,
+      "pds_exists": true,
+      "links": {
+        "damit": "https://astro.troja.mff.cuni.cz/projects/damit/asteroid.php?id=15",
+        "jpl": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=15",
+        "alcdef": "https://alcdef.org/php/alcdef_GenerateALCDEFPage.php?AsteroidNumber=15",
+        "pds": "https://pds.nasa.gov/services/search/search?fq=identifier&wt=json&q=15"
+      },
+      "paired_available": true
+    },
+    {
+      "number": 16,
+      "name": "Psyche",
+      "damit_exists": false,
+      "jpl_exists": true,
+      "alcdef_exists": false,
+      "pds_exists": true,
+      "links": {
+        "damit": "https://astro.troja.mff.cuni.cz/projects/damit/asteroid.php?id=16",
+        "jpl": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=16",
+        "alcdef": "https://alcdef.org/php/alcdef_GenerateALCDEFPage.php?AsteroidNumber=16",
+        "pds": "https://pds.nasa.gov/services/search/search?fq=identifier&wt=json&q=16"
+      },
+      "paired_available": true
+    },
+    {
+      "number": 21,
+      "name": "Lutetia",
+      "damit_exists": false,
+      "jpl_exists": true,
+      "alcdef_exists": false,
+      "pds_exists": true,
+      "links": {
+        "damit": "https://astro.troja.mff.cuni.cz/projects/damit/asteroid.php?id=21",
+        "jpl": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=21",
+        "alcdef": "https://alcdef.org/php/alcdef_GenerateALCDEFPage.php?AsteroidNumber=21",
+        "pds": "https://pds.nasa.gov/services/search/search?fq=identifier&wt=json&q=21"
+      },
+      "paired_available": true
+    },
+    {
+      "number": 22,
+      "name": "Kalliope",
+      "damit_exists": false,
+      "jpl_exists": true,
+      "alcdef_exists": false,
+      "pds_exists": true,
+      "links": {
+        "damit": "https://astro.troja.mff.cuni.cz/projects/damit/asteroid.php?id=22",
+        "jpl": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=22",
+        "alcdef": "https://alcdef.org/php/alcdef_GenerateALCDEFPage.php?AsteroidNumber=22",
+        "pds": "https://pds.nasa.gov/services/search/search?fq=identifier&wt=json&q=22"
+      },
+      "paired_available": true
+    },
+    {
+      "number": 41,
+      "name": "Daphne",
+      "damit_exists": false,
+      "jpl_exists": true,
+      "alcdef_exists": false,
+      "pds_exists": true,
+      "links": {
+        "damit": "https://astro.troja.mff.cuni.cz/projects/damit/asteroid.php?id=41",
+        "jpl": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=41",
+        "alcdef": "https://alcdef.org/php/alcdef_GenerateALCDEFPage.php?AsteroidNumber=41",
+        "pds": "https://pds.nasa.gov/services/search/search?fq=identifier&wt=json&q=41"
+      },
+      "paired_available": true
+    },
+    {
+      "number": 87,
+      "name": "Sylvia",
+      "damit_exists": false,
+      "jpl_exists": true,
+      "alcdef_exists": false,
+      "pds_exists": true,
+      "links": {
+        "damit": "https://astro.troja.mff.cuni.cz/projects/damit/asteroid.php?id=87",
+        "jpl": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=87",
+        "alcdef": "https://alcdef.org/php/alcdef_GenerateALCDEFPage.php?AsteroidNumber=87",
+        "pds": "https://pds.nasa.gov/services/search/search?fq=identifier&wt=json&q=87"
+      },
+      "paired_available": true
+    },
+    {
+      "number": 121,
+      "name": "Hermione",
+      "damit_exists": false,
+      "jpl_exists": true,
+      "alcdef_exists": false,
+      "pds_exists": true,
+      "links": {
+        "damit": "https://astro.troja.mff.cuni.cz/projects/damit/asteroid.php?id=121",
+        "jpl": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=121",
+        "alcdef": "https://alcdef.org/php/alcdef_GenerateALCDEFPage.php?AsteroidNumber=121",
+        "pds": "https://pds.nasa.gov/services/search/search?fq=identifier&wt=json&q=121"
+      },
+      "paired_available": true
+    },
+    {
+      "number": 130,
+      "name": "Elektra",
+      "damit_exists": false,
+      "jpl_exists": true,
+      "alcdef_exists": false,
+      "pds_exists": true,
+      "links": {
+        "damit": "https://astro.troja.mff.cuni.cz/projects/damit/asteroid.php?id=130",
+        "jpl": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=130",
+        "alcdef": "https://alcdef.org/php/alcdef_GenerateALCDEFPage.php?AsteroidNumber=130",
+        "pds": "https://pds.nasa.gov/services/search/search?fq=identifier&wt=json&q=130"
+      },
+      "paired_available": true
+    },
+    {
+      "number": 349,
+      "name": "Dembowska",
+      "damit_exists": false,
+      "jpl_exists": true,
+      "alcdef_exists": false,
+      "pds_exists": true,
+      "links": {
+        "damit": "https://astro.troja.mff.cuni.cz/projects/damit/asteroid.php?id=349",
+        "jpl": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=349",
+        "alcdef": "https://alcdef.org/php/alcdef_GenerateALCDEFPage.php?AsteroidNumber=349",
+        "pds": "https://pds.nasa.gov/services/search/search?fq=identifier&wt=json&q=349"
+      },
+      "paired_available": true
+    },
+    {
+      "number": 511,
+      "name": "Davida",
+      "damit_exists": false,
+      "jpl_exists": true,
+      "alcdef_exists": false,
+      "pds_exists": true,
+      "links": {
+        "damit": "https://astro.troja.mff.cuni.cz/projects/damit/asteroid.php?id=511",
+        "jpl": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=511",
+        "alcdef": "https://alcdef.org/php/alcdef_GenerateALCDEFPage.php?AsteroidNumber=511",
+        "pds": "https://pds.nasa.gov/services/search/search?fq=identifier&wt=json&q=511"
+      },
+      "paired_available": true
+    },
+    {
+      "number": 704,
+      "name": "Interamnia",
+      "damit_exists": false,
+      "jpl_exists": true,
+      "alcdef_exists": false,
+      "pds_exists": true,
+      "links": {
+        "damit": "https://astro.troja.mff.cuni.cz/projects/damit/asteroid.php?id=704",
+        "jpl": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=704",
+        "alcdef": "https://alcdef.org/php/alcdef_GenerateALCDEFPage.php?AsteroidNumber=704",
+        "pds": "https://pds.nasa.gov/services/search/search?fq=identifier&wt=json&q=704"
+      },
+      "paired_available": true
+    },
+    {
+      "number": 253,
+      "name": "Mathilde",
+      "damit_exists": false,
+      "jpl_exists": true,
+      "alcdef_exists": false,
+      "pds_exists": true,
+      "links": {
+        "damit": "https://astro.troja.mff.cuni.cz/projects/damit/asteroid.php?id=253",
+        "jpl": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=253",
+        "alcdef": "https://alcdef.org/php/alcdef_GenerateALCDEFPage.php?AsteroidNumber=253",
+        "pds": "https://pds.nasa.gov/services/search/search?fq=identifier&wt=json&q=253"
+      },
+      "paired_available": true
+    }
+  ]
+}

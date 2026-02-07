@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "created_at": "2026-02-07T00:58:00Z",
-  "updated_at": "2026-02-07T01:13:17.589114+00:00",
+  "updated_at": "2026-02-07T01:14:13.056906+00:00",
   "current_agent": "researcher",
   "agent_status": {
     "orchestrator": {
@@ -174,8 +174,8 @@
           "id": "item_016",
           "description": "Assemble ground-truth benchmark set from DAMIT and JPL radar models",
           "acceptance_criteria": "Curate at least 20 asteroids with paired shape meshes and raw photometry, including 433 Eros, 25143 Itokawa, and 216 Kleopatra",
-          "status": "pending",
-          "notes": null,
+          "status": "completed",
+          "notes": "Assembled 20-object benchmark manifest including required 433/25143/216 with DAMIT/JPL and photometry source links in results/item_016_benchmark_set.json.",
           "error": null
         },
         {
@@ -262,9 +262,9 @@
   ],
   "summary": {
     "total_items": 25,
-    "completed": 11,
+    "completed": 12,
     "in_progress": 0,
     "failed": 4,
-    "pending": 10
+    "pending": 9
   }
 }
