@@ -71,8 +71,8 @@
           "id": "item_005",
           "description": "Define mathematical formulation for the forward scattering model",
           "acceptance_criteria": "Document (in formulation.md or equivalent) the complete mathematical framework: (1) Brightness integral for a faceted convex body using Lambert + Lommel-Seeliger scattering, (2) Viewing geometry computation from orbital elements (aspect angle, phase angle, solar elongation), (3) Spherical harmonics or Gaussian surface representation for convex shapes, (4) Synthetic lightcurve generation equation. Must reference at least 3 papers from sources.bib. All equations must be specified with variable definitions.",
-          "status": "pending",
-          "notes": null,
+          "status": "completed",
+          "notes": "formulation.md created with 6 sections: (1) brightness integral with Lambert+LS scattering, (2) viewing geometry from orbital elements including Kepler equation, (3) Gaussian surface area density with spherical harmonics, (4) rotation/body-frame transformation, (5) synthetic lightcurve generation with chi-squared objective, (6) variable definitions table. References 5 papers from sources.bib.",
           "error": null
         }
       ]
@@ -268,9 +268,9 @@
   ],
   "summary": {
     "total_items": 25,
-    "completed": 4,
+    "completed": 5,
     "in_progress": 0,
     "failed": 0,
-    "pending": 21
+    "pending": 20
   }
 }
