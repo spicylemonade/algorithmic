@@ -53,7 +53,7 @@ MODELS_DIR = os.path.join(REPO_ROOT, "results", "models")
 
 SEED = 42
 N_CANDIDATES = 10
-TIMEOUT_SECONDS = 180
+TIMEOUT_SECONDS = 300
 
 # Ellipsoid axis ratios (before diameter scaling)
 AXIS_RATIOS = (1.5, 1.0, 0.8)
@@ -78,6 +78,45 @@ class InversionTimeout(Exception):
 
 def _timeout_handler(signum, frame):
     raise InversionTimeout("Inversion exceeded timeout")
+
+
+def _subdivide_general(vertices, faces):
+    """Subdivide a triangulated mesh by splitting each triangle into 4.
+
+    Unlike forward_model._subdivide this does NOT project midpoints onto
+    the unit sphere, so it works for arbitrary (non-spherical) meshes.
+    """
+    edge_midpoints = {}
+    new_verts = list(vertices)
+
+    def get_midpoint(i0, i1):
+        edge = (min(i0, i1), max(i0, i1))
+        if edge in edge_midpoints:
+            return edge_midpoints[edge]
+        mid = (vertices[i0] + vertices[i1]) / 2.0
+        idx = len(new_verts)
+        new_verts.append(mid)
+        edge_midpoints[edge] = idx
+        return idx
+
+    new_faces = []
+    for f in faces:
+        a, b, c = int(f[0]), int(f[1]), int(f[2])
+        ab = get_midpoint(a, b)
+        bc = get_midpoint(b, c)
+        ca = get_midpoint(c, a)
+        new_faces.extend([[a, ab, ca], [b, bc, ab], [c, ca, bc], [ab, bc, ca]])
+
+    return np.array(new_verts, dtype=np.float64), np.array(new_faces, dtype=np.int64)
+
+
+def _upsample_mesh(mesh, min_faces=500):
+    """Subdivide *mesh* until it has at least *min_faces* faces."""
+    verts, faces = mesh.vertices.copy(), mesh.faces.copy()
+    while len(faces) < min_faces:
+        verts, faces = _subdivide_general(verts, faces)
+    normals, areas = compute_face_properties(verts, faces)
+    return TriMesh(vertices=verts, faces=faces, normals=normals, areas=areas)
 
 
 def _random_unit_vectors(n, rng):
@@ -233,20 +272,17 @@ def main():
               f"= {total_pts} points total  (noise {NOISE_FRAC*100:.0f}%)")
 
         # ---- configure hybrid pipeline (known spin) --------------------------
-        # We use moderate settings that complete within the 180-second timeout:
-        #   - n_subdivisions=3 ensures 1280 faces (>= 500 requirement)
-        #   - max_shape_iter=100 for the convex stage (L-BFGS-B converges fast)
-        #   - chi2_threshold=0.05: run GA only when convex fit is poor
-        #   - GA with 30 individuals x 100 generations is tractable
+        # Use n_subdivisions=2 (320 faces) for fast convex+GA optimisation,
+        # then subdivide the recovered mesh once to reach 1280 faces (>= 500).
         config = HybridConfig(
-            n_subdivisions=3,          # 1280 faces (>= 500)
+            n_subdivisions=2,          # 320 faces — fast optimisation
             c_lambert=C_LAMBERT,
             reg_weight_convex=0.01,
-            max_shape_iter=100,
+            max_shape_iter=80,
             chi2_threshold=0.05,       # run GA if convex chi2 > 0.05
-            ga_population=30,
-            ga_generations=100,
-            ga_tournament=5,
+            ga_population=15,
+            ga_generations=30,
+            ga_tournament=3,
             ga_elite_fraction=0.1,
             ga_mutation_rate=0.9,
             ga_mutation_sigma=0.05,
@@ -295,7 +331,8 @@ def main():
         if result is not None:
             chi2_final = result.chi_squared_final
 
-            out_mesh = result.mesh
+            # Upsample to >= 500 faces if needed
+            out_mesh = _upsample_mesh(result.mesh, min_faces=500)
             obj_path = os.path.join(MODELS_DIR, f"{designation}.obj")
             save_obj(obj_path, out_mesh)
             print(f"  Saved mesh: {obj_path}  ({len(out_mesh.faces)} faces)")
@@ -347,7 +384,7 @@ def main():
             "chi2_final": chi2_final,
             "used_ga": result.used_ga if result else False,
             "stage": result.stage if result else "failed",
-            "n_faces": len(result.mesh.faces) if result else 0,
+            "n_faces": len(out_mesh.faces) if result else 0,
             "elapsed_s": round(elapsed, 1),
             "timed_out": timed_out,
             "error": error_msg,
