@@ -1,0 +1,38 @@
+{
+  "item_id": "item_020",
+  "mode": "optimized_vectorized_model",
+  "profiles": [
+    {
+      "n_points": 60,
+      "wall_time_s": 0.005298975000005157,
+      "peak_mem_mb": 0.01658172607421875
+    },
+    {
+      "n_points": 120,
+      "wall_time_s": 0.009189843399963139,
+      "peak_mem_mb": 0.015607833862304688
+    },
+    {
+      "n_points": 240,
+      "wall_time_s": 0.017219713599979515,
+      "peak_mem_mb": 0.0162078857421875
+    },
+    {
+      "n_points": 480,
+      "wall_time_s": 0.03326555300000109,
+      "peak_mem_mb": 0.017743682861328124
+    },
+    {
+      "n_points": 960,
+      "wall_time_s": 0.06544130480001513,
+      "peak_mem_mb": 0.021405792236328124
+    }
+  ],
+  "linear_fit": {
+    "slope": 6.688702959681043e-05,
+    "intercept": 0.0012011029499793399,
+    "r2": 0.9999948715310163
+  },
+  "acceptance_pass": true,
+  "figure": "figures/item_020_scaling.png"
+}
