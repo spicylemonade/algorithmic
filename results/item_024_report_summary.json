@@ -1,0 +1,8 @@
+{
+  "item_id": "item_024",
+  "includes_per_object_and_aggregate_tables": true,
+  "includes_stat_tests": true,
+  "includes_failure_analysis": true,
+  "sota_claim_supported": false,
+  "acceptance_pass": true
+}
