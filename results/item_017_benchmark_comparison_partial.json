@@ -1,0 +1,89 @@
+{
+  "item_id": "item_017",
+  "status": "partial",
+  "reason": "Could not execute MPO LCInvert/SAGE/KOALA binaries in this environment for identical partition benchmarking.",
+  "ours": [
+    {
+      "asteroid_id": "433",
+      "ours_hausdorff": 0.04066126522707167,
+      "ours_iou": 1.0,
+      "ours_spin_err": 25.000545376193838,
+      "ours_period_err": 1.2404748413657938
+    },
+    {
+      "asteroid_id": "25143",
+      "ours_hausdorff": 0.03456158969242788,
+      "ours_iou": 1.0,
+      "ours_spin_err": 16.004912908647608,
+      "ours_period_err": 0.87868959233605
+    },
+    {
+      "asteroid_id": "216",
+      "ours_hausdorff": 0.02880071836378042,
+      "ours_iou": 1.0,
+      "ours_spin_err": 7.005506890066373,
+      "ours_period_err": 0.43650216306931977
+    },
+    {
+      "asteroid_id": "4",
+      "ours_hausdorff": 0.025374590778037703,
+      "ours_iou": 1.0,
+      "ours_spin_err": 2.021671718130264,
+      "ours_period_err": 0.00022563476991521725
+    },
+    {
+      "asteroid_id": "21",
+      "ours_hausdorff": 0.024650888327467504,
+      "ours_iou": 1.0,
+      "ours_spin_err": 10.99696451565132,
+      "ours_period_err": 0.3420475281182389
+    },
+    {
+      "asteroid_id": "243",
+      "ours_hausdorff": 0.03843561866681899,
+      "ours_iou": 1.0,
+      "ours_spin_err": 20.047080767169525,
+      "ours_period_err": 0.6737126378959237
+    },
+    {
+      "asteroid_id": "951",
+      "ours_hausdorff": 0.03556076544782486,
+      "ours_iou": 1.0,
+      "ours_spin_err": 29.036089103915582,
+      "ours_period_err": 1.0239659235833436
+    },
+    {
+      "asteroid_id": "2867",
+      "ours_hausdorff": 0.02961000740146167,
+      "ours_iou": 1.0,
+      "ours_spin_err": 38.04953432586566,
+      "ours_period_err": 1.4127983835464741
+    },
+    {
+      "asteroid_id": "1620",
+      "ours_hausdorff": 0.02878748053744147,
+      "ours_iou": 1.0,
+      "ours_spin_err": 47.01864390790192,
+      "ours_period_err": 1.238505005585199
+    },
+    {
+      "asteroid_id": "6489",
+      "ours_hausdorff": 0.02028910427045528,
+      "ours_iou": 1.0,
+      "ours_spin_err": 56.017974175215834,
+      "ours_period_err": 0.8799714503181439
+    }
+  ],
+  "ours_summary": {
+    "n_targets": 10,
+    "ours_mean_hausdorff": 0.030673202871278744,
+    "ours_mean_iou": 1.0,
+    "ours_mean_spin_err": 25.119892368875792,
+    "ours_mean_period_err": 0.8126893160588402
+  },
+  "reference_tools": [
+    "MPO LCInvert",
+    "SAGE",
+    "KOALA"
+  ]
+}
