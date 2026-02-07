@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "created_at": "2026-02-07T00:15:59Z",
-  "updated_at": "2026-02-07T00:17:21.435870+00:00",
+  "updated_at": "2026-02-07T00:17:46.079030+00:00",
   "current_agent": "researcher",
   "agent_status": {
     "orchestrator": {
@@ -41,16 +41,16 @@
           "id": "item_002",
           "description": "Define end-to-end research objective and success thresholds",
           "acceptance_criteria": "A one-page problem statement specifies required outputs (top-50 targets, `.obj` shapes, spin vectors) and quantitative target of <5% validation deviation",
-          "status": "in_progress",
-          "notes": null,
+          "status": "completed",
+          "notes": "Wrote one-page objective with explicit deliverables and <5% validation deviation threshold in docs/problem_statement.md; recorded evidence JSON.",
           "error": null
         },
         {
           "id": "item_003",
           "description": "Synthesize mathematical requirements from Kaasalainen-Torppa convex inversion",
           "acceptance_criteria": "Document includes explicit parameterization, objective terms, regularization terms, and gradient expressions needed for convex optimization",
-          "status": "pending",
-          "notes": null,
+          "status": "completed",
+          "notes": "Documented convex inversion parameterization, objective and regularization terms, and explicit gradient expressions in docs/convex_inversion_math.md.",
           "error": null
         },
         {
@@ -262,9 +262,9 @@
   ],
   "summary": {
     "total_items": 25,
-    "completed": 1,
-    "in_progress": 1,
+    "completed": 3,
+    "in_progress": 0,
     "failed": 0,
-    "pending": 23
+    "pending": 22
   }
 }

@@ -1,0 +1,12 @@
+{
+  "item_id": "item_003",
+  "artifact": "docs/convex_inversion_math.md",
+  "contains": [
+    "shape_parameterization",
+    "objective_terms",
+    "regularization_terms",
+    "gradient_expressions",
+    "optimization_defaults"
+  ],
+  "seed": 42
+}
