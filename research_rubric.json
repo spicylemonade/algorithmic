@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "created_at": "2026-02-07T00:15:59Z",
-  "updated_at": "2026-02-07T00:18:20.397278+00:00",
+  "updated_at": "2026-02-07T00:18:26.204608+00:00",
   "current_agent": "researcher",
   "agent_status": {
     "orchestrator": {
@@ -80,7 +80,7 @@
           "id": "item_006",
           "description": "Design baseline software architecture for modular inversion engine",
           "acceptance_criteria": "Architecture diagram and interface contract define at least 8 modules: ingestion, geometry, photometry, convex solver, evolutionary solver, sparse solver, validation, orchestration",
-          "status": "pending",
+          "status": "in_progress",
           "notes": null,
           "error": null
         },
@@ -263,8 +263,8 @@
   "summary": {
     "total_items": 25,
     "completed": 5,
-    "in_progress": 0,
+    "in_progress": 1,
     "failed": 0,
-    "pending": 20
+    "pending": 19
   }
 }

@@ -1,0 +1,16 @@
+{
+  "item_id": "item_006",
+  "modules": [
+    "ingestion",
+    "geometry",
+    "photometry",
+    "convex_solver",
+    "evolutionary_solver",
+    "sparse_solver",
+    "validation",
+    "orchestration"
+  ],
+  "contract_doc": "docs/architecture.md",
+  "diagram": "figures/item_006_architecture.png",
+  "seed": 42
+}
