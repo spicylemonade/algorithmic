@@ -1,0 +1,6 @@
+{
+  "item_id": "item_008",
+  "status": "failed",
+  "error": "Acceptance not met: stable pole rate 0.10 (required >=0.70).",
+  "stable_rate": 0.1
+}

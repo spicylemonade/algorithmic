@@ -1,0 +1,81 @@
+{
+  "item_id": "item_008",
+  "seed": 42,
+  "targets": 10,
+  "stable_count": 1,
+  "stable_rate": 0.1,
+  "max_restarts": 20,
+  "acceptance_pass": false,
+  "details": [
+    {
+      "target": 0,
+      "sparse_points": 100,
+      "restarts": 1,
+      "pole_error_deg": 10.584654821386485,
+      "stable": true
+    },
+    {
+      "target": 1,
+      "sparse_points": 100,
+      "restarts": 17,
+      "pole_error_deg": 18.151444397077853,
+      "stable": false
+    },
+    {
+      "target": 2,
+      "sparse_points": 100,
+      "restarts": 11,
+      "pole_error_deg": 100.02907355169856,
+      "stable": false
+    },
+    {
+      "target": 3,
+      "sparse_points": 100,
+      "restarts": 7,
+      "pole_error_deg": 114.52437423177089,
+      "stable": false
+    },
+    {
+      "target": 4,
+      "sparse_points": 100,
+      "restarts": 11,
+      "pole_error_deg": 109.71615406927351,
+      "stable": false
+    },
+    {
+      "target": 5,
+      "sparse_points": 100,
+      "restarts": 6,
+      "pole_error_deg": 156.4277119640989,
+      "stable": false
+    },
+    {
+      "target": 6,
+      "sparse_points": 100,
+      "restarts": 1,
+      "pole_error_deg": 175.52346366859322,
+      "stable": false
+    },
+    {
+      "target": 7,
+      "sparse_points": 100,
+      "restarts": 11,
+      "pole_error_deg": 78.7440240563033,
+      "stable": false
+    },
+    {
+      "target": 8,
+      "sparse_points": 100,
+      "restarts": 1,
+      "pole_error_deg": 142.27313704225708,
+      "stable": false
+    },
+    {
+      "target": 9,
+      "sparse_points": 100,
+      "restarts": 1,
+      "pole_error_deg": 155.44891138592146,
+      "stable": false
+    }
+  ]
+}
