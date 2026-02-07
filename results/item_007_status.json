@@ -1,0 +1,6 @@
+{
+  "item_id": "item_007",
+  "status": "failed",
+  "error": "Acceptance not met: 5/10 trials passed (required >=8/10).",
+  "pass_rate": 0.5
+}

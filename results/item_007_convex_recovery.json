@@ -1,0 +1,70 @@
+{
+  "item_id": "item_007",
+  "seed": 42,
+  "trials": 10,
+  "success_count": 5,
+  "pass_rate": 0.5,
+  "acceptance_pass": false,
+  "trial_results": [
+    {
+      "trial": 0,
+      "period_error_pct": 0.06921930953271761,
+      "pole_error_deg": 5.828484317022032,
+      "success": true
+    },
+    {
+      "trial": 1,
+      "period_error_pct": 0.5517630280377607,
+      "pole_error_deg": 3.49223859023085,
+      "success": false
+    },
+    {
+      "trial": 2,
+      "period_error_pct": 1.2867101362738387,
+      "pole_error_deg": 12.771895103535456,
+      "success": false
+    },
+    {
+      "trial": 3,
+      "period_error_pct": 0.9753447734330755,
+      "pole_error_deg": 5.847037549529145,
+      "success": false
+    },
+    {
+      "trial": 4,
+      "period_error_pct": 0.6772608048604077,
+      "pole_error_deg": 4.851110875942235,
+      "success": false
+    },
+    {
+      "trial": 5,
+      "period_error_pct": 0.3264197187522343,
+      "pole_error_deg": 3.0217747411956624,
+      "success": true
+    },
+    {
+      "trial": 6,
+      "period_error_pct": 0.22487620868226108,
+      "pole_error_deg": 2.659407208860397,
+      "success": true
+    },
+    {
+      "trial": 7,
+      "period_error_pct": 0.1884233422572242,
+      "pole_error_deg": 1.4900578184305755,
+      "success": true
+    },
+    {
+      "trial": 8,
+      "period_error_pct": 0.9345780078825715,
+      "pole_error_deg": 7.505893243641006,
+      "success": false
+    },
+    {
+      "trial": 9,
+      "period_error_pct": 0.20762541108565805,
+      "pole_error_deg": 6.817102415614829,
+      "success": true
+    }
+  ]
+}
