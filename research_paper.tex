@@ -1,0 +1,258 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{float}
+\usepackage{hyperref}
+
+\title{A Modular Light Curve Inversion Pipeline for Asteroid Shape Recovery Under Sparse Photometry: Architecture, Blind Validation, and Candidate Prioritization}
+\author{Research Automation Study}
+\date{February 7, 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Light curve inversion (LCI) remains central to asteroid shape and spin reconstruction, but sparse survey photometry and solver degeneracy continue to limit reproducible high-confidence modeling. We present an end-to-end custom LCI software pipeline implemented from scratch in Python, with explicit modules for convex inversion, evolutionary refinement, sparse-first pole-period search, validation, and candidate filtering. Using a 10-object blind benchmark based on DAMIT and radar-associated truth assets, the pipeline achieved mean normalized Hausdorff distance 0.0307 and mean volumetric IoU proxy 1.000, but only 1/10 targets passed the full strict gate once spin-axis and period constraints were enforced. Sparse-data ablation over 175 conditions quantified a failure boundary: no successful runs at 30--50 points, with improving pass rates above 70 points and broader apparition/phase coverage. A strict boolean target-selection workflow (NEO or diameter $>$ 100 km, LCDB $U \geq 2$, absent from DAMIT, sufficient coverage) returned 15 qualified candidates from a 160-object pool, not the intended 50. These results establish a reproducible baseline architecture and quantitative constraints, while showing that further physics fidelity and external tool benchmarking are required before claiming state-of-the-art superiority.
+\end{abstract}
+
+\section{Introduction}
+Reliable asteroid 3D shape and spin recovery under heterogeneous photometric coverage is important for population science, mission planning, impact-risk characterization, and thermophysical modeling. The target objective in this study was ambitious: design and execute a new LCI pipeline intended to exceed established tools (MPO LCInvert, SAGE, KOALA), with particular emphasis on sparse-data robustness.
+
+The completed work in this repository delivered a full software stack, benchmark and ablation artifacts, and a filtered modeling queue. However, two key requirements were not fully met in the current environment: direct identical-partition benchmark execution against MPO LCInvert/SAGE/KOALA and generation of a strict top-50 candidate queue under all boolean filters.
+
+The main contributions are:
+\begin{itemize}
+\item A modular LCI architecture spanning ingestion, geometry, photometry, convex and evolutionary solvers, sparse inversion, validation, and orchestration.
+\item A sparse-first pole-period search strategy with coarse-to-fine refinement and mirror-pole ambiguity handling.
+\item A reproducible blind validation package over 10 benchmark asteroids with per-target predicted/truth meshes and spin vectors.
+\item A sparse-data ablation study quantifying deviation and pass-rate trends across points, apparitions, and phase-angle coverage.
+\item A strict-rule candidate filter and ranked queue of previously unmodeled high-priority objects (15 qualified in this run).
+\end{itemize}
+
+\section{Related Work}
+The implemented design synthesizes principles documented in canonical LCI literature and tooling references cited by the project plan: Kaasalainen--Torppa style convex inversion and gradient optimization, SAGE-inspired evolutionary non-convex refinement, Durech-style sparse inversion logic, and ADAM-style multi-source motivation for data fusion. Repository artifacts explicitly map these references into implementable requirements: convex parameterization/objectives (\texttt{docs/convex\_inversion\_math.md}), non-convex evolutionary policy (\texttt{docs/nonconvex\_evolutionary\_design.md}), and sparse constraints (\texttt{docs/sparse\_inversion\_constraints.md}).
+
+Because external binaries for MPO LCInvert/SAGE/KOALA were unavailable in this environment, related-work comparison remains methodological rather than fully quantitative in this run.
+
+\section{Method}
+\subsection{Pipeline Architecture}
+The software is organized into eight core modules (ingestion, geometry, photometry, convex solver, evolutionary solver, sparse solver, validation, orchestration), matching the architecture contract and diagram artifact (Figure~\ref{fig:architecture}).
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.92\textwidth]{figures/item_006_architecture.png}
+\caption{Implemented modular architecture of the custom LCI pipeline (artifact: \texttt{figures/item\_006\_architecture.png}).}
+\label{fig:architecture}
+\end{figure}
+
+\subsection{Core Solvers and Objective Design}
+The dense-mode orchestration executes a convex stage followed by evolutionary refinement. The convex stage initializes an ellipsoid mesh and updates spin parameters via deterministic gradient-like trial moves with adaptive step shrinking. The evolutionary stage performs seeded stochastic perturbations over spin parameters across generations/population members, keeping the best residual candidate.
+
+An explicit hybrid objective schedule is implemented with stage-dependent weights on photometric fit, smoothness, and concavity penalties:
+\begin{itemize}
+\item Stage 0: $(w_{\mathrm{photo}}, w_{\mathrm{smooth}}, w_{\mathrm{concavity}}) = (1.0, 0.35, 0.02)$
+\item Stage 1: $(1.0, 0.2, 0.12)$
+\item Stage 2: $(1.0, 0.12, 0.25)$
+\end{itemize}
+This schedule progressively relaxes convex regularization to admit non-convex structure.
+
+\subsection{Sparse Inversion Components}
+Sparse-first logic is implemented in two layers: (i) a sparse solver gate requiring at least 100 points and (ii) a coarse-to-fine pole-period searcher scanning period and spin grids, then refining around the incumbent solution. Mirror ambiguity is retained if the score difference is below 0.015. Project-level constraints define minimum 3 apparitions and broad period bounds (2--200 h) for production selection.
+
+\subsection{Validation, Uncertainty, and Self-Reinforcement}
+Validation metrics include normalized symmetric Hausdorff distance, volumetric IoU proxy, spin-axis error, and period error. Pass criteria are strict: Hausdorff $\leq 0.05$, IoU complement $\leq 0.05$, spin-axis error $\leq 10^{\circ}$, period error $\leq 0.01$ h.
+
+Uncertainty is quantified through multi-start ensembles (64 starts) with 95\% confidence intervals over spin and principal axes. A recursive self-reinforcement policy retunes weights when deviation exceeds 5\%, with a maximum of six iterations and tighter period granularity at higher error levels.
+
+\subsection{Data and Candidate Logic}
+The ingestion schema specifies required fields/provenance across ALCDEF, PDS, Gaia DR3, ZTF, Pan-STARRS, and MPC-oriented inputs. Candidate filtering applies boolean priorities:
+\begin{itemize}
+\item Priority 1: NEO or diameter $>$ 100 km.
+\item Priority 2: LCDB quality code $U \geq 2$.
+\item Priority 3: Not present in DAMIT.
+\item Priority 4: Adequate photometric coverage (light curves and/or sparse coverage criteria used by the selection script).
+\end{itemize}
+
+\section{Experiments}
+\subsection{Blind Validation Against Ground-Truth Assets}
+Ten benchmark targets were evaluated in blind mode (truth excluded during optimization; used only post-fit). Table~\ref{tab:blind} reports per-target metrics sourced from \texttt{results/item\_016\_blind\_validation.json} and per-target prediction files.
+
+\begin{table}[H]
+\centering
+\caption{Blind validation metrics on 10 benchmark asteroids.}
+\label{tab:blind}
+\small
+\begin{tabular}{lrrrrr}
+\toprule
+Asteroid & Hausdorff$_{norm}$ & IoU & Spin err ($^\circ$) & Period err (h) & Pass \\
+\midrule
+433 Eros & 0.0407 & 1.000 & 25.00 & 1.2405 & 0 \\
+25143 Itokawa & 0.0346 & 1.000 & 16.00 & 0.8787 & 0 \\
+216 Kleopatra & 0.0288 & 1.000 & 7.01 & 0.4365 & 0 \\
+4 Vesta & 0.0254 & 1.000 & 2.02 & 0.0002 & 1 \\
+21 Lutetia & 0.0247 & 1.000 & 11.00 & 0.3420 & 0 \\
+243 Ida & 0.0384 & 1.000 & 20.05 & 0.6737 & 0 \\
+951 Gaspra & 0.0356 & 1.000 & 29.04 & 1.0240 & 0 \\
+2867 Steins & 0.0296 & 1.000 & 38.05 & 1.4128 & 0 \\
+1620 Geographos & 0.0288 & 1.000 & 47.02 & 1.2385 & 0 \\
+6489 Golevka & 0.0203 & 1.000 & 56.02 & 0.8800 & 0 \\
+\bottomrule
+\end{tabular}
+\normalsize
+\end{table}
+
+Aggregate blind-validation performance:
+\begin{itemize}
+\item Mean Hausdorff$_{norm}$: 0.0307
+\item Mean IoU: 1.000
+\item Mean spin-axis error: $25.12^{\circ}$
+\item Mean period error: 0.8127 h
+\item Full-gate pass rate: 1/10 (10\%)
+\end{itemize}
+
+The geometric similarity metrics are favorable under the chosen proxy, while spin and period recovery dominate failure cases.
+
+\subsection{Partial Benchmark Comparison Status}
+The comparison artifact (\texttt{results/item\_017\_benchmark\_comparison\_partial.json}) records our 10-target summary above but no direct deltas versus MPO LCInvert, SAGE, or KOALA due to unavailable binaries/harnesses. Therefore, superiority claims cannot be supported by this run.
+
+\subsection{Sparse Ablation Robustness}
+Ablation covered 175 conditions (points, apparition count, phase-angle span). Figure~\ref{fig:ablation} and Table~\ref{tab:ablation} summarize trends.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth]{figures/item_018_sparse_ablation.png}
+\caption{Sparse-data ablation trend artifact (\texttt{figures/item\_018\_sparse\_ablation.png}).}
+\label{fig:ablation}
+\end{figure}
+
+\begin{table}[H]
+\centering
+\caption{Ablation summary by sparse point count.}
+\label{tab:ablation}
+\small
+\begin{tabular}{rrr}
+\toprule
+Points & Mean deviation (\%) & Pass rate \\
+\midrule
+30 & 9.5421 & 0.00 \\
+50 & 8.4910 & 0.00 \\
+70 & 7.4362 & 0.24 \\
+90 & 6.3086 & 0.36 \\
+110 & 5.1383 & 0.60 \\
+130 & 4.6903 & 0.60 \\
+160 & 4.6629 & 0.60 \\
+\bottomrule
+\end{tabular}
+\normalsize
+\end{table}
+
+Key sparse findings from \texttt{results/item\_018\_sparse\_ablation.json}:
+\begin{itemize}
+\item Minimum/maximum deviation: 1.8467\% / 15.5957\%
+\item Mean deviation across all settings: 6.6099\%
+\item Passing conditions ($<$5\% deviation): 60/175
+\item Earliest passing regime observed: 70 points, 2 apparitions, 20$^{\circ}$ phase span
+\end{itemize}
+
+\subsection{Candidate Selection and Modeling Queue}
+Strict boolean filtering over 160 pooled objects selected 15 candidates (\texttt{results/item\_019\_candidate\_filtering.json}, \texttt{results/item\_020\_modeling\_queue.json}). Table~\ref{tab:queue} lists the ranked queue.
+
+\begin{longtable}{>{\raggedright\arraybackslash}p{0.06\textwidth}>{\raggedright\arraybackslash}p{0.39\textwidth}rrrr}
+\caption{Strict-rule prioritized modeling queue (actual size 15; target size 50).}\label{tab:queue}\\
+\toprule
+\# & Object & Score & $U$ & LC count & Apparitions \\
+\midrule
+\endfirsthead
+\toprule
+\# & Object & Score & $U$ & LC count & Apparitions \\
+\midrule
+\endhead
+3122 & 3122 Florence (1981 ET3) & 375 & 3 & 35 & 23 \\
+5143 & 5143 Heracles (1991 VL) & 373 & 3 & 33 & 18 \\
+1866 & 1866 Sisyphus (1972 XA) & 370 & 3 & 30 & 17 \\
+1943 & 1943 Anteros (1973 EC) & 370 & 3 & 30 & 17 \\
+4055 & 4055 Magellan (1985 DO2) & 370 & 3 & 30 & 16 \\
+4183 & 4183 Cuno (1959 LM) & 370 & 3 & 30 & 12 \\
+6455 & 6455 (1992 HE) & 365 & 3 & 25 & 14 \\
+4179 & 4179 Toutatis (1989 AC) & 364 & 3 & 24 & 10 \\
+2212 & 2212 Hephaistos (1978 SB) & 361 & 2 & 21 & 7 \\
+7822 & 7822 (1991 CS) & 361 & 3 & 21 & 11 \\
+3554 & 3554 Amun (1986 EB) & 360 & 3 & 20 & 11 \\
+5653 & 5653 Camarillo (1992 WD5) & 360 & 3 & 20 & 10 \\
+3552 & 3552 Don Quixote (1983 SA) & 359 & 3 & 19 & 10 \\
+5626 & 5626 Melissabrucker (1991 FE) & 359 & 3 & 19 & 7 \\
+5604 & 5604 (1992 FE) & 357 & 3 & 17 & 8 \\
+\bottomrule
+\end{longtable}
+
+Queue statistics:
+\begin{itemize}
+\item Required queue size: 50; actual strict-criteria queue size: 15
+\item Mean score: 364.93
+\item Mean lightcurve count: 24.93
+\item Mean estimated sparse points: 149.6
+\item Mean apparition count: 12.73
+\end{itemize}
+
+\section{Discussion}
+The repository demonstrates a complete and reproducible research pipeline with explicit metrics, failure gates, and auditable outputs. The strongest result is reproducibility and structural completeness: every blind target includes prediction/truth artifacts, and sparse ablation provides a clear operating map for data sufficiency.
+
+However, the evidence does not currently support the original objective of surpassing state-of-the-art tools. The direct benchmark requirement failed because reference binaries were unavailable for identical-partition execution. Additionally, blind validation indicates strong mesh overlap under the chosen IoU proxy but substantial spin/period errors on most targets, suggesting that the current simplified forward model and optimization landscape are underconstrained for rotational state recovery.
+
+The candidate pipeline successfully enforces strict boolean logic and returns high-quality priorities, but only 15 objects satisfy all constraints in this bounded run. This shortfall is independently recorded in the rubric/checklist artifacts (top-50 integrity marked false).
+
+A code-history review shows staged development from architecture and metric definition through sparse ablation and candidate filtering, culminating in a final researcher handoff commit. The recent history also includes generated \texttt{\_\_pycache\_\_} binaries; these do not affect scientific conclusions but should be excluded in archival releases.
+
+\section{Conclusion}
+This study delivered a custom LCI pipeline from scratch with modular solver design, sparse inversion components, blind validation, and strict candidate prioritization artifacts. Quantitatively, the system reached mean normalized Hausdorff 0.0307 and mean IoU proxy 1.000 on 10 blind benchmarks, but only 10\% passed full spin-period gates. Sparse ablation identified the practical boundary where performance improves (notably beyond 70 points with improved apparition/phase coverage). Candidate selection under strict rules produced a high-confidence queue of 15 unmodeled objects, not the requested 50.
+
+Immediate next steps for achieving the original objective are: (i) integrate physically richer scattering/shape parameterization, (ii) execute true side-by-side benchmarks against MPO LCInvert/SAGE/KOALA on identical partitions, and (iii) expand data harvest depth to satisfy the full top-50 strict-rule target before production modeling and release packaging.
+
+\section*{Appendix: Additional Quantitative Summaries}
+Table~\ref{tab:ablation-app} and Table~\ref{tab:ablation-phase} provide grouped sparse-ablation summaries from \texttt{results/item\_018\_sparse\_ablation.json}.
+
+\begin{table}[H]
+\centering
+\caption{Sparse ablation grouped by apparition count.}
+\label{tab:ablation-app}
+\small
+\begin{tabular}{rrr}
+\toprule
+Apparitions & Mean deviation (\%) & Pass rate \\
+\midrule
+1 & 9.5962 & 0.0000 \\
+2 & 7.5472 & 0.2571 \\
+3 & 5.2466 & 0.5143 \\
+4 & 5.3003 & 0.4286 \\
+5 & 5.3593 & 0.5143 \\
+\bottomrule
+\end{tabular}
+\normalsize
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Sparse ablation grouped by phase-angle span.}
+\label{tab:ablation-phase}
+\small
+\begin{tabular}{rrr}
+\toprule
+Phase span (deg) & Mean deviation (\%) & Pass rate \\
+\midrule
+10 & 9.7210 & 0.0000 \\
+20 & 7.4988 & 0.2571 \\
+30 & 5.2766 & 0.4857 \\
+40 & 5.2766 & 0.4857 \\
+50 & 5.2766 & 0.4857 \\
+\bottomrule
+\end{tabular}
+\normalsize
+\end{table}
+
+\section*{Appendix: Development Provenance}
+The git history shows sequential implementation from rubric generation through items 001--025, ending at commit \texttt{abb8a82}. Recent commits include substantial updates to candidate filtering (\texttt{8a804ef}), queue audit generation (\texttt{1218189}), and rubric finalization. This chronology supports traceable provenance between methods, outputs, and manuscript claims.
+
+\end{document}
