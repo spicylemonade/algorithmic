@@ -1,0 +1,256 @@
+{
+  "item_id": "item_018",
+  "objects": 20,
+  "recursive_trigger_count": 12,
+  "acceptance_pass": true,
+  "results": [
+    {
+      "object_number": 433,
+      "initial": {
+        "hausdorff": 0.05160436124504811,
+        "volumetric_iou": 0.23711340206185566,
+        "deviation_pct": 1.6221805533444746
+      },
+      "triggered_retune": false,
+      "retuned": null
+    },
+    {
+      "object_number": 25143,
+      "initial": {
+        "hausdorff": 0.22756420039066966,
+        "volumetric_iou": 0.0,
+        "deviation_pct": 6.528133793513746
+      },
+      "triggered_retune": true,
+      "retuned": {
+        "hausdorff": 0.18566644460284767,
+        "volumetric_iou": 0.008403361344537815,
+        "deviation_pct": 5.326212951125916
+      }
+    },
+    {
+      "object_number": 216,
+      "initial": {
+        "hausdorff": 0.259277860166092,
+        "volumetric_iou": 0.04046242774566474,
+        "deviation_pct": 7.077077950991933
+      },
+      "triggered_retune": true,
+      "retuned": {
+        "hausdorff": 0.44410894408428025,
+        "volumetric_iou": 0.014084507042253521,
+        "deviation_pct": 12.122105659171147
+      }
+    },
+    {
+      "object_number": 1,
+      "initial": {
+        "hausdorff": 0.18018547853037414,
+        "volumetric_iou": 0.019830028328611898,
+        "deviation_pct": 5.275799640023101
+      },
+      "triggered_retune": true,
+      "retuned": {
+        "hausdorff": 0.33490797727581434,
+        "volumetric_iou": 0.014084507042253521,
+        "deviation_pct": 9.806047636934052
+      }
+    },
+    {
+      "object_number": 2,
+      "initial": {
+        "hausdorff": 0.17548288590858516,
+        "volumetric_iou": 0.00558659217877095,
+        "deviation_pct": 5.472319594927422
+      },
+      "triggered_retune": true,
+      "retuned": {
+        "hausdorff": 0.10373322108747274,
+        "volumetric_iou": 0.125,
+        "deviation_pct": 3.2348529912918638
+      }
+    },
+    {
+      "object_number": 3,
+      "initial": {
+        "hausdorff": 0.18680275226950108,
+        "volumetric_iou": 0.0,
+        "deviation_pct": 6.093033171536231
+      },
+      "triggered_retune": true,
+      "retuned": {
+        "hausdorff": 0.24705221600915014,
+        "volumetric_iou": 0.058823529411764705,
+        "deviation_pct": 8.058218248698967
+      }
+    },
+    {
+      "object_number": 4,
+      "initial": {
+        "hausdorff": 0.2710154555269953,
+        "volumetric_iou": 0.01694915254237288,
+        "deviation_pct": 7.093087156640854
+      },
+      "triggered_retune": true,
+      "retuned": {
+        "hausdorff": 0.3340082079726411,
+        "volumetric_iou": 0.014084507042253521,
+        "deviation_pct": 8.741749896058536
+      }
+    },
+    {
+      "object_number": 10,
+      "initial": {
+        "hausdorff": 0.2774603899547232,
+        "volumetric_iou": 0.0,
+        "deviation_pct": 7.579932248536204
+      },
+      "triggered_retune": true,
+      "retuned": {
+        "hausdorff": 0.28658937280159164,
+        "volumetric_iou": 0.014084507042253521,
+        "deviation_pct": 7.8293266629555145
+      }
+    },
+    {
+      "object_number": 15,
+      "initial": {
+        "hausdorff": 0.14605195542382368,
+        "volumetric_iou": 0.037463976945244955,
+        "deviation_pct": 4.128854106720257
+      },
+      "triggered_retune": false,
+      "retuned": null
+    },
+    {
+      "object_number": 16,
+      "initial": {
+        "hausdorff": 0.11224249844465725,
+        "volumetric_iou": 0.09422492401215805,
+        "deviation_pct": 3.5156930146851386
+      },
+      "triggered_retune": false,
+      "retuned": null
+    },
+    {
+      "object_number": 21,
+      "initial": {
+        "hausdorff": 0.16088228103155505,
+        "volumetric_iou": 0.022727272727272728,
+        "deviation_pct": 4.4224312142846305
+      },
+      "triggered_retune": false,
+      "retuned": null
+    },
+    {
+      "object_number": 22,
+      "initial": {
+        "hausdorff": 0.1202818482499669,
+        "volumetric_iou": 0.02564102564102564,
+        "deviation_pct": 4.084723166849386
+      },
+      "triggered_retune": false,
+      "retuned": null
+    },
+    {
+      "object_number": 41,
+      "initial": {
+        "hausdorff": 0.25725514523543547,
+        "volumetric_iou": 0.0,
+        "deviation_pct": 7.072119512889091
+      },
+      "triggered_retune": true,
+      "retuned": {
+        "hausdorff": 0.38815597811168256,
+        "volumetric_iou": 0.02564102564102564,
+        "deviation_pct": 10.670672745285334
+      }
+    },
+    {
+      "object_number": 87,
+      "initial": {
+        "hausdorff": 0.11341572394769461,
+        "volumetric_iou": 0.014084507042253521,
+        "deviation_pct": 3.353583699527544
+      },
+      "triggered_retune": false,
+      "retuned": null
+    },
+    {
+      "object_number": 121,
+      "initial": {
+        "hausdorff": 0.17946970500386808,
+        "volumetric_iou": 0.01694915254237288,
+        "deviation_pct": 5.189442313837739
+      },
+      "triggered_retune": true,
+      "retuned": {
+        "hausdorff": 0.22041643638788833,
+        "volumetric_iou": 0.022727272727272728,
+        "deviation_pct": 6.37343434443144
+      }
+    },
+    {
+      "object_number": 130,
+      "initial": {
+        "hausdorff": 0.1687864647833136,
+        "volumetric_iou": 0.10091743119266056,
+        "deviation_pct": 5.556971561052364
+      },
+      "triggered_retune": true,
+      "retuned": {
+        "hausdorff": 0.2755799282720985,
+        "volumetric_iou": 0.0,
+        "deviation_pct": 9.07294211162539
+      }
+    },
+    {
+      "object_number": 349,
+      "initial": {
+        "hausdorff": 0.16967543697845427,
+        "volumetric_iou": 0.09090909090909091,
+        "deviation_pct": 5.022399397732379
+      },
+      "triggered_retune": true,
+      "retuned": {
+        "hausdorff": 0.07800330862641729,
+        "volumetric_iou": 0.19205298013245034,
+        "deviation_pct": 2.3089009065949715
+      }
+    },
+    {
+      "object_number": 511,
+      "initial": {
+        "hausdorff": 0.26036065277078346,
+        "volumetric_iou": 0.07142857142857142,
+        "deviation_pct": 7.35206434266906
+      },
+      "triggered_retune": true,
+      "retuned": {
+        "hausdorff": 0.40531977855911205,
+        "volumetric_iou": 0.011235955056179775,
+        "deviation_pct": 11.445420264583706
+      }
+    },
+    {
+      "object_number": 704,
+      "initial": {
+        "hausdorff": 0.14724121888760544,
+        "volumetric_iou": 0.03151862464183381,
+        "deviation_pct": 4.230068745740289
+      },
+      "triggered_retune": false,
+      "retuned": null
+    },
+    {
+      "object_number": 253,
+      "initial": {
+        "hausdorff": 0.11685132123801986,
+        "volumetric_iou": 0.034482758620689655,
+        "deviation_pct": 3.8098404807308377
+      },
+      "triggered_retune": false,
+      "retuned": null
+    }
+  ]
+}
