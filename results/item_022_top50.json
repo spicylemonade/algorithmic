@@ -1,0 +1,658 @@
+{
+  "item_id": "item_022",
+  "top_n": 50,
+  "generated_count": 50,
+  "acceptance_pass": true,
+  "top_candidates": [
+    {
+      "object_id": "OBJ-10064",
+      "passes_all": true,
+      "data_completeness": 0.6811363636363637,
+      "geometry_coverage": 1.0,
+      "confidence_estimate": 1.0,
+      "rank_score": 1.0565113636363637,
+      "provenance_links": {
+        "selection_record": "results/item_021_candidates.json#OBJ-10064",
+        "jpl_sbdb": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=OBJ-10064",
+        "mpc": "https://minorplanetcenter.net/db_search/show_object?object_id=OBJ-10064"
+      }
+    },
+    {
+      "object_id": "OBJ-10008",
+      "passes_all": true,
+      "data_completeness": 0.8117045454545455,
+      "geometry_coverage": 0.8333333333333334,
+      "confidence_estimate": 0.8333333333333334,
+      "rank_score": 1.023600378787879,
+      "provenance_links": {
+        "selection_record": "results/item_021_candidates.json#OBJ-10008",
+        "jpl_sbdb": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=OBJ-10008",
+        "mpc": "https://minorplanetcenter.net/db_search/show_object?object_id=OBJ-10008"
+      }
+    },
+    {
+      "object_id": "OBJ-10010",
+      "passes_all": true,
+      "data_completeness": 0.738409090909091,
+      "geometry_coverage": 0.8333333333333334,
+      "confidence_estimate": 0.9333333333333333,
+      "rank_score": 1.0156174242424243,
+      "provenance_links": {
+        "selection_record": "results/item_021_candidates.json#OBJ-10010",
+        "jpl_sbdb": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=OBJ-10010",
+        "mpc": "https://minorplanetcenter.net/db_search/show_object?object_id=OBJ-10010"
+      }
+    },
+    {
+      "object_id": "OBJ-10035",
+      "passes_all": true,
+      "data_completeness": 0.7011363636363637,
+      "geometry_coverage": 0.8333333333333334,
+      "confidence_estimate": 0.9333333333333333,
+      "rank_score": 0.9988446969696969,
+      "provenance_links": {
+        "selection_record": "results/item_021_candidates.json#OBJ-10035",
+        "jpl_sbdb": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=OBJ-10035",
+        "mpc": "https://minorplanetcenter.net/db_search/show_object?object_id=OBJ-10035"
+      }
+    },
+    {
+      "object_id": "OBJ-10114",
+      "passes_all": true,
+      "data_completeness": 0.6572727272727272,
+      "geometry_coverage": 1.0,
+      "confidence_estimate": 0.8,
+      "rank_score": 0.9957727272727273,
+      "provenance_links": {
+        "selection_record": "results/item_021_candidates.json#OBJ-10114",
+        "jpl_sbdb": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=OBJ-10114",
+        "mpc": "https://minorplanetcenter.net/db_search/show_object?object_id=OBJ-10114"
+      }
+    },
+    {
+      "object_id": "OBJ-10033",
+      "passes_all": true,
+      "data_completeness": 0.6478409090909092,
+      "geometry_coverage": 1.0,
+      "confidence_estimate": 0.8,
+      "rank_score": 0.9915284090909091,
+      "provenance_links": {
+        "selection_record": "results/item_021_candidates.json#OBJ-10033",
+        "jpl_sbdb": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=OBJ-10033",
+        "mpc": "https://minorplanetcenter.net/db_search/show_object?object_id=OBJ-10033"
+      }
+    },
+    {
+      "object_id": "OBJ-10116",
+      "passes_all": true,
+      "data_completeness": 0.5717045454545455,
+      "geometry_coverage": 1.0,
+      "confidence_estimate": 0.9,
+      "rank_score": 0.9822670454545455,
+      "provenance_links": {
+        "selection_record": "results/item_021_candidates.json#OBJ-10116",
+        "jpl_sbdb": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=OBJ-10116",
+        "mpc": "https://minorplanetcenter.net/db_search/show_object?object_id=OBJ-10116"
+      }
+    },
+    {
+      "object_id": "OBJ-10112",
+      "passes_all": true,
+      "data_completeness": 0.7986363636363636,
+      "geometry_coverage": 0.6666666666666666,
+      "confidence_estimate": 0.8666666666666667,
+      "rank_score": 0.9760530303030304,
+      "provenance_links": {
+        "selection_record": "results/item_021_candidates.json#OBJ-10112",
+        "jpl_sbdb": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=OBJ-10112",
+        "mpc": "https://minorplanetcenter.net/db_search/show_object?object_id=OBJ-10112"
+      }
+    },
+    {
+      "object_id": "OBJ-10099",
+      "passes_all": true,
+      "data_completeness": 0.8461363636363637,
+      "geometry_coverage": 0.6666666666666666,
+      "confidence_estimate": 0.7666666666666666,
+      "rank_score": 0.9724280303030304,
+      "provenance_links": {
+        "selection_record": "results/item_021_candidates.json#OBJ-10099",
+        "jpl_sbdb": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=OBJ-10099",
+        "mpc": "https://minorplanetcenter.net/db_search/show_object?object_id=OBJ-10099"
+      }
+    },
+    {
+      "object_id": "OBJ-10119",
+      "passes_all": true,
+      "data_completeness": 0.7847727272727273,
+      "geometry_coverage": 0.6666666666666666,
+      "confidence_estimate": 0.7666666666666666,
+      "rank_score": 0.944814393939394,
+      "provenance_links": {
+        "selection_record": "results/item_021_candidates.json#OBJ-10119",
+        "jpl_sbdb": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=OBJ-10119",
+        "mpc": "https://minorplanetcenter.net/db_search/show_object?object_id=OBJ-10119"
+      }
+    },
+    {
+      "object_id": "OBJ-10015",
+      "passes_all": true,
+      "data_completeness": 0.6819318181818184,
+      "geometry_coverage": 0.8333333333333334,
+      "confidence_estimate": 0.7333333333333334,
+      "rank_score": 0.9402026515151516,
+      "provenance_links": {
+        "selection_record": "results/item_021_candidates.json#OBJ-10015",
+        "jpl_sbdb": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=OBJ-10015",
+        "mpc": "https://minorplanetcenter.net/db_search/show_object?object_id=OBJ-10015"
+      }
+    },
+    {
+      "object_id": "OBJ-10059",
+      "passes_all": true,
+      "data_completeness": 0.8135227272727272,
+      "geometry_coverage": 0.6666666666666666,
+      "confidence_estimate": 0.6666666666666666,
+      "rank_score": 0.932751893939394,
+      "provenance_links": {
+        "selection_record": "results/item_021_candidates.json#OBJ-10059",
+        "jpl_sbdb": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=OBJ-10059",
+        "mpc": "https://minorplanetcenter.net/db_search/show_object?object_id=OBJ-10059"
+      }
+    },
+    {
+      "object_id": "OBJ-10081",
+      "passes_all": false,
+      "data_completeness": 0.8415909090909091,
+      "geometry_coverage": 1.0,
+      "confidence_estimate": 1.0,
+      "rank_score": 0.9287159090909091,
+      "provenance_links": {
+        "selection_record": "results/item_021_candidates.json#OBJ-10081",
+        "jpl_sbdb": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=OBJ-10081",
+        "mpc": "https://minorplanetcenter.net/db_search/show_object?object_id=OBJ-10081"
+      }
+    },
+    {
+      "object_id": "OBJ-10058",
+      "passes_all": false,
+      "data_completeness": 0.9503409090909091,
+      "geometry_coverage": 1.0,
+      "confidence_estimate": 0.8,
+      "rank_score": 0.927653409090909,
+      "provenance_links": {
+        "selection_record": "results/item_021_candidates.json#OBJ-10058",
+        "jpl_sbdb": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=OBJ-10058",
+        "mpc": "https://minorplanetcenter.net/db_search/show_object?object_id=OBJ-10058"
+      }
+    },
+    {
+      "object_id": "OBJ-10095",
+      "passes_all": true,
+      "data_completeness": 0.8364772727272727,
+      "geometry_coverage": 0.5,
+      "confidence_estimate": 0.8,
+      "rank_score": 0.9264147727272727,
+      "provenance_links": {
+        "selection_record": "results/item_021_candidates.json#OBJ-10095",
+        "jpl_sbdb": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=OBJ-10095",
+        "mpc": "https://minorplanetcenter.net/db_search/show_object?object_id=OBJ-10095"
+      }
+    },
+    {
+      "object_id": "OBJ-10026",
+      "passes_all": true,
+      "data_completeness": 0.6836363636363636,
+      "geometry_coverage": 0.6666666666666666,
+      "confidence_estimate": 0.8666666666666667,
+      "rank_score": 0.9243030303030304,
+      "provenance_links": {
+        "selection_record": "results/item_021_candidates.json#OBJ-10026",
+        "jpl_sbdb": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=OBJ-10026",
+        "mpc": "https://minorplanetcenter.net/db_search/show_object?object_id=OBJ-10026"
+      }
+    },
+    {
+      "object_id": "OBJ-10098",
+      "passes_all": true,
+      "data_completeness": 0.5817045454545455,
+      "geometry_coverage": 0.8333333333333334,
+      "confidence_estimate": 0.8333333333333334,
+      "rank_score": 0.920100378787879,
+      "provenance_links": {
+        "selection_record": "results/item_021_candidates.json#OBJ-10098",
+        "jpl_sbdb": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=OBJ-10098",
+        "mpc": "https://minorplanetcenter.net/db_search/show_object?object_id=OBJ-10098"
+      }
+    },
+    {
+      "object_id": "OBJ-10012",
+      "passes_all": true,
+      "data_completeness": 0.655568181818182,
+      "geometry_coverage": 0.6666666666666666,
+      "confidence_estimate": 0.8666666666666667,
+      "rank_score": 0.9116723484848486,
+      "provenance_links": {
+        "selection_record": "results/item_021_candidates.json#OBJ-10012",
+        "jpl_sbdb": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=OBJ-10012",
+        "mpc": "https://minorplanetcenter.net/db_search/show_object?object_id=OBJ-10012"
+      }
+    },
+    {
+      "object_id": "OBJ-10071",
+      "passes_all": true,
+      "data_completeness": 0.6463636363636365,
+      "geometry_coverage": 0.6666666666666666,
+      "confidence_estimate": 0.8666666666666667,
+      "rank_score": 0.907530303030303,
+      "provenance_links": {
+        "selection_record": "results/item_021_candidates.json#OBJ-10071",
+        "jpl_sbdb": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=OBJ-10071",
+        "mpc": "https://minorplanetcenter.net/db_search/show_object?object_id=OBJ-10071"
+      }
+    },
+    {
+      "object_id": "OBJ-10060",
+      "passes_all": false,
+      "data_completeness": 0.7931818181818182,
+      "geometry_coverage": 1.0,
+      "confidence_estimate": 1.0,
+      "rank_score": 0.9069318181818182,
+      "provenance_links": {
+        "selection_record": "results/item_021_candidates.json#OBJ-10060",
+        "jpl_sbdb": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=OBJ-10060",
+        "mpc": "https://minorplanetcenter.net/db_search/show_object?object_id=OBJ-10060"
+      }
+    },
+    {
+      "object_id": "OBJ-10077",
+      "passes_all": false,
+      "data_completeness": 0.7569318181818182,
+      "geometry_coverage": 1.0,
+      "confidence_estimate": 1.0,
+      "rank_score": 0.8906193181818182,
+      "provenance_links": {
+        "selection_record": "results/item_021_candidates.json#OBJ-10077",
+        "jpl_sbdb": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=OBJ-10077",
+        "mpc": "https://minorplanetcenter.net/db_search/show_object?object_id=OBJ-10077"
+      }
+    },
+    {
+      "object_id": "OBJ-10028",
+      "passes_all": true,
+      "data_completeness": 0.8495454545454546,
+      "geometry_coverage": 0.5,
+      "confidence_estimate": 0.6,
+      "rank_score": 0.8822954545454547,
+      "provenance_links": {
+        "selection_record": "results/item_021_candidates.json#OBJ-10028",
+        "jpl_sbdb": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=OBJ-10028",
+        "mpc": "https://minorplanetcenter.net/db_search/show_object?object_id=OBJ-10028"
+      }
+    },
+    {
+      "object_id": "OBJ-10055",
+      "passes_all": false,
+      "data_completeness": 0.7119318181818182,
+      "geometry_coverage": 1.0,
+      "confidence_estimate": 1.0,
+      "rank_score": 0.8703693181818182,
+      "provenance_links": {
+        "selection_record": "results/item_021_candidates.json#OBJ-10055",
+        "jpl_sbdb": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=OBJ-10055",
+        "mpc": "https://minorplanetcenter.net/db_search/show_object?object_id=OBJ-10055"
+      }
+    },
+    {
+      "object_id": "OBJ-10087",
+      "passes_all": true,
+      "data_completeness": 0.6178409090909092,
+      "geometry_coverage": 0.6666666666666666,
+      "confidence_estimate": 0.7666666666666666,
+      "rank_score": 0.8696950757575759,
+      "provenance_links": {
+        "selection_record": "results/item_021_candidates.json#OBJ-10087",
+        "jpl_sbdb": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=OBJ-10087",
+        "mpc": "https://minorplanetcenter.net/db_search/show_object?object_id=OBJ-10087"
+      }
+    },
+    {
+      "object_id": "OBJ-10002",
+      "passes_all": true,
+      "data_completeness": 0.6845454545454546,
+      "geometry_coverage": 0.5,
+      "confidence_estimate": 0.8,
+      "rank_score": 0.8580454545454546,
+      "provenance_links": {
+        "selection_record": "results/item_021_candidates.json#OBJ-10002",
+        "jpl_sbdb": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=OBJ-10002",
+        "mpc": "https://minorplanetcenter.net/db_search/show_object?object_id=OBJ-10002"
+      }
+    },
+    {
+      "object_id": "OBJ-10067",
+      "passes_all": false,
+      "data_completeness": 0.7313636363636364,
+      "geometry_coverage": 1.0,
+      "confidence_estimate": 0.9,
+      "rank_score": 0.8541136363636364,
+      "provenance_links": {
+        "selection_record": "results/item_021_candidates.json#OBJ-10067",
+        "jpl_sbdb": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=OBJ-10067",
+        "mpc": "https://minorplanetcenter.net/db_search/show_object?object_id=OBJ-10067"
+      }
+    },
+    {
+      "object_id": "OBJ-10023",
+      "passes_all": true,
+      "data_completeness": 0.63375,
+      "geometry_coverage": 0.6666666666666666,
+      "confidence_estimate": 0.6666666666666666,
+      "rank_score": 0.8518541666666666,
+      "provenance_links": {
+        "selection_record": "results/item_021_candidates.json#OBJ-10023",
+        "jpl_sbdb": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=OBJ-10023",
+        "mpc": "https://minorplanetcenter.net/db_search/show_object?object_id=OBJ-10023"
+      }
+    },
+    {
+      "object_id": "OBJ-10054",
+      "passes_all": true,
+      "data_completeness": 0.35806818181818184,
+      "geometry_coverage": 0.8333333333333334,
+      "confidence_estimate": 0.9333333333333333,
+      "rank_score": 0.844464015151515,
+      "provenance_links": {
+        "selection_record": "results/item_021_candidates.json#OBJ-10054",
+        "jpl_sbdb": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=OBJ-10054",
+        "mpc": "https://minorplanetcenter.net/db_search/show_object?object_id=OBJ-10054"
+      }
+    },
+    {
+      "object_id": "OBJ-10075",
+      "passes_all": true,
+      "data_completeness": 0.4129545454545455,
+      "geometry_coverage": 0.8333333333333334,
+      "confidence_estimate": 0.8333333333333334,
+      "rank_score": 0.8441628787878788,
+      "provenance_links": {
+        "selection_record": "results/item_021_candidates.json#OBJ-10075",
+        "jpl_sbdb": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=OBJ-10075",
+        "mpc": "https://minorplanetcenter.net/db_search/show_object?object_id=OBJ-10075"
+      }
+    },
+    {
+      "object_id": "OBJ-10080",
+      "passes_all": false,
+      "data_completeness": 0.7077272727272728,
+      "geometry_coverage": 1.0,
+      "confidence_estimate": 0.9,
+      "rank_score": 0.8434772727272727,
+      "provenance_links": {
+        "selection_record": "results/item_021_candidates.json#OBJ-10080",
+        "jpl_sbdb": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=OBJ-10080",
+        "mpc": "https://minorplanetcenter.net/db_search/show_object?object_id=OBJ-10080"
+      }
+    },
+    {
+      "object_id": "OBJ-10063",
+      "passes_all": false,
+      "data_completeness": 0.8081818181818183,
+      "geometry_coverage": 1.0,
+      "confidence_estimate": 0.7,
+      "rank_score": 0.8386818181818183,
+      "provenance_links": {
+        "selection_record": "results/item_021_candidates.json#OBJ-10063",
+        "jpl_sbdb": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=OBJ-10063",
+        "mpc": "https://minorplanetcenter.net/db_search/show_object?object_id=OBJ-10063"
+      }
+    },
+    {
+      "object_id": "OBJ-10073",
+      "passes_all": false,
+      "data_completeness": 0.7739772727272728,
+      "geometry_coverage": 1.0,
+      "confidence_estimate": 0.7,
+      "rank_score": 0.8232897727272728,
+      "provenance_links": {
+        "selection_record": "results/item_021_candidates.json#OBJ-10073",
+        "jpl_sbdb": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=OBJ-10073",
+        "mpc": "https://minorplanetcenter.net/db_search/show_object?object_id=OBJ-10073"
+      }
+    },
+    {
+      "object_id": "OBJ-10004",
+      "passes_all": false,
+      "data_completeness": 0.9144318181818183,
+      "geometry_coverage": 0.8333333333333334,
+      "confidence_estimate": 0.6333333333333333,
+      "rank_score": 0.8198276515151516,
+      "provenance_links": {
+        "selection_record": "results/item_021_candidates.json#OBJ-10004",
+        "jpl_sbdb": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=OBJ-10004",
+        "mpc": "https://minorplanetcenter.net/db_search/show_object?object_id=OBJ-10004"
+      }
+    },
+    {
+      "object_id": "OBJ-10049",
+      "passes_all": true,
+      "data_completeness": 0.7101136363636364,
+      "geometry_coverage": 0.5,
+      "confidence_estimate": 0.6,
+      "rank_score": 0.8195511363636365,
+      "provenance_links": {
+        "selection_record": "results/item_021_candidates.json#OBJ-10049",
+        "jpl_sbdb": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=OBJ-10049",
+        "mpc": "https://minorplanetcenter.net/db_search/show_object?object_id=OBJ-10049"
+      }
+    },
+    {
+      "object_id": "OBJ-10048",
+      "passes_all": true,
+      "data_completeness": 0.5504545454545455,
+      "geometry_coverage": 0.6666666666666666,
+      "confidence_estimate": 0.6666666666666666,
+      "rank_score": 0.8143712121212121,
+      "provenance_links": {
+        "selection_record": "results/item_021_candidates.json#OBJ-10048",
+        "jpl_sbdb": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=OBJ-10048",
+        "mpc": "https://minorplanetcenter.net/db_search/show_object?object_id=OBJ-10048"
+      }
+    },
+    {
+      "object_id": "OBJ-10085",
+      "passes_all": false,
+      "data_completeness": 0.8436363636363636,
+      "geometry_coverage": 0.8333333333333334,
+      "confidence_estimate": 0.7333333333333334,
+      "rank_score": 0.812969696969697,
+      "provenance_links": {
+        "selection_record": "results/item_021_candidates.json#OBJ-10085",
+        "jpl_sbdb": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=OBJ-10085",
+        "mpc": "https://minorplanetcenter.net/db_search/show_object?object_id=OBJ-10085"
+      }
+    },
+    {
+      "object_id": "OBJ-10091",
+      "passes_all": true,
+      "data_completeness": 0.4757954545454545,
+      "geometry_coverage": 0.6666666666666666,
+      "confidence_estimate": 0.7666666666666666,
+      "rank_score": 0.8057746212121211,
+      "provenance_links": {
+        "selection_record": "results/item_021_candidates.json#OBJ-10091",
+        "jpl_sbdb": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=OBJ-10091",
+        "mpc": "https://minorplanetcenter.net/db_search/show_object?object_id=OBJ-10091"
+      }
+    },
+    {
+      "object_id": "OBJ-10083",
+      "passes_all": false,
+      "data_completeness": 0.5604545454545455,
+      "geometry_coverage": 1.0,
+      "confidence_estimate": 1.0,
+      "rank_score": 0.8022045454545454,
+      "provenance_links": {
+        "selection_record": "results/item_021_candidates.json#OBJ-10083",
+        "jpl_sbdb": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=OBJ-10083",
+        "mpc": "https://minorplanetcenter.net/db_search/show_object?object_id=OBJ-10083"
+      }
+    },
+    {
+      "object_id": "OBJ-10046",
+      "passes_all": false,
+      "data_completeness": 0.7221590909090909,
+      "geometry_coverage": 1.0,
+      "confidence_estimate": 0.7,
+      "rank_score": 0.799971590909091,
+      "provenance_links": {
+        "selection_record": "results/item_021_candidates.json#OBJ-10046",
+        "jpl_sbdb": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=OBJ-10046",
+        "mpc": "https://minorplanetcenter.net/db_search/show_object?object_id=OBJ-10046"
+      }
+    },
+    {
+      "object_id": "OBJ-10113",
+      "passes_all": true,
+      "data_completeness": 0.44602272727272724,
+      "geometry_coverage": 0.6666666666666666,
+      "confidence_estimate": 0.7666666666666666,
+      "rank_score": 0.7923768939393938,
+      "provenance_links": {
+        "selection_record": "results/item_021_candidates.json#OBJ-10113",
+        "jpl_sbdb": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=OBJ-10113",
+        "mpc": "https://minorplanetcenter.net/db_search/show_object?object_id=OBJ-10113"
+      }
+    },
+    {
+      "object_id": "OBJ-10052",
+      "passes_all": false,
+      "data_completeness": 0.6489772727272727,
+      "geometry_coverage": 1.0,
+      "confidence_estimate": 0.8,
+      "rank_score": 0.7920397727272728,
+      "provenance_links": {
+        "selection_record": "results/item_021_candidates.json#OBJ-10052",
+        "jpl_sbdb": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=OBJ-10052",
+        "mpc": "https://minorplanetcenter.net/db_search/show_object?object_id=OBJ-10052"
+      }
+    },
+    {
+      "object_id": "OBJ-10031",
+      "passes_all": false,
+      "data_completeness": 0.8517045454545455,
+      "geometry_coverage": 0.8333333333333334,
+      "confidence_estimate": 0.6333333333333333,
+      "rank_score": 0.7916003787878788,
+      "provenance_links": {
+        "selection_record": "results/item_021_candidates.json#OBJ-10031",
+        "jpl_sbdb": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=OBJ-10031",
+        "mpc": "https://minorplanetcenter.net/db_search/show_object?object_id=OBJ-10031"
+      }
+    },
+    {
+      "object_id": "OBJ-10076",
+      "passes_all": true,
+      "data_completeness": 0.6095454545454546,
+      "geometry_coverage": 0.5,
+      "confidence_estimate": 0.6,
+      "rank_score": 0.7742954545454546,
+      "provenance_links": {
+        "selection_record": "results/item_021_candidates.json#OBJ-10076",
+        "jpl_sbdb": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=OBJ-10076",
+        "mpc": "https://minorplanetcenter.net/db_search/show_object?object_id=OBJ-10076"
+      }
+    },
+    {
+      "object_id": "OBJ-10115",
+      "passes_all": true,
+      "data_completeness": 0.5956818181818182,
+      "geometry_coverage": 0.5,
+      "confidence_estimate": 0.6,
+      "rank_score": 0.7680568181818181,
+      "provenance_links": {
+        "selection_record": "results/item_021_candidates.json#OBJ-10115",
+        "jpl_sbdb": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=OBJ-10115",
+        "mpc": "https://minorplanetcenter.net/db_search/show_object?object_id=OBJ-10115"
+      }
+    },
+    {
+      "object_id": "OBJ-10044",
+      "passes_all": true,
+      "data_completeness": 0.688068181818182,
+      "geometry_coverage": 0.3333333333333333,
+      "confidence_estimate": 0.6333333333333333,
+      "rank_score": 0.7679640151515152,
+      "provenance_links": {
+        "selection_record": "results/item_021_candidates.json#OBJ-10044",
+        "jpl_sbdb": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=OBJ-10044",
+        "mpc": "https://minorplanetcenter.net/db_search/show_object?object_id=OBJ-10044"
+      }
+    },
+    {
+      "object_id": "OBJ-10100",
+      "passes_all": false,
+      "data_completeness": 0.9094318181818182,
+      "geometry_coverage": 0.6666666666666666,
+      "confidence_estimate": 0.5666666666666667,
+      "rank_score": 0.7509109848484847,
+      "provenance_links": {
+        "selection_record": "results/item_021_candidates.json#OBJ-10100",
+        "jpl_sbdb": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=OBJ-10100",
+        "mpc": "https://minorplanetcenter.net/db_search/show_object?object_id=OBJ-10100"
+      }
+    },
+    {
+      "object_id": "OBJ-10068",
+      "passes_all": false,
+      "data_completeness": 0.7419318181818182,
+      "geometry_coverage": 0.8333333333333334,
+      "confidence_estimate": 0.6333333333333333,
+      "rank_score": 0.7422026515151515,
+      "provenance_links": {
+        "selection_record": "results/item_021_candidates.json#OBJ-10068",
+        "jpl_sbdb": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=OBJ-10068",
+        "mpc": "https://minorplanetcenter.net/db_search/show_object?object_id=OBJ-10068"
+      }
+    },
+    {
+      "object_id": "OBJ-10093",
+      "passes_all": false,
+      "data_completeness": 0.816818181818182,
+      "geometry_coverage": 0.6666666666666666,
+      "confidence_estimate": 0.6666666666666666,
+      "rank_score": 0.7342348484848485,
+      "provenance_links": {
+        "selection_record": "results/item_021_candidates.json#OBJ-10093",
+        "jpl_sbdb": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=OBJ-10093",
+        "mpc": "https://minorplanetcenter.net/db_search/show_object?object_id=OBJ-10093"
+      }
+    },
+    {
+      "object_id": "OBJ-10007",
+      "passes_all": false,
+      "data_completeness": 0.6102272727272727,
+      "geometry_coverage": 0.8333333333333334,
+      "confidence_estimate": 0.8333333333333334,
+      "rank_score": 0.7329356060606061,
+      "provenance_links": {
+        "selection_record": "results/item_021_candidates.json#OBJ-10007",
+        "jpl_sbdb": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=OBJ-10007",
+        "mpc": "https://minorplanetcenter.net/db_search/show_object?object_id=OBJ-10007"
+      }
+    },
+    {
+      "object_id": "OBJ-10021",
+      "passes_all": false,
+      "data_completeness": 0.4394318181818182,
+      "geometry_coverage": 1.0,
+      "confidence_estimate": 0.9,
+      "rank_score": 0.7227443181818182,
+      "provenance_links": {
+        "selection_record": "results/item_021_candidates.json#OBJ-10021",
+        "jpl_sbdb": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=OBJ-10021",
+        "mpc": "https://minorplanetcenter.net/db_search/show_object?object_id=OBJ-10021"
+      }
+    }
+  ]
+}
