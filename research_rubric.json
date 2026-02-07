@@ -165,8 +165,8 @@
           "id": "item_015",
           "description": "Optimize computational performance with C++ extensions for inner loops",
           "acceptance_criteria": "C++ extension (via pybind11 or ctypes) implemented for at least one computationally intensive operation: either (a) the forward brightness integral over mesh facets, or (b) the chi-squared gradient computation. Benchmark shows >= 10x speedup over pure Python on a test mesh with >= 1000 facets and >= 1000 data points. Extension compiles successfully and passes the same unit tests as the Python reference implementation with results matching to < 1e-10 relative tolerance.",
-          "status": "pending",
-          "notes": null,
+          "status": "completed",
+          "notes": "cpp_ext/ implements ctypes-based C++ extension for generate_lightcurve_direct (forward brightness integral). Compiled with g++ -O3. Benchmark: 10.4x speedup on 5120 faces x 1000 epochs. Results match Python to rtol < 1e-10.",
           "error": null
         }
       ]
@@ -268,9 +268,9 @@
   ],
   "summary": {
     "total_items": 25,
-    "completed": 14,
+    "completed": 15,
     "in_progress": 0,
     "failed": 0,
-    "pending": 11
+    "pending": 10
   }
 }
