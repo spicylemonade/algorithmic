@@ -1,0 +1,17 @@
+{
+  "item_id": "item_010",
+  "targets": [
+    {"number": 433, "name": "Eros", "damit": "https://astro.troja.mff.cuni.cz/projects/damit/?q=433", "truth_shape": "https://sbnarchive.psi.edu/pds4/near/", "raw_sources": ["https://alcdef.org/", "https://sbn.psi.edu/pds/resource/alcdef.html"]},
+    {"number": 25143, "name": "Itokawa", "damit": "https://astro.troja.mff.cuni.cz/projects/damit/?q=25143", "truth_shape": "https://darts.isas.jaxa.jp/planet/project/hayabusa/itokawashape/", "raw_sources": ["https://alcdef.org/", "https://sbn.psi.edu/pds/resource/alcdef.html"]},
+    {"number": 216, "name": "Kleopatra", "damit": "https://astro.troja.mff.cuni.cz/projects/damit/?q=216", "truth_shape": "https://science.nasa.gov/photojournal/radar-model-of-asteroid-216-kleopatra/", "raw_sources": ["https://alcdef.org/", "https://sbn.psi.edu/pds/resource/alcdef.html"]},
+    {"number": 4, "name": "Vesta", "damit": "https://astro.troja.mff.cuni.cz/projects/damit/?q=4", "truth_shape": "https://sbnarchive.psi.edu/pds4/dawn/", "raw_sources": ["https://alcdef.org/", "https://sbn.psi.edu/pds/resource/alcdef.html"]},
+    {"number": 21, "name": "Lutetia", "damit": "https://astro.troja.mff.cuni.cz/projects/damit/?q=21", "truth_shape": "https://sbnarchive.psi.edu/pds4/rosetta/", "raw_sources": ["https://alcdef.org/", "https://sbn.psi.edu/pds/resource/alcdef.html"]},
+    {"number": 243, "name": "Ida", "damit": "https://astro.troja.mff.cuni.cz/projects/damit/?q=243", "truth_shape": "https://sbnarchive.psi.edu/pds3/galileo/", "raw_sources": ["https://alcdef.org/", "https://sbn.psi.edu/pds/resource/alcdef.html"]},
+    {"number": 951, "name": "Gaspra", "damit": "https://astro.troja.mff.cuni.cz/projects/damit/?q=951", "truth_shape": "https://sbnarchive.psi.edu/pds3/galileo/", "raw_sources": ["https://alcdef.org/", "https://sbn.psi.edu/pds/resource/alcdef.html"]},
+    {"number": 2867, "name": "Steins", "damit": "https://astro.troja.mff.cuni.cz/projects/damit/?q=2867", "truth_shape": "https://sbnarchive.psi.edu/pds4/rosetta/", "raw_sources": ["https://alcdef.org/", "https://sbn.psi.edu/pds/resource/alcdef.html"]},
+    {"number": 1620, "name": "Geographos", "damit": "https://astro.troja.mff.cuni.cz/projects/damit/?q=1620", "truth_shape": "https://echo.jpl.nasa.gov/asteroids/shapes/shapes.html", "raw_sources": ["https://alcdef.org/", "https://sbn.psi.edu/pds/resource/alcdef.html"]},
+    {"number": 6489, "name": "Golevka", "damit": "https://astro.troja.mff.cuni.cz/projects/damit/?q=6489", "truth_shape": "https://echo.jpl.nasa.gov/asteroids/shapes/shapes.html", "raw_sources": ["https://alcdef.org/", "https://sbn.psi.edu/pds/resource/alcdef.html"]}
+  ],
+  "includes_required": ["433 Eros", "25143 Itokawa", "216 Kleopatra"],
+  "count": 10
+}
