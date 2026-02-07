@@ -1,0 +1,186 @@
+\begin{thebibliography}{21}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Bartczak and Dudzi{\'n}ski(2018)]{bartczak2018sage}
+Przemys{\l}aw Bartczak and Grzegorz Dudzi{\'n}ski.
+\newblock Shaping asteroid models using genetic evolution ({SAGE}).
+\newblock \emph{Monthly Notices of the Royal Astronomical Society},
+  473\penalty0 (4):\penalty0 5050--5065, 2018.
+\newblock \doi{10.1093/mnras/stx2535}.
+
+\bibitem[Carry et~al.(2012)Carry, Kaasalainen, Leyrat, Merline, Drummond,
+  Conrad, Weaver, Christou, Dumas, Fulchignoni, Kuppers, Barrera, Behrend,
+  Berthier, Descamps, Emery, Hestroffer, Kidger, Lim, Marchis, Mueller, Opitom,
+  Pilcher, Reach, Rivkin, Sierks, Tanga, and Viikinkoski]{carry2012koala}
+Benoit Carry, Mikko Kaasalainen, Cedric Leyrat, William~J. Merline, Jack~D.
+  Drummond, Al~Conrad, Harold~A. Weaver, Julian Christou, Christophe Dumas,
+  Marcello Fulchignoni, Michael Kuppers, Luis Barrera, Raoul Behrend, Jerome
+  Berthier, Pascal Descamps, Joshua~P. Emery, Daniel Hestroffer, Mark Kidger,
+  Lucy Lim, Franck Marchis, Thomas~G. Mueller, Cyrielle Opitom, Frederick
+  Pilcher, William~T. Reach, Andrew~S. Rivkin, Holger Sierks, Paolo Tanga, and
+  Matti Viikinkoski.
+\newblock Shape modeling technique {KOALA} validated by {ESA} {Rosetta} at
+  ({21}) {Lutetia}.
+\newblock \emph{Planetary and Space Science}, 66\penalty0 (1):\penalty0
+  200--212, 2012.
+\newblock \doi{10.1016/j.pss.2011.12.018}.
+
+\bibitem[Cellino et~al.(2009)Cellino, Hestroffer, Tanga, Mottola, and
+  Dell'Oro]{cellino2009genetic}
+Alberto Cellino, Daniel Hestroffer, Paolo Tanga, Stefano Mottola, and Aldo
+  Dell'Oro.
+\newblock Genetic inversion of sparse disk-integrated photometric data of
+  asteroids: application to {Hipparcos} data.
+\newblock \emph{Astronomy \& Astrophysics}, 506\penalty0 (2):\penalty0
+  935--954, 2009.
+\newblock \doi{10.1051/0004-6361/200912134}.
+
+\bibitem[Cignoni et~al.(1998)Cignoni, Rocchini, and Scopigno]{cignoni2003mesh}
+Paolo Cignoni, Claudio Rocchini, and Roberto Scopigno.
+\newblock Metro: Measuring error on simplified surfaces.
+\newblock In \emph{Computer Graphics Forum}, volume~17, pages 167--174, 1998.
+\newblock \doi{10.1111/1467-8659.00236}.
+
+\bibitem[Durech and Hanu{\v{s}}(2013)]{asteroids_at_home}
+Josef Durech and Josef Hanu{\v{s}}.
+\newblock {Asteroids@home}: Distributed computing for asteroid period search.
+\newblock \url{https://asteroidsathome.net}, 2013.
+\newblock {BOINC} project for large-scale asteroid lightcurve period search and
+  shape modeling.
+
+\bibitem[Durech et~al.(2009)Durech, Kaasalainen, Warner, Fauerbach, Marks,
+  Fauvaud, Fauvaud, Vugnon, Pilcher, Bernasconi, and Behrend]{durech2009sparse}
+Josef Durech, Mikko Kaasalainen, Brian~D. Warner, Michael Fauerbach, Scott~A.
+  Marks, St{\'e}phane Fauvaud, Maximilien Fauvaud, Jean-Michel Vugnon,
+  Frederick Pilcher, Laurent Bernasconi, and Raoul Behrend.
+\newblock Asteroid models from combined sparse and dense photometric data.
+\newblock \emph{Astronomy \& Astrophysics}, 493\penalty0 (1):\penalty0
+  291--297, 2009.
+\newblock \doi{10.1051/0004-6361:200810393}.
+
+\bibitem[Durech et~al.(2010)Durech, Sidorin, and Kaasalainen]{durech2010damit}
+Josef Durech, Vojt{\v{e}}ch Sidorin, and Mikko Kaasalainen.
+\newblock {DAMIT}: a database of asteroid models.
+\newblock \emph{Astronomy \& Astrophysics}, 513:\penalty0 A46, 2010.
+\newblock \doi{10.1051/0004-6361/200912693}.
+
+\bibitem[Durech et~al.(2016)Durech, Hanu{\v{s}}, Oszkiewicz, and
+  Vanco]{durech2016updates}
+Josef Durech, Josef Hanu{\v{s}}, Dagmara Oszkiewicz, and Robert Vanco.
+\newblock Asteroid models from the {Lowell} {Photometric} {Database}.
+\newblock \emph{Astronomy \& Astrophysics}, 587:\penalty0 A48, 2016.
+\newblock \doi{10.1051/0004-6361/201527573}.
+
+\bibitem[Hanu{\v{s}} et~al.(2011)Hanu{\v{s}}, Durech, Bro{\v{z}}, Warner,
+  Pilcher, Stephens, Oey, Bernasconi, Casulli, Behrend, Polishook, Henych,
+  Lehk{\'y}, Yoshida, and Ito]{hanus2011models}
+Josef Hanu{\v{s}}, Josef Durech, Miroslav Bro{\v{z}}, Brian~D. Warner,
+  Frederick Pilcher, Robert Stephens, Julian Oey, Laurent Bernasconi, Silvano
+  Casulli, Raoul Behrend, David Polishook, Tom{\'a}{\v{s}} Henych, Martin
+  Lehk{\'y}, Fumi Yoshida, and Takashi Ito.
+\newblock A study of asteroid pole-latitude distribution based on an extended
+  set of shape models derived by the lightcurve inversion method.
+\newblock \emph{Astronomy \& Astrophysics}, 530:\penalty0 A134, 2011.
+\newblock \doi{10.1051/0004-6361/201116738}.
+
+\bibitem[Hanu{\v{s}} et~al.(2013)Hanu{\v{s}}, Durech, Bro{\v{z}}, Marciniak,
+  Warner, Pilcher, Stephens, Behrend, Carry, {\v{D}}urovi{\v{c}}, Kaasalainen,
+  Lehk{\'y}, Lichen, Polishook, Raetz, Roy, Shevchenko, and
+  Trunkovsk{\'y}]{hanus2013physical}
+Josef Hanu{\v{s}}, Josef Durech, Miroslav Bro{\v{z}}, Anna Marciniak, Brian~D.
+  Warner, Frederick Pilcher, Robert Stephens, Raoul Behrend, Benoit Carry,
+  Du{\v{s}}an {\v{D}}urovi{\v{c}}, Mikko Kaasalainen, Martin Lehk{\'y}, Yurij
+  Lichen, David Polishook, Stefanie Raetz, Ren{\'e} Roy, Vasilij Shevchenko,
+  and Tom{\'a}{\v{s}} Trunkovsk{\'y}.
+\newblock Asteroids' physical models from combined dense and sparse photometry
+  and scaling of the {YORP} effect by the observed obliquity distribution.
+\newblock \emph{Astronomy \& Astrophysics}, 551:\penalty0 A67, 2013.
+\newblock \doi{10.1051/0004-6361/201220701}.
+
+\bibitem[Hanu{\v{s}} et~al.(2016)Hanu{\v{s}}, Durech, Oszkiewicz, Behrend,
+  Carry, Delb{\'o}, Adam, Afonina, Anber, Arlot, et~al.]{hanus2016new}
+Josef Hanu{\v{s}}, Josef Durech, Dagmara~A. Oszkiewicz, Raoul Behrend, Benoit
+  Carry, Marco Delb{\'o}, Ond{\v{r}}ej Adam, Valeriya Afonina, Rene Anber,
+  Jean-Eudes Arlot, et~al.
+\newblock New and updated convex shape models of asteroids based on optical
+  data from a large collaboration network.
+\newblock \emph{Astronomy \& Astrophysics}, 586:\penalty0 A108, 2016.
+\newblock \doi{10.1051/0004-6361/201527441}.
+
+\bibitem[Hapke(2012)]{hapke2012reflectance}
+Bruce Hapke.
+\newblock \emph{Theory of Reflectance and Emittance Spectroscopy}.
+\newblock Cambridge University Press, Cambridge, 2nd edition, 2012.
+\newblock ISBN 9780521883498.
+\newblock \doi{10.1017/CBO9781139025683}.
+
+\bibitem[Kaasalainen and Durech(2020)]{damit_convex_code}
+Mikko Kaasalainen and Josef Durech.
+\newblock {DAMIT}-convex: Asteroid light curve inversion code.
+\newblock \url{https://github.com/mkretlow/DAMIT-convex}, 2020.
+\newblock Fortran implementation of the convex inversion method for asteroid
+  lightcurves.
+
+\bibitem[Kaasalainen and Torppa(2001)]{kaasalainen2001shape}
+Mikko Kaasalainen and Johanna Torppa.
+\newblock Optimization methods for asteroid lightcurve inversion. {I}. {S}hape
+  determination.
+\newblock \emph{Icarus}, 153\penalty0 (1):\penalty0 24--36, 2001.
+\newblock \doi{10.1006/icar.2001.6673}.
+
+\bibitem[Kaasalainen et~al.(2001)Kaasalainen, Torppa, and
+  Muinonen]{kaasalainen2001complete}
+Mikko Kaasalainen, Johanna Torppa, and Karri Muinonen.
+\newblock Optimization methods for asteroid lightcurve inversion. {II}. {T}he
+  complete inverse problem.
+\newblock \emph{Icarus}, 153\penalty0 (1):\penalty0 37--51, 2001.
+\newblock \doi{10.1006/icar.2001.6674}.
+
+\bibitem[Levenberg(1944)]{levenberg1944method}
+Kenneth Levenberg.
+\newblock A method for the solution of certain non-linear problems in least
+  squares.
+\newblock \emph{Quarterly of Applied Mathematics}, 2\penalty0 (2):\penalty0
+  164--168, 1944.
+\newblock \doi{10.1090/qam/10666}.
+
+\bibitem[Muinonen and Lumme(2015)]{muinonen2015lommel}
+Karri Muinonen and Kari Lumme.
+\newblock Disk-integrated brightness of a {Lommel--Seeliger} scattering
+  ellipsoidal asteroid.
+\newblock \emph{Astronomy \& Astrophysics}, 584:\penalty0 A23, 2015.
+\newblock \doi{10.1051/0004-6361/201526456}.
+
+\bibitem[Muinonen et~al.(2010)Muinonen, Belskaya, Cellino, Delb{\'o},
+  Levasseur-Regourd, Penttil{\"a}, and Tedesco]{muinonen2010hg}
+Karri Muinonen, Irina~N. Belskaya, Alberto Cellino, Marco Delb{\'o},
+  Anny-Chantal Levasseur-Regourd, Antti Penttil{\"a}, and Edward~F. Tedesco.
+\newblock A three-parameter magnitude phase function for asteroids.
+\newblock \emph{Icarus}, 209\penalty0 (2):\penalty0 542--555, 2010.
+\newblock \doi{10.1016/j.icarus.2010.04.003}.
+
+\bibitem[Viikinkoski et~al.(2015)Viikinkoski, Kaasalainen, and
+  Durech]{viikinkoski2015adam}
+Matti Viikinkoski, Mikko Kaasalainen, and Josef Durech.
+\newblock {ADAM}: a general method for using various data types in asteroid
+  reconstruction.
+\newblock \emph{Astronomy \& Astrophysics}, 576:\penalty0 A8, 2015.
+\newblock \doi{10.1051/0004-6361/201425259}.
+
+\bibitem[Warner(2007)]{warner2007lcinvert}
+Brian~D. Warner.
+\newblock Initial results of asteroid lightcurve inversion.
+\newblock \emph{Bulletin of the Minor Planets Section of the Association of
+  Lunar and Planetary Observers}, 34:\penalty0 79--83, 2007.
+
+\bibitem[Warner et~al.(2009)Warner, Harris, and Pravec]{warner2009lcdb}
+Brian~D. Warner, Alan~W. Harris, and Petr Pravec.
+\newblock The asteroid lightcurve database.
+\newblock \emph{Icarus}, 202\penalty0 (1):\penalty0 134--146, 2009.
+\newblock \doi{10.1016/j.icarus.2009.02.003}.
+
+\end{thebibliography}

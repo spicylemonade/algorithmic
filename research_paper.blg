@@ -1,0 +1,48 @@
+This is BibTeX, Version 0.99d (TeX Live 2022/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: research_paper.aux
+The style file: plainnat.bst
+Database file #1: sources.bib
+Warning--can't use both volume and number fields in cignoni2003mesh
+You've used 21 entries,
+            2773 wiz_defined-function locations,
+            735 strings with 10539 characters,
+and the built_in function-call counts, 13528 in all, are:
+= -- 1134
+> -- 1199
+< -- 10
++ -- 402
+- -- 381
+* -- 1282
+:= -- 2196
+add.period$ -- 84
+call.type$ -- 21
+change.case$ -- 189
+chr.to.int$ -- 21
+cite$ -- 43
+duplicate$ -- 435
+empty$ -- 804
+format.name$ -- 412
+if$ -- 2714
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 20
+newline$ -- 134
+num.names$ -- 84
+pop$ -- 336
+preamble$ -- 1
+purify$ -- 168
+quote$ -- 0
+skip$ -- 401
+stack$ -- 0
+substring$ -- 378
+swap$ -- 33
+text.length$ -- 2
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 226
+warning$ -- 1
+while$ -- 93
+width$ -- 0
+write$ -- 322
+(There was 1 warning)
