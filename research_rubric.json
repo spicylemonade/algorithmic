@@ -94,8 +94,8 @@
           "id": "item_007",
           "description": "Implement convex inversion solver (Kaasalainen-Torppa method)",
           "acceptance_criteria": "Python module implementing gradient-based (Levenberg-Marquardt or similar) minimization of chi-squared between observed and modeled lightcurves over a convex shape parameterization (spherical harmonics series or vertex-based convex hull with area/normal weights). Must include: (1) period search via chi-squared scanning over a user-specified range, (2) pole direction grid search, (3) shape optimization at fixed pole+period. Solver converges on synthetic test data generated from a known convex shape (chi-squared residual < 0.01 on noise-free data).",
-          "status": "pending",
-          "notes": null,
+          "status": "completed",
+          "notes": "convex_solver.py implements L-BFGS-B optimization on log-areas with pre-computed body directions. Tests pass: chi2=0.00087 on noise-free ellipsoid data (target <0.01), period found exactly at 6.0h. Includes period_search, pole_search, optimize_shape, run_convex_inversion.",
           "error": null
         },
         {
@@ -268,9 +268,9 @@
   ],
   "summary": {
     "total_items": 25,
-    "completed": 6,
+    "completed": 7,
     "in_progress": 0,
     "failed": 0,
-    "pending": 19
+    "pending": 18
   }
 }

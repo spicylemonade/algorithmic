@@ -262,6 +262,8 @@ def compute_brightness(mesh, sun_dir, obs_dir, c_lambert=0.1):
 def generate_lightcurve_direct(mesh, sun_dirs, obs_dirs, c_lambert=0.1):
     """Generate synthetic lightcurve from pre-computed direction vectors.
 
+    Vectorized: computes all epochs at once using matrix operations.
+
     Parameters
     ----------
     mesh : TriMesh
@@ -278,10 +280,18 @@ def generate_lightcurve_direct(mesh, sun_dirs, obs_dirs, c_lambert=0.1):
     brightness : np.ndarray, shape (N,)
         Brightness at each epoch.
     """
-    N = len(sun_dirs)
-    brightness = np.zeros(N)
-    for j in range(N):
-        brightness[j] = compute_brightness(mesh, sun_dirs[j], obs_dirs[j], c_lambert)
+    # Vectorized: mu0[j,k] = normals[k] . sun_dirs[j]
+    mu0 = sun_dirs @ mesh.normals.T   # (N, N_f)
+    mu = obs_dirs @ mesh.normals.T     # (N, N_f)
+
+    mask = (mu0 > 0) & (mu > 0)
+
+    # Scattering law
+    ls = np.where(mask, mu0 / (mu0 + mu + 1e-30), 0.0)
+    lamb = np.where(mask, mu0, 0.0)
+    S = (1 - c_lambert) * ls + c_lambert * lamb
+
+    brightness = S @ mesh.areas  # (N,)
     return brightness
 
 
