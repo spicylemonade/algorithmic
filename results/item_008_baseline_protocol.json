@@ -1,0 +1,36 @@
+{
+  "item_id": "item_008",
+  "protocol": "docs/convex_baseline_protocol.md",
+  "runs": [
+    {
+      "run_id": "A",
+      "seed": 42,
+      "step_size": 0.05,
+      "max_iter": 300,
+      "photometric_rms": 0.4255251579088545,
+      "lambda_deg": 120.0,
+      "beta_deg": 36.348127907068246,
+      "period_hours": 5.93999999999998
+    },
+    {
+      "run_id": "B",
+      "seed": 42,
+      "step_size": 0.04,
+      "max_iter": 320,
+      "photometric_rms": 0.42519196559861383,
+      "lambda_deg": 120.0,
+      "beta_deg": 36.151345630705286,
+      "period_hours": 5.93999999999998
+    },
+    {
+      "run_id": "C",
+      "seed": 42,
+      "step_size": 0.06,
+      "max_iter": 280,
+      "photometric_rms": 0.42580503164642935,
+      "lambda_deg": 120.0,
+      "beta_deg": 36.51376069321862,
+      "period_hours": 5.93999999999998
+    }
+  ]
+}

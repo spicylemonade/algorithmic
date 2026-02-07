@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "created_at": "2026-02-07T00:15:59Z",
-  "updated_at": "2026-02-07T00:20:03.264196+00:00",
+  "updated_at": "2026-02-07T00:20:26.455721+00:00",
   "current_agent": "researcher",
   "agent_status": {
     "orchestrator": {
@@ -96,8 +96,8 @@
           "id": "item_008",
           "description": "Define baseline convex inversion experiment protocol",
           "acceptance_criteria": "Protocol sets fixed initialization strategy, hyperparameters, and at least 3 deterministic seeds; outputs include fit residuals and recovered pole/period",
-          "status": "pending",
-          "notes": null,
+          "status": "completed",
+          "notes": "Defined deterministic convex baseline protocol and executed three fixed-seed runs; produced residual and recovered pole/period outputs in results/item_008_baseline_protocol.json.",
           "error": null
         },
         {
@@ -262,9 +262,9 @@
   ],
   "summary": {
     "total_items": 25,
-    "completed": 7,
+    "completed": 8,
     "in_progress": 0,
     "failed": 0,
-    "pending": 18
+    "pending": 17
   }
 }
