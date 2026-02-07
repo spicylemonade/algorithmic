@@ -102,16 +102,16 @@
           "id": "item_008",
           "description": "Implement sparse photometric data handling module",
           "acceptance_criteria": "Python module that: (1) parses sparse photometric data formats (Gaia DR3 SSO CSV, ZTF/Pan-STARRS photometry), (2) calibrates sparse magnitudes to a common photometric system with phase-angle correction (H-G or H-G1-G2 model), (3) integrates sparse data points into the chi-squared objective function alongside dense lightcurves using proper weighting (as per Durech et al. 2010). Tested by successfully combining >= 50 sparse data points with 2 dense lightcurves for a synthetic test case and recovering the correct pole within 10 degrees.",
-          "status": "pending",
-          "notes": null,
+          "status": "completed",
+          "notes": "sparse_handler.py implements H-G and H-G1-G2 phase models, magnitude calibration, Gaia/generic CSV parsers, and combined dense+sparse chi-squared. Test: 60 sparse + 2x80 dense points recover pole within 1.0 degrees (target <10).",
           "error": null
         },
         {
           "id": "item_009",
           "description": "Implement mesh comparison metrics (Hausdorff distance and volumetric IoU)",
           "acceptance_criteria": "Python module that: (1) loads two .obj meshes, (2) computes one-sided and symmetric Hausdorff distance between surface point clouds (sampled at >= 10000 points per mesh), (3) computes Volumetric Intersection over Union by voxelizing both meshes at a user-specified resolution. Validated against trivial cases: identical meshes yield Hausdorff=0 and IoU=1.0; a sphere vs. a sphere scaled by 1.1x yields analytically verifiable results within 5% of expected values. Unit tests pass.",
-          "status": "pending",
-          "notes": null,
+          "status": "completed",
+          "notes": "mesh_comparator.py implements surface sampling, KDTree-based Hausdorff, ray-casting voxelization, and volumetric IoU. Tests: identical=0/1.0, sphere vs 1.1x: Hausdorff=0.102 (expected 0.1), IoU=0.7509 (expected 0.7513, 0.06% error).",
           "error": null
         },
         {
@@ -268,9 +268,9 @@
   ],
   "summary": {
     "total_items": 25,
-    "completed": 7,
+    "completed": 9,
     "in_progress": 0,
     "failed": 0,
-    "pending": 18
+    "pending": 16
   }
 }
