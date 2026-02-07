@@ -1,0 +1,12 @@
+{
+  "item_id": "item_013",
+  "implementation": "src/lci/handoff_policy.py",
+  "triggers": {
+    "slope_trigger_1": -1e-5,
+    "stagnation_steps_1": 25,
+    "mesh_complexity_min": 0.3,
+    "slope_trigger_2": -5e-6,
+    "stagnation_steps_2": 40
+  },
+  "rollback_if_loss_ratio_gt": 1.02
+}
