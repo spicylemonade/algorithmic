@@ -1,0 +1,33 @@
+{
+  "item_id": "item_012",
+  "seed": 42,
+  "runs": 15,
+  "metrics": {
+    "mse": {
+      "mean_convex": 0.002518209076747896,
+      "mean_evo": 5.686009817833326e-05,
+      "mean_hybrid": 0.0025203194695532795,
+      "p_convex_gt_hybrid": 0.5022486212992368,
+      "p_evo_gt_hybrid": 0.9996748121577482,
+      "significant_against_both": false
+    },
+    "hausdorff": {
+      "mean_convex": 0.1971615011067858,
+      "mean_evo": 0.1559640534825632,
+      "mean_hybrid": 0.16286617698200528,
+      "p_convex_gt_hybrid": 0.04075311530887108,
+      "p_evo_gt_hybrid": 0.6102318147471166,
+      "significant_against_both": false
+    },
+    "pole_err": {
+      "mean_convex": 17.180903425581576,
+      "mean_evo": 60.75183542288514,
+      "mean_hybrid": 12.52409962934676,
+      "p_convex_gt_hybrid": 8.25063660321089e-06,
+      "p_evo_gt_hybrid": 8.496587046861811e-12,
+      "significant_against_both": true
+    }
+  },
+  "significant_metric_count": 1,
+  "acceptance_pass": false
+}

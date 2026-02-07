@@ -1,0 +1,6 @@
+{
+  "item_id": "item_012",
+  "status": "failed",
+  "error": "Acceptance not met: statistically significant improvement against both single optimizers in 1 metric (required >=3).",
+  "significant_metric_count": 1
+}
