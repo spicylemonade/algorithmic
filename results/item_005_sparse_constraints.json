@@ -1,0 +1,9 @@
+{
+  "item_id": "item_005",
+  "artifact": "docs/sparse_inversion_constraints.md",
+  "min_sparse_points": 100,
+  "min_apparitions": 3,
+  "period_bounds_hours": [2.0, 200.0],
+  "pole_ambiguity_rule": "mirror-pole retention with delta-RMS discrimination",
+  "seed": 42
+}
