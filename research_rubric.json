@@ -188,7 +188,7 @@
           "id": "item_017",
           "description": "Execute blind inversion tests on all validation targets",
           "acceptance_criteria": "For each of the >= 5 validation targets: (1) run the full hybrid pipeline (convex + evolutionary) on the photometric data without access to ground truth shape, (2) record recovered pole (lambda, beta), period, and output .obj mesh. Results stored in results/blind_tests/<asteroid_name>/. All runs complete without crashes. Log files capture convergence history (chi-squared vs. iteration).",
-          "status": "pending",
+          "status": "in_progress",
           "notes": null,
           "error": null
         },
@@ -269,8 +269,8 @@
   "summary": {
     "total_items": 25,
     "completed": 16,
-    "in_progress": 0,
+    "in_progress": 1,
     "failed": 0,
-    "pending": 9
+    "pending": 8
   }
 }
