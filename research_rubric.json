@@ -1,0 +1,270 @@
+{
+  "version": "1.0",
+  "created_at": "2026-02-07T00:58:00Z",
+  "updated_at": "2026-02-07T00:58:58.333486+00:00",
+  "current_agent": "orchestrator",
+  "agent_status": {
+    "orchestrator": {
+      "status": "completed",
+      "started_at": "2026-02-07T00:58:00Z",
+      "completed_at": "2026-02-07T00:58:58.333455+00:00",
+      "error": null
+    },
+    "researcher": {
+      "status": "pending",
+      "started_at": null,
+      "completed_at": null,
+      "error": null
+    },
+    "writer": {
+      "status": "pending",
+      "started_at": null,
+      "completed_at": null,
+      "error": null
+    }
+  },
+  "phases": [
+    {
+      "id": "phase_1",
+      "name": "Problem Analysis & Literature Review",
+      "order": 1,
+      "items": [
+        {
+          "id": "item_001",
+          "description": "Inventory repository files and define module boundaries for the planned LCI system",
+          "acceptance_criteria": "Produce a module inventory document covering 100% of files in repo root and a proposed package map with at least 8 planned modules and explicit dependency edges",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_002",
+          "description": "Formalize the primary research objective and success criteria versus MPO LCInvert, SAGE, and KOALA",
+          "acceptance_criteria": "Write a one-page problem statement with at least 5 quantitative KPIs, including sparse-data pole recovery rate and mesh error targets, each with baseline and target values",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_003",
+          "description": "Synthesize mathematical assumptions from Kaasalainen 2001, Bartczak 2018, Durech 2010, and Viikinkoski 2015",
+          "acceptance_criteria": "Create a traceability table with at least 12 equations/algorithmic elements mapped to implementation modules and cited source sections",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_004",
+          "description": "Define data contracts for ALCDEF, PDS, Gaia DR3, ZTF/Pan-STARRS, MPC, DAMIT, and JPL radar inputs",
+          "acceptance_criteria": "Publish schema definitions for each source including required fields, units, time standard, and validation rules; include at least 3 example records per source",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_005",
+          "description": "Design end-to-end experiment protocol and reproducibility standards",
+          "acceptance_criteria": "Document a deterministic run protocol specifying random seed strategy, hardware profile, version pinning, and pass/fail gates for all 5 project phases",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        }
+      ]
+    },
+    {
+      "id": "phase_2",
+      "name": "Baseline Implementation & Metrics",
+      "order": 2,
+      "items": [
+        {
+          "id": "item_006",
+          "description": "Implement geometric and photometric forward model baseline for convex bodies",
+          "acceptance_criteria": "Forward model reproduces synthetic light curves for 3 canonical test shapes with mean absolute magnitude residual <= 0.02 mag",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_007",
+          "description": "Implement gradient-based convex inversion optimizer from first principles",
+          "acceptance_criteria": "On synthetic datasets with known poles and periods, recover rotation period within 0.5% and pole within 10 degrees for at least 8 of 10 trials",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_008",
+          "description": "Build sparse photometry inversion module for limited cadence multi-apparition data",
+          "acceptance_criteria": "Using down-sampled benchmark data (<=100 points), module converges to a stable pole solution in <=20 restarts for at least 70% of targets",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_009",
+          "description": "Create baseline metrics pipeline for fit quality, geometry, and mesh similarity",
+          "acceptance_criteria": "Metrics pipeline outputs chi-square, period error, pole error, Hausdorff distance, and volumetric IoU in a single structured report for every run",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_010",
+          "description": "Establish baseline performance against at least one external reference implementation",
+          "acceptance_criteria": "Run matched-input comparison on minimum 5 objects and record deltas for period, pole, and mesh metrics; archive scripts and raw outputs",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        }
+      ]
+    },
+    {
+      "id": "phase_3",
+      "name": "Core Research & Novel Approaches",
+      "order": 3,
+      "items": [
+        {
+          "id": "item_011",
+          "description": "Implement non-convex evolutionary shape engine inspired by SAGE",
+          "acceptance_criteria": "Evolutionary solver supports mutation/crossover/selection on mesh parameterization and improves objective score by >=20% over convex baseline on concavity-rich synthetic tests",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_012",
+          "description": "Develop hybrid optimization schedule combining gradient descent and evolutionary search",
+          "acceptance_criteria": "Hybrid schedule demonstrates statistically significant improvement (p < 0.05) in at least 3 key metrics over either optimizer alone across >=15 validation runs",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_013",
+          "description": "Design adaptive loss weighting for dense vs sparse observations and regularization terms",
+          "acceptance_criteria": "Adaptive weighting reduces median pole error by >=15% on sparse-heavy validation subset without worsening dense-data chi-square by more than 5%",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_014",
+          "description": "Integrate physically informed priors for spin state, shape smoothness, and inertia plausibility",
+          "acceptance_criteria": "Prior module rejects non-physical solutions in >=90% of injected-failure test cases while preserving valid solutions in >=95% of control runs",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_015",
+          "description": "Implement uncertainty quantification for period, pole, and mesh outputs",
+          "acceptance_criteria": "Generate confidence intervals via multi-start/bootstrapping with calibration check showing nominal 95% intervals contain truth in 85-100% of benchmark cases",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        }
+      ]
+    },
+    {
+      "id": "phase_4",
+      "name": "Experiments & Evaluation",
+      "order": 4,
+      "items": [
+        {
+          "id": "item_016",
+          "description": "Assemble ground-truth benchmark set from DAMIT and JPL radar models",
+          "acceptance_criteria": "Curate at least 20 asteroids with paired shape meshes and raw photometry, including 433 Eros, 25143 Itokawa, and 216 Kleopatra",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_017",
+          "description": "Run blind inversion experiments on benchmark raw photometry",
+          "acceptance_criteria": "Execute blind runs for 100% of benchmark objects with no access to reference mesh during optimization and log full configuration per run",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_018",
+          "description": "Quantify geometric error against ground truth and enforce recursive optimization gate",
+          "acceptance_criteria": "Compute Hausdorff and volumetric IoU for each object; if any object exceeds 5% deviation threshold trigger automatic optimizer retuning workflow and rerun",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_019",
+          "description": "Evaluate robustness under sparse-data stress tests",
+          "acceptance_criteria": "For each benchmark object, run at least 3 sparsification levels and report failure rate, pole ambiguity count, and metric degradation slopes",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_020",
+          "description": "Measure runtime and scaling behavior for practical survey-scale operation",
+          "acceptance_criteria": "Profile CPU/memory and wall time across 5 dataset sizes and demonstrate linear or near-linear scaling in at least one optimized execution mode",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        }
+      ]
+    },
+    {
+      "id": "phase_5",
+      "name": "Analysis & Documentation",
+      "order": 5,
+      "items": [
+        {
+          "id": "item_021",
+          "description": "Construct candidate selection pipeline using NEA/diameter, LCDB U code, DAMIT exclusion, and photometry sufficiency rules",
+          "acceptance_criteria": "Boolean filter implementation returns deterministic candidate table with explicit pass/fail flag for each of the 4 priority rules",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_022",
+          "description": "Generate prioritized list of top 50 previously un-modeled NEAs and large MBAs",
+          "acceptance_criteria": "Produce ranked list of 50 objects with scoring fields (data completeness, geometry coverage, confidence estimate) and provenance links to source records",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_023",
+          "description": "Produce final model artifacts for selected targets",
+          "acceptance_criteria": "For each top candidate, export .obj mesh and spin vector file with metadata manifest containing period, pole, uncertainty, and input data sources",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_024",
+          "description": "Write validation report comparing custom engine to state-of-the-art baselines",
+          "acceptance_criteria": "Report includes per-object and aggregate tables for all key metrics, statistical significance tests, failure analysis, and explicit claim assessment of SOTA surpassing criteria",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_025",
+          "description": "Document reproducible release package and handoff materials",
+          "acceptance_criteria": "Deliver reproducibility bundle with runbook, configuration files, dataset manifests, and checksum-verified outputs enabling full rerun by a third party",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "total_items": 25,
+    "completed": 0,
+    "in_progress": 0,
+    "failed": 0,
+    "pending": 25
+  }
+}
