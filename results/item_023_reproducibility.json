@@ -1,0 +1,7 @@
+{
+  "item_id": "item_023",
+  "seed": 42,
+  "python": "3.10+",
+  "required_packages": ["requests"],
+  "doc": "docs/reproducibility.md"
+}
