@@ -1,0 +1,12 @@
+{
+  "item_id": "item_004",
+  "artifact": "docs/nonconvex_evolutionary_design.md",
+  "population_size": 96,
+  "operators": {
+    "mutation_probability": 0.15,
+    "crossover_probability": 0.65,
+    "elitism": 8
+  },
+  "max_generations": 300,
+  "seed": 42
+}
