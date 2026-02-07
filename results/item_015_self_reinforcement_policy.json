@@ -1,0 +1,12 @@
+{
+  "item_id": "item_015",
+  "max_iterations": 6,
+  "pass_threshold_percent": 5.0,
+  "retune_actions": [
+    "increase_smoothness_15pct",
+    "decrease_concavity_10pct",
+    "increase_spin_prior_10pct",
+    "tighten_period_granularity"
+  ],
+  "implementation": "src/lci/self_reinforcement.py"
+}
