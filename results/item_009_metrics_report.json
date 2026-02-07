@@ -1,0 +1,12 @@
+{
+  "item_id": "item_009",
+  "seed": 42,
+  "metrics": {
+    "chi_square": 0.5473103683239271,
+    "period_error_pct": 0.6153846153846159,
+    "pole_error_deg": 2.9746621438256953,
+    "hausdorff_distance": 0.020000000000000018,
+    "volumetric_iou": 0.5037593984962406
+  },
+  "required_fields_present": true
+}
