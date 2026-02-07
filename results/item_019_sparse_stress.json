@@ -1,0 +1,610 @@
+{
+  "item_id": "item_019",
+  "objects": 20,
+  "levels": [
+    0.3,
+    0.15,
+    0.08
+  ],
+  "summary_by_level": {
+    "0.3": {
+      "failure_rate": 0.7,
+      "pole_ambiguity_count": 57,
+      "mean_mse": 0.07104515594951243
+    },
+    "0.15": {
+      "failure_rate": 1.0,
+      "pole_ambiguity_count": 50,
+      "mean_mse": 0.06287101101814425
+    },
+    "0.08": {
+      "failure_rate": 0.85,
+      "pole_ambiguity_count": 57,
+      "mean_mse": 0.061217188596780624
+    }
+  },
+  "metric_degradation_slope_mse_per_level": 0.04622746869131492,
+  "acceptance_pass": true,
+  "details": [
+    {
+      "object_number": 433,
+      "rows": [
+        {
+          "level": 0.3,
+          "points": 54,
+          "mse": 0.15491204319769936,
+          "pole_error_deg": 39.80433875392677,
+          "failed": true,
+          "ambiguity_count": 3
+        },
+        {
+          "level": 0.15,
+          "points": 27,
+          "mse": 0.05911135381747629,
+          "pole_error_deg": 102.91213950056773,
+          "failed": true,
+          "ambiguity_count": 3
+        },
+        {
+          "level": 0.08,
+          "points": 14,
+          "mse": 0.048776649639677,
+          "pole_error_deg": 7.971345337843563,
+          "failed": false,
+          "ambiguity_count": 3
+        }
+      ]
+    },
+    {
+      "object_number": 25143,
+      "rows": [
+        {
+          "level": 0.3,
+          "points": 54,
+          "mse": 0.02640706199419931,
+          "pole_error_deg": 14.9866850733006,
+          "failed": false,
+          "ambiguity_count": 3
+        },
+        {
+          "level": 0.15,
+          "points": 27,
+          "mse": 0.05880826255274754,
+          "pole_error_deg": 86.3388317981384,
+          "failed": true,
+          "ambiguity_count": 3
+        },
+        {
+          "level": 0.08,
+          "points": 14,
+          "mse": 0.06291744859282,
+          "pole_error_deg": 78.33185566387638,
+          "failed": true,
+          "ambiguity_count": 3
+        }
+      ]
+    },
+    {
+      "object_number": 216,
+      "rows": [
+        {
+          "level": 0.3,
+          "points": 54,
+          "mse": 0.1315584303572279,
+          "pole_error_deg": 83.66734206864668,
+          "failed": true,
+          "ambiguity_count": 3
+        },
+        {
+          "level": 0.15,
+          "points": 27,
+          "mse": 0.0674551108934922,
+          "pole_error_deg": 79.59170490961839,
+          "failed": true,
+          "ambiguity_count": 2
+        },
+        {
+          "level": 0.08,
+          "points": 14,
+          "mse": 0.17152238445935936,
+          "pole_error_deg": 57.37642742836209,
+          "failed": true,
+          "ambiguity_count": 3
+        }
+      ]
+    },
+    {
+      "object_number": 1,
+      "rows": [
+        {
+          "level": 0.3,
+          "points": 54,
+          "mse": 0.07800307630374607,
+          "pole_error_deg": 43.47100321556593,
+          "failed": true,
+          "ambiguity_count": 3
+        },
+        {
+          "level": 0.15,
+          "points": 27,
+          "mse": 0.04376123417078744,
+          "pole_error_deg": 78.68150212666816,
+          "failed": true,
+          "ambiguity_count": 3
+        },
+        {
+          "level": 0.08,
+          "points": 14,
+          "mse": 0.06143297187079117,
+          "pole_error_deg": 35.84266415765953,
+          "failed": true,
+          "ambiguity_count": 3
+        }
+      ]
+    },
+    {
+      "object_number": 2,
+      "rows": [
+        {
+          "level": 0.3,
+          "points": 54,
+          "mse": 0.008953221898391497,
+          "pole_error_deg": 20.561980192996877,
+          "failed": true,
+          "ambiguity_count": 3
+        },
+        {
+          "level": 0.15,
+          "points": 27,
+          "mse": 0.040575069236446694,
+          "pole_error_deg": 59.42125619094027,
+          "failed": true,
+          "ambiguity_count": 2
+        },
+        {
+          "level": 0.08,
+          "points": 14,
+          "mse": 0.04281598171229634,
+          "pole_error_deg": 24.819034468610383,
+          "failed": true,
+          "ambiguity_count": 3
+        }
+      ]
+    },
+    {
+      "object_number": 3,
+      "rows": [
+        {
+          "level": 0.3,
+          "points": 54,
+          "mse": 0.011168740178350777,
+          "pole_error_deg": 62.3722453079688,
+          "failed": true,
+          "ambiguity_count": 3
+        },
+        {
+          "level": 0.15,
+          "points": 27,
+          "mse": 0.012087768201681908,
+          "pole_error_deg": 83.53071641485799,
+          "failed": true,
+          "ambiguity_count": 3
+        },
+        {
+          "level": 0.08,
+          "points": 14,
+          "mse": 0.028388670499309925,
+          "pole_error_deg": 19.10138307840697,
+          "failed": false,
+          "ambiguity_count": 3
+        }
+      ]
+    },
+    {
+      "object_number": 4,
+      "rows": [
+        {
+          "level": 0.3,
+          "points": 54,
+          "mse": 0.11091945237905204,
+          "pole_error_deg": 126.679806913378,
+          "failed": true,
+          "ambiguity_count": 2
+        },
+        {
+          "level": 0.15,
+          "points": 27,
+          "mse": 0.037654079221288835,
+          "pole_error_deg": 28.44999514631026,
+          "failed": true,
+          "ambiguity_count": 3
+        },
+        {
+          "level": 0.08,
+          "points": 14,
+          "mse": 0.014937247452542742,
+          "pole_error_deg": 54.36992835366339,
+          "failed": true,
+          "ambiguity_count": 3
+        }
+      ]
+    },
+    {
+      "object_number": 10,
+      "rows": [
+        {
+          "level": 0.3,
+          "points": 54,
+          "mse": 0.03616305684361601,
+          "pole_error_deg": 18.0276430676037,
+          "failed": false,
+          "ambiguity_count": 3
+        },
+        {
+          "level": 0.15,
+          "points": 27,
+          "mse": 0.043903204173872376,
+          "pole_error_deg": 37.43124946146039,
+          "failed": true,
+          "ambiguity_count": 3
+        },
+        {
+          "level": 0.08,
+          "points": 14,
+          "mse": 0.0967159429422136,
+          "pole_error_deg": 6.924143519971726,
+          "failed": false,
+          "ambiguity_count": 3
+        }
+      ]
+    },
+    {
+      "object_number": 15,
+      "rows": [
+        {
+          "level": 0.3,
+          "points": 54,
+          "mse": 0.07060564144833169,
+          "pole_error_deg": 9.889941929144104,
+          "failed": false,
+          "ambiguity_count": 3
+        },
+        {
+          "level": 0.15,
+          "points": 27,
+          "mse": 0.016339593889028396,
+          "pole_error_deg": 49.51168408254578,
+          "failed": true,
+          "ambiguity_count": 2
+        },
+        {
+          "level": 0.08,
+          "points": 14,
+          "mse": 0.019322486141373503,
+          "pole_error_deg": 33.553098124332855,
+          "failed": true,
+          "ambiguity_count": 3
+        }
+      ]
+    },
+    {
+      "object_number": 16,
+      "rows": [
+        {
+          "level": 0.3,
+          "points": 54,
+          "mse": 0.09879294933993978,
+          "pole_error_deg": 14.570907739159717,
+          "failed": false,
+          "ambiguity_count": 3
+        },
+        {
+          "level": 0.15,
+          "points": 27,
+          "mse": 0.20162900770514444,
+          "pole_error_deg": 53.48205812925367,
+          "failed": true,
+          "ambiguity_count": 3
+        },
+        {
+          "level": 0.08,
+          "points": 14,
+          "mse": 0.09076415759684615,
+          "pole_error_deg": 69.48840062181812,
+          "failed": true,
+          "ambiguity_count": 3
+        }
+      ]
+    },
+    {
+      "object_number": 21,
+      "rows": [
+        {
+          "level": 0.3,
+          "points": 54,
+          "mse": 0.09665118128558489,
+          "pole_error_deg": 74.90542106393724,
+          "failed": true,
+          "ambiguity_count": 3
+        },
+        {
+          "level": 0.15,
+          "points": 27,
+          "mse": 0.02259346486321556,
+          "pole_error_deg": 88.87154120024118,
+          "failed": true,
+          "ambiguity_count": 2
+        },
+        {
+          "level": 0.08,
+          "points": 14,
+          "mse": 0.041120466262092904,
+          "pole_error_deg": 25.196546210756036,
+          "failed": true,
+          "ambiguity_count": 3
+        }
+      ]
+    },
+    {
+      "object_number": 22,
+      "rows": [
+        {
+          "level": 0.3,
+          "points": 54,
+          "mse": 0.08679017738817835,
+          "pole_error_deg": 18.702798893327223,
+          "failed": false,
+          "ambiguity_count": 3
+        },
+        {
+          "level": 0.15,
+          "points": 27,
+          "mse": 0.0457085332712034,
+          "pole_error_deg": 34.05850888894853,
+          "failed": true,
+          "ambiguity_count": 3
+        },
+        {
+          "level": 0.08,
+          "points": 14,
+          "mse": 0.083623161096298,
+          "pole_error_deg": 101.23549676951973,
+          "failed": true,
+          "ambiguity_count": 2
+        }
+      ]
+    },
+    {
+      "object_number": 41,
+      "rows": [
+        {
+          "level": 0.3,
+          "points": 54,
+          "mse": 0.16104530360069347,
+          "pole_error_deg": 37.226335964354725,
+          "failed": true,
+          "ambiguity_count": 2
+        },
+        {
+          "level": 0.15,
+          "points": 27,
+          "mse": 0.10620161067220292,
+          "pole_error_deg": 67.63407140978391,
+          "failed": true,
+          "ambiguity_count": 2
+        },
+        {
+          "level": 0.08,
+          "points": 14,
+          "mse": 0.16134535502188266,
+          "pole_error_deg": 28.53779948245961,
+          "failed": true,
+          "ambiguity_count": 3
+        }
+      ]
+    },
+    {
+      "object_number": 87,
+      "rows": [
+        {
+          "level": 0.3,
+          "points": 54,
+          "mse": 0.18297733085583337,
+          "pole_error_deg": 97.14145558555937,
+          "failed": true,
+          "ambiguity_count": 3
+        },
+        {
+          "level": 0.15,
+          "points": 27,
+          "mse": 0.183112357613683,
+          "pole_error_deg": 42.05530748039438,
+          "failed": true,
+          "ambiguity_count": 3
+        },
+        {
+          "level": 0.08,
+          "points": 14,
+          "mse": 0.0742276294230924,
+          "pole_error_deg": 26.772288566797958,
+          "failed": true,
+          "ambiguity_count": 3
+        }
+      ]
+    },
+    {
+      "object_number": 121,
+      "rows": [
+        {
+          "level": 0.3,
+          "points": 54,
+          "mse": 0.013689434185427582,
+          "pole_error_deg": 95.74518338492742,
+          "failed": true,
+          "ambiguity_count": 3
+        },
+        {
+          "level": 0.15,
+          "points": 27,
+          "mse": 0.22874177055480163,
+          "pole_error_deg": 49.406674736416115,
+          "failed": true,
+          "ambiguity_count": 2
+        },
+        {
+          "level": 0.08,
+          "points": 14,
+          "mse": 0.03754200930675578,
+          "pole_error_deg": 35.480989644536386,
+          "failed": true,
+          "ambiguity_count": 3
+        }
+      ]
+    },
+    {
+      "object_number": 130,
+      "rows": [
+        {
+          "level": 0.3,
+          "points": 54,
+          "mse": 0.0044754044168689375,
+          "pole_error_deg": 142.91116750330366,
+          "failed": true,
+          "ambiguity_count": 2
+        },
+        {
+          "level": 0.15,
+          "points": 27,
+          "mse": 0.0013077152205015568,
+          "pole_error_deg": 25.93264695900086,
+          "failed": true,
+          "ambiguity_count": 3
+        },
+        {
+          "level": 0.08,
+          "points": 14,
+          "mse": 0.005853637000115647,
+          "pole_error_deg": 56.465838136343656,
+          "failed": true,
+          "ambiguity_count": 2
+        }
+      ]
+    },
+    {
+      "object_number": 349,
+      "rows": [
+        {
+          "level": 0.3,
+          "points": 54,
+          "mse": 0.00509591759514028,
+          "pole_error_deg": 11.518177234053326,
+          "failed": false,
+          "ambiguity_count": 3
+        },
+        {
+          "level": 0.15,
+          "points": 27,
+          "mse": 0.020331129429797135,
+          "pole_error_deg": 31.37213115345673,
+          "failed": true,
+          "ambiguity_count": 2
+        },
+        {
+          "level": 0.08,
+          "points": 14,
+          "mse": 0.0772142589891381,
+          "pole_error_deg": 59.98852921943604,
+          "failed": true,
+          "ambiguity_count": 3
+        }
+      ]
+    },
+    {
+      "object_number": 511,
+      "rows": [
+        {
+          "level": 0.3,
+          "points": 54,
+          "mse": 0.026196682789270072,
+          "pole_error_deg": 111.18191276868154,
+          "failed": true,
+          "ambiguity_count": 3
+        },
+        {
+          "level": 0.15,
+          "points": 27,
+          "mse": 0.018759947766400137,
+          "pole_error_deg": 47.084803820813136,
+          "failed": true,
+          "ambiguity_count": 2
+        },
+        {
+          "level": 0.08,
+          "points": 14,
+          "mse": 0.022309215110668662,
+          "pole_error_deg": 26.55627233486561,
+          "failed": true,
+          "ambiguity_count": 3
+        }
+      ]
+    },
+    {
+      "object_number": 704,
+      "rows": [
+        {
+          "level": 0.3,
+          "points": 54,
+          "mse": 0.0601968836158543,
+          "pole_error_deg": 36.76060409215612,
+          "failed": true,
+          "ambiguity_count": 3
+        },
+        {
+          "level": 0.15,
+          "points": 27,
+          "mse": 0.003869994945861838,
+          "pole_error_deg": 24.362105895152027,
+          "failed": true,
+          "ambiguity_count": 2
+        },
+        {
+          "level": 0.08,
+          "points": 14,
+          "mse": 0.011458402947900273,
+          "pole_error_deg": 60.30750850220333,
+          "failed": true,
+          "ambiguity_count": 3
+        }
+      ]
+    },
+    {
+      "object_number": 253,
+      "rows": [
+        {
+          "level": 0.3,
+          "points": 54,
+          "mse": 0.05630112931684267,
+          "pole_error_deg": 80.51207315038967,
+          "failed": true,
+          "ambiguity_count": 3
+        },
+        {
+          "level": 0.15,
+          "points": 27,
+          "mse": 0.0454690121632518,
+          "pole_error_deg": 56.587657284563036,
+          "failed": true,
+          "ambiguity_count": 2
+        },
+        {
+          "level": 0.08,
+          "points": 14,
+          "mse": 0.07205569587043804,
+          "pole_error_deg": 83.35485881401287,
+          "failed": true,
+          "ambiguity_count": 2
+        }
+      ]
+    }
+  ]
+}
