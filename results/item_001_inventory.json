@@ -1,0 +1,8 @@
+{
+  "item_id": "item_001",
+  "root_inventory_entries": 11,
+  "root_inventory_coverage_percent": 100,
+  "planned_module_count": 15,
+  "dependency_edges": 17,
+  "status": "completed"
+}
