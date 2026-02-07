@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "created_at": "2026-02-07T00:58:00Z",
-  "updated_at": "2026-02-07T01:18:11.607011+00:00",
+  "updated_at": "2026-02-07T01:18:29.929177+00:00",
   "current_agent": "researcher",
   "agent_status": {
     "orchestrator": {
@@ -221,8 +221,8 @@
           "id": "item_021",
           "description": "Construct candidate selection pipeline using NEA/diameter, LCDB U code, DAMIT exclusion, and photometry sufficiency rules",
           "acceptance_criteria": "Boolean filter implementation returns deterministic candidate table with explicit pass/fail flag for each of the 4 priority rules",
-          "status": "pending",
-          "notes": null,
+          "status": "completed",
+          "notes": "Implemented deterministic boolean candidate filter in src/lci/selection.py with explicit pass/fail flags for all four priority rules; generated results/item_021_candidates.json.",
           "error": null
         },
         {
@@ -262,9 +262,9 @@
   ],
   "summary": {
     "total_items": 25,
-    "completed": 16,
+    "completed": 17,
     "in_progress": 0,
     "failed": 4,
-    "pending": 5
+    "pending": 4
   }
 }
