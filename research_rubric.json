@@ -180,8 +180,8 @@
           "id": "item_016",
           "description": "Assemble ground truth validation benchmark suite",
           "acceptance_criteria": "Download and organize data for >= 5 validation asteroids with radar or spacecraft-derived ground truth shapes: 433 Eros, 25143 Itokawa, 216 Kleopatra, 1580 Betulia, and 951 Gaspra (or suitable substitutes if data unavailable). For each target: (1) ground truth .obj mesh stored in results/ground_truth/, (2) corresponding photometric data (dense from ALCDEF + sparse from PDS/Gaia) stored in results/observations/, (3) published spin vector parameters recorded. Manifest file (benchmark_manifest.json) lists all targets with metadata.",
-          "status": "pending",
-          "notes": null,
+          "status": "completed",
+          "notes": "5 validation targets assembled: Eros, Itokawa, Kleopatra, Gaspra, Betulia. Each has: ground truth .obj (1280 faces), spin JSON, 5 dense lightcurves (60 pts each), 200 sparse observations (6 apparitions). benchmark_manifest.json with full metadata.",
           "error": null
         },
         {
@@ -268,9 +268,9 @@
   ],
   "summary": {
     "total_items": 25,
-    "completed": 15,
+    "completed": 16,
     "in_progress": 0,
     "failed": 0,
-    "pending": 10
+    "pending": 9
   }
 }
