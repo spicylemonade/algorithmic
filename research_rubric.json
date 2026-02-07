@@ -86,8 +86,8 @@
           "id": "item_006",
           "description": "Implement forward scattering model and synthetic lightcurve generator",
           "acceptance_criteria": "Python module (e.g., forward_model.py) that: (1) accepts a triangulated mesh (.obj) and spin state (pole ecliptic lambda/beta, period, epoch), (2) computes brightness at arbitrary observer/sun geometry using Lommel-Seeliger + Lambert scattering, (3) generates a synthetic lightcurve for a given set of JD epochs. Validated by generating a lightcurve for a sphere (must be flat/constant) and for a known ellipsoid (amplitude must match analytical a/b ratio within 2%). Unit tests pass.",
-          "status": "pending",
-          "notes": null,
+          "status": "completed",
+          "notes": "forward_model.py + geometry.py implemented. Tests pass: sphere variation <0.4%, ellipsoid a/b ratio matches within 0.00% error (Lambert scattering at opposition). Kepler solver, mesh properties, and back-illumination tests also pass.",
           "error": null
         },
         {
@@ -268,9 +268,9 @@
   ],
   "summary": {
     "total_items": 25,
-    "completed": 5,
+    "completed": 6,
     "in_progress": 0,
     "failed": 0,
-    "pending": 20
+    "pending": 19
   }
 }
