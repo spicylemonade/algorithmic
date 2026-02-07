@@ -1,0 +1,24 @@
+{
+  "seed": 42,
+  "input_sources": [
+    "DAMIT",
+    "JPL SBDB/Radar pages",
+    "ALCDEF",
+    "PDS",
+    "Gaia DR3",
+    "ZTF/Pan-STARRS",
+    "MPC"
+  ],
+  "primary_results": [
+    "results/item_016_benchmark_set.json",
+    "results/item_017_blind_runs.json",
+    "results/item_018_recursive_gate.json",
+    "results/item_021_candidates.json",
+    "results/item_022_top50.json",
+    "results/item_023_manifest.json"
+  ],
+  "figures": [
+    "figures/item_006_lightcurves.png",
+    "figures/item_020_scaling.png"
+  ]
+}
