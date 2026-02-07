@@ -1,0 +1,9 @@
+{
+  "item_id": "item_002",
+  "kpi_count": 7,
+  "required_kpi_present": {
+    "sparse_pole_recovery_rate": true,
+    "mesh_error_targets": true
+  },
+  "status": "completed"
+}
