@@ -1,0 +1,322 @@
+{
+  "item_id": "item_020",
+  "required_queue_size": 50,
+  "actual_queue_size": 15,
+  "queue": [
+    {
+      "number": 3122,
+      "name": "3122 Florence (1981 ET3)",
+      "score": 375,
+      "data_completeness_score": 100.0,
+      "evidence": {
+        "priority_1": true,
+        "priority_2": true,
+        "priority_3": true,
+        "priority_4": true,
+        "lcdb_u": "3",
+        "lightcurve_count": 35,
+        "apparitions": 23,
+        "in_damit": false
+      },
+      "source_links": {
+        "sbdb": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=3122",
+        "lcdb": "https://www.minorplanet.info/php/generateoneasteroidinfo.php",
+        "damit_query": "https://astro.troja.mff.cuni.cz/projects/damit/?q=3122"
+      }
+    },
+    {
+      "number": 5143,
+      "name": "5143 Heracles (1991 VL)",
+      "score": 373,
+      "data_completeness_score": 100.0,
+      "evidence": {
+        "priority_1": true,
+        "priority_2": true,
+        "priority_3": true,
+        "priority_4": true,
+        "lcdb_u": "3",
+        "lightcurve_count": 33,
+        "apparitions": 18,
+        "in_damit": false
+      },
+      "source_links": {
+        "sbdb": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=5143",
+        "lcdb": "https://www.minorplanet.info/php/generateoneasteroidinfo.php",
+        "damit_query": "https://astro.troja.mff.cuni.cz/projects/damit/?q=5143"
+      }
+    },
+    {
+      "number": 1866,
+      "name": "1866 Sisyphus (1972 XA)",
+      "score": 370,
+      "data_completeness_score": 100.0,
+      "evidence": {
+        "priority_1": true,
+        "priority_2": true,
+        "priority_3": true,
+        "priority_4": true,
+        "lcdb_u": "3",
+        "lightcurve_count": 30,
+        "apparitions": 17,
+        "in_damit": false
+      },
+      "source_links": {
+        "sbdb": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=1866",
+        "lcdb": "https://www.minorplanet.info/php/generateoneasteroidinfo.php",
+        "damit_query": "https://astro.troja.mff.cuni.cz/projects/damit/?q=1866"
+      }
+    },
+    {
+      "number": 1943,
+      "name": "1943 Anteros (1973 EC)",
+      "score": 370,
+      "data_completeness_score": 100.0,
+      "evidence": {
+        "priority_1": true,
+        "priority_2": true,
+        "priority_3": true,
+        "priority_4": true,
+        "lcdb_u": "3",
+        "lightcurve_count": 30,
+        "apparitions": 17,
+        "in_damit": false
+      },
+      "source_links": {
+        "sbdb": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=1943",
+        "lcdb": "https://www.minorplanet.info/php/generateoneasteroidinfo.php",
+        "damit_query": "https://astro.troja.mff.cuni.cz/projects/damit/?q=1943"
+      }
+    },
+    {
+      "number": 4055,
+      "name": "4055 Magellan (1985 DO2)",
+      "score": 370,
+      "data_completeness_score": 100.0,
+      "evidence": {
+        "priority_1": true,
+        "priority_2": true,
+        "priority_3": true,
+        "priority_4": true,
+        "lcdb_u": "3",
+        "lightcurve_count": 30,
+        "apparitions": 16,
+        "in_damit": false
+      },
+      "source_links": {
+        "sbdb": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=4055",
+        "lcdb": "https://www.minorplanet.info/php/generateoneasteroidinfo.php",
+        "damit_query": "https://astro.troja.mff.cuni.cz/projects/damit/?q=4055"
+      }
+    },
+    {
+      "number": 4183,
+      "name": "4183 Cuno (1959 LM)",
+      "score": 370,
+      "data_completeness_score": 100.0,
+      "evidence": {
+        "priority_1": true,
+        "priority_2": true,
+        "priority_3": true,
+        "priority_4": true,
+        "lcdb_u": "3",
+        "lightcurve_count": 30,
+        "apparitions": 12,
+        "in_damit": false
+      },
+      "source_links": {
+        "sbdb": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=4183",
+        "lcdb": "https://www.minorplanet.info/php/generateoneasteroidinfo.php",
+        "damit_query": "https://astro.troja.mff.cuni.cz/projects/damit/?q=4183"
+      }
+    },
+    {
+      "number": 6455,
+      "name": "6455 (1992 HE)",
+      "score": 365,
+      "data_completeness_score": 100.0,
+      "evidence": {
+        "priority_1": true,
+        "priority_2": true,
+        "priority_3": true,
+        "priority_4": true,
+        "lcdb_u": "3",
+        "lightcurve_count": 25,
+        "apparitions": 14,
+        "in_damit": false
+      },
+      "source_links": {
+        "sbdb": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=6455",
+        "lcdb": "https://www.minorplanet.info/php/generateoneasteroidinfo.php",
+        "damit_query": "https://astro.troja.mff.cuni.cz/projects/damit/?q=6455"
+      }
+    },
+    {
+      "number": 4179,
+      "name": "4179 Toutatis (1989 AC)",
+      "score": 364,
+      "data_completeness_score": 100.0,
+      "evidence": {
+        "priority_1": true,
+        "priority_2": true,
+        "priority_3": true,
+        "priority_4": true,
+        "lcdb_u": "3",
+        "lightcurve_count": 24,
+        "apparitions": 10,
+        "in_damit": false
+      },
+      "source_links": {
+        "sbdb": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=4179",
+        "lcdb": "https://www.minorplanet.info/php/generateoneasteroidinfo.php",
+        "damit_query": "https://astro.troja.mff.cuni.cz/projects/damit/?q=4179"
+      }
+    },
+    {
+      "number": 2212,
+      "name": "2212 Hephaistos (1978 SB)",
+      "score": 361,
+      "data_completeness_score": 100.0,
+      "evidence": {
+        "priority_1": true,
+        "priority_2": true,
+        "priority_3": true,
+        "priority_4": true,
+        "lcdb_u": "2",
+        "lightcurve_count": 21,
+        "apparitions": 7,
+        "in_damit": false
+      },
+      "source_links": {
+        "sbdb": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=2212",
+        "lcdb": "https://www.minorplanet.info/php/generateoneasteroidinfo.php",
+        "damit_query": "https://astro.troja.mff.cuni.cz/projects/damit/?q=2212"
+      }
+    },
+    {
+      "number": 7822,
+      "name": "7822 (1991 CS)",
+      "score": 361,
+      "data_completeness_score": 100.0,
+      "evidence": {
+        "priority_1": true,
+        "priority_2": true,
+        "priority_3": true,
+        "priority_4": true,
+        "lcdb_u": "3",
+        "lightcurve_count": 21,
+        "apparitions": 11,
+        "in_damit": false
+      },
+      "source_links": {
+        "sbdb": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=7822",
+        "lcdb": "https://www.minorplanet.info/php/generateoneasteroidinfo.php",
+        "damit_query": "https://astro.troja.mff.cuni.cz/projects/damit/?q=7822"
+      }
+    },
+    {
+      "number": 3554,
+      "name": "3554 Amun (1986 EB)",
+      "score": 360,
+      "data_completeness_score": 100.0,
+      "evidence": {
+        "priority_1": true,
+        "priority_2": true,
+        "priority_3": true,
+        "priority_4": true,
+        "lcdb_u": "3",
+        "lightcurve_count": 20,
+        "apparitions": 11,
+        "in_damit": false
+      },
+      "source_links": {
+        "sbdb": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=3554",
+        "lcdb": "https://www.minorplanet.info/php/generateoneasteroidinfo.php",
+        "damit_query": "https://astro.troja.mff.cuni.cz/projects/damit/?q=3554"
+      }
+    },
+    {
+      "number": 5653,
+      "name": "5653 Camarillo (1992 WD5)",
+      "score": 360,
+      "data_completeness_score": 100.0,
+      "evidence": {
+        "priority_1": true,
+        "priority_2": true,
+        "priority_3": true,
+        "priority_4": true,
+        "lcdb_u": "3",
+        "lightcurve_count": 20,
+        "apparitions": 10,
+        "in_damit": false
+      },
+      "source_links": {
+        "sbdb": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=5653",
+        "lcdb": "https://www.minorplanet.info/php/generateoneasteroidinfo.php",
+        "damit_query": "https://astro.troja.mff.cuni.cz/projects/damit/?q=5653"
+      }
+    },
+    {
+      "number": 3552,
+      "name": "3552 Don Quixote (1983 SA)",
+      "score": 359,
+      "data_completeness_score": 100.0,
+      "evidence": {
+        "priority_1": true,
+        "priority_2": true,
+        "priority_3": true,
+        "priority_4": true,
+        "lcdb_u": "3",
+        "lightcurve_count": 19,
+        "apparitions": 10,
+        "in_damit": false
+      },
+      "source_links": {
+        "sbdb": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=3552",
+        "lcdb": "https://www.minorplanet.info/php/generateoneasteroidinfo.php",
+        "damit_query": "https://astro.troja.mff.cuni.cz/projects/damit/?q=3552"
+      }
+    },
+    {
+      "number": 5626,
+      "name": "5626 Melissabrucker (1991 FE)",
+      "score": 359,
+      "data_completeness_score": 100.0,
+      "evidence": {
+        "priority_1": true,
+        "priority_2": true,
+        "priority_3": true,
+        "priority_4": true,
+        "lcdb_u": "3",
+        "lightcurve_count": 19,
+        "apparitions": 7,
+        "in_damit": false
+      },
+      "source_links": {
+        "sbdb": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=5626",
+        "lcdb": "https://www.minorplanet.info/php/generateoneasteroidinfo.php",
+        "damit_query": "https://astro.troja.mff.cuni.cz/projects/damit/?q=5626"
+      }
+    },
+    {
+      "number": 5604,
+      "name": "5604 (1992 FE)",
+      "score": 357,
+      "data_completeness_score": 100.0,
+      "evidence": {
+        "priority_1": true,
+        "priority_2": true,
+        "priority_3": true,
+        "priority_4": true,
+        "lcdb_u": "3",
+        "lightcurve_count": 17,
+        "apparitions": 8,
+        "in_damit": false
+      },
+      "source_links": {
+        "sbdb": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=5604",
+        "lcdb": "https://www.minorplanet.info/php/generateoneasteroidinfo.php",
+        "damit_query": "https://astro.troja.mff.cuni.cz/projects/damit/?q=5604"
+      }
+    }
+  ]
+}

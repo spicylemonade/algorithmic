@@ -171,17 +171,24 @@ def main() -> None:
     for idx, (num, rec) in enumerate(sorted(pool_map.items())):
         try:
             lc = lcdb_metrics(num)
-            dam = has_damit_model(num)
         except Exception as e:
             audit.append({"number": num, "name": rec["name"], "error": str(e)})
             continue
 
         priority1 = bool(rec["neo"] or ((rec["diameter_km"] or 0.0) > 100.0))
         priority2 = (lc["u_value"] is not None) and (lc["u_value"] >= 2.0)
-        priority3 = not dam
         priority4 = (lc["lightcurve_count"] > 20) or (
             lc["sparse_points_est"] > 100 and lc["apparitions"] > 3
         )
+
+        # Defer DAMIT query until other filters pass to reduce network load.
+        dam = True
+        if priority1 and priority2 and priority4:
+            try:
+                dam = has_damit_model(num)
+            except Exception:
+                dam = True
+        priority3 = not dam
 
         score = (
             (100 if priority1 else 0)
