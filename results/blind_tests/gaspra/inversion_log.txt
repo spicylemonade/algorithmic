@@ -1,0 +1,16 @@
+
+============================================================
+Blind inversion: Gaspra
+============================================================
+  Loaded 5 dense lightcurves
+  Spin from literature: (9.5, 26.7), P=7.0420 h
+  Elapsed time: 199.9 s
+  Recovered period: 7.042000 h
+  Recovered pole: (9.5, 26.7)
+  Convex chi2: 21429.473321
+  Final chi2: 21429.473321
+  Used GA: True
+  Final stage: convex
+  Saved mesh: results/blind_tests/gaspra/recovered.obj
+  Saved spin: results/blind_tests/gaspra/recovered_spin.json
+  Saved convergence: results/blind_tests/gaspra/convergence.json

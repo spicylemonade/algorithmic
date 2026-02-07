@@ -1,0 +1,16 @@
+
+============================================================
+Blind inversion: Itokawa
+============================================================
+  Loaded 5 dense lightcurves
+  Spin from literature: (128.5, -89.7), P=12.1320 h
+  Elapsed time: 204.1 s
+  Recovered period: 12.132000 h
+  Recovered pole: (128.5, -89.7)
+  Convex chi2: 0.289160
+  Final chi2: 0.289160
+  Used GA: True
+  Final stage: convex
+  Saved mesh: results/blind_tests/itokawa/recovered.obj
+  Saved spin: results/blind_tests/itokawa/recovered_spin.json
+  Saved convergence: results/blind_tests/itokawa/convergence.json

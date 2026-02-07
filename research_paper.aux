@@ -1,0 +1,158 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
+\HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
+\global\let\oldnewlabel\newlabel
+\gdef\newlabel#1#2{\newlabelxx{#1}#2}
+\gdef\newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
+\AtEndDocument{\ifx\hyper@anchor\@undefined
+\let\newlabel\oldnewlabel
+\fi}
+\fi}
+\global\let\hyper@last\relax 
+\gdef\HyperFirstAtBeginDocument#1{#1}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\citation{hanus2013physical}
+\citation{carry2012koala}
+\citation{warner2009lcdb}
+\citation{kaasalainen2001shape}
+\citation{kaasalainen2001complete}
+\citation{warner2007lcinvert}
+\citation{durech2010damit}
+\citation{bartczak2018sage}
+\citation{durech2009sparse,hanus2011models}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{section.1}\protected@file@percent }
+\newlabel{sec:intro}{{1}{1}{Introduction}{section.1}{}}
+\citation{kaasalainen2001shape,kaasalainen2001complete}
+\citation{damit_convex_code}
+\citation{durech2010damit}
+\citation{hanus2011models,hanus2016new}
+\citation{warner2007lcinvert}
+\citation{bartczak2018sage}
+\citation{cellino2009genetic}
+\citation{durech2009sparse}
+\citation{muinonen2010hg}
+\citation{durech2016updates}
+\citation{asteroids_at_home}
+\@writefile{toc}{\contentsline {paragraph}{Contributions.}{2}{section*.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Paper outline.}{2}{section*.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {2}Related Work}{2}{section.2}\protected@file@percent }
+\newlabel{sec:related}{{2}{2}{Related Work}{section.2}{}}
+\@writefile{toc}{\contentsline {paragraph}{Convex inversion.}{2}{section*.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Non-convex and genetic methods.}{2}{section*.4}\protected@file@percent }
+\citation{viikinkoski2015adam}
+\citation{carry2012koala}
+\citation{hapke2012reflectance}
+\citation{muinonen2015lommel}
+\citation{cignoni2003mesh}
+\@writefile{toc}{\contentsline {paragraph}{Sparse photometric inversion.}{3}{section*.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Multi-data fusion.}{3}{section*.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Scattering models and mesh metrics.}{3}{section*.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3}Background \& Preliminaries}{3}{section.3}\protected@file@percent }
+\newlabel{sec:background}{{3}{3}{Background \& Preliminaries}{section.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Notation}{3}{subsection.3.1}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Principal notation and symbols.\relax }}{3}{table.caption.8}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{tab:notation}{{1}{3}{Principal notation and symbols.\relax }{table.caption.8}{}}
+\citation{muinonen2010hg}
+\citation{kaasalainen2001shape,kaasalainen2001complete}
+\citation{levenberg1944method}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Forward Scattering Model}{4}{subsection.3.2}\protected@file@percent }
+\newlabel{eq:brightness}{{1}{4}{Forward Scattering Model}{equation.3.1}{}}
+\newlabel{eq:scattering}{{2}{4}{Forward Scattering Model}{equation.3.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}The $H$-$G_1$-$G_2$ Phase Function}{4}{subsection.3.3}\protected@file@percent }
+\newlabel{eq:hg12}{{3}{4}{The $H$-$G_1$-$G_2$ Phase Function}{equation.3.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Shape Metrics}{4}{subsection.3.4}\protected@file@percent }
+\newlabel{eq:hausdorff}{{4}{4}{Shape Metrics}{equation.3.4}{}}
+\newlabel{eq:iou}{{5}{4}{Shape Metrics}{equation.3.5}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Method}{4}{section.4}\protected@file@percent }
+\newlabel{sec:method}{{4}{4}{Method}{section.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Stage 1: Convex Inversion}{4}{subsection.4.1}\protected@file@percent }
+\newlabel{eq:objective}{{6}{4}{Stage 1: Convex Inversion}{equation.4.6}{}}
+\citation{bartczak2018sage}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Pipeline architecture. Dense and sparse photometric data are ingested alongside orbital elements, processed through a C++-accelerated geometry engine, and passed to the two-stage inversion: convex optimization (Stage\nobreakspace  {}1) followed by optional genetic algorithm refinement (Stage\nobreakspace  {}2). The sparse handler provides phase-calibrated absolute magnitudes for combined inversion.\relax }}{5}{figure.caption.9}\protected@file@percent }
+\newlabel{fig:architecture}{{1}{5}{Pipeline architecture. Dense and sparse photometric data are ingested alongside orbital elements, processed through a C++-accelerated geometry engine, and passed to the two-stage inversion: convex optimization (Stage~1) followed by optional genetic algorithm refinement (Stage~2). The sparse handler provides phase-calibrated absolute magnitudes for combined inversion.\relax }{figure.caption.9}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Stage 2: Genetic Algorithm Refinement}{5}{subsection.4.2}\protected@file@percent }
+\@writefile{loa}{\contentsline {algorithm}{\numberline {1}{\ignorespaces Convex Inversion (Stage 1)\relax }}{6}{algorithm.1}\protected@file@percent }
+\newlabel{alg:convex}{{1}{6}{Convex Inversion (Stage 1)\relax }{algorithm.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Sparse Data Handler}{6}{subsection.4.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Uncertainty Quantification}{6}{subsection.4.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5}C++ Acceleration}{6}{subsection.4.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5}Experimental Setup}{6}{section.5}\protected@file@percent }
+\newlabel{sec:setup}{{5}{6}{Experimental Setup}{section.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Validation Targets}{6}{subsection.5.1}\protected@file@percent }
+\citation{warner2007lcinvert}
+\citation{bartczak2018sage}
+\citation{carry2012koala}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Validation target properties. Axis ratios characterize the degree of elongation.\relax }}{7}{table.caption.10}\protected@file@percent }
+\newlabel{tab:targets}{{2}{7}{Validation target properties. Axis ratios characterize the degree of elongation.\relax }{table.caption.10}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Evaluation Metrics}{7}{subsection.5.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Baselines}{7}{subsection.5.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4}Hyperparameters}{7}{subsection.5.4}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Pipeline hyperparameters.\relax }}{7}{table.caption.11}\protected@file@percent }
+\newlabel{tab:hyperparams}{{3}{7}{Pipeline hyperparameters.\relax }{table.caption.11}{}}
+\citation{bartczak2018sage}
+\citation{hanus2011models}
+\citation{durech2009sparse}
+\citation{hanus2011models}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.5}Computational Environment}{8}{subsection.5.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6}Results}{8}{section.6}\protected@file@percent }
+\newlabel{sec:results}{{6}{8}{Results}{section.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}Validation Against Ground Truth}{8}{subsection.6.1}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Validation metrics for five ground-truth asteroid targets. Bold values indicate best performance. Pole and period errors are zero because the known spin was provided as input.\relax }}{8}{table.caption.12}\protected@file@percent }
+\newlabel{tab:validation}{{4}{8}{Validation metrics for five ground-truth asteroid targets. Bold values indicate best performance. Pole and period errors are zero because the known spin was provided as input.\relax }{table.caption.12}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}Convergence Analysis}{8}{subsection.6.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3}Sparse-Only Stress Test}{8}{subsection.6.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Volumetric Intersection-over-Union (IoU) for the five validation targets. The dashed horizontal line marks the $\mathrm  {IoU}= 0.70$ threshold. Only Betulia, the most equidimensional target, exceeds this threshold, illustrating the strong dependence of photometry-only shape recovery on intrinsic target morphology.\relax }}{9}{figure.caption.13}\protected@file@percent }
+\newlabel{fig:iou_bar}{{2}{9}{Volumetric Intersection-over-Union (IoU) for the five validation targets. The dashed horizontal line marks the $\IoU = 0.70$ threshold. Only Betulia, the most equidimensional target, exceeds this threshold, illustrating the strong dependence of photometry-only shape recovery on intrinsic target morphology.\relax }{figure.caption.13}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.4}Target Selection and New Shape Models}{9}{subsection.6.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {7}Discussion}{9}{section.7}\protected@file@percent }
+\newlabel{sec:discussion}{{7}{9}{Discussion}{section.7}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.1}Shape Recovery Performance in Context}{9}{subsection.7.1}\protected@file@percent }
+\citation{kaasalainen2001shape}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Chi-squared convergence trajectories for the convex optimization stage across all five validation targets. Rapid initial descent occurs within the first 20 iterations, with diminishing returns thereafter. The GA stage (not shown) did not achieve further reduction, consistent with its limited budget of 2{,}000 evaluations.\relax }}{10}{figure.caption.14}\protected@file@percent }
+\newlabel{fig:convergence}{{3}{10}{Chi-squared convergence trajectories for the convex optimization stage across all five validation targets. Rapid initial descent occurs within the first 20 iterations, with diminishing returns thereafter. The GA stage (not shown) did not achieve further reduction, consistent with its limited budget of 2{,}000 evaluations.\relax }{figure.caption.14}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.2}Limitations of the Convex Approximation}{10}{subsection.7.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.3}Vertex Reconstruction Artifact}{10}{subsection.7.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.4}Sparse Inversion Reliability}{10}{subsection.7.4}\protected@file@percent }
+\citation{cellino2009genetic}
+\citation{carry2012koala}
+\citation{viikinkoski2015adam}
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Sparse-only inversion results. Pole error (degrees) and period error (hours) as a function of the number of sparse observation points. Bold entries indicate pole errors below $30^\circ $.\relax }}{11}{table.caption.15}\protected@file@percent }
+\newlabel{tab:sparse}{{5}{11}{Sparse-only inversion results. Pole error (degrees) and period error (hours) as a function of the number of sparse observation points. Bold entries indicate pole errors below $30^\circ $.\relax }{table.caption.15}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Top 10 candidate targets with newly generated shape models. All models exported as 1280-face \texttt  {.obj} meshes with associated spin vectors.\relax }}{11}{table.caption.17}\protected@file@percent }
+\newlabel{tab:top10}{{6}{11}{Top 10 candidate targets with newly generated shape models. All models exported as 1280-face \texttt {.obj} meshes with associated spin vectors.\relax }{table.caption.17}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.5}Comparison with Multi-Data Methods}{11}{subsection.7.5}\protected@file@percent }
+\citation{hanus2011models}
+\citation{viikinkoski2015adam}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Pole orientation error as a function of the number of sparse photometric observations for three validation targets. The dashed line at $30^\circ $ marks the conventional threshold for useful pole determination. Only Kleopatra reliably achieves sub-threshold pole errors, highlighting the strong dependence on observing geometry and target properties.\relax }}{12}{figure.caption.16}\protected@file@percent }
+\newlabel{fig:sparse}{{4}{12}{Pole orientation error as a function of the number of sparse photometric observations for three validation targets. The dashed line at $30^\circ $ marks the conventional threshold for useful pole determination. Only Kleopatra reliably achieves sub-threshold pole errors, highlighting the strong dependence on observing geometry and target properties.\relax }{figure.caption.16}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.6}Synthetic Data Considerations}{12}{subsection.7.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {8}Conclusion}{12}{section.8}\protected@file@percent }
+\newlabel{sec:conclusion}{{8}{12}{Conclusion}{section.8}{}}
+\bibstyle{plainnat}
+\bibdata{sources}
+\bibcite{bartczak2018sage}{{1}{2018}{{Bartczak and Dudzi{\'n}ski}}{{}}}
+\bibcite{carry2012koala}{{2}{2012}{{Carry et~al.}}{{Carry, Kaasalainen, Leyrat, Merline, Drummond, Conrad, Weaver, Christou, Dumas, Fulchignoni, Kuppers, Barrera, Behrend, Berthier, Descamps, Emery, Hestroffer, Kidger, Lim, Marchis, Mueller, Opitom, Pilcher, Reach, Rivkin, Sierks, Tanga, and Viikinkoski}}}
+\bibcite{cellino2009genetic}{{3}{2009}{{Cellino et~al.}}{{Cellino, Hestroffer, Tanga, Mottola, and Dell'Oro}}}
+\bibcite{cignoni2003mesh}{{4}{1998}{{Cignoni et~al.}}{{Cignoni, Rocchini, and Scopigno}}}
+\bibcite{asteroids_at_home}{{5}{2013}{{Durech and Hanu{\v {s}}}}{{}}}
+\bibcite{durech2009sparse}{{6}{2009}{{Durech et~al.}}{{Durech, Kaasalainen, Warner, Fauerbach, Marks, Fauvaud, Fauvaud, Vugnon, Pilcher, Bernasconi, and Behrend}}}
+\bibcite{durech2010damit}{{7}{2010}{{Durech et~al.}}{{Durech, Sidorin, and Kaasalainen}}}
+\bibcite{durech2016updates}{{8}{2016}{{Durech et~al.}}{{Durech, Hanu{\v {s}}, Oszkiewicz, and Vanco}}}
+\bibcite{hanus2011models}{{9}{2011}{{Hanu{\v {s}} et~al.}}{{Hanu{\v {s}}, Durech, Bro{\v {z}}, Warner, Pilcher, Stephens, Oey, Bernasconi, Casulli, Behrend, Polishook, Henych, Lehk{\'y}, Yoshida, and Ito}}}
+\bibcite{hanus2013physical}{{10}{2013}{{Hanu{\v {s}} et~al.}}{{Hanu{\v {s}}, Durech, Bro{\v {z}}, Marciniak, Warner, Pilcher, Stephens, Behrend, Carry, {\v {D}}urovi{\v {c}}, Kaasalainen, Lehk{\'y}, Lichen, Polishook, Raetz, Roy, Shevchenko, and Trunkovsk{\'y}}}}
+\@writefile{toc}{\contentsline {paragraph}{Future work.}{13}{section*.18}\protected@file@percent }
+\bibcite{hanus2016new}{{11}{2016}{{Hanu{\v {s}} et~al.}}{{Hanu{\v {s}}, Durech, Oszkiewicz, Behrend, Carry, Delb{\'o}, Adam, Afonina, Anber, Arlot, et~al.}}}
+\bibcite{hapke2012reflectance}{{12}{2012}{{Hapke}}{{}}}
+\bibcite{damit_convex_code}{{13}{2020}{{Kaasalainen and Durech}}{{}}}
+\bibcite{kaasalainen2001shape}{{14}{2001}{{Kaasalainen and Torppa}}{{}}}
+\bibcite{kaasalainen2001complete}{{15}{2001}{{Kaasalainen et~al.}}{{Kaasalainen, Torppa, and Muinonen}}}
+\bibcite{levenberg1944method}{{16}{1944}{{Levenberg}}{{}}}
+\bibcite{muinonen2015lommel}{{17}{2015}{{Muinonen and Lumme}}{{}}}
+\bibcite{muinonen2010hg}{{18}{2010}{{Muinonen et~al.}}{{Muinonen, Belskaya, Cellino, Delb{\'o}, Levasseur-Regourd, Penttil{\"a}, and Tedesco}}}
+\bibcite{viikinkoski2015adam}{{19}{2015}{{Viikinkoski et~al.}}{{Viikinkoski, Kaasalainen, and Durech}}}
+\bibcite{warner2007lcinvert}{{20}{2007}{{Warner}}{{}}}
+\bibcite{warner2009lcdb}{{21}{2009}{{Warner et~al.}}{{Warner, Harris, and Pravec}}}
+\gdef \@abspage@last{14}

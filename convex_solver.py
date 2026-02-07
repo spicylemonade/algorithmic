@@ -202,7 +202,26 @@ def optimize_shape(initial_mesh, spin, lightcurves, c_lambert=0.1,
                       options={'maxiter': max_iter, 'ftol': 1e-12})
 
     areas_opt = np.exp(result.x)
-    optimized_mesh = TriMesh(vertices=vertices, faces=faces,
+
+    # Reconstruct vertex positions from optimized face areas.
+    # Each vertex radial distance is proportional to the mean area of
+    # adjacent faces, giving a convex shape approximation from the
+    # Gaussian image (Kaasalainen & Torppa 2001).
+    n_verts = len(vertices)
+    vertex_weight = np.zeros(n_verts)
+    vertex_count = np.zeros(n_verts)
+    for fi, face in enumerate(faces):
+        for vi in face:
+            vertex_weight[vi] += areas_opt[fi]
+            vertex_count[vi] += 1
+    vertex_count = np.maximum(vertex_count, 1)
+    mean_area = np.mean(areas_opt)
+    radial_scale = (vertex_weight / vertex_count) / (mean_area + 1e-30)
+    # Cube root gives better shape proportionality for surface area
+    radial_scale = np.cbrt(np.maximum(radial_scale, 1e-30))
+    new_vertices = vertices * radial_scale[:, np.newaxis]
+
+    optimized_mesh = TriMesh(vertices=new_vertices, faces=faces,
                              normals=normals, areas=areas_opt)
     chi2_final = result.fun
 
