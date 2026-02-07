@@ -1,0 +1,10 @@
+{
+  "item_id": "item_025",
+  "artifact": "docs/publication_checklist.md",
+  "checks": {
+    "source_release_completeness": true,
+    "benchmark_transparency": true,
+    "top50_integrity": false,
+    "figures_tables_archived": true
+  }
+}
