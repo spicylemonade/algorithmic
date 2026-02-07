@@ -63,8 +63,8 @@
           "id": "item_004",
           "description": "Survey existing open-source LCI codebases and data repositories",
           "acceptance_criteria": "Web search conducted for open-source implementations of asteroid lightcurve inversion (e.g., Durech's convexinv, SAGE source code, ADAM code, KOALA). Document found repositories with URLs, language, license, and capability summary. Catalog data access methods for DAMIT, ALCDEF, NASA PDS Small Bodies Node, Gaia DR3 SSO, ZTF, Pan-STARRS, and MPC. Results in data_sources.md with at least 6 data repositories and 4 code repositories documented.",
-          "status": "pending",
-          "notes": null,
+          "status": "completed",
+          "notes": "data_sources.md created with 6 code repositories (DAMIT-convex, ADAM, PeriodSearch, MPO LCInvert, sbpy, astroquery) and 9 data repositories (DAMIT, ALCDEF, PDS SBN, Gaia DR3 SSO, ZTF, Pan-STARRS, MPC, LCDB, JPL Radar). Each entry includes URL, access method, data format, and pipeline module mapping.",
           "error": null
         },
         {
@@ -268,9 +268,9 @@
   ],
   "summary": {
     "total_items": 25,
-    "completed": 3,
+    "completed": 4,
     "in_progress": 0,
     "failed": 0,
-    "pending": 22
+    "pending": 21
   }
 }
