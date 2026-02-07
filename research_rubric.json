@@ -133,8 +133,8 @@
           "id": "item_011",
           "description": "Implement evolutionary/genetic algorithm solver for non-convex shapes (SAGE-style)",
           "acceptance_criteria": "Python module implementing: (1) a population-based evolutionary optimizer where individuals are non-convex triangulated meshes (vertex-based representation), (2) mutation operators that perturb vertex positions while preserving mesh topology, (3) crossover between parent meshes, (4) fitness function based on lightcurve chi-squared. Population size >= 50, tournament selection. Tested on synthetic data generated from a known non-convex shape (e.g., dumbbell or bifurcated body): recovered shape achieves Hausdorff distance < 15% of bounding-box diagonal on noise-free data within 500 generations.",
-          "status": "pending",
-          "notes": null,
+          "status": "completed",
+          "notes": "genetic_solver.py implements SAGE-style evolutionary optimizer with population_size=50, tournament selection, 3 mutation operators (Gaussian, radial, local), 2 crossover operators (blend, uniform), and lightcurve chi-squared fitness. Dumbbell test: normalised Hausdorff = 0.0148 (threshold 0.15) in 500 generations.",
           "error": null
         },
         {
@@ -268,9 +268,9 @@
   ],
   "summary": {
     "total_items": 25,
-    "completed": 10,
+    "completed": 11,
     "in_progress": 0,
     "failed": 0,
-    "pending": 15
+    "pending": 14
   }
 }
