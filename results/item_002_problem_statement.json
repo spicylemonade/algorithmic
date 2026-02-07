@@ -1,0 +1,13 @@
+{
+  "item_id": "item_002",
+  "artifact": "docs/problem_statement.md",
+  "required_outputs": [
+    "top_50_candidates",
+    "obj_shapes",
+    "spin_vectors",
+    "validation_report"
+  ],
+  "validation_threshold_percent": 5.0,
+  "seed": 42,
+  "status": "drafted"
+}
