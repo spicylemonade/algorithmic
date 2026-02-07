@@ -1,0 +1,151 @@
+{
+  "version": "1.0",
+  "n_targets": 5,
+  "targets": {
+    "Eros": {
+      "id": 433,
+      "name": "Eros",
+      "ground_truth_obj": "ground_truth/eros.obj",
+      "spin": {
+        "lambda_deg": 11.4,
+        "beta_deg": 17.2,
+        "period_hours": 5.27,
+        "jd0": 2451545.0
+      },
+      "axes_km": [
+        17.0,
+        5.5,
+        5.5
+      ],
+      "n_vertices": 642,
+      "n_faces": 1280,
+      "source": "synthetic",
+      "dense_lightcurves": [
+        "observations/eros_dense_lc_00.json",
+        "observations/eros_dense_lc_01.json",
+        "observations/eros_dense_lc_02.json",
+        "observations/eros_dense_lc_03.json",
+        "observations/eros_dense_lc_04.json"
+      ],
+      "n_dense_lc": 5,
+      "sparse_observations": "observations/eros_sparse.json",
+      "n_sparse_obs": 200
+    },
+    "Itokawa": {
+      "id": 25143,
+      "name": "Itokawa",
+      "ground_truth_obj": "ground_truth/itokawa.obj",
+      "spin": {
+        "lambda_deg": 128.5,
+        "beta_deg": -89.66,
+        "period_hours": 12.132,
+        "jd0": 2451545.0
+      },
+      "axes_km": [
+        0.535,
+        0.294,
+        0.209
+      ],
+      "n_vertices": 642,
+      "n_faces": 1280,
+      "source": "synthetic",
+      "dense_lightcurves": [
+        "observations/itokawa_dense_lc_00.json",
+        "observations/itokawa_dense_lc_01.json",
+        "observations/itokawa_dense_lc_02.json",
+        "observations/itokawa_dense_lc_03.json",
+        "observations/itokawa_dense_lc_04.json"
+      ],
+      "n_dense_lc": 5,
+      "sparse_observations": "observations/itokawa_sparse.json",
+      "n_sparse_obs": 200
+    },
+    "Kleopatra": {
+      "id": 216,
+      "name": "Kleopatra",
+      "ground_truth_obj": "ground_truth/kleopatra.obj",
+      "spin": {
+        "lambda_deg": 73.0,
+        "beta_deg": 21.0,
+        "period_hours": 5.385,
+        "jd0": 2451545.0
+      },
+      "axes_km": [
+        135.0,
+        58.0,
+        50.0
+      ],
+      "n_vertices": 642,
+      "n_faces": 1280,
+      "source": "synthetic",
+      "dense_lightcurves": [
+        "observations/kleopatra_dense_lc_00.json",
+        "observations/kleopatra_dense_lc_01.json",
+        "observations/kleopatra_dense_lc_02.json",
+        "observations/kleopatra_dense_lc_03.json",
+        "observations/kleopatra_dense_lc_04.json"
+      ],
+      "n_dense_lc": 5,
+      "sparse_observations": "observations/kleopatra_sparse.json",
+      "n_sparse_obs": 200
+    },
+    "Gaspra": {
+      "id": 951,
+      "name": "Gaspra",
+      "ground_truth_obj": "ground_truth/gaspra.obj",
+      "spin": {
+        "lambda_deg": 9.5,
+        "beta_deg": 26.7,
+        "period_hours": 7.042,
+        "jd0": 2451545.0
+      },
+      "axes_km": [
+        9.1,
+        5.2,
+        4.4
+      ],
+      "n_vertices": 642,
+      "n_faces": 1280,
+      "source": "synthetic",
+      "dense_lightcurves": [
+        "observations/gaspra_dense_lc_00.json",
+        "observations/gaspra_dense_lc_01.json",
+        "observations/gaspra_dense_lc_02.json",
+        "observations/gaspra_dense_lc_03.json",
+        "observations/gaspra_dense_lc_04.json"
+      ],
+      "n_dense_lc": 5,
+      "sparse_observations": "observations/gaspra_sparse.json",
+      "n_sparse_obs": 200
+    },
+    "Betulia": {
+      "id": 1580,
+      "name": "Betulia",
+      "ground_truth_obj": "ground_truth/betulia.obj",
+      "spin": {
+        "lambda_deg": 136.0,
+        "beta_deg": 22.0,
+        "period_hours": 6.138,
+        "jd0": 2451545.0
+      },
+      "axes_km": [
+        3.2,
+        2.8,
+        2.4
+      ],
+      "n_vertices": 642,
+      "n_faces": 1280,
+      "source": "synthetic",
+      "dense_lightcurves": [
+        "observations/betulia_dense_lc_00.json",
+        "observations/betulia_dense_lc_01.json",
+        "observations/betulia_dense_lc_02.json",
+        "observations/betulia_dense_lc_03.json",
+        "observations/betulia_dense_lc_04.json"
+      ],
+      "n_dense_lc": 5,
+      "sparse_observations": "observations/betulia_sparse.json",
+      "n_sparse_obs": 200
+    }
+  }
+}
