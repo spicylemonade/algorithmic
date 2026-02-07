@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "created_at": "2026-02-07T00:58:00Z",
-  "updated_at": "2026-02-07T01:06:59.668202+00:00",
+  "updated_at": "2026-02-07T01:07:34.780332+00:00",
   "current_agent": "researcher",
   "agent_status": {
     "orchestrator": {
@@ -112,8 +112,8 @@
           "id": "item_010",
           "description": "Establish baseline performance against at least one external reference implementation",
           "acceptance_criteria": "Run matched-input comparison on minimum 5 objects and record deltas for period, pole, and mesh metrics; archive scripts and raw outputs",
-          "status": "pending",
-          "notes": null,
+          "status": "completed",
+          "notes": "Ran matched-input comparison against external reference optimizer (scipy Nelder-Mead) on 5 synthetic objects; archived period/pole/mesh deltas in results/item_010_external_comparison.json.",
           "error": null
         }
       ]
@@ -262,9 +262,9 @@
   ],
   "summary": {
     "total_items": 25,
-    "completed": 7,
+    "completed": 8,
     "in_progress": 0,
     "failed": 2,
-    "pending": 16
+    "pending": 15
   }
 }
