@@ -1,0 +1,12 @@
+{
+  "item_id": "item_007",
+  "artifact": "docs/data_ingestion_schema.md",
+  "sources": ["ALCDEF", "PDS", "GAIA_DR3", "ZTF", "PANSTARRS", "MPC"],
+  "required_fields_count": 12,
+  "validation_checks": [
+    "range_checks",
+    "duplicate_suppression",
+    "provenance_required"
+  ],
+  "seed": 42
+}
