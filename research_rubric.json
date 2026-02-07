@@ -1,0 +1,276 @@
+{
+  "version": "1.0",
+  "created_at": "2026-02-07T12:00:00Z",
+  "updated_at": "2026-02-07T01:54:47.888599+00:00",
+  "current_agent": "orchestrator",
+  "agent_status": {
+    "orchestrator": {
+      "status": "completed",
+      "started_at": "2026-02-07T12:00:00Z",
+      "completed_at": "2026-02-07T01:54:47.888571+00:00",
+      "error": null
+    },
+    "researcher": {
+      "status": "pending",
+      "started_at": null,
+      "completed_at": null,
+      "error": null
+    },
+    "writer": {
+      "status": "pending",
+      "started_at": null,
+      "completed_at": null,
+      "error": null
+    },
+    "reviewer": {
+      "status": "pending",
+      "started_at": null,
+      "completed_at": null,
+      "error": null
+    }
+  },
+  "phases": [
+    {
+      "id": "phase_1",
+      "name": "Problem Analysis & Literature Review",
+      "order": 1,
+      "items": [
+        {
+          "id": "item_001",
+          "description": "Analyze repository structure and document all modules, their purposes, and inter-module dependencies",
+          "acceptance_criteria": "Produce a written inventory (docs/module_inventory.md) listing all Python modules in src/lci/, their public API surface, and a dependency graph showing how convex_optimizer, evolutionary, sparse_solver, hybrid_optimizer, metrics, photometry, geometry, priors, uncertainty, adaptive_loss, selection, and config interconnect. Every .py file must be accounted for.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_002",
+          "description": "Conduct web-based literature review of light curve inversion methods, searching for seminal and recent papers on convex inversion, non-convex/genetic approaches, sparse photometry handling, and multi-data fusion",
+          "acceptance_criteria": "At least 15 relevant papers identified via web search covering: (a) Kaasalainen & Torppa convex inversion, (b) Bartczak & Dudzinski SAGE, (c) Durech et al. sparse methods, (d) Viikinkoski et al. ADAM, (e) at least 3 papers published 2020-2026 on improvements or alternatives (e.g., machine learning shape recovery, YORP-aware inversion). All entries recorded in sources.bib with valid BibTeX.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_003",
+          "description": "Search for and catalog existing open-source LCI codebases (DAMIT toolchain, SAGE source, KOALA, Lightcurve Inversion packages) and document their algorithmic strengths, weaknesses, and licensing",
+          "acceptance_criteria": "Written comparison table (docs/prior_tools_comparison.md) covering at least 4 existing tools with columns: tool name, language, algorithm class, sparse-data capability, non-convex support, license, and URL/repo link. Each tool must have a corresponding BibTeX entry in sources.bib.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_004",
+          "description": "Define quantitative KPIs and measurable success criteria for the LCI pipeline, grounded in baselines from prior work",
+          "acceptance_criteria": "Produce docs/problem_statement.md containing at least 7 KPIs (sparse pole recovery rate, rotation period relative error, pole angular error median, Hausdorff mesh deviation, volumetric IoU, dense-data fit residual MAE, sparse ambiguity rate) each with a numeric baseline derived from cited literature and a target threshold. Baselines must reference specific papers from sources.bib.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_005",
+          "description": "Create sources.bib with BibTeX entries for all consulted references and define data contracts for the 7 required input/validation data sources",
+          "acceptance_criteria": "sources.bib exists at repo root with at least 10 valid BibTeX entries (parseable by bibtex/biblatex). docs/data_contracts.md defines required fields, units (JD_TDB for time, degrees for angles, AU for distances), and validation rules for ALCDEF, NASA PDS, Gaia DR3, ZTF, Pan-STARRS, MPC, and DAMIT/JPL data sources with at least 2 example records per source.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_006",
+          "description": "Establish reproducibility protocol: deterministic seeding strategy, version pinning, hardware profiling template, and pass/fail gates per phase",
+          "acceptance_criteria": "docs/reproducibility_protocol.md specifies: (a) global random seed (42) propagated to numpy/scipy/random, (b) requirements.txt with pinned versions for numpy, scipy, matplotlib, requests, (c) hardware profile template fields (CPU, RAM, OS), (d) explicit pass/fail gate definitions for each of the 5 phases referencing the KPIs from item_004.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        }
+      ]
+    },
+    {
+      "id": "phase_2",
+      "name": "Baseline Implementation & Metrics",
+      "order": 2,
+      "items": [
+        {
+          "id": "item_007",
+          "description": "Implement forward photometric model (geometry.py + photometry.py) supporting Lambert/Lommel-Seeliger scattering with visibility/shadowing for arbitrary triangulated meshes",
+          "acceptance_criteria": "Synthetic light curves generated for 3 test shapes (sphere, triaxial ellipsoid with a/b/c = 2:1.5:1, peanut-shaped non-convex body) match analytical expectations with MAE < 0.02 mag. Unit tests pass for all 3 shapes. Code must not import any external inversion library for core logic.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_008",
+          "description": "Implement convex inversion optimizer (convex_optimizer.py) using gradient-based minimization following Kaasalainen & Torppa method with finite-difference gradients",
+          "acceptance_criteria": "On synthetic dense light curves (>200 points, 3+ apparitions) for a known triaxial ellipsoid: (a) rotation period recovered within 0.5% relative error in >=8/10 independent trials, (b) pole orientation recovered within 10 degrees, (c) convex hull shape recovers axis ratios within 15%. Method traceability to Kaasalainen et al. (2001) documented in docs/method_traceability.md.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_009",
+          "description": "Implement sparse photometry solver (sparse_solver.py) with bounded-restart stochastic search for handling <100 data points across limited apparitions",
+          "acceptance_criteria": "On synthetic sparse data (50-100 points, 2-3 apparitions): stable pole convergence rate >= 0.50 (i.e., >=50% of trials converge to within 20 degrees of true pole). Period recovery within 1% relative error in >=60% of trials. Method references Durech et al. (2010) in docs/method_traceability.md.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_010",
+          "description": "Implement unified metrics pipeline (metrics.py) computing chi-square photometric fit, period error, pole angular error, Hausdorff distance, and volumetric IoU between meshes",
+          "acceptance_criteria": "Metrics module returns a dictionary with keys {chi2, period_error_pct, pole_error_deg, hausdorff_pct, volumetric_iou} for any pair of (predicted_model, ground_truth_model). Validated on known-identical meshes (all errors = 0) and known-different meshes (errors > 0). Edge cases handled (degenerate meshes, single-facet).",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_011",
+          "description": "Benchmark forward model and convex optimizer against published results from Kaasalainen et al. and Durech et al. to establish external reference baseline",
+          "acceptance_criteria": "Comparison table in results/item_011_baseline.json documenting: (a) our pipeline's performance on at least 3 well-studied asteroids (e.g., 433 Eros, 25143 Itokawa, 6489 Golevka) vs published period/pole values from DAMIT, (b) period agreement within 0.1% for dense data cases, (c) discrepancies annotated with likely causes. References at least 3 papers from sources.bib.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        }
+      ]
+    },
+    {
+      "id": "phase_3",
+      "name": "Core Research & Novel Approaches",
+      "order": 3,
+      "items": [
+        {
+          "id": "item_012",
+          "description": "Implement non-convex evolutionary solver (evolutionary.py) inspired by SAGE with genome encoding for concavity parameters, tournament selection, crossover, and mutation operators",
+          "acceptance_criteria": "On synthetic non-convex test shapes (peanut, bifurcated, cratered): (a) volumetric IoU >= 0.75 against ground truth, (b) at least 50% improvement in objective function value over convex-only baseline on concavity-rich targets, (c) convergence within 500 generations for population size <= 100. Method traces to Bartczak & Dudzinski (2018) in docs/method_traceability.md.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_013",
+          "description": "Implement hybrid optimization scheduler (hybrid_optimizer.py) that warm-starts with convex inversion then refines with evolutionary search, with configurable handoff criteria",
+          "acceptance_criteria": "Statistical significance test (paired Wilcoxon signed-rank, alpha=0.05) on a suite of >=10 synthetic targets shows hybrid outperforms single-method baselines in at least 2 of 3 metrics (pole error, photometric MSE, Hausdorff distance). Results logged in results/item_013_significance.json with p-values.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_014",
+          "description": "Implement adaptive loss weighting module (adaptive_loss.py) that dynamically balances dense vs sparse observation contributions during optimization",
+          "acceptance_criteria": "On mixed-cadence test data (dense + sparse combined): (a) pole error reduced by >= 10% compared to uniform weighting baseline, (b) no degradation in period accuracy (must remain within 0.5% relative error), (c) weighting scheme documented with mathematical derivation in docs/method_traceability.md referencing Viikinkoski et al. (2015).",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_015",
+          "description": "Implement physical plausibility priors (priors.py) enforcing axis ratio constraints, minimum spin period (cohesion limit), shape smoothness regularization, and principal-axis rotation alignment",
+          "acceptance_criteria": "Priors module: (a) rejects 100% of physically implausible test cases (spin period < 2h for rubble pile, axis ratio > 4.5:1), (b) preserves 100% of plausible test cases, (c) regularization term reduces mesh roughness (Laplacian smoothness metric) by >= 20% without degrading photometric fit by more than 5%.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_016",
+          "description": "Implement uncertainty quantification module (uncertainty.py) using bootstrap resampling and multistart confidence intervals for spin vector and shape parameters",
+          "acceptance_criteria": "For a test asteroid with known ground truth: (a) 95% bootstrap confidence interval for pole longitude/latitude contains the true value in >= 90% of repeated experiments, (b) uncertainty estimates correlate with actual error magnitude (Spearman rho > 0.5), (c) at least 50 bootstrap samples used per estimate.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        }
+      ]
+    },
+    {
+      "id": "phase_4",
+      "name": "Experiments & Evaluation",
+      "order": 4,
+      "items": [
+        {
+          "id": "item_017",
+          "description": "Assemble ground-truth benchmark set of >= 15 asteroids with known DAMIT/JPL radar shape models and corresponding raw photometric data, including 433 Eros, 25143 Itokawa, and 216 Kleopatra",
+          "acceptance_criteria": "Benchmark manifest (results/benchmark_manifest.json) lists >= 15 objects each with: object name/number, DAMIT model ID or JPL radar source URL, number of dense light curves, number of sparse data points, number of apparitions covered. Data files staged in a reproducible directory structure. At least 3 objects must have radar-derived ground truth (gold standard).",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_018",
+          "description": "Execute blind inversion runs on all benchmark objects: run full pipeline without access to ground truth shapes, then compare outputs to known models",
+          "acceptance_criteria": "For each benchmark object, results/item_018_blind_results.json contains: predicted period, pole (lambda, beta), Hausdorff distance (%), volumetric IoU, and photometric chi-squared. Median Hausdorff distance across all objects <= 8% (baseline from literature). Median volumetric IoU >= 0.80. No ground truth data accessible during inversion runs (enforced by code separation).",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_019",
+          "description": "Implement recursive geometric-error gate: if any benchmark object has Hausdorff deviation > 5%, automatically retune loss weights/regularization and re-run, up to 3 iterations",
+          "acceptance_criteria": "Retuning log (results/item_019_retuning_log.json) records for each triggered object: initial error, parameter changes per iteration, final error. At least 50% of retuned objects show improvement (lower Hausdorff distance after retuning vs before). Maximum 3 retuning iterations per object enforced programmatically.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_020",
+          "description": "Conduct sparse data stress tests at 3 sparsification levels (75%, 50%, 25% of original data retained) to characterize pipeline degradation",
+          "acceptance_criteria": "results/item_020_sparse_stress.json reports pole error, period error, and Hausdorff distance at each sparsification level for >= 10 benchmark objects. Degradation slope (error vs sparsification) is quantified. Pipeline must still converge (finite error, no NaN/crash) at 25% retention level for >= 80% of objects. Comparison against published sparse inversion performance from Durech et al. (2010) included.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_021",
+          "description": "Measure and report computational scaling: runtime vs number of data points and mesh complexity, verifying near-linear or at most quadratic growth",
+          "acceptance_criteria": "results/item_021_scaling.json contains timing measurements for at least 5 different data sizes (50, 100, 500, 1000, 5000 points) and 3 mesh resolutions (100, 500, 1000 facets). Linear regression R-squared on log-log plot reported. Runtime must scale no worse than O(n^2) in data points. A scaling plot saved as figures/runtime_scaling.png.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        }
+      ]
+    },
+    {
+      "id": "phase_5",
+      "name": "Analysis & Documentation",
+      "order": 5,
+      "items": [
+        {
+          "id": "item_022",
+          "description": "Implement candidate selection pipeline (selection.py) applying the 4-priority Boolean filter: NEO/large MBA, LCDB quality >= 2, not in DAMIT, sufficient photometric coverage",
+          "acceptance_criteria": "Selection module queries or simulates queries against MPC/LCDB/DAMIT catalogs. Output is a ranked list where: (a) all Priority 1 objects are NEOs or have diameter > 100km, (b) all have LCDB U >= 2, (c) none appear in DAMIT, (d) all have > 20 light curves OR > 100 sparse points across > 3 apparitions. At least 50 candidates produced in results/item_022_candidates.json with provenance metadata (source DB, query date, data counts).",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_023",
+          "description": "Generate 3D shape model OBJ files and spin-vector files for the top 50 candidates using the validated pipeline",
+          "acceptance_criteria": "results/models/ contains 50 .obj files (valid Wavefront OBJ with vertices and faces) and 50 corresponding .txt spin-vector files (period in hours, pole lambda/beta in degrees, epoch in JD). Each OBJ file must have >= 100 vertices. Spin vectors must include uncertainty estimates from the bootstrap module (item_016).",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_024",
+          "description": "Write comprehensive validation report comparing pipeline performance against prior work (MPO LCInvert, SAGE, KOALA baselines from literature)",
+          "acceptance_criteria": "docs/validation_report.md contains: (a) summary statistics table for all benchmark objects (period error, pole error, Hausdorff, IoU), (b) comparison against at least 3 published tool baselines from sources.bib with specific numeric comparisons, (c) honest assessment of where pipeline meets/fails to meet KPIs from item_004, (d) discussion of the 4 known failure modes (sparse pole recovery, convex stability, hybrid significance, adaptive weighting) with proposed mitigations.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_025",
+          "description": "Produce final reproducibility runbook with end-to-end execution instructions, checksum manifest, and artifact inventory",
+          "acceptance_criteria": "docs/release_runbook.md provides: (a) step-by-step instructions to reproduce all results from a clean checkout (environment setup, sequential script execution order), (b) SHA-256 checksums for all output artifacts in checksums.sha256, (c) complete artifact manifest listing every generated file with description, (d) instructions verified by running from scratch with seed=42 and comparing against checksums.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "total_items": 25,
+    "completed": 0,
+    "in_progress": 0,
+    "failed": 0,
+    "pending": 25
+  }
+}

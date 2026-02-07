@@ -1,0 +1,54 @@
+The `research_rubric.json` has been written and validated. Here's a summary of the rubric:
+
+## Research Rubric Summary — 25 items across 5 phases
+
+### Phase 1: Problem Analysis & Literature Review (6 items)
+| ID | Description |
+|---|---|
+| `item_001` | Analyze repository structure and document module dependencies |
+| `item_002` | Web-based literature review — >=15 papers, including 3 from 2020-2026, all in `sources.bib` |
+| `item_003` | Catalog existing LCI tools (DAMIT, SAGE, KOALA, etc.) with comparison table |
+| `item_004` | Define 7+ quantitative KPIs with baselines grounded in cited literature |
+| `item_005` | Create `sources.bib` (>=10 BibTeX entries) and data contracts for 7 data sources |
+| `item_006` | Establish reproducibility protocol (seed=42, version pinning, pass/fail gates) |
+
+### Phase 2: Baseline Implementation & Metrics (5 items)
+| ID | Description |
+|---|---|
+| `item_007` | Forward photometric model (Lambert/Lommel-Seeliger) validated on 3 test shapes |
+| `item_008` | Convex inversion optimizer (Kaasalainen method) — >=8/10 trial success rate |
+| `item_009` | Sparse photometry solver — >=50% pole convergence on <100 points |
+| `item_010` | Unified metrics pipeline (chi2, period error, pole error, Hausdorff, IoU) |
+| `item_011` | Benchmark against published DAMIT results for 3+ well-studied asteroids |
+
+### Phase 3: Core Research & Novel Approaches (5 items)
+| ID | Description |
+|---|---|
+| `item_012` | Non-convex evolutionary solver (SAGE-inspired) — IoU >=0.75, 50%+ improvement |
+| `item_013` | Hybrid optimizer with statistical significance testing (Wilcoxon, p<0.05) |
+| `item_014` | Adaptive loss weighting for mixed dense/sparse data — 10%+ pole error reduction |
+| `item_015` | Physical plausibility priors (axis ratio, spin period, smoothness) |
+| `item_016` | Bootstrap uncertainty quantification with 95% CI coverage >=90% |
+
+### Phase 4: Experiments & Evaluation (5 items)
+| ID | Description |
+|---|---|
+| `item_017` | Assemble >=15 ground-truth benchmark objects (Eros, Itokawa, Kleopatra, etc.) |
+| `item_018` | Blind inversion runs — median Hausdorff <=8%, median IoU >=0.80 |
+| `item_019` | Recursive geometric-error gate (retune if >5%, max 3 iterations) |
+| `item_020` | Sparse stress tests at 75%/50%/25% retention, compared to Durech et al. |
+| `item_021` | Computational scaling — O(n^2) or better, with timing plots |
+
+### Phase 5: Analysis & Documentation (4 items)
+| ID | Description |
+|---|---|
+| `item_022` | Candidate selection pipeline — 50+ targets via 4-priority Boolean filter |
+| `item_023` | Generate 50 OBJ shape models + spin vectors with uncertainty estimates |
+| `item_024` | Validation report comparing against MPO LCInvert/SAGE/KOALA baselines |
+| `item_025` | Reproducibility runbook with checksums and step-by-step instructions |
+
+Key design decisions:
+- **Literature review is front-loaded** in Phase 1 with explicit web search requirements and `sources.bib` maintenance (items 002, 003, 005)
+- **Later phases reference prior work** — item_011 benchmarks against published DAMIT results, item_020 compares sparse degradation against Durech et al., item_024 compares against 3 published tool baselines from `sources.bib`
+- **Acceptance criteria are numeric and measurable** throughout (e.g., ">=8/10 trials", "IoU >= 0.75", "p < 0.05")
+- **Items build sequentially** — metrics (item_010) before benchmarking (item_011), priors (item_015) before blind runs (item_018), uncertainty (item_016) before OBJ export (item_023)
