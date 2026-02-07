@@ -1,0 +1,286 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{hyperref}
+\usepackage{float}
+
+\title{A Reproducible Hybrid Light-Curve Inversion Pipeline for Asteroid Shape Recovery Under Dense and Sparse Photometric Regimes}
+\author{Research Engineering Team}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Light-curve inversion (LCI) remains central to scalable asteroid shape and spin-state estimation, but sparse photometry and non-convex morphology continue to limit reliability. We report a full custom LCI implementation from first principles, integrating convex gradient descent, evolutionary non-convex search, sparse-data restarts, physical priors, uncertainty quantification, and a deterministic target-selection/export stack. Using repository-tracked outputs, we evaluate 25 planned milestones, complete 21, and fail 4 key performance gates concentrated in sparse and hybrid optimization. In blind validation across 20 benchmark objects (including 433 Eros, 25143 Itokawa, and 216 Kleopatra), the recursive deviation gate triggered 12 retuning cycles; initial mean normalized deviation was 5.224\%, and retuning improved only 3 of 12 triggered cases. Runtime scaling in optimized vectorized mode is near-linear ($R^2=0.9999949$). The pipeline generated 50 ranked candidates and exported 50 OBJ plus spin-vector artifacts, but explicit state-of-the-art superiority over MPO LCInvert/SAGE/KOALA-like baselines is not supported by current evidence.
+\end{abstract}
+
+\section{Introduction}
+Asteroid 3D shape reconstruction from photometry is an inverse problem with practical importance for population-scale physical characterization, mission planning, and impact-risk context. The challenge intensifies for sparse surveys (Gaia DR3, ZTF, Pan-STARRS style cadence), where period--pole degeneracies and incomplete phase-angle coverage can dominate the error budget.
+
+This work set an explicit objective: implement a custom LCI stack that can exceed established methods in accuracy, with emphasis on sparse-data robustness, while producing a prioritized list of previously un-modeled NEA/large MBA targets and associated shape artifacts. The development process was structured as five phases and 25 acceptance-gated items tracked in \texttt{research\_rubric.json}.
+
+\textbf{Contributions of this study are:}
+\begin{enumerate}
+\item A complete modular LCI codebase (geometry, photometry, convex solver, sparse solver, evolutionary solver, hybrid scheduler, priors, uncertainty, metrics, selection).
+\item End-to-end validation and failure accounting against benchmark and stress-test protocols with recursive retuning gates.
+\item A deterministic candidate selection and artifact export pipeline yielding 50 OBJ models and 50 spin-vector files.
+\item A transparent claim assessment showing that superiority over current reference families is not established under present results.
+\end{enumerate}
+
+\section{Related Work}
+The implementation was designed to synthesize established methodological strands:
+\begin{itemize}
+\item Kaasalainen--Torppa convex inversion: gradient-based optimization over rotational and shape parameters with regularization.
+\item SAGE-style evolutionary non-convex modeling (Bartczak and Dudzi\'nski): mutation/crossover/selection to recover concavity-rich geometries.
+\item Sparse inversion logic following Durech et al.: multi-start strategies for limited-cadence, multi-apparition data.
+\item ADAM-style multimodal thinking (Viikinkoski et al.): architecture planning for combining heterogeneous constraints.
+\end{itemize}
+
+The repository traceability map records 14 algorithmic elements mapped to source modules, indicating formal methodological coverage even where empirical gates remain unmet.
+
+\section{Method}
+\subsection{System Architecture and Determinism}
+The codebase is organized under \texttt{src/lci/} with deterministic seed control (default seed 42). Major modules include:
+\begin{itemize}
+\item \texttt{geometry.py}: Fibonacci-sphere sampling, ellipsoid and peanut parameterizations, rigid rotations.
+\item \texttt{photometry.py}: Lambert-like visibility-weighted brightness and synthetic light-curve generation.
+\item \texttt{convex\_optimizer.py}: finite-difference gradient descent with deterministic coarse search over period/pole.
+\item \texttt{sparse\_solver.py}: bounded-restart stochastic local search for sparse regimes.
+\item \texttt{evolutionary.py}: non-convex genome decoding and evolutionary loop.
+\item \texttt{hybrid\_optimizer.py}: convex warm-start followed by evolutionary refinement.
+\item \texttt{priors.py}: physical plausibility gating (axis ratios, spin floor, angular bounds).
+\item \texttt{uncertainty.py}: bootstrap and quantile confidence intervals.
+\item \texttt{metrics.py}: chi-square, period/pole error, Hausdorff distance, volumetric IoU.
+\item \texttt{selection.py}: four-rule Boolean selection for target prioritization.
+\end{itemize}
+
+\subsection{Forward Model and Inversion}
+Given shape points $\mathbf{x}_i$, solar direction $\hat{s}$, and observer direction $\hat{o}$, brightness is estimated by summing positive incidence and emission contributions over visible facets/points, then transformed to magnitude. Convex inversion optimizes six parameters $(a,b,c,P,\lambda,\beta)$ using finite-difference gradients and mild shape regularization. Non-convex inversion encodes $(a,b,c,\texttt{neck})$ and evolves genomes through elitist selection, blend crossover, and Gaussian mutation.
+
+\subsection{Sparse, Priors, and Uncertainty}
+Sparse inversion runs up to 20 restarts with bounded random perturbations and local proposal acceptance. Physical priors reject non-plausible solutions (e.g., axis ratio $>4.5$, period $<2$ h). Uncertainty intervals are computed through bootstrap multi-start samples and empirical quantiles.
+
+\subsection{Validation and Recursive Gate}
+Blind runs are executed without using ground-truth meshes during optimization. A recursive gate triggers retuning when deviation exceeds 5\%, with deviation tracked alongside Hausdorff and volumetric IoU metrics.
+
+\section{Experiments}
+\subsection{Execution Audit and Git History}
+Development progressed through itemized commits from \texttt{item\_007} to \texttt{item\_025}, culminating at commit \texttt{d3503d7} (researcher completed experiments). Rubric summary reports 25 total items: 21 completed and 4 failed.
+
+\begin{table}[H]
+\centering
+\caption{Phase-gate outcomes from \texttt{research\_rubric.json}.}
+\begin{tabular}{lcc}
+\toprule
+Category & Count & Fraction \\
+\midrule
+Completed items & 21 & 84\% \\
+Failed items & 4 & 16\% \\
+Total planned items & 25 & 100\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Forward Model Baseline}
+Forward modeling on sphere, triaxial ellipsoid, and peanut synthetic shapes achieved mean absolute residual 0.0 mag (target $\leq 0.02$ mag).
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.86\linewidth]{figures/item_006_lightcurves.png}
+\caption{Synthetic light-curve outputs used for forward-model verification (source: \texttt{figures/item\_006\_lightcurves.png}).}
+\label{fig:lightcurves}
+\end{figure}
+
+\subsection{Core Optimizer Gates}
+Table~\ref{tab:coregates} summarizes key optimization milestones.
+
+\begin{table}[H]
+\centering
+\caption{Key optimizer gate results.}
+\label{tab:coregates}
+\begin{tabular}{p{0.25\linewidth}p{0.17\linewidth}p{0.50\linewidth}}
+\toprule
+Item & Outcome & Quantitative result \\
+\midrule
+Convex recovery (item\_007) & Failed & 5/10 successful trials (50\%) vs required $\geq$8/10 \\
+Sparse solver (item\_008) & Failed & Stable pole rate 0.10 vs required 0.70 (20 restarts max) \\
+Evolutionary non-convex (item\_011) & Passed & Mean objective improvement 93.72\% over convex baseline \\
+Hybrid significance (item\_012) & Failed & Significant against both baselines in 1 metric (required 3) \\
+Adaptive weighting (item\_013) & Failed & Pole error reduction \(-13.25\%\) (worse), dense chi worsening 0.92\% \\
+Priors validation (item\_014) & Passed & Reject rate 100\%, preserve rate 100\% \\
+Uncertainty calibration (item\_015) & Passed & 95\% interval coverage 100\% over 20 cases \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Benchmark Blind Runs and Recursive Retuning}
+A 20-object benchmark set was curated and fully executed in blind mode (20/20 runs, all with \texttt{used\_reference\_mesh\_in\_optimization=false}). Initial mean normalized deviation was 5.224\%. The recursive gate triggered retuning for 12 objects.
+
+Retuning performance was mixed: only 3/12 triggered objects improved and 2/12 ended below 5\% deviation after retuning; mean deviation change across triggered cases was \(-1.64\) percentage points (net worsening).
+
+\begin{table}[H]
+\centering
+\caption{Blind-run and recursive-gate summary.}
+\begin{tabular}{lcc}
+\toprule
+Metric & Value & Source \\
+\midrule
+Benchmark objects & 20 & item\_017 \\
+Blind runs executed & 20 & item\_017 \\
+All runs blind & true & item\_017 \\
+Initial mean deviation & 5.224\% & item\_018 \\
+Retuning triggers & 12 & item\_018 \\
+Triggered cases improved & 3/12 & derived from item\_018 \\
+Triggered cases below 5\% after retune & 2/12 & derived from item\_018 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Sparse Stress and Runtime Scaling}
+Sparse stress tests across levels 0.30, 0.15, and 0.08 (20 objects each) showed high failure rates (0.70, 1.00, 0.85) and persistent pole ambiguity counts (57, 50, 57). Reported MSE degradation slope was 0.04623 per level unit.
+
+Runtime scaling for optimized vectorized execution was near-linear with $R^2=0.9999949$ across 60--960 points.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.86\linewidth]{figures/item_020_scaling.png}
+\caption{Wall-time scaling with dataset size in optimized vectorized mode (source: \texttt{figures/item\_020\_scaling.png}).}
+\label{fig:scaling}
+\end{figure}
+
+\begin{table}[H]
+\centering
+\caption{Runtime profiles (item\_020).}
+\begin{tabular}{rrrr}
+\toprule
+Points & Wall time (s) & Peak memory (MB) & Mode \\
+\midrule
+60 & 0.00530 & 0.0166 & optimized\_vectorized\_model \\
+120 & 0.00919 & 0.0156 & optimized\_vectorized\_model \\
+240 & 0.01722 & 0.0162 & optimized\_vectorized\_model \\
+480 & 0.03327 & 0.0177 & optimized\_vectorized\_model \\
+960 & 0.06544 & 0.0214 & optimized\_vectorized\_model \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Candidate Selection and Artifact Export}
+Selection processed 120 objects with 36 passing all Boolean rules. The ranking pipeline produced a top 50 list with mean rank score 0.870 (min 0.723, max 1.057) and exported 50 OBJ + spin-vector products.
+
+Top-50 composition (cross-referenced with selection records): 20 NEAs, 32 objects with diameter $>$100 km, and 42 meeting Priority 1 (NEA or large MBA). Only 30/50 satisfy all four priority rules; all 50 satisfy Priority 4 by construction.
+
+\begin{table}[H]
+\centering
+\caption{Top-10 ranked candidates from \texttt{results/item\_022\_top50.json}.}
+\begin{tabular}{r l r r r r}
+\toprule
+Rank & Object & Score & Completeness & Geometry & Confidence \\
+\midrule
+1 & OBJ-10064 & 1.0565 & 0.681 & 1.000 & 1.000 \\
+2 & OBJ-10008 & 1.0236 & 0.812 & 0.833 & 0.833 \\
+3 & OBJ-10010 & 1.0156 & 0.738 & 0.833 & 0.933 \\
+4 & OBJ-10035 & 0.9988 & 0.701 & 0.833 & 0.933 \\
+5 & OBJ-10114 & 0.9958 & 0.657 & 1.000 & 0.800 \\
+6 & OBJ-10033 & 0.9915 & 0.648 & 1.000 & 0.800 \\
+7 & OBJ-10116 & 0.9823 & 0.572 & 1.000 & 0.900 \\
+8 & OBJ-10112 & 0.9761 & 0.799 & 0.667 & 0.867 \\
+9 & OBJ-10099 & 0.9724 & 0.846 & 0.667 & 0.767 \\
+10 & OBJ-10119 & 0.9448 & 0.785 & 0.667 & 0.767 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Uncertainty over exported models shows mean $\sigma_P = 0.152$ h (range 0.054--0.244 h) and mean $\sigma_{pole} = 6.22^{\circ}$ (range $2.18^{\circ}$--$9.75^{\circ}$).
+
+\section{Discussion}
+The project successfully delivered a complete research pipeline, deterministic manifests, benchmark automation, and a deployable artifact set. However, several outcomes directly constrain scientific claims:
+\begin{enumerate}
+\item Sparse inversion remains the dominant weakness (stable pole rate 10\% in item\_008; high stress-test failure rates).
+\item Recursive retuning did not consistently reduce deviation; most triggered cases worsened.
+\item Hybrid optimization provided statistically robust gains only for pole error, not for MSE and Hausdorff simultaneously.
+\item The ranked top 50 includes 20 objects that do not pass all four Boolean priorities, indicating a ranking-vs-filter policy tension that should be resolved before publication-grade target release.
+\end{enumerate}
+
+The explicit claim assessment in \texttt{results/item\_024\_report\_summary.json} sets \texttt{sota\_claim\_supported=false}. This is methodologically important: despite strong engineering completeness and artifact generation, measured superiority over established tools is not yet demonstrated.
+
+\section{Conclusion}
+A full custom LCI pipeline was designed, implemented, executed, and audited with reproducible artifacts. The system demonstrates strengths in modularity, deterministic execution, non-convex objective improvement, physically informed filtering, uncertainty reporting, and runtime scaling. It also delivers practical outputs: a 50-object prioritized list and 50 exported 3D models with spin vectors and provenance.
+
+The primary objective of surpassing state-of-the-art performance, especially under sparse photometry, was not achieved in this run set. Immediate future work should target: (i) robust sparse pole disambiguation, (ii) retuning strategies with monotonic safeguard criteria, (iii) stricter top-list eligibility enforcement requiring all four priority rules, and (iv) broader external matched comparisons beyond the current five-object baseline.
+
+\section*{Appendix: Extended Result Tables}
+Table~\ref{tab:appendix-top20} expands the ranked list excerpt to top 20 objects. Table~\ref{tab:appendix-benchmark} records the 20-object blind benchmark roster used for validation.
+
+\begin{longtable}{r l r r r r}
+\caption{Top-20 candidates (extended excerpt from \texttt{results/item\_022\_top50.json}).}
+\label{tab:appendix-top20} \\
+\toprule
+Rank & Object & Score & Completeness & Geometry & Confidence \\\\
+\midrule
+\endfirsthead
+\toprule
+Rank & Object & Score & Completeness & Geometry & Confidence \\\\
+\midrule
+\endhead
+1 & OBJ-10064 & 1.0565 & 0.681 & 1.000 & 1.000 \\\\
+2 & OBJ-10008 & 1.0236 & 0.812 & 0.833 & 0.833 \\\\
+3 & OBJ-10010 & 1.0156 & 0.738 & 0.833 & 0.933 \\\\
+4 & OBJ-10035 & 0.9988 & 0.701 & 0.833 & 0.933 \\\\
+5 & OBJ-10114 & 0.9958 & 0.657 & 1.000 & 0.800 \\\\
+6 & OBJ-10033 & 0.9915 & 0.648 & 1.000 & 0.800 \\\\
+7 & OBJ-10116 & 0.9823 & 0.572 & 1.000 & 0.900 \\\\
+8 & OBJ-10112 & 0.9761 & 0.799 & 0.667 & 0.867 \\\\
+9 & OBJ-10099 & 0.9724 & 0.846 & 0.667 & 0.767 \\\\
+10 & OBJ-10119 & 0.9448 & 0.785 & 0.667 & 0.767 \\\\
+11 & OBJ-10015 & 0.9402 & 0.682 & 0.833 & 0.733 \\\\
+12 & OBJ-10059 & 0.9328 & 0.814 & 0.667 & 0.667 \\\\
+13 & OBJ-10081 & 0.9287 & 0.842 & 1.000 & 1.000 \\\\
+14 & OBJ-10058 & 0.9277 & 0.950 & 1.000 & 0.800 \\\\
+15 & OBJ-10095 & 0.9264 & 0.836 & 0.500 & 0.800 \\\\
+16 & OBJ-10026 & 0.9243 & 0.684 & 0.667 & 0.867 \\\\
+17 & OBJ-10098 & 0.9201 & 0.582 & 0.833 & 0.833 \\\\
+18 & OBJ-10012 & 0.9117 & 0.656 & 0.667 & 0.867 \\\\
+19 & OBJ-10071 & 0.9075 & 0.646 & 0.667 & 0.867 \\\\
+20 & OBJ-10060 & 0.9069 & 0.793 & 1.000 & 1.000 \\\\
+\bottomrule
+\end{longtable}
+
+\begin{longtable}{r l c c}
+\caption{Blind benchmark roster (\texttt{results/item\_016\_benchmark\_set.json}).}
+\label{tab:appendix-benchmark} \\
+\toprule
+Number & Name & JPL available & PDS available \\\\
+\midrule
+\endfirsthead
+\toprule
+Number & Name & JPL available & PDS available \\\\
+\midrule
+\endhead
+433 & Eros & true & true \\\\
+25143 & Itokawa & true & true \\\\
+216 & Kleopatra & true & true \\\\
+1 & Ceres & true & true \\\\
+2 & Pallas & true & true \\\\
+3 & Juno & true & true \\\\
+4 & Vesta & true & true \\\\
+10 & Hygiea & true & true \\\\
+15 & Eunomia & true & true \\\\
+16 & Psyche & true & true \\\\
+21 & Lutetia & true & true \\\\
+22 & Kalliope & true & true \\\\
+41 & Daphne & true & true \\\\
+87 & Sylvia & true & true \\\\
+121 & Hermione & true & true \\\\
+130 & Elektra & true & true \\\\
+349 & Dembowska & true & true \\\\
+511 & Davida & true & true \\\\
+704 & Interamnia & true & true \\\\
+253 & Mathilde & true & true \\\\
+\bottomrule
+\end{longtable}
+
+\end{document}
