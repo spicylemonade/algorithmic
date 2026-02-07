@@ -1,0 +1,41 @@
+{
+  "item_id": "item_004",
+  "examples": {
+    "alcdef": [
+      {"object_id":"433","obs_code":"G96","jd_utc":2459001.1,"mag":11.24,"mag_err":0.02,"filter":"V","ra_deg":120.2,"dec_deg":-8.1,"solar_phase_deg":22.4},
+      {"object_id":"25143","obs_code":"568","jd_utc":2459010.4,"mag":14.82,"mag_err":0.03,"filter":"R","ra_deg":201.3,"dec_deg":12.2,"solar_phase_deg":31.0},
+      {"object_id":"216","obs_code":"I41","jd_utc":2459022.7,"mag":10.15,"mag_err":0.01,"filter":"V","ra_deg":149.5,"dec_deg":3.0,"solar_phase_deg":18.7}
+    ],
+    "pds": [
+      {"target":"433 Eros","instrument":"SurveyCam","jd_tdb":2459001.123,"reduced_mag":11.1,"sigma_mag":0.03,"helio_dist_au":1.45,"geo_dist_au":0.53,"phase_deg":21.2},
+      {"target":"25143 Itokawa","instrument":"SurveyCam","jd_tdb":2459010.341,"reduced_mag":15.0,"sigma_mag":0.05,"helio_dist_au":1.13,"geo_dist_au":0.18,"phase_deg":39.5},
+      {"target":"216 Kleopatra","instrument":"SurveyCam","jd_tdb":2459022.778,"reduced_mag":9.9,"sigma_mag":0.02,"helio_dist_au":2.40,"geo_dist_au":1.72,"phase_deg":12.6}
+    ],
+    "gaia_dr3": [
+      {"source_id":1234567,"number_mp":433,"transit_id":111,"jd_tcb":2459011.2,"g_mag":11.3,"g_mag_err":0.01,"phase_angle_deg":20.1,"epoch_index":1},
+      {"source_id":1234568,"number_mp":25143,"transit_id":222,"jd_tcb":2459012.7,"g_mag":15.4,"g_mag_err":0.02,"phase_angle_deg":40.8,"epoch_index":2},
+      {"source_id":1234569,"number_mp":216,"transit_id":333,"jd_tcb":2459014.4,"g_mag":10.1,"g_mag_err":0.01,"phase_angle_deg":11.4,"epoch_index":3}
+    ],
+    "ztf_panstarrs": [
+      {"survey":"ZTF","object_id":"433","mjd_utc":59000.1,"filter":"r","mag":11.2,"mag_err":0.03,"ra_deg":122.1,"dec_deg":-7.9,"field_id":101},
+      {"survey":"PS1","object_id":"25143","mjd_utc":59010.2,"filter":"i","mag":14.9,"mag_err":0.04,"ra_deg":204.0,"dec_deg":11.5,"field_id":202},
+      {"survey":"ZTF","object_id":"216","mjd_utc":59020.3,"filter":"g","mag":10.2,"mag_err":0.02,"ra_deg":151.2,"dec_deg":2.8,"field_id":303}
+    ],
+    "mpc": [
+      {"packed_designation":"00433","epoch_mjd":59000.0,"a_au":1.458,"e":0.223,"i_deg":10.83,"node_deg":304.3,"argperi_deg":178.7,"M_deg":355.1,"H":10.4,"G":0.25},
+      {"packed_designation":"25143","epoch_mjd":59000.0,"a_au":1.324,"e":0.280,"i_deg":1.62,"node_deg":69.1,"argperi_deg":162.8,"M_deg":41.4,"H":19.2,"G":0.24},
+      {"packed_designation":"00216","epoch_mjd":59000.0,"a_au":2.794,"e":0.252,"i_deg":13.1,"node_deg":215.4,"argperi_deg":70.4,"M_deg":18.2,"H":7.2,"G":0.12}
+    ],
+    "damit": [
+      {"model_id":"DAMIT-433-1","object_number":433,"rotation_period_h":5.2703,"pole_lon_deg":11.0,"pole_lat_deg":17.0,"vertices":1024,"faces":2044},
+      {"model_id":"DAMIT-25143-1","object_number":25143,"rotation_period_h":12.132,"pole_lon_deg":355.0,"pole_lat_deg":-84.0,"vertices":2048,"faces":4092},
+      {"model_id":"DAMIT-216-1","object_number":216,"rotation_period_h":5.385,"pole_lon_deg":73.0,"pole_lat_deg":20.0,"vertices":1536,"faces":3070}
+    ],
+    "jpl_radar": [
+      {"spk_id":2000433,"name":"433 Eros","rotation_period_h":5.2703,"pole_ra_deg":11.4,"pole_dec_deg":17.2,"mesh_vertices":8192,"mesh_faces":16380,"radar_resolution_m":15.0},
+      {"spk_id":2025143,"name":"25143 Itokawa","rotation_period_h":12.132,"pole_ra_deg":90.5,"pole_dec_deg":-66.3,"mesh_vertices":4096,"mesh_faces":8188,"radar_resolution_m":2.0},
+      {"spk_id":2000216,"name":"216 Kleopatra","rotation_period_h":5.385,"pole_ra_deg":73.2,"pole_dec_deg":20.4,"mesh_vertices":6144,"mesh_faces":12280,"radar_resolution_m":30.0}
+    ]
+  },
+  "status": "completed"
+}

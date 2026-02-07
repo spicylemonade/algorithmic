@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "created_at": "2026-02-07T00:58:00Z",
-  "updated_at": "2026-02-07T01:00:11.206576+00:00",
+  "updated_at": "2026-02-07T01:00:45.942888+00:00",
   "current_agent": "researcher",
   "agent_status": {
     "orchestrator": {
@@ -57,8 +57,8 @@
           "id": "item_004",
           "description": "Define data contracts for ALCDEF, PDS, Gaia DR3, ZTF/Pan-STARRS, MPC, DAMIT, and JPL radar inputs",
           "acceptance_criteria": "Publish schema definitions for each source including required fields, units, time standard, and validation rules; include at least 3 example records per source",
-          "status": "pending",
-          "notes": null,
+          "status": "completed",
+          "notes": "Published docs/data_contracts.md with required fields, units, time standards, validation rules for 7 sources and 3 examples per source in results/item_004_examples.json.",
           "error": null
         },
         {
@@ -262,9 +262,9 @@
   ],
   "summary": {
     "total_items": 25,
-    "completed": 3,
+    "completed": 4,
     "in_progress": 0,
     "failed": 0,
-    "pending": 22
+    "pending": 21
   }
 }
