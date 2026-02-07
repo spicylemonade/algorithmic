@@ -1,0 +1,11 @@
+{
+  "item_id": "item_021",
+  "required_files": [
+    "shape.obj",
+    "spin_vector.json",
+    "run_config.json",
+    "metrics_summary.json",
+    "provenance_manifest.json"
+  ],
+  "root_pattern": "results/final_models/<asteroid_number>/"
+}
