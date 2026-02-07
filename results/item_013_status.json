@@ -1,0 +1,7 @@
+{
+  "item_id": "item_013",
+  "status": "failed",
+  "error": "Acceptance not met: pole-error reduction did not reach >=15% while preserving dense chi-square limit.",
+  "pole_error_reduction_pct": -13.254249361924739,
+  "dense_chi_worsening_pct": 0.9223156084842966
+}

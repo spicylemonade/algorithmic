@@ -1,0 +1,12 @@
+{
+  "item_id": "item_013",
+  "seed": 42,
+  "runs": 15,
+  "median_pole_error_base_deg": 14.550115193571393,
+  "median_pole_error_adaptive_deg": 16.478623743774644,
+  "pole_error_reduction_pct": -13.254249361924739,
+  "median_dense_chi_base": 5.754805716622929,
+  "median_dense_chi_adaptive": 5.807883187985289,
+  "dense_chi_worsening_pct": 0.9223156084842966,
+  "acceptance_pass": false
+}
