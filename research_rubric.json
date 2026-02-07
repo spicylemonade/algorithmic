@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "created_at": "2026-02-07T00:15:59Z",
-  "updated_at": "2026-02-07T00:25:22.188459+00:00",
+  "updated_at": "2026-02-07T00:25:55.465834+00:00",
   "current_agent": "researcher",
   "agent_status": {
     "orchestrator": {
@@ -190,15 +190,15 @@
           "id": "item_018",
           "description": "Evaluate sparse-data robustness under ablation",
           "acceptance_criteria": "Ablation study varies point count, apparition count, and phase-angle coverage; report shows failure boundary and accuracy trend curves",
-          "status": "in_progress",
-          "notes": null,
+          "status": "completed",
+          "notes": "Executed sparse-data ablation across points/apparitions/phase coverage and produced failure-boundary trend figure plus JSON table.",
           "error": null
         },
         {
           "id": "item_019",
           "description": "Apply candidate-selection boolean logic to production target pool",
           "acceptance_criteria": "Filtering pipeline outputs ranked candidates satisfying NEO OR diameter>100km, LCDB U>=2, absent from DAMIT, and minimum photometric coverage constraints",
-          "status": "pending",
+          "status": "in_progress",
           "notes": null,
           "error": null
         },
@@ -262,9 +262,9 @@
   ],
   "summary": {
     "total_items": 25,
-    "completed": 16,
+    "completed": 17,
     "in_progress": 1,
     "failed": 1,
-    "pending": 7
+    "pending": 6
   }
 }

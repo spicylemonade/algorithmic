@@ -1,0 +1,951 @@
+{
+  "item_id": "item_019",
+  "generated_at": "2026-02-07T00:34:36.388965+00:00",
+  "seed": 42,
+  "input_pool_size": 45,
+  "selected_count": 2,
+  "selected": [
+    {
+      "number": 1866,
+      "name": "1866 Sisyphus (1972 XA)",
+      "neo": true,
+      "diameter_km": 8.48,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 2.4,
+      "lightcurve_count": 30,
+      "sparse_points_est": 180,
+      "apparitions": 17,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": true
+      },
+      "score": 370
+    },
+    {
+      "number": 1943,
+      "name": "1943 Anteros (1973 EC)",
+      "neo": true,
+      "diameter_km": 2.3,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 2.86923,
+      "lightcurve_count": 30,
+      "sparse_points_est": 180,
+      "apparitions": 17,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": true
+      },
+      "score": 370
+    }
+  ],
+  "audit": [
+    {
+      "number": 1,
+      "name": "(1)",
+      "neo": false,
+      "diameter_km": 100.0,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 9.07417,
+      "lightcurve_count": 30,
+      "sparse_points_est": 180,
+      "apparitions": 4,
+      "in_damit": true,
+      "priority": {
+        "p1": false,
+        "p2": true,
+        "p3": false,
+        "p4": true
+      },
+      "score": 180
+    },
+    {
+      "number": 2,
+      "name": "(2)",
+      "neo": false,
+      "diameter_km": 100.0,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 7.8132,
+      "lightcurve_count": 43,
+      "sparse_points_est": 258,
+      "apparitions": 5,
+      "in_damit": true,
+      "priority": {
+        "p1": false,
+        "p2": true,
+        "p3": false,
+        "p4": true
+      },
+      "score": 193
+    },
+    {
+      "number": 3,
+      "name": "(3)",
+      "neo": false,
+      "diameter_km": 100.0,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 7.21,
+      "lightcurve_count": 37,
+      "sparse_points_est": 222,
+      "apparitions": 9,
+      "in_damit": true,
+      "priority": {
+        "p1": false,
+        "p2": true,
+        "p3": false,
+        "p4": true
+      },
+      "score": 187
+    },
+    {
+      "number": 4,
+      "name": "(4)",
+      "neo": false,
+      "diameter_km": 100.0,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 5.342,
+      "lightcurve_count": 59,
+      "sparse_points_est": 354,
+      "apparitions": 5,
+      "in_damit": true,
+      "priority": {
+        "p1": false,
+        "p2": true,
+        "p3": false,
+        "p4": true
+      },
+      "score": 209
+    },
+    {
+      "number": 10,
+      "name": "(10)",
+      "neo": false,
+      "diameter_km": 100.0,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 13.828,
+      "lightcurve_count": 40,
+      "sparse_points_est": 240,
+      "apparitions": 12,
+      "in_damit": true,
+      "priority": {
+        "p1": false,
+        "p2": true,
+        "p3": false,
+        "p4": true
+      },
+      "score": 190
+    },
+    {
+      "number": 15,
+      "name": "(15)",
+      "neo": false,
+      "diameter_km": 100.0,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 6.083,
+      "lightcurve_count": 45,
+      "sparse_points_est": 270,
+      "apparitions": 3,
+      "in_damit": true,
+      "priority": {
+        "p1": false,
+        "p2": true,
+        "p3": false,
+        "p4": true
+      },
+      "score": 195
+    },
+    {
+      "number": 16,
+      "name": "(16)",
+      "neo": false,
+      "diameter_km": 100.0,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 4.196,
+      "lightcurve_count": 62,
+      "sparse_points_est": 372,
+      "apparitions": 10,
+      "in_damit": true,
+      "priority": {
+        "p1": false,
+        "p2": true,
+        "p3": false,
+        "p4": true
+      },
+      "score": 210
+    },
+    {
+      "number": 24,
+      "name": "(24)",
+      "neo": false,
+      "diameter_km": 100.0,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 8.374,
+      "lightcurve_count": 42,
+      "sparse_points_est": 252,
+      "apparitions": 10,
+      "in_damit": true,
+      "priority": {
+        "p1": false,
+        "p2": true,
+        "p3": false,
+        "p4": true
+      },
+      "score": 192
+    },
+    {
+      "number": 31,
+      "name": "(31)",
+      "neo": false,
+      "diameter_km": 100.0,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 5.53,
+      "lightcurve_count": 35,
+      "sparse_points_est": 210,
+      "apparitions": 12,
+      "in_damit": true,
+      "priority": {
+        "p1": false,
+        "p2": true,
+        "p3": false,
+        "p4": true
+      },
+      "score": 185
+    },
+    {
+      "number": 52,
+      "name": "(52)",
+      "neo": false,
+      "diameter_km": 100.0,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 5.6304,
+      "lightcurve_count": 41,
+      "sparse_points_est": 246,
+      "apparitions": 11,
+      "in_damit": true,
+      "priority": {
+        "p1": false,
+        "p2": true,
+        "p3": false,
+        "p4": true
+      },
+      "score": 191
+    },
+    {
+      "number": 65,
+      "name": "(65)",
+      "neo": false,
+      "diameter_km": 100.0,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 6.0814,
+      "lightcurve_count": 33,
+      "sparse_points_est": 198,
+      "apparitions": 13,
+      "in_damit": true,
+      "priority": {
+        "p1": false,
+        "p2": true,
+        "p3": false,
+        "p4": true
+      },
+      "score": 183
+    },
+    {
+      "number": 87,
+      "name": "(87)",
+      "neo": false,
+      "diameter_km": 100.0,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 5.184,
+      "lightcurve_count": 48,
+      "sparse_points_est": 288,
+      "apparitions": 16,
+      "in_damit": true,
+      "priority": {
+        "p1": false,
+        "p2": true,
+        "p3": false,
+        "p4": true
+      },
+      "score": 198
+    },
+    {
+      "number": 88,
+      "name": "(88)",
+      "neo": false,
+      "diameter_km": 100.0,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 6.042,
+      "lightcurve_count": 41,
+      "sparse_points_est": 246,
+      "apparitions": 9,
+      "in_damit": true,
+      "priority": {
+        "p1": false,
+        "p2": true,
+        "p3": false,
+        "p4": true
+      },
+      "score": 191
+    },
+    {
+      "number": 107,
+      "name": "(107)",
+      "neo": false,
+      "diameter_km": 100.0,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 4.844,
+      "lightcurve_count": 45,
+      "sparse_points_est": 270,
+      "apparitions": 14,
+      "in_damit": true,
+      "priority": {
+        "p1": false,
+        "p2": true,
+        "p3": false,
+        "p4": true
+      },
+      "score": 195
+    },
+    {
+      "number": 121,
+      "name": "(121)",
+      "neo": false,
+      "diameter_km": 100.0,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 5.55128,
+      "lightcurve_count": 43,
+      "sparse_points_est": 258,
+      "apparitions": 19,
+      "in_damit": true,
+      "priority": {
+        "p1": false,
+        "p2": true,
+        "p3": false,
+        "p4": true
+      },
+      "score": 193
+    },
+    {
+      "number": 130,
+      "name": "(130)",
+      "neo": false,
+      "diameter_km": 100.0,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 5.225,
+      "lightcurve_count": 53,
+      "sparse_points_est": 318,
+      "apparitions": 19,
+      "in_damit": true,
+      "priority": {
+        "p1": false,
+        "p2": true,
+        "p3": false,
+        "p4": true
+      },
+      "score": 203
+    },
+    {
+      "number": 324,
+      "name": "(324)",
+      "neo": false,
+      "diameter_km": 100.0,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 29.43,
+      "lightcurve_count": 25,
+      "sparse_points_est": 150,
+      "apparitions": 8,
+      "in_damit": false,
+      "priority": {
+        "p1": false,
+        "p2": true,
+        "p3": true,
+        "p4": true
+      },
+      "score": 265
+    },
+    {
+      "number": 433,
+      "name": "433 Eros (A898 PA)",
+      "neo": true,
+      "diameter_km": 16.84,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 5.27,
+      "lightcurve_count": 62,
+      "sparse_points_est": 372,
+      "apparitions": 18,
+      "in_damit": true,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": false,
+        "p4": true
+      },
+      "score": 310
+    },
+    {
+      "number": 511,
+      "name": "(511)",
+      "neo": false,
+      "diameter_km": 100.0,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 5.1297,
+      "lightcurve_count": 47,
+      "sparse_points_est": 282,
+      "apparitions": 11,
+      "in_damit": true,
+      "priority": {
+        "p1": false,
+        "p2": true,
+        "p3": false,
+        "p4": true
+      },
+      "score": 197
+    },
+    {
+      "number": 532,
+      "name": "(532)",
+      "neo": false,
+      "diameter_km": 100.0,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 9.405,
+      "lightcurve_count": 38,
+      "sparse_points_est": 228,
+      "apparitions": 13,
+      "in_damit": true,
+      "priority": {
+        "p1": false,
+        "p2": true,
+        "p3": false,
+        "p4": true
+      },
+      "score": 188
+    },
+    {
+      "number": 704,
+      "name": "(704)",
+      "neo": false,
+      "diameter_km": 100.0,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 8.727,
+      "lightcurve_count": 42,
+      "sparse_points_est": 252,
+      "apparitions": 20,
+      "in_damit": true,
+      "priority": {
+        "p1": false,
+        "p2": true,
+        "p3": false,
+        "p4": true
+      },
+      "score": 192
+    },
+    {
+      "number": 719,
+      "name": "719 Albert (A911 TB)",
+      "neo": true,
+      "diameter_km": null,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 5.801,
+      "lightcurve_count": 12,
+      "sparse_points_est": 72,
+      "apparitions": 5,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": false
+      },
+      "score": 282
+    },
+    {
+      "number": 887,
+      "name": "887 Alinda (A918 AA)",
+      "neo": true,
+      "diameter_km": 4.2,
+      "lcdb_u": "3-",
+      "lcdb_u_value": 3.0,
+      "period_hours": 28.41,
+      "lightcurve_count": 15,
+      "sparse_points_est": 90,
+      "apparitions": 3,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": false
+      },
+      "score": 285
+    },
+    {
+      "number": 1036,
+      "name": "1036 Ganymed (A924 UB)",
+      "neo": true,
+      "diameter_km": 37.675,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 10.297,
+      "lightcurve_count": 53,
+      "sparse_points_est": 318,
+      "apparitions": 31,
+      "in_damit": true,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": false,
+        "p4": true
+      },
+      "score": 303
+    },
+    {
+      "number": 1221,
+      "name": "1221 Amor (1932 EA1)",
+      "neo": true,
+      "diameter_km": 1.0,
+      "lcdb_u": "",
+      "lcdb_u_value": null,
+      "period_hours": null,
+      "lightcurve_count": 1,
+      "sparse_points_est": 6,
+      "apparitions": 1,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": false,
+        "p3": true,
+        "p4": false
+      },
+      "score": 191
+    },
+    {
+      "number": 1566,
+      "name": "1566 Icarus (1949 MA)",
+      "neo": true,
+      "diameter_km": 1.0,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 2.2726,
+      "lightcurve_count": 15,
+      "sparse_points_est": 90,
+      "apparitions": 6,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": false
+      },
+      "score": 285
+    },
+    {
+      "number": 1580,
+      "name": "1580 Betulia (1950 KA)",
+      "neo": true,
+      "diameter_km": 5.8,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 6.1324,
+      "lightcurve_count": 24,
+      "sparse_points_est": 144,
+      "apparitions": 7,
+      "in_damit": true,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": false,
+        "p4": true
+      },
+      "score": 274
+    },
+    {
+      "number": 1620,
+      "name": "1620 Geographos (1951 RA)",
+      "neo": true,
+      "diameter_km": 2.56,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 5.22204,
+      "lightcurve_count": 37,
+      "sparse_points_est": 222,
+      "apparitions": 12,
+      "in_damit": true,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": false,
+        "p4": true
+      },
+      "score": 287
+    },
+    {
+      "number": 1627,
+      "name": "1627 Ivar (1929 SH)",
+      "neo": true,
+      "diameter_km": 9.12,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 4.795,
+      "lightcurve_count": 47,
+      "sparse_points_est": 282,
+      "apparitions": 21,
+      "in_damit": true,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": false,
+        "p4": true
+      },
+      "score": 297
+    },
+    {
+      "number": 1685,
+      "name": "1685 Toro (1948 OA)",
+      "neo": true,
+      "diameter_km": 3.4,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 10.1995,
+      "lightcurve_count": 32,
+      "sparse_points_est": 192,
+      "apparitions": 15,
+      "in_damit": true,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": false,
+        "p4": true
+      },
+      "score": 282
+    },
+    {
+      "number": 1862,
+      "name": "1862 Apollo (1932 HA)",
+      "neo": true,
+      "diameter_km": 1.5,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 3.065,
+      "lightcurve_count": 26,
+      "sparse_points_est": 156,
+      "apparitions": 11,
+      "in_damit": true,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": false,
+        "p4": true
+      },
+      "score": 276
+    },
+    {
+      "number": 1863,
+      "name": "1863 Antinous (1948 EA)",
+      "neo": true,
+      "diameter_km": 2.1,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 7.453,
+      "lightcurve_count": 16,
+      "sparse_points_est": 96,
+      "apparitions": 7,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": false
+      },
+      "score": 286
+    },
+    {
+      "number": 1864,
+      "name": "1864 Daedalus (1971 FA)",
+      "neo": true,
+      "diameter_km": 3.7,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 8.572,
+      "lightcurve_count": 16,
+      "sparse_points_est": 96,
+      "apparitions": 7,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": false
+      },
+      "score": 286
+    },
+    {
+      "number": 1865,
+      "name": "1865 Cerberus (1971 UA)",
+      "neo": true,
+      "diameter_km": 1.2,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 6.8039,
+      "lightcurve_count": 25,
+      "sparse_points_est": 150,
+      "apparitions": 13,
+      "in_damit": true,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": false,
+        "p4": true
+      },
+      "score": 275
+    },
+    {
+      "number": 1866,
+      "name": "1866 Sisyphus (1972 XA)",
+      "neo": true,
+      "diameter_km": 8.48,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 2.4,
+      "lightcurve_count": 30,
+      "sparse_points_est": 180,
+      "apparitions": 17,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": true
+      },
+      "score": 370
+    },
+    {
+      "number": 1915,
+      "name": "1915 Quetzalcoatl (1953 EA)",
+      "neo": true,
+      "diameter_km": 0.5,
+      "lcdb_u": "2",
+      "lcdb_u_value": 2.0,
+      "period_hours": 4.9,
+      "lightcurve_count": 6,
+      "sparse_points_est": 36,
+      "apparitions": 1,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": false
+      },
+      "score": 276
+    },
+    {
+      "number": 1916,
+      "name": "1916 Boreas (1953 RA)",
+      "neo": true,
+      "diameter_km": 3.5,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 3.4746,
+      "lightcurve_count": 15,
+      "sparse_points_est": 90,
+      "apparitions": 5,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": false
+      },
+      "score": 285
+    },
+    {
+      "number": 1917,
+      "name": "1917 Cuyo (1968 AA)",
+      "neo": true,
+      "diameter_km": 5.7,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 2.689,
+      "lightcurve_count": 24,
+      "sparse_points_est": 144,
+      "apparitions": 10,
+      "in_damit": true,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": false,
+        "p4": true
+      },
+      "score": 274
+    },
+    {
+      "number": 1943,
+      "name": "1943 Anteros (1973 EC)",
+      "neo": true,
+      "diameter_km": 2.3,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 2.86923,
+      "lightcurve_count": 30,
+      "sparse_points_est": 180,
+      "apparitions": 17,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": true
+      },
+      "score": 370
+    },
+    {
+      "number": 1980,
+      "name": "1980 Tezcatlipoca (1950 LA)",
+      "neo": true,
+      "diameter_km": 4.3,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 7.24612,
+      "lightcurve_count": 23,
+      "sparse_points_est": 138,
+      "apparitions": 9,
+      "in_damit": true,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": false,
+        "p4": true
+      },
+      "score": 273
+    },
+    {
+      "number": 1981,
+      "name": "1981 Midas (1973 EA)",
+      "neo": true,
+      "diameter_km": 3.4,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 5.22,
+      "lightcurve_count": 11,
+      "sparse_points_est": 66,
+      "apparitions": 5,
+      "in_damit": true,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": false,
+        "p4": false
+      },
+      "score": 191
+    },
+    {
+      "number": 2059,
+      "name": "2059 Baboquivari (1963 UA)",
+      "neo": true,
+      "diameter_km": null,
+      "lcdb_u": "3-",
+      "lcdb_u_value": 3.0,
+      "period_hours": 129.47,
+      "lightcurve_count": 3,
+      "sparse_points_est": 18,
+      "apparitions": 1,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": false
+      },
+      "score": 273
+    },
+    {
+      "number": 2061,
+      "name": "2061 Anza (1960 UA)",
+      "neo": true,
+      "diameter_km": 2.6,
+      "lcdb_u": "2",
+      "lcdb_u_value": 2.0,
+      "period_hours": 6.712,
+      "lightcurve_count": 5,
+      "sparse_points_est": 30,
+      "apparitions": 2,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": false
+      },
+      "score": 275
+    },
+    {
+      "number": 2062,
+      "name": "2062 Aten (1976 AA)",
+      "neo": true,
+      "diameter_km": 1.1,
+      "lcdb_u": "3-",
+      "lcdb_u_value": 3.0,
+      "period_hours": 42.15,
+      "lightcurve_count": 15,
+      "sparse_points_est": 90,
+      "apparitions": 4,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": false
+      },
+      "score": 285
+    },
+    {
+      "number": 2063,
+      "name": "2063 Bacchus (1977 HB)",
+      "neo": true,
+      "diameter_km": 1.024,
+      "lcdb_u": "3",
+      "lcdb_u_value": 3.0,
+      "period_hours": 14.904,
+      "lightcurve_count": 9,
+      "sparse_points_est": 54,
+      "apparitions": 3,
+      "in_damit": false,
+      "priority": {
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": false
+      },
+      "score": 279
+    }
+  ]
+}
